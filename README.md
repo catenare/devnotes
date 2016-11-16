@@ -1,6 +1,5 @@
-# DevelopmentNotes
-Notes to self about things I learn as I am fixing issues
+# Developer Notes for Johan Martin
+## martin.johan@johan-martin.com
 
-## Git
-* Allow unrelated histories [http://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories]
-* git pull remote branch --allow-unrelated-histories
+# Notes of what I find/learn/realize as I work on different projects. Good place to write them down.
+
