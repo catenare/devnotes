@@ -1,5 +1,7 @@
-# DevelopmentNotes
-Notes to self about things I learn as I am fixing issues
+# Developer Notes for Johan Martin
+## martin.johan@johan-martin.com
+
+# Notes of what I find/learn/realize as I work on different projects. Good place to write them down.
 
 ## Git
 * Git error message. Can't merge unrelated histories.
