@@ -28,3 +28,7 @@ user=false
 # Github Markdown
 * Languages for code blocks - [highlights.js](https://highlightjs.org/static/demo/)
 * Emoji List - :bowtie [Emoji Cheat Sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
+
+# Sass
+* Compiling compass sass with sass c library.
+	* *sass --compass sass/styles.scss test,css* - seems to read the compass config.rb file to find paths.
