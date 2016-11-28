@@ -43,3 +43,9 @@ user=false
 # Sass
 * Compiling compass sass with sass c library.
 	* *sass --compass sass/styles.scss test,css* - seems to read the compass config.rb file to find paths.
+
+# RVM and ruby
+* Unable to run a command from a gem when installed with *gem install*
+  * Example: *gem install cocoapods*. Expect to use *pod* as a commandline client.
+  * Solution: **rvm use ruby-{current}**
+  * Problem related to rvm not setting up a default ruby.
