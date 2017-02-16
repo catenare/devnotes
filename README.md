@@ -49,3 +49,9 @@ user=false
   * Example: *gem install cocoapods*. Expect to use *pod* as a commandline client.
   * Solution: **rvm use ruby-{current}**
   * Problem related to rvm not setting up a default ruby.
+
+# Database
+* Using Flyway for migrations and database version control
+  * Getting the serial date to use in flyway migrations.
+    * Get date on mac os x command line ```date +%s ```
+  * Use the date rather than the version number to better control how the migrations are applied.
