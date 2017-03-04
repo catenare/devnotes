@@ -27,12 +27,29 @@
 * Download source from [Postgresql ODBC Project](https://www.postgresql.org/ftp/odbc/versions/src/)
 * Untar psqlodbc source
 * Build odbc driver 
-	* ```./configure --with-iodbc=/usr/local/iODBC --enable-pthread```
+	* ```./configure --with-iodbc=/usr/local/iODBC --enable-pthreads```
 	* ```make```
 * Install driver to /usr/local/lib
 	* ```sudo make Install```
     * files: psqlodbcw.so & psqlodbcw.la
-* Create odbc.ini file in /etc/
+* ~~Create odbc.ini file in /etc/~~
+* Create *odbc.ini* and *odbcinst.ini* files in */Library/ODBC*
+* Copied */usr/local/lib/psqlodbcw.so* and */usr/local/lib/psqlodbcw.la* to */Library/ODBC/ODBCDataSources*
+	* Allowed to load driver from excel.
+
+odbcinst.ini
+
+```
+[PostgreSQL]
+Description=ODBC For Postgresql
+Driver=/Library/ODBC/ODBCDataSources/psqlodbcw.so
+
+[ODBC]
+Trace=1
+Debug=1
+```
+
+odbc.ini
 
 ```
 [ODBC Data Sources]
