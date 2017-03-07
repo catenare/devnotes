@@ -49,3 +49,5 @@ user=false
   * Example: *gem install cocoapods*. Expect to use *pod* as a commandline client.
   * Solution: **rvm use ruby-{current}**
   * Problem related to rvm not setting up a default ruby.
+# Downloading files with wget
+* Use ```wget -c``` or ```wget --continue``` to restart a stopped or aborted download
