@@ -20,6 +20,20 @@
 - sudo su - postgres
 - /opt/local/lib/postgresql96/bin/psql -U postgres -d template1
 
+# Allowing remote setup on Mac OS X installed via MacPorts
+- Config files are in */opt/local/var/db/postgresql96/defaultdb*
+- ```sudo su postgres``` to edit the files
+- Edit pg_hba.conf - ```host all all 192.168.1.0/24 trust``` to allow local network access
+- Edit postgresq.conf - Under listen and settings - ```listen_address = "*"``` will allow network access.
+- sudo port unload postgresql96-server
+- sudo port load postgresql96-server
+- configure Mac OS X firewall to allow remote access
+## Open a port on Mac OS X
+- [Open a port on mac os x](https://gauravsohoni.wordpress.com/2015/04/14/mac-osx-open-port/)
+- Edit /etc/pf.conf
+- Add line ```pass in proto tcp from any to any port 5432```
+- Restart firewall ```sudo pfctl -f /etc/pf.conf```
+
 # Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)
 * Install notes [Compiling psqlODBC on unix](https://odbc.postgresql.org/docs/unix-compilation.html)
 * Install iODBC Manager from [iODBC.org](http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)
