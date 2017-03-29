@@ -33,6 +33,11 @@
 - Edit /etc/pf.conf
 - Add line ```pass in proto tcp from any to any port 5432```
 - Restart firewall ```sudo pfctl -f /etc/pf.conf```
+## Access database consistently
+- Create entry in ```/etc/hosts```
+- Remote entry ```192.168.1.103    paseodb```
+- Local entry  ```127.0.0.1 	   paseodb```
+- Will allow access without having to manually change settings everytime.
 
 
 # Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) ```Never got this to work```
