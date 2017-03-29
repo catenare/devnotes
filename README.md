@@ -3,8 +3,11 @@ Notes of what I find/learn/realize as I work on different projects. Good place t
 
 ## Git
 * Git error message. Can't merge unrelated histories.
-* Allow unrelated histories [StackOverflow Issue](http://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories)
-  * git pull remote branch --allow-unrelated-histories
+* Allow unrelated histories [StackOverflow](http://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories)
+  * ```git pull remote branch --allow-unrelated-histories```
+
+* Remove file from git repository without deleting local file. [StackOverflow](http://stackoverflow.com/questions/1143796/remove-a-file-from-a-git-repository-without-deleting-it-from-the-local-filesyste)
+  * ```git rm --cached myfile.fil``` or ```git rm --cached -r myfile```
 
 * Git error trying to push when pull seems to work
 
@@ -18,6 +21,8 @@ hint: (e.g. 'git pull ...') before pushing again.
   * ```git pull {remote} master --allow-unrelated-histories```
   * Fix conflicts and commit
   * ```git push {remote} master```
+
+
 
 # Python
 ## Pip
