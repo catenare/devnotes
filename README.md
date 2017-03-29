@@ -22,8 +22,6 @@ hint: (e.g. 'git pull ...') before pushing again.
   * Fix conflicts and commit
   * ```git push {remote} master```
 
-
-
 # Python
 ## Pip
 * Error message: *"Can not perform a '--user' install. User site-packages are not visible in this virtualenv"*
@@ -45,9 +43,6 @@ user=false
 * Languages for code blocks - [highlights.js](https://highlightjs.org/static/demo/)
 * Emoji List - :bowtie [Emoji Cheat Sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
-# Sass
-* Compiling compass sass with sass c library.
-	* *sass --compass sass/styles.scss test,css* - seems to read the compass config.rb file to find paths.
 
 # RVM and ruby
 * Unable to run a command from a gem when installed with *gem install*
@@ -57,9 +52,3 @@ user=false
 
 # Downloading files with wget
 * Use ```wget -c``` or ```wget --continue``` to restart a stopped or aborted download
-
-# Database
-* Using Flyway for migrations and database version control
-  * Getting the serial date to use in flyway migrations.
-    * Get date on mac os x command line ```date +%s ```
-  * Use the date rather than the version number to better control how the migrations are applied.
