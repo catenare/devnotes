@@ -18,4 +18,5 @@ pages:
     - 'Git': 'git.md'
   - 'Web Dev':
     - 'Front-End': 'front.md'
+  - 'Other': 'other.md'
 
