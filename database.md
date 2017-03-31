@@ -4,7 +4,7 @@
 # postgresql96 has the following notes:
 - To use the postgresql server, install the postgresql96-server port
 	- postgresql96-server has the following notes:
-		- To create a database instance, after install do 
+		- To create a database instance, after install do
 			- sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb
 			- sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb
 			- sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
@@ -15,7 +15,7 @@
 ~~sudo chmod -R 755 /opt/local/var/db/~~
 ~~sudo defaults write /Library/LaunchDaemons/org.macports.postgresql96-server.plist Disabled -bool false~~
 ~~sudo launchctl load /Library/LaunchDaemons/org.macports.postgresql96-server.plist~~
- 
+
 - sudo port load postgresql96-server
 - sudo su - postgres
 - /opt/local/lib/postgresql96/bin/psql -U postgres -d template1
@@ -39,13 +39,14 @@
 - Local entry  ```127.0.0.1 	   paseodb```
 - Will allow access without having to manually change settings everytime.
 
-# Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)
+
+# Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) ```Never got this to work```
 * Install notes [Compiling psqlODBC on unix](https://odbc.postgresql.org/docs/unix-compilation.html)
 * Install iODBC Manager from [iODBC.org](http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)
     * Install Mac Version
 * Download source from [Postgresql ODBC Project](https://www.postgresql.org/ftp/odbc/versions/src/)
 * Untar psqlodbc source
-* Build odbc driver 
+* Build odbc driver
 	* ```./configure --with-iodbc=/usr/local/iODBC --enable-pthreads```
 	* ```make```
 * Install driver to /usr/local/lib
@@ -91,4 +92,8 @@ Debug = 1
 DebugFile = /tmp/odbcdebug.log
 ```
 
-**This seems to work**
+# Database Migrations
+* Using Flyway for migrations and database version control
+  * Getting the serial date to use in flyway migrations.
+    * Get date on mac os x command line ```date +%s ```
+  * Use the date rather than the version number to better control how the migrations are applied.
