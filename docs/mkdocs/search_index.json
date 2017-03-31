@@ -107,7 +107,7 @@
         },
         {
             "location": "/php/",
-            "text": "Wordpress Development notes\n\n\nUsing sqlite as the database\n\n\n\n\nUse sqlite plugin for sqlite - \nSQLite Integration\n\n\nUse instead of regular database.",
+            "text": "Wordpress Development notes\n\n\nUsing sqlite as the database\n\n\n\n\nUse sqlite plugin for sqlite - \nSQLite Integration\n\n\nUse for lightweight development.\n\n\n\n\nTo enable php71-apache2handler, run:\n\n\n\n\ncd /opt/local/apache2/modules\n\n\nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so",
             "title": "PHP"
         },
         {
@@ -117,8 +117,13 @@
         },
         {
             "location": "/php/#using-sqlite-as-the-database",
-            "text": "Use sqlite plugin for sqlite -  SQLite Integration  Use instead of regular database.",
+            "text": "Use sqlite plugin for sqlite -  SQLite Integration  Use for lightweight development.",
             "title": "Using sqlite as the database"
+        },
+        {
+            "location": "/php/#to-enable-php71-apache2handler-run",
+            "text": "cd /opt/local/apache2/modules  sudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so",
+            "title": "To enable php71-apache2handler, run:"
         },
         {
             "location": "/python/",
