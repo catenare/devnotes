@@ -1,5 +1,5 @@
-# Android
-## Notes for Android Development - Mac OS X
+# Mobile Device Development
+## Android
 ### Links
 * Google Tools
   * [Android Studio](https://developer.android.com/studio/index.html)
@@ -9,15 +9,15 @@
 * Other dev tools
   * [App Inventor](http://appinventor.mit.edu/explore/)
 
-## Solutions
+### Solutions
 * **Problem:** Launching Android SDK Manager without going through Atom Studio
   * *~/Library/Android/sdk/tools/android*
   * **For AVD** *~/Library/Android/sdk/tools/android avd*
     * [StackOverflow](http://stackoverflow.com/questions/16271242/launch-android-sdk-manager-tools-directory-doesnt-exist-mac)
     * Lauch AVD - [StackOverflow](http://stackoverflow.com/questions/8119282/dont-see-android-sdk-and-avd-manager-when-execute-android-tool-command)
 
-# IOS
-## IOS Development Notes
+## IOS
+### IOS Development Notes
 
 * Cocoapods
   * Issue: *Unable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add*

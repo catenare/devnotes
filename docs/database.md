@@ -1,7 +1,8 @@
-#Installing Postgresql with macports
+#I nstalling Postgresql with macports
 
- /opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start
-# postgresql96 has the following notes:
+~~/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start~~
+
+## postgresql96 has the following notes:
 - To use the postgresql server, install the postgresql96-server port
 	- postgresql96-server has the following notes:
 		- To create a database instance, after install do
@@ -20,7 +21,7 @@
 - sudo su - postgres
 - /opt/local/lib/postgresql96/bin/psql -U postgres -d template1
 
-# Allowing remote setup on Mac OS X installed via MacPorts
+## Allowing remote setup on Mac OS X installed via MacPorts
 - Config files are in */opt/local/var/db/postgresql96/defaultdb*
 - ```sudo su postgres``` to edit the files
 - Edit pg_hba.conf - ```host all all 192.168.1.0/24 trust``` to allow local network access
@@ -28,19 +29,18 @@
 - sudo port unload postgresql96-server
 - sudo port load postgresql96-server
 - configure Mac OS X firewall to allow remote access
-## Open a port on Mac OS X
+### Open a port on Mac OS X
 - [Open a port on mac os x](https://gauravsohoni.wordpress.com/2015/04/14/mac-osx-open-port/)
 - Edit /etc/pf.conf
 - Add line ```pass in proto tcp from any to any port 5432```
 - Restart firewall ```sudo pfctl -f /etc/pf.conf```
-## Access database consistently
+### Access database consistently
 - Create entry in ```/etc/hosts```
 - Remote entry ```192.168.1.103    paseodb```
 - Local entry  ```127.0.0.1 	   paseodb```
 - Will allow access without having to manually change settings everytime.
 
-
-# Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) ```Never got this to work```
+## ~~Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)~~ ```Never got this to work```
 * Install notes [Compiling psqlODBC on unix](https://odbc.postgresql.org/docs/unix-compilation.html)
 * Install iODBC Manager from [iODBC.org](http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)
     * Install Mac Version
@@ -91,8 +91,7 @@ Debug       = 1
 Debug = 1
 DebugFile = /tmp/odbcdebug.log
 ```
-
-# Database Migrations
+## Database Migrations
 * Using Flyway for migrations and database version control
   * Getting the serial date to use in flyway migrations.
     * Get date on mac os x command line ```date +%s ```
