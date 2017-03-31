@@ -1,0 +1,21 @@
+site_name: Johan Martin Development Notes
+theme: 'material'
+pages:
+- Home: 'index.md'
+- Sections:
+  - Database: 
+      - Postgresql: 'database.md'
+      - Migrations: 'dbmigrations.md'
+  - Mobile:
+    - 'Mobile Dev': 'mobile.md'
+  - Languages:
+    - 'PHP': 'php.md'
+    - 'Python': 'python.md'
+    - 'Ruby': 'ruby.md'
+  - Frameworks:
+    - 'Spring': 'spring.md'
+  - Version Control:
+    - 'Git': 'git.md'
+  - 'Web Dev':
+    - 'Front-End': 'front.md'
+
