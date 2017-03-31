@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to Johan's Development Nots\n\n\nThis is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.",
+            "text": "Welcome to Johan's Development Notes\n\n\nThis is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.",
             "title": "Home"
         },
         {
-            "location": "/#welcome-to-johans-development-nots",
+            "location": "/#welcome-to-johans-development-notes",
             "text": "This is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.",
-            "title": "Welcome to Johan's Development Nots"
+            "title": "Welcome to Johan's Development Notes"
         },
         {
             "location": "/database/",

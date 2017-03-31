@@ -1,2 +1,2 @@
-# Welcome to Johan's Development Nots
+# Welcome to Johan's Development Notes
 This is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.
