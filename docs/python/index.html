@@ -370,6 +370,26 @@
     Pip
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-pip-as-user" title="Install pip as user" class="md-nav__link">
+    Install pip as user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-pip-config-file-want-to-set-default-settings-for-command-line-like-always-install-in-user-space" title="Setup pip config file - want to set default settings for command line. Like always install in user space." class="md-nav__link">
+    Setup pip config file - want to set default settings for command line. Like always install in user space.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -555,6 +575,26 @@
     Pip
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-pip-as-user" title="Install pip as user" class="md-nav__link">
+    Install pip as user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-pip-config-file-want-to-set-default-settings-for-command-line-like-always-install-in-user-space" title="Setup pip config file - want to set default settings for command line. Like always install in user space." class="md-nav__link">
+    Setup pip config file - want to set default settings for command line. Like always install in user space.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -599,6 +639,24 @@ user=false
 <ul>
 <li><a href="https://pip.pypa.io/en/stable/user_guide/#configuration">Pip Configuration</a> | <a href="http://stackoverflow.com/questions/30604952/pip-default-behavior-conflicts-with-virtualenv">StackOverflow Issue</a></li>
 </ul>
+<h3 id="install-pip-as-user">Install pip as user</h3>
+<ul>
+<li>get the get-pip.py script<ul>
+<li>Get the script <code>wget https://bootstrap.pypa.io/get-pip.py</code></li>
+<li>Run the script with user option <code>pytoh get-pip.py --user</code></li>
+</ul>
+</li>
+<li>Now install all pip packages into user space. <code>pip install --user &lt;package&gt;</code></li>
+</ul>
+<h3 id="setup-pip-config-file-want-to-set-default-settings-for-command-line-like-always-install-in-user-space">Setup pip config file - want to set default settings for command line. Like always install in user space.</h3>
+<ul>
+<li>Create file <code>$HOME/Library/Application Support/pip/pip.conf</code></li>
+<li>Edit file </li>
+</ul>
+<pre><code class="Ini">[Install]
+user = true
+</code></pre>
+
 <h2 id="issue-with-readline">Issue with readline</h2>
 <ul>
 <li>Terminal all screwed up after using python repl<ul>

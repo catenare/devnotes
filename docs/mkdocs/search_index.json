@@ -127,7 +127,7 @@
         },
         {
             "location": "/python/",
-            "text": "Using Python\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.",
+            "text": "Using Python\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.",
             "title": "Python"
         },
         {
@@ -139,6 +139,16 @@
             "location": "/python/#pip",
             "text": "Error message:  \"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"  Problems  ~/Library/Application Support/pip/pip.conf  contains  user=true  Resolution: Override the config in your virtualenv pip config file  Create  $VIRTUAL_ENV/pip.conf  Place config information to override user=true     [install]\nuser=false   Pip Configuration  |  StackOverflow Issue",
             "title": "Pip"
+        },
+        {
+            "location": "/python/#install-pip-as-user",
+            "text": "get the get-pip.py script  Get the script  wget https://bootstrap.pypa.io/get-pip.py  Run the script with user option  pytoh get-pip.py --user    Now install all pip packages into user space.  pip install --user <package>",
+            "title": "Install pip as user"
+        },
+        {
+            "location": "/python/#setup-pip-config-file-want-to-set-default-settings-for-command-line-like-always-install-in-user-space",
+            "text": "Create file  $HOME/Library/Application Support/pip/pip.conf  Edit file    [Install]\nuser = true",
+            "title": "Setup pip config file - want to set default settings for command line. Like always install in user space."
         },
         {
             "location": "/python/#issue-with-readline",
