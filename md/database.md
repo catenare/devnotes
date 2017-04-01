@@ -37,8 +37,11 @@
 ### Access database consistently
 - Create entry in ```/etc/hosts```
 - Remote entry ```192.168.1.103    paseodb```
-- Local entry  ```127.0.0.1 	   paseodb```
+- Local entry  ```127.0.0.1 	   db```
 - Will allow access without having to manually change settings everytime.
+
+## Migrations
+* See [Migrations](dbmigrations.md)
 
 ## ~~Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)~~ ```Never got this to work```
 * Install notes [Compiling psqlODBC on unix](https://odbc.postgresql.org/docs/unix-compilation.html)
@@ -91,8 +94,3 @@ Debug       = 1
 Debug = 1
 DebugFile = /tmp/odbcdebug.log
 ```
-## Database Migrations
-* Using Flyway for migrations and database version control
-  * Getting the serial date to use in flyway migrations.
-    * Get date on mac os x command line ```date +%s ```
-  * Use the date rather than the version number to better control how the migrations are applied.
