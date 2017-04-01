@@ -26,7 +26,8 @@ pages:
     - 'Spring': 'spring.md'
   - Version Control:
     - 'Git': 'git.md'
-  - 'Web Dev':
+  - 'Web Development':
     - 'Front-End': 'front.md'
+  - Documentation: 'docs.md'
   - 'Other': 'other.md'
 
