@@ -48,6 +48,12 @@
     </url>
         
     <url>
+     <loc>/docs/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/other/</loc>
      <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>

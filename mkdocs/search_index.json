@@ -2,13 +2,18 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to Johan's Development Notes\n\n\nThis is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.\nHopefully this will be helpful beyond just me.",
+            "text": "Welcome to Johan's Development Notes\n\n\nThis is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.\nHopefully this will be helpful beyond just me.\n\n\nProject setup\n\n\n\n\nVirtualenvwrapper name: devnotes\n\n\nPublished on github using gh-pages\n\n\nNotes are located at one place now",
             "title": "Home"
         },
         {
             "location": "/#welcome-to-johans-development-notes",
             "text": "This is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.\nHopefully this will be helpful beyond just me.",
             "title": "Welcome to Johan's Development Notes"
+        },
+        {
+            "location": "/#project-setup",
+            "text": "Virtualenvwrapper name: devnotes  Published on github using gh-pages  Notes are located at one place now",
+            "title": "Project setup"
         },
         {
             "location": "/database/",
@@ -279,6 +284,21 @@
             "location": "/front/#tools-to-watch",
             "text": "Electrode  - made by Walmart. ReactJS framework essentially.  Vue.js  - another front-end framework.",
             "title": "Tools to watch"
+        },
+        {
+            "location": "/docs/",
+            "text": "Creating Project Documentation\n\n\nUsing \nMkDocs\n\n\n\n\nUses markdown.\n\n\nWorks with github pages.\n\n\nEvery project will have their own documentation\n\n\nStyleguide should be included (frontend)\n\n\nProject goals and requirements\n\n\nNotes about development\n\n\nSetup/install instructions\n\n\nResolution to issues (ongoing FAQ for the projects)\n\n\n\n\n\n\nDocumentation pages stay in gh-pages branch.\n\n\nadded \npymdownx.tilde\n extension to get strikethrough to work.\n\n\nUsing \nmkdocs gh-deploy\n to upload docs.",
+            "title": "Documentation"
+        },
+        {
+            "location": "/docs/#creating-project-documentation",
+            "text": "",
+            "title": "Creating Project Documentation"
+        },
+        {
+            "location": "/docs/#using-mkdocs",
+            "text": "Uses markdown.  Works with github pages.  Every project will have their own documentation  Styleguide should be included (frontend)  Project goals and requirements  Notes about development  Setup/install instructions  Resolution to issues (ongoing FAQ for the projects)    Documentation pages stay in gh-pages branch.  added  pymdownx.tilde  extension to get strikethrough to work.  Using  mkdocs gh-deploy  to upload docs.",
+            "title": "Using MkDocs"
         },
         {
             "location": "/other/",

@@ -19,7 +19,7 @@
     
     
       
-        <title>Other - Development Notes for Johan Martin</title>
+        <title>Documentation - Development Notes for Johan Martin</title>
       
     
     
@@ -82,7 +82,7 @@
                 </span>
               
             
-            Other
+            Documentation
           
         </span>
       </div>
@@ -472,18 +472,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../docs/" title="Documentation" class="md-nav__link">
-      Documentation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -495,11 +483,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Other
+        Documentation
       </label>
     
-    <a href="./" title="Other" class="md-nav__link md-nav__link--active">
-      Other
+    <a href="./" title="Documentation" class="md-nav__link md-nav__link--active">
+      Documentation
     </a>
     
       
@@ -513,8 +501,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#downloading-files-with-wget" title="Downloading files with wget" class="md-nav__link">
-    Downloading files with wget
+  <a href="#using-mkdocs" title="Using MkDocs" class="md-nav__link">
+    Using MkDocs
   </a>
   
 </li>
@@ -525,6 +513,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/" title="Other" class="md-nav__link">
+      Other
+    </a>
   </li>
 
         
@@ -554,8 +554,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#downloading-files-with-wget" title="Downloading files with wget" class="md-nav__link">
-    Downloading files with wget
+  <a href="#using-mkdocs" title="Using MkDocs" class="md-nav__link">
+    Using MkDocs
   </a>
   
 </li>
@@ -574,13 +574,25 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/catenare/devnotes/edit/master/md/other.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/catenare/devnotes/edit/master/md/docs.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="other-notes">Other notes</h1>
-<h2 id="downloading-files-with-wget">Downloading files with wget</h2>
+                <h1 id="creating-project-documentation">Creating Project Documentation</h1>
+<h2 id="using-mkdocs">Using <a href="http://www.mkdocs.org/">MkDocs</a></h2>
 <ul>
-<li>Use <code>wget -c</code> or <code>wget --continue</code> to restart a stopped or aborted download</li>
+<li>Uses markdown.</li>
+<li>Works with github pages.</li>
+<li>Every project will have their own documentation<ul>
+<li>Styleguide should be included (frontend)</li>
+<li>Project goals and requirements</li>
+<li>Notes about development</li>
+<li>Setup/install instructions</li>
+<li>Resolution to issues (ongoing FAQ for the projects)</li>
+</ul>
+</li>
+<li>Documentation pages stay in gh-pages branch.</li>
+<li>added <code>pymdownx.tilde</code> extension to get strikethrough to work.</li>
+<li>Using <code>mkdocs gh-deploy</code> to upload docs.</li>
 </ul>
                 
                   
@@ -600,7 +612,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../docs/" title="Documentation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../front/" title="Front-End" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -609,11 +621,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Documentation
+                Front-End
               </span>
             </div>
           </a>
         
+        
+          <a href="../other/" title="Other" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Other
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
