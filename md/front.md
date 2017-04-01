@@ -1,21 +1,23 @@
 # Web Development Tools - finding tools that are really useful for editing
 
-* Emmet - http://emmet.io
-  * See editor supports it.
-  * Can really reduce the amount of typing necessary to to create a page.
+## Tools
 
-* Serve local file
-* Browser-sync Command - *browser-sync start --server --directory --files "**/*"*
-## Requirejs
-* For r.js to work (without explicit path).
-  * *npm install -g requirejs*
+### [Emmet](http://emmet.io) 
+* Expand html shortcuts
+* Can really reduce the amount of typing necessary to to create a page.
 
-## Using Browser-sync
-### Browser-sync Command - `browser-sync start --server --directory --files "**/*"`
+### Local static file server
+* [browser-sync](https://browsersync.io/)
+* Node.js tool 
+* ```browser-sync start --server --directory --files "**/*"```
 
-## Using Foundation as a web framework
-* foundation new
-** foundation for web
+### Combine JS files
+* [Requirejs](http://requirejs.org/)
+* For r.js to work (without explicit path) ```npm install -g requirejs```
+
+## Web Framework
+* [Foundation](http://foundation.zurb.com/)
+* Setup a new project ```foundation new```
 
 ## Sass Notes
 * Using sassc and libsass
