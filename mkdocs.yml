@@ -1,9 +1,12 @@
 site_name: Development Notes for Johan Martin
 repo_url: https://github.com/catenare/devnotes
+site_description: Notes tracking for developing different apps.
+site_author: Johan Martin (http://www.martin-johan.com)
 repo_name: 'GitHub'
 edit_uri: edit/master/md/
 docs_dir: 'md'
 # site_dir: 'docs'
+copyright: Johan Martin &copy; 2017
 markdown_extensions:
   - pymdownx.tilde
 theme: 'material'
