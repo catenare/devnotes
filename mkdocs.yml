@@ -3,7 +3,7 @@ repo_url: https://github.com/catenare/devnotes
 repo_name: 'GitHub'
 edit_uri: edit/master/md/
 docs_dir: 'md'
-site_dir: 'docs'
+# site_dir: 'docs'
 markdown_extensions:
   - pymdownx.tilde
 theme: 'material'
