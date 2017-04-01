@@ -290,18 +290,26 @@
     Version control/management of updates
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-flyway-for-migrations-and-database-version-control" title="Using Flyway for migrations and database version control" class="md-nav__link">
-    Using Flyway for migrations and database version control
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-flyway-for-database-version-control" title="Using Flyway for database version control" class="md-nav__link">
+    Using Flyway for database version control
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-flyway" title="Setting up flyway" class="md-nav__link">
+    Setting up flyway
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ant-to-run-migrations" title="Using ant to run migrations" class="md-nav__link">
+    Using ant to run migrations
+  </a>
   
 </li>
       
@@ -577,18 +585,26 @@
     Version control/management of updates
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-flyway-for-migrations-and-database-version-control" title="Using Flyway for migrations and database version control" class="md-nav__link">
-    Using Flyway for migrations and database version control
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-flyway-for-database-version-control" title="Using Flyway for database version control" class="md-nav__link">
+    Using Flyway for database version control
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-flyway" title="Setting up flyway" class="md-nav__link">
+    Setting up flyway
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ant-to-run-migrations" title="Using ant to run migrations" class="md-nav__link">
+    Using ant to run migrations
+  </a>
   
 </li>
       
@@ -611,13 +627,44 @@
                 
                 <h1 id="database-migrations-with-flyway">Database migrations with Flyway</h1>
 <h2 id="version-controlmanagement-of-updates">Version control/management of updates</h2>
-<h3 id="using-flyway-for-migrations-and-database-version-control">Using Flyway for migrations and database version control</h3>
+<h2 id="using-flyway-for-database-version-control">Using Flyway for database version control</h2>
 <ul>
-<li>Getting the serial date to use in flyway migrations.<ul>
+<li>Recommendations:</li>
+<li>Use timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment<ul>
+<li><a href="http://www.jeremyjarrell.com/using-flyway-db-with-distributed-version-control/">Lessons Learned Using Flyway DB with Distributed Version Control</a></li>
 <li>Get date on mac os x command line <code>date +%s</code></li>
-<li>Use the date rather than the version number to better control how the migrations are applied.</li>
 </ul>
 </li>
+<li>Use git to track migrations - flyway notices if a migration file changes and causes issues</li>
+</ul>
+<h2 id="setting-up-flyway">Setting up flyway</h2>
+<ul>
+<li>Sqlite jdbc driver - <a href="https://bitbucket.org/xerial/sqlite-jdbc/downloads">xerial/sqlite-jdbc</a> - for prototyping</li>
+<li>Postgresql JDBC Driver - <a href="https://jdbc.postgresql.org">Postgresql</a></li>
+<li>Flyway ant library - <a href="https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/4.0.3/flyway-ant-4.0.3.tar.gz">Flyway Ant</a></li>
+<li>Directory Structure</li>
+<li>db<ul>
+<li>conf/</li>
+<li>flyway.conf</li>
+<li>libs/</li>
+<li>flyway/ # Flyway ant</li>
+<li>postgresql-9.4.1212.jar</li>
+<li>ant-contrib-1.0b3.jar</li>
+<li>migrations</li>
+<li>build.xml</li>
+</ul>
+</li>
+<li>Using the serial date for tracking migrations - <code>date +%s</code></li>
+</ul>
+<h2 id="using-ant-to-run-migrations">Using ant to run migrations</h2>
+<ul>
+<li>Using SDKMAN to manage ant - <a href="http://sdkman.io">sdkman</a> | <a href="http://ant.apache.org/manual/index.html">Ant</a></li>
+<li>Added Ant contrib jar</li>
+<li>Libs used</li>
+<li>ant-contrib-1.0b3.jar  -- ant contrib jar - (Ant contrib task)[http://central.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar]</li>
+<li>postgresql-9.4.1212.jar -- <a href="https://jdbc.postgresql.org">Postgresql</a></li>
+<li>flyway - has the flyway core and ant libraries -- <a href="https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/4.0.3/flyway-ant-4.0.3.tar.gz">Flyway Ant</a></li>
+<li>build.xml in db library</li>
 </ul>
                 
                   

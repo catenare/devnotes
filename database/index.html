@@ -308,15 +308,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work" title="Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work" class="md-nav__link">
-    Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work
+  <a href="#migrations" title="Migrations" class="md-nav__link">
+    Migrations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#database-migrations" title="Database Migrations" class="md-nav__link">
-    Database Migrations
+  <a href="#setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work" title="Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work" class="md-nav__link">
+    Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work
   </a>
   
 </li>
@@ -635,15 +635,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work" title="Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work" class="md-nav__link">
-    Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work
+  <a href="#migrations" title="Migrations" class="md-nav__link">
+    Migrations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#database-migrations" title="Database Migrations" class="md-nav__link">
-    Database Migrations
+  <a href="#setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work" title="Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work" class="md-nav__link">
+    Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work
   </a>
   
 </li>
@@ -714,8 +714,12 @@
 <ul>
 <li>Create entry in <code>/etc/hosts</code></li>
 <li>Remote entry <code>192.168.1.103    paseodb</code></li>
-<li>Local entry  <code>127.0.0.1        paseodb</code></li>
+<li>Local entry  <code>127.0.0.1        db</code></li>
 <li>Will allow access without having to manually change settings everytime.</li>
+</ul>
+<h2 id="migrations">Migrations</h2>
+<ul>
+<li>See <a href="../dbmigrations/">Migrations</a></li>
 </ul>
 <h2 id="setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work"><del>Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)</del> <code>Never got this to work</code></h2>
 <ul>
@@ -773,16 +777,6 @@ Debug       = 1
 Debug = 1
 DebugFile = /tmp/odbcdebug.log
 </code></pre>
-
-<h2 id="database-migrations">Database Migrations</h2>
-<ul>
-<li>Using Flyway for migrations and database version control</li>
-<li>Getting the serial date to use in flyway migrations.<ul>
-<li>Get date on mac os x command line <code>date +%s</code></li>
-</ul>
-</li>
-<li>Use the date rather than the version number to better control how the migrations are applied.</li>
-</ul>
                 
                   
                 
