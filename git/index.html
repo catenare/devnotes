@@ -668,7 +668,7 @@
 <h3 id="git-error-message-cant-merge-unrelated-histories">Git error message. Can't merge unrelated histories.</h3>
 <ul>
 <li>Allow unrelated histories <a href="http://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories">StackOverflow Issue</a></li>
-<li>git pull remote branch --allow-unrelated-histories</li>
+<li><code>git pull remote branch --allow-unrelated-histories</code></li>
 </ul>
 <h3 id="git-error-trying-to-push-when-pull-seems-to-work">Git error trying to push when pull seems to work</h3>
 <pre><code>hint: Updates were rejected because a pushed branch tip is behind its remote
@@ -678,23 +678,28 @@ hint: (e.g. 'git pull ...') before pushing again.
 
 <ul>
 <li><em>Hint:</em> <strong>Read hints</strong></li>
-<li>Checkout out rejected branch. <code>git checkout master</code></li>
+<li>Checkout out rejected branch. <code>git checkout master</code><ul>
 <li><code>git pull {remote} master --allow-unrelated-histories</code></li>
-<li>Fix conflicts and commit</li>
-<li><code>git push {remote} master</code></li>
-</ul>
-<h3 id="removing-sensitive-data-from-git-after-having-committed-removing-sensitive-data-github">Removing sensitive data from git after having committed <a href="https://help.github.com/articles/removing-sensitive-data-from-a-repository/">Removing Sensitive Data - Github</a></h3>
-<pre><code>* ```git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch {path/filename}' --prune-empty --tag-name-filter cat -- --all```
-* ```git push github --force --all```
-</code></pre>
-<ul>
-<li>Remove the references<ul>
-<li><code>git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin</code></li>
-<li><code>git reflog expire --expire=now --all</code></li>
-<li><code>git gc --prune=now</code></li>
 </ul>
 </li>
-<li>No guarantee that the data hasn't been downloaded or forked but at least it's removed going forward.</li>
+<li>Fix conflicts and commit<ul>
+<li><code>git push {remote} master</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="removing-sensitive-data-from-git-after-having-committed-removing-sensitive-data-github">Removing sensitive data from git after having committed <a href="https://help.github.com/articles/removing-sensitive-data-from-a-repository/">Removing Sensitive Data - Github</a></h3>
+<ul>
+<li><code>git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch {path/filename}' --prune-empty --tag-name-filter cat -- --all</code></li>
+<li><code>git push github --force --all</code></li>
+<li>Remove the references</li>
+<li><code>git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin</code></li>
+<li><code>git reflog expire --expire=now --all</code></li>
+<li>
+<p><code>git gc --prune=now</code></p>
+</li>
+<li>
+<p>No guarantee that the data hasn't been downloaded or forked but at least it's removed going forward.</p>
+</li>
 </ul>
 <h3 id="github-markdown">Github Markdown</h3>
 <ul>
