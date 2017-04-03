@@ -4,7 +4,7 @@ site_description: Notes tracking for developing different apps.
 site_author: Johan Martin (http://www.johan-martin.com)
 repo_name: 'GitHub'
 edit_uri: edit/master/md/
-docs_dir: 'md'
+# docs_dir: 'md'
 # site_dir: 'docs'
 copyright: Johan Martin &copy; 2017
 markdown_extensions:
@@ -16,6 +16,7 @@ pages:
   - Database: 
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
+  - Reports: 'reporting.md'
   - Mobile:
     - 'Mobile Dev': 'mobile.md'
   - Languages:
@@ -30,4 +31,5 @@ pages:
     - 'Front-End': 'front.md'
   - Documentation: 'docs.md'
   - 'Other': 'other.md'
+
 
