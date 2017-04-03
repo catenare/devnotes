@@ -86,6 +86,36 @@
             "title": "Using ant to run migrations"
         },
         {
+            "location": "/reporting/",
+            "text": "Reporting Server\n\n\nBirt\n\n\nCurrently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.\n\n\nJasper\n\n\n\n\nSeems to have more moving parts.\n\n\nComes with a server component.\n\n\n\n\nCurrently using Birt to generate invoices.\n\n\n\n\nAll data in postgres DB\n\n\nConnect to postgres DB via jdbc\n\n\nOne view and sql queries to populate the reports\n\n\nSeems to work okay now.\n\n\n\n\nGoals\n\n\n\n\nMobile view of reports. Web based mobile.\n\n\nGenerate reports on demand. Always most relevant data\n\n\nGenerate invoices that will be sent via email.\n\n\nEnable reports for printing. Hardcopies are always nice.\n\n\nWant to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.\n\n\nWant to chart.",
+            "title": "Reports"
+        },
+        {
+            "location": "/reporting/#reporting-server",
+            "text": "",
+            "title": "Reporting Server"
+        },
+        {
+            "location": "/reporting/#birt",
+            "text": "Currently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.",
+            "title": "Birt"
+        },
+        {
+            "location": "/reporting/#jasper",
+            "text": "Seems to have more moving parts.  Comes with a server component.",
+            "title": "Jasper"
+        },
+        {
+            "location": "/reporting/#currently-using-birt-to-generate-invoices",
+            "text": "All data in postgres DB  Connect to postgres DB via jdbc  One view and sql queries to populate the reports  Seems to work okay now.",
+            "title": "Currently using Birt to generate invoices."
+        },
+        {
+            "location": "/reporting/#goals",
+            "text": "Mobile view of reports. Web based mobile.  Generate reports on demand. Always most relevant data  Generate invoices that will be sent via email.  Enable reports for printing. Hardcopies are always nice.  Want to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.  Want to chart.",
+            "title": "Goals"
+        },
+        {
             "location": "/mobile/",
             "text": "Mobile Device Development\n\n\nAndroid\n\n\nLinks\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\nAndroid Developer - Google\n\n\nOther\n\n\nSome Teaching Notes - \n\n\nOther dev tools\n\n\nApp Inventor\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\nCocoapods\n\n\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\n\n\nStackOverflow\n\n\n\n\ncd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose\n\n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
             "title": "Mobile Dev"
@@ -302,7 +332,7 @@
         },
         {
             "location": "/docs/",
-            "text": "Creating Project Documentation\n\n\nUsing \nMkDocs\n\n\n\n\nUses markdown.\n\n\nWorks with github pages.\n\n\nEvery project will have their own documentation\n\n\nStyleguide should be included (frontend)\n\n\nProject goals and requirements\n\n\nNotes about development\n\n\nSetup/install instructions\n\n\nResolution to issues (ongoing FAQ for the projects)\n\n\n\n\n\n\nDocumentation pages stay in gh-pages branch.\n\n\nadded \npymdownx.tilde\n extension to get strikethrough to work.\n\n\nUsing \nmkdocs gh-deploy\n to upload docs.",
+            "text": "Creating Project Documentation\n\n\nUsing \nMkDocs\n\n\n\n\nUses markdown.\n\n\nWorks with github pages.\n\n\nEvery project will have their own documentation\n\n\nStyleguide should be included (frontend)\n\n\nProject goals and requirements\n\n\nNotes about development\n\n\nSetup/install instructions\n\n\nResolution to issues (ongoing FAQ for the projects)\n\n\n\n\n\n\nDocumentation pages stay in gh-pages branch.\n\n\nadded \npymdownx.tilde\n extension to get strikethrough to work.\n\n\nUsing \nmkdocs gh-deploy\n to upload docs.\n\n\n\n\nMkDocs Notes\n\n\n\n\nDocumentation\n\n\nGithub\n\n\n\n\nInstalling Markdown Extensions\n\n\n\n\nPyMdown Extensions Documentation\n\n\nInstallation: \npip install pymdown-extensions\n\n\nUsing:\n\n\npymdownx.tilde\n\n\nmarkdown.extensions.def_list\n\n\n\n\n\n\n\n\nFixing Issues with MkDocs\n\n\n404 error for home page/front page - github gh-pages hosting.\n\n\n:   \nSeems like the home page has to point to an \"index.md\" page for it to work.\n\n\nUsing\n\n\n\n\nmkdocs serve\n - local development server \nhttp:\\localhost:8000\n\n\nmkdocs gh-deploy\n - build docs and push to gh-pages repo in github after committing.\n\n\n\n\nImporting docs into Github\n\n\n\n\nghp-import\n\n\nAlready being used by MkDocs.\n\n\nWould like to use with Sphinx if I convert my documentation to Sphinx.",
             "title": "Documentation"
         },
         {
@@ -316,8 +346,33 @@
             "title": "Using MkDocs"
         },
         {
+            "location": "/docs/#mkdocs-notes",
+            "text": "Documentation  Github",
+            "title": "MkDocs Notes"
+        },
+        {
+            "location": "/docs/#installing-markdown-extensions",
+            "text": "PyMdown Extensions Documentation  Installation:  pip install pymdown-extensions  Using:  pymdownx.tilde  markdown.extensions.def_list",
+            "title": "Installing Markdown Extensions"
+        },
+        {
+            "location": "/docs/#fixing-issues-with-mkdocs",
+            "text": "404 error for home page/front page - github gh-pages hosting.  :    Seems like the home page has to point to an \"index.md\" page for it to work.",
+            "title": "Fixing Issues with MkDocs"
+        },
+        {
+            "location": "/docs/#using",
+            "text": "mkdocs serve  - local development server  http:\\localhost:8000  mkdocs gh-deploy  - build docs and push to gh-pages repo in github after committing.",
+            "title": "Using"
+        },
+        {
+            "location": "/docs/#importing-docs-into-github",
+            "text": "ghp-import  Already being used by MkDocs.  Would like to use with Sphinx if I convert my documentation to Sphinx.",
+            "title": "Importing docs into Github"
+        },
+        {
             "location": "/other/",
-            "text": "Other notes\n\n\nDownloading files with wget\n\n\n\n\nUse \nwget -c\n or \nwget --continue\n to restart a stopped or aborted download",
+            "text": "Other notes\n\n\nDownloading files with wget\n\n\n\n\nUse \nwget -c\n or \nwget --continue\n to restart a stopped or aborted download\n\n\n\n\nUsing Ivy with Ant\n\n\n\n\nDownload \nApache Ivy\n\n\nPut files into ant/lib directory.\n\n\nLib directory at \n~/.ant/lib\n - Using sdkman to manage Ant.",
             "title": "Other"
         },
         {
@@ -329,6 +384,11 @@
             "location": "/other/#downloading-files-with-wget",
             "text": "Use  wget -c  or  wget --continue  to restart a stopped or aborted download",
             "title": "Downloading files with wget"
+        },
+        {
+            "location": "/other/#using-ivy-with-ant",
+            "text": "Download  Apache Ivy  Put files into ant/lib directory.  Lib directory at  ~/.ant/lib  - Using sdkman to manage Ant.",
+            "title": "Using Ivy with Ant"
         }
     ]
 }

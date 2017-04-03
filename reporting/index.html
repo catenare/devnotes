@@ -19,7 +19,7 @@
     
     
       
-        <title>Ruby - Development Notes for Johan Martin</title>
+        <title>Reports - Development Notes for Johan Martin</title>
       
     
     
@@ -81,12 +81,8 @@
                   Sections
                 </span>
               
-                <span class="md-header-nav__parent">
-                  Languages
-                </span>
-              
             
-            Ruby
+            Reports
           
         </span>
       </div>
@@ -272,11 +268,68 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../reporting/" title="Reports" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Reports
+      </label>
+    
+    <a href="./" title="Reports" class="md-nav__link md-nav__link--active">
       Reports
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#birt" title="Birt" class="md-nav__link">
+    Birt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jasper" title="Jasper" class="md-nav__link">
+    Jasper
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currently-using-birt-to-generate-invoices" title="Currently using Birt to generate invoices." class="md-nav__link">
+    Currently using Birt to generate invoices.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goals" title="Goals" class="md-nav__link">
+    Goals
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -320,12 +373,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
     
     <label class="md-nav__link" for="nav-2-4">
       Languages
@@ -365,54 +416,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Ruby
-      </label>
-    
-    <a href="./" title="Ruby" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../ruby/" title="Ruby" class="md-nav__link">
       Ruby
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-rvm-to-install-ruby-after-upgrading-os-x" title="Using RVM to install Ruby after upgrading OS x" class="md-nav__link">
-    Using RVM to install Ruby after upgrading OS x
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unable-to-run-a-command-from-a-gem-when-installed-with-gem-install" title="Unable to run a command from a gem when installed with gem install" class="md-nav__link">
-    Unable to run a command from a gem when installed with gem install
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -579,15 +587,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-rvm-to-install-ruby-after-upgrading-os-x" title="Using RVM to install Ruby after upgrading OS x" class="md-nav__link">
-    Using RVM to install Ruby after upgrading OS x
+  <a href="#birt" title="Birt" class="md-nav__link">
+    Birt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#unable-to-run-a-command-from-a-gem-when-installed-with-gem-install" title="Unable to run a command from a gem when installed with gem install" class="md-nav__link">
-    Unable to run a command from a gem when installed with gem install
+  <a href="#jasper" title="Jasper" class="md-nav__link">
+    Jasper
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currently-using-birt-to-generate-invoices" title="Currently using Birt to generate invoices." class="md-nav__link">
+    Currently using Birt to generate invoices.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goals" title="Goals" class="md-nav__link">
+    Goals
   </a>
   
 </li>
@@ -606,21 +628,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/catenare/devnotes/edit/master/md/ruby.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/catenare/devnotes/edit/master/md/reporting.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="ruby-notes">Ruby Notes</h1>
-<h2 id="using-rvm-to-install-ruby-after-upgrading-os-x">Using RVM to install Ruby after upgrading OS x</h2>
+                <h1 id="reporting-server">Reporting Server</h1>
+<h2 id="birt"><a href="http://www.eclipse.org/birt/">Birt</a></h2>
+<p>Currently using Birt for generating reports and invoices for the child center.
+* Setup
+  1. Download Birt report designer
+  1. Create report using designer.
+    * Connect to database using jdbc connector
+  1. Built-in report generator - create PDF versions of report.</p>
+<h2 id="jasper"><a href="http://community.jaspersoft.com/">Jasper</a></h2>
 <ul>
-<li>Error message: <code>dyld: Symbol not found: _clock_gettime</code></li>
-<li>Solution <strong>This worked for me</strong>: <code>xcode-select --install</code> - Installed command line clients from os x.</li>
+<li>Seems to have more moving parts.</li>
+<li>Comes with a server component.</li>
 </ul>
-<h2 id="unable-to-run-a-command-from-a-gem-when-installed-with-gem-install">Unable to run a command from a gem when installed with <em>gem install</em></h2>
+<h2 id="currently-using-birt-to-generate-invoices">Currently using Birt to generate invoices.</h2>
 <ul>
-<li>Example: <em>gem install cocoapods</em>. Expect to use <em>pod</em> as a commandline client.</li>
-<li>Solution: <strong>rvm use ruby-{current}</strong></li>
-<li>Problem related to rvm not setting up a default ruby.</li>
+<li>All data in postgres DB</li>
+<li>Connect to postgres DB via jdbc</li>
+<li>One view and sql queries to populate the reports</li>
+<li>Seems to work okay now.</li>
 </ul>
+<h2 id="goals">Goals</h2>
+<ol>
+<li>Mobile view of reports. Web based mobile.</li>
+<li>Generate reports on demand. Always most relevant data</li>
+<li>Generate invoices that will be sent via email.</li>
+<li>Enable reports for printing. Hardcopies are always nice.</li>
+<li>Want to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.</li>
+<li>Want to chart.</li>
+</ol>
                 
                   
                 
@@ -639,7 +678,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../python/" title="Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../dbmigrations/" title="Migrations" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -648,19 +687,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Python
+                Migrations
               </span>
             </div>
           </a>
         
         
-          <a href="../spring/" title="Spring" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../mobile/" title="Mobile Dev" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Spring
+                Mobile Dev
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
