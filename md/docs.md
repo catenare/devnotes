@@ -31,3 +31,8 @@
 ## Using
 * `mkdocs serve` - local development server *http:\\localhost:8000*
 * `mkdocs gh-deploy` - build docs and push to gh-pages repo in github after committing.
+
+## Importing docs into Github
+* [ghp-import](https://github.com/davisp/ghp-import)
+* Already being used by MkDocs.
+* Would like to use with Sphinx if I convert my documentation to Sphinx.
