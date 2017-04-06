@@ -237,7 +237,7 @@
         },
         {
             "location": "/git/",
-            "text": "Git notes\n\n\nUsing git for version control. Lessons learned.\n\n\nGit error message. Can't merge unrelated histories.\n\n\n\n\nAllow unrelated histories \nStackOverflow Issue\n\n\ngit pull remote branch --allow-unrelated-histories\n\n\n\n\nGit error trying to push when pull seems to work\n\n\nhint: Updates were rejected because a pushed branch tip is behind its remote\nhint: counterpart. Check out this branch and integrate the remote changes\nhint: (e.g. 'git pull ...') before pushing again.\n\n\n\n\n\n\nHint:\n \nRead hints\n\n\nCheckout out rejected branch. \ngit checkout master\n\n\ngit pull {remote} master --allow-unrelated-histories\n\n\n\n\n\n\nFix conflicts and commit\n\n\ngit push {remote} master\n\n\n\n\n\n\n\n\nRemoving sensitive data from git after having committed \nRemoving Sensitive Data - Github\n\n\n\n\ngit filter-branch --force --index-filter 'git rm --cached --ignore-unmatch {path/filename}' --prune-empty --tag-name-filter cat -- --all\n\n\ngit push github --force --all\n\n\nRemove the references\n\n\ngit for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin\n\n\ngit reflog expire --expire=now --all\n\n\n\n\ngit gc --prune=now\n\n\n\n\n\n\nNo guarantee that the data hasn't been downloaded or forked but at least it's removed going forward.\n\n\n\n\n\n\nGithub Markdown\n\n\n\n\nLanguages for code blocks - \nhighlights.js\n\n\nEmoji List - :bowtie \nEmoji Cheat Sheet",
+            "text": "Git notes\n\n\nUsing git for version control. Lessons learned.\n\n\nGit Resources\n\n\n.gitignore\n\n\n\n\nResources\n\n\n.gitignore templates\n\n\nCollection of .gitignore templates\n\n\n\n\n\n\ngitignore.io\n\n\nGlobal .gitignore \nStackoverflow 7335420\n\n\n~/.config/git/ignore\n - default location\n\n\ngit config --global core.excludesfile '~/.gitignore'\n - set the location\n\n\n\n\nGit error message. Can't merge unrelated histories.\n\n\n\n\nAllow unrelated histories \nStackOverflow Issue\n\n\ngit pull remote branch --allow-unrelated-histories\n\n\n\n\nGit error trying to push when pull seems to work\n\n\nhint: Updates were rejected because a pushed branch tip is behind its remote\nhint: counterpart. Check out this branch and integrate the remote changes\nhint: (e.g. 'git pull ...') before pushing again.\n\n\n\n\n\n\nHint:\n \nRead hints\n\n\nCheckout out rejected branch. \ngit checkout master\n\n\ngit pull {remote} master --allow-unrelated-histories\n\n\n\n\n\n\nFix conflicts and commit\n\n\ngit push {remote} master\n\n\n\n\n\n\n\n\nRemoving sensitive data from git after having committed \nRemoving Sensitive Data - Github\n\n\n\n\ngit filter-branch --force --index-filter 'git rm --cached --ignore-unmatch {path/filename}' --prune-empty --tag-name-filter cat -- --all\n\n\ngit push github --force --all\n\n\nRemove the references\n\n\ngit for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin\n\n\ngit reflog expire --expire=now --all\n\n\n\n\ngit gc --prune=now\n\n\n\n\n\n\nNo guarantee that the data hasn't been downloaded or forked but at least it's removed going forward.\n\n\n\n\n\n\nGithub Markdown\n\n\n\n\nLanguages for code blocks - \nhighlights.js\n\n\nEmoji List - :bowtie \nEmoji Cheat Sheet",
             "title": "Git"
         },
         {
@@ -249,6 +249,16 @@
             "location": "/git/#using-git-for-version-control-lessons-learned",
             "text": "",
             "title": "Using git for version control. Lessons learned."
+        },
+        {
+            "location": "/git/#git-resources",
+            "text": "",
+            "title": "Git Resources"
+        },
+        {
+            "location": "/git/#gitignore",
+            "text": "Resources  .gitignore templates  Collection of .gitignore templates    gitignore.io  Global .gitignore  Stackoverflow 7335420  ~/.config/git/ignore  - default location  git config --global core.excludesfile '~/.gitignore'  - set the location",
+            "title": ".gitignore"
         },
         {
             "location": "/git/#git-error-message-cant-merge-unrelated-histories",
@@ -329,6 +339,21 @@
             "location": "/front/#tools-to-watch",
             "text": "Electrode  - made by Walmart. ReactJS framework essentially.  Vue.js  - another front-end framework.",
             "title": "Tools to watch"
+        },
+        {
+            "location": "/research/",
+            "text": "Projects of interest\n\n\nWeb\n\n\n\n\nVapor\n - Swift3 framework for web application development.",
+            "title": "Research"
+        },
+        {
+            "location": "/research/#projects-of-interest",
+            "text": "",
+            "title": "Projects of interest"
+        },
+        {
+            "location": "/research/#web",
+            "text": "Vapor  - Swift3 framework for web application development.",
+            "title": "Web"
         },
         {
             "location": "/docs/",
