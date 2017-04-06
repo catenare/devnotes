@@ -342,7 +342,7 @@
         },
         {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\n\n\nVapor\n - Swift3 framework for web application development.",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.",
             "title": "Research"
         },
         {
@@ -352,8 +352,13 @@
         },
         {
             "location": "/research/#web",
-            "text": "Vapor  - Swift3 framework for web application development.",
+            "text": "",
             "title": "Web"
+        },
+        {
+            "location": "/research/#tools-to-watch",
+            "text": "Vapor  - Swift3 framework for web application development.  Electrode  - made by Walmart. ReactJS framework essentially.  Vue.js  - another front-end framework.",
+            "title": "Tools to watch"
         },
         {
             "location": "/docs/",
