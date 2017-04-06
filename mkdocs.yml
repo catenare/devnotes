@@ -29,6 +29,7 @@ pages:
     - 'Git': 'git.md'
   - 'Web Development':
     - 'Front-End': 'front.md'
+  - Research: 'research.md'
   - Documentation: 'docs.md'
   - 'Other': 'other.md'
 
