@@ -282,7 +282,7 @@
         },
         {
             "location": "/front/",
-            "text": "Web Development Tools - finding tools that are really useful for editing\n\n\nTools\n\n\nEmmet\n\n\n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nTools to watch\n\n\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.",
+            "text": "Web Development Tools - finding tools that are really useful for editing\n\n\nTools\n\n\nEmmet\n\n\n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nResources\n\n\n\n\nhttps://frontend.directory",
             "title": "Front-End"
         },
         {
@@ -336,13 +336,8 @@
             "title": "Resources"
         },
         {
-            "location": "/front/#tools-to-watch",
-            "text": "Electrode  - made by Walmart. ReactJS framework essentially.  Vue.js  - another front-end framework.",
-            "title": "Tools to watch"
-        },
-        {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python",
             "title": "Research"
         },
         {
@@ -359,6 +354,11 @@
             "location": "/research/#tools-to-watch",
             "text": "Vapor  - Swift3 framework for web application development.  Electrode  - made by Walmart. ReactJS framework essentially.  Vue.js  - another front-end framework.",
             "title": "Tools to watch"
+        },
+        {
+            "location": "/research/#python",
+            "text": "Python books online  Invent with python",
+            "title": "Python"
         },
         {
             "location": "/docs/",
