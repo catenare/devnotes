@@ -12,13 +12,10 @@ markdown_extensions:
 theme: 'material'
 pages:
 - Home: 'index.md'
-- Sections:
+- Development:
   - Database: 
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
-  - Reports: 'reporting.md'
-  - Mobile:
-    - 'Mobile Dev': 'mobile.md'
   - Languages:
     - 'PHP': 'php.md'
     - 'Python': 'python.md'
@@ -29,9 +26,12 @@ pages:
     - 'Git': 'git.md'
   - 'Web Development':
     - 'Front-End': 'front.md'
-  - Research: 'research.md'
-  - Documentation: 'docs.md'
-  - 'Other': 'other.md'
-  - 'Command Line': 'cmd.md'
+  - Mobile:
+    - 'Mobile Dev': 'mobile.md'
+- Reports: 'reporting.md'
+- Research: 'research.md'
+- Documentation: 'docs.md'
+- 'Other': 'other.md'
+- 'Command Line': 'cmd.md'
 
 
