@@ -272,7 +272,7 @@
         },
         {
             "location": "/mobile/",
-            "text": "Mobile Device Development\n\n\nAndroid\n\n\nLinks\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\nAndroid Developer - Google\n\n\nOther\n\n\nSome Teaching Notes - \n\n\nOther dev tools\n\n\nApp Inventor\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\nCocoapods\n\n\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\n\n\nStackOverflow\n\n\n\n\ncd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose\n\n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
+            "text": "Mobile Device Development\n\n\nAndroid\n\n\nLinks\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\nAndroid Developer - Google\n\n\n\n\n\n\nOther\n\n\nSome Teaching Notes - \n\n\n\n\n\n\nOther dev tools\n\n\nApp Inventor\n\n\n\n\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\n\n\nCocoapods\n\n\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\nStackOverflow\n\n\n\n\ncd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose\n\n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
             "title": "Mobile Dev"
         },
         {
@@ -287,7 +287,7 @@
         },
         {
             "location": "/mobile/#links",
-            "text": "Google Tools  Android Studio  Android Developer - Google  Other  Some Teaching Notes -   Other dev tools  App Inventor",
+            "text": "Google Tools  Android Studio  Android Developer - Google    Other  Some Teaching Notes -     Other dev tools  App Inventor",
             "title": "Links"
         },
         {
@@ -302,7 +302,7 @@
         },
         {
             "location": "/mobile/#ios-development-notes",
-            "text": "Cocoapods   Issue:  Unable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add   StackOverflow   cd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose \n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
+            "text": "Cocoapods   Issue:  Unable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add  StackOverflow   cd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose \n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
             "title": "IOS Development Notes"
         },
         {
@@ -337,7 +337,7 @@
         },
         {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python",
             "title": "Research"
         },
         {
@@ -354,6 +354,11 @@
             "location": "/research/#tools-to-watch",
             "text": "Vapor  - Swift3 framework for web application development.  Electrode  - made by Walmart. ReactJS framework essentially.  Vue.js  - another front-end framework.",
             "title": "Tools to watch"
+        },
+        {
+            "location": "/research/#javascript",
+            "text": "elm  Tutorial",
+            "title": "JavaScript"
         },
         {
             "location": "/research/#python",
@@ -421,17 +426,17 @@
             "title": "Using Ivy with Ant"
         },
         {
-            "location": "/cmd/",
+            "location": "/cmd/cmd/",
             "text": "Command Line Notes\n\n\nMac OS X\n\n\n\n\nChange file attribute from hidden to unhidden\n\n\nchflags nohidden /path/to/file/or/files/",
             "title": "Command Line"
         },
         {
-            "location": "/cmd/#command-line-notes",
+            "location": "/cmd/cmd/#command-line-notes",
             "text": "",
             "title": "Command Line Notes"
         },
         {
-            "location": "/cmd/#mac-os-x",
+            "location": "/cmd/cmd/#mac-os-x",
             "text": "Change file attribute from hidden to unhidden  chflags nohidden /path/to/file/or/files/",
             "title": "Mac OS X"
         }
