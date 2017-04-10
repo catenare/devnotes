@@ -32,6 +32,6 @@ pages:
 - Research: 'research.md'
 - Documentation: 'docs.md'
 - 'Other': 'other.md'
-- 'Command Line': 'cmd.md'
+- 'Command Line': 'cmd/cmd.md'
 
 

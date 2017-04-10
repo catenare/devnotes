@@ -6,6 +6,10 @@
 * [Electrode](http://www.electrode.io/index.html) - made by Walmart. ReactJS framework essentially.
 * [Vue.js](http://vuejs.org/v2/guide/) - another front-end framework.
 
+### JavaScript
+* [elm](http://elm-lang.org/)
+  * [Tutorial](https://guide.elm-lang.org/)
+
 ## Python
 * Python books online [Invent with python](http://inventwithpython.com)
 
