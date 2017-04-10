@@ -86,71 +86,6 @@
             "title": "Using ant to run migrations"
         },
         {
-            "location": "/reporting/",
-            "text": "Reporting Server\n\n\nBirt\n\n\nCurrently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.\n\n\nJasper\n\n\n\n\nSeems to have more moving parts.\n\n\nComes with a server component.\n\n\n\n\nCurrently using Birt to generate invoices.\n\n\n\n\nAll data in postgres DB\n\n\nConnect to postgres DB via jdbc\n\n\nOne view and sql queries to populate the reports\n\n\nSeems to work okay now.\n\n\n\n\nGoals\n\n\n\n\nMobile view of reports. Web based mobile.\n\n\nGenerate reports on demand. Always most relevant data\n\n\nGenerate invoices that will be sent via email.\n\n\nEnable reports for printing. Hardcopies are always nice.\n\n\nWant to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.\n\n\nWant to chart.",
-            "title": "Reports"
-        },
-        {
-            "location": "/reporting/#reporting-server",
-            "text": "",
-            "title": "Reporting Server"
-        },
-        {
-            "location": "/reporting/#birt",
-            "text": "Currently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.",
-            "title": "Birt"
-        },
-        {
-            "location": "/reporting/#jasper",
-            "text": "Seems to have more moving parts.  Comes with a server component.",
-            "title": "Jasper"
-        },
-        {
-            "location": "/reporting/#currently-using-birt-to-generate-invoices",
-            "text": "All data in postgres DB  Connect to postgres DB via jdbc  One view and sql queries to populate the reports  Seems to work okay now.",
-            "title": "Currently using Birt to generate invoices."
-        },
-        {
-            "location": "/reporting/#goals",
-            "text": "Mobile view of reports. Web based mobile.  Generate reports on demand. Always most relevant data  Generate invoices that will be sent via email.  Enable reports for printing. Hardcopies are always nice.  Want to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.  Want to chart.",
-            "title": "Goals"
-        },
-        {
-            "location": "/mobile/",
-            "text": "Mobile Device Development\n\n\nAndroid\n\n\nLinks\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\nAndroid Developer - Google\n\n\nOther\n\n\nSome Teaching Notes - \n\n\nOther dev tools\n\n\nApp Inventor\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\nCocoapods\n\n\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\n\n\nStackOverflow\n\n\n\n\ncd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose\n\n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
-            "title": "Mobile Dev"
-        },
-        {
-            "location": "/mobile/#mobile-device-development",
-            "text": "",
-            "title": "Mobile Device Development"
-        },
-        {
-            "location": "/mobile/#android",
-            "text": "",
-            "title": "Android"
-        },
-        {
-            "location": "/mobile/#links",
-            "text": "Google Tools  Android Studio  Android Developer - Google  Other  Some Teaching Notes -   Other dev tools  App Inventor",
-            "title": "Links"
-        },
-        {
-            "location": "/mobile/#solutions",
-            "text": "Problem:  Launching Android SDK Manager without going through Atom Studio  ~/Library/Android/sdk/tools/android  For AVD   ~/Library/Android/sdk/tools/android avd  StackOverflow  Lauch AVD -  StackOverflow",
-            "title": "Solutions"
-        },
-        {
-            "location": "/mobile/#ios",
-            "text": "",
-            "title": "IOS"
-        },
-        {
-            "location": "/mobile/#ios-development-notes",
-            "text": "Cocoapods   Issue:  Unable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add   StackOverflow   cd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose \n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
-            "title": "IOS Development Notes"
-        },
-        {
             "location": "/php/",
             "text": "Wordpress Development notes\n\n\nUsing sqlite as the database\n\n\n\n\nUse sqlite plugin for sqlite - \nSQLite Integration\n\n\nUse for lightweight development.\n\n\n\n\nTo enable php71-apache2handler, run:\n\n\n\n\ncd /opt/local/apache2/modules\n\n\nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so",
             "title": "PHP"
@@ -336,6 +271,71 @@
             "title": "Resources"
         },
         {
+            "location": "/mobile/",
+            "text": "Mobile Device Development\n\n\nAndroid\n\n\nLinks\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\nAndroid Developer - Google\n\n\nOther\n\n\nSome Teaching Notes - \n\n\nOther dev tools\n\n\nApp Inventor\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\nCocoapods\n\n\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\n\n\nStackOverflow\n\n\n\n\ncd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose\n\n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
+            "title": "Mobile Dev"
+        },
+        {
+            "location": "/mobile/#mobile-device-development",
+            "text": "",
+            "title": "Mobile Device Development"
+        },
+        {
+            "location": "/mobile/#android",
+            "text": "",
+            "title": "Android"
+        },
+        {
+            "location": "/mobile/#links",
+            "text": "Google Tools  Android Studio  Android Developer - Google  Other  Some Teaching Notes -   Other dev tools  App Inventor",
+            "title": "Links"
+        },
+        {
+            "location": "/mobile/#solutions",
+            "text": "Problem:  Launching Android SDK Manager without going through Atom Studio  ~/Library/Android/sdk/tools/android  For AVD   ~/Library/Android/sdk/tools/android avd  StackOverflow  Lauch AVD -  StackOverflow",
+            "title": "Solutions"
+        },
+        {
+            "location": "/mobile/#ios",
+            "text": "",
+            "title": "IOS"
+        },
+        {
+            "location": "/mobile/#ios-development-notes",
+            "text": "Cocoapods   Issue:  Unable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add   StackOverflow   cd ~/.cocoapods/repos\ngit clone git://github.com/CocoaPods/Specs.git master\npod install --no-repo-update --verbose \n* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
+            "title": "IOS Development Notes"
+        },
+        {
+            "location": "/reporting/",
+            "text": "Reporting Server\n\n\nBirt\n\n\nCurrently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.\n\n\nJasper\n\n\n\n\nSeems to have more moving parts.\n\n\nComes with a server component.\n\n\n\n\nCurrently using Birt to generate invoices.\n\n\n\n\nAll data in postgres DB\n\n\nConnect to postgres DB via jdbc\n\n\nOne view and sql queries to populate the reports\n\n\nSeems to work okay now.\n\n\n\n\nGoals\n\n\n\n\nMobile view of reports. Web based mobile.\n\n\nGenerate reports on demand. Always most relevant data\n\n\nGenerate invoices that will be sent via email.\n\n\nEnable reports for printing. Hardcopies are always nice.\n\n\nWant to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.\n\n\nWant to chart.",
+            "title": "Reports"
+        },
+        {
+            "location": "/reporting/#reporting-server",
+            "text": "",
+            "title": "Reporting Server"
+        },
+        {
+            "location": "/reporting/#birt",
+            "text": "Currently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.",
+            "title": "Birt"
+        },
+        {
+            "location": "/reporting/#jasper",
+            "text": "Seems to have more moving parts.  Comes with a server component.",
+            "title": "Jasper"
+        },
+        {
+            "location": "/reporting/#currently-using-birt-to-generate-invoices",
+            "text": "All data in postgres DB  Connect to postgres DB via jdbc  One view and sql queries to populate the reports  Seems to work okay now.",
+            "title": "Currently using Birt to generate invoices."
+        },
+        {
+            "location": "/reporting/#goals",
+            "text": "Mobile view of reports. Web based mobile.  Generate reports on demand. Always most relevant data  Generate invoices that will be sent via email.  Enable reports for printing. Hardcopies are always nice.  Want to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.  Want to chart.",
+            "title": "Goals"
+        },
+        {
             "location": "/research/",
             "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python",
             "title": "Research"
@@ -419,6 +419,21 @@
             "location": "/other/#using-ivy-with-ant",
             "text": "Download  Apache Ivy  Put files into ant/lib directory.  Lib directory at  ~/.ant/lib  - Using sdkman to manage Ant.",
             "title": "Using Ivy with Ant"
+        },
+        {
+            "location": "/cmd/",
+            "text": "Command Line Notes\n\n\nMac OS X\n\n\n\n\nChange file attribute from hidden to unhidden\n\n\nchflags nohidden /path/to/file/or/files/",
+            "title": "Command Line"
+        },
+        {
+            "location": "/cmd/#command-line-notes",
+            "text": "",
+            "title": "Command Line Notes"
+        },
+        {
+            "location": "/cmd/#mac-os-x",
+            "text": "Change file attribute from hidden to unhidden  chflags nohidden /path/to/file/or/files/",
+            "title": "Mac OS X"
         }
     ]
 }
