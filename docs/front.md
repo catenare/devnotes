@@ -34,6 +34,3 @@
 ## Resources
 * [https://frontend.directory](https://frontend.directory/p)
 
-## Tools to watch
-* [Electrode](http://www.electrode.io/index.html) - made by Walmart. ReactJS framework essentially.
-* [Vue.js](http://vuejs.org/v2/guide/) - another front-end framework.

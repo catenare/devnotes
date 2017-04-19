@@ -1,6 +1,16 @@
 # Git notes
 ## Using git for version control. Lessons learned.
 
+### Git Resources
+#### .gitignore
+* Resources
+  * [.gitignore templates](https://github.com/github/gitignore)
+    * Collection of .gitignore templates
+  * [gitignore.io](https://www.gitignore.io/)
+* Global .gitignore [Stackoverflow 7335420](http://stackoverflow.com/questions/7335420/global-git-ignore)
+  * `~/.config/git/ignore` - default location
+  * `git config --global core.excludesfile '~/.gitignore'` - set the location
+  
 ### Git error message. Can't merge unrelated histories.
 * Allow unrelated histories [StackOverflow Issue](http://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories)
   * `git pull remote branch --allow-unrelated-histories`
