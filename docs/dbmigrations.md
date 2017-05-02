@@ -32,3 +32,10 @@
   * postgresql-9.4.1212.jar -- [Postgresql](https://jdbc.postgresql.org)
   * flyway - has the flyway core and ant libraries -- [Flyway Ant](https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/4.0.3/flyway-ant-4.0.3.tar.gz)
   * build.xml in db library
+
+## Deleting a migration.
+### Can't delete a migration, only repair it.
+1. Comment out the commands in the migration mistake you are eliminating.
+1. Run ```ant repair``` to fix the checksums for the migrations
+1. Validate the current tatus ```ant validate```
+1. Flyway should be back to the status it is suppose to be in.
