@@ -25,3 +25,7 @@ Currently using Birt for generating reports and invoices for the child center.
 1. Enable reports for printing. Hardcopies are always nice.
 1. Want to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.
 1. Want to chart.
+
+## Issue with Eclipse (starting up report server)
+* [Eclipse Wiki](https://wiki.eclipse.org/Eclipse.ini)
+    * Fix issue to set explicit JVM for Eclipse.
