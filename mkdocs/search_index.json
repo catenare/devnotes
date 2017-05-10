@@ -57,7 +57,7 @@
         },
         {
             "location": "/dbmigrations/",
-            "text": "Database migrations with Flyway\n\n\nVersion control/management of updates\n\n\nUsing Flyway for database version control\n\n\n\n\nRecommendations:\n\n\nUse timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment\n\n\nLessons Learned Using Flyway DB with Distributed Version Control\n\n\nGet date on mac os x command line \ndate +%s\n\n\n\n\n\n\nUse git to track migrations - flyway notices if a migration file changes and causes issues\n\n\n\n\nSetting up flyway\n\n\n\n\nSqlite jdbc driver - \nxerial/sqlite-jdbc\n - for prototyping\n\n\nPostgresql JDBC Driver - \nPostgresql\n\n\nFlyway ant library - \nFlyway Ant\n\n\nDirectory Structure\n\n\ndb\n\n\nconf/\n\n\nflyway.conf\n\n\nlibs/\n\n\nflyway/ # Flyway ant\n\n\npostgresql-9.4.1212.jar\n\n\nant-contrib-1.0b3.jar\n\n\nmigrations\n\n\nbuild.xml\n\n\n\n\n\n\nUsing the serial date for tracking migrations - \ndate +%s\n\n\n\n\nUsing ant to run migrations\n\n\n\n\nUsing SDKMAN to manage ant - \nsdkman\n | \nAnt\n\n\nAdded Ant contrib jar\n\n\nLibs used\n\n\nant-contrib-1.0b3.jar  -- ant contrib jar - (Ant contrib task)[http://central.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar]\n\n\npostgresql-9.4.1212.jar -- \nPostgresql\n\n\nflyway - has the flyway core and ant libraries -- \nFlyway Ant\n\n\nbuild.xml in db library",
+            "text": "Database migrations with Flyway\n\n\nVersion control/management of updates\n\n\nUsing Flyway for database version control\n\n\n\n\nRecommendations:\n\n\nUse timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment\n\n\nLessons Learned Using Flyway DB with Distributed Version Control\n\n\nGet date on mac os x command line \ndate +%s\n\n\n\n\n\n\nUse git to track migrations - flyway notices if a migration file changes and causes issues\n\n\n\n\nSetting up flyway\n\n\n\n\nSqlite jdbc driver - \nxerial/sqlite-jdbc\n - for prototyping\n\n\nPostgresql JDBC Driver - \nPostgresql\n\n\nFlyway ant library - \nFlyway Ant\n\n\nDirectory Structure\n\n\ndb\n\n\nconf/\n\n\nflyway.conf\n\n\nlibs/\n\n\nflyway/ # Flyway ant\n\n\npostgresql-9.4.1212.jar\n\n\nant-contrib-1.0b3.jar\n\n\nmigrations\n\n\nbuild.xml\n\n\n\n\n\n\nUsing the serial date for tracking migrations - \ndate +%s\n\n\n\n\nUsing ant to run migrations\n\n\n\n\nUsing SDKMAN to manage ant - \nsdkman\n | \nAnt\n\n\nAdded Ant contrib jar\n\n\nLibs used\n\n\nant-contrib-1.0b3.jar  -- ant contrib jar - (Ant contrib task)[http://central.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar]\n\n\npostgresql-9.4.1212.jar -- \nPostgresql\n\n\nflyway - has the flyway core and ant libraries -- \nFlyway Ant\n\n\nbuild.xml in db library\n\n\n\n\nDeleting a migration.\n\n\nCan't delete a migration, only repair it.\n\n\n\n\nComment out the commands in the migration mistake you are eliminating.\n\n\nRun \nant repair\n to fix the checksums for the migrations\n\n\nValidate the current tatus \nant validate\n\n\nFlyway should be back to the status it is suppose to be in.",
             "title": "Migrations"
         },
         {
@@ -86,22 +86,32 @@
             "title": "Using ant to run migrations"
         },
         {
-            "location": "/php/",
+            "location": "/dbmigrations/#deleting-a-migration",
+            "text": "",
+            "title": "Deleting a migration."
+        },
+        {
+            "location": "/dbmigrations/#cant-delete-a-migration-only-repair-it",
+            "text": "Comment out the commands in the migration mistake you are eliminating.  Run  ant repair  to fix the checksums for the migrations  Validate the current tatus  ant validate  Flyway should be back to the status it is suppose to be in.",
+            "title": "Can't delete a migration, only repair it."
+        },
+        {
+            "location": "/php/php/",
             "text": "Wordpress Development notes\n\n\nUsing sqlite as the database\n\n\n\n\nUse sqlite plugin for sqlite - \nSQLite Integration\n\n\nUse for lightweight development.\n\n\n\n\nTo enable php71-apache2handler, run:\n\n\n\n\ncd /opt/local/apache2/modules\n\n\nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so",
             "title": "PHP"
         },
         {
-            "location": "/php/#wordpress-development-notes",
+            "location": "/php/php/#wordpress-development-notes",
             "text": "",
             "title": "Wordpress Development notes"
         },
         {
-            "location": "/php/#using-sqlite-as-the-database",
+            "location": "/php/php/#using-sqlite-as-the-database",
             "text": "Use sqlite plugin for sqlite -  SQLite Integration  Use for lightweight development.",
             "title": "Using sqlite as the database"
         },
         {
-            "location": "/php/#to-enable-php71-apache2handler-run",
+            "location": "/php/php/#to-enable-php71-apache2handler-run",
             "text": "cd /opt/local/apache2/modules  sudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so",
             "title": "To enable php71-apache2handler, run:"
         },
@@ -169,6 +179,46 @@
             "location": "/spring/#steps",
             "text": "Start with maven  mvn archetype:generate -DgroupId=za.co.catenare.tutorial -DartifactId=tutorial -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false  cd tutorial  mvn package  java -cp target/tutorial-1.0-SNAPSHOT.jar za.co.catenare.tutorial.App  Runs the App",
             "title": "Steps"
+        },
+        {
+            "location": "/php/wordpress/",
+            "text": "Setting up Wordpress with Composer, Nginx, PHP-fpm on Mac OS X\n\n\nSettings\n\n\n\n\nMac OS X (10.11.6 & Mac OS Sierra)\n\n\nMacPorts (2.4.1)\n\n\nSoftware\n\n\nphp71\n\n\nmysql57\n\n\nWordpress 4.7\n\n\n\n\n\n\n\n\nResources\n\n\n\n\nnginx documentation - wordpress\n\n\n\n\nInstall Wordpress with composer\n\n\n\n\nInstall composer\n\n\nCreate composer.json file\n\n\n\n\n{\n  \"name\": \"johnpbloch/wordpress\",\n  \"description\": \"WordPress is web software you can use to create a beautiful website or blog.\",\n  \"keywords\": [\n    \"wordpress\",\n    \"blog\",\n    \"cms\"\n  ],\n  \"type\": \"package\",\n  \"homepage\": \"http://wordpress.org/\",\n  \"license\": \"GPL-2.0+\",\n  \"authors\": [\n    {\n      \"name\": \"WordPress Community\",\n      \"homepage\": \"http://wordpress.org/about/\"\n    }\n  ],\n  \"support\": {\n    \"issues\": \"http://core.trac.wordpress.org/\",\n    \"forum\": \"http://wordpress.org/support/\",\n    \"wiki\": \"http://codex.wordpress.org/\",\n    \"irc\": \"irc://irc.freenode.net/wordpress\",\n    \"source\": \"http://core.trac.wordpress.org/browser\"\n  },\n  \"extra\": {\n    \"wordpress-install-dir\": \"public\",\n    \"installer-paths\": {\n      \"public/wp-content/plugins/{$name}\": [\n        \"type:wordpress-plugin\"\n      ],\n      \"public/wp-content/themes/{$name}\": [\n        \"type:wordpress-theme\"\n      ]\n    }\n  },\n  \"require\": {\n    \"php\": \">=5.3.2\",\n    \"johnpbloch/wordpress-core-installer\": \"~0.2\",\n    \"johnpbloch/wordpress-core\": \"dev-master\",\n    \"wpackagist-plugin/buddypress\": \">=2.8.2\",\n    \"wpackagist-plugin/all-in-one-intranet\": \">=1.2\",\n    \"wpackagist-theme/twentyeleven\": \">=2.5\",\n    \"wpackagist-theme/twentyseventeen\": \">=1.2\"\n  },\n  \"repositories\": [\n    {\n      \"type\": \"composer\",\n      \"url\": \"https://wpackagist.org\"\n    }\n  ]\n}\n\n\n\n\n\n\nRun \ncomposer install\n if no composer.lock file present.\n\n\n\n\nSetup ports\n\n\n\n\nsudo port install mysql57-server nginx php71-fpm php71\n\n\n\n\nPorts configuration\n\n\n\n\nSetup mysql server\n\n\nsudo rm -fr /opt/local/var/db/mysql57\n - remove current mysql57 db folder if it exists.\n\n\nsudo /opt/local/lib/mysql57/bin/mysqld --initialize --user=_mysql\n - setup new database and default password\n\n\nmysql -u root -p\n - use password generated with previous step\n\n\nALTER USER 'root'@'localhost' IDENTIFIED BY 'new pass';\n\n\n\n\n\n\n\n\n\n\nSetup php\n\n\ncp /opt/local/etc/php.ini-development /opt/local/etc/php.ini\n\n\nConfigure socket connection for mysql in php.ini\n\n\nEdit [Pdo_mysql] section\n\n\npdo_mysql.default_socket=/opt/local/var/run/mysql57/mysqld.sock\n\n\n\n\n\n\nAdd \ncgi.fix_pathinfo = 0;\n to end of file\n\n\n\n\n\n\n\n\n\n\nConfigure fpm - \n/opt/local/etc/php71\n folder\n\n\ncp php-fpm.conf.default php-fpm.conf\n\n\ncp php-fpm.d/www.conf.default php-fpm.d/www.conf\n\n\nEdit \nphp-fpm.d/www.conf\n to change to socket\n\n;listen = 127.0.0.1:9000\n  listen = \"/opt/local/var/run/php71/php71-fpm.socket\"\n\n\nStart fpm - \nsudo port load php71-fpm\n\n\n\n\n\n\nSetup nginx - \n/opt/local/etc/nginx\n - location of setup file\n   ```\n    server {\n            listen       80;\n            server_name  localhost;\n            root    /path/to/wordpress/public;\n            index   index.php;\n            location = /favicon.ico {\n                log_not_found off;\n                access_log off;\n            }\n            location = /robots.txt {\n                allow all;\n                log_not_found off;\n                access_log off;\n            }\n     location / {\n        try_files $uri $uri/ /index.php?args;\n     }\n\n    location ~ \\.php$ {\n        fastcgi_param   HTTP_PROXY \"\";\n        fastcgi_pass    unix:/opt/local/var/run/php71/php71-fpm.socket;\n        include        fastcgi.conf;\n        fastcgi_intercept_errors on;\n    }\n\n    location ~* \\.(js|css|png|jpg|jpeg|gif|ico)$ {\n        expires max;\n        log_not_found off;\n    }\n\n    # deny access to .htaccess files, if Apache's document root\n    # concurs with nginx's one\n    #\n    #location ~ /\\.ht {\n    #    deny  all;\n    #}\n}\n\n\n\n``\n   * Start nginx -\nsudo port load nginx`\n\n\n\n\n\n\nSetup and install packages\n\n\n\n\nwpackagist\n - Use composer to install packages.",
+            "title": "Wordpress"
+        },
+        {
+            "location": "/php/wordpress/#setting-up-wordpress-with-composer-nginx-php-fpm-on-mac-os-x",
+            "text": "",
+            "title": "Setting up Wordpress with Composer, Nginx, PHP-fpm on Mac OS X"
+        },
+        {
+            "location": "/php/wordpress/#settings",
+            "text": "Mac OS X (10.11.6 & Mac OS Sierra)  MacPorts (2.4.1)  Software  php71  mysql57  Wordpress 4.7",
+            "title": "Settings"
+        },
+        {
+            "location": "/php/wordpress/#resources",
+            "text": "nginx documentation - wordpress",
+            "title": "Resources"
+        },
+        {
+            "location": "/php/wordpress/#install-wordpress-with-composer",
+            "text": "Install composer  Create composer.json file   {\n  \"name\": \"johnpbloch/wordpress\",\n  \"description\": \"WordPress is web software you can use to create a beautiful website or blog.\",\n  \"keywords\": [\n    \"wordpress\",\n    \"blog\",\n    \"cms\"\n  ],\n  \"type\": \"package\",\n  \"homepage\": \"http://wordpress.org/\",\n  \"license\": \"GPL-2.0+\",\n  \"authors\": [\n    {\n      \"name\": \"WordPress Community\",\n      \"homepage\": \"http://wordpress.org/about/\"\n    }\n  ],\n  \"support\": {\n    \"issues\": \"http://core.trac.wordpress.org/\",\n    \"forum\": \"http://wordpress.org/support/\",\n    \"wiki\": \"http://codex.wordpress.org/\",\n    \"irc\": \"irc://irc.freenode.net/wordpress\",\n    \"source\": \"http://core.trac.wordpress.org/browser\"\n  },\n  \"extra\": {\n    \"wordpress-install-dir\": \"public\",\n    \"installer-paths\": {\n      \"public/wp-content/plugins/{$name}\": [\n        \"type:wordpress-plugin\"\n      ],\n      \"public/wp-content/themes/{$name}\": [\n        \"type:wordpress-theme\"\n      ]\n    }\n  },\n  \"require\": {\n    \"php\": \">=5.3.2\",\n    \"johnpbloch/wordpress-core-installer\": \"~0.2\",\n    \"johnpbloch/wordpress-core\": \"dev-master\",\n    \"wpackagist-plugin/buddypress\": \">=2.8.2\",\n    \"wpackagist-plugin/all-in-one-intranet\": \">=1.2\",\n    \"wpackagist-theme/twentyeleven\": \">=2.5\",\n    \"wpackagist-theme/twentyseventeen\": \">=1.2\"\n  },\n  \"repositories\": [\n    {\n      \"type\": \"composer\",\n      \"url\": \"https://wpackagist.org\"\n    }\n  ]\n}   Run  composer install  if no composer.lock file present.",
+            "title": "Install Wordpress with composer"
+        },
+        {
+            "location": "/php/wordpress/#setup-ports",
+            "text": "sudo port install mysql57-server nginx php71-fpm php71",
+            "title": "Setup ports"
+        },
+        {
+            "location": "/php/wordpress/#ports-configuration",
+            "text": "Setup mysql server  sudo rm -fr /opt/local/var/db/mysql57  - remove current mysql57 db folder if it exists.  sudo /opt/local/lib/mysql57/bin/mysqld --initialize --user=_mysql  - setup new database and default password  mysql -u root -p  - use password generated with previous step  ALTER USER 'root'@'localhost' IDENTIFIED BY 'new pass';      Setup php  cp /opt/local/etc/php.ini-development /opt/local/etc/php.ini  Configure socket connection for mysql in php.ini  Edit [Pdo_mysql] section  pdo_mysql.default_socket=/opt/local/var/run/mysql57/mysqld.sock    Add  cgi.fix_pathinfo = 0;  to end of file      Configure fpm -  /opt/local/etc/php71  folder  cp php-fpm.conf.default php-fpm.conf  cp php-fpm.d/www.conf.default php-fpm.d/www.conf  Edit  php-fpm.d/www.conf  to change to socket ;listen = 127.0.0.1:9000\n  listen = \"/opt/local/var/run/php71/php71-fpm.socket\"  Start fpm -  sudo port load php71-fpm    Setup nginx -  /opt/local/etc/nginx  - location of setup file\n   ```\n    server {\n            listen       80;\n            server_name  localhost;\n            root    /path/to/wordpress/public;\n            index   index.php;\n            location = /favicon.ico {\n                log_not_found off;\n                access_log off;\n            }\n            location = /robots.txt {\n                allow all;\n                log_not_found off;\n                access_log off;\n            }      location / {\n        try_files $uri $uri/ /index.php?args;\n     }\n\n    location ~ \\.php$ {\n        fastcgi_param   HTTP_PROXY \"\";\n        fastcgi_pass    unix:/opt/local/var/run/php71/php71-fpm.socket;\n        include        fastcgi.conf;\n        fastcgi_intercept_errors on;\n    }\n\n    location ~* \\.(js|css|png|jpg|jpeg|gif|ico)$ {\n        expires max;\n        log_not_found off;\n    }\n\n    # deny access to .htaccess files, if Apache's document root\n    # concurs with nginx's one\n    #\n    #location ~ /\\.ht {\n    #    deny  all;\n    #}\n}  ``\n   * Start nginx - sudo port load nginx`",
+            "title": "Ports configuration"
+        },
+        {
+            "location": "/php/wordpress/#setup-and-install-packages",
+            "text": "wpackagist  - Use composer to install packages.",
+            "title": "Setup and install packages"
         },
         {
             "location": "/git/",
@@ -307,7 +357,7 @@
         },
         {
             "location": "/reporting/",
-            "text": "Reporting Server\n\n\nBirt\n\n\nCurrently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.\n\n\nJasper\n\n\n\n\nSeems to have more moving parts.\n\n\nComes with a server component.\n\n\n\n\nCurrently using Birt to generate invoices.\n\n\n\n\nAll data in postgres DB\n\n\nConnect to postgres DB via jdbc\n\n\nOne view and sql queries to populate the reports\n\n\nSeems to work okay now.\n\n\n\n\nGoals\n\n\n\n\nMobile view of reports. Web based mobile.\n\n\nGenerate reports on demand. Always most relevant data\n\n\nGenerate invoices that will be sent via email.\n\n\nEnable reports for printing. Hardcopies are always nice.\n\n\nWant to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.\n\n\nWant to chart.",
+            "text": "Reporting Server\n\n\nBirt\n\n\nCurrently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.\n\n\nJasper\n\n\n\n\nSeems to have more moving parts.\n\n\nComes with a server component.\n\n\n\n\nCurrently using Birt to generate invoices.\n\n\n\n\nAll data in postgres DB\n\n\nConnect to postgres DB via jdbc\n\n\nOne view and sql queries to populate the reports\n\n\nSeems to work okay now.\n\n\n\n\nGoals\n\n\n\n\nMobile view of reports. Web based mobile.\n\n\nGenerate reports on demand. Always most relevant data\n\n\nGenerate invoices that will be sent via email.\n\n\nEnable reports for printing. Hardcopies are always nice.\n\n\nWant to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.\n\n\nWant to chart.\n\n\n\n\nIssue with Eclipse (starting up report server)\n\n\n\n\nEclipse Wiki\n\n\nFix issue to set explicit JVM for Eclipse.",
             "title": "Reports"
         },
         {
@@ -336,8 +386,13 @@
             "title": "Goals"
         },
         {
+            "location": "/reporting/#issue-with-eclipse-starting-up-report-server",
+            "text": "Eclipse Wiki  Fix issue to set explicit JVM for Eclipse.",
+            "title": "Issue with Eclipse (starting up report server)"
+        },
+        {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python",
             "title": "Research"
         },
         {
@@ -359,6 +414,11 @@
             "location": "/research/#javascript",
             "text": "elm  Tutorial",
             "title": "JavaScript"
+        },
+        {
+            "location": "/research/#angular",
+            "text": "Tools  Angular Augury  - debug and profile angular 2 apps  Chrome extension",
+            "title": "Angular"
         },
         {
             "location": "/research/#python",
@@ -439,6 +499,36 @@
             "location": "/cmd/cmd/#mac-os-x",
             "text": "Change file attribute from hidden to unhidden  chflags nohidden /path/to/file/or/files/",
             "title": "Mac OS X"
+        },
+        {
+            "location": "/teach/",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment",
+            "title": "Learning Systems"
+        },
+        {
+            "location": "/teach/#teaching-web-development",
+            "text": "",
+            "title": "Teaching web development"
+        },
+        {
+            "location": "/teach/#teaching-tools",
+            "text": "",
+            "title": "Teaching Tools"
+        },
+        {
+            "location": "/teach/#eclipse-che",
+            "text": "Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox",
+            "title": "Eclipse Che"
+        },
+        {
+            "location": "/teach/#creating-learning-environments",
+            "text": "Open Edx",
+            "title": "Creating learning environments"
+        },
+        {
+            "location": "/teach/#online-resources",
+            "text": "Codenvy  Create workspace instances using eclipse che    Thimble  Work with HTML code directly on a browser.    Codepen  Frontend development environment",
+            "title": "Online Resources"
         }
     ]
 }

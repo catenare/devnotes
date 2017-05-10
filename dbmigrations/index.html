@@ -313,6 +313,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#deleting-a-migration" title="Deleting a migration." class="md-nav__link">
+    Deleting a migration.
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cant-delete-a-migration-only-repair-it" title="Can't delete a migration, only repair it." class="md-nav__link">
+    Can't delete a migration, only repair it.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -352,7 +372,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/" title="PHP" class="md-nav__link">
+    <a href="../php/php/" title="PHP" class="md-nav__link">
       PHP
     </a>
   </li>
@@ -414,6 +434,18 @@
   <li class="md-nav__item">
     <a href="../spring/" title="Spring" class="md-nav__link">
       Spring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/" title="Wordpress" class="md-nav__link">
+      Wordpress
     </a>
   </li>
 
@@ -596,6 +628,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../teach/" title="Learning Systems" class="md-nav__link">
+      Learning Systems
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -641,6 +685,26 @@
   <a href="#using-ant-to-run-migrations" title="Using ant to run migrations" class="md-nav__link">
     Using ant to run migrations
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-migration" title="Deleting a migration." class="md-nav__link">
+    Deleting a migration.
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cant-delete-a-migration-only-repair-it" title="Can't delete a migration, only repair it." class="md-nav__link">
+    Can't delete a migration, only repair it.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -702,6 +766,14 @@
 <li>flyway - has the flyway core and ant libraries -- <a href="https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/4.0.3/flyway-ant-4.0.3.tar.gz">Flyway Ant</a></li>
 <li>build.xml in db library</li>
 </ul>
+<h2 id="deleting-a-migration">Deleting a migration.</h2>
+<h3 id="cant-delete-a-migration-only-repair-it">Can't delete a migration, only repair it.</h3>
+<ol>
+<li>Comment out the commands in the migration mistake you are eliminating.</li>
+<li>Run <code>ant repair</code> to fix the checksums for the migrations</li>
+<li>Validate the current tatus <code>ant validate</code></li>
+<li>Flyway should be back to the status it is suppose to be in.</li>
+</ol>
                 
                   
                 
@@ -735,7 +807,7 @@
           </a>
         
         
-          <a href="../php/" title="PHP" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../php/php/" title="PHP" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
