@@ -17,11 +17,12 @@ pages:
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
   - Languages:
-    - 'PHP': 'php.md'
+    - PHP: 'php/php.md'
     - 'Python': 'python.md'
     - 'Ruby': 'ruby.md'
   - Frameworks:
-    - 'Spring': 'spring.md'
+    - Spring: 'spring.md'
+    - Wordpress: 'php/wordpress.md'
   - Version Control:
     - 'Git': 'git.md'
   - 'Web Development':
@@ -31,7 +32,8 @@ pages:
 - Reports: 'reporting.md'
 - Research: 'research.md'
 - Documentation: 'docs.md'
-- 'Other': 'other.md'
+- Other: 'other.md'
 - 'Command Line': 'cmd/cmd.md'
+- 'Learning Systems': 'teach.md'
 
 
