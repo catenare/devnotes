@@ -9,7 +9,7 @@
 
 ## Resources
 * [nginx documentation - wordpress](https://www.nginx.com/resources/wiki/start/topic/recipes/wordpress/)
-
+* [Composer in Wordpress](http://composer.rarst.net/)
 ## Install Wordpress with composer
 * Install composer
 * Create composer.json file
