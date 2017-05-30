@@ -52,11 +52,15 @@
   "require": {
     "php": ">=5.3.2",
     "johnpbloch/wordpress-core-installer": "~0.2",
-    "johnpbloch/wordpress-core": "dev-master",
-    "wpackagist-plugin/buddypress": ">=2.8.2",
-    "wpackagist-plugin/all-in-one-intranet": ">=1.2",
-    "wpackagist-theme/twentyeleven": ">=2.5",
-    "wpackagist-theme/twentyseventeen": ">=1.2"
+    "johnpbloch/wordpress-core": ">=4.7",
+    "wpackagist-plugin/unyson": ">=2.6"
+  },
+  "require-dev":{
+    "wpackagist-plugin/theme-check": ">=20160523",
+    "wpackagist-plugin/wordpress-reset": ">=1.4",
+    "wpackagist-plugin/log-deprecated-notices": ">=0.4",
+    "wpackagist-plugin/debug-bar":">=0.9",
+    "wpackagist-plugin/wordpress-importer": ">=0.6.3"
   },
   "repositories": [
     {
@@ -141,3 +145,6 @@
 ## Other Tools
 * [Wordpress CLI](http://wp-cli.org/) - command line client for wordpress. Definitely worth installing.
     * Possible to install via composer - `composer global require wp-cli/wp-cli`
+
+## Building a theme
+### Notes for building a theme
