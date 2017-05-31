@@ -1,10 +1,11 @@
 # Creating a static page
 * Using [foundation from zurb](http://foundation.zurb.com/)
-## Setting up
+## Installation - [Foundation for Sites](http://foundation.zurb.com/sites)
 1. Install foundation-cli - `npm install --global foundation-cli`
-1. Create new project - `foundation new`
+1. Create new project -  `foundation new --framework sites --template zurb`
     * Use `foundation-zurb-template`
-1. Install building block - `foundation kits install news`
+1. ~~Install building block - `foundation kits install news`~~
+1. `foundation watch`
 ## Resources
 * [Placement Images List](https://www.hanselman.com/blog/TheInternetsBestPlaceholderImageSitesForWebDevelopment.aspx)
     * [Hold It](http://www.placehold.it)
@@ -12,7 +13,8 @@
 ## Notes
 ### Zurb Panini Notes
 * Partials are your friends. 
-    * Inserting values into partions ```{{>partion value="value"}}```
+    * Inserting values into partions `{{>partion value="value"}}`
     * Use `{{#each}}` to iterate over array data
     * Use `filename.variable` to access data from file in data folder
+
 
