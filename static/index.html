@@ -277,6 +277,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#adding-font-awesome-to-your-foundatio-site" title="Adding font-awesome to your foundatio site" class="md-nav__link">
+    Adding font-awesome to your foundatio site
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -681,6 +688,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#adding-font-awesome-to-your-foundatio-site" title="Adding font-awesome to your foundatio site" class="md-nav__link">
+    Adding font-awesome to your foundatio site
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -733,6 +747,67 @@
 <li>Use <code>filename.variable</code> to access data from file in data folder</li>
 </ul>
 </li>
+</ul>
+<h3 id="adding-font-awesome-to-your-foundatio-site">Adding font-awesome to your foundatio site</h3>
+<p><a href="http://foundation.zurb.com/forum/posts/46991-howto-foundation-6-font-awesome-and-other-asset-fonts">HowTo: Foundation 6 Font Awesome and other asset fonts</a>
+<em> <code>bower install fontawesome --save</code>
+</em> Modify <em>config.yml</em></p>
+<pre><code class="yaml">  assets:
+    - &quot;src/assets/**/*&quot;
+    - &quot;!src/assets/{img,js,scss,fonts}/**/*&quot;
+  fonts:
+    - &quot;src/assets/fonts/*&quot;
+    - &quot;bower_components/font-awesome/fonts/*&quot;
+  # Paths to Sass libraries, which can then be loaded with @import
+  sass:
+    - &quot;bower_components/foundation-sites/scss&quot;
+    - &quot;bower_components/motion-ui/src&quot;
+    - &quot;bower_components/font-awesome/scss&quot;
+</code></pre>
+
+<ul>
+<li>Modify <em>gulpfile.babel.js</em></li>
+</ul>
+<pre><code class="javascript">// Build the &quot;dist&quot; folder by running all of the below tasks. Add fonts
+gulp.task('build',
+ gulp.series(clean, gulp.parallel(pages, sass, javascript, images, fonts, copy), styleGuide));
+</code></pre>
+
+<ul>
+<li><em>Add</em></li>
+</ul>
+<pre><code class="javascript">// Copy fonts to the &quot;dist&quot; folder
+function fonts() {
+  return gulp.src(PATHS.fonts)
+    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));
+}
+</code></pre>
+
+<ul>
+<li><em>Modify</em></li>
+</ul>
+<pre><code class="javascript">// Watch for changes to static assets, pages, Sass, and JavaScript
+function watch() {
+  gulp.watch(PATHS.assets, copy);
+  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
+  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
+  gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));
+  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
+  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+  gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));
+  gulp.watch('bower_components/font-awesome/fonts/*').on('all', gulp.series(fonts, browser.reload));
+  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
+}
+</code></pre>
+
+<ul>
+<li>Modify <em>app.css</em> add</li>
+</ul>
+<pre><code class="scss">@import &quot;font-awesome&quot;;
+</code></pre>
+
+<ul>
+<li><code>foundation watch</code> or <code>npm start</code></li>
 </ul>
                 
                   
