@@ -4,12 +4,18 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-05-11</lastmod>
+     <lastmod>2017-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
+    <url>
+     <loc>/static/</loc>
+     <lastmod>2017-05-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
         
     <url>
      <loc></loc>
@@ -52,7 +58,7 @@
     
     <url>
      <loc>/reporting/</loc>
-     <lastmod>2017-05-11</lastmod>
+     <lastmod>2017-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -60,7 +66,7 @@
     
     <url>
      <loc>/research/</loc>
-     <lastmod>2017-05-11</lastmod>
+     <lastmod>2017-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -68,7 +74,7 @@
     
     <url>
      <loc>/docs/</loc>
-     <lastmod>2017-05-11</lastmod>
+     <lastmod>2017-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -76,7 +82,7 @@
     
     <url>
      <loc>/other/</loc>
-     <lastmod>2017-05-11</lastmod>
+     <lastmod>2017-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -84,7 +90,7 @@
     
     <url>
      <loc>/cmd/cmd/</loc>
-     <lastmod>2017-05-11</lastmod>
+     <lastmod>2017-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -92,7 +98,7 @@
     
     <url>
      <loc>/teach/</loc>
-     <lastmod>2017-05-11</lastmod>
+     <lastmod>2017-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
