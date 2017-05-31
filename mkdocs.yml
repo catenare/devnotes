@@ -13,6 +13,7 @@ theme: 'material'
 pages:
 - Home: 'index.md'
 - Development:
+  - 'Static Sites': 'static.md'
   - Database: 
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
