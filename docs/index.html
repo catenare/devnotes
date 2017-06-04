@@ -555,6 +555,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using" title="Using" class="md-nav__link">
+    Using
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-file-mkdocsyml" title="Config file - mkdocs.yml" class="md-nav__link">
+    Config file - mkdocs.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mkdocs-notes" title="MkDocs Notes" class="md-nav__link">
     MkDocs Notes
   </a>
@@ -569,22 +590,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#config-file-mkdocsyml" title="Config file - mkdocs.yml" class="md-nav__link">
-    Config file - mkdocs.yml
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#fixing-issues-with-mkdocs" title="Fixing Issues with MkDocs" class="md-nav__link">
     Fixing Issues with MkDocs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using" title="Using" class="md-nav__link">
-    Using
   </a>
   
 </li>
@@ -669,6 +676,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using" title="Using" class="md-nav__link">
+    Using
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-file-mkdocsyml" title="Config file - mkdocs.yml" class="md-nav__link">
+    Config file - mkdocs.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mkdocs-notes" title="MkDocs Notes" class="md-nav__link">
     MkDocs Notes
   </a>
@@ -683,22 +711,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#config-file-mkdocsyml" title="Config file - mkdocs.yml" class="md-nav__link">
-    Config file - mkdocs.yml
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#fixing-issues-with-mkdocs" title="Fixing Issues with MkDocs" class="md-nav__link">
     Fixing Issues with MkDocs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using" title="Using" class="md-nav__link">
-    Using
   </a>
   
 </li>
@@ -741,23 +755,19 @@
 </ul>
 </li>
 <li>Documentation pages stay in gh-pages branch.</li>
-<li>added <code>pymdownx.tilde</code> extension to get strikethrough to work.</li>
-<li>Using <code>mkdocs gh-deploy</code> to upload docs.</li>
 </ul>
-<h2 id="mkdocs-notes">MkDocs Notes</h2>
+<h2 id="setup">Setup</h2>
+<ol>
+<li>Make virtual environment for python - <code>mkvirtualenv -a . docsdirectory</code></li>
+<li>Install requirements - <code>pip install mkdocs pymdown-extensions pygments mkdocs-material</code></li>
+<li>Create mkdocs project - <code>mkdocs new &lt;project&gt;</code></li>
+<li>Enter into the project</li>
+<li>Edit the <em>mkdocs.yml</em> file</li>
+</ol>
+<h2 id="using">Using</h2>
 <ul>
-<li><a href="http://www.mkdocs.org/">Documentation</a></li>
-<li><a href="https://github.com/mkdocs/mkdocs/">Github</a></li>
-</ul>
-<h2 id="installing-markdown-extensions">Installing Markdown Extensions</h2>
-<ul>
-<li><a href="http://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions Documentation</a></li>
-<li>Installation: <code>pip install pymdown-extensions</code></li>
-<li>Using:<ul>
-<li><em>pymdownx.tilde</em></li>
-<li><em>markdown.extensions.def_list</em></li>
-</ul>
-</li>
+<li><code>mkdocs serve</code> - local development server <em>http:\localhost:8000</em></li>
+<li><code>mkdocs gh-deploy</code> - build docs and push to gh-pages repo in github after committing.</li>
 </ul>
 <h2 id="config-file-mkdocsyml">Config file - <em>mkdocs.yml</em></h2>
 <pre><code class="yaml">site_name: Development Notes for Johan Martin
@@ -774,40 +784,33 @@ markdown_extensions:
 theme: 'material'
 pages:
 - Home: 'index.md'
-- Development:
-  - 'Static Sites': 'static.md'
-  - Database: 
-      - Postgresql: 'database.md'
-      - Migrations: 'dbmigrations.md'
-  - Languages:
-    - PHP: 'php/php.md'
-    - 'Python': 'python.md'
-    - 'Ruby': 'ruby.md'
-  - Frameworks:
-    - Spring: 'spring.md'
-    - Wordpress: 'php/wordpress.md'
-  - Version Control:
-    - 'Git': 'git.md'
-  - 'Web Development':
-    - 'Front-End': 'front.md'
-  - Mobile:
-    - 'Mobile Dev': 'mobile.md'
-- Reports: 'reporting.md'
-- Research: 'research.md'
-- Documentation: 'docs.md'
-- Other: 'other.md'
-- 'Command Line': 'cmd/cmd.md'
-- 'Learning Systems': 'teach.md'
+- Section:
+  - 'Page Sites': 'page.md'
+  - Section: 
+      - sub1: 'sub1.md'
+      - sub2: 'sub2.md'
 </code></pre>
 
-<h2 id="fixing-issues-with-mkdocs">Fixing Issues with MkDocs</h2>
-<p>404 error for home page/front page - github gh-pages hosting.</p>
-<p>:   <em>Seems like the home page has to point to an "index.md" page for it to work.</em></p>
-<h2 id="using">Using</h2>
+<h2 id="mkdocs-notes">MkDocs Notes</h2>
 <ul>
-<li><code>mkdocs serve</code> - local development server <em>http:\localhost:8000</em></li>
-<li><code>mkdocs gh-deploy</code> - build docs and push to gh-pages repo in github after committing.</li>
+<li><a href="http://www.mkdocs.org/">Documentation</a></li>
+<li><a href="https://github.com/mkdocs/mkdocs/">Github</a></li>
+<li>added <code>pymdownx.tilde</code> extension to get strikethrough to work.</li>
+<li>Using <code>mkdocs gh-deploy</code> to upload docs.</li>
 </ul>
+<h2 id="installing-markdown-extensions">Installing Markdown Extensions</h2>
+<ul>
+<li><a href="http://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions Documentation</a></li>
+<li>Installation: <code>pip install pymdown-extensions</code></li>
+<li>Using:<ul>
+<li><em>pymdownx.tilde</em></li>
+<li><em>markdown.extensions.def_list</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="fixing-issues-with-mkdocs">Fixing Issues with MkDocs</h2>
+<p>404 error for home page/front page - github gh-pages hosting.
+:   <em>Seems like the home page has to point to an "index.md" page for it to work.</em></p>
 <h2 id="importing-docs-into-github">Importing docs into Github</h2>
 <ul>
 <li><a href="https://github.com/davisp/ghp-import">ghp-import</a></li>

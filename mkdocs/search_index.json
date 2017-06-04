@@ -477,7 +477,7 @@
         },
         {
             "location": "/docs/",
-            "text": "Creating Project Documentation\n\n\nUsing \nMkDocs\n\n\n\n\nUses markdown.\n\n\nWorks with github pages.\n\n\nEvery project will have their own documentation\n\n\nStyleguide should be included (frontend)\n\n\nProject goals and requirements\n\n\nNotes about development\n\n\nSetup/install instructions\n\n\nResolution to issues (ongoing FAQ for the projects)\n\n\n\n\n\n\nDocumentation pages stay in gh-pages branch.\n\n\nadded \npymdownx.tilde\n extension to get strikethrough to work.\n\n\nUsing \nmkdocs gh-deploy\n to upload docs.\n\n\n\n\nMkDocs Notes\n\n\n\n\nDocumentation\n\n\nGithub\n\n\n\n\nInstalling Markdown Extensions\n\n\n\n\nPyMdown Extensions Documentation\n\n\nInstallation: \npip install pymdown-extensions\n\n\nUsing:\n\n\npymdownx.tilde\n\n\nmarkdown.extensions.def_list\n\n\n\n\n\n\n\n\nConfig file - \nmkdocs.yml\n\n\nsite_name: Development Notes for Johan Martin\nrepo_url: https://github.com/catenare/devnotes\nsite_description: Notes tracking for developing different apps.\nsite_author: Johan Martin (http://www.johan-martin.com)\nrepo_name: 'GitHub'\nedit_uri: edit/master/md/\n# docs_dir: 'md'\n# site_dir: 'docs'\ncopyright: Johan Martin &copy; 2017\nmarkdown_extensions:\n  - pymdownx.tilde\ntheme: 'material'\npages:\n- Home: 'index.md'\n- Development:\n  - 'Static Sites': 'static.md'\n  - Database: \n      - Postgresql: 'database.md'\n      - Migrations: 'dbmigrations.md'\n  - Languages:\n    - PHP: 'php/php.md'\n    - 'Python': 'python.md'\n    - 'Ruby': 'ruby.md'\n  - Frameworks:\n    - Spring: 'spring.md'\n    - Wordpress: 'php/wordpress.md'\n  - Version Control:\n    - 'Git': 'git.md'\n  - 'Web Development':\n    - 'Front-End': 'front.md'\n  - Mobile:\n    - 'Mobile Dev': 'mobile.md'\n- Reports: 'reporting.md'\n- Research: 'research.md'\n- Documentation: 'docs.md'\n- Other: 'other.md'\n- 'Command Line': 'cmd/cmd.md'\n- 'Learning Systems': 'teach.md'\n\n\n\n\nFixing Issues with MkDocs\n\n\n404 error for home page/front page - github gh-pages hosting.\n\n\n:   \nSeems like the home page has to point to an \"index.md\" page for it to work.\n\n\nUsing\n\n\n\n\nmkdocs serve\n - local development server \nhttp:\\localhost:8000\n\n\nmkdocs gh-deploy\n - build docs and push to gh-pages repo in github after committing.\n\n\n\n\nImporting docs into Github\n\n\n\n\nghp-import\n\n\nAlready being used by MkDocs.\n\n\nWould like to use with Sphinx if I convert my documentation to Sphinx.",
+            "text": "Creating Project Documentation\n\n\nUsing \nMkDocs\n\n\n\n\nUses markdown.\n\n\nWorks with github pages.\n\n\nEvery project will have their own documentation\n\n\nStyleguide should be included (frontend)\n\n\nProject goals and requirements\n\n\nNotes about development\n\n\nSetup/install instructions\n\n\nResolution to issues (ongoing FAQ for the projects)\n\n\n\n\n\n\nDocumentation pages stay in gh-pages branch.\n\n\n\n\nSetup\n\n\n\n\nMake virtual environment for python - \nmkvirtualenv -a . docsdirectory\n\n\nInstall requirements - \npip install mkdocs pymdown-extensions pygments mkdocs-material\n\n\nCreate mkdocs project - \nmkdocs new <project>\n\n\nEnter into the project\n\n\nEdit the \nmkdocs.yml\n file\n\n\n\n\nUsing\n\n\n\n\nmkdocs serve\n - local development server \nhttp:\\localhost:8000\n\n\nmkdocs gh-deploy\n - build docs and push to gh-pages repo in github after committing.\n\n\n\n\nConfig file - \nmkdocs.yml\n\n\nsite_name: Development Notes for Johan Martin\nrepo_url: https://github.com/catenare/devnotes\nsite_description: Notes tracking for developing different apps.\nsite_author: Johan Martin (http://www.johan-martin.com)\nrepo_name: 'GitHub'\nedit_uri: edit/master/md/\n# docs_dir: 'md'\n# site_dir: 'docs'\ncopyright: Johan Martin &copy; 2017\nmarkdown_extensions:\n  - pymdownx.tilde\ntheme: 'material'\npages:\n- Home: 'index.md'\n- Section:\n  - 'Page Sites': 'page.md'\n  - Section: \n      - sub1: 'sub1.md'\n      - sub2: 'sub2.md'\n\n\n\n\nMkDocs Notes\n\n\n\n\nDocumentation\n\n\nGithub\n\n\nadded \npymdownx.tilde\n extension to get strikethrough to work.\n\n\nUsing \nmkdocs gh-deploy\n to upload docs.\n\n\n\n\nInstalling Markdown Extensions\n\n\n\n\nPyMdown Extensions Documentation\n\n\nInstallation: \npip install pymdown-extensions\n\n\nUsing:\n\n\npymdownx.tilde\n\n\nmarkdown.extensions.def_list\n\n\n\n\n\n\n\n\nFixing Issues with MkDocs\n\n\n404 error for home page/front page - github gh-pages hosting.\n:   \nSeems like the home page has to point to an \"index.md\" page for it to work.\n\n\nImporting docs into Github\n\n\n\n\nghp-import\n\n\nAlready being used by MkDocs.\n\n\nWould like to use with Sphinx if I convert my documentation to Sphinx.",
             "title": "Documentation"
         },
         {
@@ -487,12 +487,27 @@
         },
         {
             "location": "/docs/#using-mkdocs",
-            "text": "Uses markdown.  Works with github pages.  Every project will have their own documentation  Styleguide should be included (frontend)  Project goals and requirements  Notes about development  Setup/install instructions  Resolution to issues (ongoing FAQ for the projects)    Documentation pages stay in gh-pages branch.  added  pymdownx.tilde  extension to get strikethrough to work.  Using  mkdocs gh-deploy  to upload docs.",
+            "text": "Uses markdown.  Works with github pages.  Every project will have their own documentation  Styleguide should be included (frontend)  Project goals and requirements  Notes about development  Setup/install instructions  Resolution to issues (ongoing FAQ for the projects)    Documentation pages stay in gh-pages branch.",
             "title": "Using MkDocs"
         },
         {
+            "location": "/docs/#setup",
+            "text": "Make virtual environment for python -  mkvirtualenv -a . docsdirectory  Install requirements -  pip install mkdocs pymdown-extensions pygments mkdocs-material  Create mkdocs project -  mkdocs new <project>  Enter into the project  Edit the  mkdocs.yml  file",
+            "title": "Setup"
+        },
+        {
+            "location": "/docs/#using",
+            "text": "mkdocs serve  - local development server  http:\\localhost:8000  mkdocs gh-deploy  - build docs and push to gh-pages repo in github after committing.",
+            "title": "Using"
+        },
+        {
+            "location": "/docs/#config-file-mkdocsyml",
+            "text": "site_name: Development Notes for Johan Martin\nrepo_url: https://github.com/catenare/devnotes\nsite_description: Notes tracking for developing different apps.\nsite_author: Johan Martin (http://www.johan-martin.com)\nrepo_name: 'GitHub'\nedit_uri: edit/master/md/\n# docs_dir: 'md'\n# site_dir: 'docs'\ncopyright: Johan Martin &copy; 2017\nmarkdown_extensions:\n  - pymdownx.tilde\ntheme: 'material'\npages:\n- Home: 'index.md'\n- Section:\n  - 'Page Sites': 'page.md'\n  - Section: \n      - sub1: 'sub1.md'\n      - sub2: 'sub2.md'",
+            "title": "Config file - mkdocs.yml"
+        },
+        {
             "location": "/docs/#mkdocs-notes",
-            "text": "Documentation  Github",
+            "text": "Documentation  Github  added  pymdownx.tilde  extension to get strikethrough to work.  Using  mkdocs gh-deploy  to upload docs.",
             "title": "MkDocs Notes"
         },
         {
@@ -501,19 +516,9 @@
             "title": "Installing Markdown Extensions"
         },
         {
-            "location": "/docs/#config-file-mkdocsyml",
-            "text": "site_name: Development Notes for Johan Martin\nrepo_url: https://github.com/catenare/devnotes\nsite_description: Notes tracking for developing different apps.\nsite_author: Johan Martin (http://www.johan-martin.com)\nrepo_name: 'GitHub'\nedit_uri: edit/master/md/\n# docs_dir: 'md'\n# site_dir: 'docs'\ncopyright: Johan Martin &copy; 2017\nmarkdown_extensions:\n  - pymdownx.tilde\ntheme: 'material'\npages:\n- Home: 'index.md'\n- Development:\n  - 'Static Sites': 'static.md'\n  - Database: \n      - Postgresql: 'database.md'\n      - Migrations: 'dbmigrations.md'\n  - Languages:\n    - PHP: 'php/php.md'\n    - 'Python': 'python.md'\n    - 'Ruby': 'ruby.md'\n  - Frameworks:\n    - Spring: 'spring.md'\n    - Wordpress: 'php/wordpress.md'\n  - Version Control:\n    - 'Git': 'git.md'\n  - 'Web Development':\n    - 'Front-End': 'front.md'\n  - Mobile:\n    - 'Mobile Dev': 'mobile.md'\n- Reports: 'reporting.md'\n- Research: 'research.md'\n- Documentation: 'docs.md'\n- Other: 'other.md'\n- 'Command Line': 'cmd/cmd.md'\n- 'Learning Systems': 'teach.md'",
-            "title": "Config file - mkdocs.yml"
-        },
-        {
             "location": "/docs/#fixing-issues-with-mkdocs",
-            "text": "404 error for home page/front page - github gh-pages hosting.  :    Seems like the home page has to point to an \"index.md\" page for it to work.",
+            "text": "404 error for home page/front page - github gh-pages hosting.\n:    Seems like the home page has to point to an \"index.md\" page for it to work.",
             "title": "Fixing Issues with MkDocs"
-        },
-        {
-            "location": "/docs/#using",
-            "text": "mkdocs serve  - local development server  http:\\localhost:8000  mkdocs gh-deploy  - build docs and push to gh-pages repo in github after committing.",
-            "title": "Using"
         },
         {
             "location": "/docs/#importing-docs-into-github",
