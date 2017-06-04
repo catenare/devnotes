@@ -1,4 +1,5 @@
 # Creating Project Documentation
+
 ## Using [MkDocs](http://www.mkdocs.org/)
 * Uses markdown.
 * Works with github pages.
@@ -9,19 +10,18 @@
     * Setup/install instructions
     * Resolution to issues (ongoing FAQ for the projects)
 * Documentation pages stay in gh-pages branch.
-* added ```pymdownx.tilde``` extension to get strikethrough to work.
-* Using ```mkdocs gh-deploy``` to upload docs.
 
-## MkDocs Notes
-* [Documentation](http://www.mkdocs.org/)
-* [Github](https://github.com/mkdocs/mkdocs/)
+## Setup
+1. Make virtual environment for python - `mkvirtualenv -a . docsdirectory`
+1. Install requirements - `pip install mkdocs pymdown-extensions pygments mkdocs-material`
+1. Create mkdocs project - `mkdocs new <project>`
+1. Enter into the project
+1. Edit the *mkdocs.yml* file
 
-## Installing Markdown Extensions
-* [PyMdown Extensions Documentation](http://facelessuser.github.io/pymdown-extensions/)
-* Installation: `pip install pymdown-extensions`
-* Using:
-    - *pymdownx.tilde*
-    - *markdown.extensions.def_list*
+## Using
+* `mkdocs serve` - local development server *http:\\localhost:8000*
+* `mkdocs gh-deploy` - build docs and push to gh-pages repo in github after committing.
+
 ## Config file - *mkdocs.yml*
 ```yaml
 site_name: Development Notes for Johan Martin
@@ -38,41 +38,28 @@ markdown_extensions:
 theme: 'material'
 pages:
 - Home: 'index.md'
-- Development:
-  - 'Static Sites': 'static.md'
-  - Database: 
-      - Postgresql: 'database.md'
-      - Migrations: 'dbmigrations.md'
-  - Languages:
-    - PHP: 'php/php.md'
-    - 'Python': 'python.md'
-    - 'Ruby': 'ruby.md'
-  - Frameworks:
-    - Spring: 'spring.md'
-    - Wordpress: 'php/wordpress.md'
-  - Version Control:
-    - 'Git': 'git.md'
-  - 'Web Development':
-    - 'Front-End': 'front.md'
-  - Mobile:
-    - 'Mobile Dev': 'mobile.md'
-- Reports: 'reporting.md'
-- Research: 'research.md'
-- Documentation: 'docs.md'
-- Other: 'other.md'
-- 'Command Line': 'cmd/cmd.md'
-- 'Learning Systems': 'teach.md'
+- Section:
+  - 'Page Sites': 'page.md'
+  - Section: 
+      - sub1: 'sub1.md'
+      - sub2: 'sub2.md'
 ```
+## MkDocs Notes
+* [Documentation](http://www.mkdocs.org/)
+* [Github](https://github.com/mkdocs/mkdocs/)
+* added ```pymdownx.tilde``` extension to get strikethrough to work.
+* Using ```mkdocs gh-deploy``` to upload docs.
 
+## Installing Markdown Extensions
+* [PyMdown Extensions Documentation](http://facelessuser.github.io/pymdown-extensions/)
+* Installation: `pip install pymdown-extensions`
+* Using:
+    - *pymdownx.tilde*
+    - *markdown.extensions.def_list*
 
 ## Fixing Issues with MkDocs
 404 error for home page/front page - github gh-pages hosting.
-
 :   *Seems like the home page has to point to an "index.md" page for it to work.*
-
-## Using
-* `mkdocs serve` - local development server *http:\\localhost:8000*
-* `mkdocs gh-deploy` - build docs and push to gh-pages repo in github after committing.
 
 ## Importing docs into Github
 * [ghp-import](https://github.com/davisp/ghp-import)
