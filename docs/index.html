@@ -569,6 +569,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config-file-mkdocsyml" title="Config file - mkdocs.yml" class="md-nav__link">
+    Config file - mkdocs.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fixing-issues-with-mkdocs" title="Fixing Issues with MkDocs" class="md-nav__link">
     Fixing Issues with MkDocs
   </a>
@@ -676,6 +683,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config-file-mkdocsyml" title="Config file - mkdocs.yml" class="md-nav__link">
+    Config file - mkdocs.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fixing-issues-with-mkdocs" title="Fixing Issues with MkDocs" class="md-nav__link">
     Fixing Issues with MkDocs
   </a>
@@ -745,6 +759,47 @@
 </ul>
 </li>
 </ul>
+<h2 id="config-file-mkdocsyml">Config file - <em>mkdocs.yml</em></h2>
+<pre><code class="yaml">site_name: Development Notes for Johan Martin
+repo_url: https://github.com/catenare/devnotes
+site_description: Notes tracking for developing different apps.
+site_author: Johan Martin (http://www.johan-martin.com)
+repo_name: 'GitHub'
+edit_uri: edit/master/md/
+# docs_dir: 'md'
+# site_dir: 'docs'
+copyright: Johan Martin &amp;copy; 2017
+markdown_extensions:
+  - pymdownx.tilde
+theme: 'material'
+pages:
+- Home: 'index.md'
+- Development:
+  - 'Static Sites': 'static.md'
+  - Database: 
+      - Postgresql: 'database.md'
+      - Migrations: 'dbmigrations.md'
+  - Languages:
+    - PHP: 'php/php.md'
+    - 'Python': 'python.md'
+    - 'Ruby': 'ruby.md'
+  - Frameworks:
+    - Spring: 'spring.md'
+    - Wordpress: 'php/wordpress.md'
+  - Version Control:
+    - 'Git': 'git.md'
+  - 'Web Development':
+    - 'Front-End': 'front.md'
+  - Mobile:
+    - 'Mobile Dev': 'mobile.md'
+- Reports: 'reporting.md'
+- Research: 'research.md'
+- Documentation: 'docs.md'
+- Other: 'other.md'
+- 'Command Line': 'cmd/cmd.md'
+- 'Learning Systems': 'teach.md'
+</code></pre>
+
 <h2 id="fixing-issues-with-mkdocs">Fixing Issues with MkDocs</h2>
 <p>404 error for home page/front page - github gh-pages hosting.</p>
 <p>:   <em>Seems like the home page has to point to an "index.md" page for it to work.</em></p>
