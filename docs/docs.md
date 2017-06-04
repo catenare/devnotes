@@ -22,6 +22,48 @@
 * Using:
     - *pymdownx.tilde*
     - *markdown.extensions.def_list*
+## Config file - *mkdocs.yml*
+```yaml
+site_name: Development Notes for Johan Martin
+repo_url: https://github.com/catenare/devnotes
+site_description: Notes tracking for developing different apps.
+site_author: Johan Martin (http://www.johan-martin.com)
+repo_name: 'GitHub'
+edit_uri: edit/master/md/
+# docs_dir: 'md'
+# site_dir: 'docs'
+copyright: Johan Martin &copy; 2017
+markdown_extensions:
+  - pymdownx.tilde
+theme: 'material'
+pages:
+- Home: 'index.md'
+- Development:
+  - 'Static Sites': 'static.md'
+  - Database: 
+      - Postgresql: 'database.md'
+      - Migrations: 'dbmigrations.md'
+  - Languages:
+    - PHP: 'php/php.md'
+    - 'Python': 'python.md'
+    - 'Ruby': 'ruby.md'
+  - Frameworks:
+    - Spring: 'spring.md'
+    - Wordpress: 'php/wordpress.md'
+  - Version Control:
+    - 'Git': 'git.md'
+  - 'Web Development':
+    - 'Front-End': 'front.md'
+  - Mobile:
+    - 'Mobile Dev': 'mobile.md'
+- Reports: 'reporting.md'
+- Research: 'research.md'
+- Documentation: 'docs.md'
+- Other: 'other.md'
+- 'Command Line': 'cmd/cmd.md'
+- 'Learning Systems': 'teach.md'
+```
+
 
 ## Fixing Issues with MkDocs
 404 error for home page/front page - github gh-pages hosting.
