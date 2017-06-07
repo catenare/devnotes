@@ -526,6 +526,81 @@
             "title": "Importing docs into Github"
         },
         {
+            "location": "/virtualboxanddockerimages/",
+            "text": "Setup Virtualbox with Apline Linux\n\n\nResources\n\n\n\n\nAlpine Linux\n\n\nDocker Alpine Config \nfguillot/docker-alpine-nginx-php7\n\n\nVagrant Instructions\n\n\nPackaging the Box\n\n\nSetting up a ssh-server\n\n\n\n\nInstructions\n\n\nDownload Alpine Linux distribution and install in VirtualBox\n\n\n\n\nVirtualBox Install\n\n\n1GB Ram, 8GB HD\n\n\nVirtualBox guest additions\n\n\napk add virtualbox-additions-grsec\n\n\napk add virtualbox-guest-additions-5.1.22-r2\n\n\necho vboxpci >> /etc/modules\n\n\necho vboxdrv >> /etc/modules\n\n\necho vboxnetflt >> /etc/modules\n\n\nreboot\n\n\n\n\nInstall packages\n\n\napk update && \\\napk add nginx bash ca-certificates s6 curl ssmtp php7 php7-phar php7-curl \\\nphp7-fpm php7-json php7-zlib php7-xml php7-dom php7-ctype php7-opcache php7-zip php7-iconv \\\nphp7-pdo php7-pdo_mysql php7-pdo_sqlite php7-pdo_pgsql php7-mbstring php7-session \\\nphp7-gd php7-mcrypt php7-openssl php7-sockets php7-posix php7-ldap php7-simplexml\n\n\n\n\n\n\nAdd sudo: \napk add sudo\n\n\n\n\nConfigure ssh server\n\n\n\n\nedit \n/etc/ssh/sshd_config\n\n\nset \nUseDNS no\n\n\n\n\nAdd User\n\n\n\n\nadduser vagrant\n\n\nvi /etc/sudoers\n\n\nAdd line: \nvagrant ALL=(ALL) NOPASSWD: ALL\n\n\n\n\nConfigure ssh key\n\n\n\n\nUse insecure public/private key\n\n\nVagrant Insecure key\n\n\n\n\nOther Notes\n\n\nMisc\n\n\n\n\nSearch for packages - \napk search {name}\n\n\n\n\nShutdown\n\n\n\n\npoweroff\n\n\nhalt\n\n\n\n\nAccessing services on the guest box\n\n\n\n\nSetup Port Forwarding\n\n\nssh - local port 2222 - guest host port - 22\n\n\nUse \nssh -p 2222 vagrant@127.0.0.1\n - will give you access to the guest box\n\n\n\n\nDocker Base Alpine Image\n\n\nUse a base alpine image for docker\n\n\n\n\nOfficial Alpine Docker Image\n\n\nDocker Store\n\n\ndocker pull alpine\n\n\napk --no-cache add {package}\n\n\nDockerfile Example - avoids using \n--update\n and \nrm -rf /var/cache/apk/*\n\n\n\n\n  FROM alpine:latest\n  RUN apk add --no-cache nginx\n  EXPOSE 80\n  CMD [\"nginx\", \"-g\", \"daemon off;\"]",
+            "title": "Virtualbox and Docker"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#setup-virtualbox-with-apline-linux",
+            "text": "",
+            "title": "Setup Virtualbox with Apline Linux"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#resources",
+            "text": "Alpine Linux  Docker Alpine Config  fguillot/docker-alpine-nginx-php7  Vagrant Instructions  Packaging the Box  Setting up a ssh-server",
+            "title": "Resources"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#instructions",
+            "text": "",
+            "title": "Instructions"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#download-alpine-linux-distribution-and-install-in-virtualbox",
+            "text": "VirtualBox Install  1GB Ram, 8GB HD  VirtualBox guest additions  apk add virtualbox-additions-grsec  apk add virtualbox-guest-additions-5.1.22-r2  echo vboxpci >> /etc/modules  echo vboxdrv >> /etc/modules  echo vboxnetflt >> /etc/modules  reboot",
+            "title": "Download Alpine Linux distribution and install in VirtualBox"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#install-packages",
+            "text": "apk update && \\\napk add nginx bash ca-certificates s6 curl ssmtp php7 php7-phar php7-curl \\\nphp7-fpm php7-json php7-zlib php7-xml php7-dom php7-ctype php7-opcache php7-zip php7-iconv \\\nphp7-pdo php7-pdo_mysql php7-pdo_sqlite php7-pdo_pgsql php7-mbstring php7-session \\\nphp7-gd php7-mcrypt php7-openssl php7-sockets php7-posix php7-ldap php7-simplexml   Add sudo:  apk add sudo",
+            "title": "Install packages"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#configure-ssh-server",
+            "text": "edit  /etc/ssh/sshd_config  set  UseDNS no",
+            "title": "Configure ssh server"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#add-user",
+            "text": "adduser vagrant  vi /etc/sudoers  Add line:  vagrant ALL=(ALL) NOPASSWD: ALL",
+            "title": "Add User"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#configure-ssh-key",
+            "text": "Use insecure public/private key  Vagrant Insecure key",
+            "title": "Configure ssh key"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#other-notes",
+            "text": "",
+            "title": "Other Notes"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#misc",
+            "text": "Search for packages -  apk search {name}",
+            "title": "Misc"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#shutdown",
+            "text": "poweroff  halt",
+            "title": "Shutdown"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#accessing-services-on-the-guest-box",
+            "text": "Setup Port Forwarding  ssh - local port 2222 - guest host port - 22  Use  ssh -p 2222 vagrant@127.0.0.1  - will give you access to the guest box",
+            "title": "Accessing services on the guest box"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#docker-base-alpine-image",
+            "text": "",
+            "title": "Docker Base Alpine Image"
+        },
+        {
+            "location": "/virtualboxanddockerimages/#use-a-base-alpine-image-for-docker",
+            "text": "Official Alpine Docker Image  Docker Store  docker pull alpine  apk --no-cache add {package}  Dockerfile Example - avoids using  --update  and  rm -rf /var/cache/apk/*     FROM alpine:latest\n  RUN apk add --no-cache nginx\n  EXPOSE 80\n  CMD [\"nginx\", \"-g\", \"daemon off;\"]",
+            "title": "Use a base alpine image for docker"
+        },
+        {
             "location": "/other/",
             "text": "Other notes\n\n\nDownloading files with wget\n\n\n\n\nUse \nwget -c\n or \nwget --continue\n to restart a stopped or aborted download\n\n\n\n\nUsing Ivy with Ant\n\n\n\n\nDownload \nApache Ivy\n\n\nPut files into ant/lib directory.\n\n\nLib directory at \n~/.ant/lib\n - Using sdkman to manage Ant.",
             "title": "Other"
