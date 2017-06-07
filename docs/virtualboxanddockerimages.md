@@ -5,6 +5,10 @@
 * [Vagrant Instructions](https://www.vagrantup.com/docs/boxes/base.html)
 * [Packaging the Box](https://www.vagrantup.com/docs/virtualbox/boxes.html)
 * [Setting up a ssh-server](https://wiki.alpinelinux.org/wiki/Setting_up_a_ssh-server)
+* [AlpineLinux VM under VirtualBox](http://mowson.org/karl/2016/2016-05-20_alpinelinux_vm_under_virtualbox/)
+
+## Host Machine
+* Install alpine plugin - `vagrant plugin install vagrant-alpine`
 
 ## Instructions
 ### Download Alpine Linux distribution and install in VirtualBox
@@ -24,9 +28,10 @@
   * `apk upgrade` - Upgrade to latest versions
   * `apk add sudo` - Add sudo
   * `adduser vagrant` - vagrant user
-  * `vi /etc/sudoers`
+  * ~~`vi /etc/sudoers`~~
+  * Use **visudo**
     * Add line: `vagrant ALL=(ALL) NOPASSWD: ALL` - add sudo without password
-* edit */etc/ssh/sshd_config*
+* Edit */etc/ssh/sshd_config
     * set **UseDNS no**
 * Setup Virtualbox
   * [VirtualBox guest additions](https://wiki.alpinelinux.org/wiki/VirtualBox_guest_additions)
