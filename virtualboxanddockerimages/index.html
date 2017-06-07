@@ -626,6 +626,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setup-vagrant" title="Setup Vagrant" class="md-nav__link">
+    Setup Vagrant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#install-packages" title="Install packages" class="md-nav__link">
     Install packages
   </a>
@@ -771,6 +778,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setup-vagrant" title="Setup Vagrant" class="md-nav__link">
+    Setup Vagrant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#install-packages" title="Install packages" class="md-nav__link">
     Install packages
   </a>
@@ -866,6 +880,7 @@
 </li>
 <li><code>apk update</code> - get latest package list</li>
 <li><code>apk upgrade</code> - Upgrade to latest versions</li>
+<li><code>apk add bash</code> - Install base</li>
 <li><code>apk add sudo</code> - Add sudo</li>
 <li><code>adduser vagrant</code> - vagrant user</li>
 <li><del><code>vi /etc/sudoers</code></del></li>
@@ -879,7 +894,8 @@
 </li>
 <li>Setup Virtualbox</li>
 <li><a href="https://wiki.alpinelinux.org/wiki/VirtualBox_guest_additions">VirtualBox guest additions</a><ul>
-<li><code>apk add virtualbox-guest-modules-grsec virtualbox-additions-grsec</code></li>
+<li><code>echo "http://nl.alpinelinux.org/alpine/edge/testing" &gt;&gt; /etc/apk/repositories</code></li>
+<li><code>apk add virtualbox-additions-grsec</code></li>
 <li><del><code>apk add virtualbox-guest-additions-5.1.22-r2</code></del></li>
 <li><del><code>echo vboxpci &gt;&gt; /etc/modules</code></del></li>
 <li><del><code>echo vboxdrv &gt;&gt; /etc/modules</code></del></li>
@@ -888,6 +904,61 @@
 </li>
 <li><code>reboot</code></li>
 </ul>
+<h3 id="setup-vagrant">Setup Vagrant</h3>
+<ul>
+<li>Create Vagrant base<ul>
+<li><code>vagrant package --base {virtualbox}</code></li>
+<li><code>vagrant box add alpine-linux package.box</code></li>
+<li><code>vagrant init alpine-linux</code></li>
+<li>Install vagrant plugin for alpine - <code>vagrant plugin install vagrant-alpine</code></li>
+<li>Configure Vagrantfile <a href="https://github.com/maier/packer-templates/blob/master/alpine3.6/Vagrantfile">maier/packer-templates</a></li>
+</ul>
+</li>
+</ul>
+<pre><code class="ruby">    Vagrant.configure(2) do |config|
+    config.vm.define 'alpine' do |alpine|
+        alpine.vm.box = 'maier/alpine-3.6-x86_64'
+        # alpine.ssh.username = 'vagrant'
+        # alpine.ssh.password = 'vagrant'
+
+        # NOTE:
+        #   there are *no* guest additions installed
+        #   for alpine linux - the guest additions
+        #   installer fails. once workarounds are
+        #   identified the vbga will be added
+        #   to the base box.
+        #
+        # since there are no vbga. if the vagrant-alpine plugin
+        # is installed it can at least configure the system to
+        # enable shared folders.
+        #
+        alpine.vm.synced_folder '.', '/vagrant', disabled: true
+        #
+        # after `vagrant plugin install vagrant-alpine`
+        # comment the disabled synced_folder line above and
+        # uncomment the following two lines
+        #
+        # alpine.vm.network 'private_network', ip: '192.168.100.10'
+        # alpine.vm.synced_folder '.', '/vagrant', type: 'nfs'
+
+        alpine.vm.provider 'virtualbox' do |vb|
+            # vb.gui = true
+            vb.name = 'Alpine'
+            vb.cpus = 1
+            vb.memory = 1024
+            vb.customize [
+                'modifyvm', :id,
+                '--natdnshostresolver1', 'on',
+                '--nic1', 'nat',
+                '--cableconnected1', 'on'
+            ]
+        end
+    end
+end
+</code></pre>
+
+<pre><code>* `vagrant up`
+</code></pre>
 <h3 id="install-packages">Install packages</h3>
 <pre><code>apk update &amp;&amp; \
 apk add nginx bash ca-certificates s6 curl ssmtp php7 php7-phar php7-curl \
