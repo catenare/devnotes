@@ -33,6 +33,8 @@ pages:
 - Reports: 'reporting.md'
 - Research: 'research.md'
 - Documentation: 'docs.md'
+- Operations:
+  - 'Virtualbox and Docker': 'virtualboxanddockerimages.md'
 - Other: 'other.md'
 - 'Command Line': 'cmd/cmd.md'
 - 'Learning Systems': 'teach.md'
