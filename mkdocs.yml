@@ -29,6 +29,7 @@ pages:
   - 'Web Development':
     - 'Front-End': 'front.md'
   - Mobile:
+    - Hybrid: 'ionic.md'
     - 'Mobile Dev': 'mobile.md'
 - Reports: 'reporting.md'
 - Research: 'research.md'

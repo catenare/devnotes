@@ -36,6 +36,8 @@ php7-gd php7-mcrypt php7-openssl php7-sockets php7-posix php7-ldap php7-simplexm
 ### Configure ssh key
 * Use insecure public/private key
   * [Vagrant Insecure key](https://github.com/mitchellh/vagrant/blob/master/keys/vagrant)
+  * Use cyberduck with sftp
+    * Copy **vagrant** key to **~/.ssh**
 ## Other Notes
 ### Misc
 * Search for packages - `apk search {name}`
