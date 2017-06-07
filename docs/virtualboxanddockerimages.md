@@ -8,15 +8,35 @@
 
 ## Instructions
 ### Download Alpine Linux distribution and install in VirtualBox
+* [Alpine Linux Downloads](https://www.alpinelinux.org/downloads/) - Download Virtual Distribution for x86_64.
 * [VirtualBox Install](https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox)
   * 1GB Ram, 8GB HD
-* [VirtualBox guest additions](https://wiki.alpinelinux.org/wiki/VirtualBox_guest_additions)
-  * `apk add virtualbox-additions-grsec`
-  * `apk add virtualbox-guest-additions-5.1.22-r2`
-  * `echo vboxpci >> /etc/modules`
-  * `echo vboxdrv >> /etc/modules`
-  * `echo vboxnetflt >> /etc/modules`
-* reboot
+* Install Alpine Linux
+  * Mount *alpine-virt-3.6.1-x86_64.iso* to start installation
+  * Login with *root*
+  * `setup-alpine` to install
+  * `poweroff` to turn off the virtualbox
+  * Remove virtual iso
+* Setup Alpine box
+  * Uncomment extra repositories
+    * `vi /etc/apk/repositories`
+  * `apk update` - get latest package list
+  * `apk upgrade` - Upgrade to latest versions
+  * `apk add sudo` - Add sudo
+  * `adduser vagrant` - vagrant user
+  * `vi /etc/sudoers`
+    * Add line: `vagrant ALL=(ALL) NOPASSWD: ALL` - add sudo without password
+* edit */etc/ssh/sshd_config*
+    * set **UseDNS no**
+* Setup Virtualbox
+  * [VirtualBox guest additions](https://wiki.alpinelinux.org/wiki/VirtualBox_guest_additions)
+    * `apk add virtualbox-guest-modules-grsec virtualbox-additions-grsec`
+    * ~~`apk add virtualbox-guest-additions-5.1.22-r2`~~
+    * ~~`echo vboxpci >> /etc/modules`~~
+    * ~~`echo vboxdrv >> /etc/modules`~~
+    * ~~`echo vboxnetflt >> /etc/modules`~~
+* `reboot`
+
 ### Install packages
 ```
 apk update && \
@@ -25,19 +45,6 @@ php7-fpm php7-json php7-zlib php7-xml php7-dom php7-ctype php7-opcache php7-zip 
 php7-pdo php7-pdo_mysql php7-pdo_sqlite php7-pdo_pgsql php7-mbstring php7-session \
 php7-gd php7-mcrypt php7-openssl php7-sockets php7-posix php7-ldap php7-simplexml
 ```
-* Add sudo: `apk add sudo`
-### Configure ssh server
-* edit */etc/ssh/sshd_config*
-* set **UseDNS no**
-### Add User
-* `adduser vagrant`
-* `vi /etc/sudoers`
-  * Add line: `vagrant ALL=(ALL) NOPASSWD: ALL`
-### Configure ssh key
-* Use insecure public/private key
-  * [Vagrant Insecure key](https://github.com/mitchellh/vagrant/blob/master/keys/vagrant)
-  * Use cyberduck with sftp
-    * Copy **vagrant** key to **~/.ssh**
 ## Other Notes
 ### Misc
 * Search for packages - `apk search {name}`

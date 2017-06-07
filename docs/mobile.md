@@ -29,4 +29,4 @@
     git clone git://github.com/CocoaPods/Specs.git master
     pod install --no-repo-update --verbose
 ```
-    * Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.
+* Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.
