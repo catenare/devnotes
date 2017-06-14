@@ -16,6 +16,7 @@
     * Inserting values into partions `{{>partion value="value"}}`
     * Use `{{#each}}` to iterate over array data
     * Use `filename.variable` to access data from file in data folder
+
 ### Adding font-awesome to your foundatio site
 [HowTo: Foundation 6 Font Awesome and other asset fonts](http://foundation.zurb.com/forum/posts/46991-howto-foundation-6-font-awesome-and-other-asset-fonts)
 * `bower install fontawesome --save`
@@ -68,6 +69,43 @@ function watch() {
 ```
 * `foundation watch` or `npm start`
 
+# Web Development Tools - finding tools that are really useful for editing
 
+## Tools
 
+### [Emmet](http://emmet.io) 
+* Expand html shortcuts
+* Can really reduce the amount of typing necessary to to create a page.
 
+### Local static file server
+* [browser-sync](https://browsersync.io/)
+* Node.js tool 
+* ```browser-sync start --server --directory --files "**/*"```
+
+### Combine JS files
+* [Requirejs](http://requirejs.org/)
+* For r.js to work (without explicit path) ```npm install -g requirejs```
+
+## Web Framework
+* [Foundation](http://foundation.zurb.com/)
+* Setup a new project ```foundation new```
+
+## Sass Notes
+* Using sassc and libsass
+* [libSass](https://github.com/sass/libsass)
+* Export the library location so node-sass can use it.
+
+### Compiling compass sass config.rb file
+* Compiling compass sass with sass c library.
+	* *sass --compass sass/styles.scss test,css* - seems to read the compass config.rb file to find paths.
+
+## Maintainable CSS
+* [BEM (block, element, modifier) methodology](https://en.bem.info/methodology/quick-start/)
+
+## Resources
+* [https://frontend.directory](https://frontend.directory/p)
+
+## Generating Color Palettes
+* [Colors Palette Generator](http://www.cssdrive.com/imagepalette/index.php)
+* [Canva Color Palette](https://www.canva.com/color-palette/)
+* [Pictaculous](http://www.pictaculous.com/)

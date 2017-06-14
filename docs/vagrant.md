@@ -93,7 +93,32 @@
     end
 end
 ```
-    * `vagrant up`
+* My Config
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "maier/alpine-3.6-x86_64"
+  config.vm.box_check_update = false
+  config.vbguest.auto_update = false
+  config.vm.synced_folder "./vmshared", "/vagrant_data", disabled: true
+  config.vm.network 'private_network', ip: "192.168.33.10"
+  config.vm.synced_folder ".", "/vagrant_shared", type: "nfs"
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "Maier Alpine"
+    vb.cpus = 1
+    vb.memory = 1024
+    vb.customize [
+      'modifyvm', :id,
+      '--natdnshostresolver1', 'on',
+      '--nic1', 'nat',
+      '--cableconnected1', 'on'
+    ]
+  end
+end
+```
+   * Added *config.vbguest.auto_update = false* to eliminate it trying to update
+   * Added *config.vbguest.auto_update = false* to not check for updates
+   * Using nfs to share volumes
+* `vagrant up`
 
 ### Install packages
 ```
@@ -113,17 +138,3 @@ php7-gd php7-mcrypt php7-openssl php7-sockets php7-posix php7-ldap php7-simplexm
 * Setup Port Forwarding
   * ssh - local port 2222 - guest host port - 22
   * Use `ssh -p 2222 vagrant@127.0.0.1` - will give you access to the guest box
-
-# Docker Base Alpine Image
-## Use a base alpine image for docker
-* [Official Alpine Docker Image](https://hub.docker.com/_/alpine/)
-* [Docker Store](https://store.docker.com/images/alpine)
-  * `docker pull alpine`
-  * `apk --no-cache add {package}`
-  * Dockerfile Example - avoids using *--update* and *rm -rf /var/cache/apk/\**
-```yaml
-  FROM alpine:latest
-  RUN apk add --no-cache nginx
-  EXPOSE 80
-  CMD ["nginx", "-g", "daemon off;"]
-```

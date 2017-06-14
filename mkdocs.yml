@@ -13,21 +13,23 @@ theme: 'material'
 pages:
 - Home: 'index.md'
 - Development:
-  - 'Static Sites': 'static.md'
   - Database: 
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
   - Languages:
     - PHP: 'php/php.md'
+    - Composer: 'php/composer.md'
+    - Wordpress:
+      - 'Plugin Dev': 'php/wordpress/plugin development.md'
+      - 'Setup': 'php/wordpress/setup.md'
+      - 'Home': 'php/wordpress/wordpress.md'
     - 'Python': 'python.md'
     - 'Ruby': 'ruby.md'
   - Frameworks:
     - Spring: 'spring.md'
-    - Wordpress: 'php/wordpress.md'
   - Version Control:
     - 'Git': 'git.md'
-  - 'Web Development':
-    - 'Front-End': 'front.md'
+  - 'Front End': 'static.md'
   - Mobile:
     - Hybrid: 'ionic.md'
     - 'Mobile Dev': 'mobile.md'
@@ -35,8 +37,10 @@ pages:
 - Research: 'research.md'
 - Documentation: 'docs.md'
 - Operations:
-  - 'Virtualbox and Docker': 'virtualboxanddockerimages.md'
+  - 'Vagrant': 'vagrant.md'
+  - 'Docker': 'docker.md'
 - Other: 'other.md'
+- Tools: 'tools.md'
 - 'Command Line': 'cmd/cmd.md'
 - 'Learning Systems': 'teach.md'
 
