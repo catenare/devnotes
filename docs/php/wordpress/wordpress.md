@@ -6,7 +6,6 @@
     * php71
     * mysql57
     * Wordpress 4.7
-
 ## Resources
 * [nginx documentation - wordpress](https://www.nginx.com/resources/wiki/start/topic/recipes/wordpress/)
 * [Composer in Wordpress](http://composer.rarst.net/)
@@ -145,6 +144,3 @@
 ## Other Tools
 * [Wordpress CLI](http://wp-cli.org/) - command line client for wordpress. Definitely worth installing.
     * Possible to install via composer - `composer global require wp-cli/wp-cli`
-
-## Building a theme
-### Notes for building a theme
