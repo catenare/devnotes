@@ -707,7 +707,7 @@
         },
         {
             "location": "/tools/",
-            "text": "Developer Helper Tools\n\n\nServer Mock Tools\n\n\n\n\nMailCatcher\n - Localhost email intercept\n\n\nNgrok\n - Secure tunnel to localhost\n\n\n\n\nAPI Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nMiscellaneous Notes\n\n\n\n\nBoomerang\n\n\nUnison\n - File sync utility",
+            "text": "Developer Helper Tools\n\n\nServer Mock Tools\n\n\n\n\nMailCatcher\n - Localhost email intercept\n\n\nNgrok\n - Secure tunnel to localhost\n\n\n\n\nAPI Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const server = jsonServer.create()\n    const router = jsonServer.router('db.json')\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n\n\n\nMiscellaneous Notes\n\n\n\n\nBoomerang\n\n\nUnison\n - File sync utility",
             "title": "Tools"
         },
         {
@@ -739,6 +739,11 @@
             "location": "/tools/#other",
             "text": "Standalone RAML API Mocking Tools Surface  - Article - Mock tools  RAML and Osprey - a Better Way to Build Mock APIs  Sandbox  - online service for API mocking",
             "title": "Other"
+        },
+        {
+            "location": "/tools/#creating-a-mock-api-server-nodejs",
+            "text": "Using  json-server  Setup  Create directory -  test_server  touch server.js  - server startup file  npm init  - create config file. Set  server.js  as the start script.  Create  server.js  file.  npm install faker json-server --save-dev         //server.js\n    const jsonServer = require('json-server')\n    const server = jsonServer.create()\n    const router = jsonServer.router('db.json')\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })",
+            "title": "Creating a mock api server - node.js"
         },
         {
             "location": "/tools/#miscellaneous-notes",

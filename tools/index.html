@@ -692,6 +692,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#creating-a-mock-api-server-nodejs" title="Creating a mock api server - node.js" class="md-nav__link">
+    Creating a mock api server - node.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#miscellaneous-notes" title="Miscellaneous Notes" class="md-nav__link">
     Miscellaneous Notes
   </a>
@@ -793,6 +800,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#creating-a-mock-api-server-nodejs" title="Creating a mock api server - node.js" class="md-nav__link">
+    Creating a mock api server - node.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#miscellaneous-notes" title="Miscellaneous Notes" class="md-nav__link">
     Miscellaneous Notes
   </a>
@@ -854,6 +868,31 @@
 <li><a href="https://www.tcias.co.uk/blog/2015/03/11/raml-and-osprey-a-better-way-to-build-mock-apis/">RAML and Osprey - a Better Way to Build Mock APIs</a></li>
 <li><a href="https://getsandbox.com/">Sandbox</a> - online service for API mocking</li>
 </ul>
+<h3 id="creating-a-mock-api-server-nodejs">Creating a mock api server - node.js</h3>
+<ul>
+<li>Using <code>json-server</code></li>
+<li>Setup<ol>
+<li>Create directory - <em>test_server</em></li>
+<li><code>touch server.js</code> - server startup file</li>
+<li><code>npm init</code> - create config file. Set <code>server.js</code> as the start script.</li>
+<li>Create <code>server.js</code> file.</li>
+<li><code>npm install faker json-server --save-dev</code></li>
+</ol>
+</li>
+</ul>
+<pre><code class="json">    //server.js
+    const jsonServer = require('json-server')
+    const server = jsonServer.create()
+    const router = jsonServer.router('db.json')
+    const middlewares = jsonServer.defaults()
+
+    server.use(middlewares)
+    server.use(router)
+    server.listen(3000, () =&gt; {
+      console.log('JSON Server is running')
+    })
+</code></pre>
+
 <h3 id="miscellaneous-notes">Miscellaneous Notes</h3>
 <ul>
 <li><a href="http://www.seas.upenn.edu/~harmony/">Boomerang</a></li>
