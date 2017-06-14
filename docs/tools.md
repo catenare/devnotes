@@ -26,6 +26,28 @@
 * [RAML and Osprey - a Better Way to Build Mock APIs](https://www.tcias.co.uk/blog/2015/03/11/raml-and-osprey-a-better-way-to-build-mock-apis/)
 * [Sandbox](https://getsandbox.com/) - online service for API mocking
 
+### Creating a mock api server - node.js
+* Using `json-server`
+* Setup
+    1. Create directory - *test_server*
+    1. `touch server.js` - server startup file
+    1. `npm init` - create config file. Set `server.js` as the start script.
+    1. Create `server.js` file.
+    1. `npm install faker json-server --save-dev`
+
+```json
+    //server.js
+    const jsonServer = require('json-server')
+    const server = jsonServer.create()
+    const router = jsonServer.router('db.json')
+    const middlewares = jsonServer.defaults()
+
+    server.use(middlewares)
+    server.use(router)
+    server.listen(3000, () => {
+      console.log('JSON Server is running')
+    })
+```
 ### Miscellaneous Notes
 * [Boomerang](http://www.seas.upenn.edu/~harmony/)
 * [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) - File sync utility
