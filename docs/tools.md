@@ -38,8 +38,9 @@
 ```json
     //server.js
     const jsonServer = require('json-server')
+    const customers = require('./customers')
     const server = jsonServer.create()
-    const router = jsonServer.router('db.json')
+    const router = jsonServer.router(customers())
     const middlewares = jsonServer.defaults()
 
     server.use(middlewares)
@@ -47,7 +48,29 @@
     server.listen(3000, () => {
       console.log('JSON Server is running')
     })
+
+    //customer.js
+    var faker = require('faker')
+    function generateCustomers () {
+        var customers = []
+        for (var id = 0; id < 50; id++) {
+      
+        var firstName = faker.name.firstName();
+        var lastName = faker.name.lastName();
+        var phoneNumber = faker.phone.phoneNumberFormat();
+
+        customers.push({
+            "id": id,
+            "first_name": firstName,
+            "last_name": lastName,
+            "phone": phoneNumber
+        })
+    }
+    return { "customers": customers}
+    }
+    module.exports = generateCustomers
 ```
+
 ### Miscellaneous Notes
 * [Boomerang](http://www.seas.upenn.edu/~harmony/)
 * [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) - File sync utility
