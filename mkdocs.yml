@@ -16,16 +16,19 @@ pages:
   - Database: 
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
-  - Languages:
-    - PHP: 
-      - Resources: 'php/resources.md'
-      - Composer: 'php/composer.md'
-      - Wordpress:
-        - 'Setup': 'php/wordpress/setup.md'
-        - 'Home': 'php/wordpress/wordpress.md'
-        - 'Plugin Dev': 'php/wordpress/plugin development.md'
-    - 'Python': 'python.md'
-    - 'Ruby': 'ruby.md'
+  - PHP: 
+    - Resources: 'php/resources.md'
+    - Composer: 'php/composer.md'
+    - Wordpress:
+      - 'Setup': 'php/wordpress/setup.md'
+      - 'Home': 'php/wordpress/wordpress.md'
+      - 'Plugin Dev': 'php/wordpress/plugin development.md'
+  - 'Python': 
+    - 'General': 'python/general.md'
+    - 'Flask': 'python/flask.md'
+    - 'Research': 'python/research.md'
+  - 'Ruby': 'ruby.md'
+  - 'Java': 'java.md'
   - Frameworks:
     - Spring: 'spring.md'
   - Version Control:
@@ -34,14 +37,16 @@ pages:
   - Mobile:
     - Hybrid: 'ionic.md'
     - 'Mobile Dev Notes': 'mobilenotes.md'
-- Reports: 'reporting.md'
-- Documentation: 'docs.md'
-- Operations:
-  - 'Vagrant': 'vagrant.md'
-  - 'Docker': 'docker.md'
-- "Mock and API Tools": 'tools.md'
-- 'Command Line': 'cmd/cmd.md'
-- 'Learning Systems': 'teach.md'
-- Research: 'research.md'
+- Tools:
+  - Reporting: 'reporting.md'
+  - Documentation: 'docs.md'
+  - Operations:
+    - 'Vagrant': 'vagrant.md'
+    - 'Docker': 'docker.md'
+  - "Mock and API Tools": 'tools.md'
+  - 'Command Line': 'cmd/cmd.md'
+- Research: 
+  - 'General': 'research.md'
+  - 'Learning Systems': 'teach.md'
 
 

@@ -1,8 +1,7 @@
 # Welcome to Johan's Development Notes
-This is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.
-Hopefully this will be helpful beyond just me.
+Things I discover in my work as a developer. Resources and notes that I tend to forget. Beyond a paper notebook, this is the repository of things I find out while working on my projects. In the least, it will keep me from having to rediscover "the wheel" when working on future projects.
 
-## Project setup
-* Virtualenvwrapper name: devnotes
-* Published on github using gh-pages
-* Notes are located at one place now
+* [My Website](http://www.johan-martin.com)
+
+## Project List
+   * See [Github](https://github.com/catenare)
