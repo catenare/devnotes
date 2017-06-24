@@ -96,6 +96,111 @@
             "title": "Can't delete a migration, only repair it."
         },
         {
+            "location": "/web/javascript/angular/",
+            "text": "Angular Notes\n\n\nResources\n\n\n\n\nAwesome Angular",
+            "title": "Angular"
+        },
+        {
+            "location": "/web/javascript/angular/#angular-notes",
+            "text": "",
+            "title": "Angular Notes"
+        },
+        {
+            "location": "/web/javascript/angular/#resources",
+            "text": "Awesome Angular",
+            "title": "Resources"
+        },
+        {
+            "location": "/static/",
+            "text": "Creating a static page\n\n\n\n\nUsing \nfoundation from zurb\n\n\n\n\nInstallation - \nFoundation for Sites\n\n\n\n\nInstall foundation-cli - \nnpm install --global foundation-cli\n\n\nCreate new project -  \nfoundation new --framework sites --template zurb\n\n\nUse \nfoundation-zurb-template\n\n\n\n\n\n\nInstall building block - \nfoundation kits install news\n\n\nfoundation watch\n\n\n\n\nResources\n\n\n\n\nPlacement Images List\n\n\nHold It\n\n\n\n\n\n\n\n\nNotes\n\n\nZurb Panini Notes\n\n\n\n\nPartials are your friends. \n\n\nInserting values into partions \n{{>partion value=\"value\"}}\n\n\nUse \n{{#each}}\n to iterate over array data\n\n\nUse \nfilename.variable\n to access data from file in data folder\n\n\n\n\n\n\n\n\nAdding font-awesome to your foundation site\n\n\nHowTo: Foundation 6 Font Awesome and other asset fonts\n\n\n \nbower install fontawesome --save\n\n\n Modify \nconfig.yml\n\n\n  assets:\n    - \"src/assets/**/*\"\n    - \"!src/assets/{img,js,scss,fonts}/**/*\"\n  fonts:\n    - \"src/assets/fonts/*\"\n    - \"bower_components/font-awesome/fonts/*\"\n  # Paths to Sass libraries, which can then be loaded with @import\n  sass:\n    - \"bower_components/foundation-sites/scss\"\n    - \"bower_components/motion-ui/src\"\n    - \"bower_components/font-awesome/scss\"\n\n\n\n\n\n\nModify \ngulpfile.babel.js\n\n\n\n\n// Build the \"dist\" folder by running all of the below tasks. Add fonts\ngulp.task('build',\n gulp.series(clean, gulp.parallel(pages, sass, javascript, images, fonts, copy), styleGuide));\n\n\n\n\n\n\nAdd\n\n\n\n\n// Copy fonts to the \"dist\" folder\nfunction fonts() {\n  return gulp.src(PATHS.fonts)\n    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));\n}\n\n\n\n\n\n\nModify\n\n\n\n\n// Watch for changes to static assets, pages, Sass, and JavaScript\nfunction watch() {\n  gulp.watch(PATHS.assets, copy);\n  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));\n  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));\n  gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));\n  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));\n  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));\n  gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));\n  gulp.watch('bower_components/font-awesome/fonts/*').on('all', gulp.series(fonts, browser.reload));\n  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));\n}\n\n\n\n\n\n\nModify \napp.css\n add\n\n\n\n\n@import \"font-awesome\";\n\n\n\n\n\n\nfoundation watch\n or \nnpm start\n\n\n\n\nWeb Development Tools - finding tools that are really useful for editing\n\n\nTools\n\n\nEmmet\n\n\n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nGenerating Color Palettes\n\n\n\n\nColors Palette Generator\n\n\nCanva Color Palette\n\n\nPictaculous",
+            "title": "Front End"
+        },
+        {
+            "location": "/static/#creating-a-static-page",
+            "text": "Using  foundation from zurb",
+            "title": "Creating a static page"
+        },
+        {
+            "location": "/static/#installation-foundation-for-sites",
+            "text": "Install foundation-cli -  npm install --global foundation-cli  Create new project -   foundation new --framework sites --template zurb  Use  foundation-zurb-template    Install building block -  foundation kits install news  foundation watch",
+            "title": "Installation - Foundation for Sites"
+        },
+        {
+            "location": "/static/#resources",
+            "text": "Placement Images List  Hold It",
+            "title": "Resources"
+        },
+        {
+            "location": "/static/#notes",
+            "text": "",
+            "title": "Notes"
+        },
+        {
+            "location": "/static/#zurb-panini-notes",
+            "text": "Partials are your friends.   Inserting values into partions  {{>partion value=\"value\"}}  Use  {{#each}}  to iterate over array data  Use  filename.variable  to access data from file in data folder",
+            "title": "Zurb Panini Notes"
+        },
+        {
+            "location": "/static/#adding-font-awesome-to-your-foundation-site",
+            "text": "HowTo: Foundation 6 Font Awesome and other asset fonts    bower install fontawesome --save   Modify  config.yml    assets:\n    - \"src/assets/**/*\"\n    - \"!src/assets/{img,js,scss,fonts}/**/*\"\n  fonts:\n    - \"src/assets/fonts/*\"\n    - \"bower_components/font-awesome/fonts/*\"\n  # Paths to Sass libraries, which can then be loaded with @import\n  sass:\n    - \"bower_components/foundation-sites/scss\"\n    - \"bower_components/motion-ui/src\"\n    - \"bower_components/font-awesome/scss\"   Modify  gulpfile.babel.js   // Build the \"dist\" folder by running all of the below tasks. Add fonts\ngulp.task('build',\n gulp.series(clean, gulp.parallel(pages, sass, javascript, images, fonts, copy), styleGuide));   Add   // Copy fonts to the \"dist\" folder\nfunction fonts() {\n  return gulp.src(PATHS.fonts)\n    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));\n}   Modify   // Watch for changes to static assets, pages, Sass, and JavaScript\nfunction watch() {\n  gulp.watch(PATHS.assets, copy);\n  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));\n  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));\n  gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));\n  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));\n  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));\n  gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));\n  gulp.watch('bower_components/font-awesome/fonts/*').on('all', gulp.series(fonts, browser.reload));\n  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));\n}   Modify  app.css  add   @import \"font-awesome\";   foundation watch  or  npm start",
+            "title": "Adding font-awesome to your foundation site"
+        },
+        {
+            "location": "/static/#web-development-tools-finding-tools-that-are-really-useful-for-editing",
+            "text": "",
+            "title": "Web Development Tools - finding tools that are really useful for editing"
+        },
+        {
+            "location": "/static/#tools",
+            "text": "",
+            "title": "Tools"
+        },
+        {
+            "location": "/static/#emmet",
+            "text": "Expand html shortcuts  Can really reduce the amount of typing necessary to to create a page.",
+            "title": "Emmet"
+        },
+        {
+            "location": "/static/#local-static-file-server",
+            "text": "browser-sync  Node.js tool   browser-sync start --server --directory --files \"**/*\"",
+            "title": "Local static file server"
+        },
+        {
+            "location": "/static/#combine-js-files",
+            "text": "Requirejs  For r.js to work (without explicit path)  npm install -g requirejs",
+            "title": "Combine JS files"
+        },
+        {
+            "location": "/static/#web-framework",
+            "text": "Foundation  Setup a new project  foundation new",
+            "title": "Web Framework"
+        },
+        {
+            "location": "/static/#sass-notes",
+            "text": "Using sassc and libsass  libSass  Export the library location so node-sass can use it.",
+            "title": "Sass Notes"
+        },
+        {
+            "location": "/static/#compiling-compass-sass-configrb-file",
+            "text": "Compiling compass sass with sass c library.  sass --compass sass/styles.scss test,css  - seems to read the compass config.rb file to find paths.",
+            "title": "Compiling compass sass config.rb file"
+        },
+        {
+            "location": "/static/#maintainable-css",
+            "text": "BEM (block, element, modifier) methodology",
+            "title": "Maintainable CSS"
+        },
+        {
+            "location": "/static/#resources_1",
+            "text": "https://frontend.directory",
+            "title": "Resources"
+        },
+        {
+            "location": "/static/#generating-color-palettes",
+            "text": "Colors Palette Generator  Canva Color Palette  Pictaculous",
+            "title": "Generating Color Palettes"
+        },
+        {
             "location": "/php/resources/",
             "text": "Resources and notes for PHP\n\n\nSetup\n\n\nTo enable php71-apache2handler, run:\n\n \ncd /opt/local/apache2/modules\n\n\n \nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so\n\n\nResources\n\n\n\n\nGoogle Cloud Datastore Library for PHP",
             "title": "Resources"
@@ -396,96 +501,6 @@
             "title": "Github Markdown"
         },
         {
-            "location": "/static/",
-            "text": "Creating a static page\n\n\n\n\nUsing \nfoundation from zurb\n\n\n\n\nInstallation - \nFoundation for Sites\n\n\n\n\nInstall foundation-cli - \nnpm install --global foundation-cli\n\n\nCreate new project -  \nfoundation new --framework sites --template zurb\n\n\nUse \nfoundation-zurb-template\n\n\n\n\n\n\nInstall building block - \nfoundation kits install news\n\n\nfoundation watch\n\n\n\n\nResources\n\n\n\n\nPlacement Images List\n\n\nHold It\n\n\n\n\n\n\n\n\nNotes\n\n\nZurb Panini Notes\n\n\n\n\nPartials are your friends. \n\n\nInserting values into partions \n{{>partion value=\"value\"}}\n\n\nUse \n{{#each}}\n to iterate over array data\n\n\nUse \nfilename.variable\n to access data from file in data folder\n\n\n\n\n\n\n\n\nAdding font-awesome to your foundatio site\n\n\nHowTo: Foundation 6 Font Awesome and other asset fonts\n\n\n \nbower install fontawesome --save\n\n\n Modify \nconfig.yml\n\n\n  assets:\n    - \"src/assets/**/*\"\n    - \"!src/assets/{img,js,scss,fonts}/**/*\"\n  fonts:\n    - \"src/assets/fonts/*\"\n    - \"bower_components/font-awesome/fonts/*\"\n  # Paths to Sass libraries, which can then be loaded with @import\n  sass:\n    - \"bower_components/foundation-sites/scss\"\n    - \"bower_components/motion-ui/src\"\n    - \"bower_components/font-awesome/scss\"\n\n\n\n\n\n\nModify \ngulpfile.babel.js\n\n\n\n\n// Build the \"dist\" folder by running all of the below tasks. Add fonts\ngulp.task('build',\n gulp.series(clean, gulp.parallel(pages, sass, javascript, images, fonts, copy), styleGuide));\n\n\n\n\n\n\nAdd\n\n\n\n\n// Copy fonts to the \"dist\" folder\nfunction fonts() {\n  return gulp.src(PATHS.fonts)\n    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));\n}\n\n\n\n\n\n\nModify\n\n\n\n\n// Watch for changes to static assets, pages, Sass, and JavaScript\nfunction watch() {\n  gulp.watch(PATHS.assets, copy);\n  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));\n  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));\n  gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));\n  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));\n  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));\n  gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));\n  gulp.watch('bower_components/font-awesome/fonts/*').on('all', gulp.series(fonts, browser.reload));\n  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));\n}\n\n\n\n\n\n\nModify \napp.css\n add\n\n\n\n\n@import \"font-awesome\";\n\n\n\n\n\n\nfoundation watch\n or \nnpm start\n\n\n\n\nWeb Development Tools - finding tools that are really useful for editing\n\n\nTools\n\n\nEmmet\n\n\n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nGenerating Color Palettes\n\n\n\n\nColors Palette Generator\n\n\nCanva Color Palette\n\n\nPictaculous",
-            "title": "Front End"
-        },
-        {
-            "location": "/static/#creating-a-static-page",
-            "text": "Using  foundation from zurb",
-            "title": "Creating a static page"
-        },
-        {
-            "location": "/static/#installation-foundation-for-sites",
-            "text": "Install foundation-cli -  npm install --global foundation-cli  Create new project -   foundation new --framework sites --template zurb  Use  foundation-zurb-template    Install building block -  foundation kits install news  foundation watch",
-            "title": "Installation - Foundation for Sites"
-        },
-        {
-            "location": "/static/#resources",
-            "text": "Placement Images List  Hold It",
-            "title": "Resources"
-        },
-        {
-            "location": "/static/#notes",
-            "text": "",
-            "title": "Notes"
-        },
-        {
-            "location": "/static/#zurb-panini-notes",
-            "text": "Partials are your friends.   Inserting values into partions  {{>partion value=\"value\"}}  Use  {{#each}}  to iterate over array data  Use  filename.variable  to access data from file in data folder",
-            "title": "Zurb Panini Notes"
-        },
-        {
-            "location": "/static/#adding-font-awesome-to-your-foundatio-site",
-            "text": "HowTo: Foundation 6 Font Awesome and other asset fonts    bower install fontawesome --save   Modify  config.yml    assets:\n    - \"src/assets/**/*\"\n    - \"!src/assets/{img,js,scss,fonts}/**/*\"\n  fonts:\n    - \"src/assets/fonts/*\"\n    - \"bower_components/font-awesome/fonts/*\"\n  # Paths to Sass libraries, which can then be loaded with @import\n  sass:\n    - \"bower_components/foundation-sites/scss\"\n    - \"bower_components/motion-ui/src\"\n    - \"bower_components/font-awesome/scss\"   Modify  gulpfile.babel.js   // Build the \"dist\" folder by running all of the below tasks. Add fonts\ngulp.task('build',\n gulp.series(clean, gulp.parallel(pages, sass, javascript, images, fonts, copy), styleGuide));   Add   // Copy fonts to the \"dist\" folder\nfunction fonts() {\n  return gulp.src(PATHS.fonts)\n    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));\n}   Modify   // Watch for changes to static assets, pages, Sass, and JavaScript\nfunction watch() {\n  gulp.watch(PATHS.assets, copy);\n  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));\n  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));\n  gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));\n  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));\n  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));\n  gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));\n  gulp.watch('bower_components/font-awesome/fonts/*').on('all', gulp.series(fonts, browser.reload));\n  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));\n}   Modify  app.css  add   @import \"font-awesome\";   foundation watch  or  npm start",
-            "title": "Adding font-awesome to your foundatio site"
-        },
-        {
-            "location": "/static/#web-development-tools-finding-tools-that-are-really-useful-for-editing",
-            "text": "",
-            "title": "Web Development Tools - finding tools that are really useful for editing"
-        },
-        {
-            "location": "/static/#tools",
-            "text": "",
-            "title": "Tools"
-        },
-        {
-            "location": "/static/#emmet",
-            "text": "Expand html shortcuts  Can really reduce the amount of typing necessary to to create a page.",
-            "title": "Emmet"
-        },
-        {
-            "location": "/static/#local-static-file-server",
-            "text": "browser-sync  Node.js tool   browser-sync start --server --directory --files \"**/*\"",
-            "title": "Local static file server"
-        },
-        {
-            "location": "/static/#combine-js-files",
-            "text": "Requirejs  For r.js to work (without explicit path)  npm install -g requirejs",
-            "title": "Combine JS files"
-        },
-        {
-            "location": "/static/#web-framework",
-            "text": "Foundation  Setup a new project  foundation new",
-            "title": "Web Framework"
-        },
-        {
-            "location": "/static/#sass-notes",
-            "text": "Using sassc and libsass  libSass  Export the library location so node-sass can use it.",
-            "title": "Sass Notes"
-        },
-        {
-            "location": "/static/#compiling-compass-sass-configrb-file",
-            "text": "Compiling compass sass with sass c library.  sass --compass sass/styles.scss test,css  - seems to read the compass config.rb file to find paths.",
-            "title": "Compiling compass sass config.rb file"
-        },
-        {
-            "location": "/static/#maintainable-css",
-            "text": "BEM (block, element, modifier) methodology",
-            "title": "Maintainable CSS"
-        },
-        {
-            "location": "/static/#resources_1",
-            "text": "https://frontend.directory",
-            "title": "Resources"
-        },
-        {
-            "location": "/static/#generating-color-palettes",
-            "text": "Colors Palette Generator  Canva Color Palette  Pictaculous",
-            "title": "Generating Color Palettes"
-        },
-        {
             "location": "/ionic/",
             "text": "Hybrid Mobile Dev\n\n\nFrameworks\n\n\n\n\nAura\n - Java backend\n\n\nAura Documentation",
             "title": "Hybrid"
@@ -757,7 +772,7 @@
         },
         {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\nUnison\n - File sync utility\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome Angular\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\nUnison\n - File sync utility\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework",
             "title": "General"
         },
         {
@@ -797,7 +812,7 @@
         },
         {
             "location": "/research/#resource-lists",
-            "text": "Awesome Weekly  -  Github  Awesome Serverless List  Awesome Python  Awesome Boilerplates & Templates  Awesome Elm Tutorials  Awesome Flask  Front-end Dev Bookmarks  Front End Directory",
+            "text": "Awesome Weekly  -  Github  Awesome Serverless List  Awesome Python  Awesome Boilerplates & Templates  Awesome Elm Tutorials  Awesome Flask  Awesome Angular  Front-end Dev Bookmarks  Front End Directory",
             "title": "Resource Lists"
         },
         {

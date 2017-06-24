@@ -30,6 +30,12 @@
     </url>
         
     <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/ruby/</loc>
      <lastmod>2017-06-25</lastmod>
      <changefreq>daily</changefreq>
@@ -50,12 +56,6 @@
     <url>
      <loc></loc>
      <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/static/</loc>
-     <lastmod>2017-06-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
