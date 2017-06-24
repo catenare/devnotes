@@ -8,7 +8,7 @@
 
 ### JavaScript
 * [elm](http://elm-lang.org/)
-  * [Tutorial](https://guide.elm-lang.org/)
+    * [Tutorial](https://guide.elm-lang.org/)
 * [GrapeJs](http://grapesjs.com/) - Web builder framework. JavaScript. Sites without coding. Integrate into own site.
 
 #### Angular
@@ -18,6 +18,7 @@
 
 ### Web Templates
 * [Flakes Admin Template](http://getflakes.com/) - Admin front-end template.
+* [Framework7](https://framework7.io/) - mobile web template
 
 ## Python
 * Python books online [Invent with python](http://inventwithpython.com)
@@ -25,3 +26,7 @@
 ## Resource Lists
 * [Awesome Serverless List](https://github.com/travist/awesome-serverless-1)
 * [Awesome Python](https://awesome-python.com/)
+
+## Other
+* [Boomerang](http://www.seas.upenn.edu/~harmony/) - Data conversion and synchronization
+* [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) - File sync utility

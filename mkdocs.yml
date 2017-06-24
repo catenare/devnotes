@@ -39,7 +39,7 @@ pages:
 - Operations:
   - 'Vagrant': 'vagrant.md'
   - 'Docker': 'docker.md'
-- Tools: 'tools.md'
+- "Mock and API Tools": 'tools.md'
 - 'Command Line': 'cmd/cmd.md'
 - 'Learning Systems': 'teach.md'
 - Research: 'research.md'

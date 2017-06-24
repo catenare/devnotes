@@ -19,7 +19,3 @@
     * Work with HTML code directly on a browser.
 * [Codepen](http://codepen.io)
     * Frontend development environment
-
-
-    
-

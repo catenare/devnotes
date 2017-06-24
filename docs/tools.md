@@ -70,7 +70,3 @@
     }
     module.exports = generateCustomers
 ```
-
-### Miscellaneous Notes
-* [Boomerang](http://www.seas.upenn.edu/~harmony/)
-* [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) - File sync utility
