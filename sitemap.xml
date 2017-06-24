@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -37,7 +37,7 @@
         
     <url>
      <loc>/static/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -52,7 +52,7 @@
     
     <url>
      <loc>/reporting/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -60,7 +60,7 @@
     
     <url>
      <loc>/docs/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -69,13 +69,13 @@
         
     <url>
      <loc>/vagrant/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/docker/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -84,7 +84,7 @@
     
     <url>
      <loc>/tools/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -92,7 +92,7 @@
     
     <url>
      <loc>/cmd/cmd/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -100,7 +100,7 @@
     
     <url>
      <loc>/teach/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -108,7 +108,7 @@
     
     <url>
      <loc>/research/</loc>
-     <lastmod>2017-06-15</lastmod>
+     <lastmod>2017-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
