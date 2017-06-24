@@ -96,19 +96,24 @@
             "title": "Can't delete a migration, only repair it."
         },
         {
-            "location": "/php/setup/",
-            "text": "Setup\n\n\nTo enable php71-apache2handler, run:\n\n\n\n\ncd /opt/local/apache2/modules\n\n\nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so",
-            "title": "Setup"
+            "location": "/php/resources/",
+            "text": "Resources and notes for PHP\n\n\nSetup\n\n\nTo enable php71-apache2handler, run:\n\n \ncd /opt/local/apache2/modules\n\n\n \nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so\n\n\nResources\n\n\n\n\nGoogle Cloud Datastore Library for PHP",
+            "title": "Resources"
         },
         {
-            "location": "/php/setup/#setup",
+            "location": "/php/resources/#resources-and-notes-for-php",
             "text": "",
+            "title": "Resources and notes for PHP"
+        },
+        {
+            "location": "/php/resources/#setup",
+            "text": "To enable php71-apache2handler, run:   cd /opt/local/apache2/modules    sudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so",
             "title": "Setup"
         },
         {
-            "location": "/php/setup/#to-enable-php71-apache2handler-run",
-            "text": "cd /opt/local/apache2/modules  sudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so",
-            "title": "To enable php71-apache2handler, run:"
+            "location": "/php/resources/#resources",
+            "text": "Google Cloud Datastore Library for PHP",
+            "title": "Resources"
         },
         {
             "location": "/php/composer/",
@@ -437,46 +442,51 @@
         },
         {
             "location": "/ionic/",
-            "text": "Hybrid Mobile Dev with Ionic",
+            "text": "Hybrid Mobile Dev\n\n\nFrameworks\n\n\n\n\nAura\n - Java backend\n\n\nAura Documentation",
             "title": "Hybrid"
         },
         {
-            "location": "/ionic/#hybrid-mobile-dev-with-ionic",
+            "location": "/ionic/#hybrid-mobile-dev",
             "text": "",
-            "title": "Hybrid Mobile Dev with Ionic"
+            "title": "Hybrid Mobile Dev"
         },
         {
-            "location": "/mobile/",
-            "text": "Mobile Device Development\n\n\nAndroid\n\n\nLinks\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\nAndroid Developer - Google\n\n\n\n\n\n\nOther\n\n\nSome Teaching Notes - \n\n\n\n\n\n\nOther dev tools\n\n\nApp Inventor\n\n\n\n\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\nCocoapods\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\nStackOverflow\n\n\n\n\n\n\n\n\n    cd ~/.cocoapods/repos\n    git clone git://github.com/CocoaPods/Specs.git master\n    pod install --no-repo-update --verbose\n\n\n\n\n\n\nActual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
-            "title": "Mobile Dev"
+            "location": "/ionic/#frameworks",
+            "text": "Aura  - Java backend  Aura Documentation",
+            "title": "Frameworks"
         },
         {
-            "location": "/mobile/#mobile-device-development",
+            "location": "/mobilenotes/",
+            "text": "Mobile Device Development Notes\n\n\nAndroid\n\n\nLinks\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\nAndroid Developer - Google\n\n\n\n\n\n\nOther\n\n\nSome Teaching Notes - \n\n\n\n\n\n\nOther dev tools\n\n\nApp Inventor\n\n\n\n\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\nCocoapods\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\nStackOverflow\n\n\n\n\n\n\n\n\n    cd ~/.cocoapods/repos\n    git clone git://github.com/CocoaPods/Specs.git master\n    pod install --no-repo-update --verbose\n\n\n\n\n\n\nActual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
+            "title": "Mobile Dev Notes"
+        },
+        {
+            "location": "/mobilenotes/#mobile-device-development-notes",
             "text": "",
-            "title": "Mobile Device Development"
+            "title": "Mobile Device Development Notes"
         },
         {
-            "location": "/mobile/#android",
+            "location": "/mobilenotes/#android",
             "text": "",
             "title": "Android"
         },
         {
-            "location": "/mobile/#links",
+            "location": "/mobilenotes/#links",
             "text": "Google Tools  Android Studio  Android Developer - Google    Other  Some Teaching Notes -     Other dev tools  App Inventor",
             "title": "Links"
         },
         {
-            "location": "/mobile/#solutions",
+            "location": "/mobilenotes/#solutions",
             "text": "Problem:  Launching Android SDK Manager without going through Atom Studio  ~/Library/Android/sdk/tools/android  For AVD   ~/Library/Android/sdk/tools/android avd  StackOverflow  Lauch AVD -  StackOverflow",
             "title": "Solutions"
         },
         {
-            "location": "/mobile/#ios",
+            "location": "/mobilenotes/#ios",
             "text": "",
             "title": "IOS"
         },
         {
-            "location": "/mobile/#ios-development-notes",
+            "location": "/mobilenotes/#ios-development-notes",
             "text": "Cocoapods  Issue:  Unable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add  StackOverflow         cd ~/.cocoapods/repos\n    git clone git://github.com/CocoaPods/Specs.git master\n    pod install --no-repo-update --verbose   Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
             "title": "IOS Development Notes"
         },
@@ -702,7 +712,7 @@
         },
         {
             "location": "/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite",
             "title": "Learning Systems"
         },
         {
@@ -731,8 +741,13 @@
             "title": "Online Resources"
         },
         {
+            "location": "/teach/#curriculum",
+            "text": "The Odin Project  Site",
+            "title": "Curriculum"
+        },
+        {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\nUnison\n - File sync utility",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\nUnison\n - File sync utility\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework",
             "title": "Research"
         },
         {
@@ -752,7 +767,7 @@
         },
         {
             "location": "/research/#javascript",
-            "text": "elm  Tutorial    GrapeJs  - Web builder framework. JavaScript. Sites without coding. Integrate into own site.",
+            "text": "elm  Tutorial  Awesome list of Elm Tutorials    GrapeJs  - Web builder framework. JavaScript. Sites without coding. Integrate into own site.  Monaco Editor  - Microsoft javascript based code editor.",
             "title": "JavaScript"
         },
         {
@@ -772,13 +787,23 @@
         },
         {
             "location": "/research/#resource-lists",
-            "text": "Awesome Serverless List  Awesome Python",
+            "text": "Awesome Weekly  -  Github  Awesome Serverless List  Awesome Python  Awesome Boilerplates & Templates  Awesome Elm Tutorials  Front-end Dev Bookmarks  Front End Directory",
             "title": "Resource Lists"
+        },
+        {
+            "location": "/research/#algorithm-resources",
+            "text": "Grokking Algorithms Source  Elementary Algorithms and Data Structures  The Coders Hub  - Algorithms in multiple languages",
+            "title": "Algorithm Resources"
         },
         {
             "location": "/research/#other",
             "text": "Boomerang  - Data conversion and synchronization  Unison  - File sync utility",
             "title": "Other"
+        },
+        {
+            "location": "/research/#serverless",
+            "text": "Serverless  - serverless framework",
+            "title": "Serverless"
         }
     ]
 }
