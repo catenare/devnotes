@@ -17,7 +17,7 @@
     * Use `{{#each}}` to iterate over array data
     * Use `filename.variable` to access data from file in data folder
 
-### Adding font-awesome to your foundatio site
+### Adding font-awesome to your foundation site
 [HowTo: Foundation 6 Font Awesome and other asset fonts](http://foundation.zurb.com/forum/posts/46991-howto-foundation-6-font-awesome-and-other-asset-fonts)
 * `bower install fontawesome --save`
 * Modify *config.yml*

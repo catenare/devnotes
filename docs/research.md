@@ -32,6 +32,7 @@
 * [Awesome Boilerplates & Templates](https://github.com/melvin0008/awesome-projects-boilerplates)
 * [Awesome Elm Tutorials](https://github.com/isRuslan/awesome-elm)
 * [Awesome Flask](https://github.com/humiaozuzu/awesome-flask)
+* [Awesome Angular](https://github.com/brillout/awesome-angular-components)
 * [Front-end Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
     * [Front End Directory](https://frontend.directory/)
 

@@ -16,6 +16,9 @@ pages:
   - Database: 
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
+  - Web:
+    - Angular: 'web/javascript/angular.md'
+    - 'Front End': 'static.md'
   - PHP: 
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'
@@ -33,7 +36,6 @@ pages:
     - Spring: 'spring.md'
   - Version Control:
     - 'Git': 'git.md'
-  - 'Front End': 'static.md'
   - Mobile:
     - Hybrid: 'ionic.md'
     - 'Mobile Dev Notes': 'mobilenotes.md'
