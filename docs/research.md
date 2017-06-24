@@ -9,14 +9,19 @@
 ### JavaScript
 * [elm](http://elm-lang.org/)
   * [Tutorial](https://guide.elm-lang.org/)
+* [GrapeJs](http://grapesjs.com/) - Web builder framework. JavaScript. Sites without coding. Integrate into own site.
 
 #### Angular
 * Tools
   * [Angular Augury](https://augury.angular.io/) - debug and profile angular 2 apps
     * Chrome extension
 
-
+### Web Templates
+* [Flakes Admin Template](http://getflakes.com/) - Admin front-end template.
 
 ## Python
 * Python books online [Invent with python](http://inventwithpython.com)
 
+## Resource Lists
+* [Awesome Serverless List](https://github.com/travist/awesome-serverless-1)
+* [Awesome Python](https://awesome-python.com/)
