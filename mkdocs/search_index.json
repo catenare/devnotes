@@ -2,18 +2,18 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to Johan's Development Notes\n\n\nThis is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.\nHopefully this will be helpful beyond just me.\n\n\nProject setup\n\n\n\n\nVirtualenvwrapper name: devnotes\n\n\nPublished on github using gh-pages\n\n\nNotes are located at one place now",
+            "text": "Welcome to Johan's Development Notes\n\n\nThings I discover in my work as a developer. Resources and notes that I tend to forget. Beyond a paper notebook, this is the repository of things I find out while working on my projects. In the least, it will keep me from having to rediscover \"the wheel\" when working on future projects.\n\n\n\n\nMy Website\n\n\n\n\nProject List\n\n\n\n\nSee \nGithub",
             "title": "Home"
         },
         {
             "location": "/#welcome-to-johans-development-notes",
-            "text": "This is just documentation of notes that I make as I work on different projects. Helps me remember what I did before yet also provides me with a repository of information for future projects.\nHopefully this will be helpful beyond just me.",
+            "text": "Things I discover in my work as a developer. Resources and notes that I tend to forget. Beyond a paper notebook, this is the repository of things I find out while working on my projects. In the least, it will keep me from having to rediscover \"the wheel\" when working on future projects.   My Website",
             "title": "Welcome to Johan's Development Notes"
         },
         {
-            "location": "/#project-setup",
-            "text": "Virtualenvwrapper name: devnotes  Published on github using gh-pages  Notes are located at one place now",
-            "title": "Project setup"
+            "location": "/#project-list",
+            "text": "See  Github",
+            "title": "Project List"
         },
         {
             "location": "/database/",
@@ -241,34 +241,69 @@
             "title": "Mustache for templating"
         },
         {
-            "location": "/python/",
+            "location": "/python/general/",
             "text": "Using Python\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.",
-            "title": "Python"
+            "title": "General"
         },
         {
-            "location": "/python/#using-python",
+            "location": "/python/general/#using-python",
             "text": "",
             "title": "Using Python"
         },
         {
-            "location": "/python/#pip",
+            "location": "/python/general/#pip",
             "text": "Error message:  \"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"  Problems  ~/Library/Application Support/pip/pip.conf  contains  user=true  Resolution: Override the config in your virtualenv pip config file  Create  $VIRTUAL_ENV/pip.conf  Place config information to override user=true     [install]\nuser=false   Pip Configuration  |  StackOverflow Issue",
             "title": "Pip"
         },
         {
-            "location": "/python/#install-pip-as-user",
+            "location": "/python/general/#install-pip-as-user",
             "text": "get the get-pip.py script  Get the script  wget https://bootstrap.pypa.io/get-pip.py  Run the script with user option  pytoh get-pip.py --user    Now install all pip packages into user space.  pip install --user <package>",
             "title": "Install pip as user"
         },
         {
-            "location": "/python/#setup-pip-config-file-want-to-set-default-settings-for-command-line-like-always-install-in-user-space",
+            "location": "/python/general/#setup-pip-config-file-want-to-set-default-settings-for-command-line-like-always-install-in-user-space",
             "text": "Create file  $HOME/Library/Application Support/pip/pip.conf  Edit file    [Install]\nuser = true",
             "title": "Setup pip config file - want to set default settings for command line. Like always install in user space."
         },
         {
-            "location": "/python/#issue-with-readline",
+            "location": "/python/general/#issue-with-readline",
             "text": "Terminal all screwed up after using python repl  Install python readline  pip install readline .  Does not seem to work because installed in user space.  Using macports. Installed  py35-readline . That seemed to work.",
             "title": "Issue with readline"
+        },
+        {
+            "location": "/python/flask/",
+            "text": "Flask Notes\n\n\nResources\n\n\n\n\nFlask Site\n\n\n\n\nTools\n\n\n\n\nFrozen Flask\n - \nSite\n\n\nUsed for \nWineries Of the Sierra Foothills\n and personal site \nJohan Martin\n\n\nGenerate static site from flask site.\n\n\n\n\n\n\n\n\nDocs\n\n\n\n\nAwesome Flask",
+            "title": "Flask"
+        },
+        {
+            "location": "/python/flask/#flask-notes",
+            "text": "",
+            "title": "Flask Notes"
+        },
+        {
+            "location": "/python/flask/#resources",
+            "text": "Flask Site",
+            "title": "Resources"
+        },
+        {
+            "location": "/python/flask/#tools",
+            "text": "Frozen Flask  -  Site  Used for  Wineries Of the Sierra Foothills  and personal site  Johan Martin  Generate static site from flask site.",
+            "title": "Tools"
+        },
+        {
+            "location": "/python/flask/#docs",
+            "text": "Awesome Flask",
+            "title": "Docs"
+        },
+        {
+            "location": "/python/research/",
+            "text": "Python Research and Resources",
+            "title": "Research"
+        },
+        {
+            "location": "/python/research/#python-research-and-resources",
+            "text": "",
+            "title": "Python Research and Resources"
         },
         {
             "location": "/ruby/",
@@ -289,6 +324,16 @@
             "location": "/ruby/#unable-to-run-a-command-from-a-gem-when-installed-with-gem-install",
             "text": "Example:  gem install cocoapods . Expect to use  pod  as a commandline client.  Solution:  rvm use ruby-{current}  Problem related to rvm not setting up a default ruby.",
             "title": "Unable to run a command from a gem when installed with gem install"
+        },
+        {
+            "location": "/java/",
+            "text": "Java Notes\n\n\n\n\nDetermine location of Java on Mac OS X\n\n\necho $(/usr/libexec/java_home)\n\n\n\n\n\n\nUsing Ivy with Ant\n\n\nDownload \nApache Ivy\n\n\nPut files into ant/lib directory.\n\n\nLib directory at \n~/.ant/lib\n - Using sdkman to manage Ant.",
+            "title": "Java"
+        },
+        {
+            "location": "/java/#java-notes",
+            "text": "Determine location of Java on Mac OS X  echo $(/usr/libexec/java_home)    Using Ivy with Ant  Download  Apache Ivy  Put files into ant/lib directory.  Lib directory at  ~/.ant/lib  - Using sdkman to manage Ant.",
+            "title": "Java Notes"
         },
         {
             "location": "/spring/",
@@ -493,7 +538,7 @@
         {
             "location": "/reporting/",
             "text": "Reporting Server\n\n\nBirt\n\n\nCurrently using Birt for generating reports and invoices for the child center.\n* Setup\n  1. Download Birt report designer\n  1. Create report using designer.\n    * Connect to database using jdbc connector\n  1. Built-in report generator - create PDF versions of report.\n\n\nJasper\n\n\n\n\nSeems to have more moving parts.\n\n\nComes with a server component.\n\n\n\n\nCurrently using Birt to generate invoices.\n\n\n\n\nAll data in postgres DB\n\n\nConnect to postgres DB via jdbc\n\n\nOne view and sql queries to populate the reports\n\n\nSeems to work okay now.\n\n\n\n\nGoals\n\n\n\n\nMobile view of reports. Web based mobile.\n\n\nGenerate reports on demand. Always most relevant data\n\n\nGenerate invoices that will be sent via email.\n\n\nEnable reports for printing. Hardcopies are always nice.\n\n\nWant to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.\n\n\nWant to chart.\n\n\n\n\nIssue with Eclipse (starting up report server)\n\n\n\n\nEclipse Wiki\n\n\nFix issue to set explicit JVM for Eclipse.",
-            "title": "Reports"
+            "title": "Reporting"
         },
         {
             "location": "/reporting/#reporting-server",
@@ -711,44 +756,9 @@
             "title": "Unix like commands"
         },
         {
-            "location": "/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite",
-            "title": "Learning Systems"
-        },
-        {
-            "location": "/teach/#teaching-web-development",
-            "text": "",
-            "title": "Teaching web development"
-        },
-        {
-            "location": "/teach/#teaching-tools",
-            "text": "",
-            "title": "Teaching Tools"
-        },
-        {
-            "location": "/teach/#eclipse-che",
-            "text": "Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox",
-            "title": "Eclipse Che"
-        },
-        {
-            "location": "/teach/#creating-learning-environments",
-            "text": "Open Edx",
-            "title": "Creating learning environments"
-        },
-        {
-            "location": "/teach/#online-resources",
-            "text": "Codenvy  Create workspace instances using eclipse che    Thimble  Work with HTML code directly on a browser.    Codepen  Frontend development environment",
-            "title": "Online Resources"
-        },
-        {
-            "location": "/teach/#curriculum",
-            "text": "The Odin Project  Site",
-            "title": "Curriculum"
-        },
-        {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\nUnison\n - File sync utility\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework",
-            "title": "Research"
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\nUnison\n - File sync utility\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework",
+            "title": "General"
         },
         {
             "location": "/research/#projects-of-interest",
@@ -787,7 +797,7 @@
         },
         {
             "location": "/research/#resource-lists",
-            "text": "Awesome Weekly  -  Github  Awesome Serverless List  Awesome Python  Awesome Boilerplates & Templates  Awesome Elm Tutorials  Front-end Dev Bookmarks  Front End Directory",
+            "text": "Awesome Weekly  -  Github  Awesome Serverless List  Awesome Python  Awesome Boilerplates & Templates  Awesome Elm Tutorials  Awesome Flask  Front-end Dev Bookmarks  Front End Directory",
             "title": "Resource Lists"
         },
         {
@@ -804,6 +814,41 @@
             "location": "/research/#serverless",
             "text": "Serverless  - serverless framework",
             "title": "Serverless"
+        },
+        {
+            "location": "/teach/",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite",
+            "title": "Learning Systems"
+        },
+        {
+            "location": "/teach/#teaching-web-development",
+            "text": "",
+            "title": "Teaching web development"
+        },
+        {
+            "location": "/teach/#teaching-tools",
+            "text": "",
+            "title": "Teaching Tools"
+        },
+        {
+            "location": "/teach/#eclipse-che",
+            "text": "Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox",
+            "title": "Eclipse Che"
+        },
+        {
+            "location": "/teach/#creating-learning-environments",
+            "text": "Open Edx",
+            "title": "Creating learning environments"
+        },
+        {
+            "location": "/teach/#online-resources",
+            "text": "Codenvy  Create workspace instances using eclipse che    Thimble  Work with HTML code directly on a browser.    Codepen  Frontend development environment",
+            "title": "Online Resources"
+        },
+        {
+            "location": "/teach/#curriculum",
+            "text": "The Odin Project  Site",
+            "title": "Curriculum"
         }
     ]
 }
