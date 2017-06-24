@@ -1,4 +1,4 @@
-# Mobile Device Development
+# Mobile Device Development Notes
 
 ## Android
 

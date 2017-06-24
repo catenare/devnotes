@@ -18,7 +18,7 @@ pages:
       - Migrations: 'dbmigrations.md'
   - Languages:
     - PHP: 
-      - Setup: 'php/setup.md'
+      - Resources: 'php/resources.md'
       - Composer: 'php/composer.md'
       - Wordpress:
         - 'Setup': 'php/wordpress/setup.md'
@@ -33,7 +33,7 @@ pages:
   - 'Front End': 'static.md'
   - Mobile:
     - Hybrid: 'ionic.md'
-    - 'Mobile Dev': 'mobile.md'
+    - 'Mobile Dev Notes': 'mobilenotes.md'
 - Reports: 'reporting.md'
 - Documentation: 'docs.md'
 - Operations:
