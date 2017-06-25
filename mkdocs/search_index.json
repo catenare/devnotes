@@ -187,13 +187,28 @@
         },
         {
             "location": "/web/front/",
-            "text": "Web Development Tools - finding tools that are really useful for editing\n\n\nTools\n\n\nEmmet\n\n\n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nTemplates\n\n\n\n\nCoreUI",
+            "text": "Web Development Tools - finding tools that are really useful for editing\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\n\n\nuikit\n\n\n\n\nTemplates\n\n\n\n\nCoreUI\n - Admin template\n\n\nflakes\n - Design and frontend framework for dashboard.\n\n\n\n\nTools\n\n\nEmmet\n\n\n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nCSS\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology",
             "title": "Front"
         },
         {
             "location": "/web/front/#web-development-tools-finding-tools-that-are-really-useful-for-editing",
             "text": "",
             "title": "Web Development Tools - finding tools that are really useful for editing"
+        },
+        {
+            "location": "/web/front/#resources",
+            "text": "https://frontend.directory",
+            "title": "Resources"
+        },
+        {
+            "location": "/web/front/#web-framework",
+            "text": "Foundation  Setup a new project  foundation new    uikit",
+            "title": "Web Framework"
+        },
+        {
+            "location": "/web/front/#templates",
+            "text": "CoreUI  - Admin template  flakes  - Design and frontend framework for dashboard.",
+            "title": "Templates"
         },
         {
             "location": "/web/front/#tools",
@@ -216,9 +231,9 @@
             "title": "Combine JS files"
         },
         {
-            "location": "/web/front/#web-framework",
-            "text": "Foundation  Setup a new project  foundation new",
-            "title": "Web Framework"
+            "location": "/web/front/#css",
+            "text": "",
+            "title": "CSS"
         },
         {
             "location": "/web/front/#sass-notes",
@@ -234,16 +249,6 @@
             "location": "/web/front/#maintainable-css",
             "text": "BEM (block, element, modifier) methodology",
             "title": "Maintainable CSS"
-        },
-        {
-            "location": "/web/front/#resources",
-            "text": "https://frontend.directory",
-            "title": "Resources"
-        },
-        {
-            "location": "/web/front/#templates",
-            "text": "CoreUI",
-            "title": "Templates"
         },
         {
             "location": "/web/javascript/js/",
@@ -566,9 +571,39 @@
             "title": "Github Markdown"
         },
         {
-            "location": "/mobile/mobile/",
-            "text": "Mobile Notes\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool. Has a free tier.\n\n\nAxure\n - Has a free educational version.\n\n\nAquro\n - Has free tier.\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\n\n\nMobile Web UI Kits\n\n\n\n\nFramework7\n\n\nUIKit\n\n\nOnsenUI\n\n\nAura\n - Java backen\n\n\nAura Documentation\n\n\n\n\n\n\n\n\nNative Kits\n\n\n\n\nNativeScript\n\n\n\n\nHybrid Kits\n\n\n\n\nIonic 2\n - Uses Angular\n\n\nPhoneGap\n - uses Cordova\n\n\nCordova\n - Underlying tool for most hybrid kits\n\n\n\n\nLibraries\n\n\n\n\nHammer\n - JavaScript library for touch.\n\n\nAngular\n - Library that seems to be the underlying framework for most hybrid apps.\n\n\n\n\nTools\n\n\n\n\nGoogle Developer Tools",
+            "location": "/mobile/general/",
+            "text": "Deciding on a framework for mobile development\n\n\nGoals\n\n\n\n\nRapid development.\n\n\nTrying to get a quick prototype up and running to test out the feasability of the project\n\n\n\n\n\n\nWeb initially\n\n\nCreate the equivalent of a mobile web site that can be packaged as a native app later. Can be a combination of both web and native.\n\n\n\n\n\n\nIOS first\n\n\nFocused on developing an IOS app. Will port to Android. Maybe to Windows based on the framework.\n\n\n\n\n\n\nWeb framework\n\n\nUse JavaScript, CSS, HTML for putting together project.\n\n\n\n\n\n\n\n\nTools\n\n\n\n\nApache Cordova - underlying tool for the hybrid platform.\n\n\nAngularJS - JavaScript framework that seems to be most portable to NativeScript. \n\n\nTypeScript - write JavaScript with enterprise tools.\n\n\n\n\nFrameworks\n\n\n\n\nIonic - Angular and typescript. Has an infrastructure around it. Can generate components with command line. \n\n\nFramework7 - Seems to have a variety of templates.\n\n\nOnsenUI - just not enough for me to bite.\n\n\n\n\nThinking\n\n\n\n\nStarting with Framework7 template tool. See how far we can get. Goal is to create a web site that will suffice as a prototype for mobile site.",
             "title": "General"
+        },
+        {
+            "location": "/mobile/general/#deciding-on-a-framework-for-mobile-development",
+            "text": "",
+            "title": "Deciding on a framework for mobile development"
+        },
+        {
+            "location": "/mobile/general/#goals",
+            "text": "Rapid development.  Trying to get a quick prototype up and running to test out the feasability of the project    Web initially  Create the equivalent of a mobile web site that can be packaged as a native app later. Can be a combination of both web and native.    IOS first  Focused on developing an IOS app. Will port to Android. Maybe to Windows based on the framework.    Web framework  Use JavaScript, CSS, HTML for putting together project.",
+            "title": "Goals"
+        },
+        {
+            "location": "/mobile/general/#tools",
+            "text": "Apache Cordova - underlying tool for the hybrid platform.  AngularJS - JavaScript framework that seems to be most portable to NativeScript.   TypeScript - write JavaScript with enterprise tools.",
+            "title": "Tools"
+        },
+        {
+            "location": "/mobile/general/#frameworks",
+            "text": "Ionic - Angular and typescript. Has an infrastructure around it. Can generate components with command line.   Framework7 - Seems to have a variety of templates.  OnsenUI - just not enough for me to bite.",
+            "title": "Frameworks"
+        },
+        {
+            "location": "/mobile/general/#thinking",
+            "text": "Starting with Framework7 template tool. See how far we can get. Goal is to create a web site that will suffice as a prototype for mobile site.",
+            "title": "Thinking"
+        },
+        {
+            "location": "/mobile/mobile/",
+            "text": "Mobile Notes\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool. Has a free tier.\n\n\nAxure\n - Has a free educational version.\n\n\nAquro\n - Has free tier.\n\n\nVectr\n - Free. Includes for web.\n\n\nInvision\n - Web and mobile prototype\n\n\nZeplin\n - Free for single project.\n\n\n\n\nWeb only\n\n\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\n\n\nMobile Web UI Kits\n\n\n\n\nFramework7\n\n\nUIKit\n\n\nOnsenUI\n\n\nAura\n - Java backen\n\n\nAura Documentation\n\n\n\n\n\n\nMobile Angular UI\n\n\nRatchet\n\n\n\n\nNative Kits\n\n\n\n\nNativeScript\n\n\nAppCelerator\n\n\n\n\nHybrid Kits\n\n\n\n\nIonic 2\n - Uses Angular\n\n\nPhoneGap\n - uses Cordova\n\n\nCordova\n - Underlying tool for most hybrid kits\n\n\n\n\nLibraries\n\n\n\n\nHammer\n - JavaScript library for touch.\n\n\nAngular\n - Library that seems to be the underlying framework for most hybrid apps.\n\n\nZepto\n - replacement for jquery.\n\n\n\n\nTools\n\n\n\n\nGoogle Developer Tools\n\n\nLimeJS\n - \nWeb Page\n - Game framework.\n\n\n\n\nServices\n\n\n\n\nGoogel Firebase\n\n\nKeen IO\n - api for event data\n\n\n\n\nUI Kit Templates\n\n\n\n\nUpLabs\n - UI kit market.\n\n\n\n\nAgencies\n\n\n\n\nFamous\n\n\n\n\nOnline App Template Building Tools\n\n\n\n\nAppInstitute\n\n\nAppMachine\n\n\nAppMakr\n\n\nAppYourself\n\n\nAppery\n\n\nCreator\n\n\nSwiftic\n\n\nKinvey\n\n\nApp Press\n - Code free app development\n\n\nEachScape\n - Drag and drop interfaces\n\n\niBuildApp\n - Online app creator\n\n\nViziApps\n - Create mobile apps\n\n\nAppGyver\n - App gyver",
+            "title": "Research"
         },
         {
             "location": "/mobile/mobile/#mobile-notes",
@@ -577,17 +612,22 @@
         },
         {
             "location": "/mobile/mobile/#mobile-prototyping-tools",
-            "text": "Marvel  - Prototyping tool. Has a free tier.  Axure  - Has a free educational version.  Aquro  - Has free tier.  CSS3 Animations  - use for interactivity  Hammer  - JavaScript library for touch.",
+            "text": "Marvel  - Prototyping tool. Has a free tier.  Axure  - Has a free educational version.  Aquro  - Has free tier.  Vectr  - Free. Includes for web.  Invision  - Web and mobile prototype  Zeplin  - Free for single project.",
             "title": "Mobile Prototyping Tools"
         },
         {
+            "location": "/mobile/mobile/#web-only",
+            "text": "CSS3 Animations  - use for interactivity  Hammer  - JavaScript library for touch.",
+            "title": "Web only"
+        },
+        {
             "location": "/mobile/mobile/#mobile-web-ui-kits",
-            "text": "Framework7  UIKit  OnsenUI  Aura  - Java backen  Aura Documentation",
+            "text": "Framework7  UIKit  OnsenUI  Aura  - Java backen  Aura Documentation    Mobile Angular UI  Ratchet",
             "title": "Mobile Web UI Kits"
         },
         {
             "location": "/mobile/mobile/#native-kits",
-            "text": "NativeScript",
+            "text": "NativeScript  AppCelerator",
             "title": "Native Kits"
         },
         {
@@ -597,17 +637,37 @@
         },
         {
             "location": "/mobile/mobile/#libraries",
-            "text": "Hammer  - JavaScript library for touch.  Angular  - Library that seems to be the underlying framework for most hybrid apps.",
+            "text": "Hammer  - JavaScript library for touch.  Angular  - Library that seems to be the underlying framework for most hybrid apps.  Zepto  - replacement for jquery.",
             "title": "Libraries"
         },
         {
             "location": "/mobile/mobile/#tools",
-            "text": "Google Developer Tools",
+            "text": "Google Developer Tools  LimeJS  -  Web Page  - Game framework.",
             "title": "Tools"
         },
         {
+            "location": "/mobile/mobile/#services",
+            "text": "Googel Firebase  Keen IO  - api for event data",
+            "title": "Services"
+        },
+        {
+            "location": "/mobile/mobile/#ui-kit-templates",
+            "text": "UpLabs  - UI kit market.",
+            "title": "UI Kit Templates"
+        },
+        {
+            "location": "/mobile/mobile/#agencies",
+            "text": "Famous",
+            "title": "Agencies"
+        },
+        {
+            "location": "/mobile/mobile/#online-app-template-building-tools",
+            "text": "AppInstitute  AppMachine  AppMakr  AppYourself  Appery  Creator  Swiftic  Kinvey  App Press  - Code free app development  EachScape  - Drag and drop interfaces  iBuildApp  - Online app creator  ViziApps  - Create mobile apps  AppGyver  - App gyver",
+            "title": "Online App Template Building Tools"
+        },
+        {
             "location": "/mobile/mobilenotes/",
-            "text": "Mobile Device Development Notes\n\n\nAndroid\n\n\nLinks\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\nAndroid Developer - Google\n\n\n\n\n\n\nOther\n\n\nSome Teaching Notes - \n\n\n\n\n\n\nOther dev tools\n\n\nApp Inventor\n\n\n\n\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\nCocoapods\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\nStackOverflow\n\n\n\n\n\n\n\n\n    cd ~/.cocoapods/repos\n    git clone git://github.com/CocoaPods/Specs.git master\n    pod install --no-repo-update --verbose\n\n\n\n\n\n\nActual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
+            "text": "Mobile Device Development Notes\n\n\nAndroid\n\n\n\n\nGoogle Tools\n\n\nAndroid Studio\n\n\n\n\n\n\n\n\nSolutions\n\n\n\n\nProblem:\n Launching Android SDK Manager without going through Atom Studio\n\n\n~/Library/Android/sdk/tools/android\n\n\nFor AVD\n \n~/Library/Android/sdk/tools/android avd\n\n\nStackOverflow\n\n\nLauch AVD - \nStackOverflow\n\n\n\n\n\n\n\n\nIOS\n\n\nIOS Development Notes\n\n\n\n\nCocoapods\n\n\nIssue: \nUnable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add\n\n\nStackOverflow\n\n\n\n\n\n\n\n\n    cd ~/.cocoapods/repos\n    git clone git://github.com/CocoaPods/Specs.git master\n    pod install --no-repo-update --verbose\n\n\n\n\n\n\nActual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.\n\n\n\n\nResources\n\n\n\n\nAndroid Developer - Google\n)\n\n\nSome Teaching Notes - \n\n\n\n\nTools\n\n\n\n\nFastlane\n - release tool for mobile app.\n\n\nApp Inventor\n\n\nCocos2d-x\n - IOS Game dev tools.",
             "title": "Mobile Dev Notes"
         },
         {
@@ -617,13 +677,8 @@
         },
         {
             "location": "/mobile/mobilenotes/#android",
-            "text": "",
+            "text": "Google Tools  Android Studio",
             "title": "Android"
-        },
-        {
-            "location": "/mobile/mobilenotes/#links",
-            "text": "Google Tools  Android Studio  Android Developer - Google    Other  Some Teaching Notes -     Other dev tools  App Inventor",
-            "title": "Links"
         },
         {
             "location": "/mobile/mobilenotes/#solutions",
@@ -639,6 +694,16 @@
             "location": "/mobile/mobilenotes/#ios-development-notes",
             "text": "Cocoapods  Issue:  Unable to add a source with url https://github.com/CocoaPods/Specs.git named master. You can try adding it manually in ~/.cocoapods/repos or via pod repo add  StackOverflow         cd ~/.cocoapods/repos\n    git clone git://github.com/CocoaPods/Specs.git master\n    pod install --no-repo-update --verbose   Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.",
             "title": "IOS Development Notes"
+        },
+        {
+            "location": "/mobile/mobilenotes/#resources",
+            "text": "Android Developer - Google )  Some Teaching Notes -",
+            "title": "Resources"
+        },
+        {
+            "location": "/mobile/mobilenotes/#tools",
+            "text": "Fastlane  - release tool for mobile app.  App Inventor  Cocos2d-x  - IOS Game dev tools.",
+            "title": "Tools"
         },
         {
             "location": "/reporting/",
