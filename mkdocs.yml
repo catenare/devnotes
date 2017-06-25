@@ -39,7 +39,8 @@ pages:
   - Version Control:
     - 'Git': 'git.md'
   - Mobile:
-    - General: 'mobile/mobile.md'
+    - General: 'mobile/general.md'
+    - Research: 'mobile/mobile.md'
     - 'Mobile Dev Notes': 'mobile/mobilenotes.md'
 - Tools:
   - Reporting: 'reporting.md'

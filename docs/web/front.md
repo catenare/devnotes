@@ -1,7 +1,17 @@
 # Web Development Tools - finding tools that are really useful for editing
 
-## Tools
+## Resources
+* [https://frontend.directory](https://frontend.directory/p)
 
+## Web Framework
+* [Foundation](http://foundation.zurb.com/)
+    * Setup a new project ```foundation new```
+* [uikit](https://getuikit.com/v2/index.html)
+
+### Templates
+* [CoreUI](http://coreui.io/) - Admin template
+* [flakes](http://getflakes.com/) - Design and frontend framework for dashboard.
+## Tools
 ### [Emmet](http://emmet.io) 
 * Expand html shortcuts
 * Can really reduce the amount of typing necessary to to create a page.
@@ -15,24 +25,15 @@
 * [Requirejs](http://requirejs.org/)
 * For r.js to work (without explicit path) ```npm install -g requirejs```
 
-## Web Framework
-* [Foundation](http://foundation.zurb.com/)
-* Setup a new project ```foundation new```
-
-## Sass Notes
+## CSS
+### Sass Notes
 * Using sassc and libsass
 * [libSass](https://github.com/sass/libsass)
 * Export the library location so node-sass can use it.
 
-### Compiling compass sass config.rb file
+#### Compiling compass sass config.rb file
 * Compiling compass sass with sass c library.
 	* *sass --compass sass/styles.scss test,css* - seems to read the compass config.rb file to find paths.
 
-## Maintainable CSS
+### Maintainable CSS
 * [BEM (block, element, modifier) methodology](https://en.bem.info/methodology/quick-start/)
-
-## Resources
-* [https://frontend.directory](https://frontend.directory/p)
-
-## Templates
-* [CoreUI](http://coreui.io/)

@@ -1,15 +1,8 @@
 # Mobile Device Development Notes
 
 ## Android
-
-### Links
 * Google Tools
     * [Android Studio](https://developer.android.com/studio/index.html)
-    * [Android Developer - Google](https://developer.android.com/index.html)
-* Other
-    * [Some Teaching Notes - ](https://www3.ntu.edu.sg/home/ehchua/programming/android/Android_HowTo.html#zz-2.)
-* Other dev tools
-    * [App Inventor](http://appinventor.mit.edu/explore/)
 
 ### Solutions
 * **Problem:** Launching Android SDK Manager without going through Atom Studio
@@ -30,3 +23,12 @@
     pod install --no-repo-update --verbose
 ```
 * Actual issue: I'm in South Africa and it was taking forever to do the initial repo specs checkout. Doing git clone git:/github.com/CocoaPods/Specs.git master into ~/.cocoapods/repos resolved the problem. Going forward, only has to update the repos, not completely download it.
+
+## Resources
+* [Android Developer - Google](https://developer.android.com/index.html))
+* [Some Teaching Notes - ](https://www3.ntu.edu.sg/home/ehchua/programming/android/Android_HowTo.html#zz-2.)
+
+### Tools
+* [Fastlane](https://fastlane.tools/) - release tool for mobile app.
+* [App Inventor](http://appinventor.mit.edu/explore/)
+* [Cocos2d-x](http://www.cocos2d-x.org/) - IOS Game dev tools.
