@@ -34,3 +34,5 @@
 ## Resources
 * [https://frontend.directory](https://frontend.directory/p)
 
+## Templates
+* [CoreUI](http://coreui.io/)

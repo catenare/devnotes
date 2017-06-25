@@ -17,9 +17,11 @@ pages:
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
   - Web:
-    - Angular: 'web/javascript/angular.md'
-    - 'Front End': 'static.md'
-  - PHP: 
+    - 'Front End': 
+      - 'Static': 'web/static.md'
+      - 'Front': 'web/front.md'
+    - JavaScript: 'web/javascript/js.md'
+  - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'
     - Wordpress:
@@ -37,8 +39,8 @@ pages:
   - Version Control:
     - 'Git': 'git.md'
   - Mobile:
-    - Hybrid: 'ionic.md'
-    - 'Mobile Dev Notes': 'mobilenotes.md'
+    - General: 'mobile/mobile.md'
+    - 'Mobile Dev Notes': 'mobile/mobilenotes.md'
 - Tools:
   - Reporting: 'reporting.md'
   - Documentation: 'docs.md'
@@ -50,5 +52,3 @@ pages:
 - Research: 
   - 'General': 'research.md'
   - 'Learning Systems': 'teach.md'
-
-

@@ -70,3 +70,6 @@
     }
     module.exports = generateCustomers
 ```
+
+## Testing Framework
+* [Galen Framework](http://galenframework.com/) - Look and feel testing for responsive sites.
