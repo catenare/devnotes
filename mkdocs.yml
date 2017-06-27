@@ -46,8 +46,9 @@ pages:
   - Reporting: 'reporting.md'
   - Documentation: 'docs.md'
   - Operations:
-    - 'Vagrant': 'vagrant.md'
-    - 'Docker': 'docker.md'
+    - 'Vagrant': 'ops/vagrant.md'
+    - 'Docker': 'ops/docker.md'
+    - 'Amazon': 'ops/amazon.md'
   - "Mock and API Tools": 'tools.md'
   - 'Command Line': 'cmd/cmd.md'
 - Research: 

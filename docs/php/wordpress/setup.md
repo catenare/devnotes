@@ -107,7 +107,7 @@
         * Drop current database `drop database alicart;`
     1. Create database: `create database alicart;`
     1. Add User: `CREATE USER 'alicart'@'localhost' IDENTIFIED BY 'password';`
-    1. Grant privileges to user: `GRANT ALL PRIVILEGES ON alicart.* to 'alicart'@'localhost';
+    1. Grant privileges to user: `GRANT ALL PRIVILEGES ON alicart.* to 'alicart'@'localhost`;
     1. Reload privileges: `FLUSH PRIVILEGES;`
 1. Setup php
     * `cp /opt/local/etc/php.ini-development /opt/local/etc/php.ini`
