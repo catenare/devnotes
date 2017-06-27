@@ -872,7 +872,7 @@
         },
         {
             "location": "/ops/amazon/",
-            "text": "Working with Amazon (AWS)\n\n\nLightsail - virtual private server instances - $5 for 512gb instance/month\n\n\nSetting up SSH - trying to use my own ssh keys.\n\n\n\n\nLogging in\n\n\nChange key permissions. \nchmod 600 KEYFILE\n\n\nssh -i KEYFILE ubuntu@ip-address\n\n\n\n\n\n\n\n\nPHP Wordpress config\n\n\n\n\nPackages\n\n\nphp7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip mysql-server git nginx\n\n\nInstall \ncomposer\n.\n\n\nFollow instructions from composer\n\n\n\n\n\n\nConfigure nginx and php7.0-fpm\n\n\nnginx - configure default virtual environment\n\n\nEnable php7.0-fpm in configuration.\n\n\n\n\n\n\nCreate rsa key to share with bitbucket or github\n\n\nssh-keygen -t rsa\n - no password\n\n\n\n\n\n\nAdd a deployment key to github to pull code to server.\n\n\n\n\n\n\n\n\nServer Admin\n\n\n\n\nRestart service\n\n\nsudo systemctl restart nginx\n\n\nsudo systemctl retart php7.0-fpm",
+            "text": "Working with Amazon (AWS)\n\n\nLightsail - virtual private server instances - $5 for 512gb instance/month\n\n\nSetting up SSH - trying to use my own ssh keys.\n\n\n\n\nLogging in\n\n\nChange key permissions. \nchmod 600 KEYFILE\n\n\nssh -i KEYFILE ubuntu@ip-address\n\n\n\n\n\n\n\n\nPHP Wordpress config\n\n\n\n\nPackages\n\n\nphp7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-gd php7.0-curl php-imagick mysql-server git nginx\n\n\nInstall \ncomposer\n.\n\n\nFollow instructions from composer\n\n\n\n\n\n\nConfigure nginx and php7.0-fpm\n\n\nnginx - configure default virtual environment\n\n\nEnable php7.0-fpm in configuration.\n\n\n\n\n\n\nCreate rsa key to share with bitbucket or github\n\n\nssh-keygen -t rsa\n - no password\n\n\n\n\n\n\nAdd a deployment key to github to pull code to server.\n\n\n\n\n\n\n\n\nServer Admin\n\n\n\n\nRestart service\n\n\nsudo systemctl restart nginx\n\n\nsudo systemctl retart php7.0-fpm",
             "title": "Amazon"
         },
         {
@@ -892,7 +892,7 @@
         },
         {
             "location": "/ops/amazon/#php-wordpress-config",
-            "text": "Packages  php7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip mysql-server git nginx  Install  composer .  Follow instructions from composer    Configure nginx and php7.0-fpm  nginx - configure default virtual environment  Enable php7.0-fpm in configuration.    Create rsa key to share with bitbucket or github  ssh-keygen -t rsa  - no password    Add a deployment key to github to pull code to server.",
+            "text": "Packages  php7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-gd php7.0-curl php-imagick mysql-server git nginx  Install  composer .  Follow instructions from composer    Configure nginx and php7.0-fpm  nginx - configure default virtual environment  Enable php7.0-fpm in configuration.    Create rsa key to share with bitbucket or github  ssh-keygen -t rsa  - no password    Add a deployment key to github to pull code to server.",
             "title": "PHP Wordpress config"
         },
         {
