@@ -22,3 +22,5 @@
 
 ## Thinking
 * Starting with Framework7 template tool. See how far we can get. Goal is to create a web site that will suffice as a prototype for mobile site.
+    * Not going to use Framework7. Uses less for css.
+* Going to try and use ionic framework.

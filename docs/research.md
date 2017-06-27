@@ -17,7 +17,8 @@
 * Tools
   * [Angular Augury](https://augury.angular.io/) - debug and profile angular 2 apps
     * Chrome extension
-
+* Lists
+    * [Awesome Angular](https://github.com/AngularClass/awesome-angular)
 ### Web Templates
 * [Flakes Admin Template](http://getflakes.com/) - Admin front-end template.
 * [Framework7](https://framework7.io/) - mobile web template
@@ -26,15 +27,21 @@
 * Python books online [Invent with python](http://inventwithpython.com)
 
 ## Resource Lists
+* [Awesome Awesome List](https://github.com/bayandin/awesome-awesomeness) - List of lists
 * [Awesome Weekly](https://awesomeweekly.co/) - [Github](https://github.com/sindresorhus/awesome)
 * [Awesome Serverless List](https://github.com/travist/awesome-serverless-1)
 * [Awesome Python](https://awesome-python.com/)
 * [Awesome Boilerplates & Templates](https://github.com/melvin0008/awesome-projects-boilerplates)
 * [Awesome Elm Tutorials](https://github.com/isRuslan/awesome-elm)
 * [Awesome Flask](https://github.com/humiaozuzu/awesome-flask)
-* [Awesome Angular](https://github.com/brillout/awesome-angular-components)
+* [Awesome PHP](https://github.com/ziadoz/awesome-php)
+* [Awesome Angular](https://github.com/AngularClass/awesome-angular)
+* [Awesome Angular Components](https://github.com/brillout/awesome-angular-components)
+* [Awesome IOS](https://github.com/vsouza/awesome-ios) - [main site](http://awesomeios.com/)
+* [Awesome Kotlin](https://github.com/KotlinBy/awesome-kotlin)
 * [Front-end Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
     * [Front End Directory](https://frontend.directory/)
+* [raywenderlich.com](https://www.raywenderlich.com) - IOS/development resources
 
 ## Algorithm Resources
 * [Grokking Algorithms Source](https://github.com/egonSchiele/grokking_algorithms)
