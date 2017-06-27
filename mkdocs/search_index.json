@@ -572,7 +572,7 @@
         },
         {
             "location": "/mobile/general/",
-            "text": "Deciding on a framework for mobile development\n\n\nGoals\n\n\n\n\nRapid development.\n\n\nTrying to get a quick prototype up and running to test out the feasability of the project\n\n\n\n\n\n\nWeb initially\n\n\nCreate the equivalent of a mobile web site that can be packaged as a native app later. Can be a combination of both web and native.\n\n\n\n\n\n\nIOS first\n\n\nFocused on developing an IOS app. Will port to Android. Maybe to Windows based on the framework.\n\n\n\n\n\n\nWeb framework\n\n\nUse JavaScript, CSS, HTML for putting together project.\n\n\n\n\n\n\n\n\nTools\n\n\n\n\nApache Cordova - underlying tool for the hybrid platform.\n\n\nAngularJS - JavaScript framework that seems to be most portable to NativeScript. \n\n\nTypeScript - write JavaScript with enterprise tools.\n\n\n\n\nFrameworks\n\n\n\n\nIonic - Angular and typescript. Has an infrastructure around it. Can generate components with command line. \n\n\nFramework7 - Seems to have a variety of templates.\n\n\nOnsenUI - just not enough for me to bite.\n\n\n\n\nThinking\n\n\n\n\nStarting with Framework7 template tool. See how far we can get. Goal is to create a web site that will suffice as a prototype for mobile site.",
+            "text": "Deciding on a framework for mobile development\n\n\nGoals\n\n\n\n\nRapid development.\n\n\nTrying to get a quick prototype up and running to test out the feasability of the project\n\n\n\n\n\n\nWeb initially\n\n\nCreate the equivalent of a mobile web site that can be packaged as a native app later. Can be a combination of both web and native.\n\n\n\n\n\n\nIOS first\n\n\nFocused on developing an IOS app. Will port to Android. Maybe to Windows based on the framework.\n\n\n\n\n\n\nWeb framework\n\n\nUse JavaScript, CSS, HTML for putting together project.\n\n\n\n\n\n\n\n\nTools\n\n\n\n\nApache Cordova - underlying tool for the hybrid platform.\n\n\nAngularJS - JavaScript framework that seems to be most portable to NativeScript. \n\n\nTypeScript - write JavaScript with enterprise tools.\n\n\n\n\nFrameworks\n\n\n\n\nIonic - Angular and typescript. Has an infrastructure around it. Can generate components with command line. \n\n\nFramework7 - Seems to have a variety of templates.\n\n\nOnsenUI - just not enough for me to bite.\n\n\n\n\nThinking\n\n\n\n\nStarting with Framework7 template tool. See how far we can get. Goal is to create a web site that will suffice as a prototype for mobile site.\n\n\nNot going to use Framework7. Uses less for css.\n\n\n\n\n\n\nGoing to try and use ionic framework.",
             "title": "General"
         },
         {
@@ -597,7 +597,7 @@
         },
         {
             "location": "/mobile/general/#thinking",
-            "text": "Starting with Framework7 template tool. See how far we can get. Goal is to create a web site that will suffice as a prototype for mobile site.",
+            "text": "Starting with Framework7 template tool. See how far we can get. Goal is to create a web site that will suffice as a prototype for mobile site.  Not going to use Framework7. Uses less for css.    Going to try and use ionic framework.",
             "title": "Thinking"
         },
         {
@@ -932,7 +932,7 @@
         },
         {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome Angular\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\nUnison\n - File sync utility\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\nLists\n\n\nAwesome Angular\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Awesome List\n - List of lists\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome PHP\n\n\nAwesome Angular\n\n\nAwesome Angular Components\n\n\nAwesome IOS\n - \nmain site\n\n\nAwesome Kotlin\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\nraywenderlich.com\n - IOS/development resources\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\nUnison\n - File sync utility\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.",
             "title": "General"
         },
         {
@@ -957,7 +957,7 @@
         },
         {
             "location": "/research/#angular",
-            "text": "Tools  Angular Augury  - debug and profile angular 2 apps  Chrome extension",
+            "text": "Tools  Angular Augury  - debug and profile angular 2 apps  Chrome extension    Lists  Awesome Angular",
             "title": "Angular"
         },
         {
@@ -972,7 +972,7 @@
         },
         {
             "location": "/research/#resource-lists",
-            "text": "Awesome Weekly  -  Github  Awesome Serverless List  Awesome Python  Awesome Boilerplates & Templates  Awesome Elm Tutorials  Awesome Flask  Awesome Angular  Front-end Dev Bookmarks  Front End Directory",
+            "text": "Awesome Awesome List  - List of lists  Awesome Weekly  -  Github  Awesome Serverless List  Awesome Python  Awesome Boilerplates & Templates  Awesome Elm Tutorials  Awesome Flask  Awesome PHP  Awesome Angular  Awesome Angular Components  Awesome IOS  -  main site  Awesome Kotlin  Front-end Dev Bookmarks  Front End Directory    raywenderlich.com  - IOS/development resources",
             "title": "Resource Lists"
         },
         {
