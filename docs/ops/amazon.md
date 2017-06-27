@@ -7,7 +7,7 @@
     * `ssh -i KEYFILE ubuntu@ip-address`
 ### PHP Wordpress config
 1. Packages
-    * php7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip mysql-server git nginx
+    * `php7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-gd php7.0-curl php-imagick mysql-server git nginx`
     * Install [composer](https://getcomposer.org).
         * Follow instructions from composer
     * Configure nginx and php7.0-fpm
