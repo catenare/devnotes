@@ -20,5 +20,3 @@
 * Restart service
     * `sudo systemctl restart nginx`
     * `sudo systemctl retart php7.0-fpm`
-
-    
