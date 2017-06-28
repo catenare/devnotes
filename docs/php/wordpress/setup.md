@@ -256,7 +256,7 @@ http {
 ```
 * Start nginx - `sudo port load nginx` - macports
 * Ubuntu
-    * `sudo systemctl nginx configtext`
+    * `sudo nginx -t` - test configuration
     * `sudo systemctl nging restart`
 
 

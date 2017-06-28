@@ -26,7 +26,13 @@
 ## Server Admin
 * Restart service
     * Ubuntu
-    * `sudo systemctl nginx configtest`
+    * `sudo nginx -t` - test config
     <!--* `sudo systemctl nginx restart`-->
     * `sudo systemctl restart nginx`
     * `sudo systemctl retart php7.0-fpm`
+
+## letsencrypt setup
+* [Certbot](https://certbot.eff.org/#ubuntuxenial-nginx) - Ubuntu
+* Port 443 needs to be open
+* Domains need to be in nginx.conf file (sites-enabled/default) file.
+* Pretty straightforward and easy to set up.
