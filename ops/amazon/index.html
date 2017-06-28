@@ -847,6 +847,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#letsencrypt-setup" title="letsencrypt setup" class="md-nav__link">
+    letsencrypt setup
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -992,6 +999,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#letsencrypt-setup" title="letsencrypt setup" class="md-nav__link">
+    letsencrypt setup
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1054,12 +1068,19 @@
 <ul>
 <li>Restart service<ul>
 <li>Ubuntu</li>
-<li><code>sudo systemctl nginx configtest</code>
+<li><code>sudo nginx -t</code> - test config
 <!--* <code>sudo systemctl nginx restart</code>--></li>
 <li><code>sudo systemctl restart nginx</code></li>
 <li><code>sudo systemctl retart php7.0-fpm</code></li>
 </ul>
 </li>
+</ul>
+<h2 id="letsencrypt-setup">letsencrypt setup</h2>
+<ul>
+<li><a href="https://certbot.eff.org/#ubuntuxenial-nginx">Certbot</a> - Ubuntu</li>
+<li>Port 443 needs to be open</li>
+<li>Domains need to be in nginx.conf file (sites-enabled/default) file.</li>
+<li>Pretty straightforward and easy to set up.</li>
 </ul>
                 
                   
