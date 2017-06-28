@@ -25,5 +25,8 @@
 
 ## Server Admin
 * Restart service
+    * Ubuntu
+    * `sudo systemctl nginx configtest`
+    <!--* `sudo systemctl nginx restart`-->
     * `sudo systemctl restart nginx`
     * `sudo systemctl retart php7.0-fpm`

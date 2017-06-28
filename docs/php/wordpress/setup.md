@@ -254,7 +254,11 @@ http {
 
 }
 ```
-* Start nginx - `sudo port load nginx`
+* Start nginx - `sudo port load nginx` - macports
+* Ubuntu
+    * `sudo systemctl nginx configtext`
+    * `sudo systemctl nging restart`
+
 
 ## Multi-site configuration - nginx/ubuntu on AWS.
 Trying to configure wordpress multisite on Ubuntu.
