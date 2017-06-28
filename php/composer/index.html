@@ -418,8 +418,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#notes-for-managing-a-custom-plugin-with-php-composer" title="Notes for managing a custom plugin with php composer." class="md-nav__link">
-    Notes for managing a custom plugin with php composer.
+  <a href="#notes-for-managing-a-custom-packages-with-php-composer" title="Notes for managing a custom packages with php composer." class="md-nav__link">
+    Notes for managing a custom packages with php composer.
   </a>
   
 </li>
@@ -709,6 +709,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mobile/ionic/" title="Ionic" class="md-nav__link">
+      Ionic
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -920,8 +932,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#notes-for-managing-a-custom-plugin-with-php-composer" title="Notes for managing a custom plugin with php composer." class="md-nav__link">
-    Notes for managing a custom plugin with php composer.
+  <a href="#notes-for-managing-a-custom-packages-with-php-composer" title="Notes for managing a custom packages with php composer." class="md-nav__link">
+    Notes for managing a custom packages with php composer.
   </a>
   
 </li>
@@ -944,12 +956,97 @@
                 
                 
                 <h1 id="notes-about-using-composer-to-manage-a-package">Notes about using Composer to manage a package</h1>
-<h2 id="notes-for-managing-a-custom-plugin-with-php-composer">Notes for managing a custom plugin with php composer.</h2>
+<h2 id="notes-for-managing-a-custom-packages-with-php-composer">Notes for managing a custom packages with php composer.</h2>
+<ul>
+<li><a href="https://getcomposer.org/doc/05-repositories.md#loading-a-package-from-a-vcs-repository">Loading a package from a vcs repository</a></li>
+<li>Package must have it's own <em>composer.json</em> file.</li>
+</ul>
+<pre><code class="json">{
+  &quot;name&quot;: &quot;catenare/smartsheet&quot;,
+  &quot;description&quot;: &quot;API Connection to Smartsheet. Add sheets and add rows&quot;,
+  &quot;license&quot;: &quot;proprietary&quot;,
+  &quot;authors&quot;: [
+    {
+      &quot;name&quot;: &quot;Johan Martin&quot;,
+      &quot;homepage&quot;: &quot;http://www.johan-martin.com&quot;,
+      &quot;email&quot;: &quot;martin.johan@johan-martin.com&quot;,
+      &quot;role&quot;: &quot;developer&quot;
+    }
+  ],
+  &quot;require&quot;: {
+    &quot;guzzlehttp/guzzle&quot;: &quot;^6.2&quot;,
+    &quot;symfony/console&quot;: &quot;^3.3&quot;,
+    &quot;symfony/dotenv&quot;: &quot;^3.3&quot;,
+    &quot;symfony/dependency-injection&quot;: &quot;^3.3&quot;,
+    &quot;symfony/yaml&quot;: &quot;^3.3&quot;,
+    &quot;symfony/config&quot;: &quot;^3.3&quot;,
+    &quot;symfony/serializer&quot;: &quot;^3.3&quot;,
+    &quot;zendframework/zend-json&quot;: &quot;^3.0&quot;
+  },
+  &quot;minimum-stability&quot;: &quot;dev&quot;,
+  &quot;autoload&quot;: {
+    &quot;psr-4&quot;: { &quot;SmartSheet\\&quot;: &quot;src/&quot; },
+    &quot;files&quot;:[&quot;boot.php&quot;,&quot;main.php&quot;]
+  },
+  &quot;autoload-dev&quot;: {
+    &quot;psr-4&quot;: { &quot;SheetTest\\&quot;: &quot;test/&quot; }
+  },
+  &quot;require-dev&quot;: {
+    &quot;phpunit/phpunit&quot;: &quot;^6.2&quot;
+  }
+}
+</code></pre>
+
 <ol>
-<li>Create json file in plugin directory</li>
-<li>Use the <strong>type</strong> property as plugin. Wordpress JSON file will install it in the right location.</li>
 <li>Use <strong>dev-{branch}</strong> to have composer checkout the correct git branch.</li>
+<li>Example:</li>
 </ol>
+<pre><code class="json">&quot;require&quot;: {
+        &quot;catenare/smartsheet&quot;: &quot;dev-master&quot;
+    },
+    &quot;repositories&quot;: [
+    {
+      &quot;type&quot;: &quot;vcs&quot;,
+      &quot;url&quot;: &quot;https://github.com/catenare/smartsheet-api&quot;
+    }
+  ]
+</code></pre>
+
+<ul>
+<li>Other Notes<ul>
+<li>For wordpress: Use the <strong>type</strong> property set to <strong>wordpress-plugin</strong>. Wordpress installer will install it in the right location. <em>Composer seems to be reluctant to go more than one level deep when checking out dev branches.</em></li>
+</ul>
+</li>
+</ul>
+<pre><code class="json">{
+    &quot;name&quot;: &quot;catenare/ninjaforms-smartsheet-plugin&quot;,
+    &quot;description&quot;: &quot;Add form data to smartsheet&quot;,
+    &quot;type&quot;: &quot;wordpress-plugin&quot;,
+    &quot;license&quot;: &quot;proprietary&quot;,
+    &quot;authors&quot;: [
+    {
+        &quot;name&quot;: &quot;Johan Martin&quot;,
+        &quot;homepage&quot;: &quot;http://www.johan-martin.com&quot;,
+        &quot;email&quot;: &quot;martin.johan@johan-martin.com&quot;,
+        &quot;role&quot;: &quot;developer&quot;
+    }
+    ],
+    &quot;keywords&quot;:[
+        &quot;alicart&quot;,
+        &quot;ninja-forms&quot;,
+        &quot;smartsheet&quot;
+    ],
+    &quot;require&quot;: {
+        &quot;catenare/smartsheet&quot;: &quot;dev-master&quot;
+    },
+    &quot;repositories&quot;: [
+    {
+      &quot;type&quot;: &quot;vcs&quot;,
+      &quot;url&quot;: &quot;https://github.com/catenare/smartsheet-api&quot;
+    }
+  ]
+}
+</code></pre>
                 
                   
                 
