@@ -16,6 +16,13 @@
     * Create rsa key to share with bitbucket or github
         * `ssh-keygen -t rsa` - no password
     * Add a deployment key to github to pull code to server.
+1. Configure nginx
+1. Setup mysql database
+1. Download composer and wordpress command line.
+    * [composer](https://getcomposer.org/)
+        * `mv composer.phar /usr/local/bin/composer` after install
+    * 
+
 ## Server Admin
 * Restart service
     * `sudo systemctl restart nginx`

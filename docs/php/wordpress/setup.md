@@ -255,3 +255,10 @@ http {
 }
 ```
 * Start nginx - `sudo port load nginx`
+
+## Multi-site configuration - nginx/ubuntu on AWS.
+Trying to configure wordpress multisite on Ubuntu.
+
+* [nginx config gist](https://gist.github.com/evansolomon/2274120)
+    * Notes for rewrite rules in nginx
+    
