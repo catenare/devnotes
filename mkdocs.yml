@@ -50,6 +50,7 @@ pages:
     - 'Vagrant': 'ops/vagrant.md'
     - 'Docker': 'ops/docker.md'
     - 'Amazon': 'ops/amazon.md'
+    - 'Azure': 'ops/azure.md'
   - "Mock and API Tools": 'tools.md'
   - 'Command Line': 'cmd/cmd.md'
 - Research: 
