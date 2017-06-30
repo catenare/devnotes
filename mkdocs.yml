@@ -28,6 +28,7 @@ pages:
       - 'Setup': 'php/wordpress/setup.md'
       - 'Home': 'php/wordpress/wordpress.md'
       - 'Plugin Dev': 'php/wordpress/plugin development.md'
+      - 'Theme Dev': 'php/wordpress/themes.md'
   - 'Python': 
     - 'General': 'python/general.md'
     - 'Flask': 'python/flask.md'
