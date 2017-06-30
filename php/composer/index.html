@@ -829,6 +829,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ops/azure/" title="Azure" class="md-nav__link">
+      Azure
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1047,6 +1059,83 @@
   ]
 }
 </code></pre>
+
+<ul>
+<li>Dependencies for sub packages in vcs. Put repo info in man composer.json file.</li>
+</ul>
+<pre><code class="json">{
+  &quot;name&quot;: &quot;catenare/wordpress-intranet&quot;,
+  &quot;description&quot;: &quot;Intranet based on WordPress&quot;,
+  &quot;license&quot;: &quot;proprietary&quot;,
+  &quot;keywords&quot;: [
+    &quot;intranet&quot;,
+    &quot;secure&quot;
+  ],
+  &quot;type&quot;: &quot;package&quot;,
+  &quot;homepage&quot;: &quot;http://www.johan-martin.com&quot;,
+  &quot;authors&quot;: [
+    {
+      &quot;name&quot;: &quot;WordPress Community&quot;,
+      &quot;homepage&quot;: &quot;http://wordpress.org/about/&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Johan Martin&quot;,
+      &quot;homepage&quot;: &quot;http://www.johan-martin.com&quot;,
+      &quot;email&quot;: &quot;martin.johan@johan-martin.com&quot;,
+      &quot;role&quot;: &quot;developer&quot;
+    }
+  ],
+  &quot;support&quot;: {
+    &quot;email&quot;: &quot;martin.johan@johan-martin.com&quot;
+  },
+  &quot;extra&quot;: {
+    &quot;wordpress-install-dir&quot;: &quot;public&quot;,
+    &quot;installer-paths&quot;: {
+      &quot;public/wp-content/plugins/{$name}&quot;: [
+        &quot;type:wordpress-plugin&quot;
+      ],
+      &quot;public/wp-content/themes/{$name}&quot;: [
+        &quot;type:wordpress-theme&quot;
+      ]
+    }
+  },
+  &quot;require&quot;: {
+    &quot;php&quot;: &quot;~7&quot;,
+    &quot;johnpbloch/wordpress-core-installer&quot;: &quot;~0.2&quot;,
+    &quot;johnpbloch/wordpress-core&quot;: &quot;~4.7&quot;,
+    &quot;wpackagist-plugin/login-lockdown&quot;:&quot;~1.7&quot;,
+    &quot;wpackagist-plugin/all-in-one-intranet&quot;: &quot;~1.2&quot;,
+    &quot;wpackagist-plugin/ninja-forms&quot;:&quot;~3.1&quot;,
+    &quot;catenare/aad-sso-wordpress&quot;: &quot;dev-alicart&quot;,
+    &quot;catenare/ninjaforms-smartsheet-plugin&quot;: &quot;dev-master&quot;
+  },
+  &quot;require-dev&quot;: {
+    &quot;phpunit/phpunit&quot;: &quot;^6.2&quot;
+  },
+  &quot;repositories&quot;: [
+    {
+      &quot;type&quot;: &quot;composer&quot;,
+      &quot;url&quot;: &quot;https://wpackagist.org&quot;
+    },
+    {
+      &quot;type&quot;: &quot;vcs&quot;,
+      &quot;url&quot;: &quot;https://github.com/catenare/aad-sso-wordpress&quot;
+    },
+    {
+      &quot;type&quot;: &quot;vcs&quot;,
+      &quot;url&quot;: &quot;https://github.com/catenare/ninjaforms-smartsheet&quot;
+    },
+    {
+      &quot;type&quot;: &quot;vcs&quot;,
+      &quot;url&quot;: &quot;https://github.com/catenare/smartsheet-api&quot;
+    }
+  ]
+}
+</code></pre>
+
+<ul>
+<li>Added <strong>smartsheet-api</strong> vcs because <strong>ninjaform-smartsheet-plugin</strong> dependent on it.</li>
+</ul>
                 
                   
                 
