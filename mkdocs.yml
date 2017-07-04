@@ -4,6 +4,8 @@ site_description: Notes tracking for developing different apps.
 site_author: Johan Martin (http://www.johan-martin.com)
 repo_name: 'GitHub'
 edit_uri: edit/master/md/
+dev_addr: '127.0.0.1:8888'
+strict: true
 # docs_dir: 'md'
 # site_dir: 'docs'
 copyright: Johan Martin &copy; 2017

@@ -37,3 +37,9 @@
 
 ### Maintainable CSS
 * [BEM (block, element, modifier) methodology](https://en.bem.info/methodology/quick-start/)
+
+### Parallax
+* [David Walsh - Used initially](https://davidwalsh.name/parallax)
+* [Keith Clark](http://keithclark.co.uk/articles/pure-css-parallax-websites/) - nice 3d effect
+* [w3schools demo](https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm) - Tried this one
+* [Pure Css](https://alligator.io/css/pure-css-parallax/) - 3d effect
