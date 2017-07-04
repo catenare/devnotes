@@ -1,4 +1,5 @@
-# Creating a static page
+# Static Web Page Development
+## Setting for static page development
 * Using [foundation from zurb](http://foundation.zurb.com/)
 ## Installation - [Foundation for Sites](http://foundation.zurb.com/sites)
 1. Install foundation-cli - `npm install --global foundation-cli`
@@ -6,6 +7,14 @@
     * Use `foundation-zurb-template`
 1. ~~Install building block - `foundation kits install news`~~
 1. `foundation watch`
+## Revised instructions
+* Commandline `foundation` client will work with github version of site.
+    * Created local fork of zurb foundation starter site - [Catenare foundation fork](https://github.com/catenare/foundation-site-template)
+    * *Paseo* is the branch I'm currently using
+* Clone repository
+* Create a new branch
+* Profit
+
 ## Resources
 * [Placement Images List](https://www.hanselman.com/blog/TheInternetsBestPlaceholderImageSitesForWebDevelopment.aspx)
     * [Hold It](http://www.placehold.it)

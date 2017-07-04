@@ -94,7 +94,7 @@
     ```
     * Start fpm - `sudo port load php71-fpm`
 1. Setup nginx - `/opt/local/etc/nginx` - location of setup file
-   ```
+```json
     server {
             listen       80;
             server_name  localhost;
@@ -135,8 +135,8 @@
             #    deny  all;
             #}
         }
-   ```
-   * Start nginx - `sudo port load nginx`
+```
+* Start nginx - `sudo port load nginx`
     
 ## Setup and install packages
 * [wpackagist](https://wpackagist.org/) - Use composer to install packages.
