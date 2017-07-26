@@ -19,6 +19,7 @@ pages:
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
   - Web:
+    - 'Basic Setup': 'web/page.md'
     - 'Front End': 
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
