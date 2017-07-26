@@ -10,6 +10,7 @@
     * be sure to run ```eval "$(docker-machine env default)"```
     * docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start
     * Got it to work on docker toolbox
+### [Cloud9](https://c9.io/) - In the cloud IDE tool. Free basic workspace.
 ## Creating learning environments
 * [Open Edx](https://open.edx.org)
 ## Online Resources

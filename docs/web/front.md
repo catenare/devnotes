@@ -11,10 +11,19 @@
 ### Templates
 * [CoreUI](http://coreui.io/) - Admin template
 * [flakes](http://getflakes.com/) - Design and frontend framework for dashboard.
+
 ## Tools
-### [Emmet](http://emmet.io) 
-* Expand html shortcuts
-* Can really reduce the amount of typing necessary to to create a page.
+### HTML tools
+* [Emmet](http://emmet.io) 
+    * Expand html shortcuts
+    * Can really reduce the amount of typing necessary to to create a page.
+### Image Sources
+* [Placement Images List](https://www.hanselman.com/blog/TheInternetsBestPlaceholderImageSitesForWebDevelopment.aspx)
+* [Hold It](http://www.placehold.it)
+### Prototype tools
+* [Random User Generator](https://randomuser.me/) - get list of users.
+* [UIFaces](http://uifaces.com/) - Faces for user interfaces
+* [CSS Flat Mobile Devices](https://marvelapp.github.io/devices.css/) - Prototype devices in css.
 
 ### Local static file server
 * [browser-sync](https://browsersync.io/)
