@@ -47,6 +47,7 @@ pages:
     - Research: 'mobile/mobile.md'
     - 'Mobile Dev Notes': 'mobile/mobilenotes.md'
     - Ionic: 'mobile/ionic.md'
+- "Content Management": 'cms.md'
 - Tools:
   - Reporting: 'reporting.md'
   - Documentation: 'docs.md'
