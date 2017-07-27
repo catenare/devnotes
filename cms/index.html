@@ -19,7 +19,7 @@
     
     
       
-        <title>Documentation - Development Notes for Johan Martin</title>
+        <title>Content Management - Development Notes for Johan Martin</title>
       
     
     
@@ -77,12 +77,8 @@
           
             
               
-                <span class="md-header-nav__parent">
-                  Tools
-                </span>
-              
             
-            Documentation
+            Content Management
           
         </span>
       </div>
@@ -715,11 +711,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../cms/" title="Content Management" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Content Management" class="md-nav__link md-nav__link--active">
       Content Management
     </a>
+    
   </li>
 
     
@@ -727,12 +732,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Tools
@@ -760,96 +763,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Documentation
-      </label>
-    
-    <a href="./" title="Documentation" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../docs/" title="Documentation" class="md-nav__link">
       Documentation
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-mkdocs" title="Using MkDocs" class="md-nav__link">
-    Using MkDocs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup" title="Setup" class="md-nav__link">
-    Setup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using" title="Using" class="md-nav__link">
-    Using
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config-file-mkdocsyml" title="Config file - mkdocs.yml" class="md-nav__link">
-    Config file - mkdocs.yml
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mkdocs-notes" title="MkDocs Notes" class="md-nav__link">
-    MkDocs Notes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-markdown-extensions" title="Installing Markdown Extensions" class="md-nav__link">
-    Installing Markdown Extensions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fixing-issues-with-mkdocs" title="Fixing Issues with MkDocs" class="md-nav__link">
-    Fixing Issues with MkDocs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#importing-docs-into-github" title="Importing docs into Github" class="md-nav__link">
-    Importing docs into Github
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1019,69 +937,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-mkdocs" title="Using MkDocs" class="md-nav__link">
-    Using MkDocs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup" title="Setup" class="md-nav__link">
-    Setup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using" title="Using" class="md-nav__link">
-    Using
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config-file-mkdocsyml" title="Config file - mkdocs.yml" class="md-nav__link">
-    Config file - mkdocs.yml
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mkdocs-notes" title="MkDocs Notes" class="md-nav__link">
-    MkDocs Notes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-markdown-extensions" title="Installing Markdown Extensions" class="md-nav__link">
-    Installing Markdown Extensions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fixing-issues-with-mkdocs" title="Fixing Issues with MkDocs" class="md-nav__link">
-    Fixing Issues with MkDocs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#importing-docs-into-github" title="Importing docs into Github" class="md-nav__link">
-    Importing docs into Github
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1092,88 +947,12 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/catenare/devnotes/edit/master/md/docs.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/catenare/devnotes/edit/master/md/cms.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="creating-project-documentation">Creating Project Documentation</h1>
-<h2 id="using-mkdocs">Using <a href="http://www.mkdocs.org/">MkDocs</a></h2>
+                <h1 id="content-management-resources">Content management resources</h1>
 <ul>
-<li>Uses markdown.</li>
-<li>Works with github pages.</li>
-<li>Every project will have their own documentation<ul>
-<li>Styleguide should be included (frontend)</li>
-<li>Project goals and requirements</li>
-<li>Notes about development</li>
-<li>Setup/install instructions</li>
-<li>Resolution to issues (ongoing FAQ for the projects)</li>
-</ul>
-</li>
-<li>Documentation pages stay in gh-pages branch.</li>
-</ul>
-<h2 id="setup">Setup</h2>
-<ol>
-<li>Make virtual environment for python - <code>mkvirtualenv -a . docsdirectory</code></li>
-<li>Install requirements - <code>pip install mkdocs pymdown-extensions pygments mkdocs-material</code></li>
-<li>Create mkdocs project - <code>mkdocs new &lt;project&gt;</code></li>
-<li>Enter into the project</li>
-<li>Edit the <em>mkdocs.yml</em> file</li>
-</ol>
-<h2 id="using">Using</h2>
-<ul>
-<li><code>mkdocs serve</code> - local development server <em>http:\localhost:8000</em></li>
-<li><code>mkdocs gh-deploy</code> - build docs and push to gh-pages repo in github after committing.</li>
-</ul>
-<h2 id="config-file-mkdocsyml">Config file - <em>mkdocs.yml</em></h2>
-<pre><code class="yaml">site_name: Development Notes for Johan Martin
-repo_url: https://github.com/catenare/devnotes
-site_description: Notes tracking for developing different apps.
-site_author: Johan Martin (http://www.johan-martin.com)
-repo_name: 'GitHub'
-edit_uri: edit/master/md/
-# docs_dir: 'md'
-# site_dir: 'docs'
-copyright: Johan Martin &amp;copy; 2017
-markdown_extensions:
-  - pymdownx.tilde
-theme: 'material'
-pages:
-- Home: 'index.md'
-- Section:
-  - 'Page Sites': 'page.md'
-  - Section: 
-      - sub1: 'sub1.md'
-      - sub2: 'sub2.md'
-</code></pre>
-
-<h2 id="mkdocs-notes">MkDocs Notes</h2>
-<ul>
-<li><a href="http://www.mkdocs.org/">Documentation</a></li>
-<li><a href="https://github.com/mkdocs/mkdocs/">Github</a></li>
-<li>added <code>pymdownx.tilde</code> extension to get strikethrough to work.</li>
-<li>Using <code>mkdocs gh-deploy</code> to upload docs.</li>
-<li>Additional setup notes<ul>
-<li><a href="http://squidfunk.github.io/mkdocs-material/getting-started/">Squidfunk - material theme</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="installing-markdown-extensions">Installing Markdown Extensions</h2>
-<ul>
-<li><a href="http://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions Documentation</a></li>
-<li>Installation: <code>pip install pymdown-extensions</code></li>
-<li>Using:<ul>
-<li><em>pymdownx.tilde</em></li>
-<li><em>markdown.extensions.def_list</em></li>
-</ul>
-</li>
-</ul>
-<h2 id="fixing-issues-with-mkdocs">Fixing Issues with MkDocs</h2>
-<p>404 error for home page/front page - github gh-pages hosting.
-:   <em>Seems like the home page has to point to an "index.md" page for it to work.</em></p>
-<h2 id="importing-docs-into-github">Importing docs into Github</h2>
-<ul>
-<li><a href="https://github.com/davisp/ghp-import">ghp-import</a></li>
-<li>Already being used by MkDocs.</li>
-<li>Would like to use with Sphinx if I convert my documentation to Sphinx.</li>
+<li><a href="http://cmf.symfony.com/">Symfony CMF</a> - Uses symfony components.</li>
 </ul>
                 
                   
@@ -1193,7 +972,7 @@ pages:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../reporting/" title="Reporting" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mobile/ionic/" title="Ionic" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1202,19 +981,19 @@ pages:
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Reporting
+                Ionic
               </span>
             </div>
           </a>
         
         
-          <a href="../ops/vagrant/" title="Vagrant" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../reporting/" title="Reporting" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Vagrant
+                Reporting
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
