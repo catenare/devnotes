@@ -144,3 +144,7 @@
 ## Other Tools
 * [Wordpress CLI](http://wp-cli.org/) - command line client for wordpress. Definitely worth installing.
     * Possible to install via composer - `composer global require wp-cli/wp-cli`
+
+## Wordpress Development
+* [make.wordpress.org](https://make.wordpress.org/core/)
+* [Gutenberg](https://wordpress.github.io/gutenberg/) - next level editor
