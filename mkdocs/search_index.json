@@ -1214,6 +1214,21 @@
             "location": "/teach/#curriculum",
             "text": "The Odin Project  Site",
             "title": "Curriculum"
+        },
+        {
+            "location": "/learning/angular/",
+            "text": "Learning the Angular Framework\n\n\nResources\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)\n\n\n\n\n\n\nAngular Documentation\n\n\nAngular & Webpack\n\n\nGotchas:\n\n\nExtractTextWebpackPlugin\n & \n[Validation] ajv version mismatch with webpack #524\n\n\nfallbackloader\n should be \nfallback\n\n\nloader\n is now \nuse\n\n\nex: (old) \nExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})\n should be (new) \nExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})\n\n\n\n\n\n\n\n\nCannot find name 'require' templateUrl - StackOverflow\n\n\n\n\nnpm install --save-dev @types/node\n\n\n\n\nIn \ntsconfig.json\n \n\n\njson\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]\n\n\n\n\n\n\nRestart \nwebpack-dev-server\n - \nnpm run server:dev",
+            "title": "Learning Angular"
+        },
+        {
+            "location": "/learning/angular/#learning-the-angular-framework",
+            "text": "",
+            "title": "Learning the Angular Framework"
+        },
+        {
+            "location": "/learning/angular/#resources",
+            "text": "Angular 2 Fundamentals  - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to  Webpack  Github Repo - Retain App  Webpack config is out of date (for the latest webpack)    Angular Documentation  Angular & Webpack  Gotchas:  ExtractTextWebpackPlugin  &  [Validation] ajv version mismatch with webpack #524  fallbackloader  should be  fallback  loader  is now  use  ex: (old)  ExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})  should be (new)  ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})     Cannot find name 'require' templateUrl - StackOverflow   npm install --save-dev @types/node   In  tsconfig.json    json\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]    Restart  webpack-dev-server  -  npm run server:dev",
+            "title": "Resources"
         }
     ]
 }
