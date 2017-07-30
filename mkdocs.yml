@@ -61,3 +61,5 @@ pages:
 - Research: 
   - 'General': 'research.md'
   - 'Learning Systems': 'teach.md'
+- Learning:
+  - 'Learning Angular': 'learning/angular.md'
