@@ -20,3 +20,6 @@
                 ```
                 
             * Restart *webpack-dev-server* - `npm run server:dev`
+        * *No Implicit Any* - Change setting `"noImplicitAny"` in `tsconfig.json` to false and restart webpack dev server.
+        * `TS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.` - *RequestOptions* require an object. *{headers: this.headers}*
+        * `Uncaught Error: Can't resolve all parameters for NoteService:` - Issue with not having `@Injectable()` on noteservice.
