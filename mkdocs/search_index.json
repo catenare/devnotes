@@ -316,6 +316,26 @@
             "title": "Tools"
         },
         {
+            "location": "/web/notes/",
+            "text": "Notes related to front-end development.\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nrxjs\n\n\n\n\nGetting it to work with typescript\n\n\nError: \nUncaught TypeError: Cannot read property 'Observable' of undefined\n. Works in plain javascript.\n\n\nFix:\n\n\nInstall type definitions for rxjs \nnpm install --save-dev @type/rx\n\n\nImport as \nimport * as Rx from 'rxjs'",
+            "title": "Dev Notes"
+        },
+        {
+            "location": "/web/notes/#notes-related-to-front-end-development",
+            "text": "",
+            "title": "Notes related to front-end development."
+        },
+        {
+            "location": "/web/notes/#ionic",
+            "text": "Include font-awesome fonts in project.   FontAwesome in Ionic   Install FontAwesome -  npm install --save font-awesome   Create script to copy fonts into  www/assets/fonts    Set path to fonts in SCSS -  $fa-font-path: /assets/fonts;  in  scr/app/app.scss ;    https://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.",
+            "title": "Ionic"
+        },
+        {
+            "location": "/web/notes/#rxjs",
+            "text": "Getting it to work with typescript  Error:  Uncaught TypeError: Cannot read property 'Observable' of undefined . Works in plain javascript.  Fix:  Install type definitions for rxjs  npm install --save-dev @type/rx  Import as  import * as Rx from 'rxjs'",
+            "title": "rxjs"
+        },
+        {
             "location": "/php/resources/",
             "text": "Resources and notes for PHP\n\n\nSetup\n\n\nTo enable php71-apache2handler, run:\n\n \ncd /opt/local/apache2/modules\n\n\n \nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so\n\n\nResources\n\n\n\n\nGoogle Cloud Datastore Library for PHP",
             "title": "Resources"
@@ -1052,7 +1072,7 @@
         },
         {
             "location": "/tools/",
-            "text": "Developer Helper Tools\n\n\nServer Mock Tools\n\n\n\n\nMailCatcher\n - Localhost email intercept\n\n\nNgrok\n - Secure tunnel to localhost\n\n\n\n\nAPI Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers\n\n\n\n\nTesting Framework\n\n\n\n\nGalen Framework\n - Look and feel testing for responsive sites.",
+            "text": "Developer Helper Tools\n\n\nServer Mock Tools\n\n\n\n\nMailCatcher\n - Localhost email intercept\n\n\nNgrok\n - Secure tunnel to localhost\n\n\n\n\nAPI Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nMock Service\n\n\n\n\nMockbin\n - test, mock and track http requests & responses\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers\n\n\n\n\nTesting Framework\n\n\n\n\nGalen Framework\n - Look and feel testing for responsive sites.",
             "title": "Mock and API Tools"
         },
         {
@@ -1074,6 +1094,11 @@
             "location": "/tools/#api-mock-tools",
             "text": "MockServer  - Has Docker config  WireMock  - Java  Osprey Mock Service  - RAML mock service. 1.0 compatible.  Osprey Service  Prism  - run locally  Swagger-codegen  - Has Docker Config  Imposter  - Has Docker config",
             "title": "API Mock Tools"
+        },
+        {
+            "location": "/tools/#mock-service",
+            "text": "Mockbin  - test, mock and track http requests & responses",
+            "title": "Mock Service"
         },
         {
             "location": "/tools/#how-to-mock-api-server",
@@ -1217,7 +1242,7 @@
         },
         {
             "location": "/learning/angular/",
-            "text": "Learning the Angular Framework\n\n\nResources\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)\n\n\n\n\n\n\nAngular Documentation\n\n\nAngular & Webpack\n\n\nGotchas:\n\n\nExtractTextWebpackPlugin\n & \n[Validation] ajv version mismatch with webpack #524\n\n\nfallbackloader\n should be \nfallback\n\n\nloader\n is now \nuse\n\n\nex: (old) \nExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})\n should be (new) \nExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})\n\n\n\n\n\n\n\n\nCannot find name 'require' templateUrl - StackOverflow\n\n\n\n\nnpm install --save-dev @types/node\n\n\n\n\nIn \ntsconfig.json\n \n\n\njson\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]\n\n\n\n\n\n\nRestart \nwebpack-dev-server\n - \nnpm run server:dev",
+            "text": "Learning the Angular Framework\n\n\nResources\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)\n\n\n\n\n\n\nAngular Documentation\n\n\nAngular & Webpack\n\n\nGotchas:\n\n\nExtractTextWebpackPlugin\n & \n[Validation] ajv version mismatch with webpack #524\n\n\nfallbackloader\n should be \nfallback\n\n\nloader\n is now \nuse\n\n\nex: (old) \nExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})\n should be (new) \nExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})\n\n\n\n\n\n\n\n\nCannot find name 'require' templateUrl - StackOverflow\n\n\n\n\nnpm install --save-dev @types/node\n\n\n\n\nIn \ntsconfig.json\n \n\n\njson\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]\n\n\n\n\n\n\nRestart \nwebpack-dev-server\n - \nnpm run server:dev\n\n        * \nNo Implicit Any\n - Change setting \n\"noImplicitAny\"\n in \ntsconfig.json\n to false and restart webpack dev server.\n        * \nTS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.\n - \nRequestOptions\n require an object. \n{headers: this.headers}\n\n        * \nUncaught Error: Can't resolve all parameters for NoteService:\n - Issue with not having \n@Injectable()\n on noteservice.",
             "title": "Learning Angular"
         },
         {
@@ -1227,7 +1252,7 @@
         },
         {
             "location": "/learning/angular/#resources",
-            "text": "Angular 2 Fundamentals  - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to  Webpack  Github Repo - Retain App  Webpack config is out of date (for the latest webpack)    Angular Documentation  Angular & Webpack  Gotchas:  ExtractTextWebpackPlugin  &  [Validation] ajv version mismatch with webpack #524  fallbackloader  should be  fallback  loader  is now  use  ex: (old)  ExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})  should be (new)  ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})     Cannot find name 'require' templateUrl - StackOverflow   npm install --save-dev @types/node   In  tsconfig.json    json\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]    Restart  webpack-dev-server  -  npm run server:dev",
+            "text": "Angular 2 Fundamentals  - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to  Webpack  Github Repo - Retain App  Webpack config is out of date (for the latest webpack)    Angular Documentation  Angular & Webpack  Gotchas:  ExtractTextWebpackPlugin  &  [Validation] ajv version mismatch with webpack #524  fallbackloader  should be  fallback  loader  is now  use  ex: (old)  ExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})  should be (new)  ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})     Cannot find name 'require' templateUrl - StackOverflow   npm install --save-dev @types/node   In  tsconfig.json    json\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]    Restart  webpack-dev-server  -  npm run server:dev \n        *  No Implicit Any  - Change setting  \"noImplicitAny\"  in  tsconfig.json  to false and restart webpack dev server.\n        *  TS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.  -  RequestOptions  require an object.  {headers: this.headers} \n        *  Uncaught Error: Can't resolve all parameters for NoteService:  - Issue with not having  @Injectable()  on noteservice.",
             "title": "Resources"
         }
     ]
