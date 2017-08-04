@@ -24,6 +24,7 @@ pages:
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
     - JavaScript: 'web/javascript/js.md'
+    - 'Dev Notes': 'web/notes.md'
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'
