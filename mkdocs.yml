@@ -23,8 +23,9 @@ pages:
     - 'Front End': 
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
-    - JavaScript: 'web/javascript/js.md'
-    - 'Dev Notes': 'web/notes.md'
+  - JavaScript:
+    - 'General Notes': 'web/notes.md'
+    - 'RxJs': 'web/javascript/rxjs.md'
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'

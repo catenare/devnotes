@@ -20,6 +20,9 @@
     * Work with HTML code directly on a browser.
 * [Codepen](http://codepen.io)
     * Frontend development environment
+* [Stanford CS Education Library](http://cslibrary.stanford.edu/)
+
 ## Curriculum
 * [The Odin Project](https://github.com/TheOdinProject/curriculum)
     * [Site](http://theodinproject.com/)
+
