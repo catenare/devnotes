@@ -64,4 +64,6 @@ pages:
   - 'General': 'research.md'
   - 'Learning Systems': 'teach.md'
 - Learning:
-  - 'Learning Angular': 'learning/angular.md'
+  - Angular:
+    - 'Learning Angular': 'learning/angular.md'
+    - 'Wordpress API & Angular': 'learning/angular/wordpress.md'
