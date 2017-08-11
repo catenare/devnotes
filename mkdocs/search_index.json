@@ -296,29 +296,9 @@
             "title": "Parallax"
         },
         {
-            "location": "/web/javascript/js/",
-            "text": "JavaScript Notes\n\n\nResources\n\n\n\n\nAwesome Angular\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.",
-            "title": "JavaScript"
-        },
-        {
-            "location": "/web/javascript/js/#javascript-notes",
-            "text": "",
-            "title": "JavaScript Notes"
-        },
-        {
-            "location": "/web/javascript/js/#resources",
-            "text": "Awesome Angular",
-            "title": "Resources"
-        },
-        {
-            "location": "/web/javascript/js/#tools",
-            "text": "Lerna  - Manage JavaScript projects with multiple packages  Colmena  - Colmena - CMS system.",
-            "title": "Tools"
-        },
-        {
             "location": "/web/notes/",
-            "text": "Notes related to front-end development.\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nrxjs\n\n\n\n\nGetting it to work with typescript\n\n\nError: \nUncaught TypeError: Cannot read property 'Observable' of undefined\n. Works in plain javascript.\n\n\nFix:\n\n\nInstall type definitions for rxjs \nnpm install --save-dev @type/rx\n\n\nImport as \nimport * as Rx from 'rxjs'",
-            "title": "Dev Notes"
+            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.",
+            "title": "General Notes"
         },
         {
             "location": "/web/notes/#notes-related-to-front-end-development",
@@ -326,14 +306,44 @@
             "title": "Notes related to front-end development."
         },
         {
+            "location": "/web/notes/#javascript-notes",
+            "text": "",
+            "title": "JavaScript Notes"
+        },
+        {
+            "location": "/web/notes/#resources",
+            "text": "Awesome Angular  You Don't Need jQuery",
+            "title": "Resources"
+        },
+        {
+            "location": "/web/notes/#tools",
+            "text": "Lerna  - Manage JavaScript projects with multiple packages  Colmena  - Colmena - CMS system.",
+            "title": "Tools"
+        },
+        {
             "location": "/web/notes/#ionic",
             "text": "Include font-awesome fonts in project.   FontAwesome in Ionic   Install FontAwesome -  npm install --save font-awesome   Create script to copy fonts into  www/assets/fonts    Set path to fonts in SCSS -  $fa-font-path: /assets/fonts;  in  scr/app/app.scss ;    https://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.",
             "title": "Ionic"
         },
         {
-            "location": "/web/notes/#rxjs",
-            "text": "Getting it to work with typescript  Error:  Uncaught TypeError: Cannot read property 'Observable' of undefined . Works in plain javascript.  Fix:  Install type definitions for rxjs  npm install --save-dev @type/rx  Import as  import * as Rx from 'rxjs'",
-            "title": "rxjs"
+            "location": "/web/javascript/rxjs/",
+            "text": "Figuring out RXJS\n\n\nNotes\n\n\n\n\n\n\nGetting it to work with typescript\n\n\n\n\nError: \nUncaught TypeError: Cannot read property 'Observable' of undefined\n. Works in plain javascript.\n\n\nFix:\n\n\nInstall type definitions for rxjs \nnpm install --save-dev @type/rx\n\n\nImport as \nimport * as Rx from 'rxjs'\n\n\n\n\n\n\n\n\n\n\n\n\nIssues with \nRx.DOM.get()\n. Error: \nThe value of the 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' when the request's credentials mode is 'include'\n\n\n\n\nFix:\n\n\nIssue 1732\n\n\nProvide custom factory for XHR\n\n\n\n\n\n\n\n\n\n\n\n\n    const settings = {\n    crossDomain: true,\n    responseType: \"json\",\n    method: \"GET\",\n    createXHR: () => new XMLHttpRequest(),\n    url: url\n  }\n\n\n\n\nResources\n\n\n\n\nOfficial Site\n\n\nGithub RX Book\n\n\nRx Extensions",
+            "title": "RxJs"
+        },
+        {
+            "location": "/web/javascript/rxjs/#figuring-out-rxjs",
+            "text": "",
+            "title": "Figuring out RXJS"
+        },
+        {
+            "location": "/web/javascript/rxjs/#notes",
+            "text": "Getting it to work with typescript   Error:  Uncaught TypeError: Cannot read property 'Observable' of undefined . Works in plain javascript.  Fix:  Install type definitions for rxjs  npm install --save-dev @type/rx  Import as  import * as Rx from 'rxjs'       Issues with  Rx.DOM.get() . Error:  The value of the 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' when the request's credentials mode is 'include'   Fix:  Issue 1732  Provide custom factory for XHR           const settings = {\n    crossDomain: true,\n    responseType: \"json\",\n    method: \"GET\",\n    createXHR: () => new XMLHttpRequest(),\n    url: url\n  }",
+            "title": "Notes"
+        },
+        {
+            "location": "/web/javascript/rxjs/#resources",
+            "text": "Official Site  Github RX Book  Rx Extensions",
+            "title": "Resources"
         },
         {
             "location": "/php/resources/",
@@ -1202,7 +1212,7 @@
         },
         {
             "location": "/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite",
             "title": "Learning Systems"
         },
         {
@@ -1232,7 +1242,7 @@
         },
         {
             "location": "/teach/#online-resources",
-            "text": "Codenvy  Create workspace instances using eclipse che    Thimble  Work with HTML code directly on a browser.    Codepen  Frontend development environment",
+            "text": "Codenvy  Create workspace instances using eclipse che    Thimble  Work with HTML code directly on a browser.    Codepen  Frontend development environment    Stanford CS Education Library",
             "title": "Online Resources"
         },
         {
@@ -1254,6 +1264,31 @@
             "location": "/learning/angular/#resources",
             "text": "Angular 2 Fundamentals  - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to  Webpack  Github Repo - Retain App  Webpack config is out of date (for the latest webpack)    Angular Documentation  Angular & Webpack  Gotchas:  ExtractTextWebpackPlugin  &  [Validation] ajv version mismatch with webpack #524  fallbackloader  should be  fallback  loader  is now  use  ex: (old)  ExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})  should be (new)  ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})     Cannot find name 'require' templateUrl - StackOverflow   npm install --save-dev @types/node   In  tsconfig.json    json\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]    Restart  webpack-dev-server  -  npm run server:dev \n        *  No Implicit Any  - Change setting  \"noImplicitAny\"  in  tsconfig.json  to false and restart webpack dev server.\n        *  TS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.  -  RequestOptions  require an object.  {headers: this.headers} \n        *  Uncaught Error: Can't resolve all parameters for NoteService:  - Issue with not having  @Injectable()  on noteservice.",
             "title": "Resources"
+        },
+        {
+            "location": "/learning/angular/wordpress/",
+            "text": "Using the Wordpress API with angular\n\n\n\n\nWant to use Foundation for creating my theme\n\n\nUse Amazon CDN for serving pages. Reduce latency in South Africa\n\n\nNot to keen on splitting up my theme for Wordpress.\n\n\n\n\nResources\n\n\n\n\nde Wordpress themes and angular articles\n\n\nWordpress API Angular Client\n\n\n\n\nTools\n\n\n\n\nPostman\n - Use to explore the Wordpress API\n\n\nWP REST API Docs\n\n\n\n\nNotes\n\n\n\n\nLocal site: \nhttp://paseo.demo/wp-json/wp/v2/posts\n - Access the REST API",
+            "title": "Wordpress API & Angular"
+        },
+        {
+            "location": "/learning/angular/wordpress/#using-the-wordpress-api-with-angular",
+            "text": "Want to use Foundation for creating my theme  Use Amazon CDN for serving pages. Reduce latency in South Africa  Not to keen on splitting up my theme for Wordpress.",
+            "title": "Using the Wordpress API with angular"
+        },
+        {
+            "location": "/learning/angular/wordpress/#resources",
+            "text": "de Wordpress themes and angular articles  Wordpress API Angular Client",
+            "title": "Resources"
+        },
+        {
+            "location": "/learning/angular/wordpress/#tools",
+            "text": "Postman  - Use to explore the Wordpress API  WP REST API Docs",
+            "title": "Tools"
+        },
+        {
+            "location": "/learning/angular/wordpress/#notes",
+            "text": "Local site:  http://paseo.demo/wp-json/wp/v2/posts  - Access the REST API",
+            "title": "Notes"
         }
     ]
 }
