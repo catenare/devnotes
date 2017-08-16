@@ -1483,10 +1483,14 @@ http {
 </code></pre>
 
 <ul>
-<li>Start nginx - <code>sudo port load nginx</code> - macports</li>
+<li>Mac OS X with MacPorts <ul>
+<li>Stop nginx - <code>sudo port unload nginx</code></li>
+<li>Start nginx - <code>sudo port load nginx</code></li>
+</ul>
+</li>
 <li>Ubuntu<ul>
 <li><code>sudo nginx -t</code> - test configuration</li>
-<li><code>sudo systemctl nging restart</code></li>
+<li><code>sudo systemctl restart nginx</code></li>
 </ul>
 </li>
 </ul>

@@ -926,6 +926,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#amazon-identity-and-access-management" title="Amazon Identity and Access Management" class="md-nav__link">
+    Amazon Identity and Access Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-s3-and-cloudfront-for-paseoorgza" title="Setting up S3 and CloudFront for paseo.org.za" class="md-nav__link">
+    Setting up S3 and CloudFront for paseo.org.za
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1162,6 +1176,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#amazon-identity-and-access-management" title="Amazon Identity and Access Management" class="md-nav__link">
+    Amazon Identity and Access Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-s3-and-cloudfront-for-paseoorgza" title="Setting up S3 and CloudFront for paseo.org.za" class="md-nav__link">
+    Setting up S3 and CloudFront for paseo.org.za
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1238,6 +1266,58 @@
 <li>Domains need to be in nginx.conf file (sites-enabled/default) file.</li>
 <li>Pretty straightforward and easy to set up.</li>
 </ul>
+<h2 id="amazon-identity-and-access-management">Amazon Identity and Access Management</h2>
+<ul>
+<li>Create user to access S3 and Cloudfront - will be used to upload files to S3<ul>
+<li>IAM Management Console</li>
+<li>Create User</li>
+<li>Give S3, CloudFront and APIGateway settings</li>
+</ul>
+</li>
+</ul>
+<h2 id="setting-up-s3-and-cloudfront-for-paseoorgza">Setting up S3 and CloudFront for paseo.org.za</h2>
+<ol>
+<li>Create ssl/tls certificate<ol>
+<li>Create the certificate in N. Virginia else it won't work.</li>
+<li>Make sure that you have access to one of the email addresses that Amazon will use for verification</li>
+<li>Add a domain name - <em>.paseo.org.za/paseo.org.za and </em>.martinsonline.org/martinsonline.org</li>
+</ol>
+</li>
+<li>Create S3 Bucket<ul>
+<li>Use basic settings. Going to use this bucket as source for CloudFront</li>
+<li>Upload site with Cyberduck to s3</li>
+<li>Create Bucket Policy</li>
+</ul>
+</li>
+</ol>
+<pre><code class="json">{
+    &quot;Version&quot;: &quot;2012-10-17&quot;,
+    &quot;Id&quot;: &quot;Policy1488488343010&quot;,
+    &quot;Statement&quot;: [
+        {
+            &quot;Sid&quot;: &quot;Stmt1488488323316&quot;,
+            &quot;Effect&quot;: &quot;Allow&quot;,
+            &quot;Principal&quot;: &quot;*&quot;,
+            &quot;Action&quot;: &quot;s3:GetObject&quot;,
+            &quot;Resource&quot;: &quot;arn:aws:s3:::barbarasierrafoothilswineries/*&quot;
+        }
+    ]
+}
+</code></pre>
+
+<ol>
+<li>Create CloudFront Distribution<ul>
+<li>Web delivery method</li>
+</ul>
+</li>
+<li>Update DNS records<ul>
+<li>Add CNAME record to dns record<ul>
+<li>www points to cloudfront url</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
                 
                   
                 
