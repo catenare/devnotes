@@ -9,7 +9,9 @@
     1. Deleting tags
         * `git tag -d v1.0`
         * `git push origin :refs/tags/v1.0`
-* Need tags for composer
+    * Need tags for composer
+* **git worktree** [Git Worktree](https://git-scm.com/docs/git-worktree)
+    * Create temporary checkout for working on a branch without having to stash data
 
 ### Git Resources
 #### .gitignore
