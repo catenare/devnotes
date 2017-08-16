@@ -71,4 +71,3 @@
 1. Update DNS records
     * Add CNAME record to dns record
         * www points to cloudfront url
-

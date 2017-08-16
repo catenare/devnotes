@@ -31,9 +31,10 @@ pages:
     - Composer: 'php/composer.md'
     - Wordpress:
       - 'Setup': 'php/wordpress/setup.md'
-      - 'Home': 'php/wordpress/wordpress.md'
+      - 'Local Dev': 'php/wordpress/dev.md'
       - 'Plugin Dev': 'php/wordpress/plugin development.md'
       - 'Theme Dev': 'php/wordpress/themes.md'
+      - 'API Dev': 'php/wordpress/angular/wordpress.md'
   - 'Python': 
     - 'General': 'python/general.md'
     - 'Flask': 'python/flask.md'
@@ -66,4 +67,3 @@ pages:
 - Learning:
   - Angular:
     - 'Learning Angular': 'learning/angular.md'
-    - 'Wordpress API & Angular': 'learning/angular/wordpress.md'

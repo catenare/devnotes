@@ -10,4 +10,3 @@
 * [WP REST API Docs](https://developer.wordpress.org/rest-api/)
 ## Notes
 * Local site: `http://paseo.demo/wp-json/wp/v2/posts` - Access the REST API
-

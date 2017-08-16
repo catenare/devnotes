@@ -1,28 +1,22 @@
-# Setting up Wordpress with Composer, Nginx, PHP-fpm on Mac OS X
-## Settings
-* Mac OS X (10.11.6 & Mac OS Sierra)
-* MacPorts (2.4.1)
-* Software
-    * php71
-    * mysql57
-    * Wordpress 4.8
-    
-## Using sqlite as the database
-* Use sqlite plugin for sqlite - [SQLite Integration](https://wordpress.org/plugins/sqlite-integration/)
-* Use for lightweight development.
+# Setting up Wordpress with Composer, Nginx, PHP-fpm
+## See [Local Development Setup](dev.md) for info about composer, nginx, etc.
+## Install packages
+* Base packages
+    * mysql
+    * php7
+    * nginx
 
-## Resources
-* [nginx documentation - wordpress](https://www.nginx.com/resources/wiki/start/topic/recipes/wordpress/)
-* [Intro to Wordpress and Composer](https://www.pmg.com/blog/composer-and-wordpress/)
-* [John P. Bloch](https://code.johnpbloch.com/2015/07/upcoming-changes-to-my-wordpress-fork/)
-
-## Install Wordpress with composer
-* Install composer
-* Use *Wordpress* package repository
-    * [wpackagist](https://wpackagist.org/) - Use with composer to install wordpress plugins and themes.
-* Create **composer.json** file
-* Add custom repository for plugin being developed.
-    * See bottom of **composer.json** file.
+### Setup composer and *composer.json* config file
+* Install *composer* in `/usr/local/bin/`
+* Install 
+* Create **composer.json** file - `composer init`
+* Configure with additional settings for wordpress
+    * Add [wpackagist](https://wpackagist.org) repository to repositories
+    * In *extra*, 
+        * add *wordpress-install-dir* as *public*
+        * add "installer-paths" for plugins and themes - see below
+    * Add custom repositories from version control for custom developed plugins and themes
+        * See example file *"https://github.com/catenare/aad-sso-wordpress"* - fork of plugin I'm using and wanted to be able to install/manage via composer.
 ```json
 {
   "name": "catenare/wordpress-intranet",
@@ -89,181 +83,223 @@
   ]
 }
 ```
-
 * Run `composer install` if no composer.lock file present else, `composer update`.
 
-## Install ports for Mysql, nginx and fpm
-1. `sudo port install mysql57-server nginx php71-fpm php71`
+### Create and setup *wp-config.php* file for wordpress
+* File located outside of *public* directory
+* Copy settings when first installing site.
+```php
+<?php
+/**
+ * The base configuration for WordPress
+ *
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
+ *
+ * This file contains the following configurations:
+ *
+ * * MySQL settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
+ *
+ * @package WordPress
+ */
 
-## Setup Database
-1. Setup mysql server
-    * `sudo rm -fr /opt/local/var/db/mysql57` - remove current mysql57 db folder if it exists.
-    * `sudo /opt/local/lib/mysql57/bin/mysqld --initialize --user=_mysql` - setup new database and default password
-    * `mysql -u root -p` - use password generated with previous step
-        * `ALTER USER 'root'@'localhost' IDENTIFIED BY 'new pass';`
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', '***');
+
+/** MySQL database username */
+define('DB_USER', '***');
+
+/** MySQL database password */
+define('DB_PASSWORD', '***');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+
+/** Database Charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8mb4');
+
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
+
+/**#@+
+ * Authentication Unique Keys and Salts.
+ *
+ * Change these to different unique phrases!
+ * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define('AUTH_KEY',         '**');
+define('SECURE_AUTH_KEY',  '**');
+define('LOGGED_IN_KEY',    '**');
+define('NONCE_KEY',        '**');
+define('AUTH_SALT',        '**');
+define('SECURE_AUTH_SALT', '**');
+define('LOGGED_IN_SALT',   '**');
+define('NONCE_SALT',       '**');
+
+/**#@-*/
+
+/**
+ * WordPress Database Table prefix.
+ *
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix  = 'custom_';
+
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the Codex.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
+ */
+define('WP_DEBUG', false);
+/* Multisite */
+//define('SUNRISE', 'on' );
+//define('WP_ALLOW_MULTISITE', true);
+//define('MULTISITE', true);
+//define('SUBDOMAIN_INSTALL', false);
+//define('DOMAIN_CURRENT_SITE', '**');
+//define('PATH_CURRENT_SITE', '/');
+//define('SITE_ID_CURRENT_SITE', 1);
+//define('BLOG_ID_CURRENT_SITE', 1);
+/* That's all, stop editing! Happy blogging. */
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
+```
+#### Setup uploads directory
+* Create *uploads* directory in *public/wp-content/*
+* Change owner to *www-data* - `sudo chown www-data:www-date wp-content/uploads`
+
+### Setup Database
 1. Create and setup database
     1. Log into mysql-server
         * `mysql -u root -p`
-        * Drop current database `drop database alicart;`
-    1. Create database: `create database alicart;`
-    1. Add User: `CREATE USER 'alicart'@'localhost' IDENTIFIED BY 'password';`
-    1. Grant privileges to user: `GRANT ALL PRIVILEGES ON alicart.* to 'alicart'@'localhost`;
+        * Drop current database `drop database paseo;`
+    1. Create database: `create database paseo;`
+    1. Add User: `CREATE USER 'paseo'@'localhost' IDENTIFIED BY 'password';`
+    1. Grant privileges to user: `GRANT ALL PRIVILEGES ON alicart.* to 'paseo'@'localhost`;
     1. Reload privileges: `FLUSH PRIVILEGES;`
-1. Setup php
-    * `cp /opt/local/etc/php.ini-development /opt/local/etc/php.ini`
-    * Configure socket connection for mysql in php.ini
-        * Edit [Pdo_mysql] section
-            * `pdo_mysql.default_socket=/opt/local/var/run/mysql57/mysqld.sock`
+### Configure fpm
+* Configure socket connection for mysql in php.ini
+    * Edit [Pdo_mysql] section
+        * `pdo_mysql.default_socket=/var/run/mysqld/mysqld.sock`
          * Add `cgi.fix_pathinfo = 0;` to end of file
-1. Configure fpm - `/opt/local/etc/php71` folder
-    * `cp php-fpm.conf.default php-fpm.conf`
-    * `cp php-fpm.d/www.conf.default php-fpm.d/www.conf`
-    * Edit `php-fpm.d/www.conf` to change to socket
-        ```ini
-      ;listen = 127.0.0.1:9000
-      listen = "/opt/local/var/run/php71/php71-fpm.socket"
-        ```
-    * Start fpm - `sudo port load php71-fpm`
-1. Setup nginx - `/opt/local/etc/nginx`
+* Configure fpm - `/etc/php/7.0/fpm` folder
+    * Edit `/etc/php/7.0/fpm/pool.d/www.conf` to change to socket
 ```ini
-#user  nobody;
-worker_processes  1;
+    listen = /run/php/php7.0-fpm.sock
+```
 
-#error_log  logs/error.log;
-#error_log  logs/error.log  notice;
-#error_log  logs/error.log  info;
+### Setup nginx - `/etc/nginx/sites-enabled/default`
+```ini
+# Default server configuration
+#
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
 
-#pid        logs/nginx.pid;
+	root /var/www/paseo/wordpress/public;
 
+	# Add index.php to the list if you are using PHP
+	index index.html index.htm index.nginx-debian.html index.php;
 
-events {
-    worker_connections  1024;
-}
+	server_name api.paseo.org.za api.martinsonline.org;
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		index index.php;
+		try_files $uri $uri/ /index.php?$args;
+	}
+	
+	 # Add trailing slash to */wp-admin requests.
+   	 rewrite /wp-admin$ $scheme://$host$request_uri/ permanent;
+    	
+    	# this prevents hidden files (beginning with a period) from being served
+	location ~ /\.  { access_log off; log_not_found off; deny all; }
+	# Pass uploaded files to wp-includes/ms-files.php.
+    	rewrite /files/$ /index.php last;
 
+	if ($uri !~ wp-content/plugins) {
+        rewrite /files/(.+)$ /wp-includes/ms-files.php?file=$1 last;
+    	}
 
-http {
-    include       mime.types;
-    default_type  application/octet-stream;
+    	# Rewrite multisite '.../wp-.*' and '.../*.php'.
+    	if (!-e $request_filename) {
+        	rewrite ^/[_0-9a-zA-Z-]+(/wp-.*) $1 last;
+        	rewrite ^/[_0-9a-zA-Z-]+.*(/wp-admin/.*\.php)$ $1 last;
+        	rewrite ^/[_0-9a-zA-Z-]+(/.*\.php)$ $1 last;
+    	}
+	
+	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+	#
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+		fastcgi_intercept_errors on;
+		include fastcgi.conf;
+		client_max_body_size 10M;
+	}
 
-    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-    #                  '$status $body_bytes_sent "$http_referer" '
-    #                  '"$http_user_agent" "$http_x_forwarded_for"';
-
-    #access_log  logs/access.log  main;
-
-    sendfile        on;
-    #tcp_nopush     on;
-
-    #keepalive_timeout  0;
-    keepalive_timeout  65;
-
-    #gzip  on;
-
-    server {
-        listen       80;
-        server_name  localhost;
-
-        #charset koi8-r;
-        #access_log  logs/host.access.log  main;
-        root /Users/themartins/Projects/johan/clients/alicart/wordpress/public;
-        index  index.php;
-
-  #      location / {
-            #root   share/nginx/html;
-            
-   #     }
-
-        location / {
-                # This is cool because no php is touched for static content.
-                # include the "?$args" part so non-default permalinks doesn't break when using query string
-                try_files $uri $uri/ /index.php?$args;
-        }
-
-
-        #error_page  404              /404.html;
-
-        # redirect server error pages to the static page /50x.html
-        #
-        error_page   500 502 503 504  /50x.html;
-        location = /50x.html {
-            root   share/nginx/html;
-        }
-
-        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
-        #
-        #location ~ \.php$ {
-        #    proxy_pass   http://127.0.0.1;
-        #}
-
-        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-        #
-        location ~ \.php$ {
-            fastcgi_pass 	unix:/opt/local/var/run/php71/php5-fpm.socket;             
-            fastcgi_intercept_errors on;
-            include        	fastcgi.conf;
-        }
-        
-        location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
-            expires max;
-            log_not_found off;
-        }
-
-        # deny access to .htaccess files, if Apache's document root
-        # concurs with nginx's one
-        #
-        #location ~ /\.ht {
-        #    deny  all;
-        #}
-    }
+	location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+		expires max;
+		log_not_found off;
+	}
+	location ~ /\. { access_log off; log_not_found off; deny all; }
 
 
-    # another virtual host using mix of IP-, name-, and port-based configuration
-    #
-    #server {
-    #    listen       8000;
-    #    listen       somename:8080;
-    #    server_name  somename  alias  another.alias;
+    listen 443 ssl http2; # managed by Certbot
+ssl_certificate /etc/letsencrypt/live/api.martinsonline.org/fullchain.pem; # managed by Certbot
+ssl_certificate_key /etc/letsencrypt/live/api.martinsonline.org/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
 
-    #    location / {
-    #        root   share/nginx/html;
-    #        index  index.html index.htm;
-    #    }
-    #}
-
-
-    # HTTPS server
-    #
-    #server {
-    #    listen       443 ssl;
-    #    server_name  localhost;
-
-    #    ssl_certificate      cert.pem;
-    #    ssl_certificate_key  cert.key;
-
-    #    ssl_session_cache    shared:SSL:1m;
-    #    ssl_session_timeout  5m;
-
-    #    ssl_ciphers  HIGH:!aNULL:!MD5;
-    #    ssl_prefer_server_ciphers  on;
-
-    #    location / {
-    #        root   share/nginx/html;
-    #        index  index.html index.htm;
-    #    }
-    #}
-
+    # Redirect non-https traffic to https
+     if ($scheme != "https") {
+         return 301 https://$host$request_uri;
+     } # managed by Certbot
 }
 ```
-* Mac OS X with MacPorts 
-    * Stop nginx - `sudo port unload nginx`
-    * Start nginx - `sudo port load nginx`
-* Ubuntu
-    * `sudo nginx -t` - test configuration
-    * `sudo systemctl restart nginx`
+### Start everything
+* `sudo nginx -t` - test configuration
+* `sudo systemctl restart nginx`
+* `sudo systemctl restart php70-fpm`
+* `sudo systemctl restart mysql-restart`
 
-
-## Multi-site configuration - nginx/ubuntu on AWS.
-Trying to configure wordpress multisite on Ubuntu.
+## Multi-site configuration 
+* Resources [Multisite Network Admin](https://codex.wordpress.org/Multisite_Network_Administration)
+1. Enable multisite
+    * *wp-config.php* - add `define('WP_ALLOW_MULTISITE', true);` under section with /* multisite */
+    * Refresh site - will create the necessary tables
+    * Add the additional settings under /* multisite */    
+```php
+    define('MULTISITE', true);
+    define('SUBDOMAIN_INSTALL', false);
+    define('DOMAIN_CURRENT_SITE', '**');
+    define('PATH_CURRENT_SITE', '/');
+    define('SITE_ID_CURRENT_SITE', 1);
+    define('BLOG_ID_CURRENT_SITE', 1);
+```
+1. Log into multisite and configure the plugins.
 
 * [nginx config gist](https://gist.github.com/evansolomon/2274120)
     * Notes for rewrite rules in nginx
