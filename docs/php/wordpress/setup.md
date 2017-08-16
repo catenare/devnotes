@@ -254,10 +254,12 @@ http {
 
 }
 ```
-* Start nginx - `sudo port load nginx` - macports
+* Mac OS X with MacPorts 
+    * Stop nginx - `sudo port unload nginx`
+    * Start nginx - `sudo port load nginx`
 * Ubuntu
     * `sudo nginx -t` - test configuration
-    * `sudo systemctl nging restart`
+    * `sudo systemctl restart nginx`
 
 
 ## Multi-site configuration - nginx/ubuntu on AWS.
