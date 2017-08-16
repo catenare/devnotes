@@ -37,7 +37,7 @@
 * Domains need to be in nginx.conf file (sites-enabled/default) file.
 * Pretty straightforward and easy to set up.
 
-## Amazon Identiy and Access Management
+## Amazon Identity and Access Management
 * Create user to access S3 and Cloudfront - will be used to upload files to S3
     * IAM Management Console
     * Create User
@@ -71,4 +71,4 @@
 1. Update DNS records
     * Add CNAME record to dns record
         * www points to cloudfront url
-        
+
