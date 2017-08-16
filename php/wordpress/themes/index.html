@@ -484,8 +484,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../wordpress/" title="Home" class="md-nav__link">
-      Home
+    <a href="../dev/" title="Local Dev" class="md-nav__link">
+      Local Dev
     </a>
   </li>
 
@@ -554,12 +554,31 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setup-for-development" title="Setup for development" class="md-nav__link">
+    Setup for development
+  </a>
+  
+</li>
+      
       
       
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../angular/wordpress/" title="API Dev" class="md-nav__link">
+      API Dev
+    </a>
   </li>
 
         
@@ -1060,18 +1079,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../learning/angular/wordpress/" title="Wordpress API & Angular" class="md-nav__link">
-      Wordpress API & Angular
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -1122,6 +1129,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setup-for-development" title="Setup for development" class="md-nav__link">
+    Setup for development
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1146,7 +1160,31 @@
 <li><a href="https://css-tricks.com/templating-languages-and-wordpress">Using Templating Engines to Streamline WordPress Theme Development</a></li>
 <li><a href="https://www.upstatement.com/timber/">Timber</a> - Twig template engine</li>
 <li><a href="https://themeawesome.com/responsive-wordpress-theme/">ThemeAwsome</a> - Foundation theme for wordpress.</li>
+<li>Mustache for PHP <a href="https://github.com/bobthecow/mustache.php">BobTheCow</a></li>
 </ul>
+<h2 id="setup-for-development">Setup for development</h2>
+<ol>
+<li>Create <em>composer.json</em> file - <code>composer init</code></li>
+<li>Add <em>"type": "wordpress-theme"</em> to get composer to install it in the wordpress plugin directory</li>
+</ol>
+<pre><code class="json">{
+  &quot;name&quot;: &quot;&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;authors&quot;: [
+    {
+      &quot;name&quot;: &quot;Johan Martin&quot;,
+      &quot;homepage&quot;: &quot;http://www.johan-martin.com&quot;,
+      &quot;role&quot;: &quot;developer&quot;
+    }
+  ],
+  &quot;keywords&quot;:[
+    &quot;Wordpress&quot;,
+    &quot;Theme&quot;,
+    &quot;Composer&quot;
+  ],
+  &quot;type&quot;: &quot;wordpress-theme&quot;
+}
+</code></pre>
                 
                   
                 
@@ -1180,13 +1218,13 @@
           </a>
         
         
-          <a href="../../../python/general/" title="General" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../angular/wordpress/" title="API Dev" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                General
+                API Dev
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

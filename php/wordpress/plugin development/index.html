@@ -484,8 +484,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../wordpress/" title="Home" class="md-nav__link">
-      Home
+    <a href="../dev/" title="Local Dev" class="md-nav__link">
+      Local Dev
     </a>
   </li>
 
@@ -530,15 +530,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-plugin" title="Configure plugin" class="md-nav__link">
-    Configure plugin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mustache-for-templating" title="Mustache for templating" class="md-nav__link">
-    Mustache for templating
+  <a href="#setup-for-development" title="Setup for development" class="md-nav__link">
+    Setup for development
   </a>
   
 </li>
@@ -560,6 +553,18 @@
   <li class="md-nav__item">
     <a href="../themes/" title="Theme Dev" class="md-nav__link">
       Theme Dev
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../angular/wordpress/" title="API Dev" class="md-nav__link">
+      API Dev
     </a>
   </li>
 
@@ -1061,18 +1066,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../learning/angular/wordpress/" title="Wordpress API & Angular" class="md-nav__link">
-      Wordpress API & Angular
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -1111,15 +1104,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-plugin" title="Configure plugin" class="md-nav__link">
-    Configure plugin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mustache-for-templating" title="Mustache for templating" class="md-nav__link">
-    Mustache for templating
+  <a href="#setup-for-development" title="Setup for development" class="md-nav__link">
+    Setup for development
   </a>
   
 </li>
@@ -1142,10 +1128,15 @@
                 
                 
                 <h1 id="building-a-custom-wordpress-plugin">Building a custom wordpress plugin.</h1>
+<ol>
+<li>Plugin is hosted on github</li>
+<li>Plugin automatically installed by composer</li>
+<li>Can develop plugin in Wordpress and push changes to github.</li>
+<li>Will update installed plugin point to the github repo</li>
+</ol>
 <h2 id="resources">Resources</h2>
 <ul>
 <li>Boilerplate template - <a href="https://wppb.me/">WORDPRESS PLUGIN BOILERPLATE GENERATOR</a></li>
-<li>Mustache for PHP <a href="https://github.com/bobthecow/mustache.php">BobTheCow</a></li>
 <li>GenerateWP <a href="https://generatewp.com/">Generate for WordPress Developers</a></li>
 <li>Docs<ul>
 <li><a href="https://code.tutsplus.com/articles/developer-plugin-essential-for-wordpress-theme-development--cms-22028">Developer Plugin: Essential for WordPress Theme Developemnt</a></li>
@@ -1153,9 +1144,9 @@
 </ul>
 </li>
 </ul>
-<h2 id="configure-plugin">Configure plugin</h2>
+<h2 id="setup-for-development">Setup for development</h2>
 <ol>
-<li>Create <em>composer.json</em> file in root directory.</li>
+<li>Create <em>composer.json</em> file in root directory. - <code>composer init</code></li>
 <li>Add <em>"type": "wordpress-plugin"</em> to get composer to install it in the wordpress plugin directory</li>
 </ol>
 <pre><code class="json">{
@@ -1176,12 +1167,8 @@
 }
 </code></pre>
 
-<h2 id="mustache-for-templating">Mustache for templating</h2>
 <ol>
-<li>Add <em>mustache</em> for templating.<ul>
-<li><code>composer require mustache\mustache</code></li>
-</ul>
-</li>
+<li>Add any necessary requirements for the plugin.</li>
 </ol>
                 
                   
@@ -1201,7 +1188,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../wordpress/" title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../dev/" title="Local Dev" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1210,7 +1197,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Local Dev
               </span>
             </div>
           </a>
