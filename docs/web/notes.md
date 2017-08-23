@@ -19,3 +19,7 @@
 
         * Set path to fonts in SCSS - `$fa-font-path: /assets/fonts;` in `scr/app/app.scss`; 
         * https://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.
+
+## Fixing Issues
+* "SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode."
+    * Resolution: [Safari/Babel/Webpack Const declarations are not supported in strict mode #922](https://github.com/hapijs/joi/issues/922) - Don't exclue node_modules when building with webpack.
