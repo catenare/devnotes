@@ -297,7 +297,7 @@
         },
         {
             "location": "/web/notes/",
-            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.",
+            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.",
             "title": "General Notes"
         },
         {
@@ -324,6 +324,11 @@
             "location": "/web/notes/#ionic",
             "text": "Include font-awesome fonts in project.   FontAwesome in Ionic   Install FontAwesome -  npm install --save font-awesome   Create script to copy fonts into  www/assets/fonts    Set path to fonts in SCSS -  $fa-font-path: /assets/fonts;  in  scr/app/app.scss ;    https://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.",
             "title": "Ionic"
+        },
+        {
+            "location": "/web/notes/#fixing-issues",
+            "text": "\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"  Resolution:  Safari/Babel/Webpack Const declarations are not supported in strict mode #922  - Don't exclue node_modules when building with webpack.",
+            "title": "Fixing Issues"
         },
         {
             "location": "/web/javascript/rxjs/",
