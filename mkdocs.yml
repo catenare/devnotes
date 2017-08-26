@@ -24,6 +24,7 @@ pages:
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
   - JavaScript:
+    - 'Webpack Starter Config': 'web/javascript/webpack.md'
     - 'General Notes': 'web/notes.md'
     - 'RxJs': 'web/javascript/rxjs.md'
   - PHP:
