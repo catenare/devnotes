@@ -28,11 +28,27 @@
 ## Snippets
 * Webpack snippet
 ```javascript
-          {
+     {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           loaders: {
+            scss: ['vue-style-loader', {
+              loader: 'css-loader',
+              options: {
+                minimize: false,
+                sourceMap: false
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options:
+              {
+                includePaths: ['./src/styles'],
+                data: '@import "./src/styles/app";',
+                sourceMap: false
+              }
+            }],
             ts: 'awesome-typescript-loader'
           },
           extractCSS: true
