@@ -1,0 +1,6 @@
+.md-typeset iframe, .md-typeset img, .md-typeset svg {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

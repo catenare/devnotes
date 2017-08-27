@@ -12,6 +12,8 @@ copyright: Johan Martin &copy; 2017
 markdown_extensions:
   - pymdownx.tilde
 theme: 'material'
+extra_css:
+- css/extra.css
 pages:
 - Home: 'index.md'
 - Development:
@@ -24,8 +26,9 @@ pages:
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
   - JavaScript:
-    - 'Webpack Starter Config': 'web/javascript/webpack.md'
     - 'General Notes': 'web/notes.md'
+    - 'Webpack Starter Config': 'web/javascript/webpack.md'
+    - 'Vuejs': 'web/javascript/vuejs.md'
     - 'RxJs': 'web/javascript/rxjs.md'
   - PHP:
     - Resources: 'php/resources.md'
