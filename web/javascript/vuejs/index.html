@@ -1223,11 +1223,27 @@
 <ul>
 <li>Webpack snippet</li>
 </ul>
-<pre><code class="javascript">          {
+<pre><code class="javascript">     {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           loaders: {
+            scss: ['vue-style-loader', {
+              loader: 'css-loader',
+              options: {
+                minimize: false,
+                sourceMap: false
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options:
+              {
+                includePaths: ['./src/styles'],
+                data: '@import &quot;./src/styles/app&quot;;',
+                sourceMap: false
+              }
+            }],
             ts: 'awesome-typescript-loader'
           },
           extractCSS: true
