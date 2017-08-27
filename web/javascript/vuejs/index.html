@@ -19,7 +19,7 @@
     
     
       
-        <title>RxJs - Development Notes for Johan Martin</title>
+        <title>Vuejs - Development Notes for Johan Martin</title>
       
     
     
@@ -88,7 +88,7 @@
                 </span>
               
             
-            RxJs
+            Vuejs
           
         </span>
       </div>
@@ -403,18 +403,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../vuejs/" title="Vuejs" class="md-nav__link">
-      Vuejs
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -426,11 +414,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        RxJs
+        Vuejs
       </label>
     
-    <a href="./" title="RxJs" class="md-nav__link md-nav__link--active">
-      RxJs
+    <a href="./" title="Vuejs" class="md-nav__link md-nav__link--active">
+      Vuejs
     </a>
     
       
@@ -444,6 +432,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#webpack-configuration" title="Webpack Configuration" class="md-nav__link">
+    Webpack Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#including-foundation-with-webpack-and-vue" title="Including Foundation with webpack and vue" class="md-nav__link">
+    Including Foundation with webpack and vue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#notes" title="Notes" class="md-nav__link">
     Notes
   </a>
@@ -451,8 +453,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" title="Resources" class="md-nav__link">
-    Resources
+  <a href="#snippets" title="Snippets" class="md-nav__link">
+    Snippets
   </a>
   
 </li>
@@ -463,6 +465,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rxjs/" title="RxJs" class="md-nav__link">
+      RxJs
+    </a>
   </li>
 
         
@@ -1121,6 +1135,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#webpack-configuration" title="Webpack Configuration" class="md-nav__link">
+    Webpack Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#including-foundation-with-webpack-and-vue" title="Including Foundation with webpack and vue" class="md-nav__link">
+    Including Foundation with webpack and vue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#notes" title="Notes" class="md-nav__link">
     Notes
   </a>
@@ -1128,8 +1156,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" title="Resources" class="md-nav__link">
-    Resources
+  <a href="#snippets" title="Snippets" class="md-nav__link">
+    Snippets
   </a>
   
 </li>
@@ -1148,49 +1176,85 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/catenare/devnotes/edit/master/md/web/javascript/rxjs.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/catenare/devnotes/edit/master/md/web/javascript/vuejs.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="figuring-out-rxjs">Figuring out RXJS</h1>
+                <h1 id="vuejs-notes">Vuejs Notes</h1>
+<h2 id="webpack-configuration">Webpack Configuration</h2>
+<ul>
+<li>Read the (vue-loader)[https://vue-loader.vuejs.org/en/] docs.<ul>
+<li>Especially the section on loaders.</li>
+</ul>
+</li>
+<li>Vue npm modules to include:<ul>
+<li>vue</li>
+<li>vue-hot-reload-api</li>
+<li>vue-templates-compiler</li>
+<li>vue-html-loader</li>
+<li>vue-style-loader</li>
+<li>eslint-plugin-vue</li>
+</ul>
+</li>
+<li>TypeScript<ul>
+<li>Edit your <code>tsconfig.json</code> file. I removed all the comments because it caused problems.</li>
+<li>In your components, be sure to include <em>lang="ts"</em> in your script tag.</li>
+<li>I'm using <em>awesome-typescript-loader</em>. Add it as a loader option in your vue section of webpack.</li>
+</ul>
+</li>
+<li>eslint<ul>
+<li><a href="https://github.com/vuejs/eslint-plugin-vue">Vue eslint plugin</a></li>
+<li>add <em>"plugin:vue/recommended"</em> to extends section</li>
+</ul>
+</li>
+</ul>
+<h2 id="including-foundation-with-webpack-and-vue">Including Foundation with webpack and vue</h2>
+<ul>
+<li><code>npm install foundation-sites jquery motion-ui what-input</code><ul>
+<li><a href="https://github.com/vue-foundation">vue-foundation</a></li>
+</ul>
+</li>
+<li>Getting the scss to work requires some configuration</li>
+</ul>
 <h2 id="notes">Notes</h2>
 <ul>
-<li>
-<p>Getting it to work with typescript</p>
+<li>Make sure to include <em>.vue</em> as part of filename. Can cause problems when importing.   </li>
+</ul>
+<h2 id="snippets">Snippets</h2>
 <ul>
-<li>Error: <code>Uncaught TypeError: Cannot read property 'Observable' of undefined</code>. Works in plain javascript.</li>
-<li>Fix:<ul>
-<li>Install type definitions for rxjs <code>npm install --save-dev @type/rx</code></li>
-<li>Import as <code>import * as Rx from 'rxjs'</code></li>
+<li>Webpack snippet</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Issues with <code>Rx.DOM.get()</code>. Error: <code>The value of the 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' when the request's credentials mode is 'include'</code></p>
-<ul>
-<li>Fix:<ul>
-<li><a href="https://github.com/ReactiveX/rxjs/issues/1732">Issue 1732</a></li>
-<li>Provide custom factory for XHR</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code class="javascript">    const settings = {
-    crossDomain: true,
-    responseType: &quot;json&quot;,
-    method: &quot;GET&quot;,
-    createXHR: () =&gt; new XMLHttpRequest(),
-    url: url
-  }
+<pre><code class="javascript">          {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            ts: 'awesome-typescript-loader'
+          },
+          extractCSS: true
+        }
+      },
 </code></pre>
 
-<h2 id="resources">Resources</h2>
 <ul>
-<li><a href="http://reactivex.io/rxjs/">Official Site</a></li>
-<li><a href="http://xgrommx.github.io/rx-book/index.html">Github RX Book</a></li>
-<li><a href="https://github.com/Reactive-Extensions">Rx Extensions</a></li>
+<li>tsconfig.json file</li>
 </ul>
+<pre><code class="json">{
+  &quot;compilerOptions&quot;: {
+    &quot;target&quot;: &quot;es2016&quot;,
+    &quot;module&quot;: &quot;ESNext&quot;,
+    &quot;lib&quot;: [
+      &quot;dom&quot;,
+      &quot;es2016&quot;,
+      &quot;es2015.promise&quot;
+    ],
+    &quot;strict&quot;: true,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;allowSyntheticDefaultImports&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;emitDecoratorMetadata&quot;: true
+  }
+}
+</code></pre>
                 
                   
                 
@@ -1209,7 +1273,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../vuejs/" title="Vuejs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../webpack/" title="Webpack Starter Config" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1218,19 +1282,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Vuejs
+                Webpack Starter Config
               </span>
             </div>
           </a>
         
         
-          <a href="../../../php/resources/" title="Resources" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../rxjs/" title="RxJs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Resources
+                RxJs
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
