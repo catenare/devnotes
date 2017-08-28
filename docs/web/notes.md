@@ -3,9 +3,10 @@
 ## JavaScript Notes
 
 ### Resources
+* [Standard JS](https://standardjs.com/) - JavaScript Standard Style
+    * Rules for writing JavaScript.
 * [Awesome Angular](https://github.com/brillout/awesome-angular-components)
 * [You Don't Need jQuery](https://blog.garstasio.com/you-dont-need-jquery/)
-
 
 ### Tools
 * [Lerna](https://lernajs.io/) - Manage JavaScript projects with multiple packages

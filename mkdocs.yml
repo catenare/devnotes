@@ -34,15 +34,15 @@ pages:
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
   - JavaScript:
+    - 'General Notes': 'web/notes.md'
+    - 'JS Starter Config': 'web/javascript/startup.md'
+    - 'Webpack': 'web/javascript/webpack.md'
+    - 'RxJs': 'web/javascript/rxjs.md'
     - Angular:
       - 'Learning Angular': 'learning/angular.md'
     - 'Vuejs': 
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
       - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
-    - 'General Notes': 'web/notes.md'
-    - 'JS Starter Config': 'web/javascript/startup.md'
-    - 'Webpack': 'web/javascript/webpack.md'
-    - 'RxJs': 'web/javascript/rxjs.md'
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'
