@@ -17,6 +17,14 @@ extra_css:
 pages:
 - Home: 'index.md'
 - Development:
+  - Wordpress:
+    - API:
+      - 'Angular': 'php/wordpress/api/angular.md'
+      - 'Vuejs': 'php/wordpress/api/vuejs.md'
+    - 'Setup': 'php/wordpress/setup.md'
+    - 'Local Dev': 'php/wordpress/dev.md'
+    - 'Plugin Dev': 'php/wordpress/plugin development.md'
+    - 'Theme Dev': 'php/wordpress/themes.md'
   - Database: 
       - Postgresql: 'database.md'
       - Migrations: 'dbmigrations.md'
@@ -37,12 +45,6 @@ pages:
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'
-    - Wordpress:
-      - 'Setup': 'php/wordpress/setup.md'
-      - 'Local Dev': 'php/wordpress/dev.md'
-      - 'Plugin Dev': 'php/wordpress/plugin development.md'
-      - 'Theme Dev': 'php/wordpress/themes.md'
-      - 'API Dev': 'php/wordpress/angular/wordpress.md'
   - 'Python': 
     - 'General': 'python/general.md'
     - 'Flask': 'python/flask.md'
