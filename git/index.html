@@ -860,6 +860,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#git-create-empty-branch" title="Git create empty branch" class="md-nav__link">
+    Git create empty branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#github-markdown" title="Github Markdown" class="md-nav__link">
     Github Markdown
   </a>
@@ -1243,6 +1250,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#git-create-empty-branch" title="Git create empty branch" class="md-nav__link">
+    Git create empty branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#github-markdown" title="Github Markdown" class="md-nav__link">
     Github Markdown
   </a>
@@ -1342,6 +1356,19 @@ hint: (e.g. 'git pull ...') before pushing again.
 <li>
 <p>No guarantee that the data hasn't been downloaded or forked but at least it's removed going forward.</p>
 </li>
+</ul>
+<h3 id="git-create-empty-branch">Git create empty branch</h3>
+<ul>
+<li><a href="http://www.bitflop.dk/tutorials/how-to-create-a-new-and-empty-branch-in-git.html">Create Orphan Branch</a></li>
+<li>Steps:<ol>
+<li><code>git checkout --orphan NEWBRANCH</code></li>
+<li><code>git rm -rf .</code></li>
+<li><code>git remote add {name} {git remote branch}</code></li>
+<li><code>git pull -u {name} {branch}</code></li>
+<li><code>git push -u {name} {branch}</code></li>
+</ol>
+</li>
+<li>Now one have a copy of another branch in working branch.</li>
 </ul>
 <h3 id="github-markdown">Github Markdown</h3>
 <ul>
