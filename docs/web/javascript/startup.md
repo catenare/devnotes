@@ -1,12 +1,79 @@
-# Webpack Configuration
+# JavaScript Project Startup
 
-## Resources
-* [Webpack Examples](https://github.com/webpack/webpack/tree/master/examples)
-* [Webpack Book](https://survivejs.com/webpack/foreword/)
-* [Lodash Plugin](https://github.com/lodash/lodash-webpack-plugin)
-* [Awesome Webpack](https://github.com/webpack-contrib/awesome-webpack)
+## Basic setup
+* *.editorconfig*
+```ini
+root = true
 
-## Configure Webpack
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+```
+
+* Setup git repository
+* `touch .gitignore`
+* `git init`
+* *.gitignore*
+```ini
+node_modules
+dist
+.vscode/
+.idea/
+```
+
+## NPM Setup
+1. `npm init -f` - create *package.json*
+1. Install packages
+    * webpack
+    * webpack-dev-server
+    * webpack-merge
+    * clean-webpack-plugin
+    * extract-text-webpack-plugin
+    * html-webpack-plugin
+    * typescript
+    * tslint
+    * awesome-typescript-loader
+    * css-loader
+    * sass-loader
+    * node-sass
+    * style-loader
+    * autoprefixer
+    * postcss-loader
+    * url-loader
+    * raw-loader
+    * file-loader
+    * eslint
+    * eslint-watch
+    * babel-core
+    * babel-preset-env
+    * babel-preset-latest
+    * babel-loader
+    * npm-run-all
+
+```bash
+npm install --save-dev webpack webpack-dev-server webpack-merge clean-webpack-plugin extract-text-webpack-plugin html-webpack-plugin typescript tslint awesome-typescript-loader css-loader sass-loader node-sass style-loader autoprefixer postcss-loader eslint eslint-watch url-loader raw-loader file-loader babel-preset-env babel-preset-latest babel-loader babel-core npm-run-all
+```
+
+1. Setup *eslint*
+    * `./node_modules/.bin/eslint --init`
+    * *Use a popular style guide*
+    * *Standard*
+    * *JSON*
+
+1. Setup *tslint*
+    * `./node_modules/.bin/tslint --init`
+
+1. Setup *tsconfig.json*
+    * `./node_modules/.bin/tsc --init`
+
+## Configure webpack
+1. Create `config` folder
+1. In `config`:
+    * `webpack.common.js`
 ```javascript
 const path = require('path')
 const webpack = require('webpack')
@@ -120,4 +187,37 @@ module.exports = {
     }
   }
 }
+```
+* Create `webpack.config.js`
+```javascript
+module.exports = require('./config/webpack.common');
+```
+## Npm Scripts
+```json
+  "scripts": {
+    "start": "npm-run-all --parallel dev:server lint:watch",
+    "watch": "webpack -w -d",
+    "build": "webpack -p",
+    "dev:server": "webpack-dev-server --hot --inline --progress --colors",
+    "lint": "esw webpack.config.* src --color",
+    "lint:watch": "npm run lint -- --watch"
+  },
+```
+## Babel config in package.json
+```json
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "ie >= 7"
+            ]
+          }
+        }
+      ]
+    ]
+  },
 ```

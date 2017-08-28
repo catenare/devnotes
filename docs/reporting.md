@@ -2,11 +2,11 @@
 
 ## [Birt](http://www.eclipse.org/birt/)
 Currently using Birt for generating reports and invoices for the child center.
-* Setup
-  1. Download Birt report designer
-  1. Create report using designer.
+### Setup
+1. Download Birt report designer
+1. Create report using designer.
     * Connect to database using jdbc connector
-  1. Built-in report generator - create PDF versions of report.
+1. Built-in report generator - create PDF versions of report.
 
 ## [Jasper](http://community.jaspersoft.com/)
 * Seems to have more moving parts.

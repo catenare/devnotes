@@ -40,7 +40,8 @@ pages:
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
       - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
     - 'General Notes': 'web/notes.md'
-    - 'Webpack Starter Config': 'web/javascript/webpack.md'
+    - 'JS Starter Config': 'web/javascript/startup.md'
+    - 'Webpack': 'web/javascript/webpack.md'
     - 'RxJs': 'web/javascript/rxjs.md'
   - PHP:
     - Resources: 'php/resources.md'
@@ -48,7 +49,7 @@ pages:
   - 'Python': 
     - 'General': 'python/general.md'
     - 'Flask': 'python/flask.md'
-    - 'Research': 'python/research.md'
+    # - 'Research': 'python/research.md'
   - 'Ruby': 'ruby.md'
   - 'Java': 'java.md'
   - Frameworks:

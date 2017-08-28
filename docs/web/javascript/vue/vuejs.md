@@ -17,3 +17,7 @@
 
 ## Wordpress
 * [Wordpress API](../../../php/wordpress/api/vuejs.md) - notes for Wordpress API
+
+## Tutorials
+* [Vue Abstract Components](https://alligator.io/vuejs/vue-abstract-components/)
+* [Vue Lazy Load Images](https://alligator.io/vuejs/vue-lazy-load-images/)
