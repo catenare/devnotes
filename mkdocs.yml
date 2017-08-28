@@ -26,9 +26,13 @@ pages:
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
   - JavaScript:
+    - Angular:
+      - 'Learning Angular': 'learning/angular.md'
+    - 'Vuejs': 
+      - 'Vuejs': 'web/javascript/vue/vuejs.md'
+      - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
     - 'General Notes': 'web/notes.md'
     - 'Webpack Starter Config': 'web/javascript/webpack.md'
-    - 'Vuejs': 'web/javascript/vuejs.md'
     - 'RxJs': 'web/javascript/rxjs.md'
   - PHP:
     - Resources: 'php/resources.md'
@@ -68,6 +72,3 @@ pages:
 - Research: 
   - 'General': 'research.md'
   - 'Learning Systems': 'teach.md'
-- Learning:
-  - Angular:
-    - 'Learning Angular': 'learning/angular.md'
