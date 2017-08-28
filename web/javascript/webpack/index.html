@@ -19,7 +19,7 @@
     
     
       
-        <title>Webpack Starter Config - Development Notes for Johan Martin</title>
+        <title>Webpack - Development Notes for Johan Martin</title>
       
     
     
@@ -88,7 +88,7 @@
                 </span>
               
             
-            Webpack Starter Config
+            Webpack
           
         </span>
       </div>
@@ -595,6 +595,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../startup/" title="JS Starter Config" class="md-nav__link">
+      JS Starter Config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -606,11 +618,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Webpack Starter Config
+        Webpack
       </label>
     
-    <a href="./" title="Webpack Starter Config" class="md-nav__link md-nav__link--active">
-      Webpack Starter Config
+    <a href="./" title="Webpack" class="md-nav__link md-nav__link--active">
+      Webpack
     </a>
     
       
@@ -624,36 +636,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-setup" title="Basic setup" class="md-nav__link">
-    Basic setup
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#npm-setup" title="NPM Setup" class="md-nav__link">
-    NPM Setup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-webpack" title="Configure webpack" class="md-nav__link">
-    Configure webpack
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#npm-scripts" title="Npm Scripts" class="md-nav__link">
-    Npm Scripts
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#babel-config-in-packagejson" title="Babel config in package.json" class="md-nav__link">
-    Babel config in package.json
+  <a href="#configure-webpack" title="Configure Webpack" class="md-nav__link">
+    Configure Webpack
   </a>
   
 </li>
@@ -771,18 +762,6 @@
   <li class="md-nav__item">
     <a href="../../../python/flask/" title="Flask" class="md-nav__link">
       Flask
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../python/research/" title="Research" class="md-nav__link">
-      Research
     </a>
   </li>
 
@@ -1190,36 +1169,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-setup" title="Basic setup" class="md-nav__link">
-    Basic setup
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#npm-setup" title="NPM Setup" class="md-nav__link">
-    NPM Setup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-webpack" title="Configure webpack" class="md-nav__link">
-    Configure webpack
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#npm-scripts" title="Npm Scripts" class="md-nav__link">
-    Npm Scripts
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#babel-config-in-packagejson" title="Babel config in package.json" class="md-nav__link">
-    Babel config in package.json
+  <a href="#configure-webpack" title="Configure Webpack" class="md-nav__link">
+    Configure Webpack
   </a>
   
 </li>
@@ -1241,100 +1199,15 @@
                   <a href="https://github.com/catenare/devnotes/edit/master/md/web/javascript/webpack.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="setup-javascript-project">Setup JavaScript Project</h1>
-<h2 id="basic-setup">Basic setup</h2>
+                <h1 id="webpack-configuration">Webpack Configuration</h1>
+<h2 id="resources">Resources</h2>
 <ul>
-<li><em>.editorconfig</em></li>
+<li><a href="https://github.com/webpack/webpack/tree/master/examples">Webpack Examples</a></li>
+<li><a href="https://survivejs.com/webpack/foreword/">Webpack Book</a></li>
+<li><a href="https://github.com/lodash/lodash-webpack-plugin">Lodash Plugin</a></li>
+<li><a href="https://github.com/webpack-contrib/awesome-webpack">Awesome Webpack</a></li>
 </ul>
-<pre><code class="ini">root = true
-
-[*]
-indent_style = space
-indent_size = 2
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-</code></pre>
-
-<ul>
-<li>Setup git repository</li>
-<li><code>touch .gitignore</code></li>
-<li><code>git init</code></li>
-<li><em>.gitignore</em></li>
-</ul>
-<pre><code class="ini">node_modules
-dist
-.vscode/
-.idea/
-</code></pre>
-
-<h2 id="npm-setup">NPM Setup</h2>
-<ol>
-<li><code>npm init -f</code> - create <em>package.json</em></li>
-<li>Install packages<ul>
-<li>webpack</li>
-<li>webpack-dev-server</li>
-<li>webpack-merge</li>
-<li>clean-webpack-plugin</li>
-<li>extract-text-webpack-plugin</li>
-<li>html-webpack-plugin</li>
-<li>typescript</li>
-<li>tslint</li>
-<li>awesome-typescript-loader</li>
-<li>css-loader</li>
-<li>sass-loader</li>
-<li>node-sass</li>
-<li>style-loader</li>
-<li>autoprefixer</li>
-<li>postcss-loader</li>
-<li>url-loader</li>
-<li>raw-loader</li>
-<li>file-loader</li>
-<li>eslint</li>
-<li>eslint-watch</li>
-<li>babel-core</li>
-<li>babel-preset-env</li>
-<li>babel-preset-latest</li>
-<li>babel-loader</li>
-<li>npm-run-all</li>
-</ul>
-</li>
-</ol>
-<pre><code class="bash">npm install --save-dev webpack webpack-dev-server webpack-merge clean-webpack-plugin extract-text-webpack-plugin html-webpack-plugin typescript tslint awesome-typescript-loader css-loader sass-loader node-sass style-loader autoprefixer postcss-loader eslint eslint-watch url-loader raw-loader file-loader babel-preset-env babel-preset-latest babel-loader babel-core npm-run-all
-</code></pre>
-
-<ol>
-<li>
-<p>Setup <em>eslint</em></p>
-<ul>
-<li><code>./node_modules/.bin/eslint --init</code></li>
-<li><em>Use a popular style guide</em></li>
-<li><em>Standard</em></li>
-<li><em>JSON</em></li>
-</ul>
-</li>
-<li>
-<p>Setup <em>tslint</em></p>
-<ul>
-<li><code>./node_modules/.bin/tslint --init</code></li>
-</ul>
-</li>
-<li>
-<p>Setup <em>tsconfig.json</em></p>
-<ul>
-<li><code>./node_modules/.bin/tsc --init</code></li>
-</ul>
-</li>
-</ol>
-<h2 id="configure-webpack">Configure webpack</h2>
-<ol>
-<li>Create <code>config</code> folder</li>
-<li>In <code>config</code>:<ul>
-<li><code>webpack.common.js</code></li>
-</ul>
-</li>
-</ol>
+<h2 id="configure-webpack">Configure Webpack</h2>
 <pre><code class="javascript">const path = require('path')
 const webpack = require('webpack')
 const HtmlWpPlugin = require('html-webpack-plugin')
@@ -1448,41 +1321,6 @@ module.exports = {
   }
 }
 </code></pre>
-
-<ul>
-<li>Create <code>webpack.config.js</code></li>
-</ul>
-<pre><code class="javascript">module.exports = require('./config/webpack.common');
-</code></pre>
-
-<h2 id="npm-scripts">Npm Scripts</h2>
-<pre><code class="json">  &quot;scripts&quot;: {
-    &quot;start&quot;: &quot;npm-run-all --parallel dev:server lint:watch&quot;,
-    &quot;watch&quot;: &quot;webpack -w -d&quot;,
-    &quot;build&quot;: &quot;webpack -p&quot;,
-    &quot;dev:server&quot;: &quot;webpack-dev-server --hot --inline --progress --colors&quot;,
-    &quot;lint&quot;: &quot;esw webpack.config.* src --color&quot;,
-    &quot;lint:watch&quot;: &quot;npm run lint -- --watch&quot;
-  },
-</code></pre>
-
-<h2 id="babel-config-in-packagejson">Babel config in package.json</h2>
-<pre><code class="json">  &quot;babel&quot;: {
-    &quot;presets&quot;: [
-      [
-        &quot;env&quot;,
-        {
-          &quot;targets&quot;: {
-            &quot;browsers&quot;: [
-              &quot;last 2 versions&quot;,
-              &quot;ie &gt;= 7&quot;
-            ]
-          }
-        }
-      ]
-    ]
-  },
-</code></pre>
                 
                   
                 
@@ -1501,7 +1339,7 @@ module.exports = {
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../notes/" title="General Notes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../startup/" title="JS Starter Config" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1510,7 +1348,7 @@ module.exports = {
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                General Notes
+                JS Starter Config
               </span>
             </div>
           </a>
