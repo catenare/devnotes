@@ -51,6 +51,16 @@ hint: (e.g. 'git pull ...') before pushing again.
 
 * No guarantee that the data hasn't been downloaded or forked but at least it's removed going forward.
 
+### Git create empty branch
+* [Create Orphan Branch](http://www.bitflop.dk/tutorials/how-to-create-a-new-and-empty-branch-in-git.html)
+* Steps:
+    1. `git checkout --orphan NEWBRANCH`
+    1. `git rm -rf .`
+    1. `git remote add {name} {git remote branch}`
+    1. `git pull -u {name} {branch}`
+    1. `git push -u {name} {branch}`
+* Now one have a copy of another branch in working branch.
+
 ### Github Markdown
 * Languages for code blocks - [highlights.js](https://highlightjs.org/static/demo/)
 * Emoji List - :bowtie [Emoji Cheat Sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
