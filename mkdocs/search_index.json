@@ -572,7 +572,7 @@
         },
         {
             "location": "/web/javascript/webpack/",
-            "text": "Webpack Configuration\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\n\n\nConfigure Webpack\n\n\nconst path = require('path')\nconst webpack = require('webpack')\nconst HtmlWpPlugin = require('html-webpack-plugin')\nconst CleanWpPlugin = require('clean-webpack-plugin')\nconst ExtractWpPlugin = require('extract-text-webpack-plugin')\nconst autoprefixer = require('autoprefixer')\nconst atl = require('awesome-typescript-loader')\n\nmodule.exports = {\n  entry: {\n    app: './src/assets/js/main.js',\n    vendor: './src/assets/js/vendor.js'\n  },\n  output: {\n    path: path.resolve(__dirname, './dist'),\n    filename: '[name].bundle.js',\n    sourceMapFilename: '[name].bundle.map',\n    pathinfo: true\n  },\n  resolve: {\n    extensions: ['.js', '.jsx', '.ts', '.tsx']\n  },\n  devtool: 'cheap-module-source-map',\n  plugins: [\n    new HtmlWpPlugin({\n      title: 'Learning ES6',\n      template: 'src/index.html',\n      filename: 'index.html'\n    }),\n    new CleanWpPlugin(['dist']),\n    new ExtractWpPlugin({\n      filename: 'styles.css',\n      allChunks: true\n    }),\n    new webpack.HotModuleReplacementPlugin(),\n    new atl.CheckerPlugin()\n  ],\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        exclude: /(node_modules|bower_components)/,\n        use: {\n          loader: 'babel-loader',\n          options: {\n            presets: [\n              ['env',\n                {\n                  targets: {\n                    'browsers': ['last 2 versions', 'ie>=7']\n                  }\n                }\n              ]\n            ]\n          }\n        }\n      },\n      // {\n      //   test: /\\.css$/,\n      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),\n      //   use: 'raw-loader'\n      // },\n      {\n        test: /\\.css$/,\n        exclude: /(node_modules|bower_components)/,\n        loaders: ExtractWpPlugin.extract([\n          'style-loader/url!file-loader',\n          'css-loader'\n        ])\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /(node_modules|bower_components)/,\n        use: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.scss$/,\n        exclude: /(node_modules|bower_components)/,\n        use: ExtractWpPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            {\n              loader: 'postcss-loader',\n              options:\n              {\n                plugins: function () {\n                  return [autoprefixer]\n                }\n              }\n            },\n            'sass-loader'\n          ]\n        }\n        )\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        exclude: /(node_modules|bower_components)/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  },\n  devServer: {\n    hot: true,\n    watchOptions: {\n      ignored: /node_modules/\n    }\n  }\n}",
+            "text": "Webpack Configuration\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\n\n\nConfigure Webpack\n\n\nconst path = require('path')\nconst webpack = require('webpack')\nconst HtmlWpPlugin = require('html-webpack-plugin')\nconst CleanWpPlugin = require('clean-webpack-plugin')\nconst ExtractWpPlugin = require('extract-text-webpack-plugin')\nconst autoprefixer = require('autoprefixer')\nconst atl = require('awesome-typescript-loader')\n\nmodule.exports = {\n  entry: {\n    app: './src/assets/js/main.js',\n    vendor: './src/assets/js/vendor.js'\n  },\n  output: {\n    path: path.resolve(__dirname, './dist'),\n    filename: '[name].bundle.js',\n    sourceMapFilename: '[name].bundle.map',\n    pathinfo: true\n  },\n  resolve: {\n    extensions: ['.js', '.jsx', '.ts', '.tsx']\n  },\n  devtool: 'cheap-module-source-map',\n  plugins: [\n    new HtmlWpPlugin({\n      title: 'Learning ES6',\n      template: 'src/index.html',\n      filename: 'index.html'\n    }),\n    new CleanWpPlugin(['dist']),\n    new ExtractWpPlugin({\n      filename: 'styles.css',\n      allChunks: true\n    }),\n    new webpack.HotModuleReplacementPlugin(),\n    new atl.CheckerPlugin()\n  ],\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        exclude: /(node_modules|bower_components)/,\n        use: {\n          loader: 'babel-loader',\n          options: {\n            presets: [\n              ['env',\n                {\n                  targets: {\n                    'browsers': ['last 2 versions', 'ie>=7']\n                  }\n                }\n              ]\n            ]\n          }\n        }\n      },\n      // {\n      //   test: /\\.css$/,\n      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),\n      //   use: 'raw-loader'\n      // },\n      {\n        test: /\\.css$/,\n        exclude: /(node_modules|bower_components)/,\n        loaders: ExtractWpPlugin.extract([\n          'style-loader/url!file-loader',\n          'css-loader'\n        ])\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /(node_modules|bower_components)/,\n        use: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.scss$/,\n        exclude: /(node_modules|bower_components)/,\n        use: ExtractWpPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            {\n              loader: 'postcss-loader',\n              options:\n              {\n                plugins: function () {\n                  return [autoprefixer]\n                }\n              }\n            },\n            'sass-loader'\n          ]\n        }\n        )\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        exclude: /(node_modules|bower_components)/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  },\n  devServer: {\n    hot: true,\n    watchOptions: {\n      ignored: /node_modules/\n    }\n  }\n}",
             "title": "Webpack"
         },
         {
@@ -582,7 +582,7 @@
         },
         {
             "location": "/web/javascript/webpack/#resources",
-            "text": "Webpack Examples  Webpack Book  Lodash Plugin  Awesome Webpack",
+            "text": "Webpack Examples  Webpack Book  Lodash Plugin  Awesome Webpack  Webpack Vuejs Templates",
             "title": "Resources"
         },
         {
@@ -727,7 +727,7 @@
         },
         {
             "location": "/python/general/",
-            "text": "Using Python\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.",
+            "text": "Using Python\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.\n\n\n\n\n\n\n\n\nCreate package Resources\n\n\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide",
             "title": "General"
         },
         {
@@ -756,29 +756,49 @@
             "title": "Issue with readline"
         },
         {
-            "location": "/python/flask/",
-            "text": "Flask Notes\n\n\nResources\n\n\n\n\nFlask Site\n\n\n\n\nTools\n\n\n\n\nFrozen Flask\n - \nSite\n\n\nUsed for \nWineries Of the Sierra Foothills\n and personal site \nJohan Martin\n\n\nGenerate static site from flask site.\n\n\n\n\n\n\n\n\nDocs\n\n\n\n\nAwesome Flask",
-            "title": "Flask"
+            "location": "/python/general/#create-package-resources",
+            "text": "Packaging and Distributing Projects  - Guide  setup.py cheatsheet  setup.py guide",
+            "title": "Create package Resources"
         },
         {
-            "location": "/python/flask/#flask-notes",
+            "location": "/python/packages/",
+            "text": "Python Packages\n\n\nFrameworks\n\n\n\n\nAPI Star\n\n\nFlask Site\n\n\nFrozen Flask\n - \nSite\n\n\nUsed for \nWineries Of the Sierra Foothills\n and personal site \nJohan Martin\n\n\nGenerate static site from flask site.\n\n\n\n\n\n\nAwesome Flask\n\n\n\n\n\n\n\n\nDatabase\n\n\n\n\nSQLAlchemy\n\n\nSQLAlchemy Utils\n\n\nCustom datatypes and utility functions for SQLAlchemy. Inludes UUIDType.\n\n\n\n\n\n\npsycopg\n - PostgreSQL Python Adapter\n\n\n\n\nConfiguration\n\n\n\n\neverett\n - \ndocs\n\n\nWorks with .env and ini files.\n\n\n\n\n\n\n\n\nOther\n\n\n\n\nopenpyxl\n\n\nLibrary to read and write Excel files including latest Excel files.\n\n\n\n\n\n\nclick\n - Command line library for Python.\n\n\nMicrosoft Word Merge Docs \n\n\ndocx-mailmerge\n\n\nPopulating MS Word Templates with Python\n\n\n\n\n\n\npython-docx\n\n\nAutomate The Boring Stuff\n\n\n\n\n\n\n\n\n\n\n\n\nTesting\n\n\n\n\nNose\n - Testing for python\n\n\n\n\nDocumentation\n\n\n\n\nMkdocs\n\n\nGenerate documentation for project and allows you to deploy to \ngithub gh-pages",
+            "title": "Packages"
+        },
+        {
+            "location": "/python/packages/#python-packages",
             "text": "",
-            "title": "Flask Notes"
+            "title": "Python Packages"
         },
         {
-            "location": "/python/flask/#resources",
-            "text": "Flask Site",
-            "title": "Resources"
+            "location": "/python/packages/#frameworks",
+            "text": "API Star  Flask Site  Frozen Flask  -  Site  Used for  Wineries Of the Sierra Foothills  and personal site  Johan Martin  Generate static site from flask site.    Awesome Flask",
+            "title": "Frameworks"
         },
         {
-            "location": "/python/flask/#tools",
-            "text": "Frozen Flask  -  Site  Used for  Wineries Of the Sierra Foothills  and personal site  Johan Martin  Generate static site from flask site.",
-            "title": "Tools"
+            "location": "/python/packages/#database",
+            "text": "SQLAlchemy  SQLAlchemy Utils  Custom datatypes and utility functions for SQLAlchemy. Inludes UUIDType.    psycopg  - PostgreSQL Python Adapter",
+            "title": "Database"
         },
         {
-            "location": "/python/flask/#docs",
-            "text": "Awesome Flask",
-            "title": "Docs"
+            "location": "/python/packages/#configuration",
+            "text": "everett  -  docs  Works with .env and ini files.",
+            "title": "Configuration"
+        },
+        {
+            "location": "/python/packages/#other",
+            "text": "openpyxl  Library to read and write Excel files including latest Excel files.    click  - Command line library for Python.  Microsoft Word Merge Docs   docx-mailmerge  Populating MS Word Templates with Python    python-docx  Automate The Boring Stuff",
+            "title": "Other"
+        },
+        {
+            "location": "/python/packages/#testing",
+            "text": "Nose  - Testing for python",
+            "title": "Testing"
+        },
+        {
+            "location": "/python/packages/#documentation",
+            "text": "Mkdocs  Generate documentation for project and allows you to deploy to  github gh-pages",
+            "title": "Documentation"
         },
         {
             "location": "/ruby/",
