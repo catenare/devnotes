@@ -68,3 +68,7 @@
 * [freeCodeCamp](https://github.com/freeCodeCamp)
     * [Mail For Good](https://github.com/freeCodeCamp/mail-for-good) - Open Source email campaign management tool.
     * [Conference For Good](https://github.com/freeCodeCamp/conference-for-good)
+
+
+## Self-hosted tools
+* [Attendize](https://www.attendize.com) - self-hosted ticket sales online (think EventBrite)
