@@ -52,6 +52,9 @@
 * [Boomerang](http://www.seas.upenn.edu/~harmony/) - Data conversion and synchronization
 * [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) - File sync utility
 
+* Report Servers
+    * [ReportServer](https://reportserver.net/en/) - integrates Birt reports. Open Source
+
 ## Serverless
 * [Serverless](https://github.com/serverless/serverless) - serverless framework
 
@@ -60,3 +63,8 @@
 * [CSS3 Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations) - use for interactivity
 * [Hammer](http://hammerjs.github.io/) - JavaScript library for touch.
 * [Axure](https://www.axure.com/#a=features) - Has a free educational version.
+
+## Other Projects
+* [freeCodeCamp](https://github.com/freeCodeCamp)
+    * [Mail For Good](https://github.com/freeCodeCamp/mail-for-good) - Open Source email campaign management tool.
+    * [Conference For Good](https://github.com/freeCodeCamp/conference-for-good)

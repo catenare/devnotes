@@ -25,4 +25,6 @@
 ## Curriculum
 * [The Odin Project](https://github.com/TheOdinProject/curriculum)
     * [Site](http://theodinproject.com/)
+* [freeCodeCamp](http://www.freecodecamp.org/)
+    * [Github Repo](https://github.com/freeCodeCamp)
 
