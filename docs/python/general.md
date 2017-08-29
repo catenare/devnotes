@@ -30,3 +30,8 @@ user = true
 * Terminal all screwed up after using python repl
 	* ~~Install python readline **pip install readline**.~~ Does not seem to work because installed in user space.
 	* Using macports. Installed ***py35-readline***. That seemed to work.
+
+## Create package Resources
+* [Packaging and Distributing Projects](https://packaging.python.org/tutorials/distributing-packages/) - Guide
+* [setup.py cheatsheet](http://turbo87.github.io/setup.py/)
+* [setup.py guide](https://github.com/kennethreitz/setup.py)

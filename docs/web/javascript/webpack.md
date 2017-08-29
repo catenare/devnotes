@@ -5,6 +5,7 @@
 * [Webpack Book](https://survivejs.com/webpack/foreword/)
 * [Lodash Plugin](https://github.com/lodash/lodash-webpack-plugin)
 * [Awesome Webpack](https://github.com/webpack-contrib/awesome-webpack)
+* [Webpack Vuejs Templates](https://vuejs-templates.github.io/webpack/)
 
 ## Configure Webpack
 ```javascript
