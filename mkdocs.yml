@@ -48,7 +48,7 @@ pages:
     - Composer: 'php/composer.md'
   - 'Python': 
     - 'General': 'python/general.md'
-    - 'Flask': 'python/flask.md'
+    - 'Packages': 'python/packages.md'
     # - 'Research': 'python/research.md'
   - 'Ruby': 'ruby.md'
   - 'Java': 'java.md'
