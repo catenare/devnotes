@@ -2,6 +2,7 @@
 ## Server Mock Tools
 * [MailCatcher](https://mailcatcher.me/) - Localhost email intercept
 * [Ngrok](https://ngrok.com/) - Secure tunnel to localhost
+* [Random User Generator](https://randomuser.me/) - API to generate random users.
 
 ## API Tools
 * [RAML](http://raml.org/)
