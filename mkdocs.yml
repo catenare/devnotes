@@ -30,13 +30,16 @@ pages:
       - Migrations: 'dbmigrations.md'
   - Web:
     - 'Basic Setup': 'web/page.md'
-    - 'Front End': 
+    - 'Front End':
+      - 'Foundation': 'web/foundation.md'
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
   - JavaScript:
     - 'General Notes': 'web/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
-    - 'Webpack': 'web/javascript/webpack.md'
+    - 'Webpack':
+      - 'Notes': 'web/javascript/webpack/notes.md'
+      - 'Configuration': 'web/javascript/webpack/webpack.md'
     - 'RxJs': 'web/javascript/rxjs.md'
     - Angular:
       - 'Learning Angular': 'learning/angular.md'
