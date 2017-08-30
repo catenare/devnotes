@@ -448,6 +448,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../foundation/" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -491,43 +503,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#revised-instructions" title="Revised instructions" class="md-nav__link">
-    Revised instructions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#resources" title="Resources" class="md-nav__link">
     Resources
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" title="Notes" class="md-nav__link">
-    Notes
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zurb-panini-notes" title="Zurb Panini Notes" class="md-nav__link">
-    Zurb Panini Notes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-font-awesome-to-your-foundation-site" title="Adding font-awesome to your foundation site" class="md-nav__link">
-    Adding font-awesome to your foundation site
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -610,10 +588,46 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../javascript/webpack/" title="Webpack" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-3" type="checkbox" id="nav-2-4-3">
+    
+    <label class="md-nav__link" for="nav-2-4-3">
       Webpack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-3">
+        Webpack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../javascript/webpack/notes/" title="Notes" class="md-nav__link">
+      Notes
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../javascript/webpack/webpack/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1226,43 +1240,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#revised-instructions" title="Revised instructions" class="md-nav__link">
-    Revised instructions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#resources" title="Resources" class="md-nav__link">
     Resources
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" title="Notes" class="md-nav__link">
-    Notes
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zurb-panini-notes" title="Zurb Panini Notes" class="md-nav__link">
-    Zurb Panini Notes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-font-awesome-to-your-foundation-site" title="Adding font-awesome to your foundation site" class="md-nav__link">
-    Adding font-awesome to your foundation site
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1298,94 +1278,12 @@
 <li><del>Install building block - <code>foundation kits install news</code></del></li>
 <li><code>foundation watch</code></li>
 </ol>
-<h2 id="revised-instructions">Revised instructions</h2>
-<ul>
-<li>Commandline <code>foundation</code> client will work with github version of site.<ul>
-<li>Created local fork of zurb foundation starter site - <a href="https://github.com/catenare/foundation-site-template">Catenare foundation fork</a></li>
-<li><em>Paseo</em> is the branch I'm currently using</li>
-</ul>
-</li>
-<li>Clone repository</li>
-<li>Create a new branch</li>
-<li>Profit</li>
-</ul>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://www.hanselman.com/blog/TheInternetsBestPlaceholderImageSitesForWebDevelopment.aspx">Placement Images List</a><ul>
 <li><a href="http://www.placehold.it">Hold It</a></li>
 </ul>
 </li>
-</ul>
-<h2 id="notes">Notes</h2>
-<h3 id="zurb-panini-notes">Zurb Panini Notes</h3>
-<ul>
-<li>Partials are your friends. <ul>
-<li>Inserting values into partions <code>{{&gt;partion value="value"}}</code></li>
-<li>Use <code>{{#each}}</code> to iterate over array data</li>
-<li>Use <code>filename.variable</code> to access data from file in data folder</li>
-</ul>
-</li>
-</ul>
-<h3 id="adding-font-awesome-to-your-foundation-site">Adding font-awesome to your foundation site</h3>
-<p><a href="http://foundation.zurb.com/forum/posts/46991-howto-foundation-6-font-awesome-and-other-asset-fonts">HowTo: Foundation 6 Font Awesome and other asset fonts</a>
-<em> <code>bower install fontawesome --save</code>
-</em> Modify <em>config.yml</em></p>
-<pre><code class="yaml">  assets:
-    - &quot;src/assets/**/*&quot;
-    - &quot;!src/assets/{img,js,scss,fonts}/**/*&quot;
-  fonts:
-    - &quot;src/assets/fonts/*&quot;
-    - &quot;bower_components/font-awesome/fonts/*&quot;
-  # Paths to Sass libraries, which can then be loaded with @import
-  sass:
-    - &quot;bower_components/foundation-sites/scss&quot;
-    - &quot;bower_components/motion-ui/src&quot;
-    - &quot;bower_components/font-awesome/scss&quot;
-</code></pre>
-
-<ul>
-<li>Modify <em>gulpfile.babel.js</em></li>
-</ul>
-<pre><code class="javascript">// Build the &quot;dist&quot; folder by running all of the below tasks. Add fonts
-gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, fonts, copy), styleGuide));
-</code></pre>
-
-<ul>
-<li><em>Add</em></li>
-</ul>
-<pre><code class="javascript">// Copy fonts to the &quot;dist&quot; folder
-function fonts() {
-  return gulp.src(PATHS.fonts)
-    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));
-}
-</code></pre>
-
-<ul>
-<li><em>Modify</em></li>
-</ul>
-<pre><code class="javascript">// Watch for changes to static assets, pages, Sass, and JavaScript
-function watch() {
-  gulp.watch(PATHS.assets, copy);
-  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
-  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
-  gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));
-  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
-  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
-  gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));
-  gulp.watch('bower_components/font-awesome/fonts/*').on('all', gulp.series(fonts, browser.reload));
-  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
-}
-</code></pre>
-
-<ul>
-<li>Modify <em>app.css</em> add</li>
-</ul>
-<pre><code class="scss">@import &quot;font-awesome&quot;;
-</code></pre>
-
-<ul>
-<li><code>foundation watch</code> or <code>npm start</code></li>
 </ul>
 <h1 id="web-development-tools-finding-tools-that-are-really-useful-for-editing">Web Development Tools - finding tools that are really useful for editing</h1>
 <h2 id="tools">Tools</h2>
@@ -1422,6 +1320,7 @@ function watch() {
 <li><em>sass --compass sass/styles.scss test,css</em> - seems to read the compass config.rb file to find paths.</li>
 </ul>
 </li>
+<li>Now use webpack</li>
 </ul>
 <h2 id="maintainable-css">Maintainable CSS</h2>
 <ul>
@@ -1455,7 +1354,7 @@ function watch() {
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../page/" title="Basic Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../foundation/" title="Foundation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1464,7 +1363,7 @@ function watch() {
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Basic Setup
+                Foundation
               </span>
             </div>
           </a>
