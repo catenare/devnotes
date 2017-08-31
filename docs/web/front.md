@@ -53,3 +53,9 @@
 * [Keith Clark](http://keithclark.co.uk/articles/pure-css-parallax-websites/) - nice 3d effect
 * [w3schools demo](https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm) - Tried this one
 * [Pure Css](https://alligator.io/css/pure-css-parallax/) - 3d effect
+
+### Carousel
+* [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/) - image strip carousel
+    * [Owl Carousel Fullscreen](https://codepen.io/ingvi/pen/gaOzYe)
+* [Vegas Fullscreen Slideshow](http://vegas.jaysalvat.com/)
+

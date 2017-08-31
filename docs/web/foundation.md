@@ -92,3 +92,8 @@ function watch() {
     * Inserting values into partions `{{>partion value="value"}}`
     * Use `{{#each}}` to iterate over array data
     * Use `filename.variable` to access data from file in data folder
+
+## Create background-image slide show with orbit
+* [Stack Overflow Responsive Background Image](https://stackoverflow.com/questions/21421062/responsive-background-image)
+* [Full Page Background Image](https://css-tricks.com/perfect-full-page-background-image/)
+* See the front. [Front](front/#carousel)

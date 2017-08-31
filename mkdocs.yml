@@ -34,6 +34,7 @@ pages:
       - 'Foundation': 'web/foundation.md'
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
+      - 'CSS': 'web/css.md'
   - JavaScript:
     - 'General Notes': 'web/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
