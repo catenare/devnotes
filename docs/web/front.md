@@ -57,5 +57,13 @@
 ### Carousel
 * [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/) - image strip carousel
     * [Owl Carousel Fullscreen](https://codepen.io/ingvi/pen/gaOzYe)
+    * [Responsive Site Using Owl](http://www.creativebloq.com/web-design/build-responsive-sites-foundation-11513848)
 * [Vegas Fullscreen Slideshow](http://vegas.jaysalvat.com/)
+* [slick](https://kenwheeler.github.io/slick/) - scss for css
 
+### Fonts
+* [Awesome Fontstacks](http://www.awesome-fontstacks.com) - fonts that go together
+* [Fonts Squirrel](https://www.fontsquirrel.com)
+
+### Other
+* [By People Web Assets Resources](https://www.bypeople.com)

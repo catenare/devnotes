@@ -79,3 +79,6 @@ pages:
 - Research: 
   - 'General': 'research.md'
   - 'Learning Systems': 'teach.md'
+- 'Class Tutorials':
+  - 'Learning Sources': 'teach.md'
+  - 'Semantic HTML': 'learning/html/semantic.md'
