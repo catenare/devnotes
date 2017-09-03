@@ -82,3 +82,4 @@ pages:
 - 'Class Tutorials':
   - 'Learning Sources': 'teach.md'
   - 'Semantic HTML': 'learning/html/semantic.md'
+  - 'JavaScript': 'learning/javascript/intro.md'
