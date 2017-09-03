@@ -68,7 +68,12 @@
 * [freeCodeCamp](https://github.com/freeCodeCamp)
     * [Mail For Good](https://github.com/freeCodeCamp/mail-for-good) - Open Source email campaign management tool.
     * [Conference For Good](https://github.com/freeCodeCamp/conference-for-good)
+* [what 3 words](https://support.what3words.com/hc/en-us) - location alternative to addresses
+* [Apostrophe CMS](http://apostrophecms.org/) - Node.js based CMS
 
-
-## Self-hosted tools
+## Event Management Software
 * [Attendize](https://www.attendize.com) - self-hosted ticket sales online (think EventBrite)
+* [Open Source Event Manager](https://github.com/openSUSE/osem) - Ruby on Rails event manager for tech conference
+* [Open Conference Ware](https://github.com/osbridge/openconferenceware) - Ruby on Rails conference manager.
+* [Event Espresso](https://github.com/eventespresso/event-espresso-core) - Wordpress Plugin
+
