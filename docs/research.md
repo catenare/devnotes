@@ -77,3 +77,6 @@
 * [Open Conference Ware](https://github.com/osbridge/openconferenceware) - Ruby on Rails conference manager.
 * [Event Espresso](https://github.com/eventespresso/event-espresso-core) - Wordpress Plugin
 
+## RPC Framework
+* [gRPC](https://grpc.io/)
+* [Apache Thrift](https://thrift.apache.org/)
