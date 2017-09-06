@@ -80,3 +80,7 @@
 ## RPC Framework
 * [gRPC](https://grpc.io/)
 * [Apache Thrift](https://thrift.apache.org/)
+
+## Service Providers
+* [Church Insight](http://www.churchinsight.com/) - church admin software.
+* [Pilot](https://pilot.com/) - bookkeeping software.
