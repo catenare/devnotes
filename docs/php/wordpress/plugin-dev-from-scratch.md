@@ -25,6 +25,10 @@
 * `touch paseo-contact-form.php`
 * Add header requirements to the file-  [Header Requirements](https://developer.wordpress.org/plugins/the-basics/header-requirements/)
 * Plugin can now be enabled on the Wordpress site.
+* Create *dev-master* branch. Seems like you can't use the vcs plugin setup with straight *master*
+    * `git checkout -b dev-master`
+    * `git push origin --all` - push all the branches to github.
+
 
 ## Enable plugin in Wordpress.
 * Edit *composer.json* file in Wordpress application folder.
@@ -38,7 +42,12 @@
 ]
 ```
 * Add plugin to *"require"* section.
-* `"paseo/contact-form-api": "master"`
+* `"paseo/contact-form-api": "dev-master"`
+* Plugin is now installable in Wordpress Admin.
+
+## Setup plugin in Wordpress
+* Run `composer update` to install necessary dependencies.
+* Activate plugin.
 
 
 
