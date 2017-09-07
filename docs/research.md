@@ -22,6 +22,8 @@
 ### Web Templates
 * [Flakes Admin Template](http://getflakes.com/) - Admin front-end template.
 * [Framework7](https://framework7.io/) - mobile web template
+* [W3 Layouts](https://w3layouts.com/)
+* [Freshdesign Templates](https://www.freshdesignweb.com/best-church-website-templates/)
 
 ## Python
 * Python books online [Invent with python](http://inventwithpython.com)
