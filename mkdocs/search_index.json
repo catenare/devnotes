@@ -437,7 +437,7 @@
         },
         {
             "location": "/web/front/",
-            "text": "Web Development Tools - finding tools that are really useful for editing\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\n\n\nuikit\n\n\n\n\nTemplates\n\n\n\n\nCoreUI\n - Admin template\n\n\nflakes\n - Design and frontend framework for dashboard.\n\n\n\n\nTools\n\n\nHTML tools\n\n\n\n\nEmmet\n \n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\n\n\n\n\nImage Sources\n\n\n\n\nPlacement Images List\n\n\nHold It\n\n\n\n\nPrototype tools\n\n\n\n\nRandom User Generator\n - get list of users.\n\n\nUIFaces\n - Faces for user interfaces\n\n\nCSS Flat Mobile Devices\n - Prototype devices in css.\n\n\nLists\n - Content for prototyping\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nCSS\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nParallax\n\n\n\n\nDavid Walsh - Used initially\n\n\nKeith Clark\n - nice 3d effect\n\n\nw3schools demo\n - Tried this one\n\n\nPure Css\n - 3d effect\n\n\n\n\nCarousel\n\n\n\n\nOwl Carousel\n - image strip carousel\n\n\nOwl Carousel Fullscreen\n\n\nResponsive Site Using Owl\n\n\n\n\n\n\nVegas Fullscreen Slideshow\n\n\nslick\n - scss for css\n\n\n\n\nFonts\n\n\n\n\nAwesome Fontstacks\n - fonts that go together\n\n\nFonts Squirrel\n\n\n\n\nOther\n\n\n\n\nBy People Web Assets Resources",
+            "text": "Web Development Tools - finding tools that are really useful for editing\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\n\n\nuikit\n\n\n\n\nTemplates\n\n\n\n\nCoreUI\n - Admin template\n\n\nflakes\n - Design and frontend framework for dashboard.\n\n\nThemezy\n\n\n\n\nTools\n\n\nHTML tools\n\n\n\n\nEmmet\n \n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\n\n\n\n\nImage Sources\n\n\n\n\nPlacement Images List\n\n\nHold It\n\n\n\n\nPrototype tools\n\n\n\n\nRandom User Generator\n - get list of users.\n\n\nUIFaces\n - Faces for user interfaces\n\n\nCSS Flat Mobile Devices\n - Prototype devices in css.\n\n\nLists\n - Content for prototyping\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nCSS\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nParallax\n\n\n\n\nDavid Walsh - Used initially\n\n\nKeith Clark\n - nice 3d effect\n\n\nw3schools demo\n - Tried this one\n\n\nPure Css\n - 3d effect\n\n\n\n\nCarousel\n\n\n\n\nOwl Carousel\n - image strip carousel\n\n\nOwl Carousel Fullscreen\n\n\nResponsive Site Using Owl\n\n\n\n\n\n\nVegas Fullscreen Slideshow\n\n\nslick\n - scss for css\n\n\n\n\nFonts\n\n\n\n\nAwesome Fontstacks\n - fonts that go together\n\n\nFonts Squirrel\n\n\n\n\nOther\n\n\n\n\nBy People Web Assets Resources",
             "title": "Front"
         },
         {
@@ -457,7 +457,7 @@
         },
         {
             "location": "/web/front/#templates",
-            "text": "CoreUI  - Admin template  flakes  - Design and frontend framework for dashboard.",
+            "text": "CoreUI  - Admin template  flakes  - Design and frontend framework for dashboard.  Themezy",
             "title": "Templates"
         },
         {
@@ -532,13 +532,23 @@
         },
         {
             "location": "/web/css/",
-            "text": "CSS\n\n\n\n\nFixed Menu\n - Fix menu to the top",
+            "text": "CSS\n\n\n\n\nFixed Menu\n - Fix menu to the top\n\n\n\n\nLinting CSS and SCSS\n\n\n\n\nInstall stylelint, stylelint-config-standard\n\n\nnpm install stylelint stylelint-config-standard\n\n\n\n\n\n\nAdd \nstylelint\n in \npackage.json\n\n\n\n\n  \"stylelint\": {\n    \"plugins\": [\n      \"stylelint-scss\"\n    ],\n    \"extends\": \"stylelint-config-standard\"\n  }\n\n\n\n\n\n\nEnable in editor (Webstorm)\n\n\n\n\nFont Awesome\n\n\n\n\nFont Awesome icon as part of before psuedo class using scss. \nStackOverflow Font Awesome Icon as CSS Content\n\n\n\n\n.a:after {\n    // Import mixin from font-awesome/scss/mixins.scss\n    @include fa-icon();\n\n    // Use icon variable from font-awesome/scss/variables.scss\n    content: $fa-var-exclamation-triangle;\n}",
             "title": "CSS"
         },
         {
             "location": "/web/css/#css",
             "text": "Fixed Menu  - Fix menu to the top",
             "title": "CSS"
+        },
+        {
+            "location": "/web/css/#linting-css-and-scss",
+            "text": "Install stylelint, stylelint-config-standard  npm install stylelint stylelint-config-standard    Add  stylelint  in  package.json     \"stylelint\": {\n    \"plugins\": [\n      \"stylelint-scss\"\n    ],\n    \"extends\": \"stylelint-config-standard\"\n  }   Enable in editor (Webstorm)",
+            "title": "Linting CSS and SCSS"
+        },
+        {
+            "location": "/web/css/#font-awesome",
+            "text": "Font Awesome icon as part of before psuedo class using scss.  StackOverflow Font Awesome Icon as CSS Content   .a:after {\n    // Import mixin from font-awesome/scss/mixins.scss\n    @include fa-icon();\n\n    // Use icon variable from font-awesome/scss/variables.scss\n    content: $fa-var-exclamation-triangle;\n}",
+            "title": "Font Awesome"
         },
         {
             "location": "/web/notes/",
@@ -1442,7 +1452,7 @@
         },
         {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\nLists\n\n\nAwesome Angular\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Awesome List\n - List of lists\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome PHP\n\n\nAwesome Angular\n\n\nAwesome Angular Components\n\n\nAwesome IOS\n - \nmain site\n\n\nAwesome Kotlin\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\nraywenderlich.com\n - IOS/development resources\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\n\n\nUnison\n - File sync utility\n\n\n\n\n\n\nReport Servers\n\n\n\n\nReportServer\n - integrates Birt reports. Open Source\n\n\n\n\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.\n\n\n\n\nOther Projects\n\n\n\n\nfreeCodeCamp\n\n\nMail For Good\n - Open Source email campaign management tool.\n\n\nConference For Good\n\n\n\n\n\n\nwhat 3 words\n - location alternative to addresses\n\n\nApostrophe CMS\n - Node.js based CMS\n\n\n\n\nEvent Management Software\n\n\n\n\nAttendize\n - self-hosted ticket sales online (think EventBrite)\n\n\nOpen Source Event Manager\n - Ruby on Rails event manager for tech conference\n\n\nOpen Conference Ware\n - Ruby on Rails conference manager.\n\n\nEvent Espresso\n - Wordpress Plugin",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\nLists\n\n\nAwesome Angular\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\nW3 Layouts\n\n\nFreshdesign Templates\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Awesome List\n - List of lists\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome PHP\n\n\nAwesome Angular\n\n\nAwesome Angular Components\n\n\nAwesome IOS\n - \nmain site\n\n\nAwesome Kotlin\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\nraywenderlich.com\n - IOS/development resources\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\n\n\nUnison\n - File sync utility\n\n\n\n\n\n\nReport Servers\n\n\n\n\nReportServer\n - integrates Birt reports. Open Source\n\n\n\n\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.\n\n\n\n\nOther Projects\n\n\n\n\nfreeCodeCamp\n\n\nMail For Good\n - Open Source email campaign management tool.\n\n\nConference For Good\n\n\n\n\n\n\nwhat 3 words\n - location alternative to addresses\n\n\nApostrophe CMS\n - Node.js based CMS\n\n\n\n\nEvent Management Software\n\n\n\n\nAttendize\n - self-hosted ticket sales online (think EventBrite)\n\n\nOpen Source Event Manager\n - Ruby on Rails event manager for tech conference\n\n\nOpen Conference Ware\n - Ruby on Rails conference manager.\n\n\nEvent Espresso\n - Wordpress Plugin\n\n\n\n\nRPC Framework\n\n\n\n\ngRPC\n\n\nApache Thrift\n\n\n\n\nService Providers\n\n\n\n\nChurch Insight\n - church admin software.\n\n\nPilot\n - bookkeeping software.",
             "title": "General"
         },
         {
@@ -1472,7 +1482,7 @@
         },
         {
             "location": "/research/#web-templates",
-            "text": "Flakes Admin Template  - Admin front-end template.  Framework7  - mobile web template",
+            "text": "Flakes Admin Template  - Admin front-end template.  Framework7  - mobile web template  W3 Layouts  Freshdesign Templates",
             "title": "Web Templates"
         },
         {
@@ -1514,6 +1524,16 @@
             "location": "/research/#event-management-software",
             "text": "Attendize  - self-hosted ticket sales online (think EventBrite)  Open Source Event Manager  - Ruby on Rails event manager for tech conference  Open Conference Ware  - Ruby on Rails conference manager.  Event Espresso  - Wordpress Plugin",
             "title": "Event Management Software"
+        },
+        {
+            "location": "/research/#rpc-framework",
+            "text": "gRPC  Apache Thrift",
+            "title": "RPC Framework"
+        },
+        {
+            "location": "/research/#service-providers",
+            "text": "Church Insight  - church admin software.  Pilot  - bookkeeping software.",
+            "title": "Service Providers"
         },
         {
             "location": "/teach/",
@@ -1622,13 +1642,33 @@
         },
         {
             "location": "/learning/javascript/intro/",
-            "text": "Introduction to learning JavaScript",
+            "text": "Introduction to learning JavaScript\n\n\nResources\n\n\n\n\nPrograms\n\n\nfreeCodeCamp\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\n\n\n\n\n\n\nList of books\n\n\n\n\nJS Books\n\n\nEloquent JavaScript\n\n\nExploring ES2016 and ES2017\n\n\nBuilding Front-End Web Apps with Plain JavaScript\n\n\nJavaScript for Cats\n\n\nLearn JavaScript\n\n\nJavaScript Allonge\n - JavaScript Allonge\n\n\nJavaScript Design Patterns\n\n\nUnderstanding ECMAScript 6\n\n\nHuman JavaScript\n\n\nSpeaking JavaScript\n\n\nProgramming JavaScript\n\n\nHTML 5 Shoot 'em Up\n\n\nBackbone Applications\n\n\nExploring ES6\n\n\n\n\n\n\n\n\nSites\n\n\n\n\nMDN Web Docs - JavaScript\n\n\nJavaScript Challenges\n\n\n\n\n\n\n\n\nCurriculum\n\n\n\n\n10 Weeks",
             "title": "JavaScript"
         },
         {
             "location": "/learning/javascript/intro/#introduction-to-learning-javascript",
             "text": "",
             "title": "Introduction to learning JavaScript"
+        },
+        {
+            "location": "/learning/javascript/intro/#resources",
+            "text": "Programs  freeCodeCamp  The Odin Project  Site       List of books   JS Books  Eloquent JavaScript  Exploring ES2016 and ES2017  Building Front-End Web Apps with Plain JavaScript  JavaScript for Cats  Learn JavaScript  JavaScript Allonge  - JavaScript Allonge  JavaScript Design Patterns  Understanding ECMAScript 6  Human JavaScript  Speaking JavaScript  Programming JavaScript  HTML 5 Shoot 'em Up  Backbone Applications  Exploring ES6     Sites   MDN Web Docs - JavaScript  JavaScript Challenges",
+            "title": "Resources"
+        },
+        {
+            "location": "/learning/javascript/intro/#curriculum",
+            "text": "10 Weeks",
+            "title": "Curriculum"
+        },
+        {
+            "location": "/learning/javascript/classes/class1/",
+            "text": "Introduction to JavaScript\n\n\n\n\nGoals\n\n\nTools\n\n\nCodePen\n\n\nGitHub",
+            "title": "Class 1"
+        },
+        {
+            "location": "/learning/javascript/classes/class1/#introduction-to-javascript",
+            "text": "Goals  Tools  CodePen  GitHub",
+            "title": "Introduction to JavaScript"
         }
     ]
 }

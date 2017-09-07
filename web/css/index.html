@@ -494,9 +494,43 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        CSS
+      </label>
+    
     <a href="./" title="CSS" class="md-nav__link md-nav__link--active">
       CSS
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linting-css-and-scss" title="Linting CSS and SCSS" class="md-nav__link">
+    Linting CSS and SCSS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-awesome" title="Font Awesome" class="md-nav__link">
+    Font Awesome
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1231,6 +1265,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../learning/javascript/classes/class1/" title="Class 1" class="md-nav__link">
+      Class 1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1253,6 +1323,27 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linting-css-and-scss" title="Linting CSS and SCSS" class="md-nav__link">
+    Linting CSS and SCSS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-awesome" title="Font Awesome" class="md-nav__link">
+    Font Awesome
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1270,6 +1361,37 @@
 <ul>
 <li><a href="https://www.w3schools.com/howto/howto_css_fixed_menu.asp">Fixed Menu</a> - Fix menu to the top</li>
 </ul>
+<h2 id="linting-css-and-scss">Linting CSS and SCSS</h2>
+<ul>
+<li>Install stylelint, stylelint-config-standard<ul>
+<li><code>npm install stylelint stylelint-config-standard</code></li>
+</ul>
+</li>
+<li>Add <em>stylelint</em> in <em>package.json</em></li>
+</ul>
+<pre><code class="json">  &quot;stylelint&quot;: {
+    &quot;plugins&quot;: [
+      &quot;stylelint-scss&quot;
+    ],
+    &quot;extends&quot;: &quot;stylelint-config-standard&quot;
+  }
+</code></pre>
+
+<ul>
+<li>Enable in editor (Webstorm)</li>
+</ul>
+<h2 id="font-awesome">Font Awesome</h2>
+<ul>
+<li>Font Awesome icon as part of before psuedo class using scss. <a href="https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content">StackOverflow Font Awesome Icon as CSS Content</a></li>
+</ul>
+<pre><code class="css">.a:after {
+    // Import mixin from font-awesome/scss/mixins.scss
+    @include fa-icon();
+
+    // Use icon variable from font-awesome/scss/variables.scss
+    content: $fa-var-exclamation-triangle;
+}
+</code></pre>
                 
                   
                 
