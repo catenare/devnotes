@@ -1,4 +1,4 @@
-# Webpack Configuration
+# Webpack Basic Configuration
 
 ## Configure Webpack
 ```javascript

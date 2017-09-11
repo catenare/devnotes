@@ -35,12 +35,15 @@ pages:
       - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
       - 'CSS': 'web/css.md'
+    - 'Build Tools':
+      - 'Webpack':
+        - 'Notes': 'web/javascript/webpack/notes.md'
+        - 'Configuration': 
+          - 'Basic': 'web/javascript/webpack/webpack.md'
+          - 'html-webpack-plugin': 'web/javascript/webpack/html-webpack-plugin.md'
   - JavaScript:
     - 'General Notes': 'web/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
-    - 'Webpack':
-      - 'Notes': 'web/javascript/webpack/notes.md'
-      - 'Configuration': 'web/javascript/webpack/webpack.md'
     - 'RxJs': 'web/javascript/rxjs.md'
     - Angular:
       - 'Learning Angular': 'learning/angular.md'
