@@ -21,3 +21,4 @@ new HtmlWebpackPlugin({
     * index/index.hbs
     * index/partial.hbs
 * *handlebars-loader* already included.
+* Showing the correct title `<title>{{htmlWebpackPlugin.options.title}}</title>`

@@ -7,6 +7,10 @@
 * [Awesome Webpack](https://github.com/webpack-contrib/awesome-webpack)
 * [Webpack Vuejs Templates](https://vuejs-templates.github.io/webpack/)
 
+## Plugins
+* [Static Site Generator](https://github.com/markdalgleish/static-site-generator-webpack-plugin)
+
 ## Articles
 * [Introduction to Webpack](https://www.smashingmagazine.com/2017/02/a-detailed-introduction-to-webpack/)
     * Includes notes for using Handlebars.
+
