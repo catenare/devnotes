@@ -552,7 +552,7 @@
         },
         {
             "location": "/web/javascript/webpack/notes/",
-            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.",
+            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.",
             "title": "Notes"
         },
         {
@@ -564,6 +564,11 @@
             "location": "/web/javascript/webpack/notes/#resources",
             "text": "Webpack Examples  Webpack Book  Lodash Plugin  Awesome Webpack  Webpack Vuejs Templates",
             "title": "Resources"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#plugins",
+            "text": "Static Site Generator",
+            "title": "Plugins"
         },
         {
             "location": "/web/javascript/webpack/notes/#articles",
@@ -587,7 +592,7 @@
         },
         {
             "location": "/web/javascript/webpack/html-webpack-plugin/",
-            "text": "Notes About HTML Webpack Plugin\n\n\n\n\nDocumentation\n\n\n\n\nMy Notes\n\n\n\n\nCan use Handlebars templates for pages.\n\n\nCan include partials too in the main index.hbs file.\n\n\n\n\nBenefits\n\n\n\n\nCan now use webpack rather than foundation for my complete work process.\n\n\nBuilding mostly single page apps anyway so including foundation partials is a no brainer.\n\n\nCan replace foundation tools with my tools while still leveraging their infrastructure.\n\n\nCan focus on using webpack for everything.\n\n\n\n\n\n\n\n\nWebpack Config\n\n\n\n\n\n\nnew HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),\n\n\n\n\n\n\nDirectory layout\n\n\nindex/index.hbs\n\n\nindex/partial.hbs\n\n\n\n\n\n\nhandlebars-loader\n already included.",
+            "text": "Notes About HTML Webpack Plugin\n\n\n\n\nDocumentation\n\n\n\n\nMy Notes\n\n\n\n\nCan use Handlebars templates for pages.\n\n\nCan include partials too in the main index.hbs file.\n\n\n\n\nBenefits\n\n\n\n\nCan now use webpack rather than foundation for my complete work process.\n\n\nBuilding mostly single page apps anyway so including foundation partials is a no brainer.\n\n\nCan replace foundation tools with my tools while still leveraging their infrastructure.\n\n\nCan focus on using webpack for everything.\n\n\n\n\n\n\n\n\nWebpack Config\n\n\n\n\n\n\nnew HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),\n\n\n\n\n\n\nDirectory layout\n\n\nindex/index.hbs\n\n\nindex/partial.hbs\n\n\n\n\n\n\nhandlebars-loader\n already included.\n\n\nShowing the correct title \n<title>{{htmlWebpackPlugin.options.title}}</title>",
             "title": "html-webpack-plugin"
         },
         {
@@ -597,7 +602,7 @@
         },
         {
             "location": "/web/javascript/webpack/html-webpack-plugin/#my-notes",
-            "text": "Can use Handlebars templates for pages.  Can include partials too in the main index.hbs file.   Benefits   Can now use webpack rather than foundation for my complete work process.  Building mostly single page apps anyway so including foundation partials is a no brainer.  Can replace foundation tools with my tools while still leveraging their infrastructure.  Can focus on using webpack for everything.     Webpack Config    new HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),   Directory layout  index/index.hbs  index/partial.hbs    handlebars-loader  already included.",
+            "text": "Can use Handlebars templates for pages.  Can include partials too in the main index.hbs file.   Benefits   Can now use webpack rather than foundation for my complete work process.  Building mostly single page apps anyway so including foundation partials is a no brainer.  Can replace foundation tools with my tools while still leveraging their infrastructure.  Can focus on using webpack for everything.     Webpack Config    new HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),   Directory layout  index/index.hbs  index/partial.hbs    handlebars-loader  already included.  Showing the correct title  <title>{{htmlWebpackPlugin.options.title}}</title>",
             "title": "My Notes"
         },
         {
