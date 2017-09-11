@@ -551,6 +551,56 @@
             "title": "Font Awesome"
         },
         {
+            "location": "/web/javascript/webpack/notes/",
+            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.",
+            "title": "Notes"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#webpack-notes",
+            "text": "",
+            "title": "Webpack Notes"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#resources",
+            "text": "Webpack Examples  Webpack Book  Lodash Plugin  Awesome Webpack  Webpack Vuejs Templates",
+            "title": "Resources"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#articles",
+            "text": "Introduction to Webpack  Includes notes for using Handlebars.",
+            "title": "Articles"
+        },
+        {
+            "location": "/web/javascript/webpack/webpack/",
+            "text": "Webpack Basic Configuration\n\n\nConfigure Webpack\n\n\nconst path = require('path')\nconst webpack = require('webpack')\nconst HtmlWpPlugin = require('html-webpack-plugin')\nconst CleanWpPlugin = require('clean-webpack-plugin')\nconst ExtractWpPlugin = require('extract-text-webpack-plugin')\nconst autoprefixer = require('autoprefixer')\nconst atl = require('awesome-typescript-loader')\n\nmodule.exports = {\n  entry: {\n    app: './src/assets/js/main.js',\n    vendor: './src/assets/js/vendor.js'\n  },\n  output: {\n    path: path.resolve(__dirname, './dist'),\n    filename: '[name].bundle.js',\n    sourceMapFilename: '[name].bundle.map',\n    pathinfo: true\n  },\n  resolve: {\n    extensions: ['.js', '.jsx', '.ts', '.tsx']\n  },\n  devtool: 'cheap-module-source-map',\n  plugins: [\n    new HtmlWpPlugin({\n      title: 'Learning ES6',\n      template: 'src/index.html',\n      filename: 'index.html'\n    }),\n    new CleanWpPlugin(['dist']),\n    new ExtractWpPlugin({\n      filename: 'styles.css',\n      allChunks: true\n    }),\n    new webpack.HotModuleReplacementPlugin(),\n    new atl.CheckerPlugin()\n  ],\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        exclude: /(node_modules|bower_components)/,\n        use: {\n          loader: 'babel-loader',\n          options: {\n            presets: [\n              ['env',\n                {\n                  targets: {\n                    'browsers': ['last 2 versions', 'ie>=7']\n                  }\n                }\n              ]\n            ]\n          }\n        }\n      },\n      // {\n      //   test: /\\.css$/,\n      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),\n      //   use: 'raw-loader'\n      // },\n      {\n        test: /\\.css$/,\n        exclude: /(node_modules|bower_components)/,\n        loaders: ExtractWpPlugin.extract([\n          'style-loader/url!file-loader',\n          'css-loader'\n        ])\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /(node_modules|bower_components)/,\n        use: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.scss$/,\n        exclude: /(node_modules|bower_components)/,\n        use: ExtractWpPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            {\n              loader: 'postcss-loader',\n              options:\n              {\n                plugins: function () {\n                  return [autoprefixer]\n                }\n              }\n            },\n            'sass-loader'\n          ]\n        }\n        )\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        exclude: /(node_modules|bower_components)/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  },\n  devServer: {\n    hot: true,\n    watchOptions: {\n      ignored: /node_modules/\n    }\n  }\n}",
+            "title": "Basic"
+        },
+        {
+            "location": "/web/javascript/webpack/webpack/#webpack-basic-configuration",
+            "text": "",
+            "title": "Webpack Basic Configuration"
+        },
+        {
+            "location": "/web/javascript/webpack/webpack/#configure-webpack",
+            "text": "const path = require('path')\nconst webpack = require('webpack')\nconst HtmlWpPlugin = require('html-webpack-plugin')\nconst CleanWpPlugin = require('clean-webpack-plugin')\nconst ExtractWpPlugin = require('extract-text-webpack-plugin')\nconst autoprefixer = require('autoprefixer')\nconst atl = require('awesome-typescript-loader')\n\nmodule.exports = {\n  entry: {\n    app: './src/assets/js/main.js',\n    vendor: './src/assets/js/vendor.js'\n  },\n  output: {\n    path: path.resolve(__dirname, './dist'),\n    filename: '[name].bundle.js',\n    sourceMapFilename: '[name].bundle.map',\n    pathinfo: true\n  },\n  resolve: {\n    extensions: ['.js', '.jsx', '.ts', '.tsx']\n  },\n  devtool: 'cheap-module-source-map',\n  plugins: [\n    new HtmlWpPlugin({\n      title: 'Learning ES6',\n      template: 'src/index.html',\n      filename: 'index.html'\n    }),\n    new CleanWpPlugin(['dist']),\n    new ExtractWpPlugin({\n      filename: 'styles.css',\n      allChunks: true\n    }),\n    new webpack.HotModuleReplacementPlugin(),\n    new atl.CheckerPlugin()\n  ],\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        exclude: /(node_modules|bower_components)/,\n        use: {\n          loader: 'babel-loader',\n          options: {\n            presets: [\n              ['env',\n                {\n                  targets: {\n                    'browsers': ['last 2 versions', 'ie>=7']\n                  }\n                }\n              ]\n            ]\n          }\n        }\n      },\n      // {\n      //   test: /\\.css$/,\n      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),\n      //   use: 'raw-loader'\n      // },\n      {\n        test: /\\.css$/,\n        exclude: /(node_modules|bower_components)/,\n        loaders: ExtractWpPlugin.extract([\n          'style-loader/url!file-loader',\n          'css-loader'\n        ])\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /(node_modules|bower_components)/,\n        use: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.scss$/,\n        exclude: /(node_modules|bower_components)/,\n        use: ExtractWpPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            {\n              loader: 'postcss-loader',\n              options:\n              {\n                plugins: function () {\n                  return [autoprefixer]\n                }\n              }\n            },\n            'sass-loader'\n          ]\n        }\n        )\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        exclude: /(node_modules|bower_components)/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  },\n  devServer: {\n    hot: true,\n    watchOptions: {\n      ignored: /node_modules/\n    }\n  }\n}",
+            "title": "Configure Webpack"
+        },
+        {
+            "location": "/web/javascript/webpack/html-webpack-plugin/",
+            "text": "Notes About HTML Webpack Plugin\n\n\n\n\nDocumentation\n\n\n\n\nMy Notes\n\n\n\n\nCan use Handlebars templates for pages.\n\n\nCan include partials too in the main index.hbs file.\n\n\n\n\nBenefits\n\n\n\n\nCan now use webpack rather than foundation for my complete work process.\n\n\nBuilding mostly single page apps anyway so including foundation partials is a no brainer.\n\n\nCan replace foundation tools with my tools while still leveraging their infrastructure.\n\n\nCan focus on using webpack for everything.\n\n\n\n\n\n\n\n\nWebpack Config\n\n\n\n\n\n\nnew HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),\n\n\n\n\n\n\nDirectory layout\n\n\nindex/index.hbs\n\n\nindex/partial.hbs\n\n\n\n\n\n\nhandlebars-loader\n already included.",
+            "title": "html-webpack-plugin"
+        },
+        {
+            "location": "/web/javascript/webpack/html-webpack-plugin/#notes-about-html-webpack-plugin",
+            "text": "Documentation",
+            "title": "Notes About HTML Webpack Plugin"
+        },
+        {
+            "location": "/web/javascript/webpack/html-webpack-plugin/#my-notes",
+            "text": "Can use Handlebars templates for pages.  Can include partials too in the main index.hbs file.   Benefits   Can now use webpack rather than foundation for my complete work process.  Building mostly single page apps anyway so including foundation partials is a no brainer.  Can replace foundation tools with my tools while still leveraging their infrastructure.  Can focus on using webpack for everything.     Webpack Config    new HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),   Directory layout  index/index.hbs  index/partial.hbs    handlebars-loader  already included.",
+            "title": "My Notes"
+        },
+        {
             "location": "/web/notes/",
             "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.",
             "title": "General Notes"
@@ -619,41 +669,6 @@
             "location": "/web/javascript/startup/#babel-config-in-packagejson",
             "text": "\"babel\": {\n    \"presets\": [\n      [\n        \"env\",\n        {\n          \"targets\": {\n            \"browsers\": [\n              \"last 2 versions\",\n              \"ie >= 7\"\n            ]\n          }\n        }\n      ]\n    ]\n  },",
             "title": "Babel config in package.json"
-        },
-        {
-            "location": "/web/javascript/webpack/notes/",
-            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.",
-            "title": "Notes"
-        },
-        {
-            "location": "/web/javascript/webpack/notes/#webpack-notes",
-            "text": "",
-            "title": "Webpack Notes"
-        },
-        {
-            "location": "/web/javascript/webpack/notes/#resources",
-            "text": "Webpack Examples  Webpack Book  Lodash Plugin  Awesome Webpack  Webpack Vuejs Templates",
-            "title": "Resources"
-        },
-        {
-            "location": "/web/javascript/webpack/notes/#articles",
-            "text": "Introduction to Webpack  Includes notes for using Handlebars.",
-            "title": "Articles"
-        },
-        {
-            "location": "/web/javascript/webpack/webpack/",
-            "text": "Webpack Configuration\n\n\nConfigure Webpack\n\n\nconst path = require('path')\nconst webpack = require('webpack')\nconst HtmlWpPlugin = require('html-webpack-plugin')\nconst CleanWpPlugin = require('clean-webpack-plugin')\nconst ExtractWpPlugin = require('extract-text-webpack-plugin')\nconst autoprefixer = require('autoprefixer')\nconst atl = require('awesome-typescript-loader')\n\nmodule.exports = {\n  entry: {\n    app: './src/assets/js/main.js',\n    vendor: './src/assets/js/vendor.js'\n  },\n  output: {\n    path: path.resolve(__dirname, './dist'),\n    filename: '[name].bundle.js',\n    sourceMapFilename: '[name].bundle.map',\n    pathinfo: true\n  },\n  resolve: {\n    extensions: ['.js', '.jsx', '.ts', '.tsx']\n  },\n  devtool: 'cheap-module-source-map',\n  plugins: [\n    new HtmlWpPlugin({\n      title: 'Learning ES6',\n      template: 'src/index.html',\n      filename: 'index.html'\n    }),\n    new CleanWpPlugin(['dist']),\n    new ExtractWpPlugin({\n      filename: 'styles.css',\n      allChunks: true\n    }),\n    new webpack.HotModuleReplacementPlugin(),\n    new atl.CheckerPlugin()\n  ],\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        exclude: /(node_modules|bower_components)/,\n        use: {\n          loader: 'babel-loader',\n          options: {\n            presets: [\n              ['env',\n                {\n                  targets: {\n                    'browsers': ['last 2 versions', 'ie>=7']\n                  }\n                }\n              ]\n            ]\n          }\n        }\n      },\n      // {\n      //   test: /\\.css$/,\n      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),\n      //   use: 'raw-loader'\n      // },\n      {\n        test: /\\.css$/,\n        exclude: /(node_modules|bower_components)/,\n        loaders: ExtractWpPlugin.extract([\n          'style-loader/url!file-loader',\n          'css-loader'\n        ])\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /(node_modules|bower_components)/,\n        use: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.scss$/,\n        exclude: /(node_modules|bower_components)/,\n        use: ExtractWpPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            {\n              loader: 'postcss-loader',\n              options:\n              {\n                plugins: function () {\n                  return [autoprefixer]\n                }\n              }\n            },\n            'sass-loader'\n          ]\n        }\n        )\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        exclude: /(node_modules|bower_components)/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  },\n  devServer: {\n    hot: true,\n    watchOptions: {\n      ignored: /node_modules/\n    }\n  }\n}",
-            "title": "Configuration"
-        },
-        {
-            "location": "/web/javascript/webpack/webpack/#webpack-configuration",
-            "text": "",
-            "title": "Webpack Configuration"
-        },
-        {
-            "location": "/web/javascript/webpack/webpack/#configure-webpack",
-            "text": "const path = require('path')\nconst webpack = require('webpack')\nconst HtmlWpPlugin = require('html-webpack-plugin')\nconst CleanWpPlugin = require('clean-webpack-plugin')\nconst ExtractWpPlugin = require('extract-text-webpack-plugin')\nconst autoprefixer = require('autoprefixer')\nconst atl = require('awesome-typescript-loader')\n\nmodule.exports = {\n  entry: {\n    app: './src/assets/js/main.js',\n    vendor: './src/assets/js/vendor.js'\n  },\n  output: {\n    path: path.resolve(__dirname, './dist'),\n    filename: '[name].bundle.js',\n    sourceMapFilename: '[name].bundle.map',\n    pathinfo: true\n  },\n  resolve: {\n    extensions: ['.js', '.jsx', '.ts', '.tsx']\n  },\n  devtool: 'cheap-module-source-map',\n  plugins: [\n    new HtmlWpPlugin({\n      title: 'Learning ES6',\n      template: 'src/index.html',\n      filename: 'index.html'\n    }),\n    new CleanWpPlugin(['dist']),\n    new ExtractWpPlugin({\n      filename: 'styles.css',\n      allChunks: true\n    }),\n    new webpack.HotModuleReplacementPlugin(),\n    new atl.CheckerPlugin()\n  ],\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        exclude: /(node_modules|bower_components)/,\n        use: {\n          loader: 'babel-loader',\n          options: {\n            presets: [\n              ['env',\n                {\n                  targets: {\n                    'browsers': ['last 2 versions', 'ie>=7']\n                  }\n                }\n              ]\n            ]\n          }\n        }\n      },\n      // {\n      //   test: /\\.css$/,\n      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),\n      //   use: 'raw-loader'\n      // },\n      {\n        test: /\\.css$/,\n        exclude: /(node_modules|bower_components)/,\n        loaders: ExtractWpPlugin.extract([\n          'style-loader/url!file-loader',\n          'css-loader'\n        ])\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /(node_modules|bower_components)/,\n        use: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.scss$/,\n        exclude: /(node_modules|bower_components)/,\n        use: ExtractWpPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            {\n              loader: 'postcss-loader',\n              options:\n              {\n                plugins: function () {\n                  return [autoprefixer]\n                }\n              }\n            },\n            'sass-loader'\n          ]\n        }\n        )\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        exclude: /(node_modules|bower_components)/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  },\n  devServer: {\n    hot: true,\n    watchOptions: {\n      ignored: /node_modules/\n    }\n  }\n}",
-            "title": "Configure Webpack"
         },
         {
             "location": "/web/javascript/rxjs/",
@@ -1662,12 +1677,12 @@
         },
         {
             "location": "/learning/javascript/classes/class1/",
-            "text": "Introduction to JavaScript\n\n\n\n\nGoals\n\n\nTools\n\n\nCodePen\n\n\nGitHub",
+            "text": "Introduction to JavaScript\n\n\n\n\nGoals\n\n\nTools\n\n\nMozilla Thimble\n - Geared towards learning\n\n\nCodePen\n - too much to get in the way.\n\n\n\n\n\n\nGitHub\n\n\nVisual Studio Code",
             "title": "Class 1"
         },
         {
             "location": "/learning/javascript/classes/class1/#introduction-to-javascript",
-            "text": "Goals  Tools  CodePen  GitHub",
+            "text": "Goals  Tools  Mozilla Thimble  - Geared towards learning  CodePen  - too much to get in the way.    GitHub  Visual Studio Code",
             "title": "Introduction to JavaScript"
         }
     ]
