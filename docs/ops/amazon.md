@@ -68,6 +68,9 @@
 ```
 1. Create CloudFront Distribution
     * Web delivery method
+    * Create certificate with Certificate Manager
+    * Don't forget to enter the cname record.
+    * Use either both http and https or redirect http to https.
 1. Update DNS records
     * Add CNAME record to dns record
         * www points to cloudfront url
