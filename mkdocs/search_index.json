@@ -1332,7 +1332,7 @@
         },
         {
             "location": "/ops/amazon/",
-            "text": "Working with Amazon (AWS)\n\n\nLightsail - virtual private server instances - $5 for 512gb instance/month\n\n\nSetting up SSH - trying to use my own ssh keys.\n\n\n\n\nLogging in\n\n\nChange key permissions. \nchmod 600 KEYFILE\n\n\nssh -i KEYFILE ubuntu@ip-address\n\n\n\n\n\n\n\n\nPHP Wordpress config\n\n\n\n\nPackages\n\n\nphp7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-gd php7.0-curl php-imagick mysql-server git nginx\n\n\nInstall \ncomposer\n.\n\n\nFollow instructions from composer\n\n\n\n\n\n\nConfigure nginx and php7.0-fpm\n\n\nnginx - configure default virtual environment\n\n\nEnable php7.0-fpm in configuration.\n\n\n\n\n\n\nCreate rsa key to share with bitbucket or github\n\n\nssh-keygen -t rsa\n - no password\n\n\n\n\n\n\nAdd a deployment key to github to pull code to server.\n\n\n\n\n\n\nConfigure nginx\n\n\nSetup mysql database\n\n\nDownload composer and wordpress command line.\n\n\ncomposer\n\n\nmv composer.phar /usr/local/bin/composer\n after install\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nServer Admin\n\n\n\n\nRestart service\n\n\nUbuntu\n\n\nsudo nginx -t\n - test config\n\n\n\nsudo systemctl restart nginx\n\n\nsudo systemctl retart php7.0-fpm\n\n\n\n\n\n\n\n\nletsencrypt setup\n\n\n\n\nCertbot\n - Ubuntu\n\n\nPort 443 needs to be open\n\n\nDomains need to be in nginx.conf file (sites-enabled/default) file.\n\n\nPretty straightforward and easy to set up.\n\n\n\n\nAmazon Identity and Access Management\n\n\n\n\nCreate user to access S3 and Cloudfront - will be used to upload files to S3\n\n\nIAM Management Console\n\n\nCreate User\n\n\nGive S3, CloudFront and APIGateway settings\n\n\n\n\n\n\n\n\nSetting up S3 and CloudFront for paseo.org.za\n\n\n\n\nCreate ssl/tls certificate\n\n\nCreate the certificate in N. Virginia else it won't work.\n\n\nMake sure that you have access to one of the email addresses that Amazon will use for verification\n\n\nAdd a domain name - \n.paseo.org.za/paseo.org.za and \n.martinsonline.org/martinsonline.org\n\n\n\n\n\n\nCreate S3 Bucket\n\n\nUse basic settings. Going to use this bucket as source for CloudFront\n\n\nUpload site with Cyberduck to s3\n\n\nCreate Bucket Policy\n\n\n\n\n\n\n\n\n{\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1488488343010\",\n    \"Statement\": [\n        {\n            \"Sid\": \"Stmt1488488323316\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::barbarasierrafoothilswineries/*\"\n        }\n    ]\n}\n\n\n\n\n\n\nCreate CloudFront Distribution\n\n\nWeb delivery method\n\n\n\n\n\n\nUpdate DNS records\n\n\nAdd CNAME record to dns record\n\n\nwww points to cloudfront url",
+            "text": "Working with Amazon (AWS)\n\n\nLightsail - virtual private server instances - $5 for 512gb instance/month\n\n\nSetting up SSH - trying to use my own ssh keys.\n\n\n\n\nLogging in\n\n\nChange key permissions. \nchmod 600 KEYFILE\n\n\nssh -i KEYFILE ubuntu@ip-address\n\n\n\n\n\n\n\n\nPHP Wordpress config\n\n\n\n\nPackages\n\n\nphp7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-gd php7.0-curl php-imagick mysql-server git nginx\n\n\nInstall \ncomposer\n.\n\n\nFollow instructions from composer\n\n\n\n\n\n\nConfigure nginx and php7.0-fpm\n\n\nnginx - configure default virtual environment\n\n\nEnable php7.0-fpm in configuration.\n\n\n\n\n\n\nCreate rsa key to share with bitbucket or github\n\n\nssh-keygen -t rsa\n - no password\n\n\n\n\n\n\nAdd a deployment key to github to pull code to server.\n\n\n\n\n\n\nConfigure nginx\n\n\nSetup mysql database\n\n\nDownload composer and wordpress command line.\n\n\ncomposer\n\n\nmv composer.phar /usr/local/bin/composer\n after install\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nServer Admin\n\n\n\n\nRestart service\n\n\nUbuntu\n\n\nsudo nginx -t\n - test config\n\n\n\nsudo systemctl restart nginx\n\n\nsudo systemctl retart php7.0-fpm\n\n\n\n\n\n\n\n\nletsencrypt setup\n\n\n\n\nCertbot\n - Ubuntu\n\n\nPort 443 needs to be open\n\n\nDomains need to be in nginx.conf file (sites-enabled/default) file.\n\n\nPretty straightforward and easy to set up.\n\n\n\n\nAmazon Identity and Access Management\n\n\n\n\nCreate user to access S3 and Cloudfront - will be used to upload files to S3\n\n\nIAM Management Console\n\n\nCreate User\n\n\nGive S3, CloudFront and APIGateway settings\n\n\n\n\n\n\n\n\nSetting up S3 and CloudFront for paseo.org.za\n\n\n\n\nCreate ssl/tls certificate\n\n\nCreate the certificate in N. Virginia else it won't work.\n\n\nMake sure that you have access to one of the email addresses that Amazon will use for verification\n\n\nAdd a domain name - \n.paseo.org.za/paseo.org.za and \n.martinsonline.org/martinsonline.org\n\n\n\n\n\n\nCreate S3 Bucket\n\n\nUse basic settings. Going to use this bucket as source for CloudFront\n\n\nUpload site with Cyberduck to s3\n\n\nCreate Bucket Policy\n\n\n\n\n\n\n\n\n{\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1488488343010\",\n    \"Statement\": [\n        {\n            \"Sid\": \"Stmt1488488323316\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::barbarasierrafoothilswineries/*\"\n        }\n    ]\n}\n\n\n\n\n\n\nCreate CloudFront Distribution\n\n\nWeb delivery method\n\n\nCreate certificate with Certificate Manager\n\n\nDon't forget to enter the cname record.\n\n\nUse either both http and https or redirect http to https.\n\n\n\n\n\n\nUpdate DNS records\n\n\nAdd CNAME record to dns record\n\n\nwww points to cloudfront url",
             "title": "Amazon"
         },
         {
@@ -1372,7 +1372,7 @@
         },
         {
             "location": "/ops/amazon/#setting-up-s3-and-cloudfront-for-paseoorgza",
-            "text": "Create ssl/tls certificate  Create the certificate in N. Virginia else it won't work.  Make sure that you have access to one of the email addresses that Amazon will use for verification  Add a domain name -  .paseo.org.za/paseo.org.za and  .martinsonline.org/martinsonline.org    Create S3 Bucket  Use basic settings. Going to use this bucket as source for CloudFront  Upload site with Cyberduck to s3  Create Bucket Policy     {\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1488488343010\",\n    \"Statement\": [\n        {\n            \"Sid\": \"Stmt1488488323316\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::barbarasierrafoothilswineries/*\"\n        }\n    ]\n}   Create CloudFront Distribution  Web delivery method    Update DNS records  Add CNAME record to dns record  www points to cloudfront url",
+            "text": "Create ssl/tls certificate  Create the certificate in N. Virginia else it won't work.  Make sure that you have access to one of the email addresses that Amazon will use for verification  Add a domain name -  .paseo.org.za/paseo.org.za and  .martinsonline.org/martinsonline.org    Create S3 Bucket  Use basic settings. Going to use this bucket as source for CloudFront  Upload site with Cyberduck to s3  Create Bucket Policy     {\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1488488343010\",\n    \"Statement\": [\n        {\n            \"Sid\": \"Stmt1488488323316\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::barbarasierrafoothilswineries/*\"\n        }\n    ]\n}   Create CloudFront Distribution  Web delivery method  Create certificate with Certificate Manager  Don't forget to enter the cname record.  Use either both http and https or redirect http to https.    Update DNS records  Add CNAME record to dns record  www points to cloudfront url",
             "title": "Setting up S3 and CloudFront for paseo.org.za"
         },
         {
@@ -1557,7 +1557,7 @@
         },
         {
             "location": "/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n\n\nForma.lms\n\n\nEliademy\n\n\nOpigno\n - Drupal based\n\n\nIlias",
             "title": "Learning Systems"
         },
         {
@@ -1567,23 +1567,8 @@
         },
         {
             "location": "/teach/#teaching-tools",
-            "text": "",
+            "text": "Eclipse Che  Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox      Cloud9  - In the cloud IDE tool. Free basic workspace.",
             "title": "Teaching Tools"
-        },
-        {
-            "location": "/teach/#eclipse-che",
-            "text": "Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox",
-            "title": "Eclipse Che"
-        },
-        {
-            "location": "/teach/#cloud9-in-the-cloud-ide-tool-free-basic-workspace",
-            "text": "",
-            "title": "Cloud9 - In the cloud IDE tool. Free basic workspace."
-        },
-        {
-            "location": "/teach/#creating-learning-environments",
-            "text": "Open Edx",
-            "title": "Creating learning environments"
         },
         {
             "location": "/teach/#online-resources",
@@ -1596,8 +1581,18 @@
             "title": "Curriculum"
         },
         {
+            "location": "/teach/#scorm-tools",
+            "text": "eXe  - SCORM Tool",
+            "title": "SCORM Tools"
+        },
+        {
+            "location": "/teach/#lms-tools",
+            "text": "Open Edx  Forma.lms  Eliademy  Opigno  - Drupal based  Ilias",
+            "title": "LMS Tools"
+        },
+        {
             "location": "/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\nEclipse Che\n\n\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\nCreating learning environments\n\n\n\n\nOpen Edx\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n\n\nForma.lms\n\n\nEliademy\n\n\nOpigno\n - Drupal based\n\n\nIlias",
             "title": "Learning Sources"
         },
         {
@@ -1607,23 +1602,8 @@
         },
         {
             "location": "/teach/#teaching-tools",
-            "text": "",
+            "text": "Eclipse Che  Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox      Cloud9  - In the cloud IDE tool. Free basic workspace.",
             "title": "Teaching Tools"
-        },
-        {
-            "location": "/teach/#eclipse-che",
-            "text": "Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox",
-            "title": "Eclipse Che"
-        },
-        {
-            "location": "/teach/#cloud9-in-the-cloud-ide-tool-free-basic-workspace",
-            "text": "",
-            "title": "Cloud9 - In the cloud IDE tool. Free basic workspace."
-        },
-        {
-            "location": "/teach/#creating-learning-environments",
-            "text": "Open Edx",
-            "title": "Creating learning environments"
         },
         {
             "location": "/teach/#online-resources",
@@ -1634,6 +1614,16 @@
             "location": "/teach/#curriculum",
             "text": "The Odin Project  Site    freeCodeCamp  Github Repo",
             "title": "Curriculum"
+        },
+        {
+            "location": "/teach/#scorm-tools",
+            "text": "eXe  - SCORM Tool",
+            "title": "SCORM Tools"
+        },
+        {
+            "location": "/teach/#lms-tools",
+            "text": "Open Edx  Forma.lms  Eliademy  Opigno  - Drupal based  Ilias",
+            "title": "LMS Tools"
         },
         {
             "location": "/learning/html/semantic/",
