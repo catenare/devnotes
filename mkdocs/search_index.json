@@ -552,7 +552,7 @@
         },
         {
             "location": "/web/javascript/webpack/notes/",
-            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.",
+            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.\n\n\n\n\n\n\n\n\nfont-awesome config with webpack and foundation\n\n\n\n\nwebpack config - allow to process image and font files.\n\n\n\n\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }\n\n\n\n\n\n\nConfigure scss imports\n\n\nIn \n_settings.scss\n add \n$fa-font-path:   \"~font-awesome/fonts\";\n to end of the page.\n\n\nIn \napp.scss\n add \n@import '~font-awesome/scss/font-awesome';\n after \n@import \"settings\"\n.",
             "title": "Notes"
         },
         {
@@ -574,6 +574,11 @@
             "location": "/web/javascript/webpack/notes/#articles",
             "text": "Introduction to Webpack  Includes notes for using Handlebars.",
             "title": "Articles"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#font-awesome-config-with-webpack-and-foundation",
+            "text": "webpack config - allow to process image and font files.         {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }   Configure scss imports  In  _settings.scss  add  $fa-font-path:   \"~font-awesome/fonts\";  to end of the page.  In  app.scss  add  @import '~font-awesome/scss/font-awesome';  after  @import \"settings\" .",
+            "title": "font-awesome config with webpack and foundation"
         },
         {
             "location": "/web/javascript/webpack/webpack/",

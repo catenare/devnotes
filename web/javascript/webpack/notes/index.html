@@ -590,6 +590,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#font-awesome-config-with-webpack-and-foundation" title="font-awesome config with webpack and foundation" class="md-nav__link">
+    font-awesome config with webpack and foundation
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1464,6 +1471,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#font-awesome-config-with-webpack-and-foundation" title="font-awesome config with webpack and foundation" class="md-nav__link">
+    font-awesome config with webpack and foundation
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1500,6 +1514,33 @@
 <li>Includes notes for using Handlebars.</li>
 </ul>
 </li>
+</ul>
+<h2 id="font-awesome-config-with-webpack-and-foundation">font-awesome config with webpack and foundation</h2>
+<ul>
+<li>webpack config - allow to process image and font files.</li>
+</ul>
+<pre><code class="js">      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 10000,
+          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+        }
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 10000,
+          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+        }
+      }
+</code></pre>
+
+<ul>
+<li>Configure scss imports</li>
+<li>In <code>_settings.scss</code> add <code>$fa-font-path:   "~font-awesome/fonts";</code> to end of the page.</li>
+<li>In <code>app.scss</code> add <code>@import '~font-awesome/scss/font-awesome';</code> after <code>@import "settings"</code>.</li>
 </ul>
                 
                   
