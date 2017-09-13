@@ -50,6 +50,7 @@ pages:
     - 'Vuejs': 
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
       - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
+      - 'Foundation Setup': 'web/javascript/vue/foundation.md'
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'
