@@ -781,6 +781,31 @@
             "title": "Snippets"
         },
         {
+            "location": "/web/javascript/vue/foundation/",
+            "text": "Working with Vue in Foundation\n\n\n\n\nUsed foundation-cli to install foundation\n\n\n\n\nSetup\n\n\n\n\nInstall vue, vue-loader, vue-style-loader, vue-template-compiler, sass-loader, style-loader, css-loader, typescript, awesome-typescript-loader\n\n\n\n\ngulpfile.babel.js\n config\n\n\n\n\nConfigure \ngulpfile.babel.js - webpack\n\n\ngulp.watch('src/assets/components/**/*').on('all', gulp.series(javascript, browser.reload))\n - add to end of file to watch components\n\n\n\n\nlet webpackConfig = {\n  resolve: {\n    extensions: ['.ts', '.js', '.vue', '.json'],\n    alias: {\n      'vue$': 'vue/dist/vue.esm.js'\n    }\n  },\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        use: [\n          {\n            loader: 'babel-loader'\n          }\n        ]\n      },\n      {\n        test: /\\.vue$/,\n        loader: 'vue-loader',\n        options: {\n          loaders: {\n            scss: ['vue-style-loader', {\n              loader: 'css-loader',\n              options: {\n                minimize: false,\n                sourceMap: false\n              }\n            },\n              {\n                loader: 'sass-loader',\n                options:\n                  {\n                    includePaths: ['./src/assets/vue/styles'],\n                    data: '@import \"./src/assets/vue/styles/app\";',\n                    sourceMap: false\n                  }\n              }\n            ],\n            ts: 'awesome-typescript-loader'\n          }\n        }\n      },\n      {\n        test: /\\.ts$/,\n        loader: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: 'fonts/[name].[hash:7].[ext]'\n        }\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  }\n}\n\n\n\n\n\n\nHave to configure webpackConfig with vue-loader.\n\n\nUpdate \nconfig.yml\n\n\n\n\n  assets:\n    - \"src/assets/**/*\"\n    - \"!src/assets/{components,img,js,scss,fonts}/**/*\"\n\n\n\n\nOther Notes\n\n\n\n\nCreated separate style directory for just Vue styles.\n\n\nAllow access to foundation from all components.\n\n\nEasier configuration in webpack.\n\n\n\n\n\n\nInstalled \nbabel-preset-env\n for always current babel engine.\n\n\nCustomize the \napp.css\n file in \n./src/assets/vue/styles\n\n\n@import '~foundation-sites/scss/foundation';\n\n\n@import '~font-awesome/scss/font-awesome';\n - Not necessary since already in main config.\n\n\n@import '~motion-ui/src/motion-ui';",
+            "title": "Foundation Setup"
+        },
+        {
+            "location": "/web/javascript/vue/foundation/#working-with-vue-in-foundation",
+            "text": "Used foundation-cli to install foundation",
+            "title": "Working with Vue in Foundation"
+        },
+        {
+            "location": "/web/javascript/vue/foundation/#setup",
+            "text": "Install vue, vue-loader, vue-style-loader, vue-template-compiler, sass-loader, style-loader, css-loader, typescript, awesome-typescript-loader",
+            "title": "Setup"
+        },
+        {
+            "location": "/web/javascript/vue/foundation/#gulpfilebabeljs-config",
+            "text": "Configure  gulpfile.babel.js - webpack  gulp.watch('src/assets/components/**/*').on('all', gulp.series(javascript, browser.reload))  - add to end of file to watch components   let webpackConfig = {\n  resolve: {\n    extensions: ['.ts', '.js', '.vue', '.json'],\n    alias: {\n      'vue$': 'vue/dist/vue.esm.js'\n    }\n  },\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        use: [\n          {\n            loader: 'babel-loader'\n          }\n        ]\n      },\n      {\n        test: /\\.vue$/,\n        loader: 'vue-loader',\n        options: {\n          loaders: {\n            scss: ['vue-style-loader', {\n              loader: 'css-loader',\n              options: {\n                minimize: false,\n                sourceMap: false\n              }\n            },\n              {\n                loader: 'sass-loader',\n                options:\n                  {\n                    includePaths: ['./src/assets/vue/styles'],\n                    data: '@import \"./src/assets/vue/styles/app\";',\n                    sourceMap: false\n                  }\n              }\n            ],\n            ts: 'awesome-typescript-loader'\n          }\n        }\n      },\n      {\n        test: /\\.ts$/,\n        loader: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: 'fonts/[name].[hash:7].[ext]'\n        }\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  }\n}   Have to configure webpackConfig with vue-loader.  Update  config.yml     assets:\n    - \"src/assets/**/*\"\n    - \"!src/assets/{components,img,js,scss,fonts}/**/*\"",
+            "title": "gulpfile.babel.js config"
+        },
+        {
+            "location": "/web/javascript/vue/foundation/#other-notes",
+            "text": "Created separate style directory for just Vue styles.  Allow access to foundation from all components.  Easier configuration in webpack.    Installed  babel-preset-env  for always current babel engine.  Customize the  app.css  file in  ./src/assets/vue/styles  @import '~foundation-sites/scss/foundation';  @import '~font-awesome/scss/font-awesome';  - Not necessary since already in main config.  @import '~motion-ui/src/motion-ui';",
+            "title": "Other Notes"
+        },
+        {
             "location": "/php/resources/",
             "text": "Resources and notes for PHP\n\n\nSetup\n\n\nTo enable php71-apache2handler, run:\n\n \ncd /opt/local/apache2/modules\n\n\n \nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so\n\n\nResources\n\n\n\n\nGoogle Cloud Datastore Library for PHP",
             "title": "Resources"
