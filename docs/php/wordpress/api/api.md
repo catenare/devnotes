@@ -7,3 +7,10 @@
 * [Application Passwords](https://wordpress.org/plugins/application-passwords/)
 * [OAuth 1.0a Server](https://wordpress.org/plugins/rest-api-oauth1/)
 * [Basic Auth](https://github.com/WP-API/Basic-Auth)
+
+### Using JWT-Auth
+* Added to *composer.json*
+    * Under require: `"wpackagist-plugin/jwt-authentication-for-wp-rest-api": "~1"`
+* Added JWT constant to *wp-config.php* - `define('JWT_AUTH_SECRET_KEY','');`
+* Access - local server - *http://paseo.demo/wp-json/jwt-auth/v1/token* Pass in username and password via form post.
+
