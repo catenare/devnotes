@@ -19,6 +19,7 @@ pages:
 - Development:
   - Wordpress:
     - API:
+      - API: 'php/wordpress/api/api.md'
       - 'Angular': 'php/wordpress/api/angular.md'
       - 'Vuejs': 'php/wordpress/api/vuejs.md'
     - 'Setup': 'php/wordpress/setup.md'
