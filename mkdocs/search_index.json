@@ -462,7 +462,7 @@
         },
         {
             "location": "/web/front/",
-            "text": "Web Development Tools - finding tools that are really useful for editing\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\n\n\nuikit\n\n\n\n\nTemplates\n\n\n\n\nCoreUI\n - Admin template\n\n\nflakes\n - Design and frontend framework for dashboard.\n\n\nThemezy\n\n\n\n\nTools\n\n\nHTML tools\n\n\n\n\nEmmet\n \n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\n\n\n\n\nImage Sources\n\n\n\n\nPlacement Images List\n\n\nHold It\n\n\n\n\nPrototype tools\n\n\n\n\nRandom User Generator\n - get list of users.\n\n\nUIFaces\n - Faces for user interfaces\n\n\nCSS Flat Mobile Devices\n - Prototype devices in css.\n\n\nLists\n - Content for prototyping\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nCSS\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nParallax\n\n\n\n\nDavid Walsh - Used initially\n\n\nKeith Clark\n - nice 3d effect\n\n\nw3schools demo\n - Tried this one\n\n\nPure Css\n - 3d effect\n\n\n\n\nCarousel\n\n\n\n\nOwl Carousel\n - image strip carousel\n\n\nOwl Carousel Fullscreen\n\n\nResponsive Site Using Owl\n\n\n\n\n\n\nVegas Fullscreen Slideshow\n\n\nslick\n - scss for css\n\n\n\n\nFonts\n\n\n\n\nAwesome Fontstacks\n - fonts that go together\n\n\nFonts Squirrel\n\n\n\n\nOther\n\n\n\n\nBy People Web Assets Resources",
+            "text": "Web Development Tools - finding tools that are really useful for editing\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\n\n\nuikit\n\n\n\n\nTemplates\n\n\n\n\nCoreUI\n - Admin template\n\n\nflakes\n - Design and frontend framework for dashboard.\n\n\nThemezy\n\n\n\n\nTools\n\n\nHTML tools\n\n\n\n\nEmmet\n \n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\n\n\n\n\nImage Sources\n\n\n\n\nPlacement Images List\n\n\nHold It\n\n\n\n\nPrototype tools\n\n\n\n\nRandom User Generator\n - get list of users.\n\n\nUIFaces\n - Faces for user interfaces\n\n\nCSS Flat Mobile Devices\n - Prototype devices in css.\n\n\nLists\n - Content for prototyping\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nCSS\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nParallax\n\n\n\n\nDavid Walsh - Used initially\n\n\nKeith Clark\n - nice 3d effect\n\n\nw3schools demo\n - Tried this one\n\n\nPure Css\n - 3d effect\n\n\n\n\nCarousel\n\n\n\n\nOwl Carousel\n - image strip carousel\n\n\nOwl Carousel Fullscreen\n\n\nResponsive Site Using Owl\n\n\n\n\n\n\nVegas Fullscreen Slideshow\n\n\nslick\n - scss for css\n\n\n\n\nFonts\n\n\n\n\nAwesome Fontstacks\n - fonts that go together\n\n\nFonts Squirrel\n\n\n\n\nOther\n\n\n\n\nBy People Web Assets Resources\n\n\n\n\nIcons\n\n\n\n\nFeather Icons\n - Install with \nnpm install feather-icons",
             "title": "Front"
         },
         {
@@ -554,6 +554,11 @@
             "location": "/web/front/#other",
             "text": "By People Web Assets Resources",
             "title": "Other"
+        },
+        {
+            "location": "/web/front/#icons",
+            "text": "Feather Icons  - Install with  npm install feather-icons",
+            "title": "Icons"
         },
         {
             "location": "/web/css/",
@@ -726,23 +731,23 @@
             "title": "Resources"
         },
         {
-            "location": "/learning/angular/",
-            "text": "Learning the Angular Framework\n\n\nResources\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)\n\n\n\n\n\n\nAngular Documentation\n\n\nAngular & Webpack\n\n\nGotchas:\n\n\nExtractTextWebpackPlugin\n & \n[Validation] ajv version mismatch with webpack #524\n\n\nfallbackloader\n should be \nfallback\n\n\nloader\n is now \nuse\n\n\nex: (old) \nExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})\n should be (new) \nExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})\n\n\n\n\n\n\n\n\nCannot find name 'require' templateUrl - StackOverflow\n\n\n\n\nnpm install --save-dev @types/node\n\n\n\n\nIn \ntsconfig.json\n \n\n\njson\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]\n\n\n\n\n\n\nRestart \nwebpack-dev-server\n - \nnpm run server:dev\n\n        * \nNo Implicit Any\n - Change setting \n\"noImplicitAny\"\n in \ntsconfig.json\n to false and restart webpack dev server.\n        * \nTS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.\n - \nRequestOptions\n require an object. \n{headers: this.headers}\n\n        * \nUncaught Error: Can't resolve all parameters for NoteService:\n - Issue with not having \n@Injectable()\n on noteservice.",
+            "location": "/web/javascript/angular/",
+            "text": "Learning the Angular Framework\n\n\nResources\n\n\n\n\nAngular Documentation\n\n\nAngular & Webpack\n\n\nGotchas:\n\n\nExtractTextWebpackPlugin\n & \n[Validation] ajv version mismatch with webpack #524\n\n\nfallbackloader\n should be \nfallback\n\n\nloader\n is now \nuse\n\n\nex: (old) \nExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})\n should be (new) \nExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})\n\n\n\n\n\n\n\n\nCannot find name 'require' templateUrl - StackOverflow\n\n\n\n\nnpm install --save-dev @types/node\n\n\n\n\nIn \ntsconfig.json\n \n\n\njson\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]\n\n\n\n\n\n\nRestart \nwebpack-dev-server\n - \nnpm run server:dev\n\n        * \nNo Implicit Any\n - Change setting \n\"noImplicitAny\"\n in \ntsconfig.json\n to false and restart webpack dev server.\n        * \nTS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.\n - \nRequestOptions\n require an object. \n{headers: this.headers}\n\n        * \nUncaught Error: Can't resolve all parameters for NoteService:\n - Issue with not having \n@Injectable()\n on noteservice.",
             "title": "Learning Angular"
         },
         {
-            "location": "/learning/angular/#learning-the-angular-framework",
+            "location": "/web/javascript/angular/#learning-the-angular-framework",
             "text": "",
             "title": "Learning the Angular Framework"
         },
         {
-            "location": "/learning/angular/#resources",
-            "text": "Angular 2 Fundamentals  - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to  Webpack  Github Repo - Retain App  Webpack config is out of date (for the latest webpack)    Angular Documentation  Angular & Webpack  Gotchas:  ExtractTextWebpackPlugin  &  [Validation] ajv version mismatch with webpack #524  fallbackloader  should be  fallback  loader  is now  use  ex: (old)  ExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})  should be (new)  ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})     Cannot find name 'require' templateUrl - StackOverflow   npm install --save-dev @types/node   In  tsconfig.json    json\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]    Restart  webpack-dev-server  -  npm run server:dev \n        *  No Implicit Any  - Change setting  \"noImplicitAny\"  in  tsconfig.json  to false and restart webpack dev server.\n        *  TS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.  -  RequestOptions  require an object.  {headers: this.headers} \n        *  Uncaught Error: Can't resolve all parameters for NoteService:  - Issue with not having  @Injectable()  on noteservice.",
+            "location": "/web/javascript/angular/#resources",
+            "text": "Angular Documentation  Angular & Webpack  Gotchas:  ExtractTextWebpackPlugin  &  [Validation] ajv version mismatch with webpack #524  fallbackloader  should be  fallback  loader  is now  use  ex: (old)  ExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})  should be (new)  ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})     Cannot find name 'require' templateUrl - StackOverflow   npm install --save-dev @types/node   In  tsconfig.json    json\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]    Restart  webpack-dev-server  -  npm run server:dev \n        *  No Implicit Any  - Change setting  \"noImplicitAny\"  in  tsconfig.json  to false and restart webpack dev server.\n        *  TS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.  -  RequestOptions  require an object.  {headers: this.headers} \n        *  Uncaught Error: Can't resolve all parameters for NoteService:  - Issue with not having  @Injectable()  on noteservice.",
             "title": "Resources"
         },
         {
             "location": "/web/javascript/vue/notes/",
-            "text": "General notes while developing with Vue\n\n\nMissing filters\n\n\n\n\nVue filters no longer included.\n\n\nvue2-filters\n - Restore vue1 filters\n\n\n\n\n\n\nUse methods on \nv-for\n rather than filter. Call the item as a method\n\n\nEx:\n\n\n<li v-for=\" story in famous(stories) \" >\n\n\n\n\n\n\n\n\n    methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },\n\n\n\n\nTypeScript Notes\n\n\n\n\nVue Typescript\n\n\nvue-class-component\n\n\nnpm install vue-class-component\n - Component annotations for Vue.\n\n\n\n\n// tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}",
+            "text": "General notes while developing with Vue\n\n\nMissing filters\n\n\n\n\nVue filters no longer included.\n\n\nvue2-filters\n - Restore vue1 filters\n\n\n\n\n\n\nUse methods on \nv-for\n rather than filter. Call the item as a method\n\n\nEx:\n\n\n<li v-for=\" story in famous(stories) \" >\n\n\n\n\n\n\n\n\n    methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },\n\n\n\n\nTypeScript Notes\n\n\n\n\nVue Typescript\n\n\nvue-class-component\n\n\nnpm install vue-class-component\n - Component annotations for Vue.\n\n\n\n\n// tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}\n\n\n\n\nVue Components\n\n\n\n\nUnknown Custom Element Error\n\n\nInclude component globally\n\n\n\n\nimport Hello from '../vue/components/Hello'\nVue.component('hello', Hello)\n\n\n\n\n* Now available globally\n\n\n\n\n\nInclude component locally",
             "title": "notes"
         },
         {
@@ -759,6 +764,11 @@
             "location": "/web/javascript/vue/notes/#typescript-notes",
             "text": "Vue Typescript  vue-class-component  npm install vue-class-component  - Component annotations for Vue.   // tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}",
             "title": "TypeScript Notes"
+        },
+        {
+            "location": "/web/javascript/vue/notes/#vue-components",
+            "text": "Unknown Custom Element Error  Include component globally   import Hello from '../vue/components/Hello'\nVue.component('hello', Hello)  * Now available globally   Include component locally",
+            "title": "Vue Components"
         },
         {
             "location": "/web/javascript/vue/vuejs/",
@@ -1546,6 +1556,26 @@
             "title": "Unix like commands"
         },
         {
+            "location": "/learning/tutorials/",
+            "text": "Tutorials\n\n\nPrototyping with HTML, CSS and JavaScript\n\n\n\n\nCreate an App Prototype\n\n\n\n\nAngular\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)",
+            "title": "Tutorials"
+        },
+        {
+            "location": "/learning/tutorials/#tutorials",
+            "text": "",
+            "title": "Tutorials"
+        },
+        {
+            "location": "/learning/tutorials/#prototyping-with-html-css-and-javascript",
+            "text": "Create an App Prototype",
+            "title": "Prototyping with HTML, CSS and JavaScript"
+        },
+        {
+            "location": "/learning/tutorials/#angular",
+            "text": "Angular 2 Fundamentals  - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to  Webpack  Github Repo - Retain App  Webpack config is out of date (for the latest webpack)",
+            "title": "Angular"
+        },
+        {
             "location": "/research/",
             "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\nLists\n\n\nAwesome Angular\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\nW3 Layouts\n\n\nFreshdesign Templates\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Awesome List\n - List of lists\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome PHP\n\n\nAwesome Angular\n\n\nAwesome Angular Components\n\n\nAwesome IOS\n - \nmain site\n\n\nAwesome Kotlin\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\nraywenderlich.com\n - IOS/development resources\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\n\n\nUnison\n - File sync utility\n\n\n\n\n\n\nReport Servers\n\n\n\n\nReportServer\n - integrates Birt reports. Open Source\n\n\n\n\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.\n\n\n\n\nOther Projects\n\n\n\n\nfreeCodeCamp\n\n\nMail For Good\n - Open Source email campaign management tool.\n\n\nConference For Good\n\n\n\n\n\n\nwhat 3 words\n - location alternative to addresses\n\n\nApostrophe CMS\n - Node.js based CMS\n\n\n\n\nEvent Management Software\n\n\n\n\nAttendize\n - self-hosted ticket sales online (think EventBrite)\n\n\nOpen Source Event Manager\n - Ruby on Rails event manager for tech conference\n\n\nOpen Conference Ware\n - Ruby on Rails conference manager.\n\n\nEvent Espresso\n - Wordpress Plugin\n\n\n\n\nRPC Framework\n\n\n\n\ngRPC\n\n\nApache Thrift\n\n\n\n\nService Providers\n\n\n\n\nChurch Insight\n - church admin software.\n\n\nPilot\n - bookkeeping software.",
             "title": "General"
@@ -1631,127 +1661,127 @@
             "title": "Service Providers"
         },
         {
-            "location": "/teach/",
+            "location": "/teaching/teach/",
             "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n\n\nForma.lms\n\n\nEliademy\n\n\nOpigno\n - Drupal based\n\n\nIlias",
             "title": "Learning Systems"
         },
         {
-            "location": "/teach/#teaching-web-development",
+            "location": "/teaching/teach/#teaching-web-development",
             "text": "",
             "title": "Teaching web development"
         },
         {
-            "location": "/teach/#teaching-tools",
+            "location": "/teaching/teach/#teaching-tools",
             "text": "Eclipse Che  Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox      Cloud9  - In the cloud IDE tool. Free basic workspace.",
             "title": "Teaching Tools"
         },
         {
-            "location": "/teach/#online-resources",
+            "location": "/teaching/teach/#online-resources",
             "text": "Codenvy  Create workspace instances using eclipse che    Thimble  Work with HTML code directly on a browser.    Codepen  Frontend development environment    Stanford CS Education Library",
             "title": "Online Resources"
         },
         {
-            "location": "/teach/#curriculum",
+            "location": "/teaching/teach/#curriculum",
             "text": "The Odin Project  Site    freeCodeCamp  Github Repo",
             "title": "Curriculum"
         },
         {
-            "location": "/teach/#scorm-tools",
+            "location": "/teaching/teach/#scorm-tools",
             "text": "eXe  - SCORM Tool",
             "title": "SCORM Tools"
         },
         {
-            "location": "/teach/#lms-tools",
+            "location": "/teaching/teach/#lms-tools",
             "text": "Open Edx  Forma.lms  Eliademy  Opigno  - Drupal based  Ilias",
             "title": "LMS Tools"
         },
         {
-            "location": "/teach/",
+            "location": "/teaching/teach/",
             "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n\n\nForma.lms\n\n\nEliademy\n\n\nOpigno\n - Drupal based\n\n\nIlias",
             "title": "Learning Sources"
         },
         {
-            "location": "/teach/#teaching-web-development",
+            "location": "/teaching/teach/#teaching-web-development",
             "text": "",
             "title": "Teaching web development"
         },
         {
-            "location": "/teach/#teaching-tools",
+            "location": "/teaching/teach/#teaching-tools",
             "text": "Eclipse Che  Provide all students with a running learner environment.  Allow them to develop without the need for a regular machine.  In a place like South Africa, all they will need is a basic terminal or laptop.  Everyone who wants to learn web development should have a computer/laptop available.  Will use the browser as the tool of choice for learning development.  Setting up with docker toolbox on Mac OS X  be sure to run  eval \"$(docker-machine env default)\"  docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start  Got it to work on docker toolbox      Cloud9  - In the cloud IDE tool. Free basic workspace.",
             "title": "Teaching Tools"
         },
         {
-            "location": "/teach/#online-resources",
+            "location": "/teaching/teach/#online-resources",
             "text": "Codenvy  Create workspace instances using eclipse che    Thimble  Work with HTML code directly on a browser.    Codepen  Frontend development environment    Stanford CS Education Library",
             "title": "Online Resources"
         },
         {
-            "location": "/teach/#curriculum",
+            "location": "/teaching/teach/#curriculum",
             "text": "The Odin Project  Site    freeCodeCamp  Github Repo",
             "title": "Curriculum"
         },
         {
-            "location": "/teach/#scorm-tools",
+            "location": "/teaching/teach/#scorm-tools",
             "text": "eXe  - SCORM Tool",
             "title": "SCORM Tools"
         },
         {
-            "location": "/teach/#lms-tools",
+            "location": "/teaching/teach/#lms-tools",
             "text": "Open Edx  Forma.lms  Eliademy  Opigno  - Drupal based  Ilias",
             "title": "LMS Tools"
         },
         {
-            "location": "/learning/html/semantic/",
+            "location": "/teaching/html/semantic/",
             "text": "Semantic HTML\n\n\n\"... HTML elements for what they are rather than how they may appear in the browser by default.\"\n\n\nReference\n\n\n\n\nMozilla Developer\n\n\n\n\nElements\n\n\n\n\nw3schools semantic elements\n\n\nWhy Use Semantic Elements\n\n\nHTML 5 Semantics",
             "title": "Semantic HTML"
         },
         {
-            "location": "/learning/html/semantic/#semantic-html",
+            "location": "/teaching/html/semantic/#semantic-html",
             "text": "",
             "title": "Semantic HTML"
         },
         {
-            "location": "/learning/html/semantic/#html-elements-for-what-they-are-rather-than-how-they-may-appear-in-the-browser-by-default",
+            "location": "/teaching/html/semantic/#html-elements-for-what-they-are-rather-than-how-they-may-appear-in-the-browser-by-default",
             "text": "",
             "title": "\"... HTML elements for what they are rather than how they may appear in the browser by default.\""
         },
         {
-            "location": "/learning/html/semantic/#reference",
+            "location": "/teaching/html/semantic/#reference",
             "text": "Mozilla Developer",
             "title": "Reference"
         },
         {
-            "location": "/learning/html/semantic/#elements",
+            "location": "/teaching/html/semantic/#elements",
             "text": "w3schools semantic elements  Why Use Semantic Elements  HTML 5 Semantics",
             "title": "Elements"
         },
         {
-            "location": "/learning/javascript/intro/",
+            "location": "/teaching/javascript/intro/",
             "text": "Introduction to learning JavaScript\n\n\nResources\n\n\n\n\nPrograms\n\n\nfreeCodeCamp\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\n\n\n\n\n\n\nList of books\n\n\n\n\nJS Books\n\n\nEloquent JavaScript\n\n\nExploring ES2016 and ES2017\n\n\nBuilding Front-End Web Apps with Plain JavaScript\n\n\nJavaScript for Cats\n\n\nLearn JavaScript\n\n\nJavaScript Allonge\n - JavaScript Allonge\n\n\nJavaScript Design Patterns\n\n\nUnderstanding ECMAScript 6\n\n\nHuman JavaScript\n\n\nSpeaking JavaScript\n\n\nProgramming JavaScript\n\n\nHTML 5 Shoot 'em Up\n\n\nBackbone Applications\n\n\nExploring ES6\n\n\n\n\n\n\n\n\nSites\n\n\n\n\nMDN Web Docs - JavaScript\n\n\nJavaScript Challenges\n\n\n\n\n\n\n\n\nCurriculum\n\n\n\n\n10 Weeks",
             "title": "Intro"
         },
         {
-            "location": "/learning/javascript/intro/#introduction-to-learning-javascript",
+            "location": "/teaching/javascript/intro/#introduction-to-learning-javascript",
             "text": "",
             "title": "Introduction to learning JavaScript"
         },
         {
-            "location": "/learning/javascript/intro/#resources",
+            "location": "/teaching/javascript/intro/#resources",
             "text": "Programs  freeCodeCamp  The Odin Project  Site       List of books   JS Books  Eloquent JavaScript  Exploring ES2016 and ES2017  Building Front-End Web Apps with Plain JavaScript  JavaScript for Cats  Learn JavaScript  JavaScript Allonge  - JavaScript Allonge  JavaScript Design Patterns  Understanding ECMAScript 6  Human JavaScript  Speaking JavaScript  Programming JavaScript  HTML 5 Shoot 'em Up  Backbone Applications  Exploring ES6     Sites   MDN Web Docs - JavaScript  JavaScript Challenges",
             "title": "Resources"
         },
         {
-            "location": "/learning/javascript/intro/#curriculum",
+            "location": "/teaching/javascript/intro/#curriculum",
             "text": "10 Weeks",
             "title": "Curriculum"
         },
         {
-            "location": "/learning/javascript/classes/class1/",
+            "location": "/teaching/javascript/classes/class1/",
             "text": "Introduction to JavaScript\n\n\n\n\nGoals\n\n\nTools\n\n\nMozilla Thimble\n - Geared towards learning\n\n\nCodePen\n - too much to get in the way.\n\n\n\n\n\n\nGitHub\n\n\nVisual Studio Code",
             "title": "Class 1"
         },
         {
-            "location": "/learning/javascript/classes/class1/#introduction-to-javascript",
+            "location": "/teaching/javascript/classes/class1/#introduction-to-javascript",
             "text": "Goals  Tools  Mozilla Thimble  - Geared towards learning  CodePen  - too much to get in the way.    GitHub  Visual Studio Code",
             "title": "Introduction to JavaScript"
         }

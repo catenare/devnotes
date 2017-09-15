@@ -124,13 +124,7 @@
     
         
     <url>
-     <loc>/research/</loc>
-     <lastmod>2017-09-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/teach/</loc>
+     <loc>/learning/tutorials/</loc>
      <lastmod>2017-09-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -140,14 +134,14 @@
     
         
     <url>
-     <loc>/teach/</loc>
+     <loc>/research/</loc>
      <lastmod>2017-09-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/teaching/teach/</loc>
+     <lastmod>2017-09-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
