@@ -47,7 +47,7 @@ pages:
     - 'JS Starter Config': 'web/javascript/startup.md'
     - 'RxJs': 'web/javascript/rxjs.md'
     - Angular:
-      - 'Learning Angular': 'learning/angular.md'
+      - 'Learning Angular': 'web/javascript/angular.md'
     - 'Vuejs':
       - 'notes': 'web/javascript/vue/notes.md' 
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
@@ -82,14 +82,16 @@ pages:
     - 'Azure': 'ops/azure.md'
   - "Mock and API Tools": 'tools.md'
   - 'Command Line': 'cmd/cmd.md'
-- Research: 
+- Learning:
+  - 'Tutorials': 'learning/tutorials.md'
+- Teaching: 
   - 'General': 'research.md'
-  - 'Learning Systems': 'teach.md'
-- 'Class Tutorials':
-  - 'Learning Sources': 'teach.md'
-  - 'HTML and CSS':
-    - 'Semantic HTML': 'learning/html/semantic.md'
-  - 'JavaScript': 
-    - 'Intro': 'learning/javascript/intro.md'
-    - 'Classes':
-      - 'Class 1': 'learning/javascript/classes/class1.md'
+  - 'Learning Systems': 'teaching/teach.md'
+  - 'Class Tutorials':
+    - 'Learning Sources': 'teaching/teach.md'
+    - 'HTML and CSS':
+      - 'Semantic HTML': 'teaching/html/semantic.md'
+    - 'JavaScript': 
+      - 'Intro': 'teaching/javascript/intro.md'
+      - 'Classes':
+        - 'Class 1': 'teaching/javascript/classes/class1.md'

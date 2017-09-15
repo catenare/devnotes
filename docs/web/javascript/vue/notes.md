@@ -42,3 +42,13 @@
   }
 }
 ```
+## Vue Components
+* [Unknown Custom Element Error](https://forum-archive.vuejs.org/topic/2036/component-inside-component-unknown-custom-element-error-vueify/4)
+* Include component globally
+```js
+import Hello from '../vue/components/Hello'
+Vue.component('hello', Hello)
+```
+    * Now available globally
+
+* Include component locally

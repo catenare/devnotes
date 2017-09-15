@@ -68,3 +68,6 @@
 
 ### Other
 * [By People Web Assets Resources](https://www.bypeople.com)
+
+### Icons
+* [Feather Icons](https://feathericons.com/) - Install with `npm install feather-icons`
