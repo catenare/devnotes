@@ -122,12 +122,14 @@
     "motion-ui": "^1.2.3",
     "url-loader": "^0.5.9",
     "vue": "^2.4.2",
+    "vue-class-component": "^5.0.2",
     "vue-hot-reload-api": "^2.1.0",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^13.0.4",
     "vue-router": "^2.7.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.4.2",
+    "vue2-filters": "^0.2.1",
     "what-input": "^4.3.1"
   }
 }

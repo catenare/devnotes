@@ -48,7 +48,8 @@ pages:
     - 'RxJs': 'web/javascript/rxjs.md'
     - Angular:
       - 'Learning Angular': 'learning/angular.md'
-    - 'Vuejs': 
+    - 'Vuejs':
+      - 'notes': 'web/javascript/vue/notes.md' 
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
       - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
       - 'Foundation Setup': 'web/javascript/vue/foundation.md'
