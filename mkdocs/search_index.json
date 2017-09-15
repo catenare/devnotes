@@ -747,7 +747,7 @@
         },
         {
             "location": "/web/javascript/vue/notes/",
-            "text": "General notes while developing with Vue\n\n\nMissing filters\n\n\n\n\nVue filters no longer included.\n\n\nvue2-filters\n - Restore vue1 filters\n\n\n\n\n\n\nUse methods on \nv-for\n rather than filter. Call the item as a method\n\n\nEx:\n\n\n<li v-for=\" story in famous(stories) \" >\n\n\n\n\n\n\n\n\n    methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },\n\n\n\n\nTypeScript Notes\n\n\n\n\nVue Typescript\n\n\nvue-class-component\n\n\nnpm install vue-class-component\n - Component annotations for Vue.\n\n\n\n\n// tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}\n\n\n\n\nVue Components\n\n\n\n\nUnknown Custom Element Error\n\n\nInclude component globally\n\n\n\n\nimport Hello from '../vue/components/Hello'\nVue.component('hello', Hello)\n\n\n\n\n* Now available globally\n\n\n\n\n\nInclude component locally",
+            "text": "General notes while developing with Vue\n\n\nUpdated Resources\n\n\n\n\nVue filters no longer included.\n\n\nvue2-filters\n - Restore vue1 filters\n\n\n\n\n\n\nUse methods on \nv-for\n rather than filter. Call the item as a method\n\n\nEx:\n\n\n<li v-for=\" story in famous(stories) \" >\n\n\n\n\n\n\n\n\n    methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },\n\n\n\n\n\n\nAjax requests for Vue\n\n\naxios\n - Replacement for vue resources http\n\n\n\n\nTypeScript Notes\n\n\n\n\nVue Typescript\n\n\nvue-class-component\n\n\nnpm install vue-class-component\n - Component annotations for Vue.\n\n\n\n\n// tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}\n\n\n\n\nVue Components\n\n\n\n\nUnknown Custom Element Error\n\n\nInclude component globally\n\n\n\n\nimport Hello from '../vue/components/Hello'\nVue.component('hello', Hello)\n\n\n\n\n* Now available globally\n\n\n\n\n\nInclude component locally",
             "title": "notes"
         },
         {
@@ -756,9 +756,9 @@
             "title": "General notes while developing with Vue"
         },
         {
-            "location": "/web/javascript/vue/notes/#missing-filters",
-            "text": "Vue filters no longer included.  vue2-filters  - Restore vue1 filters    Use methods on  v-for  rather than filter. Call the item as a method  Ex:  <li v-for=\" story in famous(stories) \" >         methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },",
-            "title": "Missing filters"
+            "location": "/web/javascript/vue/notes/#updated-resources",
+            "text": "Vue filters no longer included.  vue2-filters  - Restore vue1 filters    Use methods on  v-for  rather than filter. Call the item as a method  Ex:  <li v-for=\" story in famous(stories) \" >         methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },   Ajax requests for Vue  axios  - Replacement for vue resources http",
+            "title": "Updated Resources"
         },
         {
             "location": "/web/javascript/vue/notes/#typescript-notes",
@@ -772,7 +772,7 @@
         },
         {
             "location": "/web/javascript/vue/vuejs/",
-            "text": "Vuejs Notes\n\n\nResources\n\n\n\n\nVue\n - main site\n\n\nVue-loader\n - Using Vue with Webpack\n\n\nVue Foundation\n - template for using Foundation with Vue and Webpack\n\n\nVue Font Awesome\n\n\nVue Admin\n\n\nVuex\n\n\nVuex Rest API\n\n\n\n\nSetup with Webpack\n\n\n\n\nConfiguration Information\n\n\n\n\nNotes\n\n\n\n\nMultiple View Instances on Same Page\n\n\n\n\nWordpress\n\n\n\n\nWordpress API\n - notes for Wordpress API\n\n\n\n\nTutorials\n\n\n\n\nVue Abstract Components\n\n\nVue Lazy Load Images",
+            "text": "Vuejs Notes\n\n\nResources\n\n\n\n\nVue\n - main site\n\n\nVue-loader\n - Using Vue with Webpack\n\n\nVue Foundation\n - template for using Foundation with Vue and Webpack\n\n\nVue Font Awesome\n\n\nVue Admin\n\n\nVuex\n\n\nVuex Rest API\n\n\n\n\nReplacement resources\n\n\n\n\naxios\n - Replacement for vue resources http\n\n\nHow to use axios as your http client\n - Section on setting headers in Axios.\n\n\nAxios with Vue\n - Use in component\n\n\n\n\n\n\n\n\nSetup with Webpack\n\n\n\n\nConfiguration Information\n\n\n\n\nNotes\n\n\n\n\nMultiple View Instances on Same Page\n\n\n\n\nWordpress\n\n\n\n\nWordpress API\n - notes for Wordpress API\n\n\n\n\nTutorials\n\n\n\n\nVue Abstract Components\n\n\nVue Lazy Load Images",
             "title": "Vuejs"
         },
         {
@@ -784,6 +784,11 @@
             "location": "/web/javascript/vue/vuejs/#resources",
             "text": "Vue  - main site  Vue-loader  - Using Vue with Webpack  Vue Foundation  - template for using Foundation with Vue and Webpack  Vue Font Awesome  Vue Admin  Vuex  Vuex Rest API",
             "title": "Resources"
+        },
+        {
+            "location": "/web/javascript/vue/vuejs/#replacement-resources",
+            "text": "axios  - Replacement for vue resources http  How to use axios as your http client  - Section on setting headers in Axios.  Axios with Vue  - Use in component",
+            "title": "Replacement resources"
         },
         {
             "location": "/web/javascript/vue/vuejs/#setup-with-webpack",
@@ -1557,7 +1562,7 @@
         },
         {
             "location": "/learning/tutorials/",
-            "text": "Tutorials\n\n\nPrototyping with HTML, CSS and JavaScript\n\n\n\n\nCreate an App Prototype\n\n\n\n\nAngular\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)",
+            "text": "Tutorials\n\n\nPrototyping with HTML, CSS and JavaScript\n\n\n\n\nCreate an App Prototype\n\n\n\n\nAngular\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)\n\n\n\n\n\n\n\n\nWordpress\n\n\n\n\nREST API - Creating and deleting data\n\n\nREST API - Basic Authentication\n\n\n\n\nPlugin Development\n\n\n\n\nAjax Techniques for Object Oriented Programming\n\n\n\n\nPostCSS\n\n\n\n\nPostCSS - Create your own plugin",
             "title": "Tutorials"
         },
         {
@@ -1574,6 +1579,21 @@
             "location": "/learning/tutorials/#angular",
             "text": "Angular 2 Fundamentals  - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to  Webpack  Github Repo - Retain App  Webpack config is out of date (for the latest webpack)",
             "title": "Angular"
+        },
+        {
+            "location": "/learning/tutorials/#wordpress",
+            "text": "REST API - Creating and deleting data  REST API - Basic Authentication",
+            "title": "Wordpress"
+        },
+        {
+            "location": "/learning/tutorials/#plugin-development",
+            "text": "Ajax Techniques for Object Oriented Programming",
+            "title": "Plugin Development"
+        },
+        {
+            "location": "/learning/tutorials/#postcss",
+            "text": "PostCSS - Create your own plugin",
+            "title": "PostCSS"
         },
         {
             "location": "/research/",
@@ -1784,6 +1804,26 @@
             "location": "/teaching/javascript/classes/class1/#introduction-to-javascript",
             "text": "Goals  Tools  Mozilla Thimble  - Geared towards learning  CodePen  - too much to get in the way.    GitHub  Visual Studio Code",
             "title": "Introduction to JavaScript"
+        },
+        {
+            "location": "/teaching/javascript/tutorials/prototypewithvue/",
+            "text": "Building a protype with Vue and Marvel\n\n\n\n\nBased on \nHow to Create an App Prototype Using CSS and JavaScript\n\n\nWant to build a demo prototype but rather than using vanilla es6, Use Vue.\n\n\n\n\nGetting Started\n\n\n\n\nCreate single file component\n\n\nCreate component folder. - \nvue/components/MarvelProto\n\n\nCreate 4 files in folder. \nindex.vue\n, \nscript.ts\n, \ntemplate.html\n and \nstyles.scss\n\n\nWe are using TypeScript and SASS\n\n\n\n\n\n\nInclude all the parts of the single file component in \nindex.vue\n\n\n\n\n\n\n\n\n    <template src=\"./template.html\"></template>\n    <script lang=\"ts\" src=\"./script.ts\"></script>\n    <style scoped lang=\"scss\" src=\"./style.scss\"></style>\n\n\n\n\n\n\nDownload Marvel's \ndevices.css\n from github. \nDevices.css\n\n\nDownload the zip file.\n\n\nExpand the zip file and copy the \nassets/scss\n folder to your \nMarvelProto\n component.\n\n\nImport \ndevices.scss\n into the \nstyle.scss\n file.\n\n\n\n\n\n\nWire the component into your current application.\n\n\nIn main \napp.js\n file\n\n\nImport MarvelProto - \nimport MarvelProto from '../vue/components/MarvelProto'\n\n\nAdd to global component list - \nVue.component('marvelproto', MarvelProto)\n - can't get local import to work.\n\n\nAdd component to current root element in \nvue/components/ContactForm/template.html\n.\n\n\n\n\n\n\n\n\n\n\n\n\n<div class=\"contact-form\">\n    <marvelproto></marvelproto>\n    <pre>\n        {{ $data }}\n    </pre>\n</div>\n\n\n\n\nGetting the user data\n\n\n\n\nAxios with Vue\n\n\nWe will be retrieving random users from \nRandomUser API\n - https://randomuser.me/api/\n\n\nService for testing your code calling APIs\n\n\n\n\n\n\nGoing to use \naxios\n with \nvue\n - \nscript.ts\n file.\n\n\nGet the data when the component is created.\n\n\n\n\nimport axios from 'axios'\n\nexport default {\n\n    data: () => (\n        {\n            errors: [],\n            greeting: \"Hello World\",\n            users: [],\n        }\n    ),\n\n  created() {\n        axios(\n            {\n                method: \"GET\",\n                url: \"https://randomuser.me/api/?results=30\",\n            })\n            .then(  (response) => {\n                this.users = response.data;\n            })\n            .catch((e) => {\n                this.errors.push(e);\n            });\n    },\n}",
+            "title": "Prototyping With Vue and Marvel"
+        },
+        {
+            "location": "/teaching/javascript/tutorials/prototypewithvue/#building-a-protype-with-vue-and-marvel",
+            "text": "Based on  How to Create an App Prototype Using CSS and JavaScript  Want to build a demo prototype but rather than using vanilla es6, Use Vue.",
+            "title": "Building a protype with Vue and Marvel"
+        },
+        {
+            "location": "/teaching/javascript/tutorials/prototypewithvue/#getting-started",
+            "text": "Create single file component  Create component folder. -  vue/components/MarvelProto  Create 4 files in folder.  index.vue ,  script.ts ,  template.html  and  styles.scss  We are using TypeScript and SASS    Include all the parts of the single file component in  index.vue         <template src=\"./template.html\"></template>\n    <script lang=\"ts\" src=\"./script.ts\"></script>\n    <style scoped lang=\"scss\" src=\"./style.scss\"></style>   Download Marvel's  devices.css  from github.  Devices.css  Download the zip file.  Expand the zip file and copy the  assets/scss  folder to your  MarvelProto  component.  Import  devices.scss  into the  style.scss  file.    Wire the component into your current application.  In main  app.js  file  Import MarvelProto -  import MarvelProto from '../vue/components/MarvelProto'  Add to global component list -  Vue.component('marvelproto', MarvelProto)  - can't get local import to work.  Add component to current root element in  vue/components/ContactForm/template.html .       <div class=\"contact-form\">\n    <marvelproto></marvelproto>\n    <pre>\n        {{ $data }}\n    </pre>\n</div>",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/teaching/javascript/tutorials/prototypewithvue/#getting-the-user-data",
+            "text": "Axios with Vue  We will be retrieving random users from  RandomUser API  - https://randomuser.me/api/  Service for testing your code calling APIs    Going to use  axios  with  vue  -  script.ts  file.  Get the data when the component is created.   import axios from 'axios'\n\nexport default {\n\n    data: () => (\n        {\n            errors: [],\n            greeting: \"Hello World\",\n            users: [],\n        }\n    ),\n\n  created() {\n        axios(\n            {\n                method: \"GET\",\n                url: \"https://randomuser.me/api/?results=30\",\n            })\n            .then(  (response) => {\n                this.users = response.data;\n            })\n            .catch((e) => {\n                this.errors.push(e);\n            });\n    },\n}",
+            "title": "Getting the user data"
         }
     ]
 }
