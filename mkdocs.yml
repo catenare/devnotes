@@ -95,3 +95,5 @@ pages:
       - 'Intro': 'teaching/javascript/intro.md'
       - 'Classes':
         - 'Class 1': 'teaching/javascript/classes/class1.md'
+      - 'Tutorials':
+        - 'Prototyping With Vue and Marvel': 'teaching/javascript/tutorials/prototypewithvue.md'

@@ -1,6 +1,6 @@
 # General notes while developing with Vue
 
-## Missing filters
+## Updated Resources
 * Vue filters no longer included.
     * [vue2-filters](https://github.com/freearhey/vue2-filters) - Restore vue1 filters
 * Use methods on *v-for* rather than filter. Call the item as a method
@@ -21,6 +21,9 @@
         }
     },
 ```
+* Ajax requests for Vue
+* [axios](https://github.com/mzabriskie/axios) - Replacement for vue resources http
+
 ## TypeScript Notes
 * [Vue Typescript](https://vuejs.org/v2/guide/typescript.html)
 * [vue-class-component](https://github.com/vuejs/vue-class-component)
@@ -52,3 +55,5 @@ Vue.component('hello', Hello)
     * Now available globally
 
 * Include component locally
+
+

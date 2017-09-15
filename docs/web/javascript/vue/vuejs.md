@@ -8,6 +8,10 @@
 * [Vue Admin](https://github.com/vue-bulma/vue-admin)
 * [Vuex](https://github.com/vuejs/vuex)
 * [Vuex Rest API](https://github.com/christianmalek/vuex-rest-api)
+### Replacement resources
+* [axios](https://github.com/mzabriskie/axios) - Replacement for vue resources http
+    * [How to use axios as your http client](http://codeheaven.io/how-to-use-axios-as-your-http-client/) - Section on setting headers in Axios.
+    * [Axios with Vue](https://alligator.io/vuejs/rest-api-axios/) - Use in component
 
 ## Setup with Webpack
 * [Configuration Information](configuration.md)
