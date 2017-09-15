@@ -1,8 +1,5 @@
 # Learning the Angular Framework
 ## Resources
-* [Angular 2 Fundamentals](http://courses.angularclass.com/courses/enrolled/73288) - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to `Webpack`
-    * [Github Repo - Retain App](https://github.com/AngularClass/retain-app)
-    * Webpack config is out of date (for the latest webpack)
  * [Angular Documentation](https://angular.io/)
  * [Angular & Webpack](https://angular.io/guide/webpack)
     * Gotchas:
