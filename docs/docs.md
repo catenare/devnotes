@@ -62,6 +62,12 @@ pages:
 ## Fixing Issues with MkDocs
 404 error for home page/front page - github gh-pages hosting.
 :   *Seems like the home page has to point to an "index.md" page for it to work.*
+* RuntimeError: Click will abort further execution because Python 3 was configured to use ASCII as encoding for the environment.  Consult http://click.pocoo.org/python3/for mitigation steps.
+    * Fix with: 
+    * `> export LC_ALL=en_US.UTF-8`
+    * `> export LANG=en_US.UTF-8`
+
+
 
 ## Importing docs into Github
 * [ghp-import](https://github.com/davisp/ghp-import)
