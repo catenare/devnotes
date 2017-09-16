@@ -55,5 +55,5 @@ Vue.component('hello', Hello)
     * Now available globally
 
 * Include component locally
-
-
+* [Getting elements in vue with vanilla javascript](https://forum.vuejs.org/t/getting-elements-in-vue-with-vanilla-javascript/8668/2)
+    * this.$el.querySelector('p')
