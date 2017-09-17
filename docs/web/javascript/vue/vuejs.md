@@ -26,7 +26,14 @@
 * [Vue Abstract Components](https://alligator.io/vuejs/vue-abstract-components/)
 * [Vue Lazy Load Images](https://alligator.io/vuejs/vue-lazy-load-images/)
 
-## Importing vue components - *script.ts*
+## Importing vue components - *script.ts* - *template.html*
+```html
+<div class="grid-container">
+    <h1>{{msg}}</h1>
+    <marvel-proto></marvel-proto>
+</div>
+```
+* *script.ts*
 ```js
 import MarvelProto from './../MarvelProto/MarvelProto.vue'
 export default {
