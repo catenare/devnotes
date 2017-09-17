@@ -24,3 +24,8 @@
 ## Fixing Issues
 * "SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode."
     * Resolution: [Safari/Babel/Webpack Const declarations are not supported in strict mode #922](https://github.com/hapijs/joi/issues/922) - Don't exclue node_modules when building with webpack.
+
+## NPM Notes
+* Update npm modules
+    * `npm outdated` - list of outdated files
+    * `npm install {} {}` - install list of outdated files.

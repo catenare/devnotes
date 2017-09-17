@@ -25,3 +25,18 @@
 ## Tutorials
 * [Vue Abstract Components](https://alligator.io/vuejs/vue-abstract-components/)
 * [Vue Lazy Load Images](https://alligator.io/vuejs/vue-lazy-load-images/)
+
+## Importing vue components - *script.ts*
+```js
+import MarvelProto from './../MarvelProto/MarvelProto.vue'
+export default {
+    components: {
+        MarvelProto,
+    },
+    data: () => (
+        {
+            msg: "User List",
+        }
+    ),
+};
+```

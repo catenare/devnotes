@@ -57,3 +57,6 @@ Vue.component('hello', Hello)
 * Include component locally
 * [Getting elements in vue with vanilla javascript](https://forum.vuejs.org/t/getting-elements-in-vue-with-vanilla-javascript/8668/2)
     * this.$el.querySelector('p')
+
+### Vue Class Components - decorators for Vue
+* [Vue Class Component](https://github.com/vuejs/vue-class-component)

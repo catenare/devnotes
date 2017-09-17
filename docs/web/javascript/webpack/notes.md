@@ -37,3 +37,8 @@
 * Configure scss imports
 * In `_settings.scss` add `$fa-font-path:   "~font-awesome/fonts";` to end of the page.
 * In `app.scss` add `@import '~font-awesome/scss/font-awesome';` after `@import "settings"`.
+
+## Errors and notes
+* Issue: *Can't find variable: SockJS" in Safari on Mac and iOS*
+    * Resolve: [`eval-source-map` results in "Can't find variable: SockJS" in Safari on Mac and iOS with v2.8.x #1090](https://github.com/webpack/webpack-dev-server/issues/1090)
+    * Changed *devtool* to '#source-map'
