@@ -60,3 +60,35 @@ Vue.component('hello', Hello)
 
 ### Vue Class Components - decorators for Vue
 * [Vue Class Component](https://github.com/vuejs/vue-class-component)
+
+## Child/Parent Communication
+* How to get the parent to update it's value from the child.
+* Vuejs 2 changed how it is done. .sync has changed.
+* Components
+    * Parent - wordpress
+    * Child - story
+        * props: [story, favorite]
+* On Child
+    * button - `<button v-show="!isFavorite" @click="setFavorite" class="success button tiny">Favorite</button>` - on click, call setFavorite method.
+    * method - emit event to favorite, send the current story as the object.
+```js
+    private setFavorite() {
+        this.$emit("favorite", this.story);
+    }
+```
+* On Parent
+    * in Template - `v-on:favorite="updateFavorite(story)` - event is favorite, method is updateFavorite and pass in the story.
+```html
+    <story v-for="story in stories"
+            :key="story.id"
+            :story="story"
+            :favorite="favorite"
+    v-on:favorite="updateFavorite(story)"></story>
+```
+* method to update the favorite the current story.
+```js
+    public updateFavorite(story) {
+        this.favorite = story;
+    }
+```
+* Favorite is now pointing to the current story. Only one favorite.
