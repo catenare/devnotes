@@ -49,6 +49,4 @@
 * Run `composer update` to install necessary dependencies.
 * Activate plugin.
 
-
-
-
+## Using namespace and classes for plugin development

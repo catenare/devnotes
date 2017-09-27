@@ -46,6 +46,7 @@ pages:
     - 'General Notes': 'web/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
     - 'RxJs': 'web/javascript/rxjs.md'
+    - 'Testing': 'web/javascript/testing.md'
     - Angular:
       - 'Learning Angular': 'web/javascript/angular.md'
     - 'Vuejs':

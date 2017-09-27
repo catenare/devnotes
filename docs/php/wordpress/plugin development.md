@@ -33,3 +33,5 @@
 }
 ```
 1. Add any necessary requirements for the plugin.
+* Enable debug log in *wp-config.php*
+    * `define( 'WP_DEBUG_LOG', true );` - will write to */wp-content/debug.log* - [Debugging in Wordpress](https://codex.wordpress.org/Debugging_in_WordPress)

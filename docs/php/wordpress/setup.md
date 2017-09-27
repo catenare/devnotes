@@ -303,4 +303,3 @@ ssl_certificate_key /etc/letsencrypt/live/api.martinsonline.org/privkey.pem; # m
 
 * [nginx config gist](https://gist.github.com/evansolomon/2274120)
     * Notes for rewrite rules in nginx
-    
