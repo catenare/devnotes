@@ -202,7 +202,7 @@
         },
         {
             "location": "/php/wordpress/plugin development/",
-            "text": "Building a custom wordpress plugin.\n\n\n\n\nPlugin is hosted on github\n\n\nPlugin automatically installed by composer\n\n\nCan develop plugin in Wordpress and push changes to github.\n\n\nWill update installed plugin point to the github repo\n\n\n\n\nResources\n\n\n\n\nBoilerplate template - \nWORDPRESS PLUGIN BOILERPLATE GENERATOR\n\n\nGenerateWP \nGenerate for WordPress Developers\n\n\nDocs\n\n\nDeveloper Plugin: Essential for WordPress Theme Developemnt\n\n\nHow to Build a Wordpress Plugin\n\n\n\n\n\n\n\n\nSetup for development\n\n\n\n\nCreate \ncomposer.json\n file in root directory. - \ncomposer init\n\n\nAdd \n\"type\": \"wordpress-plugin\"\n to get composer to install it in the wordpress plugin directory\n\n\n\n\n{\n  \"name\": \"\",\n  \"description\": \"\",\n  \"authors\": [\n    {\n      \"name\": \"Johan Martin\",\n      \"homepage\": \"http://www.johan-martin.com\",\n      \"role\": \"developer\"\n    }\n  ],\n  \"keywords\":[\n    \"Wordpress\",\n    \"Plug-in\",\n  ],\n  \"type\": \"wordpress-plugin\"\n}\n\n\n\n\n\n\nAdd any necessary requirements for the plugin.",
+            "text": "Building a custom wordpress plugin.\n\n\n\n\nPlugin is hosted on github\n\n\nPlugin automatically installed by composer\n\n\nCan develop plugin in Wordpress and push changes to github.\n\n\nWill update installed plugin point to the github repo\n\n\n\n\nResources\n\n\n\n\nBoilerplate template - \nWORDPRESS PLUGIN BOILERPLATE GENERATOR\n\n\nGenerateWP \nGenerate for WordPress Developers\n\n\nDocs\n\n\nDeveloper Plugin: Essential for WordPress Theme Developemnt\n\n\nHow to Build a Wordpress Plugin\n\n\n\n\n\n\n\n\nSetup for development\n\n\n\n\nCreate \ncomposer.json\n file in root directory. - \ncomposer init\n\n\nAdd \n\"type\": \"wordpress-plugin\"\n to get composer to install it in the wordpress plugin directory\n\n\n\n\n{\n  \"name\": \"\",\n  \"description\": \"\",\n  \"authors\": [\n    {\n      \"name\": \"Johan Martin\",\n      \"homepage\": \"http://www.johan-martin.com\",\n      \"role\": \"developer\"\n    }\n  ],\n  \"keywords\":[\n    \"Wordpress\",\n    \"Plug-in\",\n  ],\n  \"type\": \"wordpress-plugin\"\n}\n\n\n\n\n\n\nAdd any necessary requirements for the plugin.\n\n\nEnable debug log in \nwp-config.php\n\n\ndefine( 'WP_DEBUG_LOG', true );\n - will write to \n/wp-content/debug.log\n - \nDebugging in Wordpress",
             "title": "Plugin Dev"
         },
         {
@@ -217,7 +217,7 @@
         },
         {
             "location": "/php/wordpress/plugin development/#setup-for-development",
-            "text": "Create  composer.json  file in root directory. -  composer init  Add  \"type\": \"wordpress-plugin\"  to get composer to install it in the wordpress plugin directory   {\n  \"name\": \"\",\n  \"description\": \"\",\n  \"authors\": [\n    {\n      \"name\": \"Johan Martin\",\n      \"homepage\": \"http://www.johan-martin.com\",\n      \"role\": \"developer\"\n    }\n  ],\n  \"keywords\":[\n    \"Wordpress\",\n    \"Plug-in\",\n  ],\n  \"type\": \"wordpress-plugin\"\n}   Add any necessary requirements for the plugin.",
+            "text": "Create  composer.json  file in root directory. -  composer init  Add  \"type\": \"wordpress-plugin\"  to get composer to install it in the wordpress plugin directory   {\n  \"name\": \"\",\n  \"description\": \"\",\n  \"authors\": [\n    {\n      \"name\": \"Johan Martin\",\n      \"homepage\": \"http://www.johan-martin.com\",\n      \"role\": \"developer\"\n    }\n  ],\n  \"keywords\":[\n    \"Wordpress\",\n    \"Plug-in\",\n  ],\n  \"type\": \"wordpress-plugin\"\n}   Add any necessary requirements for the plugin.  Enable debug log in  wp-config.php  define( 'WP_DEBUG_LOG', true );  - will write to  /wp-content/debug.log  -  Debugging in Wordpress",
             "title": "Setup for development"
         },
         {
@@ -582,7 +582,7 @@
         },
         {
             "location": "/web/javascript/webpack/notes/",
-            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.\n\n\n\n\n\n\n\n\nfont-awesome config with webpack and foundation\n\n\n\n\nwebpack config - allow to process image and font files.\n\n\n\n\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }\n\n\n\n\n\n\nConfigure scss imports\n\n\nIn \n_settings.scss\n add \n$fa-font-path:   \"~font-awesome/fonts\";\n to end of the page.\n\n\nIn \napp.scss\n add \n@import '~font-awesome/scss/font-awesome';\n after \n@import \"settings\"\n.",
+            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\nWebpack Chain\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.\n\n\n\n\n\n\n\n\nfont-awesome config with webpack and foundation\n\n\n\n\nwebpack config - allow to process image and font files.\n\n\n\n\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }\n\n\n\n\n\n\nConfigure scss imports\n\n\nIn \n_settings.scss\n add \n$fa-font-path:   \"~font-awesome/fonts\";\n to end of the page.\n\n\nIn \napp.scss\n add \n@import '~font-awesome/scss/font-awesome';\n after \n@import \"settings\"\n.\n\n\n\n\nErrors and notes\n\n\n\n\nIssue: \nCan't find variable: SockJS\" in Safari on Mac and iOS\n\n\nResolve: \neval-source-map\n results in \"Can't find variable: SockJS\" in Safari on Mac and iOS with v2.8.x #1090\n\n\nChanged \ndevtool\n to '#source-map'",
             "title": "Notes"
         },
         {
@@ -592,7 +592,7 @@
         },
         {
             "location": "/web/javascript/webpack/notes/#resources",
-            "text": "Webpack Examples  Webpack Book  Lodash Plugin  Awesome Webpack  Webpack Vuejs Templates",
+            "text": "Webpack Examples  Webpack Book  Lodash Plugin  Awesome Webpack  Webpack Vuejs Templates  Webpack Chain",
             "title": "Resources"
         },
         {
@@ -609,6 +609,11 @@
             "location": "/web/javascript/webpack/notes/#font-awesome-config-with-webpack-and-foundation",
             "text": "webpack config - allow to process image and font files.         {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }   Configure scss imports  In  _settings.scss  add  $fa-font-path:   \"~font-awesome/fonts\";  to end of the page.  In  app.scss  add  @import '~font-awesome/scss/font-awesome';  after  @import \"settings\" .",
             "title": "font-awesome config with webpack and foundation"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#errors-and-notes",
+            "text": "Issue:  Can't find variable: SockJS\" in Safari on Mac and iOS  Resolve:  eval-source-map  results in \"Can't find variable: SockJS\" in Safari on Mac and iOS with v2.8.x #1090  Changed  devtool  to '#source-map'",
+            "title": "Errors and notes"
         },
         {
             "location": "/web/javascript/webpack/webpack/",
@@ -642,7 +647,7 @@
         },
         {
             "location": "/web/notes/",
-            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.",
+            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.\n\n\n\n\n\n\n\n\nNPM Notes\n\n\n\n\nUpdate npm modules\n\n\nnpm outdated\n - list of outdated files\n\n\nnpm install {} {}\n - install list of outdated files.",
             "title": "General Notes"
         },
         {
@@ -674,6 +679,11 @@
             "location": "/web/notes/#fixing-issues",
             "text": "\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"  Resolution:  Safari/Babel/Webpack Const declarations are not supported in strict mode #922  - Don't exclue node_modules when building with webpack.",
             "title": "Fixing Issues"
+        },
+        {
+            "location": "/web/notes/#npm-notes",
+            "text": "Update npm modules  npm outdated  - list of outdated files  npm install {} {}  - install list of outdated files.",
+            "title": "NPM Notes"
         },
         {
             "location": "/web/javascript/startup/",
@@ -731,6 +741,71 @@
             "title": "Resources"
         },
         {
+            "location": "/web/javascript/testing/general/",
+            "text": "Testing\n\n\nTAP\n\n\n\n\nTest Anything Protocol\n\n\ntap-spec\n - output similar to Mocha\n\n\nFaucet\n - TAP Reporter\n\n\n\n\n\n\n\n\nTape\n\n\n\n\nWhy I use Tape...",
+            "title": "Intro"
+        },
+        {
+            "location": "/web/javascript/testing/general/#testing",
+            "text": "",
+            "title": "Testing"
+        },
+        {
+            "location": "/web/javascript/testing/general/#tap",
+            "text": "Test Anything Protocol  tap-spec  - output similar to Mocha  Faucet  - TAP Reporter",
+            "title": "TAP"
+        },
+        {
+            "location": "/web/javascript/testing/general/#tape",
+            "text": "Why I use Tape...",
+            "title": "Tape"
+        },
+        {
+            "location": "/web/javascript/testing/tape/",
+            "text": "Testing with Tape\n\n\nRequirements\n\n\n\n\nUsing typescript for development\n\n\nUsing webpack for hot reload and packaging.\n\n\n\n\nTape\n\n\n\n\nTape\n\n\nTesting JavaScript Modules with Tape\n\n\nSeems to be simpler to get up and running then the other frameworks.\n\n\nCan run the tests in node.\n\n\nSuperTest\n - API Testing.\n\n\n\n\nSetup\n\n\n\n\nwebpack-tape-run\n - run tests in webapck\n\n\nTS-Node\n - Run Typescript in Node.js.\n\n\nExperimenting with TS-Node\n\n\n\n\n\n\n\n\nTypescript Dependencies\n\n\n\n\n@types/tape\n\n\nawesome-typescript-loader\n\n\ntslint\n\n\ntsnode\n\n\n\n\nTape Dependencies\n\n\n\n\nFaucet\n - TAP Reporter\n\n\n\n\nConfiguration Example\n\n\n\n\npackage.json\n\n\n\n\n\"scripts\": {\n    \"start\": \"npm-run-all --parallel dev:server lint:watch\",\n    \"watch\": \"webpack -w -d\",\n    \"build\": \"webpack -d\",\n    \"dev:server\": \"webpack-dev-server --hot --inline --progress --colors\",\n    \"lint\": \"esw webpack.config.* src --color\",\n    \"lint:watch\": \"npm run lint -- --watch\",\n    \"test\": \"node_modules/.bin/ts-node node_modules/.bin/tape src/tests/*.ts | node_modules/.bin/faucet\"\n  },\n  \"author\": \"Johan Martin <martin.johan@johan-martin.com> (http://www.johan-martin.com/)\",\n  \"license\": \"ISC\",\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@types/tape\": \"^4.2.30\",\n    \"awesome-typescript-loader\": \"^3.2.3\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-preset-env\": \"^1.6.0\",\n    \"babel-preset-latest\": \"^6.24.1\",\n    \"electron\": \"^1.7.8\",\n    \"eslint\": \"^4.7.2\",\n    \"eslint-config-standard\": \"^10.2.1\",\n    \"eslint-plugin-import\": \"^2.7.0\",\n    \"eslint-plugin-node\": \"^5.1.1\",\n    \"eslint-plugin-promise\": \"^3.5.0\",\n    \"eslint-plugin-standard\": \"^3.0.1\",\n    \"eslint-watch\": \"^3.1.2\",\n    \"faucet\": \"0.0.1\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"npm-run-all\": \"^4.1.1\",\n    \"tap-spec\": \"^4.1.1\",\n    \"tape\": \"^4.8.0\",\n    \"ts-node\": \"^3.3.0\",\n    \"tslint\": \"^5.7.0\",\n    \"typescript\": \"^2.5.3\",\n    \"webpack\": \"^3.6.0\",\n    \"webpack-dev-server\": \"^2.9.0\",\n    \"webpack-tape-run\": \"0.0.7\"\n  },\n  \"babel\": {\n    \"presets\": [\n      [\n        \"env\",\n        {\n          \"targets\": {\n            \"browsers\": [\n              \"last 2 versions\",\n              \"ie >= 7\"\n            ]\n          }\n        }\n      ]\n    ]\n  }\n\n\n\n\nIssues\n\n\n\n\nError: \n\"Module not found: Error: Can't resolve 'fs' in\"\n\n\nBrowser Testing and Code Coverage with Karma, Tape, and Webpack\n\n\nResolved by adding below to webpack.config.js:\n\n\n\n\n\n\n\n\nnode: {\n    fs: 'empty'\n  },",
+            "title": "Tape"
+        },
+        {
+            "location": "/web/javascript/testing/tape/#testing-with-tape",
+            "text": "",
+            "title": "Testing with Tape"
+        },
+        {
+            "location": "/web/javascript/testing/tape/#requirements",
+            "text": "Using typescript for development  Using webpack for hot reload and packaging.",
+            "title": "Requirements"
+        },
+        {
+            "location": "/web/javascript/testing/tape/#tape",
+            "text": "Tape  Testing JavaScript Modules with Tape  Seems to be simpler to get up and running then the other frameworks.  Can run the tests in node.  SuperTest  - API Testing.",
+            "title": "Tape"
+        },
+        {
+            "location": "/web/javascript/testing/tape/#setup",
+            "text": "webpack-tape-run  - run tests in webapck  TS-Node  - Run Typescript in Node.js.  Experimenting with TS-Node",
+            "title": "Setup"
+        },
+        {
+            "location": "/web/javascript/testing/tape/#typescript-dependencies",
+            "text": "@types/tape  awesome-typescript-loader  tslint  tsnode",
+            "title": "Typescript Dependencies"
+        },
+        {
+            "location": "/web/javascript/testing/tape/#tape-dependencies",
+            "text": "Faucet  - TAP Reporter",
+            "title": "Tape Dependencies"
+        },
+        {
+            "location": "/web/javascript/testing/tape/#configuration-example",
+            "text": "package.json   \"scripts\": {\n    \"start\": \"npm-run-all --parallel dev:server lint:watch\",\n    \"watch\": \"webpack -w -d\",\n    \"build\": \"webpack -d\",\n    \"dev:server\": \"webpack-dev-server --hot --inline --progress --colors\",\n    \"lint\": \"esw webpack.config.* src --color\",\n    \"lint:watch\": \"npm run lint -- --watch\",\n    \"test\": \"node_modules/.bin/ts-node node_modules/.bin/tape src/tests/*.ts | node_modules/.bin/faucet\"\n  },\n  \"author\": \"Johan Martin <martin.johan@johan-martin.com> (http://www.johan-martin.com/)\",\n  \"license\": \"ISC\",\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@types/tape\": \"^4.2.30\",\n    \"awesome-typescript-loader\": \"^3.2.3\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-preset-env\": \"^1.6.0\",\n    \"babel-preset-latest\": \"^6.24.1\",\n    \"electron\": \"^1.7.8\",\n    \"eslint\": \"^4.7.2\",\n    \"eslint-config-standard\": \"^10.2.1\",\n    \"eslint-plugin-import\": \"^2.7.0\",\n    \"eslint-plugin-node\": \"^5.1.1\",\n    \"eslint-plugin-promise\": \"^3.5.0\",\n    \"eslint-plugin-standard\": \"^3.0.1\",\n    \"eslint-watch\": \"^3.1.2\",\n    \"faucet\": \"0.0.1\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"npm-run-all\": \"^4.1.1\",\n    \"tap-spec\": \"^4.1.1\",\n    \"tape\": \"^4.8.0\",\n    \"ts-node\": \"^3.3.0\",\n    \"tslint\": \"^5.7.0\",\n    \"typescript\": \"^2.5.3\",\n    \"webpack\": \"^3.6.0\",\n    \"webpack-dev-server\": \"^2.9.0\",\n    \"webpack-tape-run\": \"0.0.7\"\n  },\n  \"babel\": {\n    \"presets\": [\n      [\n        \"env\",\n        {\n          \"targets\": {\n            \"browsers\": [\n              \"last 2 versions\",\n              \"ie >= 7\"\n            ]\n          }\n        }\n      ]\n    ]\n  }",
+            "title": "Configuration Example"
+        },
+        {
+            "location": "/web/javascript/testing/tape/#issues",
+            "text": "Error:  \"Module not found: Error: Can't resolve 'fs' in\"  Browser Testing and Code Coverage with Karma, Tape, and Webpack  Resolved by adding below to webpack.config.js:     node: {\n    fs: 'empty'\n  },",
+            "title": "Issues"
+        },
+        {
             "location": "/web/javascript/angular/",
             "text": "Learning the Angular Framework\n\n\nResources\n\n\n\n\nAngular Documentation\n\n\nAngular & Webpack\n\n\nGotchas:\n\n\nExtractTextWebpackPlugin\n & \n[Validation] ajv version mismatch with webpack #524\n\n\nfallbackloader\n should be \nfallback\n\n\nloader\n is now \nuse\n\n\nex: (old) \nExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})\n should be (new) \nExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})\n\n\n\n\n\n\n\n\nCannot find name 'require' templateUrl - StackOverflow\n\n\n\n\nnpm install --save-dev @types/node\n\n\n\n\nIn \ntsconfig.json\n \n\n\njson\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]\n\n\n\n\n\n\nRestart \nwebpack-dev-server\n - \nnpm run server:dev\n\n        * \nNo Implicit Any\n - Change setting \n\"noImplicitAny\"\n in \ntsconfig.json\n to false and restart webpack dev server.\n        * \nTS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.\n - \nRequestOptions\n require an object. \n{headers: this.headers}\n\n        * \nUncaught Error: Can't resolve all parameters for NoteService:\n - Issue with not having \n@Injectable()\n on noteservice.",
             "title": "Learning Angular"
@@ -747,7 +822,7 @@
         },
         {
             "location": "/web/javascript/vue/notes/",
-            "text": "General notes while developing with Vue\n\n\nUpdated Resources\n\n\n\n\nVue filters no longer included.\n\n\nvue2-filters\n - Restore vue1 filters\n\n\n\n\n\n\nUse methods on \nv-for\n rather than filter. Call the item as a method\n\n\nEx:\n\n\n<li v-for=\" story in famous(stories) \" >\n\n\n\n\n\n\n\n\n    methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },\n\n\n\n\n\n\nAjax requests for Vue\n\n\naxios\n - Replacement for vue resources http\n\n\n\n\nTypeScript Notes\n\n\n\n\nVue Typescript\n\n\nvue-class-component\n\n\nnpm install vue-class-component\n - Component annotations for Vue.\n\n\n\n\n// tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}\n\n\n\n\nVue Components\n\n\n\n\nUnknown Custom Element Error\n\n\nInclude component globally\n\n\n\n\nimport Hello from '../vue/components/Hello'\nVue.component('hello', Hello)\n\n\n\n\n* Now available globally\n\n\n\n\n\nInclude component locally\n\n\nGetting elements in vue with vanilla javascript\n\n\nthis.$el.querySelector('p')",
+            "text": "General notes while developing with Vue\n\n\nUpdated Resources\n\n\n\n\nVue filters no longer included.\n\n\nvue2-filters\n - Restore vue1 filters\n\n\n\n\n\n\nUse methods on \nv-for\n rather than filter. Call the item as a method\n\n\nEx:\n\n\n<li v-for=\" story in famous(stories) \" >\n\n\n\n\n\n\n\n\n    methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },\n\n\n\n\n\n\nAjax requests for Vue\n\n\naxios\n - Replacement for vue resources http\n\n\n\n\nTypeScript Notes\n\n\n\n\nVue Typescript\n\n\nvue-class-component\n\n\nnpm install vue-class-component\n - Component annotations for Vue.\n\n\n\n\n// tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}\n\n\n\n\nVue Components\n\n\n\n\nUnknown Custom Element Error\n\n\nInclude component globally\n\n\n\n\nimport Hello from '../vue/components/Hello'\nVue.component('hello', Hello)\n\n\n\n\n* Now available globally\n\n\n\n\n\nInclude component locally\n\n\nGetting elements in vue with vanilla javascript\n\n\nthis.$el.querySelector('p')\n\n\n\n\n\n\n\n\nVue Class Components - decorators for Vue\n\n\n\n\nVue Class Component\n\n\n\n\nChild/Parent Communication\n\n\n\n\nHow to get the parent to update it's value from the child.\n\n\nVuejs 2 changed how it is done. .sync has changed.\n\n\nComponents\n\n\nParent - wordpress\n\n\nChild - story\n\n\nprops: [story, favorite]\n\n\n\n\n\n\n\n\n\n\nOn Child\n\n\nbutton - \n<button v-show=\"!isFavorite\" @click=\"setFavorite\" class=\"success button tiny\">Favorite</button>\n - on click, call setFavorite method.\n\n\nmethod - emit event to favorite, send the current story as the object.\n\n\n\n\n\n\n\n\n    private setFavorite() {\n        this.$emit(\"favorite\", this.story);\n    }\n\n\n\n\n\n\nOn Parent\n\n\nin Template - \nv-on:favorite=\"updateFavorite(story)\n - event is favorite, method is updateFavorite and pass in the story.\n\n\n\n\n\n\n\n\n    <story v-for=\"story in stories\"\n            :key=\"story.id\"\n            :story=\"story\"\n            :favorite=\"favorite\"\n    v-on:favorite=\"updateFavorite(story)\"></story>\n\n\n\n\n\n\nmethod to update the favorite the current story.\n\n\n\n\n    public updateFavorite(story) {\n        this.favorite = story;\n    }\n\n\n\n\n\n\nFavorite is now pointing to the current story. Only one favorite.",
             "title": "notes"
         },
         {
@@ -771,8 +846,18 @@
             "title": "Vue Components"
         },
         {
+            "location": "/web/javascript/vue/notes/#vue-class-components-decorators-for-vue",
+            "text": "Vue Class Component",
+            "title": "Vue Class Components - decorators for Vue"
+        },
+        {
+            "location": "/web/javascript/vue/notes/#childparent-communication",
+            "text": "How to get the parent to update it's value from the child.  Vuejs 2 changed how it is done. .sync has changed.  Components  Parent - wordpress  Child - story  props: [story, favorite]      On Child  button -  <button v-show=\"!isFavorite\" @click=\"setFavorite\" class=\"success button tiny\">Favorite</button>  - on click, call setFavorite method.  method - emit event to favorite, send the current story as the object.         private setFavorite() {\n        this.$emit(\"favorite\", this.story);\n    }   On Parent  in Template -  v-on:favorite=\"updateFavorite(story)  - event is favorite, method is updateFavorite and pass in the story.         <story v-for=\"story in stories\"\n            :key=\"story.id\"\n            :story=\"story\"\n            :favorite=\"favorite\"\n    v-on:favorite=\"updateFavorite(story)\"></story>   method to update the favorite the current story.       public updateFavorite(story) {\n        this.favorite = story;\n    }   Favorite is now pointing to the current story. Only one favorite.",
+            "title": "Child/Parent Communication"
+        },
+        {
             "location": "/web/javascript/vue/vuejs/",
-            "text": "Vuejs Notes\n\n\nResources\n\n\n\n\nVue\n - main site\n\n\nVue-loader\n - Using Vue with Webpack\n\n\nVue Foundation\n - template for using Foundation with Vue and Webpack\n\n\nVue Font Awesome\n\n\nVue Admin\n\n\nVuex\n\n\nVuex Rest API\n\n\n\n\nReplacement resources\n\n\n\n\naxios\n - Replacement for vue resources http\n\n\nHow to use axios as your http client\n - Section on setting headers in Axios.\n\n\nAxios with Vue\n - Use in component\n\n\n\n\n\n\n\n\nSetup with Webpack\n\n\n\n\nConfiguration Information\n\n\n\n\nNotes\n\n\n\n\nMultiple View Instances on Same Page\n\n\n\n\nWordpress\n\n\n\n\nWordpress API\n - notes for Wordpress API\n\n\n\n\nTutorials\n\n\n\n\nVue Abstract Components\n\n\nVue Lazy Load Images",
+            "text": "Vuejs Notes\n\n\nResources\n\n\n\n\nVue\n - main site\n\n\nVue-loader\n - Using Vue with Webpack\n\n\nVue Foundation\n - template for using Foundation with Vue and Webpack\n\n\nVue Font Awesome\n\n\nVue Admin\n\n\nVuex\n\n\nVuex Rest API\n\n\n\n\nReplacement resources\n\n\n\n\naxios\n - Replacement for vue resources http\n\n\nHow to use axios as your http client\n - Section on setting headers in Axios.\n\n\nAxios with Vue\n - Use in component\n\n\n\n\n\n\n\n\nSetup with Webpack\n\n\n\n\nConfiguration Information\n\n\n\n\nNotes\n\n\n\n\nMultiple View Instances on Same Page\n\n\n\n\nWordpress\n\n\n\n\nWordpress API\n - notes for Wordpress API\n\n\n\n\nTutorials\n\n\n\n\nVue Abstract Components\n\n\nVue Lazy Load Images\n\n\n\n\nImporting vue components - \nscript.ts\n - \ntemplate.html\n\n\n<div class=\"grid-container\">\n    <h1>{{msg}}</h1>\n    <marvel-proto></marvel-proto>\n</div>\n\n\n\n\n\n\nscript.ts\n\n\n\n\nimport MarvelProto from './../MarvelProto/MarvelProto.vue'\nexport default {\n    components: {\n        MarvelProto,\n    },\n    data: () => (\n        {\n            msg: \"User List\",\n        }\n    ),\n};",
             "title": "Vuejs"
         },
         {
@@ -809,6 +894,11 @@
             "location": "/web/javascript/vue/vuejs/#tutorials",
             "text": "Vue Abstract Components  Vue Lazy Load Images",
             "title": "Tutorials"
+        },
+        {
+            "location": "/web/javascript/vue/vuejs/#importing-vue-components-scriptts-templatehtml",
+            "text": "<div class=\"grid-container\">\n    <h1>{{msg}}</h1>\n    <marvel-proto></marvel-proto>\n</div>   script.ts   import MarvelProto from './../MarvelProto/MarvelProto.vue'\nexport default {\n    components: {\n        MarvelProto,\n    },\n    data: () => (\n        {\n            msg: \"User List\",\n        }\n    ),\n};",
+            "title": "Importing vue components - script.ts - template.html"
         },
         {
             "location": "/web/javascript/vue/configuration/",
@@ -1292,7 +1382,7 @@
         },
         {
             "location": "/docs/",
-            "text": "Creating Project Documentation\n\n\nUsing \nMkDocs\n\n\n\n\nUses markdown.\n\n\nWorks with github pages.\n\n\nEvery project will have their own documentation\n\n\nStyleguide should be included (frontend)\n\n\nProject goals and requirements\n\n\nNotes about development\n\n\nSetup/install instructions\n\n\nResolution to issues (ongoing FAQ for the projects)\n\n\n\n\n\n\nDocumentation pages stay in gh-pages branch.\n\n\n\n\nSetup\n\n\n\n\nMake virtual environment for python - \nmkvirtualenv -a . docsdirectory\n\n\nInstall requirements - \npip install mkdocs pymdown-extensions pygments mkdocs-material\n\n\nCreate mkdocs project - \nmkdocs new <project>\n\n\nEnter into the project\n\n\nEdit the \nmkdocs.yml\n file\n\n\n\n\nUsing\n\n\n\n\nmkdocs serve\n - local development server \nhttp:\\localhost:8000\n\n\nmkdocs gh-deploy\n - build docs and push to gh-pages repo in github after committing.\n\n\n\n\nConfig file - \nmkdocs.yml\n\n\nsite_name: Development Notes for Johan Martin\nrepo_url: https://github.com/catenare/devnotes\nsite_description: Notes tracking for developing different apps.\nsite_author: Johan Martin (http://www.johan-martin.com)\nrepo_name: 'GitHub'\nedit_uri: edit/master/md/\n# docs_dir: 'md'\n# site_dir: 'docs'\ncopyright: Johan Martin &copy; 2017\nmarkdown_extensions:\n  - pymdownx.tilde\ntheme: 'material'\npages:\n- Home: 'index.md'\n- Section:\n  - 'Page Sites': 'page.md'\n  - Section: \n      - sub1: 'sub1.md'\n      - sub2: 'sub2.md'\n\n\n\n\nMkDocs Notes\n\n\n\n\nDocumentation\n\n\nGithub\n\n\nadded \npymdownx.tilde\n extension to get strikethrough to work.\n\n\nUsing \nmkdocs gh-deploy\n to upload docs.\n\n\nAdditional setup notes\n\n\nSquidfunk - material theme\n\n\n\n\n\n\n\n\nInstalling Markdown Extensions\n\n\n\n\nPyMdown Extensions Documentation\n\n\nInstallation: \npip install pymdown-extensions\n\n\nUsing:\n\n\npymdownx.tilde\n\n\nmarkdown.extensions.def_list\n\n\n\n\n\n\n\n\nFixing Issues with MkDocs\n\n\n404 error for home page/front page - github gh-pages hosting.\n:   \nSeems like the home page has to point to an \"index.md\" page for it to work.\n\n\nImporting docs into Github\n\n\n\n\nghp-import\n\n\nAlready being used by MkDocs.\n\n\nWould like to use with Sphinx if I convert my documentation to Sphinx.",
+            "text": "Creating Project Documentation\n\n\nUsing \nMkDocs\n\n\n\n\nUses markdown.\n\n\nWorks with github pages.\n\n\nEvery project will have their own documentation\n\n\nStyleguide should be included (frontend)\n\n\nProject goals and requirements\n\n\nNotes about development\n\n\nSetup/install instructions\n\n\nResolution to issues (ongoing FAQ for the projects)\n\n\n\n\n\n\nDocumentation pages stay in gh-pages branch.\n\n\n\n\nSetup\n\n\n\n\nMake virtual environment for python - \nmkvirtualenv -a . docsdirectory\n\n\nInstall requirements - \npip install mkdocs pymdown-extensions pygments mkdocs-material\n\n\nCreate mkdocs project - \nmkdocs new <project>\n\n\nEnter into the project\n\n\nEdit the \nmkdocs.yml\n file\n\n\n\n\nUsing\n\n\n\n\nmkdocs serve\n - local development server \nhttp:\\localhost:8000\n\n\nmkdocs gh-deploy\n - build docs and push to gh-pages repo in github after committing.\n\n\n\n\nConfig file - \nmkdocs.yml\n\n\nsite_name: Development Notes for Johan Martin\nrepo_url: https://github.com/catenare/devnotes\nsite_description: Notes tracking for developing different apps.\nsite_author: Johan Martin (http://www.johan-martin.com)\nrepo_name: 'GitHub'\nedit_uri: edit/master/md/\n# docs_dir: 'md'\n# site_dir: 'docs'\ncopyright: Johan Martin &copy; 2017\nmarkdown_extensions:\n  - pymdownx.tilde\ntheme: 'material'\npages:\n- Home: 'index.md'\n- Section:\n  - 'Page Sites': 'page.md'\n  - Section: \n      - sub1: 'sub1.md'\n      - sub2: 'sub2.md'\n\n\n\n\nMkDocs Notes\n\n\n\n\nDocumentation\n\n\nGithub\n\n\nadded \npymdownx.tilde\n extension to get strikethrough to work.\n\n\nUsing \nmkdocs gh-deploy\n to upload docs.\n\n\nAdditional setup notes\n\n\nSquidfunk - material theme\n\n\n\n\n\n\n\n\nInstalling Markdown Extensions\n\n\n\n\nPyMdown Extensions Documentation\n\n\nInstallation: \npip install pymdown-extensions\n\n\nUsing:\n\n\npymdownx.tilde\n\n\nmarkdown.extensions.def_list\n\n\n\n\n\n\n\n\nFixing Issues with MkDocs\n\n\n404 error for home page/front page - github gh-pages hosting.\n:   \nSeems like the home page has to point to an \"index.md\" page for it to work.\n\n* RuntimeError: Click will abort further execution because Python 3 was configured to use ASCII as encoding for the environment.  Consult http://click.pocoo.org/python3/for mitigation steps.\n    * Fix with: \n    * \n> export LC_ALL=en_US.UTF-8\n\n    * \n> export LANG=en_US.UTF-8\n\n\nImporting docs into Github\n\n\n\n\nghp-import\n\n\nAlready being used by MkDocs.\n\n\nWould like to use with Sphinx if I convert my documentation to Sphinx.",
             "title": "Documentation"
         },
         {
@@ -1332,7 +1422,7 @@
         },
         {
             "location": "/docs/#fixing-issues-with-mkdocs",
-            "text": "404 error for home page/front page - github gh-pages hosting.\n:    Seems like the home page has to point to an \"index.md\" page for it to work.",
+            "text": "404 error for home page/front page - github gh-pages hosting.\n:    Seems like the home page has to point to an \"index.md\" page for it to work. \n* RuntimeError: Click will abort further execution because Python 3 was configured to use ASCII as encoding for the environment.  Consult http://click.pocoo.org/python3/for mitigation steps.\n    * Fix with: \n    *  > export LC_ALL=en_US.UTF-8 \n    *  > export LANG=en_US.UTF-8",
             "title": "Fixing Issues with MkDocs"
         },
         {

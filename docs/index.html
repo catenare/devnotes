@@ -677,10 +677,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-4" type="checkbox" id="nav-2-4-4">
     
     <label class="md-nav__link" for="nav-2-4-4">
-      Angular
+      Testing
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-2-4-4">
+        Testing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/testing/general/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/testing/tape/" title="Tape" class="md-nav__link">
+      Tape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-5" type="checkbox" id="nav-2-4-5">
+    
+    <label class="md-nav__link" for="nav-2-4-5">
+      Angular
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-5">
         Angular
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -710,13 +758,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-5" type="checkbox" id="nav-2-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-6" type="checkbox" id="nav-2-4-6">
     
-    <label class="md-nav__link" for="nav-2-4-5">
+    <label class="md-nav__link" for="nav-2-4-6">
       Vuejs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-4-5">
+      <label class="md-nav__title" for="nav-2-4-6">
         Vuejs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1722,7 +1770,11 @@ pages:
 </ul>
 <h2 id="fixing-issues-with-mkdocs">Fixing Issues with MkDocs</h2>
 <p>404 error for home page/front page - github gh-pages hosting.
-:   <em>Seems like the home page has to point to an "index.md" page for it to work.</em></p>
+:   <em>Seems like the home page has to point to an "index.md" page for it to work.</em>
+* RuntimeError: Click will abort further execution because Python 3 was configured to use ASCII as encoding for the environment.  Consult http://click.pocoo.org/python3/for mitigation steps.
+    * Fix with: 
+    * <code>&gt; export LC_ALL=en_US.UTF-8</code>
+    * <code>&gt; export LANG=en_US.UTF-8</code></p>
 <h2 id="importing-docs-into-github">Importing docs into Github</h2>
 <ul>
 <li><a href="https://github.com/davisp/ghp-import">ghp-import</a></li>

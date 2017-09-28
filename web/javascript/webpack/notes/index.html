@@ -609,6 +609,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#errors-and-notes" title="Errors and notes" class="md-nav__link">
+    Errors and notes
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -746,10 +753,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-4" type="checkbox" id="nav-2-4-4">
     
     <label class="md-nav__link" for="nav-2-4-4">
-      Angular
+      Testing
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-2-4-4">
+        Testing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../testing/general/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../testing/tape/" title="Tape" class="md-nav__link">
+      Tape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-5" type="checkbox" id="nav-2-4-5">
+    
+    <label class="md-nav__link" for="nav-2-4-5">
+      Angular
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-5">
         Angular
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -779,13 +834,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-5" type="checkbox" id="nav-2-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-6" type="checkbox" id="nav-2-4-6">
     
-    <label class="md-nav__link" for="nav-2-4-5">
+    <label class="md-nav__link" for="nav-2-4-6">
       Vuejs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-4-5">
+      <label class="md-nav__title" for="nav-2-4-6">
         Vuejs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1586,6 +1641,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#errors-and-notes" title="Errors and notes" class="md-nav__link">
+    Errors and notes
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1611,6 +1673,7 @@
 <li><a href="https://github.com/lodash/lodash-webpack-plugin">Lodash Plugin</a></li>
 <li><a href="https://github.com/webpack-contrib/awesome-webpack">Awesome Webpack</a></li>
 <li><a href="https://vuejs-templates.github.io/webpack/">Webpack Vuejs Templates</a></li>
+<li><a href="https://github.com/mozilla-neutrino/webpack-chain">Webpack Chain</a></li>
 </ul>
 <h2 id="plugins">Plugins</h2>
 <ul>
@@ -1649,6 +1712,14 @@
 <li>Configure scss imports</li>
 <li>In <code>_settings.scss</code> add <code>$fa-font-path:   "~font-awesome/fonts";</code> to end of the page.</li>
 <li>In <code>app.scss</code> add <code>@import '~font-awesome/scss/font-awesome';</code> after <code>@import "settings"</code>.</li>
+</ul>
+<h2 id="errors-and-notes">Errors and notes</h2>
+<ul>
+<li>Issue: <em>Can't find variable: SockJS" in Safari on Mac and iOS</em><ul>
+<li>Resolve: <a href="https://github.com/webpack/webpack-dev-server/issues/1090"><code>eval-source-map</code> results in "Can't find variable: SockJS" in Safari on Mac and iOS with v2.8.x #1090</a></li>
+<li>Changed <em>devtool</em> to '#source-map'</li>
+</ul>
+</li>
 </ul>
                 
                   

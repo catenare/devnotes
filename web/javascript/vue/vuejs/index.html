@@ -685,10 +685,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-4" type="checkbox" id="nav-2-4-4">
     
     <label class="md-nav__link" for="nav-2-4-4">
-      Angular
+      Testing
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-2-4-4">
+        Testing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../testing/general/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../testing/tape/" title="Tape" class="md-nav__link">
+      Tape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-5" type="checkbox" id="nav-2-4-5">
+    
+    <label class="md-nav__link" for="nav-2-4-5">
+      Angular
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-5">
         Angular
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -720,13 +768,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-5" type="checkbox" id="nav-2-4-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-6" type="checkbox" id="nav-2-4-6" checked>
     
-    <label class="md-nav__link" for="nav-2-4-5">
+    <label class="md-nav__link" for="nav-2-4-6">
       Vuejs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-4-5">
+      <label class="md-nav__title" for="nav-2-4-6">
         Vuejs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -820,6 +868,13 @@
         <li class="md-nav__item">
   <a href="#tutorials" title="Tutorials" class="md-nav__link">
     Tutorials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-vue-components-scriptts-templatehtml" title="Importing vue components - script.ts - template.html" class="md-nav__link">
+    Importing vue components - script.ts - template.html
   </a>
   
 </li>
@@ -1624,6 +1679,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#importing-vue-components-scriptts-templatehtml" title="Importing vue components - script.ts - template.html" class="md-nav__link">
+    Importing vue components - script.ts - template.html
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1677,6 +1739,28 @@
 <li><a href="https://alligator.io/vuejs/vue-abstract-components/">Vue Abstract Components</a></li>
 <li><a href="https://alligator.io/vuejs/vue-lazy-load-images/">Vue Lazy Load Images</a></li>
 </ul>
+<h2 id="importing-vue-components-scriptts-templatehtml">Importing vue components - <em>script.ts</em> - <em>template.html</em></h2>
+<pre><code class="html">&lt;div class=&quot;grid-container&quot;&gt;
+    &lt;h1&gt;{{msg}}&lt;/h1&gt;
+    &lt;marvel-proto&gt;&lt;/marvel-proto&gt;
+&lt;/div&gt;
+</code></pre>
+
+<ul>
+<li><em>script.ts</em></li>
+</ul>
+<pre><code class="js">import MarvelProto from './../MarvelProto/MarvelProto.vue'
+export default {
+    components: {
+        MarvelProto,
+    },
+    data: () =&gt; (
+        {
+            msg: &quot;User List&quot;,
+        }
+    ),
+};
+</code></pre>
                 
                   
                 

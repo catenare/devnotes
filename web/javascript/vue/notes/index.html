@@ -685,10 +685,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-4" type="checkbox" id="nav-2-4-4">
     
     <label class="md-nav__link" for="nav-2-4-4">
-      Angular
+      Testing
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-2-4-4">
+        Testing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../testing/general/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../testing/tape/" title="Tape" class="md-nav__link">
+      Tape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-5" type="checkbox" id="nav-2-4-5">
+    
+    <label class="md-nav__link" for="nav-2-4-5">
+      Angular
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-5">
         Angular
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -720,13 +768,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-5" type="checkbox" id="nav-2-4-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-6" type="checkbox" id="nav-2-4-6" checked>
     
-    <label class="md-nav__link" for="nav-2-4-5">
+    <label class="md-nav__link" for="nav-2-4-6">
       Vuejs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-4-5">
+      <label class="md-nav__title" for="nav-2-4-6">
         Vuejs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -781,6 +829,26 @@
         <li class="md-nav__item">
   <a href="#vue-components" title="Vue Components" class="md-nav__link">
     Vue Components
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vue-class-components-decorators-for-vue" title="Vue Class Components - decorators for Vue" class="md-nav__link">
+    Vue Class Components - decorators for Vue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#childparent-communication" title="Child/Parent Communication" class="md-nav__link">
+    Child/Parent Communication
   </a>
   
 </li>
@@ -1568,6 +1636,26 @@
     Vue Components
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vue-class-components-decorators-for-vue" title="Vue Class Components - decorators for Vue" class="md-nav__link">
+    Vue Class Components - decorators for Vue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#childparent-communication" title="Child/Parent Communication" class="md-nav__link">
+    Child/Parent Communication
+  </a>
+  
 </li>
       
       
@@ -1658,6 +1746,57 @@ Vue.component('hello', Hello)
 <li>this.$el.querySelector('p')</li>
 </ul>
 </li>
+</ul>
+<h3 id="vue-class-components-decorators-for-vue">Vue Class Components - decorators for Vue</h3>
+<ul>
+<li><a href="https://github.com/vuejs/vue-class-component">Vue Class Component</a></li>
+</ul>
+<h2 id="childparent-communication">Child/Parent Communication</h2>
+<ul>
+<li>How to get the parent to update it's value from the child.</li>
+<li>Vuejs 2 changed how it is done. .sync has changed.</li>
+<li>Components<ul>
+<li>Parent - wordpress</li>
+<li>Child - story<ul>
+<li>props: [story, favorite]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>On Child<ul>
+<li>button - <code>&lt;button v-show="!isFavorite" @click="setFavorite" class="success button tiny"&gt;Favorite&lt;/button&gt;</code> - on click, call setFavorite method.</li>
+<li>method - emit event to favorite, send the current story as the object.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="js">    private setFavorite() {
+        this.$emit(&quot;favorite&quot;, this.story);
+    }
+</code></pre>
+
+<ul>
+<li>On Parent<ul>
+<li>in Template - <code>v-on:favorite="updateFavorite(story)</code> - event is favorite, method is updateFavorite and pass in the story.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="html">    &lt;story v-for=&quot;story in stories&quot;
+            :key=&quot;story.id&quot;
+            :story=&quot;story&quot;
+            :favorite=&quot;favorite&quot;
+    v-on:favorite=&quot;updateFavorite(story)&quot;&gt;&lt;/story&gt;
+</code></pre>
+
+<ul>
+<li>method to update the favorite the current story.</li>
+</ul>
+<pre><code class="js">    public updateFavorite(story) {
+        this.favorite = story;
+    }
+</code></pre>
+
+<ul>
+<li>Favorite is now pointing to the current story. Only one favorite.</li>
 </ul>
                 
                   
