@@ -6,6 +6,7 @@
 * [Lodash Plugin](https://github.com/lodash/lodash-webpack-plugin)
 * [Awesome Webpack](https://github.com/webpack-contrib/awesome-webpack)
 * [Webpack Vuejs Templates](https://vuejs-templates.github.io/webpack/)
+* [Webpack Chain](https://github.com/mozilla-neutrino/webpack-chain)
 
 ## Plugins
 * [Static Site Generator](https://github.com/markdalgleish/static-site-generator-webpack-plugin)
