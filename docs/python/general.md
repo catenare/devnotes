@@ -29,7 +29,8 @@ user = true
 ## Issue with readline
 * Terminal all screwed up after using python repl
 	* ~~Install python readline **pip install readline**.~~ Does not seem to work because installed in user space.
-	* Using macports. Installed ***py35-readline***. That seemed to work.
+	* ~~Using macports. Installed ***py35-readline***. That seemed to work.~~
+    * Using macports. Install ***py36-gnureadline*** and ***py35-gnureadline***.
 
 ## Create package Resources
 * [Packaging and Distributing Projects](https://packaging.python.org/tutorials/distributing-packages/) - Guide

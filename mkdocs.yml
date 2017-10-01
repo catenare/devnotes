@@ -27,8 +27,10 @@ pages:
     - 'Plugin Dev': 'php/wordpress/plugin development.md'
     - 'Theme Dev': 'php/wordpress/themes.md'
   - Database: 
-      - Postgresql: 'database.md'
-      - Migrations: 'dbmigrations.md'
+      - Migrations: 'database/dbmigrations.md'
+      - Mongo: 'database/mongo.md'
+      - Postgresql: 'database/postgresql.md'
+
   - Web:
     - 'Basic Setup': 'web/page.md'
     - 'Front End':
