@@ -246,84 +246,104 @@
             "title": "Setup for development"
         },
         {
-            "location": "/database/",
-            "text": "I nstalling Postgresql with macports\n\n\n/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start\n\n\npostgresql96 has the following notes:\n\n\n\n\nTo use the postgresql server, install the postgresql96-server port\n\n\npostgresql96-server has the following notes:\n\n\nTo create a database instance, after install do\n\n\nsudo mkdir -p /opt/local/var/db/postgresql96/defaultdb\n\n\nsudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb\n\n\nsudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'\n\n\nsudo mkdir -p /opt/local/var/db/postgresql96/defaultdb\n\n\nsudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb\n\n\nsudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsudo chmod -R 755 /opt/local/var/db/\n\n\nsudo defaults write /Library/LaunchDaemons/org.macports.postgresql96-server.plist Disabled -bool false\n\n\nsudo launchctl load /Library/LaunchDaemons/org.macports.postgresql96-server.plist\n\n\n\n\nsudo port load postgresql96-server\n\n\nsudo su - postgres\n\n\n/opt/local/lib/postgresql96/bin/psql -U postgres -d template1\n\n\n\n\nAllowing remote setup on Mac OS X installed via MacPorts\n\n\n\n\nConfig files are in \n/opt/local/var/db/postgresql96/defaultdb\n\n\nsudo su postgres\n to edit the files\n\n\nEdit pg_hba.conf - \nhost all all 192.168.1.0/24 trust\n to allow local network access\n\n\nEdit postgresq.conf - Under listen and settings - \nlisten_address = \"*\"\n will allow network access.\n\n\nsudo port unload postgresql96-server\n\n\nsudo port load postgresql96-server\n\n\nconfigure Mac OS X firewall to allow remote access\n\n\n\n\nOpen a port on Mac OS X\n\n\n\n\nOpen a port on mac os x\n\n\nEdit /etc/pf.conf\n\n\nAdd line \npass in proto tcp from any to any port 5432\n\n\nRestart firewall \nsudo pfctl -f /etc/pf.conf\n\n\n\n\nAccess database consistently\n\n\n\n\nCreate entry in \n/etc/hosts\n\n\nRemote entry \n192.168.1.103    paseodb\n\n\nLocal entry  \n127.0.0.1        db\n\n\nWill allow access without having to manually change settings everytime.\n\n\n\n\nMigrations\n\n\n\n\nSee \nMigrations\n\n\n\n\nSetup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)\n \nNever got this to work\n\n\n\n\nInstall notes \nCompiling psqlODBC on unix\n\n\nInstall iODBC Manager from \niODBC.org\n\n\nInstall Mac Version\n\n\n\n\n\n\nDownload source from \nPostgresql ODBC Project\n\n\nUntar psqlodbc source\n\n\nBuild odbc driver\n\n\n./configure --with-iodbc=/usr/local/iODBC --enable-pthreads\n\n\nmake\n\n\n\n\n\n\nInstall driver to /usr/local/lib\n\n\nsudo make Install\n\n\nfiles: psqlodbcw.so & psqlodbcw.la\n\n\n\n\n\n\nCreate odbc.ini file in /etc/\n\n\nCreate \nodbc.ini\n and \nodbcinst.ini\n files in \n/Library/ODBC\n\n\nCopied \n/usr/local/lib/psqlodbcw.so\n and \n/usr/local/lib/psqlodbcw.la\n to \n/Library/ODBC/ODBCDataSources\n\n\nAllowed to load driver from excel.\n\n\n\n\n\n\n\n\nodbcinst.ini\n\n\n[PostgreSQL]\nDescription=ODBC For Postgresql\nDriver=/Library/ODBC/ODBCDataSources/psqlodbcw.so\n\n[ODBC]\nTrace=1\nDebug=1\n\n\n\n\nodbc.ini\n\n\n[ODBC Data Sources]\npgdata = PostgreSQL native driver\n\n[pgdata]\nDriver      = /usr/local/lib/psqlodbcw.so\nHost        = localhost\nServer      = localhost\nServerName  = localhost\nDatabase    = paseo\nUserName    = paseo\nPassword    = paseo\nPort        = 5432\nDebug       = 1\n\n[ODBC]\n;Trace=1\nDebug = 1\nDebugFile = /tmp/odbcdebug.log",
-            "title": "Postgresql"
-        },
-        {
-            "location": "/database/#i-nstalling-postgresql-with-macports",
-            "text": "/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start",
-            "title": "I nstalling Postgresql with macports"
-        },
-        {
-            "location": "/database/#postgresql96-has-the-following-notes",
-            "text": "To use the postgresql server, install the postgresql96-server port  postgresql96-server has the following notes:  To create a database instance, after install do  sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb  sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb  sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'  sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb  sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb  sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'         sudo chmod -R 755 /opt/local/var/db/  sudo defaults write /Library/LaunchDaemons/org.macports.postgresql96-server.plist Disabled -bool false  sudo launchctl load /Library/LaunchDaemons/org.macports.postgresql96-server.plist   sudo port load postgresql96-server  sudo su - postgres  /opt/local/lib/postgresql96/bin/psql -U postgres -d template1",
-            "title": "postgresql96 has the following notes:"
-        },
-        {
-            "location": "/database/#allowing-remote-setup-on-mac-os-x-installed-via-macports",
-            "text": "Config files are in  /opt/local/var/db/postgresql96/defaultdb  sudo su postgres  to edit the files  Edit pg_hba.conf -  host all all 192.168.1.0/24 trust  to allow local network access  Edit postgresq.conf - Under listen and settings -  listen_address = \"*\"  will allow network access.  sudo port unload postgresql96-server  sudo port load postgresql96-server  configure Mac OS X firewall to allow remote access",
-            "title": "Allowing remote setup on Mac OS X installed via MacPorts"
-        },
-        {
-            "location": "/database/#open-a-port-on-mac-os-x",
-            "text": "Open a port on mac os x  Edit /etc/pf.conf  Add line  pass in proto tcp from any to any port 5432  Restart firewall  sudo pfctl -f /etc/pf.conf",
-            "title": "Open a port on Mac OS X"
-        },
-        {
-            "location": "/database/#access-database-consistently",
-            "text": "Create entry in  /etc/hosts  Remote entry  192.168.1.103    paseodb  Local entry   127.0.0.1        db  Will allow access without having to manually change settings everytime.",
-            "title": "Access database consistently"
-        },
-        {
-            "location": "/database/#migrations",
-            "text": "See  Migrations",
-            "title": "Migrations"
-        },
-        {
-            "location": "/database/#setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work",
-            "text": "Install notes  Compiling psqlODBC on unix  Install iODBC Manager from  iODBC.org  Install Mac Version    Download source from  Postgresql ODBC Project  Untar psqlodbc source  Build odbc driver  ./configure --with-iodbc=/usr/local/iODBC --enable-pthreads  make    Install driver to /usr/local/lib  sudo make Install  files: psqlodbcw.so & psqlodbcw.la    Create odbc.ini file in /etc/  Create  odbc.ini  and  odbcinst.ini  files in  /Library/ODBC  Copied  /usr/local/lib/psqlodbcw.so  and  /usr/local/lib/psqlodbcw.la  to  /Library/ODBC/ODBCDataSources  Allowed to load driver from excel.     odbcinst.ini  [PostgreSQL]\nDescription=ODBC For Postgresql\nDriver=/Library/ODBC/ODBCDataSources/psqlodbcw.so\n\n[ODBC]\nTrace=1\nDebug=1  odbc.ini  [ODBC Data Sources]\npgdata = PostgreSQL native driver\n\n[pgdata]\nDriver      = /usr/local/lib/psqlodbcw.so\nHost        = localhost\nServer      = localhost\nServerName  = localhost\nDatabase    = paseo\nUserName    = paseo\nPassword    = paseo\nPort        = 5432\nDebug       = 1\n\n[ODBC]\n;Trace=1\nDebug = 1\nDebugFile = /tmp/odbcdebug.log",
-            "title": "Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work"
-        },
-        {
-            "location": "/dbmigrations/",
+            "location": "/database/dbmigrations/",
             "text": "Database migrations with Flyway\n\n\nVersion control/management of updates\n\n\nUsing Flyway for database version control\n\n\n\n\nRecommendations:\n\n\nUse timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment\n\n\nLessons Learned Using Flyway DB with Distributed Version Control\n\n\nGet date on mac os x command line \ndate +%s\n\n\n\n\n\n\nUse git to track migrations - flyway notices if a migration file changes and causes issues\n\n\n\n\nSetting up flyway\n\n\n\n\nSqlite jdbc driver - \nxerial/sqlite-jdbc\n - for prototyping\n\n\nPostgresql JDBC Driver - \nPostgresql\n\n\nFlyway ant library - \nFlyway Ant\n\n\nDirectory Structure\n\n\ndb\n\n\nconf/\n\n\nflyway.conf\n\n\nlibs/\n\n\nflyway/ # Flyway ant\n\n\npostgresql-9.4.1212.jar\n\n\nant-contrib-1.0b3.jar\n\n\nmigrations\n\n\nbuild.xml\n\n\n\n\n\n\nUsing the serial date for tracking migrations - \ndate +%s\n\n\n\n\nUsing ant to run migrations\n\n\n\n\nUsing SDKMAN to manage ant - \nsdkman\n | \nAnt\n\n\nAdded Ant contrib jar\n\n\nLibs used\n\n\nant-contrib-1.0b3.jar  -- ant contrib jar - (Ant contrib task)[http://central.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar]\n\n\npostgresql-9.4.1212.jar -- \nPostgresql\n\n\nflyway - has the flyway core and ant libraries -- \nFlyway Ant\n\n\nbuild.xml in db library\n\n\n\n\nDeleting a migration.\n\n\nCan't delete a migration, only repair it.\n\n\n\n\nComment out the commands in the migration mistake you are eliminating.\n\n\nRun \nant repair\n to fix the checksums for the migrations\n\n\nValidate the current tatus \nant validate\n\n\nFlyway should be back to the status it is suppose to be in.",
             "title": "Migrations"
         },
         {
-            "location": "/dbmigrations/#database-migrations-with-flyway",
+            "location": "/database/dbmigrations/#database-migrations-with-flyway",
             "text": "",
             "title": "Database migrations with Flyway"
         },
         {
-            "location": "/dbmigrations/#version-controlmanagement-of-updates",
+            "location": "/database/dbmigrations/#version-controlmanagement-of-updates",
             "text": "",
             "title": "Version control/management of updates"
         },
         {
-            "location": "/dbmigrations/#using-flyway-for-database-version-control",
+            "location": "/database/dbmigrations/#using-flyway-for-database-version-control",
             "text": "Recommendations:  Use timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment  Lessons Learned Using Flyway DB with Distributed Version Control  Get date on mac os x command line  date +%s    Use git to track migrations - flyway notices if a migration file changes and causes issues",
             "title": "Using Flyway for database version control"
         },
         {
-            "location": "/dbmigrations/#setting-up-flyway",
+            "location": "/database/dbmigrations/#setting-up-flyway",
             "text": "Sqlite jdbc driver -  xerial/sqlite-jdbc  - for prototyping  Postgresql JDBC Driver -  Postgresql  Flyway ant library -  Flyway Ant  Directory Structure  db  conf/  flyway.conf  libs/  flyway/ # Flyway ant  postgresql-9.4.1212.jar  ant-contrib-1.0b3.jar  migrations  build.xml    Using the serial date for tracking migrations -  date +%s",
             "title": "Setting up flyway"
         },
         {
-            "location": "/dbmigrations/#using-ant-to-run-migrations",
+            "location": "/database/dbmigrations/#using-ant-to-run-migrations",
             "text": "Using SDKMAN to manage ant -  sdkman  |  Ant  Added Ant contrib jar  Libs used  ant-contrib-1.0b3.jar  -- ant contrib jar - (Ant contrib task)[http://central.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar]  postgresql-9.4.1212.jar --  Postgresql  flyway - has the flyway core and ant libraries --  Flyway Ant  build.xml in db library",
             "title": "Using ant to run migrations"
         },
         {
-            "location": "/dbmigrations/#deleting-a-migration",
+            "location": "/database/dbmigrations/#deleting-a-migration",
             "text": "",
             "title": "Deleting a migration."
         },
         {
-            "location": "/dbmigrations/#cant-delete-a-migration-only-repair-it",
+            "location": "/database/dbmigrations/#cant-delete-a-migration-only-repair-it",
             "text": "Comment out the commands in the migration mistake you are eliminating.  Run  ant repair  to fix the checksums for the migrations  Validate the current tatus  ant validate  Flyway should be back to the status it is suppose to be in.",
             "title": "Can't delete a migration, only repair it."
+        },
+        {
+            "location": "/database/mongo/",
+            "text": "Mongo DB with MacPorts\n\n\nResources\n\n\n\n\nMongo Site\n\n\n\n\nSetup\n\n\n\n\nsudo port install mongodb mongo-tools\n\n\nSetup configuration\n\n\n/opt/local/etc/mongodb.conf\n\n\n\n\n\n\n\n\ndbpath = /opt/local/var/db/mongodb\n\nbind_ip = 127.0.0.1\n\n# Running as daemon\nfork = true\n\nlogpath = /opt/local/var/log/mongodb/mongodb.log\nlogappend = true\n\n\n\n\n\n\nConfigure ~/.profile\n\n\n\n\nalias mongostart=\"sudo mongod -f /opt/local/etc/mongodb/mongod.conf --httpinterface\"\n\nmongostop_func () {\n    local mongopid = `less /opt/local/var/db/mongodb/mongod.lock`;\n    if [[ $mongopid =~ [[:digit:]] ]]; then\n        sudo kill -15 $mongopid;\n        echo mongod process $mongopid terminated;\n    else\n        echo mongo process $mongopid not exists;\n    fi\n}\n\nalias mongostop=\"mongostop_func\"\n\n\n\n\n\n\nStart the server\n\n\nmongostart\n - will need sudo password",
+            "title": "Mongo"
+        },
+        {
+            "location": "/database/mongo/#mongo-db-with-macports",
+            "text": "",
+            "title": "Mongo DB with MacPorts"
+        },
+        {
+            "location": "/database/mongo/#resources",
+            "text": "Mongo Site",
+            "title": "Resources"
+        },
+        {
+            "location": "/database/mongo/#setup",
+            "text": "sudo port install mongodb mongo-tools  Setup configuration  /opt/local/etc/mongodb.conf     dbpath = /opt/local/var/db/mongodb\n\nbind_ip = 127.0.0.1\n\n# Running as daemon\nfork = true\n\nlogpath = /opt/local/var/log/mongodb/mongodb.log\nlogappend = true   Configure ~/.profile   alias mongostart=\"sudo mongod -f /opt/local/etc/mongodb/mongod.conf --httpinterface\"\n\nmongostop_func () {\n    local mongopid = `less /opt/local/var/db/mongodb/mongod.lock`;\n    if [[ $mongopid =~ [[:digit:]] ]]; then\n        sudo kill -15 $mongopid;\n        echo mongod process $mongopid terminated;\n    else\n        echo mongo process $mongopid not exists;\n    fi\n}\n\nalias mongostop=\"mongostop_func\"   Start the server  mongostart  - will need sudo password",
+            "title": "Setup"
+        },
+        {
+            "location": "/database/postgresql/",
+            "text": "I nstalling Postgresql with macports\n\n\n/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start\n\n\npostgresql96 has the following notes:\n\n\n\n\nTo use the postgresql server, install the postgresql96-server port\n\n\npostgresql96-server has the following notes:\n\n\nTo create a database instance, after install do\n\n\nsudo mkdir -p /opt/local/var/db/postgresql96/defaultdb\n\n\nsudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb\n\n\nsudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'\n\n\nsudo mkdir -p /opt/local/var/db/postgresql96/defaultdb\n\n\nsudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb\n\n\nsudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsudo chmod -R 755 /opt/local/var/db/\n\n\nsudo defaults write /Library/LaunchDaemons/org.macports.postgresql96-server.plist Disabled -bool false\n\n\nsudo launchctl load /Library/LaunchDaemons/org.macports.postgresql96-server.plist\n\n\n\n\nsudo port load postgresql96-server\n\n\nsudo su - postgres\n\n\n/opt/local/lib/postgresql96/bin/psql -U postgres -d template1\n\n\n\n\nAllowing remote setup on Mac OS X installed via MacPorts\n\n\n\n\nConfig files are in \n/opt/local/var/db/postgresql96/defaultdb\n\n\nsudo su postgres\n to edit the files\n\n\nEdit pg_hba.conf - \nhost all all 192.168.1.0/24 trust\n to allow local network access\n\n\nEdit postgresq.conf - Under listen and settings - \nlisten_address = \"*\"\n will allow network access.\n\n\nsudo port unload postgresql96-server\n\n\nsudo port load postgresql96-server\n\n\nconfigure Mac OS X firewall to allow remote access\n\n\n\n\nOpen a port on Mac OS X\n\n\n\n\nOpen a port on mac os x\n\n\nEdit /etc/pf.conf\n\n\nAdd line \npass in proto tcp from any to any port 5432\n\n\nRestart firewall \nsudo pfctl -f /etc/pf.conf\n\n\n\n\nAccess database consistently\n\n\n\n\nCreate entry in \n/etc/hosts\n\n\nRemote entry \n192.168.1.103    paseodb\n\n\nLocal entry  \n127.0.0.1        db\n\n\nWill allow access without having to manually change settings everytime.\n\n\n\n\nMigrations\n\n\n\n\nSee \nMigrations\n\n\n\n\nSetup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)\n \nNever got this to work\n\n\n\n\nInstall notes \nCompiling psqlODBC on unix\n\n\nInstall iODBC Manager from \niODBC.org\n\n\nInstall Mac Version\n\n\n\n\n\n\nDownload source from \nPostgresql ODBC Project\n\n\nUntar psqlodbc source\n\n\nBuild odbc driver\n\n\n./configure --with-iodbc=/usr/local/iODBC --enable-pthreads\n\n\nmake\n\n\n\n\n\n\nInstall driver to /usr/local/lib\n\n\nsudo make Install\n\n\nfiles: psqlodbcw.so & psqlodbcw.la\n\n\n\n\n\n\nCreate odbc.ini file in /etc/\n\n\nCreate \nodbc.ini\n and \nodbcinst.ini\n files in \n/Library/ODBC\n\n\nCopied \n/usr/local/lib/psqlodbcw.so\n and \n/usr/local/lib/psqlodbcw.la\n to \n/Library/ODBC/ODBCDataSources\n\n\nAllowed to load driver from excel.\n\n\n\n\n\n\n\n\nodbcinst.ini\n\n\n[PostgreSQL]\nDescription=ODBC For Postgresql\nDriver=/Library/ODBC/ODBCDataSources/psqlodbcw.so\n\n[ODBC]\nTrace=1\nDebug=1\n\n\n\n\nodbc.ini\n\n\n[ODBC Data Sources]\npgdata = PostgreSQL native driver\n\n[pgdata]\nDriver      = /usr/local/lib/psqlodbcw.so\nHost        = localhost\nServer      = localhost\nServerName  = localhost\nDatabase    = paseo\nUserName    = paseo\nPassword    = paseo\nPort        = 5432\nDebug       = 1\n\n[ODBC]\n;Trace=1\nDebug = 1\nDebugFile = /tmp/odbcdebug.log",
+            "title": "Postgresql"
+        },
+        {
+            "location": "/database/postgresql/#i-nstalling-postgresql-with-macports",
+            "text": "/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start",
+            "title": "I nstalling Postgresql with macports"
+        },
+        {
+            "location": "/database/postgresql/#postgresql96-has-the-following-notes",
+            "text": "To use the postgresql server, install the postgresql96-server port  postgresql96-server has the following notes:  To create a database instance, after install do  sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb  sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb  sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'  sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb  sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb  sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'         sudo chmod -R 755 /opt/local/var/db/  sudo defaults write /Library/LaunchDaemons/org.macports.postgresql96-server.plist Disabled -bool false  sudo launchctl load /Library/LaunchDaemons/org.macports.postgresql96-server.plist   sudo port load postgresql96-server  sudo su - postgres  /opt/local/lib/postgresql96/bin/psql -U postgres -d template1",
+            "title": "postgresql96 has the following notes:"
+        },
+        {
+            "location": "/database/postgresql/#allowing-remote-setup-on-mac-os-x-installed-via-macports",
+            "text": "Config files are in  /opt/local/var/db/postgresql96/defaultdb  sudo su postgres  to edit the files  Edit pg_hba.conf -  host all all 192.168.1.0/24 trust  to allow local network access  Edit postgresq.conf - Under listen and settings -  listen_address = \"*\"  will allow network access.  sudo port unload postgresql96-server  sudo port load postgresql96-server  configure Mac OS X firewall to allow remote access",
+            "title": "Allowing remote setup on Mac OS X installed via MacPorts"
+        },
+        {
+            "location": "/database/postgresql/#open-a-port-on-mac-os-x",
+            "text": "Open a port on mac os x  Edit /etc/pf.conf  Add line  pass in proto tcp from any to any port 5432  Restart firewall  sudo pfctl -f /etc/pf.conf",
+            "title": "Open a port on Mac OS X"
+        },
+        {
+            "location": "/database/postgresql/#access-database-consistently",
+            "text": "Create entry in  /etc/hosts  Remote entry  192.168.1.103    paseodb  Local entry   127.0.0.1        db  Will allow access without having to manually change settings everytime.",
+            "title": "Access database consistently"
+        },
+        {
+            "location": "/database/postgresql/#migrations",
+            "text": "See  Migrations",
+            "title": "Migrations"
+        },
+        {
+            "location": "/database/postgresql/#setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work",
+            "text": "Install notes  Compiling psqlODBC on unix  Install iODBC Manager from  iODBC.org  Install Mac Version    Download source from  Postgresql ODBC Project  Untar psqlodbc source  Build odbc driver  ./configure --with-iodbc=/usr/local/iODBC --enable-pthreads  make    Install driver to /usr/local/lib  sudo make Install  files: psqlodbcw.so & psqlodbcw.la    Create odbc.ini file in /etc/  Create  odbc.ini  and  odbcinst.ini  files in  /Library/ODBC  Copied  /usr/local/lib/psqlodbcw.so  and  /usr/local/lib/psqlodbcw.la  to  /Library/ODBC/ODBCDataSources  Allowed to load driver from excel.     odbcinst.ini  [PostgreSQL]\nDescription=ODBC For Postgresql\nDriver=/Library/ODBC/ODBCDataSources/psqlodbcw.so\n\n[ODBC]\nTrace=1\nDebug=1  odbc.ini  [ODBC Data Sources]\npgdata = PostgreSQL native driver\n\n[pgdata]\nDriver      = /usr/local/lib/psqlodbcw.so\nHost        = localhost\nServer      = localhost\nServerName  = localhost\nDatabase    = paseo\nUserName    = paseo\nPassword    = paseo\nPort        = 5432\nDebug       = 1\n\n[ODBC]\n;Trace=1\nDebug = 1\nDebugFile = /tmp/odbcdebug.log",
+            "title": "Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work"
         },
         {
             "location": "/web/page/",
@@ -992,7 +1012,7 @@
         },
         {
             "location": "/python/general/",
-            "text": "Using Python\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.\n\n\n\n\n\n\n\n\nCreate package Resources\n\n\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide",
+            "text": "Using Python\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.\n\n\nUsing macports. Install \npy36-gnureadline\n and \npy35-gnureadline\n.\n\n\n\n\n\n\n\n\nCreate package Resources\n\n\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide",
             "title": "General"
         },
         {
@@ -1017,7 +1037,7 @@
         },
         {
             "location": "/python/general/#issue-with-readline",
-            "text": "Terminal all screwed up after using python repl  Install python readline  pip install readline .  Does not seem to work because installed in user space.  Using macports. Installed  py35-readline . That seemed to work.",
+            "text": "Terminal all screwed up after using python repl  Install python readline  pip install readline .  Does not seem to work because installed in user space.  Using macports. Installed  py35-readline . That seemed to work.  Using macports. Install  py36-gnureadline  and  py35-gnureadline .",
             "title": "Issue with readline"
         },
         {

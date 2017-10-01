@@ -13,20 +13,20 @@
         <meta name="author" content="Johan Martin (http://www.johan-martin.com)">
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
       <meta name="generator" content="mkdocs-0.16.2, mkdocs-material-1.5.1">
     
     
       
-        <title>Migrations - Development Notes for Johan Martin</title>
+        <title>Postgresql - Development Notes for Johan Martin</title>
       
     
     
-      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+      <script src="../../assets/javascripts/modernizr-56ade86843.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-8d06ab29f4.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-8d06ab29f4.css">
       
     
     
@@ -40,7 +40,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
     
   </head>
@@ -67,7 +67,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href=".." title="Development Notes for Johan Martin" class="md-icon md-icon--home md-header-nav__button">
+          <a href="../.." title="Development Notes for Johan Martin" class="md-icon md-icon--home md-header-nav__button">
           </a>
         
       </div>
@@ -88,7 +88,7 @@
                 </span>
               
             
-            Migrations
+            Postgresql
           
         </span>
       </div>
@@ -195,7 +195,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -266,7 +266,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/wordpress/api/api/" title="API" class="md-nav__link">
+    <a href="../../php/wordpress/api/api/" title="API" class="md-nav__link">
       API
     </a>
   </li>
@@ -278,7 +278,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/wordpress/api/angular/" title="Angular" class="md-nav__link">
+    <a href="../../php/wordpress/api/angular/" title="Angular" class="md-nav__link">
       Angular
     </a>
   </li>
@@ -290,7 +290,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/wordpress/api/vuejs/" title="Vuejs" class="md-nav__link">
+    <a href="../../php/wordpress/api/vuejs/" title="Vuejs" class="md-nav__link">
       Vuejs
     </a>
   </li>
@@ -307,7 +307,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/wordpress/setup/" title="Setup" class="md-nav__link">
+    <a href="../../php/wordpress/setup/" title="Setup" class="md-nav__link">
       Setup
     </a>
   </li>
@@ -319,7 +319,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/wordpress/dev/" title="Local Dev" class="md-nav__link">
+    <a href="../../php/wordpress/dev/" title="Local Dev" class="md-nav__link">
       Local Dev
     </a>
   </li>
@@ -331,7 +331,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/wordpress/plugin development/" title="Plugin Dev" class="md-nav__link">
+    <a href="../../php/wordpress/plugin development/" title="Plugin Dev" class="md-nav__link">
       Plugin Dev
     </a>
   </li>
@@ -343,7 +343,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/wordpress/themes/" title="Theme Dev" class="md-nav__link">
+    <a href="../../php/wordpress/themes/" title="Theme Dev" class="md-nav__link">
       Theme Dev
     </a>
   </li>
@@ -381,8 +381,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../database/" title="Postgresql" class="md-nav__link">
-      Postgresql
+    <a href="../dbmigrations/" title="Migrations" class="md-nav__link">
+      Migrations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mongo/" title="Mongo" class="md-nav__link">
+      Mongo
     </a>
   </li>
 
@@ -402,11 +414,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Migrations
+        Postgresql
       </label>
     
-    <a href="./" title="Migrations" class="md-nav__link md-nav__link--active">
-      Migrations
+    <a href="./" title="Postgresql" class="md-nav__link md-nav__link--active">
+      Postgresql
     </a>
     
       
@@ -420,50 +432,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#version-controlmanagement-of-updates" title="Version control/management of updates" class="md-nav__link">
-    Version control/management of updates
+  <a href="#postgresql96-has-the-following-notes" title="postgresql96 has the following notes:" class="md-nav__link">
+    postgresql96 has the following notes:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-flyway-for-database-version-control" title="Using Flyway for database version control" class="md-nav__link">
-    Using Flyway for database version control
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-flyway" title="Setting up flyway" class="md-nav__link">
-    Setting up flyway
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-ant-to-run-migrations" title="Using ant to run migrations" class="md-nav__link">
-    Using ant to run migrations
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deleting-a-migration" title="Deleting a migration." class="md-nav__link">
-    Deleting a migration.
+  <a href="#allowing-remote-setup-on-mac-os-x-installed-via-macports" title="Allowing remote setup on Mac OS X installed via MacPorts" class="md-nav__link">
+    Allowing remote setup on Mac OS X installed via MacPorts
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cant-delete-a-migration-only-repair-it" title="Can't delete a migration, only repair it." class="md-nav__link">
-    Can't delete a migration, only repair it.
+  <a href="#open-a-port-on-mac-os-x" title="Open a port on Mac OS X" class="md-nav__link">
+    Open a port on Mac OS X
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-database-consistently" title="Access database consistently" class="md-nav__link">
+    Access database consistently
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrations" title="Migrations" class="md-nav__link">
+    Migrations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work" title="Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work" class="md-nav__link">
+    Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work
+  </a>
   
 </li>
       
@@ -506,7 +518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/page/" title="Basic Setup" class="md-nav__link">
+    <a href="../../web/page/" title="Basic Setup" class="md-nav__link">
       Basic Setup
     </a>
   </li>
@@ -537,7 +549,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/foundation/" title="Foundation" class="md-nav__link">
+    <a href="../../web/foundation/" title="Foundation" class="md-nav__link">
       Foundation
     </a>
   </li>
@@ -549,7 +561,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/static/" title="Static" class="md-nav__link">
+    <a href="../../web/static/" title="Static" class="md-nav__link">
       Static
     </a>
   </li>
@@ -561,7 +573,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/front/" title="Front" class="md-nav__link">
+    <a href="../../web/front/" title="Front" class="md-nav__link">
       Front
     </a>
   </li>
@@ -573,7 +585,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/css/" title="CSS" class="md-nav__link">
+    <a href="../../web/css/" title="CSS" class="md-nav__link">
       CSS
     </a>
   </li>
@@ -628,7 +640,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/webpack/notes/" title="Notes" class="md-nav__link">
+    <a href="../../web/javascript/webpack/notes/" title="Notes" class="md-nav__link">
       Notes
     </a>
   </li>
@@ -659,7 +671,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/webpack/webpack/" title="Basic" class="md-nav__link">
+    <a href="../../web/javascript/webpack/webpack/" title="Basic" class="md-nav__link">
       Basic
     </a>
   </li>
@@ -671,7 +683,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/webpack/html-webpack-plugin/" title="html-webpack-plugin" class="md-nav__link">
+    <a href="../../web/javascript/webpack/html-webpack-plugin/" title="html-webpack-plugin" class="md-nav__link">
       html-webpack-plugin
     </a>
   </li>
@@ -722,7 +734,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/notes/" title="General Notes" class="md-nav__link">
+    <a href="../../web/notes/" title="General Notes" class="md-nav__link">
       General Notes
     </a>
   </li>
@@ -734,7 +746,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/startup/" title="JS Starter Config" class="md-nav__link">
+    <a href="../../web/javascript/startup/" title="JS Starter Config" class="md-nav__link">
       JS Starter Config
     </a>
   </li>
@@ -746,7 +758,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/rxjs/" title="RxJs" class="md-nav__link">
+    <a href="../../web/javascript/rxjs/" title="RxJs" class="md-nav__link">
       RxJs
     </a>
   </li>
@@ -777,7 +789,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/testing/general/" title="Intro" class="md-nav__link">
+    <a href="../../web/javascript/testing/general/" title="Intro" class="md-nav__link">
       Intro
     </a>
   </li>
@@ -789,7 +801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/testing/tape/" title="Tape" class="md-nav__link">
+    <a href="../../web/javascript/testing/tape/" title="Tape" class="md-nav__link">
       Tape
     </a>
   </li>
@@ -825,7 +837,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/angular/" title="Learning Angular" class="md-nav__link">
+    <a href="../../web/javascript/angular/" title="Learning Angular" class="md-nav__link">
       Learning Angular
     </a>
   </li>
@@ -861,7 +873,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/vue/notes/" title="notes" class="md-nav__link">
+    <a href="../../web/javascript/vue/notes/" title="notes" class="md-nav__link">
       notes
     </a>
   </li>
@@ -873,7 +885,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/vue/vuejs/" title="Vuejs" class="md-nav__link">
+    <a href="../../web/javascript/vue/vuejs/" title="Vuejs" class="md-nav__link">
       Vuejs
     </a>
   </li>
@@ -885,7 +897,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/vue/configuration/" title="Vuejs Setup" class="md-nav__link">
+    <a href="../../web/javascript/vue/configuration/" title="Vuejs Setup" class="md-nav__link">
       Vuejs Setup
     </a>
   </li>
@@ -897,7 +909,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../web/javascript/vue/foundation/" title="Foundation Setup" class="md-nav__link">
+    <a href="../../web/javascript/vue/foundation/" title="Foundation Setup" class="md-nav__link">
       Foundation Setup
     </a>
   </li>
@@ -938,7 +950,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/resources/" title="Resources" class="md-nav__link">
+    <a href="../../php/resources/" title="Resources" class="md-nav__link">
       Resources
     </a>
   </li>
@@ -950,7 +962,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../php/composer/" title="Composer" class="md-nav__link">
+    <a href="../../php/composer/" title="Composer" class="md-nav__link">
       Composer
     </a>
   </li>
@@ -986,7 +998,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../python/general/" title="General" class="md-nav__link">
+    <a href="../../python/general/" title="General" class="md-nav__link">
       General
     </a>
   </li>
@@ -998,7 +1010,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../python/packages/" title="Packages" class="md-nav__link">
+    <a href="../../python/packages/" title="Packages" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -1015,7 +1027,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ruby/" title="Ruby" class="md-nav__link">
+    <a href="../../ruby/" title="Ruby" class="md-nav__link">
       Ruby
     </a>
   </li>
@@ -1027,7 +1039,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../java/" title="Java" class="md-nav__link">
+    <a href="../../java/" title="Java" class="md-nav__link">
       Java
     </a>
   </li>
@@ -1058,7 +1070,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../spring/" title="Spring" class="md-nav__link">
+    <a href="../../spring/" title="Spring" class="md-nav__link">
       Spring
     </a>
   </li>
@@ -1094,7 +1106,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../git/" title="Git" class="md-nav__link">
+    <a href="../../git/" title="Git" class="md-nav__link">
       Git
     </a>
   </li>
@@ -1130,7 +1142,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mobile/general/" title="General" class="md-nav__link">
+    <a href="../../mobile/general/" title="General" class="md-nav__link">
       General
     </a>
   </li>
@@ -1142,7 +1154,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mobile/mobile/" title="Research" class="md-nav__link">
+    <a href="../../mobile/mobile/" title="Research" class="md-nav__link">
       Research
     </a>
   </li>
@@ -1154,7 +1166,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mobile/mobilenotes/" title="Mobile Dev Notes" class="md-nav__link">
+    <a href="../../mobile/mobilenotes/" title="Mobile Dev Notes" class="md-nav__link">
       Mobile Dev Notes
     </a>
   </li>
@@ -1166,7 +1178,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mobile/ionic/" title="Ionic" class="md-nav__link">
+    <a href="../../mobile/ionic/" title="Ionic" class="md-nav__link">
       Ionic
     </a>
   </li>
@@ -1188,7 +1200,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cms/" title="Content Management" class="md-nav__link">
+    <a href="../../cms/" title="Content Management" class="md-nav__link">
       Content Management
     </a>
   </li>
@@ -1219,7 +1231,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../reporting/" title="Reporting" class="md-nav__link">
+    <a href="../../reporting/" title="Reporting" class="md-nav__link">
       Reporting
     </a>
   </li>
@@ -1231,7 +1243,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../docs/" title="Documentation" class="md-nav__link">
+    <a href="../../docs/" title="Documentation" class="md-nav__link">
       Documentation
     </a>
   </li>
@@ -1262,7 +1274,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ops/vagrant/" title="Vagrant" class="md-nav__link">
+    <a href="../../ops/vagrant/" title="Vagrant" class="md-nav__link">
       Vagrant
     </a>
   </li>
@@ -1274,7 +1286,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ops/docker/" title="Docker" class="md-nav__link">
+    <a href="../../ops/docker/" title="Docker" class="md-nav__link">
       Docker
     </a>
   </li>
@@ -1286,7 +1298,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ops/amazon/" title="Amazon" class="md-nav__link">
+    <a href="../../ops/amazon/" title="Amazon" class="md-nav__link">
       Amazon
     </a>
   </li>
@@ -1298,7 +1310,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ops/azure/" title="Azure" class="md-nav__link">
+    <a href="../../ops/azure/" title="Azure" class="md-nav__link">
       Azure
     </a>
   </li>
@@ -1315,7 +1327,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tools/" title="Mock and API Tools" class="md-nav__link">
+    <a href="../../tools/" title="Mock and API Tools" class="md-nav__link">
       Mock and API Tools
     </a>
   </li>
@@ -1327,7 +1339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cmd/cmd/" title="Command Line" class="md-nav__link">
+    <a href="../../cmd/cmd/" title="Command Line" class="md-nav__link">
       Command Line
     </a>
   </li>
@@ -1363,7 +1375,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../learning/tutorials/" title="Tutorials" class="md-nav__link">
+    <a href="../../learning/tutorials/" title="Tutorials" class="md-nav__link">
       Tutorials
     </a>
   </li>
@@ -1399,7 +1411,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../research/" title="General" class="md-nav__link">
+    <a href="../../research/" title="General" class="md-nav__link">
       General
     </a>
   </li>
@@ -1411,7 +1423,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../teaching/teach/" title="Learning Systems" class="md-nav__link">
+    <a href="../../teaching/teach/" title="Learning Systems" class="md-nav__link">
       Learning Systems
     </a>
   </li>
@@ -1442,7 +1454,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../teaching/teach/" title="Learning Sources" class="md-nav__link">
+    <a href="../../teaching/teach/" title="Learning Sources" class="md-nav__link">
       Learning Sources
     </a>
   </li>
@@ -1473,7 +1485,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../teaching/html/semantic/" title="Semantic HTML" class="md-nav__link">
+    <a href="../../teaching/html/semantic/" title="Semantic HTML" class="md-nav__link">
       Semantic HTML
     </a>
   </li>
@@ -1509,7 +1521,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../teaching/javascript/intro/" title="Intro" class="md-nav__link">
+    <a href="../../teaching/javascript/intro/" title="Intro" class="md-nav__link">
       Intro
     </a>
   </li>
@@ -1540,7 +1552,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../teaching/javascript/classes/class1/" title="Class 1" class="md-nav__link">
+    <a href="../../teaching/javascript/classes/class1/" title="Class 1" class="md-nav__link">
       Class 1
     </a>
   </li>
@@ -1576,7 +1588,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../teaching/javascript/tutorials/prototypewithvue/" title="Prototyping With Vue and Marvel" class="md-nav__link">
+    <a href="../../teaching/javascript/tutorials/prototypewithvue/" title="Prototyping With Vue and Marvel" class="md-nav__link">
       Prototyping With Vue and Marvel
     </a>
   </li>
@@ -1623,50 +1635,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#version-controlmanagement-of-updates" title="Version control/management of updates" class="md-nav__link">
-    Version control/management of updates
+  <a href="#postgresql96-has-the-following-notes" title="postgresql96 has the following notes:" class="md-nav__link">
+    postgresql96 has the following notes:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-flyway-for-database-version-control" title="Using Flyway for database version control" class="md-nav__link">
-    Using Flyway for database version control
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-flyway" title="Setting up flyway" class="md-nav__link">
-    Setting up flyway
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-ant-to-run-migrations" title="Using ant to run migrations" class="md-nav__link">
-    Using ant to run migrations
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deleting-a-migration" title="Deleting a migration." class="md-nav__link">
-    Deleting a migration.
+  <a href="#allowing-remote-setup-on-mac-os-x-installed-via-macports" title="Allowing remote setup on Mac OS X installed via MacPorts" class="md-nav__link">
+    Allowing remote setup on Mac OS X installed via MacPorts
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cant-delete-a-migration-only-repair-it" title="Can't delete a migration, only repair it." class="md-nav__link">
-    Can't delete a migration, only repair it.
+  <a href="#open-a-port-on-mac-os-x" title="Open a port on Mac OS X" class="md-nav__link">
+    Open a port on Mac OS X
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-database-consistently" title="Access database consistently" class="md-nav__link">
+    Access database consistently
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrations" title="Migrations" class="md-nav__link">
+    Migrations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work" title="Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work" class="md-nav__link">
+    Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible) Never got this to work
+  </a>
   
 </li>
       
@@ -1684,58 +1696,121 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/catenare/devnotes/edit/master/md/dbmigrations.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/catenare/devnotes/edit/master/md/database/postgresql.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="database-migrations-with-flyway">Database migrations with Flyway</h1>
-<h2 id="version-controlmanagement-of-updates">Version control/management of updates</h2>
-<h2 id="using-flyway-for-database-version-control">Using Flyway for database version control</h2>
+                <h1 id="i-nstalling-postgresql-with-macports">I nstalling Postgresql with macports</h1>
+<p><del>/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start</del></p>
+<h2 id="postgresql96-has-the-following-notes">postgresql96 has the following notes:</h2>
 <ul>
-<li>Recommendations:</li>
-<li>Use timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment<ul>
-<li><a href="http://www.jeremyjarrell.com/using-flyway-db-with-distributed-version-control/">Lessons Learned Using Flyway DB with Distributed Version Control</a></li>
-<li>Get date on mac os x command line <code>date +%s</code></li>
+<li>To use the postgresql server, install the postgresql96-server port<ul>
+<li>postgresql96-server has the following notes:<ul>
+<li>To create a database instance, after install do<ul>
+<li>sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb</li>
+<li>sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb</li>
+<li>sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'</li>
+<li>sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb</li>
+<li>sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb</li>
+<li>sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'</li>
 </ul>
 </li>
-<li>Use git to track migrations - flyway notices if a migration file changes and causes issues</li>
-</ul>
-<h2 id="setting-up-flyway">Setting up flyway</h2>
-<ul>
-<li>Sqlite jdbc driver - <a href="https://bitbucket.org/xerial/sqlite-jdbc/downloads">xerial/sqlite-jdbc</a> - for prototyping</li>
-<li>Postgresql JDBC Driver - <a href="https://jdbc.postgresql.org">Postgresql</a></li>
-<li>Flyway ant library - <a href="https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/4.0.3/flyway-ant-4.0.3.tar.gz">Flyway Ant</a></li>
-<li>Directory Structure</li>
-<li>db<ul>
-<li>conf/</li>
-<li>flyway.conf</li>
-<li>libs/</li>
-<li>flyway/ # Flyway ant</li>
-<li>postgresql-9.4.1212.jar</li>
-<li>ant-contrib-1.0b3.jar</li>
-<li>migrations</li>
-<li>build.xml</li>
 </ul>
 </li>
-<li>Using the serial date for tracking migrations - <code>date +%s</code></li>
 </ul>
-<h2 id="using-ant-to-run-migrations">Using ant to run migrations</h2>
+</li>
+</ul>
+<p><del>sudo chmod -R 755 /opt/local/var/db/</del>
+<del>sudo defaults write /Library/LaunchDaemons/org.macports.postgresql96-server.plist Disabled -bool false</del>
+<del>sudo launchctl load /Library/LaunchDaemons/org.macports.postgresql96-server.plist</del></p>
 <ul>
-<li>Using SDKMAN to manage ant - <a href="http://sdkman.io">sdkman</a> | <a href="http://ant.apache.org/manual/index.html">Ant</a></li>
-<li>Added Ant contrib jar</li>
-<li>Libs used</li>
-<li>ant-contrib-1.0b3.jar  -- ant contrib jar - (Ant contrib task)[http://central.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar]</li>
-<li>postgresql-9.4.1212.jar -- <a href="https://jdbc.postgresql.org">Postgresql</a></li>
-<li>flyway - has the flyway core and ant libraries -- <a href="https://repo1.maven.org/maven2/org/flywaydb/flyway-ant/4.0.3/flyway-ant-4.0.3.tar.gz">Flyway Ant</a></li>
-<li>build.xml in db library</li>
+<li>sudo port load postgresql96-server</li>
+<li>sudo su - postgres</li>
+<li>/opt/local/lib/postgresql96/bin/psql -U postgres -d template1</li>
 </ul>
-<h2 id="deleting-a-migration">Deleting a migration.</h2>
-<h3 id="cant-delete-a-migration-only-repair-it">Can't delete a migration, only repair it.</h3>
-<ol>
-<li>Comment out the commands in the migration mistake you are eliminating.</li>
-<li>Run <code>ant repair</code> to fix the checksums for the migrations</li>
-<li>Validate the current tatus <code>ant validate</code></li>
-<li>Flyway should be back to the status it is suppose to be in.</li>
-</ol>
+<h2 id="allowing-remote-setup-on-mac-os-x-installed-via-macports">Allowing remote setup on Mac OS X installed via MacPorts</h2>
+<ul>
+<li>Config files are in <em>/opt/local/var/db/postgresql96/defaultdb</em></li>
+<li><code>sudo su postgres</code> to edit the files</li>
+<li>Edit pg_hba.conf - <code>host all all 192.168.1.0/24 trust</code> to allow local network access</li>
+<li>Edit postgresq.conf - Under listen and settings - <code>listen_address = "*"</code> will allow network access.</li>
+<li>sudo port unload postgresql96-server</li>
+<li>sudo port load postgresql96-server</li>
+<li>configure Mac OS X firewall to allow remote access</li>
+</ul>
+<h3 id="open-a-port-on-mac-os-x">Open a port on Mac OS X</h3>
+<ul>
+<li><a href="https://gauravsohoni.wordpress.com/2015/04/14/mac-osx-open-port/">Open a port on mac os x</a></li>
+<li>Edit /etc/pf.conf</li>
+<li>Add line <code>pass in proto tcp from any to any port 5432</code></li>
+<li>Restart firewall <code>sudo pfctl -f /etc/pf.conf</code></li>
+</ul>
+<h3 id="access-database-consistently">Access database consistently</h3>
+<ul>
+<li>Create entry in <code>/etc/hosts</code></li>
+<li>Remote entry <code>192.168.1.103    paseodb</code></li>
+<li>Local entry  <code>127.0.0.1        db</code></li>
+<li>Will allow access without having to manually change settings everytime.</li>
+</ul>
+<h2 id="migrations">Migrations</h2>
+<ul>
+<li>See <a href="../dbmigrations/">Migrations</a></li>
+</ul>
+<h2 id="setup-odbc-driver-for-postgresql-on-mac-os-x-excel-compatible-never-got-this-to-work"><del>Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)</del> <code>Never got this to work</code></h2>
+<ul>
+<li>Install notes <a href="https://odbc.postgresql.org/docs/unix-compilation.html">Compiling psqlODBC on unix</a></li>
+<li>Install iODBC Manager from <a href="http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors">iODBC.org</a><ul>
+<li>Install Mac Version</li>
+</ul>
+</li>
+<li>Download source from <a href="https://www.postgresql.org/ftp/odbc/versions/src/">Postgresql ODBC Project</a></li>
+<li>Untar psqlodbc source</li>
+<li>Build odbc driver<ul>
+<li><code>./configure --with-iodbc=/usr/local/iODBC --enable-pthreads</code></li>
+<li><code>make</code></li>
+</ul>
+</li>
+<li>Install driver to /usr/local/lib<ul>
+<li><code>sudo make Install</code></li>
+<li>files: psqlodbcw.so &amp; psqlodbcw.la</li>
+</ul>
+</li>
+<li><del>Create odbc.ini file in /etc/</del></li>
+<li>Create <em>odbc.ini</em> and <em>odbcinst.ini</em> files in <em>/Library/ODBC</em></li>
+<li>Copied <em>/usr/local/lib/psqlodbcw.so</em> and <em>/usr/local/lib/psqlodbcw.la</em> to <em>/Library/ODBC/ODBCDataSources</em><ul>
+<li>Allowed to load driver from excel.</li>
+</ul>
+</li>
+</ul>
+<p>odbcinst.ini</p>
+<pre><code>[PostgreSQL]
+Description=ODBC For Postgresql
+Driver=/Library/ODBC/ODBCDataSources/psqlodbcw.so
+
+[ODBC]
+Trace=1
+Debug=1
+</code></pre>
+
+<p>odbc.ini</p>
+<pre><code>[ODBC Data Sources]
+pgdata = PostgreSQL native driver
+
+[pgdata]
+Driver      = /usr/local/lib/psqlodbcw.so
+Host        = localhost
+Server      = localhost
+ServerName  = localhost
+Database    = paseo
+UserName    = paseo
+Password    = paseo
+Port        = 5432
+Debug       = 1
+
+[ODBC]
+;Trace=1
+Debug = 1
+DebugFile = /tmp/odbcdebug.log
+</code></pre>
                 
                   
                 
@@ -1754,7 +1829,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../database/" title="Postgresql" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mongo/" title="Mongo" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1763,13 +1838,13 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Postgresql
+                Mongo
               </span>
             </div>
           </a>
         
         
-          <a href="../web/page/" title="Basic Setup" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../web/page/" title="Basic Setup" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
@@ -1809,8 +1884,8 @@
       
     </div>
     
-      <script src="../assets/javascripts/application-c6f9af8d0c.js"></script>
-      <script>app.initialize({url:{base:".."}})</script>
+      <script src="../../assets/javascripts/application-c6f9af8d0c.js"></script>
+      <script>app.initialize({url:{base:"../.."}})</script>
       
     
     
