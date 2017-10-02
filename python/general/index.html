@@ -948,6 +948,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#notices" title="Notices" class="md-nav__link">
+    Notices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pip" title="Pip" class="md-nav__link">
     Pip
   </a>
@@ -984,6 +991,13 @@
         <li class="md-nav__item">
   <a href="#create-package-resources" title="Create package Resources" class="md-nav__link">
     Create package Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-issues" title="Other issues" class="md-nav__link">
+    Other issues
   </a>
   
 </li>
@@ -1628,6 +1642,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#notices" title="Notices" class="md-nav__link">
+    Notices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pip" title="Pip" class="md-nav__link">
     Pip
   </a>
@@ -1668,6 +1689,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#other-issues" title="Other issues" class="md-nav__link">
+    Other issues
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1686,6 +1714,10 @@
                 
                 
                 <h1 id="using-python">Using Python</h1>
+<h2 id="notices">Notices</h2>
+<ul>
+<li>Using python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.</li>
+</ul>
 <h2 id="pip">Pip</h2>
 <ul>
 <li>Error message: <em>"Can not perform a '--user' install. User site-packages are not visible in this virtualenv"</em></li>
@@ -1735,6 +1767,34 @@ user = true
 <li><a href="https://packaging.python.org/tutorials/distributing-packages/">Packaging and Distributing Projects</a> - Guide</li>
 <li><a href="http://turbo87.github.io/setup.py/">setup.py cheatsheet</a></li>
 <li><a href="https://github.com/kennethreitz/setup.py">setup.py guide</a></li>
+</ul>
+<h2 id="other-issues">Other issues</h2>
+<ul>
+<li>Reload module from REPL<ul>
+<li><code>import imp</code></li>
+<li><code>import.reload(module)</code> - module is the name of the module to reload</li>
+</ul>
+</li>
+<li>Import packages from current directory<ul>
+<li><code>from . import package</code> - will look in current directory for the package</li>
+</ul>
+</li>
+<li>Shuffle list - random sequence for list<ul>
+<li><code>import random</code></li>
+<li><code>list = [a,b,c,d]</code></li>
+<li><code>random.shuffle(list)</code></li>
+<li><code>for item in list:</code></li>
+</ul>
+</li>
+<li>Issue with ASCII environment<ul>
+<li><a href="http://click.pocoo.org/6/python3/#python-3-surrogate-handling">Python 3 Surrogate handling</a></li>
+<li>Add to <em>.profile</em><ul>
+<li><code>export LC_ALL=en_US.UTF-8</code></li>
+<li><code>export LANG=en_US.UTF-8</code></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
                 
                   

@@ -1012,13 +1012,18 @@
         },
         {
             "location": "/python/general/",
-            "text": "Using Python\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.\n\n\nUsing macports. Install \npy36-gnureadline\n and \npy35-gnureadline\n.\n\n\n\n\n\n\n\n\nCreate package Resources\n\n\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide",
+            "text": "Using Python\n\n\nNotices\n\n\n\n\nUsing python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.\n\n\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nInstall python readline \npip install readline\n.\n Does not seem to work because installed in user space.\n\n\nUsing macports. Installed \npy35-readline\n. That seemed to work.\n\n\nUsing macports. Install \npy36-gnureadline\n and \npy35-gnureadline\n.\n\n\n\n\n\n\n\n\nCreate package Resources\n\n\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide\n\n\n\n\nOther issues\n\n\n\n\nReload module from REPL\n\n\nimport imp\n\n\nimport.reload(module)\n - module is the name of the module to reload\n\n\n\n\n\n\nImport packages from current directory\n\n\nfrom . import package\n - will look in current directory for the package\n\n\n\n\n\n\nShuffle list - random sequence for list\n\n\nimport random\n\n\nlist = [a,b,c,d]\n\n\nrandom.shuffle(list)\n\n\nfor item in list:\n\n\n\n\n\n\nIssue with ASCII environment\n\n\nPython 3 Surrogate handling\n\n\nAdd to \n.profile\n\n\nexport LC_ALL=en_US.UTF-8\n\n\nexport LANG=en_US.UTF-8",
             "title": "General"
         },
         {
             "location": "/python/general/#using-python",
             "text": "",
             "title": "Using Python"
+        },
+        {
+            "location": "/python/general/#notices",
+            "text": "Using python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.",
+            "title": "Notices"
         },
         {
             "location": "/python/general/#pip",
@@ -1044,6 +1049,11 @@
             "location": "/python/general/#create-package-resources",
             "text": "Packaging and Distributing Projects  - Guide  setup.py cheatsheet  setup.py guide",
             "title": "Create package Resources"
+        },
+        {
+            "location": "/python/general/#other-issues",
+            "text": "Reload module from REPL  import imp  import.reload(module)  - module is the name of the module to reload    Import packages from current directory  from . import package  - will look in current directory for the package    Shuffle list - random sequence for list  import random  list = [a,b,c,d]  random.shuffle(list)  for item in list:    Issue with ASCII environment  Python 3 Surrogate handling  Add to  .profile  export LC_ALL=en_US.UTF-8  export LANG=en_US.UTF-8",
+            "title": "Other issues"
         },
         {
             "location": "/python/packages/",
