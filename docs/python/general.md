@@ -1,6 +1,9 @@
 # Using Python
-## Pip
 
+## Notices
+* Using python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.
+
+## Pip
 * Error message: *"Can not perform a '--user' install. User site-packages are not visible in this virtualenv"*
 * Problems **~/Library/Application Support/pip/pip.conf** contains **user=true**
 * Resolution: Override the config in your virtualenv pip config file
@@ -36,3 +39,20 @@ user = true
 * [Packaging and Distributing Projects](https://packaging.python.org/tutorials/distributing-packages/) - Guide
 * [setup.py cheatsheet](http://turbo87.github.io/setup.py/)
 * [setup.py guide](https://github.com/kennethreitz/setup.py)
+
+## Other issues
+* Reload module from REPL
+    * `import imp`
+    * `import.reload(module)` - module is the name of the module to reload
+* Import packages from current directory
+    * `from . import package` - will look in current directory for the package
+* Shuffle list - random sequence for list
+    * `import random`
+    * `list = [a,b,c,d]`
+    * `random.shuffle(list)`
+    * `for item in list:`
+* Issue with ASCII environment
+    * [Python 3 Surrogate handling](http://click.pocoo.org/6/python3/#python-3-surrogate-handling)
+    * Add to *.profile*
+        * `export LC_ALL=en_US.UTF-8`
+        * `export LANG=en_US.UTF-8`
