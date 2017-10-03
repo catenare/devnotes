@@ -1756,9 +1756,7 @@ user = true
 <h2 id="issue-with-readline">Issue with readline</h2>
 <ul>
 <li>Terminal all screwed up after using python repl<ul>
-<li><del>Install python readline <strong>pip install readline</strong>.</del> Does not seem to work because installed in user space.</li>
-<li><del>Using macports. Installed <strong><em>py35-readline</em></strong>. That seemed to work.</del></li>
-<li>Using macports. Install <strong><em>py36-gnureadline</em></strong> and <strong><em>py35-gnureadline</em></strong>.</li>
+<li><code>sudo port install python36 +readline</code> - fixes issues with python and terminal Mac OS X</li>
 </ul>
 </li>
 </ul>
@@ -1788,7 +1786,7 @@ user = true
 </li>
 <li>Issue with ASCII environment<ul>
 <li><a href="http://click.pocoo.org/6/python3/#python-3-surrogate-handling">Python 3 Surrogate handling</a></li>
-<li>Add to <em>.profile</em><ul>
+<li>Add to <em>~/.profile</em><ul>
 <li><code>export LC_ALL=en_US.UTF-8</code></li>
 <li><code>export LANG=en_US.UTF-8</code></li>
 </ul>
