@@ -31,9 +31,7 @@ user = true
 
 ## Issue with readline
 * Terminal all screwed up after using python repl
-	* ~~Install python readline **pip install readline**.~~ Does not seem to work because installed in user space.
-	* ~~Using macports. Installed ***py35-readline***. That seemed to work.~~
-    * Using macports. Install ***py36-gnureadline*** and ***py35-gnureadline***.
+    * `sudo port install python36 +readline` - fixes issues with python and terminal Mac OS X
 
 ## Create package Resources
 * [Packaging and Distributing Projects](https://packaging.python.org/tutorials/distributing-packages/) - Guide
@@ -53,6 +51,6 @@ user = true
     * `for item in list:`
 * Issue with ASCII environment
     * [Python 3 Surrogate handling](http://click.pocoo.org/6/python3/#python-3-surrogate-handling)
-    * Add to *.profile*
+    * Add to *~/.profile*
         * `export LC_ALL=en_US.UTF-8`
         * `export LANG=en_US.UTF-8`
