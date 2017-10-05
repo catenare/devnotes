@@ -12,6 +12,7 @@
 * [CoreUI](http://coreui.io/) - Admin template
 * [flakes](http://getflakes.com/) - Design and frontend framework for dashboard.
 * [Themezy](https://www.themezy.com/)
+* [Templated](https://templated.co/)
 
 ## Tools
 ### HTML tools
