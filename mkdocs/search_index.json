@@ -402,7 +402,7 @@
         },
         {
             "location": "/web/static/",
-            "text": "Static Web Page Development\n\n\nSetting for static page development\n\n\n\n\nUsing \nfoundation from zurb\n\n\n\n\nInstallation - \nFoundation for Sites\n\n\n\n\nInstall foundation-cli - \nnpm install --global foundation-cli\n\n\nCreate new project -  \nfoundation new --framework sites --template zurb\n\n\nUse \nfoundation-zurb-template\n\n\n\n\n\n\nInstall building block - \nfoundation kits install news\n\n\nfoundation watch\n\n\n\n\nResources\n\n\n\n\nPlacement Images List\n\n\nHold It\n\n\n\n\n\n\n\n\nWeb Development Tools - finding tools that are really useful for editing\n\n\nTools\n\n\nEmmet\n\n\n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\nNow use webpack\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\n\n\nGenerating Color Palettes\n\n\n\n\nColors Palette Generator\n\n\nCanva Color Palette\n\n\nPictaculous",
+            "text": "Static Web Page Development\n\n\nSetting for static page development\n\n\n\n\nUsing \nfoundation from zurb\n\n\n\n\nInstallation - \nFoundation for Sites\n\n\n\n\nInstall foundation-cli - \nnpm install --global foundation-cli\n\n\nCreate new project -  \nfoundation new --framework sites --template zurb\n\n\nUse \nfoundation-zurb-template\n\n\n\n\n\n\nInstall building block - \nfoundation kits install news\n\n\nfoundation watch\n\n\n\n\nResources\n\n\n\n\nPlacement Images List\n\n\nHold It\n\n\n\n\n\n\n\n\nWeb Development Tools - finding tools that are really useful for editing\n\n\nTools\n\n\nEmmet\n\n\n\n\nExpand html shortcuts\n\n\nCan really reduce the amount of typing necessary to to create a page.\n\n\n\n\nLocal static file server\n\n\n\n\nbrowser-sync\n\n\nNode.js tool \n\n\nbrowser-sync start --server --directory --files \"**/*\"\n\n\n\n\nCombine JS files\n\n\n\n\nRequirejs\n\n\nFor r.js to work (without explicit path) \nnpm install -g requirejs\n\n\n\n\nWeb Framework\n\n\n\n\nFoundation\n\n\nSetup a new project \nfoundation new\n\n\n\n\nSass Notes\n\n\n\n\nUsing sassc and libsass\n\n\nlibSass\n\n\nExport the library location so node-sass can use it.\n\n\n\n\nCompiling compass sass config.rb file\n\n\n\n\nCompiling compass sass with sass c library.\n\n\nsass --compass sass/styles.scss test,css\n - seems to read the compass config.rb file to find paths.\n\n\n\n\n\n\nNow use webpack\n\n\n\n\nMaintainable CSS\n\n\n\n\nBEM (block, element, modifier) methodology\n\n\n\n\nResources\n\n\n\n\nhttps://frontend.directory\n\n\nHTML Templates\n\n\n\n\n\n\n\n\n\n\nLoaders\n\n\n\n\nCSS Loaders\n\n\nCSS Spin\n\n\nCSS Loader\n\n\nSVG Loaders\n\n\nCSS Loader animations\n\n\n\n\n\n\n\n\nGenerating Color Palettes\n\n\n\n\nColors Palette Generator\n\n\nCanva Color Palette\n\n\nPictaculous",
             "title": "Static"
         },
         {
@@ -472,8 +472,13 @@
         },
         {
             "location": "/web/static/#resources_1",
-            "text": "https://frontend.directory",
+            "text": "https://frontend.directory  HTML Templates",
             "title": "Resources"
+        },
+        {
+            "location": "/web/static/#loaders",
+            "text": "CSS Loaders  CSS Spin  CSS Loader  SVG Loaders  CSS Loader animations",
+            "title": "Loaders"
         },
         {
             "location": "/web/static/#generating-color-palettes",
