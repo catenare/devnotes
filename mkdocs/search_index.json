@@ -666,44 +666,54 @@
             "title": "My Notes"
         },
         {
-            "location": "/web/notes/",
-            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.\n\n\n\n\n\n\n\n\nNPM Notes\n\n\n\n\nUpdate npm modules\n\n\nnpm outdated\n - list of outdated files\n\n\nnpm install {} {}\n - install list of outdated files.",
+            "location": "/web/javascript/notes/",
+            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.\n\n\n\n\n\n\n\n\nNPM Notes\n\n\n\n\nUpdate npm modules\n\n\nnpm outdated\n - list of outdated files\n\n\nnpm install {} {}\n - install list of outdated files.\n\n\n\n\n\n\n\n\nOther\n\n\nPromises\n\n\n\n\nlet getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)\n\n\n\n\nexport default getCaptcha;\n\n\nimport Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'\n\n\nwindow.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){\n\n\n        grecaptcha.render('html_element', {\n            'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n        });\n\n    })\n    .catch(function(error){\n        console.log(error);\n    });\n\n\n\n}\n\n\nnew Vue({\n  el: '#app',\n  render: h => h(App)\n})",
             "title": "General Notes"
         },
         {
-            "location": "/web/notes/#notes-related-to-front-end-development",
+            "location": "/web/javascript/notes/#notes-related-to-front-end-development",
             "text": "",
             "title": "Notes related to front-end development."
         },
         {
-            "location": "/web/notes/#javascript-notes",
+            "location": "/web/javascript/notes/#javascript-notes",
             "text": "",
             "title": "JavaScript Notes"
         },
         {
-            "location": "/web/notes/#resources",
+            "location": "/web/javascript/notes/#resources",
             "text": "Standard JS  - JavaScript Standard Style  Rules for writing JavaScript.    Awesome Angular  You Don't Need jQuery",
             "title": "Resources"
         },
         {
-            "location": "/web/notes/#tools",
+            "location": "/web/javascript/notes/#tools",
             "text": "Lerna  - Manage JavaScript projects with multiple packages  Colmena  - Colmena - CMS system.",
             "title": "Tools"
         },
         {
-            "location": "/web/notes/#ionic",
+            "location": "/web/javascript/notes/#ionic",
             "text": "Include font-awesome fonts in project.   FontAwesome in Ionic   Install FontAwesome -  npm install --save font-awesome   Create script to copy fonts into  www/assets/fonts    Set path to fonts in SCSS -  $fa-font-path: /assets/fonts;  in  scr/app/app.scss ;    https://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.",
             "title": "Ionic"
         },
         {
-            "location": "/web/notes/#fixing-issues",
+            "location": "/web/javascript/notes/#fixing-issues",
             "text": "\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"  Resolution:  Safari/Babel/Webpack Const declarations are not supported in strict mode #922  - Don't exclue node_modules when building with webpack.",
             "title": "Fixing Issues"
         },
         {
-            "location": "/web/notes/#npm-notes",
+            "location": "/web/javascript/notes/#npm-notes",
             "text": "Update npm modules  npm outdated  - list of outdated files  npm install {} {}  - install list of outdated files.",
             "title": "NPM Notes"
+        },
+        {
+            "location": "/web/javascript/notes/#other",
+            "text": "",
+            "title": "Other"
+        },
+        {
+            "location": "/web/javascript/notes/#promises",
+            "text": "let getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)   export default getCaptcha;  import Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'  window.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){          grecaptcha.render('html_element', {\n            'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n        });\n\n    })\n    .catch(function(error){\n        console.log(error);\n    });  }  new Vue({\n  el: '#app',\n  render: h => h(App)\n})",
+            "title": "Promises"
         },
         {
             "location": "/web/javascript/startup/",
@@ -1717,7 +1727,7 @@
         },
         {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\nLists\n\n\nAwesome Angular\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\nW3 Layouts\n\n\nFreshdesign Templates\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Awesome List\n - List of lists\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome PHP\n\n\nAwesome Angular\n\n\nAwesome Angular Components\n\n\nAwesome IOS\n - \nmain site\n\n\nAwesome Kotlin\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\nraywenderlich.com\n - IOS/development resources\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\n\n\nUnison\n - File sync utility\n\n\n\n\n\n\nReport Servers\n\n\n\n\nReportServer\n - integrates Birt reports. Open Source\n\n\n\n\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.\n\n\n\n\nOther Projects\n\n\n\n\nfreeCodeCamp\n\n\nMail For Good\n - Open Source email campaign management tool.\n\n\nConference For Good\n\n\n\n\n\n\nwhat 3 words\n - location alternative to addresses\n\n\nApostrophe CMS\n - Node.js based CMS\n\n\n\n\nEvent Management Software\n\n\n\n\nAttendize\n - self-hosted ticket sales online (think EventBrite)\n\n\nOpen Source Event Manager\n - Ruby on Rails event manager for tech conference\n\n\nOpen Conference Ware\n - Ruby on Rails conference manager.\n\n\nEvent Espresso\n - Wordpress Plugin\n\n\n\n\nRPC Framework\n\n\n\n\ngRPC\n\n\nApache Thrift\n\n\n\n\nService Providers\n\n\n\n\nChurch Insight\n - church admin software.\n\n\nPilot\n - bookkeeping software.",
+            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\nLists\n\n\nAwesome Angular\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\nW3 Layouts\n\n\nFreshdesign Templates\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Awesome List\n - List of lists\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome PHP\n\n\nAwesome Angular\n\n\nAwesome Angular Components\n\n\nAwesome IOS\n - \nmain site\n\n\nAwesome Kotlin\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\nraywenderlich.com\n - IOS/development resources\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\n\n\nUnison\n - File sync utility\n\n\n\n\n\n\nReport Servers\n\n\n\n\nReportServer\n - integrates Birt reports. Open Source\n\n\n\n\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.\n\n\n\n\nOther Projects\n\n\n\n\nfreeCodeCamp\n\n\nMail For Good\n - Open Source email campaign management tool.\n\n\nConference For Good\n\n\n\n\n\n\nwhat 3 words\n - location alternative to addresses\n\n\nApostrophe CMS\n - Node.js based CMS\n\n\n\n\nEvent Management Software\n\n\n\n\nAttendize\n - self-hosted ticket sales online (think EventBrite)\n\n\nOpen Source Event Manager\n - Ruby on Rails event manager for tech conference\n\n\nOpen Conference Ware\n - Ruby on Rails conference manager.\n\n\nEvent Espresso\n - Wordpress Plugin\n\n\n\n\nRPC Framework\n\n\n\n\ngRPC\n\n\nApache Thrift\n\n\n\n\nService Providers\n\n\n\n\nChurch Insight\n - church admin software.\n\n\nPilot\n - bookkeeping software.\n\n\n\n\nAsset Management\n\n\n\n\nCloudinary\n - Digital Asset Management in the cloud\n\n\nHas a wordpress plugin",
             "title": "General"
         },
         {
@@ -1799,6 +1809,11 @@
             "location": "/research/#service-providers",
             "text": "Church Insight  - church admin software.  Pilot  - bookkeeping software.",
             "title": "Service Providers"
+        },
+        {
+            "location": "/research/#asset-management",
+            "text": "Cloudinary  - Digital Asset Management in the cloud  Has a wordpress plugin",
+            "title": "Asset Management"
         },
         {
             "location": "/teaching/teach/",
