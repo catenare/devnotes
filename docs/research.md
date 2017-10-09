@@ -90,4 +90,3 @@
 ## Asset Management
 * [Cloudinary](https://cloudinary.com/) - Digital Asset Management in the cloud
     * Has a wordpress plugin
-

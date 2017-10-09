@@ -48,8 +48,20 @@
 
 ## Resources
 * [https://frontend.directory](https://frontend.directory/p)
+* HTML Templates
+    * 
+### Loaders
+* CSS Loaders
+    * [CSS Spin](https://webkul.github.io/csspin/)
+    * [CSS Loader](http://www.raphaelfabeni.com.br/css-loader/)
+    * [SVG Loaders](http://samherbert.net/svg-loaders/)
+    * [CSS Loader animations](https://connoratherton.com/loaders)
+    
+
 
 ## Generating Color Palettes
 * [Colors Palette Generator](http://www.cssdrive.com/imagepalette/index.php)
 * [Canva Color Palette](https://www.canva.com/color-palette/)
 * [Pictaculous](http://www.pictaculous.com/)
+
+
