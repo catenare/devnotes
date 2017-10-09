@@ -86,3 +86,8 @@
 ## Service Providers
 * [Church Insight](http://www.churchinsight.com/) - church admin software.
 * [Pilot](https://pilot.com/) - bookkeeping software.
+
+## Asset Management
+* [Cloudinary](https://cloudinary.com/) - Digital Asset Management in the cloud
+    * Has a wordpress plugin
+

@@ -45,7 +45,7 @@ pages:
           - 'Basic': 'web/javascript/webpack/webpack.md'
           - 'html-webpack-plugin': 'web/javascript/webpack/html-webpack-plugin.md'
   - JavaScript:
-    - 'General Notes': 'web/notes.md'
+    - 'General Notes': 'web/javascript/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
     - 'RxJs': 'web/javascript/rxjs.md'
     - 'Testing': 

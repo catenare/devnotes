@@ -29,3 +29,42 @@
 * Update npm modules
     * `npm outdated` - list of outdated files
     * `npm install {} {}` - install list of outdated files.
+
+## Other
+### Promises
+* 
+let getCaptcha = new Promise(
+    function(resolve) {
+            let captcha = true;
+            resolve(captcha);
+        }
+)
+
+export default getCaptcha;
+
+
+
+import Vue from 'vue'
+import App from './App.vue'
+import getCaptcha from './recaptcha'
+
+window.captchaCallback = function() {
+    console.log('called')
+    getCaptcha.then(function(fulfilled){
+
+            grecaptcha.render('html_element', {
+                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+            });
+
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+}
+
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
+
