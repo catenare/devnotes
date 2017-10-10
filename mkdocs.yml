@@ -34,10 +34,9 @@ pages:
   - Web:
     - 'Basic Setup': 'web/page.md'
     - 'Front End':
-      - 'Foundation': 'web/foundation.md'
-      - 'Static': 'web/static.md'
       - 'Front': 'web/front.md'
       - 'CSS': 'web/css.md'
+      - 'Foundation': 'web/foundation.md'
     - 'Build Tools':
       - 'Webpack':
         - 'Notes': 'web/javascript/webpack/notes.md'

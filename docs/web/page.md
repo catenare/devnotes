@@ -62,7 +62,7 @@ webpack.config.js
 ```
 * Create *webpack.config.js*.
 
-```json
+```js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebPackPlugin = require('clean-webpack-plugin');
