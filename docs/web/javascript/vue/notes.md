@@ -58,9 +58,6 @@ Vue.component('hello', Hello)
 * [Getting elements in vue with vanilla javascript](https://forum.vuejs.org/t/getting-elements-in-vue-with-vanilla-javascript/8668/2)
     * this.$el.querySelector('p')
 
-### Vue Class Components - decorators for Vue
-* [Vue Class Component](https://github.com/vuejs/vue-class-component)
-
 ## Child/Parent Communication
 * How to get the parent to update it's value from the child.
 * Vuejs 2 changed how it is done. .sync has changed.

@@ -26,6 +26,12 @@
 * [Vue Abstract Components](https://alligator.io/vuejs/vue-abstract-components/)
 * [Vue Lazy Load Images](https://alligator.io/vuejs/vue-lazy-load-images/)
 
+## Components
+* [Vue The Mask](https://github.com/vuejs-tips/vue-the-mask/blob/master/src/docs/docs.vue)
+* [Vue Cookie Law](https://github.com/apertureless/vue-cookie-law)
+* [Vue Class Component](https://github.com/vuejs/vue-class-component)
+* [Vee Validate](https://github.com/baianat/vee-validate)
+
 ## Importing vue components - *script.ts* - *template.html*
 ```html
 <div class="grid-container">
