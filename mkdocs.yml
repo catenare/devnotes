@@ -42,7 +42,7 @@ pages:
         - 'Notes': 'web/javascript/webpack/notes.md'
         - 'Configuration': 
           - 'Basic': 'web/javascript/webpack/webpack.md'
-          - 'html-webpack-plugin': 'web/javascript/webpack/html-webpack-plugin.md'
+          - 'Html Webpack Plugin': 'web/javascript/webpack/html-webpack-plugin.md'
   - JavaScript:
     - 'General Notes': 'web/javascript/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
@@ -53,7 +53,7 @@ pages:
     - Angular:
       - 'Learning Angular': 'web/javascript/angular.md'
     - 'Vuejs':
-      - 'notes': 'web/javascript/vue/notes.md' 
+      - 'Notes': 'web/javascript/vue/notes.md' 
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
       - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
       - 'Foundation Setup': 'web/javascript/vue/foundation.md'
