@@ -246,15 +246,27 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../php/wordpress/notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2">
     
-    <label class="md-nav__link" for="nav-2-1-1">
+    <label class="md-nav__link" for="nav-2-1-2">
       API
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-1-1">
+      <label class="md-nav__title" for="nav-2-1-2">
         API
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -472,30 +484,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../foundation/" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../static/" title="Static" class="md-nav__link">
-      Static
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -695,6 +683,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foundation/" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -787,8 +787,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../javascript/webpack/html-webpack-plugin/" title="html-webpack-plugin" class="md-nav__link">
-      html-webpack-plugin
+    <a href="../javascript/webpack/html-webpack-plugin/" title="Html Webpack Plugin" class="md-nav__link">
+      Html Webpack Plugin
     </a>
   </li>
 
@@ -977,8 +977,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../javascript/vue/notes/" title="notes" class="md-nav__link">
-      notes
+    <a href="../javascript/vue/notes/" title="Notes" class="md-nav__link">
+      Notes
     </a>
   </li>
 
@@ -2005,6 +2005,88 @@
 <ul>
 <li><a href="https://feathericons.com/">Feather Icons</a> - Install with <code>npm install feather-icons</code></li>
 </ul>
+<h1 id="static-web-page-development">Static Web Page Development</h1>
+<h2 id="setting-for-static-page-development">Setting for static page development</h2>
+<ul>
+<li>Using <a href="http://foundation.zurb.com/">foundation from zurb</a></li>
+</ul>
+<h2 id="installation-foundation-for-sites">Installation - <a href="http://foundation.zurb.com/sites">Foundation for Sites</a></h2>
+<ol>
+<li>Install foundation-cli - <code>npm install --global foundation-cli</code></li>
+<li>Create new project -  <code>foundation new --framework sites --template zurb</code><ul>
+<li>Use <code>foundation-zurb-template</code></li>
+</ul>
+</li>
+<li><del>Install building block - <code>foundation kits install news</code></del></li>
+<li><code>foundation watch</code></li>
+</ol>
+<h2 id="resources_1">Resources</h2>
+<ul>
+<li><a href="https://www.hanselman.com/blog/TheInternetsBestPlaceholderImageSitesForWebDevelopment.aspx">Placement Images List</a><ul>
+<li><a href="http://www.placehold.it">Hold It</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="tools_1">Tools</h2>
+<h3 id="emmet"><a href="http://emmet.io">Emmet</a></h3>
+<ul>
+<li>Expand html shortcuts</li>
+<li>Can really reduce the amount of typing necessary to to create a page.</li>
+</ul>
+<h3 id="local-static-file-server_1">Local static file server</h3>
+<ul>
+<li><a href="https://browsersync.io/">browser-sync</a></li>
+<li>Node.js tool </li>
+<li><code>browser-sync start --server --directory --files "**/*"</code></li>
+</ul>
+<h3 id="combine-js-files_1">Combine JS files</h3>
+<ul>
+<li><a href="http://requirejs.org/">Requirejs</a></li>
+<li>For r.js to work (without explicit path) <code>npm install -g requirejs</code></li>
+</ul>
+<h2 id="web-framework_1">Web Framework</h2>
+<ul>
+<li><a href="http://foundation.zurb.com/">Foundation</a></li>
+<li>Setup a new project <code>foundation new</code></li>
+</ul>
+<h2 id="sass-notes_1">Sass Notes</h2>
+<ul>
+<li>Using sassc and libsass</li>
+<li><a href="https://github.com/sass/libsass">libSass</a></li>
+<li>Export the library location so node-sass can use it.</li>
+</ul>
+<h3 id="compiling-compass-sass-configrb-file_1">Compiling compass sass config.rb file</h3>
+<ul>
+<li>Compiling compass sass with sass c library.<ul>
+<li><em>sass --compass sass/styles.scss test,css</em> - seems to read the compass config.rb file to find paths.</li>
+</ul>
+</li>
+<li>Now use webpack</li>
+</ul>
+<h2 id="maintainable-css_1">Maintainable CSS</h2>
+<ul>
+<li><a href="https://en.bem.info/methodology/quick-start/">BEM (block, element, modifier) methodology</a></li>
+</ul>
+<h2 id="resources_2">Resources</h2>
+<ul>
+<li><a href="https://frontend.directory/p">https://frontend.directory</a></li>
+</ul>
+<h3 id="loaders">Loaders</h3>
+<ul>
+<li>CSS Loaders<ul>
+<li><a href="https://webkul.github.io/csspin/">CSS Spin</a></li>
+<li><a href="http://www.raphaelfabeni.com.br/css-loader/">CSS Loader</a></li>
+<li><a href="http://samherbert.net/svg-loaders/">SVG Loaders</a></li>
+<li><a href="https://connoratherton.com/loaders">CSS Loader animations</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="generating-color-palettes">Generating Color Palettes</h2>
+<ul>
+<li><a href="http://www.cssdrive.com/imagepalette/index.php">Colors Palette Generator</a></li>
+<li><a href="https://www.canva.com/color-palette/">Canva Color Palette</a></li>
+<li><a href="http://www.pictaculous.com/">Pictaculous</a></li>
+</ul>
                 
                   
                 
@@ -2023,7 +2105,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../static/" title="Static" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../page/" title="Basic Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2032,7 +2114,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Static
+                Basic Setup
               </span>
             </div>
           </a>
