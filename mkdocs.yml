@@ -18,6 +18,7 @@ pages:
 - Home: 'index.md'
 - Development:
   - Wordpress:
+    - 'Notes': 'php/wordpress/notes.md'
     - API:
       - API: 'php/wordpress/api/api.md'
       - 'Angular': 'php/wordpress/api/angular.md'
