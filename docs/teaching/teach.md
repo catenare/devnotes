@@ -36,3 +36,19 @@
 * [Eliademy](https://eliademy.com/en)
 * [Opigno](https://www.opigno.org/en#home) - Drupal based
 * [Ilias](https://www.ilias.de/docu/goto_docu_root_1.html)
+
+## Learn Programming with Python
+* [Paul Vincent Craven](http://simpson.edu/author/pcraven/)
+    * [Teaching Python 3.6 with Games](http://2017-craven-webinar.readthedocs.io/en/latest/)
+    * [Program Arcade Games](http://programarcadegames.com/index.php)
+
+## Teaching notes
+* Revise often
+    * Restructured text for material (markdown)
+    * Sphinx (for documentation) (MkDocs)
+    * Store in Git
+    * Read The Docs - documentation generator
+
+## Other tools
+* [Visualize Your Code](http://pythontutor.com/) - Online tutor for learning to code.
+    * Created by: [Philip J. Guo](http://www.pgbovine.net/index.html)
