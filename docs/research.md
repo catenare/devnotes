@@ -88,5 +88,9 @@
 * [Pilot](https://pilot.com/) - bookkeeping software.
 
 ## Asset Management
-* [Cloudinary](https://cloudinary.com/) - Digital Asset Management in the cloud
+* [Cloudinary](https://cloudinary.com/) - Digital Asset Management in the cloud. Has a free tier.
     * Has a wordpress plugin
+
+## Other Services
+* [Sentry](https://docs.sentry.io/learn/context/) - has a free tier.
+    * Error tracking service. Able to rack from JavaScript, PHP, Java, Python.
