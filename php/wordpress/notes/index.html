@@ -282,6 +282,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#api-notes" title="API Notes" class="md-nav__link">
+    API Notes
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -546,6 +553,18 @@
   <li class="md-nav__item">
     <a href="../../../web/foundation/" title="Foundation" class="md-nav__link">
       Foundation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../web/assets/" title="Asset Management" class="md-nav__link">
+      Asset Management
     </a>
   </li>
 
@@ -1600,6 +1619,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#api-notes" title="API Notes" class="md-nav__link">
+    API Notes
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1626,6 +1652,30 @@
 </ul>
 </li>
 </ul>
+<h2 id="api-notes">API Notes</h2>
+<ul>
+<li>Configure headers for API Rest Calls</li>
+<li><a href="https://joshpress.net/access-control-headers-for-the-wordpress-rest-api/">Access Control Headers for Wordpress Rest API</a><ul>
+<li>Added below code to plugin startup file. Let's one change headers and permissions.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="php">/**
+ * Use * for origin
+ */
+ add_action( 'rest_api_init', function() {
+
+ remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
+ add_filter( 'rest_pre_serve_request', function( $value ) {
+    header( 'Access-Control-Allow-Origin: *' );
+    header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );
+    header( 'Access-Control-Allow-Credentials: true' );
+    header( 'Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, PAS-Fingerprint, PAS-Check, PAS-Nonce, PAS-Captcha');
+    header('Access-Control-Allow-Headers: Authorization, Content-Type, PAS-Nonce, PAS-Fingerprint, PAS-Check');
+    return $value;
+ });
+ }, 15 );
+</code></pre>
                 
                   
                 

@@ -27,7 +27,7 @@
         },
         {
             "location": "/php/wordpress/notes/",
-            "text": "Wordpress Notes\n\n\nErrors\n\n\n\n\nWordPress database error  for query SHOW FULL COLUMNS FROM\n\n\nFound it... Security patch in 4.1.2 added a new function, 'wpdb->process_field_lengths()', that causes an insert or update query not to be run if the data is longer than the permissible size based on the database schema.\n\n\nError fix",
+            "text": "Wordpress Notes\n\n\nErrors\n\n\n\n\nWordPress database error  for query SHOW FULL COLUMNS FROM\n\n\nFound it... Security patch in 4.1.2 added a new function, 'wpdb->process_field_lengths()', that causes an insert or update query not to be run if the data is longer than the permissible size based on the database schema.\n\n\nError fix\n\n\n\n\n\n\n\n\nAPI Notes\n\n\n\n\nConfigure headers for API Rest Calls\n\n\nAccess Control Headers for Wordpress Rest API\n\n\nAdded below code to plugin startup file. Let's one change headers and permissions.\n\n\n\n\n\n\n\n\n/**\n * Use * for origin\n */\n add_action( 'rest_api_init', function() {\n\n remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );\n add_filter( 'rest_pre_serve_request', function( $value ) {\n    header( 'Access-Control-Allow-Origin: *' );\n    header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );\n    header( 'Access-Control-Allow-Credentials: true' );\n    header( 'Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, PAS-Fingerprint, PAS-Check, PAS-Nonce, PAS-Captcha');\n    header('Access-Control-Allow-Headers: Authorization, Content-Type, PAS-Nonce, PAS-Fingerprint, PAS-Check');\n    return $value;\n });\n }, 15 );",
             "title": "Notes"
         },
         {
@@ -39,6 +39,11 @@
             "location": "/php/wordpress/notes/#errors",
             "text": "WordPress database error  for query SHOW FULL COLUMNS FROM  Found it... Security patch in 4.1.2 added a new function, 'wpdb->process_field_lengths()', that causes an insert or update query not to be run if the data is longer than the permissible size based on the database schema.  Error fix",
             "title": "Errors"
+        },
+        {
+            "location": "/php/wordpress/notes/#api-notes",
+            "text": "Configure headers for API Rest Calls  Access Control Headers for Wordpress Rest API  Added below code to plugin startup file. Let's one change headers and permissions.     /**\n * Use * for origin\n */\n add_action( 'rest_api_init', function() {\n\n remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );\n add_filter( 'rest_pre_serve_request', function( $value ) {\n    header( 'Access-Control-Allow-Origin: *' );\n    header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );\n    header( 'Access-Control-Allow-Credentials: true' );\n    header( 'Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, PAS-Fingerprint, PAS-Check, PAS-Nonce, PAS-Captcha');\n    header('Access-Control-Allow-Headers: Authorization, Content-Type, PAS-Nonce, PAS-Fingerprint, PAS-Check');\n    return $value;\n });\n }, 15 );",
+            "title": "API Notes"
         },
         {
             "location": "/php/wordpress/api/api/",
@@ -611,6 +616,21 @@
             "title": "Create background-image slide show with orbit"
         },
         {
+            "location": "/web/assets/",
+            "text": "Asset management for web\n\n\nCloudinary - free account available\n\n\n* [Cloudinary](https://cloudinary.com/console)",
+            "title": "Asset Management"
+        },
+        {
+            "location": "/web/assets/#asset-management-for-web",
+            "text": "",
+            "title": "Asset management for web"
+        },
+        {
+            "location": "/web/assets/#cloudinary-free-account-available",
+            "text": "* [Cloudinary](https://cloudinary.com/console)",
+            "title": "Cloudinary - free account available"
+        },
+        {
             "location": "/web/javascript/webpack/notes/",
             "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\nWebpack Chain\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.\n\n\n\n\n\n\n\n\nfont-awesome config with webpack and foundation\n\n\n\n\nwebpack config - allow to process image and font files.\n\n\n\n\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }\n\n\n\n\n\n\nConfigure scss imports\n\n\nIn \n_settings.scss\n add \n$fa-font-path:   \"~font-awesome/fonts\";\n to end of the page.\n\n\nIn \napp.scss\n add \n@import '~font-awesome/scss/font-awesome';\n after \n@import \"settings\"\n.\n\n\n\n\nErrors and notes\n\n\n\n\nIssue: \nCan't find variable: SockJS\" in Safari on Mac and iOS\n\n\nResolve: \neval-source-map\n results in \"Can't find variable: SockJS\" in Safari on Mac and iOS with v2.8.x #1090\n\n\nChanged \ndevtool\n to '#source-map'",
             "title": "Notes"
@@ -677,7 +697,7 @@
         },
         {
             "location": "/web/javascript/notes/",
-            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.\n\n\n\n\n\n\n\n\nNPM Notes\n\n\n\n\nUpdate npm modules\n\n\nnpm outdated\n - list of outdated files\n\n\nnpm install {} {}\n - install list of outdated files.\n\n\n\n\n\n\n\n\nOther\n\n\nPromises\n\n\n\n\nlet getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)\n\n\n\n\nexport default getCaptcha;\n\n\nimport Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'\n\n\nwindow.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){\n\n\n        grecaptcha.render('html_element', {\n            'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n        });\n\n    })\n    .catch(function(error){\n        console.log(error);\n    });\n\n\n\n}\n\n\nnew Vue({\n  el: '#app',\n  render: h => h(App)\n})",
+            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.\n\n\n\n\n\n\n\n\nNPM Notes\n\n\n\n\nUpdate npm modules\n\n\nnpm outdated\n - list of outdated files\n\n\nnpm install {} {}\n - install list of outdated files.\n\n\n\n\n\n\n\n\nOther\n\n\nPromises\n\n\nlet getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)\n\nexport default getCaptcha;\n\n\n\nimport Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'\n\nwindow.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){\n\n            grecaptcha.render('html_element', {\n                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n            });\n\n        })\n        .catch(function(error){\n            console.log(error);\n        });\n}\n\n\nnew Vue({\n  el: '#app',\n  render: h => h(App)\n})\n\n\n\n\nAxios\n\n\n\n\nIssue: \nAxios is not showing all headers of response\n\n\nSet Global Axios Headers\n\n\nMozilla CORS\n\n\n\n\n\n\n\n\nFingerprint2 - use a quick and dirty way to track submissions.\n\n\n\n\nWrap code in a promise.\n\n\n\n\nimport Fingerprint2 from \"fingerprintjs2\";\n\nconst getFinger = new Promise((resolve) => {\n\n  new Fingerprint2().get((result) => {\n    resolve(result);\n  });\n});\n\nexport default getFinger;\n\n\n\n\n\n\nIn Component - call a function from the promise and the set local var for finger.\n\n\n\n\ngetFinger.then( (result) => this.getInitHeaders(result) );",
             "title": "General Notes"
         },
         {
@@ -722,8 +742,18 @@
         },
         {
             "location": "/web/javascript/notes/#promises",
-            "text": "let getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)   export default getCaptcha;  import Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'  window.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){          grecaptcha.render('html_element', {\n            'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n        });\n\n    })\n    .catch(function(error){\n        console.log(error);\n    });  }  new Vue({\n  el: '#app',\n  render: h => h(App)\n})",
+            "text": "let getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)\n\nexport default getCaptcha;\n\n\n\nimport Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'\n\nwindow.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){\n\n            grecaptcha.render('html_element', {\n                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n            });\n\n        })\n        .catch(function(error){\n            console.log(error);\n        });\n}\n\n\nnew Vue({\n  el: '#app',\n  render: h => h(App)\n})",
             "title": "Promises"
+        },
+        {
+            "location": "/web/javascript/notes/#axios",
+            "text": "Issue:  Axios is not showing all headers of response  Set Global Axios Headers  Mozilla CORS",
+            "title": "Axios"
+        },
+        {
+            "location": "/web/javascript/notes/#fingerprint2-use-a-quick-and-dirty-way-to-track-submissions",
+            "text": "Wrap code in a promise.   import Fingerprint2 from \"fingerprintjs2\";\n\nconst getFinger = new Promise((resolve) => {\n\n  new Fingerprint2().get((result) => {\n    resolve(result);\n  });\n});\n\nexport default getFinger;   In Component - call a function from the promise and the set local var for finger.   getFinger.then( (result) => this.getInitHeaders(result) );",
+            "title": "Fingerprint2 - use a quick and dirty way to track submissions."
         },
         {
             "location": "/web/javascript/startup/",
@@ -1827,7 +1857,7 @@
         },
         {
             "location": "/teaching/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n\n\nForma.lms\n\n\nEliademy\n\n\nOpigno\n - Drupal based\n\n\nIlias",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n\n\nForma.lms\n\n\nEliademy\n\n\nOpigno\n - Drupal based\n\n\nIlias\n\n\n\n\nLearn Programming with Python\n\n\n\n\nPaul Vincent Craven\n\n\nTeaching Python 3.6 with Games\n\n\nProgram Arcade Games\n\n\n\n\n\n\n\n\nTeaching notes\n\n\n\n\nRevise often\n\n\nRestructured text for material (markdown)\n\n\nSphinx (for documentation) (MkDocs)\n\n\nStore in Git\n\n\nRead The Docs - documentation generator\n\n\n\n\n\n\n\n\nOther tools\n\n\n\n\nVisualize Your Code\n - Online tutor for learning to code.\n\n\nCreated by: \nPhilip J. Guo",
             "title": "Learning Systems"
         },
         {
@@ -1861,8 +1891,23 @@
             "title": "LMS Tools"
         },
         {
+            "location": "/teaching/teach/#learn-programming-with-python",
+            "text": "Paul Vincent Craven  Teaching Python 3.6 with Games  Program Arcade Games",
+            "title": "Learn Programming with Python"
+        },
+        {
+            "location": "/teaching/teach/#teaching-notes",
+            "text": "Revise often  Restructured text for material (markdown)  Sphinx (for documentation) (MkDocs)  Store in Git  Read The Docs - documentation generator",
+            "title": "Teaching notes"
+        },
+        {
+            "location": "/teaching/teach/#other-tools",
+            "text": "Visualize Your Code  - Online tutor for learning to code.  Created by:  Philip J. Guo",
+            "title": "Other tools"
+        },
+        {
             "location": "/teaching/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n\n\nForma.lms\n\n\nEliademy\n\n\nOpigno\n - Drupal based\n\n\nIlias",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n\n\nForma.lms\n\n\nEliademy\n\n\nOpigno\n - Drupal based\n\n\nIlias\n\n\n\n\nLearn Programming with Python\n\n\n\n\nPaul Vincent Craven\n\n\nTeaching Python 3.6 with Games\n\n\nProgram Arcade Games\n\n\n\n\n\n\n\n\nTeaching notes\n\n\n\n\nRevise often\n\n\nRestructured text for material (markdown)\n\n\nSphinx (for documentation) (MkDocs)\n\n\nStore in Git\n\n\nRead The Docs - documentation generator\n\n\n\n\n\n\n\n\nOther tools\n\n\n\n\nVisualize Your Code\n - Online tutor for learning to code.\n\n\nCreated by: \nPhilip J. Guo",
             "title": "Learning Sources"
         },
         {
@@ -1894,6 +1939,21 @@
             "location": "/teaching/teach/#lms-tools",
             "text": "Open Edx  Forma.lms  Eliademy  Opigno  - Drupal based  Ilias",
             "title": "LMS Tools"
+        },
+        {
+            "location": "/teaching/teach/#learn-programming-with-python",
+            "text": "Paul Vincent Craven  Teaching Python 3.6 with Games  Program Arcade Games",
+            "title": "Learn Programming with Python"
+        },
+        {
+            "location": "/teaching/teach/#teaching-notes",
+            "text": "Revise often  Restructured text for material (markdown)  Sphinx (for documentation) (MkDocs)  Store in Git  Read The Docs - documentation generator",
+            "title": "Teaching notes"
+        },
+        {
+            "location": "/teaching/teach/#other-tools",
+            "text": "Visualize Your Code  - Online tutor for learning to code.  Created by:  Philip J. Guo",
+            "title": "Other tools"
         },
         {
             "location": "/teaching/html/semantic/",

@@ -512,6 +512,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../assets/" title="Asset Management" class="md-nav__link">
+      Asset Management
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -742,6 +754,20 @@
           <li class="md-nav__item">
   <a href="#promises" title="Promises" class="md-nav__link">
     Promises
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axios" title="Axios" class="md-nav__link">
+    Axios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fingerprint2-use-a-quick-and-dirty-way-to-track-submissions" title="Fingerprint2 - use a quick and dirty way to track submissions." class="md-nav__link">
+    Fingerprint2 - use a quick and dirty way to track submissions.
   </a>
   
 </li>
@@ -1717,6 +1743,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#axios" title="Axios" class="md-nav__link">
+    Axios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fingerprint2-use-a-quick-and-dirty-way-to-track-submissions" title="Fingerprint2 - use a quick and dirty way to track submissions." class="md-nav__link">
+    Fingerprint2 - use a quick and dirty way to track submissions.
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1791,35 +1831,71 @@
 </ul>
 <h2 id="other">Other</h2>
 <h3 id="promises">Promises</h3>
-<ul>
-<li>let getCaptcha = new Promise(
+<pre><code class="js">let getCaptcha = new Promise(
     function(resolve) {
             let captcha = true;
             resolve(captcha);
         }
-)</li>
-</ul>
-<p>export default getCaptcha;</p>
-<p>import Vue from 'vue'
-import App from './App.vue'
-import getCaptcha from './recaptcha'</p>
-<p>window.captchaCallback = function() {
-    console.log('called')
-    getCaptcha.then(function(fulfilled){</p>
-<pre><code>        grecaptcha.render('html_element', {
-            'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
-        });
+)
 
-    })
-    .catch(function(error){
-        console.log(error);
-    });
-</code></pre>
-<p>}</p>
-<p>new Vue({
+export default getCaptcha;
+
+
+
+import Vue from 'vue'
+import App from './App.vue'
+import getCaptcha from './recaptcha'
+
+window.captchaCallback = function() {
+    console.log('called')
+    getCaptcha.then(function(fulfilled){
+
+            grecaptcha.render('html_element', {
+                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+            });
+
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+}
+
+
+new Vue({
   el: '#app',
   render: h =&gt; h(App)
-})</p>
+})
+</code></pre>
+
+<h3 id="axios">Axios</h3>
+<ul>
+<li>Issue: <a href="https://github.com/axios/axios/issues/771"><em>Axios is not showing all headers of response</em></a><ul>
+<li><a href="https://github.com/axios/axios#global-axios-defaults">Set Global Axios Headers</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Access-Control-Expose-Headers">Mozilla CORS</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="fingerprint2-use-a-quick-and-dirty-way-to-track-submissions">Fingerprint2 - use a quick and dirty way to track submissions.</h3>
+<ul>
+<li>Wrap code in a promise.</li>
+</ul>
+<pre><code class="js">import Fingerprint2 from &quot;fingerprintjs2&quot;;
+
+const getFinger = new Promise((resolve) =&gt; {
+
+  new Fingerprint2().get((result) =&gt; {
+    resolve(result);
+  });
+});
+
+export default getFinger;
+</code></pre>
+
+<ul>
+<li>In Component - call a function from the promise and the set local var for finger.</li>
+</ul>
+<pre><code class="js">getFinger.then( (result) =&gt; this.getInitHeaders(result) );
+</code></pre>
                 
                   
                 
