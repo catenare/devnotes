@@ -32,7 +32,7 @@
 
 ## Other
 ### Promises
-* 
+```js
 let getCaptcha = new Promise(
     function(resolve) {
             let captcha = true;
@@ -67,4 +67,27 @@ new Vue({
   el: '#app',
   render: h => h(App)
 })
+```
+### Axios
+* Issue: [*Axios is not showing all headers of response*](https://github.com/axios/axios/issues/771)
+    * [Set Global Axios Headers](https://github.com/axios/axios#global-axios-defaults)
+    * [Mozilla CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Access-Control-Expose-Headers)
 
+### Fingerprint2 - use a quick and dirty way to track submissions.
+* Wrap code in a promise.
+```js
+import Fingerprint2 from "fingerprintjs2";
+
+const getFinger = new Promise((resolve) => {
+
+  new Fingerprint2().get((result) => {
+    resolve(result);
+  });
+});
+
+export default getFinger;
+```
+* In Component - call a function from the promise and the set local var for finger.
+```js
+getFinger.then( (result) => this.getInitHeaders(result) );
+```

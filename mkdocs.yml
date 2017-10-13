@@ -38,6 +38,7 @@ pages:
       - 'Front': 'web/front.md'
       - 'CSS': 'web/css.md'
       - 'Foundation': 'web/foundation.md'
+      - 'Asset Management': 'web/assets.md'
     - 'Build Tools':
       - 'Webpack':
         - 'Notes': 'web/javascript/webpack/notes.md'
