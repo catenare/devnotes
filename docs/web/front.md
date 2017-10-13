@@ -133,3 +133,14 @@
 * [Colors Palette Generator](http://www.cssdrive.com/imagepalette/index.php)
 * [Canva Color Palette](https://www.canva.com/color-palette/)
 * [Pictaculous](http://www.pictaculous.com/)
+
+## Icons - Free
+* [Open Iconic](https://useiconic.com/open/) 
+* [Octicons](https://octicons.github.com/)
+* [Entypo](http://www.entypo.com/)
+* [Bytesize Icons](https://github.com/danklammer/bytesize-icons)
+* [Material Icons](https://material.io/icons/)
+* [Ionicons](http://ionicons.com/)
+* [Dripicons](http://demo.amitjakhu.com/dripicons/)
+* [Ikons](http://ikons.piotrkwiatkowski.co.uk/)
+* [SmartIcons](http://glyph.smarticons.co/)

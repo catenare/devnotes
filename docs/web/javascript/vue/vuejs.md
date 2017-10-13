@@ -31,6 +31,9 @@
 * [Vue Cookie Law](https://github.com/apertureless/vue-cookie-law)
 * [Vue Class Component](https://github.com/vuejs/vue-class-component)
 * [Vee Validate](https://github.com/baianat/vee-validate)
+    * Clear all errors and make fields pristine:
+        * `this.field = ""`
+        * `this.$validator.reset()`
 
 ## Importing vue components - *script.ts* - *template.html*
 ```html

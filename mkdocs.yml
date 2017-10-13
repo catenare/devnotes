@@ -19,6 +19,7 @@ pages:
 - Development:
   - Wordpress:
     - 'Notes': 'php/wordpress/notes.md'
+    - 'Admin': 'php/wordpress/admin.md'
     - API:
       - API: 'php/wordpress/api/api.md'
       - 'Angular': 'php/wordpress/api/angular.md'
