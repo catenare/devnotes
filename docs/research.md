@@ -94,3 +94,6 @@
 ## Other Services
 * [Sentry](https://docs.sentry.io/learn/context/) - has a free tier.
     * Error tracking service. Able to rack from JavaScript, PHP, Java, Python.
+
+## Animation
+* [GSAP](https://greensock.com/gsap)
