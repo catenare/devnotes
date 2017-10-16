@@ -90,6 +90,10 @@
 ## Asset Management
 * [Cloudinary](https://cloudinary.com/) - Digital Asset Management in the cloud. Has a free tier.
     * Has a wordpress plugin
+* [Filestack](https://www.filestack.com/) - Has a free tier.
+
+## Edge Services
+* [Fastly](https://www.fastly.com/) - CDN/Edge servers.
 
 ## Other Services
 * [Sentry](https://docs.sentry.io/learn/context/) - has a free tier.

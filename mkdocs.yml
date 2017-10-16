@@ -22,6 +22,7 @@ pages:
     - 'Admin': 'php/wordpress/admin.md'
     - API:
       - API: 'php/wordpress/api/api.md'
+      - 'Learn Wordpress REST API': 'php/wordpress/api/learn.md'
       - 'Angular': 'php/wordpress/api/angular.md'
       - 'Vuejs': 'php/wordpress/api/vuejs.md'
     - 'Setup': 'php/wordpress/setup.md'
@@ -89,7 +90,9 @@ pages:
     - 'Azure': 'ops/azure.md'
   - "Mock and API Tools": 'tools.md'
   - 'Command Line': 'cmd/cmd.md'
+- Work: 'work/remote.md'
 - Learning:
+  - 'Wordpress Rest API': 'php/wordpress/api/learn.md'
   - 'Tutorials': 'learning/tutorials.md'
 - Teaching: 
   - 'General': 'research.md'
