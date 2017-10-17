@@ -1,5 +1,5 @@
 # Learning to use the REST API in Wordpress.
-
+## Building Paseo Network with Wordpress
 ## Issues
 * Learning this API is much harder than it should be.
 * Biggest issue I'm running into is using the local client.
@@ -7,6 +7,7 @@
 * Documentation is very spotty.
 * Hard to fine relevant or up-to-date resources.
 * Don't seem to be many books around (that are up to date).
+* **Decided I'm just going to use React. Not worth the extra hassle trying to figure out the Wordpress way**
 
 ## Resources
 * [Rest Developer Handbook](https://developer.wordpress.org/rest-api/)
@@ -37,8 +38,51 @@
 ## Project
 * Background
     * Need a website for the church, daycare & preschool and family.
-    * Wanted to use inexpensive hosting and put together mostly static websites.
-    * Want to be able to have non-developers add/update content without me being involved.
+	    * Shared features
+		    * Event listing
+			    * Show events
+			    * Write-up of event with gallery after event
+				    * Post about event with gallery of images
+				    * Images are the focus point
+				    * Cover image
+				    * Date and time of when event happened
+				* Contact Us form - gather information
+				* Email list sign-up
+				* Newsletter
+				* Resources
+    * Websites are essentially static sites.
+	    * Use sass/js frameworks.
+	    * Use node tools to create and build the sites
+	    * Integrate via APIs. 
+    * Content creators can add content to the site but with limited ability to change the actual design of the site.
+    * Church site
+	    * Paseo Church Family
+		    * Community site
+		    * Information related to the church
+		    * Directory of church families
+    * Daycare Website
+	    * Registration Site
+		    * Also parent community site - Paseo Parents
+			    * Parent/child directory
+			    * Access to account information
+			    * Customer service
+				    * Messaging to the school
+				    * Access to school messages.
+			    * Private image gallery of school/children.
+		    * Registration micro site.
+			    * Pricing information
+			    * Registration information
+			    * Transportation
+			    * Calculator to determine fees
+			    * Registration form
+			* Online Store
+				* Center swag
+					* T-shirts, caps, other
+					* Child picture packages
+						* Choose packages
+						* Add additional options
+						* Order anytime?
+				* Other items(?)
 * Why Wordpress?
     * REST-API was huge selling point.
         * Static sites I can host in Amazon S3 with CloudFront for CDN
@@ -47,9 +91,16 @@
     * Didn't want to build a complete CMS from scratch.
     * Multi-Site capabilities - can have all my sites on one instance of Wordpress.
     * Can be controlled and developed with *composer*
-* Why Backbone?
-    * Wanted to leverage whatever tools Wordpress already have.
-    * Was going to use it internally to for Wordpress admin.
+* ~~Why Backbone?~~
+    * ~~Wanted to leverage whatever tools Wordpress already have.~~
+    * ~~Was going to use it internally to for Wordpress admin.~~
+    * No longer using Backbone.
+	    * Too frustrating to use with Wordpress.
+		    * Poorly documented how to use *wp-api*.
+		    * **Backbone** does not seem like it's going to be the choice going forward.
+		    * Good to know to make changes to current site.
+		    * Not worth investing the time and effort.
+		    * Going to focus on **React** and **Vuejs**.
 ### Process
 * Basic project
     * Using Foundation for CSS and some JavaScript.
@@ -73,4 +124,3 @@
     * Was able to create custom endpoints.
         * [Postman](https://www.getpostman.com/) - to discover the wordpress API
         * [PHP Console Plugin]() - Chrome browser plugin to show php errors in chrome.
-    
