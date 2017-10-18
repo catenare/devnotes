@@ -7,6 +7,7 @@
     * Rules for writing JavaScript.
 * [Awesome Angular](https://github.com/brillout/awesome-angular-components)
 * [You Don't Need jQuery](https://blog.garstasio.com/you-dont-need-jquery/)
+* [JavaScript Plugin for Web Forms](https://1stwebdesigner.com/javascript-plugins-web-forms/)
 
 ### Tools
 * [Lerna](https://lernajs.io/) - Manage JavaScript projects with multiple packages

@@ -16,6 +16,9 @@ extra_css:
 - css/extra.css
 pages:
 - Home: 'index.md'
+- Projects:
+  - Overview: 'projects/PaseoNetwork.md'
+  - 'The Martin Family Site': 'projects/themartinssite.md'
 - Development:
   - Wordpress:
     - 'Notes': 'php/wordpress/notes.md'
@@ -67,7 +70,7 @@ pages:
   - 'Python': 
     - 'General': 'python/general.md'
     - 'Packages': 'python/packages.md'
-    # - 'Research': 'python/research.md'
+    - 'Research': 'python/research.md'
   - 'Ruby': 'ruby.md'
   - 'Java': 'java.md'
   - Frameworks:
@@ -90,7 +93,7 @@ pages:
     - 'Azure': 'ops/azure.md'
   - "Mock and API Tools": 'tools.md'
   - 'Command Line': 'cmd/cmd.md'
-- Work: 'work/remote.md'
+- Work: 'work/employment.md'
 - Learning:
   - 'Wordpress Rest API': 'php/wordpress/api/learn.md'
   - 'Tutorials': 'learning/tutorials.md'

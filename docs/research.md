@@ -44,6 +44,9 @@
 * [Front-end Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
     * [Front End Directory](https://frontend.directory/)
 * [raywenderlich.com](https://www.raywenderlich.com) - IOS/development resources
+### List of lists
+* [Sindresourhus](https://github.com/sindresorhus/awesome)
+* [Useful and silly lists](https://github.com/jnv/lists)
 
 ## Algorithm Resources
 * [Grokking Algorithms Source](https://github.com/egonSchiele/grokking_algorithms)
@@ -98,6 +101,24 @@
 ## Other Services
 * [Sentry](https://docs.sentry.io/learn/context/) - has a free tier.
     * Error tracking service. Able to rack from JavaScript, PHP, Java, Python.
+* [FormSpree](https://formspree.io/) - Form to email. First 1000 are free.
 
 ## Animation
 * [GSAP](https://greensock.com/gsap)
+
+
+## Presentation Frameworks [Web based]
+* [Impress](https://github.com/impress/impress.js)
+* [Remark](https://github.com/gnab/remark)
+* [Deck](https://github.com/imakewebthings/deck.js)
+* [WebSlides](https://github.com/webslides/WebSlides)
+
+## Lists for marketing site
+* [Places To Post Your Startup](https://github.com/mmccaff/PlacesToPostYourStartup)
+
+## Blockchain
+* [Non-financial Blockchain](https://github.com/machinomy/awesome-non-financial-blockchain)
+
+## Free Services for Devs
+* [Free for Devs](https://github.com/ripienaar/free-for-dev)
+

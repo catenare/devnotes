@@ -25,3 +25,5 @@
  });
  }, 15 );
 ```
+## Wordpress Resources
+* [WP Hasty](https://www.wp-hasty.com/)

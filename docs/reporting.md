@@ -12,6 +12,9 @@ Currently using Birt for generating reports and invoices for the child center.
 * Seems to have more moving parts.
 * Comes with a server component.
 
+## [Pentaho Reporting](https://community.hds.com/docs/DOC-1009856-pentaho-reporting)
+* Has an open source server.
+
 ## Currently using Birt to generate invoices.
 * All data in postgres DB
 * Connect to postgres DB via jdbc

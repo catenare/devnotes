@@ -1,6 +1,14 @@
 # CSS 
 
+## Resources
 * [Fixed Menu](https://www.w3schools.com/howto/howto_css_fixed_menu.asp) - Fix menu to the top
+* [CSS Frameworks](http://www.cssreflex.com/css-frameworks/)
+* [CssDB](http://cssdb.co/)
+* [Animista](http://animista.net/play)
+* [CSS3 Generator](http://css3generator.com/)
+
+## Seo
+* [MegaTags](https://megatags.co/) - OpenGraph tag generator
 
 ## Linting CSS and SCSS
 * Install stylelint, stylelint-config-standard

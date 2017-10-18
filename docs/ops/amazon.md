@@ -74,3 +74,4 @@
 1. Update DNS records
     * Add CNAME record to dns record
         * www points to cloudfront url
+1. Be sure to include root document - *index.html* - for it to work correctly.
