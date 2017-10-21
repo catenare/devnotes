@@ -464,6 +464,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#theme-documentation" title="Theme Documentation" class="md-nav__link">
+    Theme Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#using-a-template-engine" title="Using a template engine" class="md-nav__link">
     Using a template engine
   </a>
@@ -478,6 +485,20 @@
         <li class="md-nav__item">
   <a href="#setup-for-development" title="Setup for development" class="md-nav__link">
     Setup for development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developing-with-timber" title="Developing with Timber" class="md-nav__link">
+    Developing with Timber
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-foundation-framework" title="Configuring foundation framework" class="md-nav__link">
+    Configuring foundation framework
   </a>
   
 </li>
@@ -1742,6 +1763,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#theme-documentation" title="Theme Documentation" class="md-nav__link">
+    Theme Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#using-a-template-engine" title="Using a template engine" class="md-nav__link">
     Using a template engine
   </a>
@@ -1756,6 +1784,20 @@
         <li class="md-nav__item">
   <a href="#setup-for-development" title="Setup for development" class="md-nav__link">
     Setup for development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developing-with-timber" title="Developing with Timber" class="md-nav__link">
+    Developing with Timber
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-foundation-framework" title="Configuring foundation framework" class="md-nav__link">
+    Configuring foundation framework
   </a>
   
 </li>
@@ -1779,10 +1821,22 @@
                 
                 <h1 id="theme-development-with-wordpress">Theme Development with Wordpress</h1>
 <h2 id="resourcesarticles">Resources/Articles</h2>
+<h3 id="theme-documentation">Theme Documentation</h3>
+<ul>
+<li>Wordpress.org links<ul>
+<li><a href="https://codex.wordpress.org/Theme_Development">Theme Development</a></li>
+<li><a href="https://developer.wordpress.org/themes/">Handbook</a></li>
+<li><a href="https://codex.wordpress.org/Function_Reference">Function Reference</a></li>
+</ul>
+</li>
+</ul>
 <h3 id="using-a-template-engine">Using a template engine</h3>
 <ul>
 <li><a href="https://css-tricks.com/templating-languages-and-wordpress">Using Templating Engines to Streamline WordPress Theme Development</a></li>
-<li><a href="https://www.upstatement.com/timber/">Timber</a> - Twig template engine</li>
+<li><a href="https://www.upstatement.com/timber/">Timber</a> - Twig template engine<ul>
+<li>Uses Twig for templating.</li>
+</ul>
+</li>
 <li><a href="https://themeawesome.com/responsive-wordpress-theme/">ThemeAwsome</a> - Foundation theme for wordpress.</li>
 <li>Mustache for PHP <a href="https://github.com/bobthecow/mustache.php">BobTheCow</a></li>
 </ul>
@@ -1809,6 +1863,65 @@
   &quot;type&quot;: &quot;wordpress-theme&quot;
 }
 </code></pre>
+
+<h2 id="developing-with-timber">Developing with Timber</h2>
+<ul>
+<li>Resources<ul>
+<li><a href="http://notlaura.com/the-twig-for-timber-cheatsheet/">Timber Cheatsheet</a></li>
+</ul>
+</li>
+<li>Using <a href="https://timber.github.io/docs/">Timber</a> for development.</li>
+<li>Setup to get it to work with Timber/Timber package.<ul>
+<li>In <code>functions.php</code><ul>
+<li>Add include to site autoload file</li>
+<li>use statements to alias class names.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="php">require ABSPATH . '../vendor/autoload.php';
+use Timber\Timber as Timber;
+use Timber\Site as TimberSite;
+use Timber\Menu as TimberMenu;
+</code></pre>
+
+<pre><code>    * Remove check for Timber plugin
+    * line 60 - change filter statement. 
+        * `$twig-&gt;addFilter( new Twig_SimpleFilter('myfoo', array($this, 'myfoo')));`
+* Will get you to an unstyled Wordpress page.
+</code></pre>
+<h2 id="configuring-foundation-framework">Configuring foundation framework</h2>
+<ul>
+<li>Checkout/download foundation-zurb-template</li>
+<li>Copy src/scss folder.<ul>
+<li>app.scss</li>
+<li>_settings.scss</li>
+</ul>
+</li>
+<li>Configuration<ul>
+<li>Add <em>_custom.scss</em> for our custom configs</li>
+<li>Add <em>component</em> folder in sass folder for custom components</li>
+<li>Add <em>font-awesome</em> icons as a dependency - <code>npm install font-awesome</code></li>
+<li>edit <em>app.scss</em> - explicit import statements</li>
+</ul>
+</li>
+</ul>
+<pre><code class="sass">@import 'settings';
+@import 'custom';
+@import '~font-awesome/scss/font-awesome';
+@import '~foundation-sites/scss/foundation';
+</code></pre>
+
+<ul>
+<li>Remove motion-ui imports and settings.</li>
+<li>Edit <em>_settings.scss</em><ul>
+<li>change <code>@import 'util/util'</code> to <code>@import '~foundation-sites/scss/util/util';</code></li>
+<li>Add section 57 for <em>font-awesome</em></li>
+<li><code>$fa-font-path: "~font-awesome/fonts";</code> - font-awesome path</li>
+</ul>
+</li>
+</ul>
                 
                   
                 
