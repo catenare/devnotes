@@ -2,8 +2,9 @@
 
 ## Resources
 * [https://frontend.directory](https://frontend.directory/p)
+* [Front End Beginner Resources](https://github.com/thedaviddias/Resources-Front-End-Beginner)
 
-## Web Framework
+### Web Framework
 * [Foundation](http://foundation.zurb.com/)
     * Setup a new project ```foundation new```
 * [uikit](https://getuikit.com/v2/index.html)
@@ -13,6 +14,9 @@
 * [flakes](http://getflakes.com/) - Design and frontend framework for dashboard.
 * [Themezy](https://www.themezy.com/)
 * [Templated](https://templated.co/)
+
+### Fonts
+* [Web Font Loading Recipes](https://github.com/zachleat/web-font-loading-recipes)
 
 ## Tools
 ### HTML tools
