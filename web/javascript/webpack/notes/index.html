@@ -712,6 +712,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wordpress-configuration" title="Wordpress Configuration" class="md-nav__link">
+    Wordpress Configuration
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1780,6 +1787,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wordpress-configuration" title="Wordpress Configuration" class="md-nav__link">
+    Wordpress Configuration
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1853,6 +1867,39 @@
 </ul>
 </li>
 </ul>
+<h2 id="wordpress-configuration">Wordpress Configuration</h2>
+<ul>
+<li><code>wp_enqueue_script( $this-&gt;plugin_name, \PASEO_WP_FORM_DIR_URL . 'site/assets/paseo-wp-form-api.js', array('jquery'), $this-&gt;version, false );</code> - enqueue with jQuery as a dependency.</li>
+<li>Use externals to not include jquery in the bundle but use the Wordpress instance of jquery.</li>
+</ul>
+<pre><code class="json">  externals: {
+    jquery: 'jQuery'
+  },
+</code></pre>
+
+<ul>
+<li>Add <strong>webpack.ProvidePlugin</strong> with <em>jQuery</em> as the global variable.</li>
+</ul>
+<pre><code class="json">    new webpack.ProvidePlugin({
+      jQuery: 'jquery'
+    })
+</code></pre>
+
+<ul>
+<li>Error: TS2304 - Cannot find name Jquery - solution <a href="https://stackoverflow.com/questions/31173738/typescript-getting-error-ts2304-cannot-find-name-require?rq=1">StackOverflow - ts2304 - cannot find name</a><ul>
+<li><code>npm install --save-dev @types/jquery</code></li>
+</ul>
+</li>
+<li>Error: error TS2304: Build:Cannot find name 'Iterable' {still related to jquery} - solution: <a href="https://stackoverflow.com/questions/45360993/error-ts2304-buildcannot-find-name-iterable-after-upgrading-to-angular-4">StackOverflow Error ts2304</a><ul>
+<li>Update tsconfig.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="json">&quot;target&quot;: &quot;es5&quot;,
+&quot;lib&quot;: [
+       &quot;es2016&quot;, &quot;dom&quot;
+     ], 
+</code></pre>
                 
                   
                 

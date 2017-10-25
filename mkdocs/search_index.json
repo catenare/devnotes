@@ -27,7 +27,7 @@
         },
         {
             "location": "/projects/PaseoNetwork/",
-            "text": "Headless CMS on Wordpress Multisite.\n\n\n\n\nPutting together a headless CMS network.\n\n\n\n\nThinking\n\n\n\n\nUsing Wordpress as the CMS component\n\n\nAdding other resources as necessary.\n\n\nEasier to deal with than Drupal.\n\n\nCommitment to API via current developments.\n\n\n\n\nSites\n\n\n\n\nPaseo Baptist Church\n\n\nPaseo Center - Daycare and Preschool\n\n\nThe Martin Family\n\n\nPersonal Site\n\n\nCurrently hosted at Github",
+            "text": "Headless CMS on Wordpress Multisite.\n\n\n\n\nPutting together a headless CMS network.\n\n\n\n\nThinking\n\n\n\n\nUsing Wordpress as the CMS component\n\n\nAdding other resources as necessary.\n\n\nEasier to deal with than Drupal.\n\n\nCommitment to API via current developments.\n\n\n\n\nSites\n\n\n\n\nPaseo Baptist Church\n\n\nPaseo Center - Daycare and Preschool\n\n\nThe Martin Family\n\n\nPersonal Site\n\n\nCurrently hosted at Github\n\n\n\n\n\n\n\n\nWordpress Development\n\n\nWordpress API Form plugin - front-end and admin\n\n\n\n\nfolder layout\n\n\nsite\n - public assets for plugin\n\n\nsrc\n - PHP Classes for the plugin\n\n\nsite\n - alias to outside *\nsite\n folder\n\n\nMain.php\n - main entry class for plugin\n\n\nAdmin\n - Admin classes for plugin\n\n\nRest\n - Rest endpoints for plugin\n\n\n\n\n\n\npaseo-wp-form-api.php\n - entry script for plugin\n\n\nbuild\n - folder for building javascript/css (front-end) of admin plugin\n\n\nIncludes \nnode_modules\n\n\nUsing \nwebpack\n to build the assets.\n\n\n\n\n\n\nsrc\n - CSS/JS assets for plugin\n\n\nBuild script will push assets to \nsite/assets\n\n\n\n\n\n\n\n\n\n\n\n\nCreating admin screen for setting options and to view entries in contact us form.\n\n\n\n\nUsing REST API\n\n\nWill use REACT as the engine\n\n\nUpdates/changes managed by REST\n\n\n\n\nTo Do\n\n\n\n\n[ ] Add javaScript to admin site\n\n\n[ ] REST end-point for admin settings\n\n\n[ ] Modify theme plugin to put all front-end build info into \nbuild\n folder.",
             "title": "Overview"
         },
         {
@@ -44,6 +44,26 @@
             "location": "/projects/PaseoNetwork/#sites",
             "text": "Paseo Baptist Church  Paseo Center - Daycare and Preschool  The Martin Family  Personal Site  Currently hosted at Github",
             "title": "Sites"
+        },
+        {
+            "location": "/projects/PaseoNetwork/#wordpress-development",
+            "text": "",
+            "title": "Wordpress Development"
+        },
+        {
+            "location": "/projects/PaseoNetwork/#wordpress-api-form-plugin-front-end-and-admin",
+            "text": "folder layout  site  - public assets for plugin  src  - PHP Classes for the plugin  site  - alias to outside * site  folder  Main.php  - main entry class for plugin  Admin  - Admin classes for plugin  Rest  - Rest endpoints for plugin    paseo-wp-form-api.php  - entry script for plugin  build  - folder for building javascript/css (front-end) of admin plugin  Includes  node_modules  Using  webpack  to build the assets.    src  - CSS/JS assets for plugin  Build script will push assets to  site/assets",
+            "title": "Wordpress API Form plugin - front-end and admin"
+        },
+        {
+            "location": "/projects/PaseoNetwork/#creating-admin-screen-for-setting-options-and-to-view-entries-in-contact-us-form",
+            "text": "Using REST API  Will use REACT as the engine  Updates/changes managed by REST",
+            "title": "Creating admin screen for setting options and to view entries in contact us form."
+        },
+        {
+            "location": "/projects/PaseoNetwork/#to-do",
+            "text": "[ ] Add javaScript to admin site  [ ] REST end-point for admin settings  [ ] Modify theme plugin to put all front-end build info into  build  folder.",
+            "title": "To Do"
         },
         {
             "location": "/projects/themartinssite/",
@@ -792,7 +812,7 @@
         },
         {
             "location": "/web/javascript/webpack/notes/",
-            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\nWebpack Chain\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.\n\n\n\n\n\n\n\n\nfont-awesome config with webpack and foundation\n\n\n\n\nwebpack config - allow to process image and font files.\n\n\n\n\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }\n\n\n\n\n\n\nConfigure scss imports\n\n\nIn \n_settings.scss\n add \n$fa-font-path:   \"~font-awesome/fonts\";\n to end of the page.\n\n\nIn \napp.scss\n add \n@import '~font-awesome/scss/font-awesome';\n after \n@import \"settings\"\n.\n\n\n\n\nErrors and notes\n\n\n\n\nIssue: \nCan't find variable: SockJS\" in Safari on Mac and iOS\n\n\nResolve: \neval-source-map\n results in \"Can't find variable: SockJS\" in Safari on Mac and iOS with v2.8.x #1090\n\n\nChanged \ndevtool\n to '#source-map'",
+            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\nWebpack Chain\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.\n\n\n\n\n\n\n\n\nfont-awesome config with webpack and foundation\n\n\n\n\nwebpack config - allow to process image and font files.\n\n\n\n\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }\n\n\n\n\n\n\nConfigure scss imports\n\n\nIn \n_settings.scss\n add \n$fa-font-path:   \"~font-awesome/fonts\";\n to end of the page.\n\n\nIn \napp.scss\n add \n@import '~font-awesome/scss/font-awesome';\n after \n@import \"settings\"\n.\n\n\n\n\nErrors and notes\n\n\n\n\nIssue: \nCan't find variable: SockJS\" in Safari on Mac and iOS\n\n\nResolve: \neval-source-map\n results in \"Can't find variable: SockJS\" in Safari on Mac and iOS with v2.8.x #1090\n\n\nChanged \ndevtool\n to '#source-map'\n\n\n\n\n\n\n\n\nWordpress Configuration\n\n\n\n\nwp_enqueue_script( $this->plugin_name, \\PASEO_WP_FORM_DIR_URL . 'site/assets/paseo-wp-form-api.js', array('jquery'), $this->version, false );\n - enqueue with jQuery as a dependency.\n\n\nUse externals to not include jquery in the bundle but use the Wordpress instance of jquery.\n\n\n\n\n  externals: {\n    jquery: 'jQuery'\n  },\n\n\n\n\n\n\nAdd \nwebpack.ProvidePlugin\n with \njQuery\n as the global variable.\n\n\n\n\n    new webpack.ProvidePlugin({\n      jQuery: 'jquery'\n    })\n\n\n\n\n\n\nError: TS2304 - Cannot find name Jquery - solution \nStackOverflow - ts2304 - cannot find name\n\n\nnpm install --save-dev @types/jquery\n\n\n\n\n\n\nError: error TS2304: Build:Cannot find name 'Iterable' {still related to jquery} - solution: \nStackOverflow Error ts2304\n\n\nUpdate tsconfig.\n\n\n\n\n\n\n\n\n\"target\": \"es5\",\n\"lib\": [\n       \"es2016\", \"dom\"\n     ],",
             "title": "Notes"
         },
         {
@@ -824,6 +844,11 @@
             "location": "/web/javascript/webpack/notes/#errors-and-notes",
             "text": "Issue:  Can't find variable: SockJS\" in Safari on Mac and iOS  Resolve:  eval-source-map  results in \"Can't find variable: SockJS\" in Safari on Mac and iOS with v2.8.x #1090  Changed  devtool  to '#source-map'",
             "title": "Errors and notes"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#wordpress-configuration",
+            "text": "wp_enqueue_script( $this->plugin_name, \\PASEO_WP_FORM_DIR_URL . 'site/assets/paseo-wp-form-api.js', array('jquery'), $this->version, false );  - enqueue with jQuery as a dependency.  Use externals to not include jquery in the bundle but use the Wordpress instance of jquery.     externals: {\n    jquery: 'jQuery'\n  },   Add  webpack.ProvidePlugin  with  jQuery  as the global variable.       new webpack.ProvidePlugin({\n      jQuery: 'jquery'\n    })   Error: TS2304 - Cannot find name Jquery - solution  StackOverflow - ts2304 - cannot find name  npm install --save-dev @types/jquery    Error: error TS2304: Build:Cannot find name 'Iterable' {still related to jquery} - solution:  StackOverflow Error ts2304  Update tsconfig.     \"target\": \"es5\",\n\"lib\": [\n       \"es2016\", \"dom\"\n     ],",
+            "title": "Wordpress Configuration"
         },
         {
             "location": "/web/javascript/webpack/webpack/",

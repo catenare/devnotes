@@ -264,6 +264,52 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wordpress-development" title="Wordpress Development" class="md-nav__link">
+    Wordpress Development
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wordpress-api-form-plugin-front-end-and-admin" title="Wordpress API Form plugin - front-end and admin" class="md-nav__link">
+    Wordpress API Form plugin - front-end and admin
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-admin-screen-for-setting-options-and-to-view-entries-in-contact-us-form" title="Creating admin screen for setting options and to view entries in contact us form." class="md-nav__link">
+    Creating admin screen for setting options and to view entries in contact us form.
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-do" title="To Do" class="md-nav__link">
+    To Do
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -1728,6 +1774,52 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wordpress-development" title="Wordpress Development" class="md-nav__link">
+    Wordpress Development
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wordpress-api-form-plugin-front-end-and-admin" title="Wordpress API Form plugin - front-end and admin" class="md-nav__link">
+    Wordpress API Form plugin - front-end and admin
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-admin-screen-for-setting-options-and-to-view-entries-in-contact-us-form" title="Creating admin screen for setting options and to view entries in contact us form." class="md-nav__link">
+    Creating admin screen for setting options and to view entries in contact us form.
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-do" title="To Do" class="md-nav__link">
+    To Do
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -1765,6 +1857,43 @@
 <li>Currently hosted at Github</li>
 </ul>
 </li>
+</ul>
+<h2 id="wordpress-development">Wordpress Development</h2>
+<h3 id="wordpress-api-form-plugin-front-end-and-admin">Wordpress API Form plugin - front-end and admin</h3>
+<ul>
+<li>folder layout<ul>
+<li><strong>site</strong> - public assets for plugin</li>
+<li><strong>src</strong> - PHP Classes for the plugin<ul>
+<li><strong>site</strong> - alias to outside *<em>site</em> folder</li>
+<li><strong>Main.php</strong> - main entry class for plugin</li>
+<li><strong>Admin</strong> - Admin classes for plugin</li>
+<li><strong>Rest</strong> - Rest endpoints for plugin</li>
+</ul>
+</li>
+<li><strong>paseo-wp-form-api.php</strong> - entry script for plugin</li>
+<li><strong>build</strong> - folder for building javascript/css (front-end) of admin plugin<ul>
+<li>Includes <em>node_modules</em><ul>
+<li>Using <em>webpack</em> to build the assets.</li>
+</ul>
+</li>
+<li><strong>src</strong> - CSS/JS assets for plugin</li>
+<li>Build script will push assets to <strong>site/assets</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="creating-admin-screen-for-setting-options-and-to-view-entries-in-contact-us-form">Creating admin screen for setting options and to view entries in contact us form.</h4>
+<ul>
+<li>Using REST API</li>
+<li>Will use REACT as the engine</li>
+<li>Updates/changes managed by REST</li>
+</ul>
+<h5 id="to-do">To Do</h5>
+<ul>
+<li>[ ] Add javaScript to admin site</li>
+<li>[ ] REST end-point for admin settings</li>
+<li>[ ] Modify theme plugin to put all front-end build info into <em>build</em> folder.</li>
 </ul>
                 
                   
