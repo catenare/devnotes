@@ -27,10 +27,12 @@ pages:
       - API: 'php/wordpress/api/api.md'
       - 'Learn Wordpress REST API': 'php/wordpress/api/learn.md'
       - 'Angular': 'php/wordpress/api/angular.md'
+      - 'Backbone': 'php/wordpress/api/backbonejs.md'
       - 'Vuejs': 'php/wordpress/api/vuejs.md'
     - 'Setup': 'php/wordpress/setup.md'
     - 'Local Dev': 'php/wordpress/dev.md'
     - 'Plugin Dev': 'php/wordpress/plugin development.md'
+    - 'Dev from scratch': 'php/wordpress/plugin-dev-from-scratch.md'
     - 'Theme Dev': 'php/wordpress/themes.md'
   - Database: 
       - Migrations: 'database/dbmigrations.md'
@@ -64,6 +66,11 @@ pages:
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
       - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
       - 'Foundation Setup': 'web/javascript/vue/foundation.md'
+    - Webpack:
+      - 'Build plugin or loader': 'web/javascript/webpack/Building a web pack plugin or loader.md'
+      - 'Webpack Plugin': 'web/javascript/webpack/html-webpack-plugin.md'
+      - 'Notes': 'web/javascript/webpack/notes.md'
+      - 'Webpack': 'web/javascript/webpack/webpack.md'
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'

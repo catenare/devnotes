@@ -50,3 +50,6 @@
 * Activate plugin.
 
 ## Using namespace and classes for plugin development
+
+## Using database in wordpress
+* [WPDB](https://developer.wordpress.org/reference/classes/wpdb/)

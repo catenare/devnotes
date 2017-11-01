@@ -123,7 +123,7 @@
       listen = "/opt/local/var/run/php71/php71-fpm.socket"
 ```
 1. Setup nginx - `/opt/local/etc/nginx` - location of setup file
-```json
+```js
     server {
             listen       80;
             server_name  localhost;
