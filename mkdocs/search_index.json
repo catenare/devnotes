@@ -2461,6 +2461,26 @@
             "title": "Other tools"
         },
         {
+            "location": "/teaching/openedx/openedx/",
+            "text": "Open edX - Using Open Edx for Online Learning Development\n\n\nWhy OpenEdx\n\n\n\n\nPython and Django\n\n\nIn wide use\n\n\nWhy not\n\n\n\n\nLinks\n\n\n\n\nSites Powered by edX",
+            "title": "Notes"
+        },
+        {
+            "location": "/teaching/openedx/openedx/#open-edx-using-open-edx-for-online-learning-development",
+            "text": "",
+            "title": "Open edX - Using Open Edx for Online Learning Development"
+        },
+        {
+            "location": "/teaching/openedx/openedx/#why-openedx",
+            "text": "Python and Django  In wide use  Why not",
+            "title": "Why OpenEdx"
+        },
+        {
+            "location": "/teaching/openedx/openedx/#links",
+            "text": "Sites Powered by edX",
+            "title": "Links"
+        },
+        {
             "location": "/teaching/teach/",
             "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n - Python based - Django\n\n\nClaroline\n - PHP Based\n\n\nForma.lms\n - PHP based\n\n\nOpigno\n - Drupal based\n\n\nIlias\n - PHP based\n\n\nSakaiProject\n - Java Based\n\n\nChamilo\n - \n\n\n\n\nLMS Tools Commercial\n\n\n\n\nEliademy\n\n\n\n\nLearn Programming with Python\n\n\n\n\nPaul Vincent Craven\n\n\nTeaching Python 3.6 with Games\n\n\nProgram Arcade Games\n\n\n\n\n\n\n\n\nTeaching notes\n\n\n\n\nRevise often\n\n\nRestructured text for material (markdown)\n\n\nSphinx (for documentation) (MkDocs)\n\n\nStore in Git\n\n\nRead The Docs - documentation generator\n\n\n\n\n\n\n\n\nOther tools\n\n\n\n\nVisualize Your Code\n - Online tutor for learning to code.\n\n\nCreated by: \nPhilip J. Guo",
             "title": "Learning Sources"
