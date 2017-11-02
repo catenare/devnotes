@@ -31,11 +31,15 @@
 * [eXe](http://exelearning.net/?lang=en) - SCORM Tool
 
 ## LMS Tools
-* [Open Edx](https://open.edx.org)
-* [Forma.lms](http://www.formalms.org/)
-* [Eliademy](https://eliademy.com/en)
+* [Open Edx](https://open.edx.org) - Python based
+* [Claroline](https://www.claroline.net/) - PHP Based
+* [Forma.lms](http://www.formalms.org/) - PHP based
 * [Opigno](https://www.opigno.org/en#home) - Drupal based
-* [Ilias](https://www.ilias.de/docu/goto_docu_root_1.html)
+* [Ilias](https://www.ilias.de/docu/goto_docu_root_1.html) - PHP based
+* [SakaiProject](https://www.sakaiproject.org/) - Java Based
+* [Chamilo](https://chamilo.org/) - 
+### LMS Tools Commercial
+* [Eliademy](https://eliademy.com/en)
 
 ## Learn Programming with Python
 * [Paul Vincent Craven](http://simpson.edu/author/pcraven/)
