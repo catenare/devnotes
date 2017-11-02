@@ -77,7 +77,7 @@
         },
         {
             "location": "/php/wordpress/notes/",
-            "text": "Wordpress Notes\n\n\nErrors\n\n\n\n\nWordPress database error  for query SHOW FULL COLUMNS FROM\n\n\nFound it... Security patch in 4.1.2 added a new function, 'wpdb->process_field_lengths()', that causes an insert or update query not to be run if the data is longer than the permissible size based on the database schema.\n\n\nError fix\n\n\n\n\n\n\n\n\nAPI Notes\n\n\n\n\nConfigure headers for API Rest Calls\n\n\nAccess Control Headers for Wordpress Rest API\n\n\nAdded below code to plugin startup file. Let's one change headers and permissions.\n\n\n\n\n\n\n\n\n/**\n * Use * for origin\n */\n add_action( 'rest_api_init', function() {\n\n remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );\n add_filter( 'rest_pre_serve_request', function( $value ) {\n    header( 'Access-Control-Allow-Origin: *' );\n    header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );\n    header( 'Access-Control-Allow-Credentials: true' );\n    header( 'Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, PAS-Fingerprint, PAS-Check, PAS-Nonce, PAS-Captcha');\n    header('Access-Control-Allow-Headers: Authorization, Content-Type, PAS-Nonce, PAS-Fingerprint, PAS-Check');\n    return $value;\n });\n }, 15 );\n\n\n\n\nWordpress Resources\n\n\n\n\nWP Hasty",
+            "text": "Wordpress Notes\n\n\nErrors\n\n\n\n\nWordPress database error  for query SHOW FULL COLUMNS FROM\n\n\nFound it... Security patch in 4.1.2 added a new function, 'wpdb->process_field_lengths()', that causes an insert or update query not to be run if the data is longer than the permissible size based on the database schema.\n\n\nError fix\n\n\n\n\n\n\n\n\nAPI Notes\n\n\n\n\nConfigure headers for API Rest Calls\n\n\nAccess Control Headers for Wordpress Rest API\n\n\nAdded below code to plugin startup file. Let's one change headers and permissions.\n\n\n\n\n\n\n\n\n/**\n * Use * for origin\n */\n add_action( 'rest_api_init', function() {\n\n remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );\n add_filter( 'rest_pre_serve_request', function( $value ) {\n    header( 'Access-Control-Allow-Origin: *' );\n    header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );\n    header( 'Access-Control-Allow-Credentials: true' );\n    header( 'Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, PAS-Fingerprint, PAS-Check, PAS-Nonce, PAS-Captcha');\n    header('Access-Control-Allow-Headers: Authorization, Content-Type, PAS-Nonce, PAS-Fingerprint, PAS-Check');\n    return $value;\n });\n }, 15 );\n\n\n\n\nWordpress Resources\n\n\n\n\nWP Hasty\n\n\nUsing jquery-ui with wordpress. \n\n\nHow to use jquery-ui in Wordpress",
             "title": "Notes"
         },
         {
@@ -97,7 +97,7 @@
         },
         {
             "location": "/php/wordpress/notes/#wordpress-resources",
-            "text": "WP Hasty",
+            "text": "WP Hasty  Using jquery-ui with wordpress.   How to use jquery-ui in Wordpress",
             "title": "Wordpress Resources"
         },
         {
@@ -139,6 +139,36 @@
             "location": "/php/wordpress/admin/#issues-with-using-rest-api",
             "text": "Limits access to customizing the site  Current tools for modifying templates won't work.  Front-end modification can be limited.",
             "title": "Issues with using Rest API"
+        },
+        {
+            "location": "/php/wordpress/deployment/",
+            "text": "Wordpress deployment notes\n\n\nDeploying the site\n\n\nBackend Code - Wordpress Code\n\n\n\n\nCreate tag of current site in master\n\n\ngit checkout master\n\n\ngit tag -a v1.0 -m \"Initial version of site launched\"\n\n\ngit push origin --tags\n\n\n\n\n\n\nMerge code to master.\n\n\ngit checkout master\n\n\ngit merge dev\n\n\ngit push origin\n\n\n\n\n\n\nDeploy backend code to server\n\n\nssh -i keyfile.pem {user}@{server}\n\n\nUpdate server: \n\n\nsudo apt-get update\n\n\nsudo apt-get upgrade -y\n\n\n\n\n\n\nAccess the correct folder\n\n\n/path/to/wordpress/folder\n\n\ngit pull origin master\n\n\n\n\n\n\nRun composer update without dev.\n\n\ncomposer update --no-dev -vvv\n - no dev packages and verbose.\n\n\n\n\n\n\n\n\n\n\nLogin and activate plugins.\n\n\nTest API access.\n\n\n\n\nIssues with deployment\n\n\n\n\nError \nPHP Fatal error: Uncaught exception 'ErrorException' with message 'proc_open(): fork failed - Cannot allocate memory' in phar\n\n\nproc-open-fork-failed-errors for details\n\n\n\n\n\n\n\n\n/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024\n/sbin/mkswap /var/swap.1\n/sbin/swapon /var/swap.1\n\n\n\n\n\n\nAdd Permanent swap \nAdd swap to Ubuntu\n\n\n\n\nAdding API Theme\n\n\n\n\nAdding a public theme to show when hitting the front page of our api.",
+            "title": "Deployment"
+        },
+        {
+            "location": "/php/wordpress/deployment/#wordpress-deployment-notes",
+            "text": "",
+            "title": "Wordpress deployment notes"
+        },
+        {
+            "location": "/php/wordpress/deployment/#deploying-the-site",
+            "text": "",
+            "title": "Deploying the site"
+        },
+        {
+            "location": "/php/wordpress/deployment/#backend-code-wordpress-code",
+            "text": "Create tag of current site in master  git checkout master  git tag -a v1.0 -m \"Initial version of site launched\"  git push origin --tags    Merge code to master.  git checkout master  git merge dev  git push origin    Deploy backend code to server  ssh -i keyfile.pem {user}@{server}  Update server:   sudo apt-get update  sudo apt-get upgrade -y    Access the correct folder  /path/to/wordpress/folder  git pull origin master    Run composer update without dev.  composer update --no-dev -vvv  - no dev packages and verbose.      Login and activate plugins.  Test API access.",
+            "title": "Backend Code - Wordpress Code"
+        },
+        {
+            "location": "/php/wordpress/deployment/#issues-with-deployment",
+            "text": "Error  PHP Fatal error: Uncaught exception 'ErrorException' with message 'proc_open(): fork failed - Cannot allocate memory' in phar  proc-open-fork-failed-errors for details     /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024\n/sbin/mkswap /var/swap.1\n/sbin/swapon /var/swap.1   Add Permanent swap  Add swap to Ubuntu",
+            "title": "Issues with deployment"
+        },
+        {
+            "location": "/php/wordpress/deployment/#adding-api-theme",
+            "text": "Adding a public theme to show when hitting the front page of our api.",
+            "title": "Adding API Theme"
         },
         {
             "location": "/php/wordpress/api/api/",
@@ -239,6 +269,21 @@
             "location": "/php/wordpress/api/angular/#notes",
             "text": "Local site:  http://paseo.demo/wp-json/wp/v2/posts  - Access the REST API",
             "title": "Notes"
+        },
+        {
+            "location": "/php/wordpress/api/backbonejs/",
+            "text": "Using backbone with Wordpress\n\n\nResources\n\n\n\n\nBackbonejs\n\n\nLearning Backbonejs",
+            "title": "Backbone"
+        },
+        {
+            "location": "/php/wordpress/api/backbonejs/#using-backbone-with-wordpress",
+            "text": "",
+            "title": "Using backbone with Wordpress"
+        },
+        {
+            "location": "/php/wordpress/api/backbonejs/#resources",
+            "text": "Backbonejs  Learning Backbonejs",
+            "title": "Resources"
         },
         {
             "location": "/php/wordpress/api/vuejs/",
@@ -386,6 +431,51 @@
             "title": "Setup for development"
         },
         {
+            "location": "/php/wordpress/plugin-dev-from-scratch/",
+            "text": "Wordpress Plugin Development from Scratch\n\n\n\n\nCreate Contact Form plugin to submit contact information via API.\n\n\nUse Composer.\n\n\nPHP 7.0\n\n\n\n\nSetup for plugin development.\n\n\n\n\nUpdate composer \nsudo composer self-update\n\n\nCreate folder for plugin \nmkdir paseo-contact-form\n\n\nCreate \ncomposer.json\n \ncomposer init\n\n\nFor \ntype\n use \nwordpress-plugin\n\n\n\n\n\n\nCreate git repository - \ngit init\n\n\nCreate \nREADME.md\n for github.\n\n\nInclude information about plugin in README file\n\n\nCreate \n.gitignore\n file\n\n\nAdd \nwp-config.php\n file to insure it does not get committed.\n\n\n\n\n\n\nAdd files to repo - \ngit add .\n\n\nCommit files - \ngit commit -a -m 'initial commit'\n\n\n\n\n\n\nCreate github repository\n\n\npaseo-wp-form-api\n - name or repo\n\n\nAdd as remote repo to your local repository.\n\n\ngit remote add origin git@github.com:catenare/paseo-wp-form-api.git\n\n\ngit push -u origin master\n\n\n\n\n\n\nPlugin can now be added to your Wordpress site as a dependency.\n\n\n\n\nCreate the plugin file with header information\n\n\n\n\ntouch paseo-contact-form.php\n\n\nAdd header requirements to the file-  \nHeader Requirements\n\n\nPlugin can now be enabled on the Wordpress site.\n\n\nCreate \ndev-master\n branch. Seems like you can't use the vcs plugin setup with straight \nmaster\n\n\ngit checkout -b dev-master\n\n\ngit push origin --all\n - push all the branches to github.\n\n\n\n\n\n\n\n\nEnable plugin in Wordpress.\n\n\n\n\nEdit \ncomposer.json\n file in Wordpress application folder.\n\n\nAdd github repository under \n\"repositories\"\n section.\n\n\n\n\n\"respositories\": [\n    {\n      \"type\": \"vcs\",\n      \"url\": \"https://github.com/catenare/paseo-wp-form-api.git\"\n    }\n]\n\n\n\n\n\n\nAdd plugin to \n\"require\"\n section.\n\n\n\"paseo/contact-form-api\": \"dev-master\"\n\n\nPlugin is now installable in Wordpress Admin.\n\n\n\n\nSetup plugin in Wordpress\n\n\n\n\nRun \ncomposer update\n to install necessary dependencies.\n\n\nActivate plugin.\n\n\n\n\nUsing namespace and classes for plugin development\n\n\nUsing database in wordpress\n\n\n\n\nWPDB\n\n\n\n\nMulti-site development\n\n\n\n\nMaking Plugins Compatible with WordPress Multisite\n\n\nWordpress Create a Network\n\n\nHow to Build a Multisite Compatible WordPress Plugin\n\n\nWrite a Plugin for WordPress Multi-Site",
+            "title": "Dev from scratch"
+        },
+        {
+            "location": "/php/wordpress/plugin-dev-from-scratch/#wordpress-plugin-development-from-scratch",
+            "text": "Create Contact Form plugin to submit contact information via API.  Use Composer.  PHP 7.0",
+            "title": "Wordpress Plugin Development from Scratch"
+        },
+        {
+            "location": "/php/wordpress/plugin-dev-from-scratch/#setup-for-plugin-development",
+            "text": "Update composer  sudo composer self-update  Create folder for plugin  mkdir paseo-contact-form  Create  composer.json   composer init  For  type  use  wordpress-plugin    Create git repository -  git init  Create  README.md  for github.  Include information about plugin in README file  Create  .gitignore  file  Add  wp-config.php  file to insure it does not get committed.    Add files to repo -  git add .  Commit files -  git commit -a -m 'initial commit'    Create github repository  paseo-wp-form-api  - name or repo  Add as remote repo to your local repository.  git remote add origin git@github.com:catenare/paseo-wp-form-api.git  git push -u origin master    Plugin can now be added to your Wordpress site as a dependency.",
+            "title": "Setup for plugin development."
+        },
+        {
+            "location": "/php/wordpress/plugin-dev-from-scratch/#create-the-plugin-file-with-header-information",
+            "text": "touch paseo-contact-form.php  Add header requirements to the file-   Header Requirements  Plugin can now be enabled on the Wordpress site.  Create  dev-master  branch. Seems like you can't use the vcs plugin setup with straight  master  git checkout -b dev-master  git push origin --all  - push all the branches to github.",
+            "title": "Create the plugin file with header information"
+        },
+        {
+            "location": "/php/wordpress/plugin-dev-from-scratch/#enable-plugin-in-wordpress",
+            "text": "Edit  composer.json  file in Wordpress application folder.  Add github repository under  \"repositories\"  section.   \"respositories\": [\n    {\n      \"type\": \"vcs\",\n      \"url\": \"https://github.com/catenare/paseo-wp-form-api.git\"\n    }\n]   Add plugin to  \"require\"  section.  \"paseo/contact-form-api\": \"dev-master\"  Plugin is now installable in Wordpress Admin.",
+            "title": "Enable plugin in Wordpress."
+        },
+        {
+            "location": "/php/wordpress/plugin-dev-from-scratch/#setup-plugin-in-wordpress",
+            "text": "Run  composer update  to install necessary dependencies.  Activate plugin.",
+            "title": "Setup plugin in Wordpress"
+        },
+        {
+            "location": "/php/wordpress/plugin-dev-from-scratch/#using-namespace-and-classes-for-plugin-development",
+            "text": "",
+            "title": "Using namespace and classes for plugin development"
+        },
+        {
+            "location": "/php/wordpress/plugin-dev-from-scratch/#using-database-in-wordpress",
+            "text": "WPDB",
+            "title": "Using database in wordpress"
+        },
+        {
+            "location": "/php/wordpress/plugin-dev-from-scratch/#multi-site-development",
+            "text": "Making Plugins Compatible with WordPress Multisite  Wordpress Create a Network  How to Build a Multisite Compatible WordPress Plugin  Write a Plugin for WordPress Multi-Site",
+            "title": "Multi-site development"
+        },
+        {
             "location": "/php/wordpress/themes/",
             "text": "Theme Development with Wordpress\n\n\nResources/Articles\n\n\nTheme Documentation\n\n\n\n\nWordpress.org links\n\n\nTheme Development\n\n\nHandbook\n\n\nFunction Reference\n\n\n\n\n\n\n\n\nUsing a template engine\n\n\n\n\nUsing Templating Engines to Streamline WordPress Theme Development\n\n\nTimber\n - Twig template engine\n\n\nUses Twig for templating.\n\n\n\n\n\n\nThemeAwsome\n - Foundation theme for wordpress.\n\n\nMustache for PHP \nBobTheCow\n\n\n\n\nSetup for development\n\n\n\n\nCreate \ncomposer.json\n file - \ncomposer init\n\n\nAdd \n\"type\": \"wordpress-theme\"\n to get composer to install it in the wordpress plugin directory\n\n\n\n\n{\n  \"name\": \"\",\n  \"description\": \"\",\n  \"authors\": [\n    {\n      \"name\": \"Johan Martin\",\n      \"homepage\": \"http://www.johan-martin.com\",\n      \"role\": \"developer\"\n    }\n  ],\n  \"keywords\":[\n    \"Wordpress\",\n    \"Theme\",\n    \"Composer\"\n  ],\n  \"type\": \"wordpress-theme\"\n}\n\n\n\n\nDeveloping with Timber\n\n\n\n\nResources\n\n\nTimber Cheatsheet\n\n\n\n\n\n\nUsing \nTimber\n for development.\n\n\nSetup to get it to work with Timber/Timber package.\n\n\nIn \nfunctions.php\n\n\nAdd include to site autoload file\n\n\nuse statements to alias class names.\n\n\n\n\n\n\n\n\n\n\n\n\nrequire ABSPATH . '../vendor/autoload.php';\nuse Timber\\Timber as Timber;\nuse Timber\\Site as TimberSite;\nuse Timber\\Menu as TimberMenu;\n\n\n\n\n    * Remove check for Timber plugin\n    * line 60 - change filter statement. \n        * `$twig->addFilter( new Twig_SimpleFilter('myfoo', array($this, 'myfoo')));`\n* Will get you to an unstyled Wordpress page.\n\n\n\nConfiguring foundation framework\n\n\n\n\nCheckout/download foundation-zurb-template\n\n\nCopy src/scss folder.\n\n\napp.scss\n\n\n_settings.scss\n\n\n\n\n\n\nConfiguration\n\n\nAdd \n_custom.scss\n for our custom configs\n\n\nAdd \ncomponent\n folder in sass folder for custom components\n\n\nAdd \nfont-awesome\n icons as a dependency - \nnpm install font-awesome\n\n\nedit \napp.scss\n - explicit import statements\n\n\n\n\n\n\n\n\n@import 'settings';\n@import 'custom';\n@import '~font-awesome/scss/font-awesome';\n@import '~foundation-sites/scss/foundation';\n\n\n\n\n\n\nRemove motion-ui imports and settings.\n\n\nEdit \n_settings.scss\n\n\nchange \n@import 'util/util'\n to \n@import '~foundation-sites/scss/util/util';\n\n\nAdd section 57 for \nfont-awesome\n\n\n$fa-font-path: \"~font-awesome/fonts\";\n - font-awesome path",
             "title": "Theme Dev"
@@ -484,6 +574,16 @@
             "location": "/database/mongo/#setup",
             "text": "sudo port install mongodb mongo-tools  Setup configuration  /opt/local/etc/mongodb.conf     dbpath = /opt/local/var/db/mongodb\n\nbind_ip = 127.0.0.1\n\n# Running as daemon\nfork = true\n\nlogpath = /opt/local/var/log/mongodb/mongodb.log\nlogappend = true   Configure ~/.profile   alias mongostart=\"sudo mongod -f /opt/local/etc/mongodb/mongod.conf --httpinterface\"\n\nmongostop_func () {\n    local mongopid = `less /opt/local/var/db/mongodb/mongod.lock`;\n    if [[ $mongopid =~ [[:digit:]] ]]; then\n        sudo kill -15 $mongopid;\n        echo mongod process $mongopid terminated;\n    else\n        echo mongo process $mongopid not exists;\n    fi\n}\n\nalias mongostop=\"mongostop_func\"   Start the server  mongostart  - will need sudo password",
             "title": "Setup"
+        },
+        {
+            "location": "/database/mysql/",
+            "text": "Mysql Notes\n\n\n\n\nRetrieving data as json\n\n\nJSON Datatype\n\n\n\n\n\n\n\n\n    select contact_info,\n  JSON_EXTRACT(contact_info,'$') as 'extracted',\n  JSON_EXTRACT(contact_info, '$.email') as email,\n  JSON_EXTRACT(contact_info, '$.message') as message,\n  JSON_EXTRACT(contact_info, '$.fullname') as name,\n  JSON_EXTRACT(contact_info, '$.telephone') as telephone\nfrom wp_contact_us;",
+            "title": "Mysql"
+        },
+        {
+            "location": "/database/mysql/#mysql-notes",
+            "text": "Retrieving data as json  JSON Datatype         select contact_info,\n  JSON_EXTRACT(contact_info,'$') as 'extracted',\n  JSON_EXTRACT(contact_info, '$.email') as email,\n  JSON_EXTRACT(contact_info, '$.message') as message,\n  JSON_EXTRACT(contact_info, '$.fullname') as name,\n  JSON_EXTRACT(contact_info, '$.telephone') as telephone\nfrom wp_contact_us;",
+            "title": "Mysql Notes"
         },
         {
             "location": "/database/postgresql/",
@@ -882,7 +982,7 @@
         },
         {
             "location": "/web/javascript/notes/",
-            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\nJavaScript Plugin for Web Forms\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.\n\n\n\n\n\n\n\n\nNPM Notes\n\n\n\n\nUpdate npm modules\n\n\nnpm outdated\n - list of outdated files\n\n\nnpm install {} {}\n - install list of outdated files.\n\n\n\n\n\n\n\n\nOther\n\n\nPromises\n\n\nlet getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)\n\nexport default getCaptcha;\n\n\n\nimport Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'\n\nwindow.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){\n\n            grecaptcha.render('html_element', {\n                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n            });\n\n        })\n        .catch(function(error){\n            console.log(error);\n        });\n}\n\n\nnew Vue({\n  el: '#app',\n  render: h => h(App)\n})\n\n\n\n\nAxios\n\n\n\n\nIssue: \nAxios is not showing all headers of response\n\n\nSet Global Axios Headers\n\n\nMozilla CORS\n\n\n\n\n\n\n\n\nFingerprint2 - use a quick and dirty way to track submissions.\n\n\n\n\nWrap code in a promise.\n\n\n\n\nimport Fingerprint2 from \"fingerprintjs2\";\n\nconst getFinger = new Promise((resolve) => {\n\n  new Fingerprint2().get((result) => {\n    resolve(result);\n  });\n});\n\nexport default getFinger;\n\n\n\n\n\n\nIn Component - call a function from the promise and the set local var for finger.\n\n\n\n\ngetFinger.then( (result) => this.getInitHeaders(result) );",
+            "text": "Notes related to front-end development.\n\n\nJavaScript Notes\n\n\nResources\n\n\n\n\nStandard JS\n - JavaScript Standard Style\n\n\nRules for writing JavaScript.\n\n\n\n\n\n\nAwesome Angular\n\n\nYou Don't Need jQuery\n\n\nJavaScript Plugin for Web Forms\n\n\n\n\nTools\n\n\n\n\nLerna\n - Manage JavaScript projects with multiple packages\n\n\nColmena\n - Colmena - CMS system.\n\n\n\n\nIonic\n\n\n\n\nInclude font-awesome fonts in project.\n\n\n\n\nFontAwesome in Ionic\n\n\n\n\nInstall FontAwesome - \nnpm install --save font-awesome\n\n\n\n\nCreate script to copy fonts into \nwww/assets/fonts\n\n\n\n\n\n\nSet path to fonts in SCSS - \n$fa-font-path: /assets/fonts;\n in \nscr/app/app.scss\n; \n\n\n\n\nhttps://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.\n\n\n\n\n\n\n\n\n\n\n\n\nFixing Issues\n\n\n\n\n\"SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode.\"\n\n\nResolution: \nSafari/Babel/Webpack Const declarations are not supported in strict mode #922\n - Don't exclue node_modules when building with webpack.\n\n\n\n\n\n\n\n\nNPM Notes\n\n\n\n\nUpdate npm modules\n\n\nnpm outdated\n - list of outdated files\n\n\nnpm install {} {}\n - install list of outdated files.\n\n\n\n\n\n\n\n\nOther\n\n\nPromises\n\n\nlet getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)\n\nexport default getCaptcha;\n\nimport Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'\n\nwindow.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){\n\n            grecaptcha.render('html_element', {\n                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n            });\n\n        })\n        .catch(function(error){\n            console.log(error);\n        });\n}\n\n\nnew Vue({\n  el: '#app',\n  render: h => h(App)\n})\n\n\n\n\nAxios\n\n\n\n\nIssue: \nAxios is not showing all headers of response\n\n\nSet Global Axios Headers\n\n\nMozilla CORS\n\n\n\n\n\n\n\n\nFingerprint2 - use a quick and dirty way to track submissions.\n\n\n\n\nWrap code in a promise.\n\n\n\n\nimport Fingerprint2 from \"fingerprintjs2\";\n\nconst getFinger = new Promise((resolve) => {\n\n  new Fingerprint2().get((result) => {\n    resolve(result);\n  });\n});\n\nexport default getFinger;\n\n\n\n\n\n\nIn Component - call a function from the promise and the set local var for finger.\n\n\n\n\ngetFinger.then( (result) => this.getInitHeaders(result) );\n\n\n\n\nNotes for github\n\n\n\n\nhttps://github.com/catenare/proto-app-demo\n\n\nvue\n\n\nawesome-typescript-loader\n\n\nProduction options\n\n\nMarvel css prototype\n\n\n\n\n\n\nhttps://github.com/catenare/basic-typescript-project\n\n\nusing webpack, typescript, faucet and tape\n\n\n\n\n\n\nhttps://github.com/catenare/foundation-cli-template-site\n\n\nFoundation 6 template with typescript\n\n\n\n\n\n\nhttps://github.com/catenare/webpack-starter\n\n\nBasic webpack template with leaflet\n\n\n\n\n\n\n\n\nShared files\n\n\n\n\ntslint.json\n\n\n\n\n{\n  \"defaultSeverity\": \"error\",\n  \"extends\": [\n      \"tslint:recommended\"\n  ],\n  \"jsRules\": {},\n  \"rules\": {},\n  \"rulesDirectory\": []\n}\n\n\n\n\n\n\ntsconfig.json\n\n\n\n\n{\n  \"compilerOptions\": {\n    \"target\": \"es5\",\n    \"module\": \"commonjs\",\n     \"lib\": [\n       \"es2016\", \"dom\"\n     ],                             \n     \"allowSyntheticDefaultImports\": true,\n     \"experimentalDecorators\": true,\n     \"emitDecoratorMetadata\": true\n  }\n}\n\n\n\n\n\n\npostcss.config.js\n\n\n\n\nmodule.exports = {\n  plugins: {\n    'postcss-cssnext': {}\n  }\n}\n\n\n\n\n\n\npackage.json\n\n\n\n\n{\n  \"name\": \"package_theme\",\n  \"version\": \"0.0.1\",\n  \"description\": \"Build assets for a plugin\",\n  \"main\": \"index.js\",\n  \"directories\": {\n    \"test\": \"tests\"\n  },\n  \"scripts\": {\n    \"start\": \"npm-run-all --parallel dev:watch lint:watch\",\n    \"dev:watch\": \"webpack -w -d\",\n    \"dev:server\": \"cross-env NODE_ENV=development webpack-dev-server --color --progress --hot\",\n    \"build\": \"cross-env NODE_ENV=production webpack --progress --hide-modules\",\n    \"lint\": \"esw webpack.config.* src --color\",\n    \"lint:watch\": \"npm run lint -- --watch\",\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git@github.com:catenare/wordpress-base-theme.git\"\n  },\n  \"keywords\": [\n    \"Wordpress\",\n    \"theme\"\n  ],\n  \"author\": \"Johan Martin <martin.johan@johan-martin.com> (http://www.johan-martin.com/)\",\n  \"license\": \"ISC\",\n  \"bugs\": {\n    \"url\": \"https://github.com/catenare/paseo-api-theme/issues\"\n  },\n  \"homepage\": \"https://github.com/catenare/paseo-api-theme#readme\",\n  \"dependencies\": {\n    \"bootstrap\": \"^4.0.0-beta.2\",\n    \"font-awesome\": \"^4.7.0\",\n    \"webpack-livereload-plugin\": \"^1.0.0\"\n  },\n  \"devDependencies\": {\n    \"@types/backbone\": \"^1.3.38\",\n    \"@types/jquery\": \"^3.2.15\",\n    \"autoprefixer\": \"^7.1.5\",\n    \"awesome-typescript-loader\": \"^3.2.3\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-env\": \"^2.4.1\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators\": \"^6.24.1\",\n    \"babel-plugin-transform-es2015-block-scoping\": \"^6.26.0\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-react\": \"^6.24.1\",\n    \"clean-webpack-plugin\": \"^0.1.17\",\n    \"cross-env\": \"^5.1.0\",\n    \"css-loader\": \"^0.28.7\",\n    \"eslint\": \"^4.9.0\",\n    \"eslint-config-standard\": \"^10.2.1\",\n    \"eslint-plugin-import\": \"^2.8.0\",\n    \"eslint-plugin-node\": \"^5.2.0\",\n    \"eslint-plugin-promise\": \"^3.6.0\",\n    \"eslint-plugin-standard\": \"^3.0.1\",\n    \"eslint-watch\": \"^3.1.3\",\n    \"extract-text-webpack-plugin\": \"^3.0.1\",\n    \"file-loader\": \"^1.1.5\",\n    \"foundation-sites\": \"^6.4.4-rc1\",\n    \"handlebars\": \"^4.0.11\",\n    \"handlebars-loader\": \"^1.6.0\",\n    \"jasmine\": \"^2.8.0\",\n    \"karma\": \"^1.7.1\",\n    \"node-sass\": \"^4.5.3\",\n    \"npm-run-all\": \"^4.1.1\",\n    \"postcss-cssnext\": \"^3.0.2\",\n    \"postcss-loader\": \"^2.0.8\",\n    \"react\": \"^16.0.0\",\n    \"react-dom\": \"^16.0.0\",\n    \"sass-loader\": \"^6.0.6\",\n    \"style-loader\": \"^0.19.0\",\n    \"tslint\": \"^5.7.0\",\n    \"typescript\": \"^2.5.3\",\n    \"url-loader\": \"^0.6.2\",\n    \"webpack\": \"^3.8.1\"\n  }\n}\n\n\n\n\n\n\n.eslintrc.json\n\n\n\n\n{\n  \"extends\": \"standard\"\n}\n\n\n\n\n\n\n.eslintignore\n\n\n\n\ndist\nnode_modules\n\n\n\n\n\n\n.babelrc\n\n\n\n\n{\n  \"presets\": [\n    \"env\",\n    \"react\",\n    \"stage-3\"\n  ],\n  \"plugins\": [\n    \"transform-class-properties\",\n    \"transform-decorators\",\n    \"transform-react-constant-elements\",\n    \"transform-react-inline-elements\"\n  ]\n}\n\n\n\n\n\n\nwebpack.config.js\n\n\n\n\nconst path = require('path')\nconst webpack = require('webpack')\nconst CleanWebPackPlugin = require('clean-webpack-plugin')\nconst ExtractTextPlugin = require('extract-text-webpack-plugin')\n\nmodule.exports = {\n  entry: './src/main.ts',\n  output: {\n    path: path.resolve(__dirname, './site/assets'),\n    filename: 'paseo-wp-form-api.js'\n  },\n  plugins: [\n    new CleanWebPackPlugin(['./site/assets']),\n    new ExtractTextPlugin({\n      filename: 'paseo-wp-form-api.css',\n      allChunks: true\n    }),\n    new webpack.ProvidePlugin({\n      jQuery: 'jquery',\n      $: 'jquery',\n      Backbone: 'backbone'\n    })\n  ],\n  externals: {\n    jquery: 'jQuery',\n    backbone: 'Backbone',\n    PASEOFORM: 'PASEOFORM',\n    underscore: 'underscore',\n    _: 'underscore'\n  },\n  module: {\n    rules: [\n      {\n        test: /\\.scss$/,\n        exclude: /node_modules/,\n        use: ExtractTextPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            'postcss-loader',\n            'sass-loader'\n          ]\n        })\n      },\n      {\n        test: /\\.hbs$/,\n        exclude: /node_modules/,\n        loader: 'handlebars-loader'\n      },\n      {\n        test: /\\.js$/,\n        exclude: /node_modules/,\n        loader: 'babel-loader'\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /node_modules/,\n        loader: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'file-loader',\n        options: {\n          limit: 10000\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        options: {\n          limit: 10000\n        }\n      }\n    ]\n  },\n  devtool: '#source-map'\n}\n\nif (process.env.NODE_ENV === 'production') {\n  module.exports.devtool = '#source-map'\n  // http://vue-loader.vuejs.org/en/workflow/production.html\n  module.exports.plugins = (module.exports.plugins || []).concat([\n    new webpack.DefinePlugin({\n      'process.env': {\n        NODE_ENV: '\"production\"'\n      }\n    }),\n    new webpack.optimize.UglifyJsPlugin({\n      sourceMap: true,\n      compress: {\n        warnings: false\n      }\n    }),\n    new webpack.LoaderOptionsPlugin({\n      minimize: true\n    })\n  ])\n}\n\n\n\n\n\n\nConfigure \nvue.js\n\n\n\n\n  resolve: {\n    alias: {\n      'vue$': 'vue/dist/vue.esm.js'\n    }\n  },\n\n\n\n\nNotes for eslint\n\n\n\n\nDisable eslint rules",
             "title": "General Notes"
         },
         {
@@ -927,7 +1027,7 @@
         },
         {
             "location": "/web/javascript/notes/#promises",
-            "text": "let getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)\n\nexport default getCaptcha;\n\n\n\nimport Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'\n\nwindow.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){\n\n            grecaptcha.render('html_element', {\n                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n            });\n\n        })\n        .catch(function(error){\n            console.log(error);\n        });\n}\n\n\nnew Vue({\n  el: '#app',\n  render: h => h(App)\n})",
+            "text": "let getCaptcha = new Promise(\n    function(resolve) {\n            let captcha = true;\n            resolve(captcha);\n        }\n)\n\nexport default getCaptcha;\n\nimport Vue from 'vue'\nimport App from './App.vue'\nimport getCaptcha from './recaptcha'\n\nwindow.captchaCallback = function() {\n    console.log('called')\n    getCaptcha.then(function(fulfilled){\n\n            grecaptcha.render('html_element', {\n                'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'\n            });\n\n        })\n        .catch(function(error){\n            console.log(error);\n        });\n}\n\n\nnew Vue({\n  el: '#app',\n  render: h => h(App)\n})",
             "title": "Promises"
         },
         {
@@ -939,6 +1039,21 @@
             "location": "/web/javascript/notes/#fingerprint2-use-a-quick-and-dirty-way-to-track-submissions",
             "text": "Wrap code in a promise.   import Fingerprint2 from \"fingerprintjs2\";\n\nconst getFinger = new Promise((resolve) => {\n\n  new Fingerprint2().get((result) => {\n    resolve(result);\n  });\n});\n\nexport default getFinger;   In Component - call a function from the promise and the set local var for finger.   getFinger.then( (result) => this.getInitHeaders(result) );",
             "title": "Fingerprint2 - use a quick and dirty way to track submissions."
+        },
+        {
+            "location": "/web/javascript/notes/#notes-for-github",
+            "text": "https://github.com/catenare/proto-app-demo  vue  awesome-typescript-loader  Production options  Marvel css prototype    https://github.com/catenare/basic-typescript-project  using webpack, typescript, faucet and tape    https://github.com/catenare/foundation-cli-template-site  Foundation 6 template with typescript    https://github.com/catenare/webpack-starter  Basic webpack template with leaflet",
+            "title": "Notes for github"
+        },
+        {
+            "location": "/web/javascript/notes/#shared-files",
+            "text": "tslint.json   {\n  \"defaultSeverity\": \"error\",\n  \"extends\": [\n      \"tslint:recommended\"\n  ],\n  \"jsRules\": {},\n  \"rules\": {},\n  \"rulesDirectory\": []\n}   tsconfig.json   {\n  \"compilerOptions\": {\n    \"target\": \"es5\",\n    \"module\": \"commonjs\",\n     \"lib\": [\n       \"es2016\", \"dom\"\n     ],                             \n     \"allowSyntheticDefaultImports\": true,\n     \"experimentalDecorators\": true,\n     \"emitDecoratorMetadata\": true\n  }\n}   postcss.config.js   module.exports = {\n  plugins: {\n    'postcss-cssnext': {}\n  }\n}   package.json   {\n  \"name\": \"package_theme\",\n  \"version\": \"0.0.1\",\n  \"description\": \"Build assets for a plugin\",\n  \"main\": \"index.js\",\n  \"directories\": {\n    \"test\": \"tests\"\n  },\n  \"scripts\": {\n    \"start\": \"npm-run-all --parallel dev:watch lint:watch\",\n    \"dev:watch\": \"webpack -w -d\",\n    \"dev:server\": \"cross-env NODE_ENV=development webpack-dev-server --color --progress --hot\",\n    \"build\": \"cross-env NODE_ENV=production webpack --progress --hide-modules\",\n    \"lint\": \"esw webpack.config.* src --color\",\n    \"lint:watch\": \"npm run lint -- --watch\",\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git@github.com:catenare/wordpress-base-theme.git\"\n  },\n  \"keywords\": [\n    \"Wordpress\",\n    \"theme\"\n  ],\n  \"author\": \"Johan Martin <martin.johan@johan-martin.com> (http://www.johan-martin.com/)\",\n  \"license\": \"ISC\",\n  \"bugs\": {\n    \"url\": \"https://github.com/catenare/paseo-api-theme/issues\"\n  },\n  \"homepage\": \"https://github.com/catenare/paseo-api-theme#readme\",\n  \"dependencies\": {\n    \"bootstrap\": \"^4.0.0-beta.2\",\n    \"font-awesome\": \"^4.7.0\",\n    \"webpack-livereload-plugin\": \"^1.0.0\"\n  },\n  \"devDependencies\": {\n    \"@types/backbone\": \"^1.3.38\",\n    \"@types/jquery\": \"^3.2.15\",\n    \"autoprefixer\": \"^7.1.5\",\n    \"awesome-typescript-loader\": \"^3.2.3\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-env\": \"^2.4.1\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators\": \"^6.24.1\",\n    \"babel-plugin-transform-es2015-block-scoping\": \"^6.26.0\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-react\": \"^6.24.1\",\n    \"clean-webpack-plugin\": \"^0.1.17\",\n    \"cross-env\": \"^5.1.0\",\n    \"css-loader\": \"^0.28.7\",\n    \"eslint\": \"^4.9.0\",\n    \"eslint-config-standard\": \"^10.2.1\",\n    \"eslint-plugin-import\": \"^2.8.0\",\n    \"eslint-plugin-node\": \"^5.2.0\",\n    \"eslint-plugin-promise\": \"^3.6.0\",\n    \"eslint-plugin-standard\": \"^3.0.1\",\n    \"eslint-watch\": \"^3.1.3\",\n    \"extract-text-webpack-plugin\": \"^3.0.1\",\n    \"file-loader\": \"^1.1.5\",\n    \"foundation-sites\": \"^6.4.4-rc1\",\n    \"handlebars\": \"^4.0.11\",\n    \"handlebars-loader\": \"^1.6.0\",\n    \"jasmine\": \"^2.8.0\",\n    \"karma\": \"^1.7.1\",\n    \"node-sass\": \"^4.5.3\",\n    \"npm-run-all\": \"^4.1.1\",\n    \"postcss-cssnext\": \"^3.0.2\",\n    \"postcss-loader\": \"^2.0.8\",\n    \"react\": \"^16.0.0\",\n    \"react-dom\": \"^16.0.0\",\n    \"sass-loader\": \"^6.0.6\",\n    \"style-loader\": \"^0.19.0\",\n    \"tslint\": \"^5.7.0\",\n    \"typescript\": \"^2.5.3\",\n    \"url-loader\": \"^0.6.2\",\n    \"webpack\": \"^3.8.1\"\n  }\n}   .eslintrc.json   {\n  \"extends\": \"standard\"\n}   .eslintignore   dist\nnode_modules   .babelrc   {\n  \"presets\": [\n    \"env\",\n    \"react\",\n    \"stage-3\"\n  ],\n  \"plugins\": [\n    \"transform-class-properties\",\n    \"transform-decorators\",\n    \"transform-react-constant-elements\",\n    \"transform-react-inline-elements\"\n  ]\n}   webpack.config.js   const path = require('path')\nconst webpack = require('webpack')\nconst CleanWebPackPlugin = require('clean-webpack-plugin')\nconst ExtractTextPlugin = require('extract-text-webpack-plugin')\n\nmodule.exports = {\n  entry: './src/main.ts',\n  output: {\n    path: path.resolve(__dirname, './site/assets'),\n    filename: 'paseo-wp-form-api.js'\n  },\n  plugins: [\n    new CleanWebPackPlugin(['./site/assets']),\n    new ExtractTextPlugin({\n      filename: 'paseo-wp-form-api.css',\n      allChunks: true\n    }),\n    new webpack.ProvidePlugin({\n      jQuery: 'jquery',\n      $: 'jquery',\n      Backbone: 'backbone'\n    })\n  ],\n  externals: {\n    jquery: 'jQuery',\n    backbone: 'Backbone',\n    PASEOFORM: 'PASEOFORM',\n    underscore: 'underscore',\n    _: 'underscore'\n  },\n  module: {\n    rules: [\n      {\n        test: /\\.scss$/,\n        exclude: /node_modules/,\n        use: ExtractTextPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            'postcss-loader',\n            'sass-loader'\n          ]\n        })\n      },\n      {\n        test: /\\.hbs$/,\n        exclude: /node_modules/,\n        loader: 'handlebars-loader'\n      },\n      {\n        test: /\\.js$/,\n        exclude: /node_modules/,\n        loader: 'babel-loader'\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /node_modules/,\n        loader: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'file-loader',\n        options: {\n          limit: 10000\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        options: {\n          limit: 10000\n        }\n      }\n    ]\n  },\n  devtool: '#source-map'\n}\n\nif (process.env.NODE_ENV === 'production') {\n  module.exports.devtool = '#source-map'\n  // http://vue-loader.vuejs.org/en/workflow/production.html\n  module.exports.plugins = (module.exports.plugins || []).concat([\n    new webpack.DefinePlugin({\n      'process.env': {\n        NODE_ENV: '\"production\"'\n      }\n    }),\n    new webpack.optimize.UglifyJsPlugin({\n      sourceMap: true,\n      compress: {\n        warnings: false\n      }\n    }),\n    new webpack.LoaderOptionsPlugin({\n      minimize: true\n    })\n  ])\n}   Configure  vue.js     resolve: {\n    alias: {\n      'vue$': 'vue/dist/vue.esm.js'\n    }\n  },",
+            "title": "Shared files"
+        },
+        {
+            "location": "/web/javascript/notes/#notes-for-eslint",
+            "text": "Disable eslint rules",
+            "title": "Notes for eslint"
         },
         {
             "location": "/web/javascript/startup/",
@@ -1211,6 +1326,96 @@
             "title": "Other Notes"
         },
         {
+            "location": "/web/javascript/webpack/Building a web pack plugin or loader/",
+            "text": "Building a web pack plugin or loader\n\n\nCreate a plugin for HtmlWebpack plugin.\n\n\n\n\nWant to see if I can build a panini plugin that will work with HtmlWebpackHtml plugin.\n\n\n\n\nOptions\n\n\n\n\nTry and add a plugin to HtmlWebpack extract plugin.\n\n\nNotes:\n\n\nCan add resolveLoader to find local plugins\n\n\n\n\n\n\n\n\n  resolveLoader: {\n    modules: [\n      'node_modules',\n      path.resolve(__dirname, 'loaders')\n    ]\n  },",
+            "title": "Build plugin or loader"
+        },
+        {
+            "location": "/web/javascript/webpack/Building a web pack plugin or loader/#building-a-web-pack-plugin-or-loader",
+            "text": "",
+            "title": "Building a web pack plugin or loader"
+        },
+        {
+            "location": "/web/javascript/webpack/Building a web pack plugin or loader/#create-a-plugin-for-htmlwebpack-plugin",
+            "text": "Want to see if I can build a panini plugin that will work with HtmlWebpackHtml plugin.",
+            "title": "Create a plugin for HtmlWebpack plugin."
+        },
+        {
+            "location": "/web/javascript/webpack/Building a web pack plugin or loader/#options",
+            "text": "Try and add a plugin to HtmlWebpack extract plugin.  Notes:  Can add resolveLoader to find local plugins       resolveLoader: {\n    modules: [\n      'node_modules',\n      path.resolve(__dirname, 'loaders')\n    ]\n  },",
+            "title": "Options"
+        },
+        {
+            "location": "/web/javascript/webpack/html-webpack-plugin/",
+            "text": "Notes About HTML Webpack Plugin\n\n\n\n\nDocumentation\n\n\n\n\nMy Notes\n\n\n\n\nCan use Handlebars templates for pages.\n\n\nCan include partials too in the main index.hbs file.\n\n\n\n\nBenefits\n\n\n\n\nCan now use webpack rather than foundation for my complete work process.\n\n\nBuilding mostly single page apps anyway so including foundation partials is a no brainer.\n\n\nCan replace foundation tools with my tools while still leveraging their infrastructure.\n\n\nCan focus on using webpack for everything.\n\n\n\n\n\n\n\n\nWebpack Config\n\n\n\n\n\n\nnew HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),\n\n\n\n\n\n\nDirectory layout\n\n\nindex/index.hbs\n\n\nindex/partial.hbs\n\n\n\n\n\n\nhandlebars-loader\n already included.\n\n\nShowing the correct title \n<title>{{htmlWebpackPlugin.options.title}}</title>",
+            "title": "Webpack Plugin"
+        },
+        {
+            "location": "/web/javascript/webpack/html-webpack-plugin/#notes-about-html-webpack-plugin",
+            "text": "Documentation",
+            "title": "Notes About HTML Webpack Plugin"
+        },
+        {
+            "location": "/web/javascript/webpack/html-webpack-plugin/#my-notes",
+            "text": "Can use Handlebars templates for pages.  Can include partials too in the main index.hbs file.   Benefits   Can now use webpack rather than foundation for my complete work process.  Building mostly single page apps anyway so including foundation partials is a no brainer.  Can replace foundation tools with my tools while still leveraging their infrastructure.  Can focus on using webpack for everything.     Webpack Config    new HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),   Directory layout  index/index.hbs  index/partial.hbs    handlebars-loader  already included.  Showing the correct title  <title>{{htmlWebpackPlugin.options.title}}</title>",
+            "title": "My Notes"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/",
+            "text": "Webpack Notes\n\n\nResources\n\n\n\n\nWebpack Examples\n\n\nWebpack Book\n\n\nLodash Plugin\n\n\nAwesome Webpack\n\n\nWebpack Vuejs Templates\n\n\nWebpack Chain\n\n\n\n\nPlugins\n\n\n\n\nStatic Site Generator\n\n\n\n\nArticles\n\n\n\n\nIntroduction to Webpack\n\n\nIncludes notes for using Handlebars.\n\n\n\n\n\n\n\n\nfont-awesome config with webpack and foundation\n\n\n\n\nwebpack config - allow to process image and font files.\n\n\n\n\n      {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }\n\n\n\n\n\n\nConfigure scss imports\n\n\nIn \n_settings.scss\n add \n$fa-font-path:   \"~font-awesome/fonts\";\n to end of the page.\n\n\nIn \napp.scss\n add \n@import '~font-awesome/scss/font-awesome';\n after \n@import \"settings\"\n.\n\n\n\n\nErrors and notes\n\n\n\n\nIssue: \nCan't find variable: SockJS\" in Safari on Mac and iOS\n\n\nResolve: \neval-source-map\n results in \"Can't find variable: SockJS\" in Safari on Mac and iOS with v2.8.x #1090\n\n\nChanged \ndevtool\n to '#source-map'\n\n\n\n\n\n\n\n\nWordpress Configuration\n\n\n\n\nwp_enqueue_script( $this->plugin_name, \\PASEO_WP_FORM_DIR_URL . 'site/assets/paseo-wp-form-api.js', array('jquery'), $this->version, false );\n - enqueue with jQuery as a dependency.\n\n\nUse externals to not include jquery in the bundle but use the Wordpress instance of jquery.\n\n\n\n\n  externals: {\n    jquery: 'jQuery'\n  },\n\n\n\n\n\n\nAdd \nwebpack.ProvidePlugin\n with \njQuery\n as the global variable.\n\n\n\n\n    new webpack.ProvidePlugin({\n      jQuery: 'jquery'\n    })\n\n\n\n\n\n\nError: TS2304 - Cannot find name Jquery - solution \nStackOverflow - ts2304 - cannot find name\n\n\nnpm install --save-dev @types/jquery\n\n\n\n\n\n\nError: error TS2304: Build:Cannot find name 'Iterable' {still related to jquery} - solution: \nStackOverflow Error ts2304\n\n\nUpdate tsconfig.\n\n\n\n\n\n\n\n\n\"target\": \"es5\",\n\"lib\": [\n       \"es2016\", \"dom\"\n     ],",
+            "title": "Notes"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#webpack-notes",
+            "text": "",
+            "title": "Webpack Notes"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#resources",
+            "text": "Webpack Examples  Webpack Book  Lodash Plugin  Awesome Webpack  Webpack Vuejs Templates  Webpack Chain",
+            "title": "Resources"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#plugins",
+            "text": "Static Site Generator",
+            "title": "Plugins"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#articles",
+            "text": "Introduction to Webpack  Includes notes for using Handlebars.",
+            "title": "Articles"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#font-awesome-config-with-webpack-and-foundation",
+            "text": "webpack config - allow to process image and font files.         {\n        test: /\\.(png|jpe?g|gif|svg)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('img/[name].[hash:7].[ext]')\n        }\n      },\n      {\n        test: /\\.(woff2?|eot|ttf|otf)(\\?.*)?$/,\n        loader: 'url-loader',\n        query: {\n          limit: 10000,\n          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')\n        }\n      }   Configure scss imports  In  _settings.scss  add  $fa-font-path:   \"~font-awesome/fonts\";  to end of the page.  In  app.scss  add  @import '~font-awesome/scss/font-awesome';  after  @import \"settings\" .",
+            "title": "font-awesome config with webpack and foundation"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#errors-and-notes",
+            "text": "Issue:  Can't find variable: SockJS\" in Safari on Mac and iOS  Resolve:  eval-source-map  results in \"Can't find variable: SockJS\" in Safari on Mac and iOS with v2.8.x #1090  Changed  devtool  to '#source-map'",
+            "title": "Errors and notes"
+        },
+        {
+            "location": "/web/javascript/webpack/notes/#wordpress-configuration",
+            "text": "wp_enqueue_script( $this->plugin_name, \\PASEO_WP_FORM_DIR_URL . 'site/assets/paseo-wp-form-api.js', array('jquery'), $this->version, false );  - enqueue with jQuery as a dependency.  Use externals to not include jquery in the bundle but use the Wordpress instance of jquery.     externals: {\n    jquery: 'jQuery'\n  },   Add  webpack.ProvidePlugin  with  jQuery  as the global variable.       new webpack.ProvidePlugin({\n      jQuery: 'jquery'\n    })   Error: TS2304 - Cannot find name Jquery - solution  StackOverflow - ts2304 - cannot find name  npm install --save-dev @types/jquery    Error: error TS2304: Build:Cannot find name 'Iterable' {still related to jquery} - solution:  StackOverflow Error ts2304  Update tsconfig.     \"target\": \"es5\",\n\"lib\": [\n       \"es2016\", \"dom\"\n     ],",
+            "title": "Wordpress Configuration"
+        },
+        {
+            "location": "/web/javascript/webpack/webpack/",
+            "text": "Webpack Basic Configuration\n\n\nConfigure Webpack\n\n\nconst path = require('path')\nconst webpack = require('webpack')\nconst HtmlWpPlugin = require('html-webpack-plugin')\nconst CleanWpPlugin = require('clean-webpack-plugin')\nconst ExtractWpPlugin = require('extract-text-webpack-plugin')\nconst autoprefixer = require('autoprefixer')\nconst atl = require('awesome-typescript-loader')\n\nmodule.exports = {\n  entry: {\n    app: './src/assets/js/main.js',\n    vendor: './src/assets/js/vendor.js'\n  },\n  output: {\n    path: path.resolve(__dirname, './dist'),\n    filename: '[name].bundle.js',\n    sourceMapFilename: '[name].bundle.map',\n    pathinfo: true\n  },\n  resolve: {\n    extensions: ['.js', '.jsx', '.ts', '.tsx']\n  },\n  devtool: 'cheap-module-source-map',\n  plugins: [\n    new HtmlWpPlugin({\n      title: 'Learning ES6',\n      template: 'src/index.html',\n      filename: 'index.html'\n    }),\n    new CleanWpPlugin(['dist']),\n    new ExtractWpPlugin({\n      filename: 'styles.css',\n      allChunks: true\n    }),\n    new webpack.HotModuleReplacementPlugin(),\n    new atl.CheckerPlugin()\n  ],\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        exclude: /(node_modules|bower_components)/,\n        use: {\n          loader: 'babel-loader',\n          options: {\n            presets: [\n              ['env',\n                {\n                  targets: {\n                    'browsers': ['last 2 versions', 'ie>=7']\n                  }\n                }\n              ]\n            ]\n          }\n        }\n      },\n      // {\n      //   test: /\\.css$/,\n      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),\n      //   use: 'raw-loader'\n      // },\n      {\n        test: /\\.css$/,\n        exclude: /(node_modules|bower_components)/,\n        loaders: ExtractWpPlugin.extract([\n          'style-loader/url!file-loader',\n          'css-loader'\n        ])\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /(node_modules|bower_components)/,\n        use: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.scss$/,\n        exclude: /(node_modules|bower_components)/,\n        use: ExtractWpPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            {\n              loader: 'postcss-loader',\n              options:\n              {\n                plugins: function () {\n                  return [autoprefixer]\n                }\n              }\n            },\n            'sass-loader'\n          ]\n        }\n        )\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        exclude: /(node_modules|bower_components)/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  },\n  devServer: {\n    hot: true,\n    watchOptions: {\n      ignored: /node_modules/\n    }\n  }\n}",
+            "title": "Webpack"
+        },
+        {
+            "location": "/web/javascript/webpack/webpack/#webpack-basic-configuration",
+            "text": "",
+            "title": "Webpack Basic Configuration"
+        },
+        {
+            "location": "/web/javascript/webpack/webpack/#configure-webpack",
+            "text": "const path = require('path')\nconst webpack = require('webpack')\nconst HtmlWpPlugin = require('html-webpack-plugin')\nconst CleanWpPlugin = require('clean-webpack-plugin')\nconst ExtractWpPlugin = require('extract-text-webpack-plugin')\nconst autoprefixer = require('autoprefixer')\nconst atl = require('awesome-typescript-loader')\n\nmodule.exports = {\n  entry: {\n    app: './src/assets/js/main.js',\n    vendor: './src/assets/js/vendor.js'\n  },\n  output: {\n    path: path.resolve(__dirname, './dist'),\n    filename: '[name].bundle.js',\n    sourceMapFilename: '[name].bundle.map',\n    pathinfo: true\n  },\n  resolve: {\n    extensions: ['.js', '.jsx', '.ts', '.tsx']\n  },\n  devtool: 'cheap-module-source-map',\n  plugins: [\n    new HtmlWpPlugin({\n      title: 'Learning ES6',\n      template: 'src/index.html',\n      filename: 'index.html'\n    }),\n    new CleanWpPlugin(['dist']),\n    new ExtractWpPlugin({\n      filename: 'styles.css',\n      allChunks: true\n    }),\n    new webpack.HotModuleReplacementPlugin(),\n    new atl.CheckerPlugin()\n  ],\n  module: {\n    rules: [\n      {\n        test: /\\.js$/,\n        exclude: /(node_modules|bower_components)/,\n        use: {\n          loader: 'babel-loader',\n          options: {\n            presets: [\n              ['env',\n                {\n                  targets: {\n                    'browsers': ['last 2 versions', 'ie>=7']\n                  }\n                }\n              ]\n            ]\n          }\n        }\n      },\n      // {\n      //   test: /\\.css$/,\n      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),\n      //   use: 'raw-loader'\n      // },\n      {\n        test: /\\.css$/,\n        exclude: /(node_modules|bower_components)/,\n        loaders: ExtractWpPlugin.extract([\n          'style-loader/url!file-loader',\n          'css-loader'\n        ])\n      },\n      {\n        test: /\\.ts$/,\n        exclude: /(node_modules|bower_components)/,\n        use: 'awesome-typescript-loader'\n      },\n      {\n        test: /\\.scss$/,\n        exclude: /(node_modules|bower_components)/,\n        use: ExtractWpPlugin.extract({\n          fallback: 'style-loader',\n          use: [\n            'css-loader',\n            {\n              loader: 'postcss-loader',\n              options:\n              {\n                plugins: function () {\n                  return [autoprefixer]\n                }\n              }\n            },\n            'sass-loader'\n          ]\n        }\n        )\n      },\n      {\n        test: /\\.(png|svg|jpg|gif)$/,\n        exclude: /(node_modules|bower_components)/,\n        use: [\n          'file-loader?name=images/[name].[ext]'\n        ]\n      }\n    ]\n  },\n  devServer: {\n    hot: true,\n    watchOptions: {\n      ignored: /node_modules/\n    }\n  }\n}",
+            "title": "Configure Webpack"
+        },
+        {
             "location": "/php/resources/",
             "text": "Resources and notes for PHP\n\n\nSetup\n\n\nTo enable php71-apache2handler, run:\n\n \ncd /opt/local/apache2/modules\n\n\n \nsudo /opt/local/apache2/bin/apxs -a -e -n php7 mod_php71.so\n\n\nDebugging\n\n\n\n\nPHP Console\n\n\n\n\nResources\n\n\n\n\nGoogle Cloud Datastore Library for PHP",
             "title": "Resources"
@@ -1351,24 +1556,24 @@
             "title": "Packages"
         },
         {
-            "location": "/ruby/",
-            "text": "Ruby Notes\n\n\nUsing RVM to install Ruby after upgrading OS x\n\n\n\n\nError message: \ndyld: Symbol not found: _clock_gettime\n\n\nSolution \nThis worked for me\n: \nxcode-select --install\n - Installed command line clients from os x.\n\n\n\n\nUnable to run a command from a gem when installed with \ngem install\n\n\n\n\nExample: \ngem install cocoapods\n. Expect to use \npod\n as a commandline client.\n\n\nSolution: \nrvm use ruby-{current}\n\n\nProblem related to rvm not setting up a default ruby.",
+            "location": "/ruby/ruby/",
+            "text": "Ruby Notes\n\n\nRVM Notes\n\n\n\n\nUsing RVM to install Ruby after upgrading OS x\n\n\nError message: \ndyld: Symbol not found: _clock_gettime\n\n\nSolution \nThis worked for me\n: \nxcode-select --install\n - Installed command line clients from os x.\n\n\n\n\n\n\nNo GPG software exists to validate rvm-installer, skipping.\n\n\nCheck gnupg2 installed\n\n\nMac OS X - \nsudo port install gnupg2\n\n\nRemove link to \n/opt/local/bin/gpg\n used to fix an earlier issue\n\n\n\n\n\n\n\n\n\n\n\n\nGem\n\n\n\n\nUnable to run a command from a gem when installed with \ngem install\n\n\nExample: \ngem install cocoapods\n. Expect to use \npod\n as a commandline client.\n\n\nSolution: \nrvm use ruby-{current}\n\n\nProblem related to rvm not setting up a default ruby.",
             "title": "Ruby"
         },
         {
-            "location": "/ruby/#ruby-notes",
+            "location": "/ruby/ruby/#ruby-notes",
             "text": "",
             "title": "Ruby Notes"
         },
         {
-            "location": "/ruby/#using-rvm-to-install-ruby-after-upgrading-os-x",
-            "text": "Error message:  dyld: Symbol not found: _clock_gettime  Solution  This worked for me :  xcode-select --install  - Installed command line clients from os x.",
-            "title": "Using RVM to install Ruby after upgrading OS x"
+            "location": "/ruby/ruby/#rvm-notes",
+            "text": "Using RVM to install Ruby after upgrading OS x  Error message:  dyld: Symbol not found: _clock_gettime  Solution  This worked for me :  xcode-select --install  - Installed command line clients from os x.    No GPG software exists to validate rvm-installer, skipping.  Check gnupg2 installed  Mac OS X -  sudo port install gnupg2  Remove link to  /opt/local/bin/gpg  used to fix an earlier issue",
+            "title": "RVM Notes"
         },
         {
-            "location": "/ruby/#unable-to-run-a-command-from-a-gem-when-installed-with-gem-install",
-            "text": "Example:  gem install cocoapods . Expect to use  pod  as a commandline client.  Solution:  rvm use ruby-{current}  Problem related to rvm not setting up a default ruby.",
-            "title": "Unable to run a command from a gem when installed with gem install"
+            "location": "/ruby/ruby/#gem",
+            "text": "Unable to run a command from a gem when installed with  gem install  Example:  gem install cocoapods . Expect to use  pod  as a commandline client.  Solution:  rvm use ruby-{current}  Problem related to rvm not setting up a default ruby.",
+            "title": "Gem"
         },
         {
             "location": "/java/",
@@ -1807,7 +2012,7 @@
         },
         {
             "location": "/ops/amazon/",
-            "text": "Working with Amazon (AWS)\n\n\nLightsail - virtual private server instances - $5 for 512gb instance/month\n\n\nSetting up SSH - trying to use my own ssh keys.\n\n\n\n\nLogging in\n\n\nChange key permissions. \nchmod 600 KEYFILE\n\n\nssh -i KEYFILE ubuntu@ip-address\n\n\n\n\n\n\n\n\nPHP Wordpress config\n\n\n\n\nPackages\n\n\nphp7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-gd php7.0-curl php-imagick mysql-server git nginx\n\n\nInstall \ncomposer\n.\n\n\nFollow instructions from composer\n\n\n\n\n\n\nConfigure nginx and php7.0-fpm\n\n\nnginx - configure default virtual environment\n\n\nEnable php7.0-fpm in configuration.\n\n\n\n\n\n\nCreate rsa key to share with bitbucket or github\n\n\nssh-keygen -t rsa\n - no password\n\n\n\n\n\n\nAdd a deployment key to github to pull code to server.\n\n\n\n\n\n\nConfigure nginx\n\n\nSetup mysql database\n\n\nDownload composer and wordpress command line.\n\n\ncomposer\n\n\nmv composer.phar /usr/local/bin/composer\n after install\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nServer Admin\n\n\n\n\nRestart service\n\n\nUbuntu\n\n\nsudo nginx -t\n - test config\n\n\n\nsudo systemctl restart nginx\n\n\nsudo systemctl retart php7.0-fpm\n\n\n\n\n\n\n\n\nletsencrypt setup\n\n\n\n\nCertbot\n - Ubuntu\n\n\nPort 443 needs to be open\n\n\nDomains need to be in nginx.conf file (sites-enabled/default) file.\n\n\nPretty straightforward and easy to set up.\n\n\n\n\nAmazon Identity and Access Management\n\n\n\n\nCreate user to access S3 and Cloudfront - will be used to upload files to S3\n\n\nIAM Management Console\n\n\nCreate User\n\n\nGive S3, CloudFront and APIGateway settings\n\n\n\n\n\n\n\n\nSetting up S3 and CloudFront for paseo.org.za\n\n\n\n\nCreate ssl/tls certificate\n\n\nCreate the certificate in N. Virginia else it won't work.\n\n\nMake sure that you have access to one of the email addresses that Amazon will use for verification\n\n\nAdd a domain name - \n.paseo.org.za/paseo.org.za and \n.martinsonline.org/martinsonline.org\n\n\n\n\n\n\nCreate S3 Bucket\n\n\nUse basic settings. Going to use this bucket as source for CloudFront\n\n\nUpload site with Cyberduck to s3\n\n\nCreate Bucket Policy\n\n\n\n\n\n\n\n\n{\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1488488343010\",\n    \"Statement\": [\n        {\n            \"Sid\": \"Stmt1488488323316\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::barbarasierrafoothilswineries/*\"\n        }\n    ]\n}\n\n\n\n\n\n\nCreate CloudFront Distribution\n\n\nWeb delivery method\n\n\nCreate certificate with Certificate Manager\n\n\nDon't forget to enter the cname record.\n\n\nUse either both http and https or redirect http to https.\n\n\n\n\n\n\nUpdate DNS records\n\n\nAdd CNAME record to dns record\n\n\nwww points to cloudfront url\n\n\n\n\n\n\n\n\n\n\nBe sure to include root document - \nindex.html\n - for it to work correctly.",
+            "text": "Working with Amazon (AWS)\n\n\nLightsail - virtual private server instances - $5 for 512gb instance/month\n\n\nSetting up SSH - trying to use my own ssh keys.\n\n\n\n\nLogging in\n\n\nChange key permissions. \nchmod 600 KEYFILE\n\n\nssh -i KEYFILE ubuntu@ip-address\n\n\n\n\n\n\n\n\nPHP Wordpress config\n\n\n\n\nPackages\n\n\nphp7.0 php7.0-cli php7.0-fpm php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-gd php7.0-curl php-imagick mysql-server git nginx\n\n\nInstall \ncomposer\n.\n\n\nFollow instructions from composer\n\n\n\n\n\n\nConfigure nginx and php7.0-fpm\n\n\nnginx - configure default virtual environment\n\n\nEnable php7.0-fpm in configuration.\n\n\n\n\n\n\nCreate rsa key to share with bitbucket or github\n\n\nssh-keygen -t rsa\n - no password\n\n\n\n\n\n\nAdd a deployment key to github to pull code to server.\n\n\n\n\n\n\nConfigure nginx\n\n\nSetup mysql database\n\n\nDownload composer and wordpress command line.\n\n\ncomposer\n\n\nmv composer.phar /usr/local/bin/composer\n after install\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nServer Admin\n\n\n\n\nRestart service\n\n\nUbuntu\n\n\nsudo nginx -t\n - test config\n\n\n\nsudo systemctl restart nginx\n\n\nsudo systemctl retart php7.0-fpm\n\n\n\n\n\n\n\n\nletsencrypt setup\n\n\n\n\nCertbot\n - Ubuntu\n\n\nPort 443 needs to be open\n\n\nDomains need to be in nginx.conf file (sites-enabled/default) file.\n\n\nPretty straightforward and easy to set up.\n\n\n\n\nAmazon Identity and Access Management\n\n\n\n\nCreate user to access S3 and Cloudfront - will be used to upload files to S3\n\n\nIAM Management Console\n\n\nCreate User\n\n\nGive S3, CloudFront and APIGateway settings\n\n\n\n\n\n\n\n\nSetting up S3 and CloudFront for paseo.org.za\n\n\n\n\nCreate ssl/tls certificate\n\n\nCreate the certificate in N. Virginia else it won't work.\n\n\nMake sure that you have access to one of the email addresses that Amazon will use for verification\n\n\nAdd a domain name - \n.paseo.org.za/paseo.org.za and \n.martinsonline.org/martinsonline.org\n\n\n\n\n\n\nCreate S3 Bucket\n\n\nUse basic settings. Going to use this bucket as source for CloudFront\n\n\nUpload site with Cyberduck to s3\n\n\nCreate Bucket Policy\n\n\n\n\n\n\n\n\n{\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1488488343010\",\n    \"Statement\": [\n        {\n            \"Sid\": \"Stmt1488488323316\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::barbarasierrafoothilswineries/*\"\n        }\n    ]\n}\n\n\n\n\n\n\nCreate CloudFront Distribution\n\n\nWeb delivery method\n\n\nCreate certificate with Certificate Manager\n\n\nDon't forget to enter the cname record.\n\n\nUse either both http and https or redirect http to https.\n\n\n\n\n\n\nUpdate DNS records\n\n\nAdd CNAME record to dns record\n\n\nwww points to cloudfront url\n\n\n\n\n\n\n\n\n\n\nBe sure to include root document - \nindex.html\n - for it to work correctly.\n\n\n\n\nIssues with deployment on LightSail\n\n\n\n\nError \nPHP Fatal error: Uncaught exception 'ErrorException' with message 'proc_open(): fork failed - Cannot allocate memory' in phar\n\n\nproc-open-fork-failed-errors for details\n\n\n\n\n\n\n\n\n/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024\n/sbin/mkswap /var/swap.1\n/sbin/swapon /var/swap.1\n\n\n\n\n\n\nAdd Permanent swap \nAdd swap to Ubuntu\n\n\n\n\nAdding API Theme\n\n\n\n\nAdding a public theme to show when hitting the front page of our api.",
             "title": "Amazon"
         },
         {
@@ -1849,6 +2054,16 @@
             "location": "/ops/amazon/#setting-up-s3-and-cloudfront-for-paseoorgza",
             "text": "Create ssl/tls certificate  Create the certificate in N. Virginia else it won't work.  Make sure that you have access to one of the email addresses that Amazon will use for verification  Add a domain name -  .paseo.org.za/paseo.org.za and  .martinsonline.org/martinsonline.org    Create S3 Bucket  Use basic settings. Going to use this bucket as source for CloudFront  Upload site with Cyberduck to s3  Create Bucket Policy     {\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1488488343010\",\n    \"Statement\": [\n        {\n            \"Sid\": \"Stmt1488488323316\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::barbarasierrafoothilswineries/*\"\n        }\n    ]\n}   Create CloudFront Distribution  Web delivery method  Create certificate with Certificate Manager  Don't forget to enter the cname record.  Use either both http and https or redirect http to https.    Update DNS records  Add CNAME record to dns record  www points to cloudfront url      Be sure to include root document -  index.html  - for it to work correctly.",
             "title": "Setting up S3 and CloudFront for paseo.org.za"
+        },
+        {
+            "location": "/ops/amazon/#issues-with-deployment-on-lightsail",
+            "text": "Error  PHP Fatal error: Uncaught exception 'ErrorException' with message 'proc_open(): fork failed - Cannot allocate memory' in phar  proc-open-fork-failed-errors for details     /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024\n/sbin/mkswap /var/swap.1\n/sbin/swapon /var/swap.1   Add Permanent swap  Add swap to Ubuntu",
+            "title": "Issues with deployment on LightSail"
+        },
+        {
+            "location": "/ops/amazon/#adding-api-theme",
+            "text": "Adding a public theme to show when hitting the front page of our api.",
+            "title": "Adding API Theme"
         },
         {
             "location": "/ops/azure/",
