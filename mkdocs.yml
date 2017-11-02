@@ -37,6 +37,7 @@ pages:
   - Database: 
       - Migrations: 'database/dbmigrations.md'
       - Mongo: 'database/mongo.md'
+      - Mysql: 'database/mysql.md'
       - Postgresql: 'database/postgresql.md'
 
   - Web:

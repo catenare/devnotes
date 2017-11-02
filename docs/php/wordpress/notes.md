@@ -27,3 +27,5 @@
 ```
 ## Wordpress Resources
 * [WP Hasty](https://www.wp-hasty.com/)
+* Using jquery-ui with wordpress. 
+    * [How to use jquery-ui in Wordpress](http://jafty.com/blog/tag/how-to-use-jquery-ui-in-wordpress/)

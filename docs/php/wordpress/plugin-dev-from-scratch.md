@@ -53,3 +53,9 @@
 
 ## Using database in wordpress
 * [WPDB](https://developer.wordpress.org/reference/classes/wpdb/)
+
+## Multi-site development
+* [Making Plugins Compatible with WordPress Multisite](https://www.wphub.com/blog/posts/plugins-compatible-wordpress-multisite/)
+* [Wordpress Create a Network](https://codex.wordpress.org/Create_A_Network)
+* [How to Build a Multisite Compatible WordPress Plugin](https://wisdmlabs.com/blog/build-multisite-compatible-wordpress-plugin/)
+* [Write a Plugin for WordPress Multi-Site](https://shibashake.com/wordpress-theme/write-a-plugin-for-wordpress-multi-site)
