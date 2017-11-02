@@ -79,7 +79,7 @@ pages:
     - 'General': 'python/general.md'
     - 'Packages': 'python/packages.md'
     - 'Research': 'python/research.md'
-  - 'Ruby': 'ruby.md'
+  - 'Ruby': 'ruby/ruby.md'
   - 'Java': 'java.md'
   - Frameworks:
     - Spring: 'spring.md'
