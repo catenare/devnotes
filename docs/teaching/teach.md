@@ -31,7 +31,7 @@
 * [eXe](http://exelearning.net/?lang=en) - SCORM Tool
 
 ## LMS Tools
-* [Open Edx](https://open.edx.org) - Python based
+* [Open Edx](https://open.edx.org) - Python based - Django
 * [Claroline](https://www.claroline.net/) - PHP Based
 * [Forma.lms](http://www.formalms.org/) - PHP based
 * [Opigno](https://www.opigno.org/en#home) - Drupal based
