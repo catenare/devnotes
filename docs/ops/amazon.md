@@ -75,3 +75,15 @@
     * Add CNAME record to dns record
         * www points to cloudfront url
 1. Be sure to include root document - *index.html* - for it to work correctly.
+
+## Issues with deployment on LightSail
+* Error *PHP Fatal error: Uncaught exception 'ErrorException' with message 'proc_open(): fork failed - Cannot allocate memory' in phar*
+    * [proc-open-fork-failed-errors for details](https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors for details)
+```bash
+/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+/sbin/mkswap /var/swap.1
+/sbin/swapon /var/swap.1
+```
+* Add Permanent swap [Add swap to Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+## Adding API Theme
+* Adding a public theme to show when hitting the front page of our api.
