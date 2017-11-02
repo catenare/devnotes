@@ -109,6 +109,8 @@ pages:
 - Teaching: 
   - 'General': 'research.md'
   - 'Learning Systems': 'teaching/teach.md'
+  - 'OpenEdx':
+    - 'Notes': 'teaching/openedx/openedx.md'
   - 'Class Tutorials':
     - 'Learning Sources': 'teaching/teach.md'
     - 'HTML and CSS':
