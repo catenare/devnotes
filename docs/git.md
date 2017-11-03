@@ -65,4 +65,5 @@ hint: (e.g. 'git pull ...') before pushing again.
 * Languages for code blocks - [highlights.js](https://highlightjs.org/static/demo/)
 * Emoji List - :bowtie [Emoji Cheat Sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 ### Remote branches not showing on local. Only shows *master*.
-* `git checkout --track origin/aBranch` - pulls in the remote branch.
+* `git branch -a` show all branches
+* `git checkout --track remote/branch` - pulls in the remote branch.
