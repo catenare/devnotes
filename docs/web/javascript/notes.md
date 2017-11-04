@@ -359,5 +359,10 @@ if (process.env.NODE_ENV === 'production') {
     }
   },
 ```
+### Other
+* [npm-run-all](https://github.com/mysticatea/npm-run-all/blob/master/docs/npm-run-all.md) - cli options
+
 ### Notes for eslint
 * [Disable eslint rules](https://brunoscopelliti.com/how-to-disable-eslint-rule-via-javascript-comment/)
+
+

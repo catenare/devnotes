@@ -68,6 +68,14 @@
        "es2016", "dom"
      ], 
 ```
+* Unexpected character '`' [./node_modules/foundation-sites/js/foundation.util.core.js:24,0][entry.bundle.js:10295,124]
+    * [Error building with WebPack #10275](https://github.com/zurb/foundation-sites/issues/10275)
+    * Resolve with: for test: /\.js$/
+        * `exclude: /node_modules(\/?!foundation-sites)/,`
 
+* [Uncaught ReferenceError: webpackJsonp is not defined #5002](https://github.com/webpack/webpack/issues/5002) 
+    * Resolve by determining loading order of files - `webpack --display-entrypoints` when you have multiple chunks
 
-  
+* Notes for commons chunk plugin
+    * [Commons Chunk Plugin](https://webpack.js.org/plugins/commons-chunk-plugin/)
+    * Examples: [multiple-entry-points-commons-chunk-css-bundle](https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points-commons-chunk-css-bundle)
