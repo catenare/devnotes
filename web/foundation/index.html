@@ -2060,7 +2060,22 @@ function watch() {
 <li>Use <code>filename.variable</code> to access data from file in data folder</li>
 </ul>
 </li>
+<li><a href="https://github.com/zurb/panini/issues/51">Custom Global Panini Variables</a></li>
 </ul>
+<pre><code class="js">// src/data/globals.js
+module.exports = {
+  production: process.env.NODE_ENV === 'production',
+};
+</code></pre>
+
+<p>In handlbars template</p>
+<pre><code class="h">{{#if globals.production}}
+  &lt;p&gt;Production!&lt;/p&gt;
+{{else}}
+  &lt;p&gt;Not production.&lt;/p&gt;
+{{/if}}
+</code></pre>
+
 <h2 id="create-background-image-slide-show-with-orbit">Create background-image slide show with orbit</h2>
 <ul>
 <li><a href="https://stackoverflow.com/questions/21421062/responsive-background-image">Stack Overflow Responsive Background Image</a></li>
