@@ -79,3 +79,8 @@
 * Notes for commons chunk plugin
     * [Commons Chunk Plugin](https://webpack.js.org/plugins/commons-chunk-plugin/)
     * Examples: [multiple-entry-points-commons-chunk-css-bundle](https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points-commons-chunk-css-bundle)
+
+
+* Injecting Server Urls - [Injecting Server Urls](http://developmentnow.com/2016/07/13/webpack-injecting-server-urls/)
+    * use webpack.DefinePlugin
+    * Be sure to quote the urls - *'"url"'*

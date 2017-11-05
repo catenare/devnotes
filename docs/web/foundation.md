@@ -92,6 +92,21 @@ function watch() {
     * Inserting values into partions `{{>partion value="value"}}`
     * Use `{{#each}}` to iterate over array data
     * Use `filename.variable` to access data from file in data folder
+  * [Custom Global Panini Variables](https://github.com/zurb/panini/issues/51)
+```js
+// src/data/globals.js
+module.exports = {
+  production: process.env.NODE_ENV === 'production',
+};
+```
+In handlbars template
+```h
+{{#if globals.production}}
+  <p>Production!</p>
+{{else}}
+  <p>Not production.</p>
+{{/if}}
+```
 
 ## Create background-image slide show with orbit
 * [Stack Overflow Responsive Background Image](https://stackoverflow.com/questions/21421062/responsive-background-image)
