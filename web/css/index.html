@@ -663,6 +663,19 @@
     Linting CSS and SCSS
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stylelint-notes" title="Stylelint Notes" class="md-nav__link">
+    Stylelint Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1923,6 +1936,19 @@
     Linting CSS and SCSS
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stylelint-notes" title="Stylelint Notes" class="md-nav__link">
+    Stylelint Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1978,9 +2004,26 @@
   }
 </code></pre>
 
+<h3 id="stylelint-notes">Stylelint Notes</h3>
 <ul>
-<li>Enable in editor (Webstorm)</li>
+<li><a href="https://github.com/bjankord/stylelint-config-sass-guidelines">stylelint-config-sass-guidelines</a> - scss stylelint rules</li>
+<li><a href="https://github.com/JaKXz/stylelint-webpack-plugin">Stylelint webpack plugin</a><ul>
+<li><code>const StylelintPlugin = require('stylelint-webpack-plugin')</code></li>
+<li><code>new StylelintPlugin({syntax: 'scss', emitErrors: false, lintDirtyModulesOnly: true})</code></li>
 </ul>
+</li>
+<li><a href="https://stylelint.io/">stylelint</a><ul>
+<li><code>npm install --save-dev stylelint stylelint-config-sass-guidelines stylelint-config-standard stylelint-scss stylelint-webpack-plugin</code></li>
+</ul>
+</li>
+<li>config in <em>package.json</em></li>
+</ul>
+<pre><code class="json">&quot;stylelint&quot;: {
+    &quot;plugins: [
+        &quot;stylelint-scss&quot;
+}
+</code></pre>
+
 <h2 id="font-awesome">Font Awesome</h2>
 <ul>
 <li>Font Awesome icon as part of before psuedo class using scss. <a href="https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content">StackOverflow Font Awesome Icon as CSS Content</a></li>

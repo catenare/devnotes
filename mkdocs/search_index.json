@@ -832,7 +832,7 @@
         },
         {
             "location": "/web/css/",
-            "text": "CSS\n\n\nResources\n\n\n\n\nFixed Menu\n - Fix menu to the top\n\n\nCSS Frameworks\n\n\nCssDB\n\n\nAnimista\n\n\nCSS3 Generator\n\n\n\n\nSeo\n\n\n\n\nMegaTags\n - OpenGraph tag generator\n\n\n\n\nLinting CSS and SCSS\n\n\n\n\nInstall stylelint, stylelint-config-standard\n\n\nnpm install stylelint stylelint-config-standard\n\n\n\n\n\n\nAdd \nstylelint\n in \npackage.json\n\n\n\n\n  \"stylelint\": {\n    \"plugins\": [\n      \"stylelint-scss\"\n    ],\n    \"extends\": \"stylelint-config-standard\"\n  }\n\n\n\n\n\n\nEnable in editor (Webstorm)\n\n\n\n\nFont Awesome\n\n\n\n\nFont Awesome icon as part of before psuedo class using scss. \nStackOverflow Font Awesome Icon as CSS Content\n\n\n\n\n.a:after {\n    // Import mixin from font-awesome/scss/mixins.scss\n    @include fa-icon();\n\n    // Use icon variable from font-awesome/scss/variables.scss\n    content: $fa-var-exclamation-triangle;\n}",
+            "text": "CSS\n\n\nResources\n\n\n\n\nFixed Menu\n - Fix menu to the top\n\n\nCSS Frameworks\n\n\nCssDB\n\n\nAnimista\n\n\nCSS3 Generator\n\n\n\n\nSeo\n\n\n\n\nMegaTags\n - OpenGraph tag generator\n\n\n\n\nLinting CSS and SCSS\n\n\n\n\nInstall stylelint, stylelint-config-standard\n\n\nnpm install stylelint stylelint-config-standard\n\n\n\n\n\n\nAdd \nstylelint\n in \npackage.json\n\n\n\n\n  \"stylelint\": {\n    \"plugins\": [\n      \"stylelint-scss\"\n    ],\n    \"extends\": \"stylelint-config-standard\"\n  }\n\n\n\n\nStylelint Notes\n\n\n\n\nstylelint-config-sass-guidelines\n - scss stylelint rules\n\n\nStylelint webpack plugin\n\n\nconst StylelintPlugin = require('stylelint-webpack-plugin')\n\n\nnew StylelintPlugin({syntax: 'scss', emitErrors: false, lintDirtyModulesOnly: true})\n\n\n\n\n\n\nstylelint\n\n\nnpm install --save-dev stylelint stylelint-config-sass-guidelines stylelint-config-standard stylelint-scss stylelint-webpack-plugin\n\n\n\n\n\n\nconfig in \npackage.json\n\n\n\n\n\"stylelint\": {\n    \"plugins: [\n        \"stylelint-scss\"\n}\n\n\n\n\nFont Awesome\n\n\n\n\nFont Awesome icon as part of before psuedo class using scss. \nStackOverflow Font Awesome Icon as CSS Content\n\n\n\n\n.a:after {\n    // Import mixin from font-awesome/scss/mixins.scss\n    @include fa-icon();\n\n    // Use icon variable from font-awesome/scss/variables.scss\n    content: $fa-var-exclamation-triangle;\n}",
             "title": "CSS"
         },
         {
@@ -852,8 +852,13 @@
         },
         {
             "location": "/web/css/#linting-css-and-scss",
-            "text": "Install stylelint, stylelint-config-standard  npm install stylelint stylelint-config-standard    Add  stylelint  in  package.json     \"stylelint\": {\n    \"plugins\": [\n      \"stylelint-scss\"\n    ],\n    \"extends\": \"stylelint-config-standard\"\n  }   Enable in editor (Webstorm)",
+            "text": "Install stylelint, stylelint-config-standard  npm install stylelint stylelint-config-standard    Add  stylelint  in  package.json     \"stylelint\": {\n    \"plugins\": [\n      \"stylelint-scss\"\n    ],\n    \"extends\": \"stylelint-config-standard\"\n  }",
             "title": "Linting CSS and SCSS"
+        },
+        {
+            "location": "/web/css/#stylelint-notes",
+            "text": "stylelint-config-sass-guidelines  - scss stylelint rules  Stylelint webpack plugin  const StylelintPlugin = require('stylelint-webpack-plugin')  new StylelintPlugin({syntax: 'scss', emitErrors: false, lintDirtyModulesOnly: true})    stylelint  npm install --save-dev stylelint stylelint-config-sass-guidelines stylelint-config-standard stylelint-scss stylelint-webpack-plugin    config in  package.json   \"stylelint\": {\n    \"plugins: [\n        \"stylelint-scss\"\n}",
+            "title": "Stylelint Notes"
         },
         {
             "location": "/web/css/#font-awesome",
