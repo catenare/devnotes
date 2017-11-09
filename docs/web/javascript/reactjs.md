@@ -21,3 +21,6 @@
 * Components
     * atomic design
 
+## General Notes
+* [React Typescript Samples](https://github.com/Lemoncode/react-typescript-samples)
+
