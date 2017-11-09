@@ -1331,6 +1331,26 @@
             "title": "Other Notes"
         },
         {
+            "location": "/web/javascript/reactjs/",
+            "text": "Notes about learning reactjs\n\n\nRouting is very different from what's available in books and tutorials\n\n\n\n\nDocumentation for Routing\n\n\nCSS Tricks: React Router 4\n\n\nGood code examples\n\n\n\n\n\n\n\n\nNotes from rangle.io web chat\n\n\n\n\nTools: react, redux, express (optional)\n\n\nTools\n\n\nwebpack w/ babel\n\n\nPostCSS/CSSNext\n\n\nTesting - karma, mocha, chai\n\n\nLinting tools - js and css/sass (eslint/stylelint)\n\n\nEnzyme - component testing (?)\n\n\nRobot e2e test framework - python framework. natural language. connect to ci\n\n\n\n\n\n\nHelmetJS - security from cross-scripting\n\n\nDev tools\n\n\nnpm start - run in production mode\n\n\nnpm dev - dev mode - dev tools connected.\n\n\n\n\n\n\nComponents\n\n\natomic design",
+            "title": "Reactjs"
+        },
+        {
+            "location": "/web/javascript/reactjs/#notes-about-learning-reactjs",
+            "text": "",
+            "title": "Notes about learning reactjs"
+        },
+        {
+            "location": "/web/javascript/reactjs/#routing-is-very-different-from-whats-available-in-books-and-tutorials",
+            "text": "Documentation for Routing  CSS Tricks: React Router 4  Good code examples",
+            "title": "Routing is very different from what's available in books and tutorials"
+        },
+        {
+            "location": "/web/javascript/reactjs/#notes-from-rangleio-web-chat",
+            "text": "Tools: react, redux, express (optional)  Tools  webpack w/ babel  PostCSS/CSSNext  Testing - karma, mocha, chai  Linting tools - js and css/sass (eslint/stylelint)  Enzyme - component testing (?)  Robot e2e test framework - python framework. natural language. connect to ci    HelmetJS - security from cross-scripting  Dev tools  npm start - run in production mode  npm dev - dev mode - dev tools connected.    Components  atomic design",
+            "title": "Notes from rangle.io web chat"
+        },
+        {
             "location": "/web/javascript/webpack/Building a web pack plugin or loader/",
             "text": "Building a web pack plugin or loader\n\n\nCreate a plugin for HtmlWebpack plugin.\n\n\n\n\nWant to see if I can build a panini plugin that will work with HtmlWebpackHtml plugin.\n\n\n\n\nOptions\n\n\n\n\nTry and add a plugin to HtmlWebpack extract plugin.\n\n\nNotes:\n\n\nCan add resolveLoader to find local plugins\n\n\n\n\n\n\n\n\n  resolveLoader: {\n    modules: [\n      'node_modules',\n      path.resolve(__dirname, 'loaders')\n    ]\n  },",
             "title": "Build plugin or loader"
