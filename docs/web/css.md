@@ -22,7 +22,20 @@
     "extends": "stylelint-config-standard"
   }
 ```
-* Enable in editor (Webstorm)
+### Stylelint Notes
+* [stylelint-config-sass-guidelines](https://github.com/bjankord/stylelint-config-sass-guidelines) - scss stylelint rules
+* [Stylelint webpack plugin](https://github.com/JaKXz/stylelint-webpack-plugin)
+    * `const StylelintPlugin = require('stylelint-webpack-plugin')`
+    * `new StylelintPlugin({syntax: 'scss', emitErrors: false, lintDirtyModulesOnly: true})`
+* [stylelint](https://stylelint.io/)
+    * `npm install --save-dev stylelint stylelint-config-sass-guidelines stylelint-config-standard stylelint-scss stylelint-webpack-plugin`
+* config in *package.json*
+```json
+"stylelint": {
+    "plugins: [
+        "stylelint-scss"
+}
+```
 
 ## Font Awesome
 
