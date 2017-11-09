@@ -68,6 +68,7 @@ pages:
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
       - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
       - 'Foundation Setup': 'web/javascript/vue/foundation.md'
+    - Reactjs: 'web/javascript/reactjs.md'
     - Webpack:
       - 'Build plugin or loader': 'web/javascript/webpack/Building a web pack plugin or loader.md'
       - 'Webpack Plugin': 'web/javascript/webpack/html-webpack-plugin.md'
