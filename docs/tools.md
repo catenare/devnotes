@@ -3,6 +3,8 @@
 * [MailCatcher](https://mailcatcher.me/) - Localhost email intercept
 * [Ngrok](https://ngrok.com/) - Secure tunnel to localhost
 * [Random User Generator](https://randomuser.me/) - API to generate random users.
+## Source code generators
+* [JHipster](http://www.jhipster.tech/) - Generate and deploy Spring Boot + Angular Apps.
 
 ## API Tools
 ### Docs
@@ -78,3 +80,6 @@
 
 ## Testing Framework
 * [Galen Framework](http://galenframework.com/) - Look and feel testing for responsive sites.
+## Code Analyzers
+* [PMD](https://pmd.github.io/) - Source code analyser. Includes JS, Java, checks for duplicates in PHP
+* [SourceTrail](https://www.sourcetrail.com/) - Sourcecode explorer for Java and C++

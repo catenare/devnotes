@@ -36,10 +36,12 @@
         "stylelint-scss"
 }
 ```
-
+### PostCSS Notes
+* Config notes: [Postcss Cli](https://www.npmjs.com/package/postcss-cli) - Config section explains *postcss.config.js*
+	* [Postcss Next in Webpack](https://blog.envylabs.com/webpack-2-postcss-cssnext-fdcd2fd7d0bd) - config *postcss.config.js*
 ## Font Awesome
 
-* Font Awesome icon as part of before psuedo class using scss. [StackOverflow Font Awesome Icon as CSS Content](https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content)
+* Font Awesome icon as part of before pseudo class using scss. [StackOverflow Font Awesome Icon as CSS Content](https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content)
 ```css
 .a:after {
     // Import mixin from font-awesome/scss/mixins.scss

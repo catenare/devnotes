@@ -32,3 +32,8 @@ Currently using Birt for generating reports and invoices for the child center.
 ## Issue with Eclipse (starting up report server)
 * [Eclipse Wiki](https://wiki.eclipse.org/Eclipse.ini)
     * Fix issue to set explicit JVM for Eclipse.
+## Generating PDFS
+* [Dynamic Jasper](http://dynamicjasper.com/) - Make dynamic reports.
+* [Dynamic Reports](http://dynamicreports.org/) - Dynamic reports based on Jasper
+* [Jasper Reports Library](https://community.jaspersoft.com/project/jasperreports-library)
+* [Apache PDFBox](https://pdfbox.apache.org/) - PDFBox - manipulate PDF docs.
