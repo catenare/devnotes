@@ -832,7 +832,7 @@
         },
         {
             "location": "/web/css/",
-            "text": "CSS\n\n\nResources\n\n\n\n\nFixed Menu\n - Fix menu to the top\n\n\nCSS Frameworks\n\n\nCssDB\n\n\nAnimista\n\n\nCSS3 Generator\n\n\n\n\nSeo\n\n\n\n\nMegaTags\n - OpenGraph tag generator\n\n\n\n\nLinting CSS and SCSS\n\n\n\n\nInstall stylelint, stylelint-config-standard\n\n\nnpm install stylelint stylelint-config-standard\n\n\n\n\n\n\nAdd \nstylelint\n in \npackage.json\n\n\n\n\n  \"stylelint\": {\n    \"plugins\": [\n      \"stylelint-scss\"\n    ],\n    \"extends\": \"stylelint-config-standard\"\n  }\n\n\n\n\nStylelint Notes\n\n\n\n\nstylelint-config-sass-guidelines\n - scss stylelint rules\n\n\nStylelint webpack plugin\n\n\nconst StylelintPlugin = require('stylelint-webpack-plugin')\n\n\nnew StylelintPlugin({syntax: 'scss', emitErrors: false, lintDirtyModulesOnly: true})\n\n\n\n\n\n\nstylelint\n\n\nnpm install --save-dev stylelint stylelint-config-sass-guidelines stylelint-config-standard stylelint-scss stylelint-webpack-plugin\n\n\n\n\n\n\nconfig in \npackage.json\n\n\n\n\n\"stylelint\": {\n    \"plugins: [\n        \"stylelint-scss\"\n}\n\n\n\n\nFont Awesome\n\n\n\n\nFont Awesome icon as part of before psuedo class using scss. \nStackOverflow Font Awesome Icon as CSS Content\n\n\n\n\n.a:after {\n    // Import mixin from font-awesome/scss/mixins.scss\n    @include fa-icon();\n\n    // Use icon variable from font-awesome/scss/variables.scss\n    content: $fa-var-exclamation-triangle;\n}",
+            "text": "CSS\n\n\nResources\n\n\n\n\nFixed Menu\n - Fix menu to the top\n\n\nCSS Frameworks\n\n\nCssDB\n\n\nAnimista\n\n\nCSS3 Generator\n\n\n\n\nSeo\n\n\n\n\nMegaTags\n - OpenGraph tag generator\n\n\n\n\nLinting CSS and SCSS\n\n\n\n\nInstall stylelint, stylelint-config-standard\n\n\nnpm install stylelint stylelint-config-standard\n\n\n\n\n\n\nAdd \nstylelint\n in \npackage.json\n\n\n\n\n  \"stylelint\": {\n    \"plugins\": [\n      \"stylelint-scss\"\n    ],\n    \"extends\": \"stylelint-config-standard\"\n  }\n\n\n\n\nStylelint Notes\n\n\n\n\nstylelint-config-sass-guidelines\n - scss stylelint rules\n\n\nStylelint webpack plugin\n\n\nconst StylelintPlugin = require('stylelint-webpack-plugin')\n\n\nnew StylelintPlugin({syntax: 'scss', emitErrors: false, lintDirtyModulesOnly: true})\n\n\n\n\n\n\nstylelint\n\n\nnpm install --save-dev stylelint stylelint-config-sass-guidelines stylelint-config-standard stylelint-scss stylelint-webpack-plugin\n\n\n\n\n\n\nconfig in \npackage.json\n\n\n\n\n\"stylelint\": {\n    \"plugins: [\n        \"stylelint-scss\"\n}\n\n\n\n\nPostCSS Notes\n\n\n\n\nConfig notes: \nPostcss Cli\n - Config section explains \npostcss.config.js\n\n\nPostcss Next in Webpack\n - config \npostcss.config.js\n\n\n\n\n\n\n\n\nFont Awesome\n\n\n\n\nFont Awesome icon as part of before pseudo class using scss. \nStackOverflow Font Awesome Icon as CSS Content\n\n\n\n\n.a:after {\n    // Import mixin from font-awesome/scss/mixins.scss\n    @include fa-icon();\n\n    // Use icon variable from font-awesome/scss/variables.scss\n    content: $fa-var-exclamation-triangle;\n}",
             "title": "CSS"
         },
         {
@@ -861,8 +861,13 @@
             "title": "Stylelint Notes"
         },
         {
+            "location": "/web/css/#postcss-notes",
+            "text": "Config notes:  Postcss Cli  - Config section explains  postcss.config.js  Postcss Next in Webpack  - config  postcss.config.js",
+            "title": "PostCSS Notes"
+        },
+        {
             "location": "/web/css/#font-awesome",
-            "text": "Font Awesome icon as part of before psuedo class using scss.  StackOverflow Font Awesome Icon as CSS Content   .a:after {\n    // Import mixin from font-awesome/scss/mixins.scss\n    @include fa-icon();\n\n    // Use icon variable from font-awesome/scss/variables.scss\n    content: $fa-var-exclamation-triangle;\n}",
+            "text": "Font Awesome icon as part of before pseudo class using scss.  StackOverflow Font Awesome Icon as CSS Content   .a:after {\n    // Import mixin from font-awesome/scss/mixins.scss\n    @include fa-icon();\n\n    // Use icon variable from font-awesome/scss/variables.scss\n    content: $fa-var-exclamation-triangle;\n}",
             "title": "Font Awesome"
         },
         {
@@ -1336,27 +1341,27 @@
             "title": "Other Notes"
         },
         {
-            "location": "/web/javascript/reactjs/",
+            "location": "/web/javascript/reactjs/reactjs/",
             "text": "Notes about learning reactjs\n\n\nRouting is very different from what's available in books and tutorials\n\n\n\n\nDocumentation for Routing\n\n\nCSS Tricks: React Router 4\n\n\nGood code examples\n\n\n\n\n\n\n\n\nNotes from rangle.io web chat\n\n\n\n\nTools: react, redux, express (optional)\n\n\nTools\n\n\nwebpack w/ babel\n\n\nPostCSS/CSSNext\n\n\nTesting - karma, mocha, chai\n\n\nLinting tools - js and css/sass (eslint/stylelint)\n\n\nEnzyme - component testing (?)\n\n\nRobot e2e test framework - python framework. natural language. connect to ci\n\n\n\n\n\n\nHelmetJS - security from cross-scripting\n\n\nDev tools\n\n\nnpm start - run in production mode\n\n\nnpm dev - dev mode - dev tools connected.\n\n\n\n\n\n\nComponents\n\n\natomic design\n\n\n\n\n\n\n\n\nGeneral Notes\n\n\n\n\nReact Typescript Samples",
             "title": "Reactjs"
         },
         {
-            "location": "/web/javascript/reactjs/#notes-about-learning-reactjs",
+            "location": "/web/javascript/reactjs/reactjs/#notes-about-learning-reactjs",
             "text": "",
             "title": "Notes about learning reactjs"
         },
         {
-            "location": "/web/javascript/reactjs/#routing-is-very-different-from-whats-available-in-books-and-tutorials",
+            "location": "/web/javascript/reactjs/reactjs/#routing-is-very-different-from-whats-available-in-books-and-tutorials",
             "text": "Documentation for Routing  CSS Tricks: React Router 4  Good code examples",
             "title": "Routing is very different from what's available in books and tutorials"
         },
         {
-            "location": "/web/javascript/reactjs/#notes-from-rangleio-web-chat",
+            "location": "/web/javascript/reactjs/reactjs/#notes-from-rangleio-web-chat",
             "text": "Tools: react, redux, express (optional)  Tools  webpack w/ babel  PostCSS/CSSNext  Testing - karma, mocha, chai  Linting tools - js and css/sass (eslint/stylelint)  Enzyme - component testing (?)  Robot e2e test framework - python framework. natural language. connect to ci    HelmetJS - security from cross-scripting  Dev tools  npm start - run in production mode  npm dev - dev mode - dev tools connected.    Components  atomic design",
             "title": "Notes from rangle.io web chat"
         },
         {
-            "location": "/web/javascript/reactjs/#general-notes",
+            "location": "/web/javascript/reactjs/reactjs/#general-notes",
             "text": "React Typescript Samples",
             "title": "General Notes"
         },
@@ -1612,13 +1617,18 @@
         },
         {
             "location": "/java/",
-            "text": "Java Notes\n\n\n\n\nDetermine location of Java on Mac OS X\n\n\necho $(/usr/libexec/java_home)\n\n\n\n\n\n\nUsing Ivy with Ant\n\n\nDownload \nApache Ivy\n\n\nPut files into ant/lib directory.\n\n\nLib directory at \n~/.ant/lib\n - Using sdkman to manage Ant.",
+            "text": "Java Notes\n\n\n\n\nDetermine location of Java on Mac OS X\n\n\necho $(/usr/libexec/java_home)\n\n\n\n\n\n\nUsing Ivy with Ant\n\n\nDownload \nApache Ivy\n\n\nPut files into ant/lib directory.\n\n\nLib directory at \n~/.ant/lib\n - Using sdkman to manage Ant.\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\nAwesome Java\n\n\nJHipster\n - Spring Boot + Angular\n\n\nLombok\n - decorators for Java.\n\n\nApache POI\n - API for Microsoft Documents\n\n\nJava Design Patterns\n\n\nJbake\n - Static site generator in Java\n\n\nApache FOP\n - PDF generator\n\n\nDropWizard\n - Generate REST Apps.\n\n\nHandlebars Java\n - Mustache/Handlebars template engine in Java.\n\n\nApache PDFBox\n - java library for PDF",
             "title": "Java"
         },
         {
             "location": "/java/#java-notes",
             "text": "Determine location of Java on Mac OS X  echo $(/usr/libexec/java_home)    Using Ivy with Ant  Download  Apache Ivy  Put files into ant/lib directory.  Lib directory at  ~/.ant/lib  - Using sdkman to manage Ant.",
             "title": "Java Notes"
+        },
+        {
+            "location": "/java/#resources",
+            "text": "Awesome Java  JHipster  - Spring Boot + Angular  Lombok  - decorators for Java.  Apache POI  - API for Microsoft Documents  Java Design Patterns  Jbake  - Static site generator in Java  Apache FOP  - PDF generator  DropWizard  - Generate REST Apps.  Handlebars Java  - Mustache/Handlebars template engine in Java.  Apache PDFBox  - java library for PDF",
+            "title": "Resources"
         },
         {
             "location": "/spring/",
@@ -1872,7 +1882,7 @@
         },
         {
             "location": "/reporting/",
-            "text": "Reporting Server\n\n\nBirt\n\n\nCurrently using Birt for generating reports and invoices for the child center.\n\n\nSetup\n\n\n\n\nDownload Birt report designer\n\n\nCreate report using designer.\n\n\nConnect to database using jdbc connector\n\n\n\n\n\n\nBuilt-in report generator - create PDF versions of report.\n\n\n\n\nJasper\n\n\n\n\nSeems to have more moving parts.\n\n\nComes with a server component.\n\n\n\n\nPentaho Reporting\n\n\n\n\nHas an open source server.\n\n\n\n\nCurrently using Birt to generate invoices.\n\n\n\n\nAll data in postgres DB\n\n\nConnect to postgres DB via jdbc\n\n\nOne view and sql queries to populate the reports\n\n\nSeems to work okay now.\n\n\n\n\nGoals\n\n\n\n\nMobile view of reports. Web based mobile.\n\n\nGenerate reports on demand. Always most relevant data\n\n\nGenerate invoices that will be sent via email.\n\n\nEnable reports for printing. Hardcopies are always nice.\n\n\nWant to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.\n\n\nWant to chart.\n\n\n\n\nIssue with Eclipse (starting up report server)\n\n\n\n\nEclipse Wiki\n\n\nFix issue to set explicit JVM for Eclipse.",
+            "text": "Reporting Server\n\n\nBirt\n\n\nCurrently using Birt for generating reports and invoices for the child center.\n\n\nSetup\n\n\n\n\nDownload Birt report designer\n\n\nCreate report using designer.\n\n\nConnect to database using jdbc connector\n\n\n\n\n\n\nBuilt-in report generator - create PDF versions of report.\n\n\n\n\nJasper\n\n\n\n\nSeems to have more moving parts.\n\n\nComes with a server component.\n\n\n\n\nPentaho Reporting\n\n\n\n\nHas an open source server.\n\n\n\n\nCurrently using Birt to generate invoices.\n\n\n\n\nAll data in postgres DB\n\n\nConnect to postgres DB via jdbc\n\n\nOne view and sql queries to populate the reports\n\n\nSeems to work okay now.\n\n\n\n\nGoals\n\n\n\n\nMobile view of reports. Web based mobile.\n\n\nGenerate reports on demand. Always most relevant data\n\n\nGenerate invoices that will be sent via email.\n\n\nEnable reports for printing. Hardcopies are always nice.\n\n\nWant to spend time desigining the report but only have to do it once. Easier with a graphic editor than trying to mangle XML, JSON, etc.\n\n\nWant to chart.\n\n\n\n\nIssue with Eclipse (starting up report server)\n\n\n\n\nEclipse Wiki\n\n\nFix issue to set explicit JVM for Eclipse.\n\n\n\n\n\n\n\n\nGenerating PDFS\n\n\n\n\nDynamic Jasper\n - Make dynamic reports.\n\n\nDynamic Reports\n - Dynamic reports based on Jasper\n\n\nJasper Reports Library\n\n\nApache PDFBox\n - PDFBox - manipulate PDF docs.",
             "title": "Reporting"
         },
         {
@@ -1914,6 +1924,11 @@
             "location": "/reporting/#issue-with-eclipse-starting-up-report-server",
             "text": "Eclipse Wiki  Fix issue to set explicit JVM for Eclipse.",
             "title": "Issue with Eclipse (starting up report server)"
+        },
+        {
+            "location": "/reporting/#generating-pdfs",
+            "text": "Dynamic Jasper  - Make dynamic reports.  Dynamic Reports  - Dynamic reports based on Jasper  Jasper Reports Library  Apache PDFBox  - PDFBox - manipulate PDF docs.",
+            "title": "Generating PDFS"
         },
         {
             "location": "/docs/",
@@ -2132,7 +2147,7 @@
         },
         {
             "location": "/tools/",
-            "text": "Developer Helper Tools\n\n\nServer Mock Tools\n\n\n\n\nMailCatcher\n - Localhost email intercept\n\n\nNgrok\n - Secure tunnel to localhost\n\n\nRandom User Generator\n - API to generate random users.\n\n\n\n\nAPI Tools\n\n\nDocs\n\n\n\n\nAPI Central Docs\n\n\n\n\nAPI Documentation Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nMock Service\n\n\n\n\nMockbin\n - test, mock and track http requests & responses\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers\n\n\n\n\nTesting Framework\n\n\n\n\nGalen Framework\n - Look and feel testing for responsive sites.",
+            "text": "Developer Helper Tools\n\n\nServer Mock Tools\n\n\n\n\nMailCatcher\n - Localhost email intercept\n\n\nNgrok\n - Secure tunnel to localhost\n\n\nRandom User Generator\n - API to generate random users.\n\n\n\n\nSource code generators\n\n\n\n\nJHipster\n - Generate and deploy Spring Boot + Angular Apps.\n\n\n\n\nAPI Tools\n\n\nDocs\n\n\n\n\nAPI Central Docs\n\n\n\n\nAPI Documentation Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nMock Service\n\n\n\n\nMockbin\n - test, mock and track http requests & responses\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers\n\n\n\n\nTesting Framework\n\n\n\n\nGalen Framework\n - Look and feel testing for responsive sites.\n\n\n\n\nCode Analyzers\n\n\n\n\nPMD\n - Source code analyser. Includes JS, Java, checks for duplicates in PHP\n\n\nSourceTrail\n - Sourcecode explorer for Java and C++",
             "title": "Mock and API Tools"
         },
         {
@@ -2144,6 +2159,11 @@
             "location": "/tools/#server-mock-tools",
             "text": "MailCatcher  - Localhost email intercept  Ngrok  - Secure tunnel to localhost  Random User Generator  - API to generate random users.",
             "title": "Server Mock Tools"
+        },
+        {
+            "location": "/tools/#source-code-generators",
+            "text": "JHipster  - Generate and deploy Spring Boot + Angular Apps.",
+            "title": "Source code generators"
         },
         {
             "location": "/tools/#api-tools",
@@ -2189,6 +2209,11 @@
             "location": "/tools/#testing-framework",
             "text": "Galen Framework  - Look and feel testing for responsive sites.",
             "title": "Testing Framework"
+        },
+        {
+            "location": "/tools/#code-analyzers",
+            "text": "PMD  - Source code analyser. Includes JS, Java, checks for duplicates in PHP  SourceTrail  - Sourcecode explorer for Java and C++",
+            "title": "Code Analyzers"
         },
         {
             "location": "/cmd/cmd/",
@@ -2442,7 +2467,7 @@
         },
         {
             "location": "/teaching/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n - Python based - Django\n\n\nClaroline\n - PHP Based\n\n\nForma.lms\n - PHP based\n\n\nOpigno\n - Drupal based\n\n\nIlias\n - PHP based\n\n\nSakaiProject\n - Java Based\n\n\nChamilo\n - \n\n\n\n\nLMS Tools Commercial\n\n\n\n\nEliademy\n\n\n\n\nLearn Programming with Python\n\n\n\n\nPaul Vincent Craven\n\n\nTeaching Python 3.6 with Games\n\n\nProgram Arcade Games\n\n\n\n\n\n\n\n\nTeaching notes\n\n\n\n\nRevise often\n\n\nRestructured text for material (markdown)\n\n\nSphinx (for documentation) (MkDocs)\n\n\nStore in Git\n\n\nRead The Docs - documentation generator\n\n\n\n\n\n\n\n\nOther tools\n\n\n\n\nVisualize Your Code\n - Online tutor for learning to code.\n\n\nCreated by: \nPhilip J. Guo",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n - Python based - Django\n\n\nClaroline\n - PHP Based\n\n\nForma.lms\n - PHP based\n\n\nOpigno\n - Drupal based\n\n\nIlias\n - PHP based\n\n\nSakaiProject\n - Java Based\n\n\nChamilo\n - \n\n\n\n\nLMS Tools Commercial\n\n\n\n\nEliademy\n\n\n\n\nLearn Programming with Python\n\n\n\n\nPaul Vincent Craven\n\n\nTeaching Python 3.6 with Games\n\n\nProgram Arcade Games\n\n\n\n\n\n\n\n\nTeaching notes\n\n\n\n\nRevise often\n\n\nRestructured text for material (markdown)\n\n\nSphinx (for documentation) (MkDocs)\n\n\nStore in Git\n\n\nRead The Docs - documentation generator\n\n\n\n\n\n\n\n\nOther tools\n\n\n\n\nVisualize Your Code\n - Online tutor for learning to code.\n\n\nCreated by: \nPhilip J. Guo\n\n\n\n\n\n\nList of Public APIs",
             "title": "Learning Systems"
         },
         {
@@ -2492,7 +2517,7 @@
         },
         {
             "location": "/teaching/teach/#other-tools",
-            "text": "Visualize Your Code  - Online tutor for learning to code.  Created by:  Philip J. Guo",
+            "text": "Visualize Your Code  - Online tutor for learning to code.  Created by:  Philip J. Guo    List of Public APIs",
             "title": "Other tools"
         },
         {
@@ -2517,7 +2542,7 @@
         },
         {
             "location": "/teaching/teach/",
-            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n - Python based - Django\n\n\nClaroline\n - PHP Based\n\n\nForma.lms\n - PHP based\n\n\nOpigno\n - Drupal based\n\n\nIlias\n - PHP based\n\n\nSakaiProject\n - Java Based\n\n\nChamilo\n - \n\n\n\n\nLMS Tools Commercial\n\n\n\n\nEliademy\n\n\n\n\nLearn Programming with Python\n\n\n\n\nPaul Vincent Craven\n\n\nTeaching Python 3.6 with Games\n\n\nProgram Arcade Games\n\n\n\n\n\n\n\n\nTeaching notes\n\n\n\n\nRevise often\n\n\nRestructured text for material (markdown)\n\n\nSphinx (for documentation) (MkDocs)\n\n\nStore in Git\n\n\nRead The Docs - documentation generator\n\n\n\n\n\n\n\n\nOther tools\n\n\n\n\nVisualize Your Code\n - Online tutor for learning to code.\n\n\nCreated by: \nPhilip J. Guo",
+            "text": "Teaching web development\n\n\nTeaching Tools\n\n\n\n\nEclipse Che\n\n\nProvide all students with a running learner environment.\n\n\nAllow them to develop without the need for a regular machine.\n\n\nIn a place like South Africa, all they will need is a basic terminal or laptop.\n\n\nEveryone who wants to learn web development should have a computer/laptop available.\n\n\nWill use the browser as the tool of choice for learning development.\n\n\nSetting up with docker toolbox on Mac OS X\n\n\nbe sure to run \neval \"$(docker-machine env default)\"\n\n\ndocker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/johan/Projects/eclispseChe/data:/data eclipse/che start\n\n\nGot it to work on docker toolbox\n\n\n\n\n\n\n\n\n\n\nCloud9\n - In the cloud IDE tool. Free basic workspace.\n\n\n\n\nOnline Resources\n\n\n\n\nCodenvy\n\n\nCreate workspace instances using eclipse che\n\n\n\n\n\n\nThimble\n\n\nWork with HTML code directly on a browser.\n\n\n\n\n\n\nCodepen\n\n\nFrontend development environment\n\n\n\n\n\n\nStanford CS Education Library\n\n\n\n\nCurriculum\n\n\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\nfreeCodeCamp\n\n\nGithub Repo\n\n\n\n\n\n\n\n\nSCORM Tools\n\n\n\n\neXe\n - SCORM Tool\n\n\n\n\nLMS Tools\n\n\n\n\nOpen Edx\n - Python based - Django\n\n\nClaroline\n - PHP Based\n\n\nForma.lms\n - PHP based\n\n\nOpigno\n - Drupal based\n\n\nIlias\n - PHP based\n\n\nSakaiProject\n - Java Based\n\n\nChamilo\n - \n\n\n\n\nLMS Tools Commercial\n\n\n\n\nEliademy\n\n\n\n\nLearn Programming with Python\n\n\n\n\nPaul Vincent Craven\n\n\nTeaching Python 3.6 with Games\n\n\nProgram Arcade Games\n\n\n\n\n\n\n\n\nTeaching notes\n\n\n\n\nRevise often\n\n\nRestructured text for material (markdown)\n\n\nSphinx (for documentation) (MkDocs)\n\n\nStore in Git\n\n\nRead The Docs - documentation generator\n\n\n\n\n\n\n\n\nOther tools\n\n\n\n\nVisualize Your Code\n - Online tutor for learning to code.\n\n\nCreated by: \nPhilip J. Guo\n\n\n\n\n\n\nList of Public APIs",
             "title": "Learning Sources"
         },
         {
@@ -2567,7 +2592,7 @@
         },
         {
             "location": "/teaching/teach/#other-tools",
-            "text": "Visualize Your Code  - Online tutor for learning to code.  Created by:  Philip J. Guo",
+            "text": "Visualize Your Code  - Online tutor for learning to code.  Created by:  Philip J. Guo    List of Public APIs",
             "title": "Other tools"
         },
         {
