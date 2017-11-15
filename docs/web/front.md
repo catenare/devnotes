@@ -14,6 +14,8 @@
 * [flakes](http://getflakes.com/) - Design and frontend framework for dashboard.
 * [Themezy](https://www.themezy.com/)
 * [Templated](https://templated.co/)
+* Admin tools
+		* [Grafana](https://grafana.com/) - analytics and monitoring visualization
 
 ### Fonts
 * [Web Font Loading Recipes](https://github.com/zachleat/web-font-loading-recipes)
