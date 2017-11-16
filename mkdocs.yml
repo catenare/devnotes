@@ -42,6 +42,7 @@ pages:
       - Postgresql: 'database/postgresql.md'
 
   - Web:
+    - 'Notes': 'web/notes.md'
     - 'Basic Setup': 'web/page.md'
     - 'Front End':
       - 'Front': 'web/front.md'
