@@ -573,6 +573,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../page/" title="Basic Setup" class="md-nav__link">
       Basic Setup
     </a>
@@ -588,13 +600,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-2" type="checkbox" id="nav-3-3-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-3" type="checkbox" id="nav-3-3-3" checked>
     
-    <label class="md-nav__link" for="nav-3-3-2">
+    <label class="md-nav__link" for="nav-3-3-3">
       Front End
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-3-3-2">
+      <label class="md-nav__title" for="nav-3-3-3">
         Front End
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -691,6 +703,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notes" title="Notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -724,13 +743,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-3" type="checkbox" id="nav-3-3-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-4" type="checkbox" id="nav-3-3-4">
     
-    <label class="md-nav__link" for="nav-3-3-3">
+    <label class="md-nav__link" for="nav-3-3-4">
       Build Tools
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-3-3-3">
+      <label class="md-nav__title" for="nav-3-3-4">
         Build Tools
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -743,13 +762,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-3-1" type="checkbox" id="nav-3-3-3-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-4-1" type="checkbox" id="nav-3-3-4-1">
     
-    <label class="md-nav__link" for="nav-3-3-3-1">
+    <label class="md-nav__link" for="nav-3-3-4-1">
       Webpack
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-3-3-3-1">
+      <label class="md-nav__title" for="nav-3-3-4-1">
         Webpack
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -774,13 +793,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-3-1-2" type="checkbox" id="nav-3-3-3-1-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-4-1-2" type="checkbox" id="nav-3-3-4-1-2">
     
-    <label class="md-nav__link" for="nav-3-3-3-1-2">
+    <label class="md-nav__link" for="nav-3-3-4-1-2">
       Configuration
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-3-3-3-1-2">
+      <label class="md-nav__title" for="nav-3-3-4-1-2">
         Configuration
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2018,6 +2037,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notes" title="Notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2166,6 +2192,47 @@ module.exports = {
 <li><a href="https://css-tricks.com/perfect-full-page-background-image/">Full Page Background Image</a></li>
 <li>See the front. <a href="../front/#carousel">Front</a></li>
 </ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Using mixins for grid</li>
+</ul>
+<pre><code class="scss">footer {
+  @include xy-grid;
+  @include xy-grid-layout(4, 'div');
+}
+</code></pre>
+
+<ul>
+<li>Result</li>
+</ul>
+<pre><code class="html"> &lt;footer&gt;
+      &lt;section class=&quot;footer&quot;&gt;
+        &lt;div&gt;
+          &lt;h2&gt;my title&lt;/h2&gt;
+          &lt;img src=&quot;http://via.placeholder.com/200x200&quot; alt=&quot;image&quot;&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;h2&gt;experience&lt;/h2&gt;
+          &lt;ul&gt;
+            &lt;li&gt;experience&lt;/li&gt;
+            &lt;li&gt;experience&lt;/li&gt;
+            &lt;li&gt;experience&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;h2&gt;skills&lt;/h2&gt;
+          &lt;ul&gt;
+            &lt;li&gt;skills&lt;/li&gt;
+            &lt;li&gt;skills&lt;/li&gt;
+            &lt;li&gt;skills&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;h2&gt;contact me&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;/section&gt;
+&lt;/footer&gt;
+</code></pre>
                 
                   
                 
