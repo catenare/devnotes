@@ -112,3 +112,42 @@ In handlbars template
 * [Stack Overflow Responsive Background Image](https://stackoverflow.com/questions/21421062/responsive-background-image)
 * [Full Page Background Image](https://css-tricks.com/perfect-full-page-background-image/)
 * See the front. [Front](front/#carousel)
+
+## Notes
+* Using mixins for grid
+```scss
+footer {
+  @include xy-grid;
+  @include xy-grid-layout(4, 'div');
+}
+```
+* Result
+```html
+ <footer>
+      <section class="footer">
+        <div>
+          <h2>my title</h2>
+          <img src="http://via.placeholder.com/200x200" alt="image">
+        </div>
+        <div>
+          <h2>experience</h2>
+          <ul>
+            <li>experience</li>
+            <li>experience</li>
+            <li>experience</li>
+          </ul>
+        </div>
+        <div>
+          <h2>skills</h2>
+          <ul>
+            <li>skills</li>
+            <li>skills</li>
+            <li>skills</li>
+          </ul>
+        </div>
+        <div>
+          <h2>contact me</h2>
+        </div>
+        </section>
+</footer>
+```

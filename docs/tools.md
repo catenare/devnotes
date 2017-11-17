@@ -83,3 +83,7 @@
 ## Code Analyzers
 * [PMD](https://pmd.github.io/) - Source code analyser. Includes JS, Java, checks for duplicates in PHP
 * [SourceTrail](https://www.sourcetrail.com/) - Sourcecode explorer for Java and C++
+
+## Editors
+### Visual Studio Code
+* Adding multiple projects to workspace - [Multiple Root Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces)

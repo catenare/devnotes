@@ -37,3 +37,4 @@ Currently using Birt for generating reports and invoices for the child center.
 * [Dynamic Reports](http://dynamicreports.org/) - Dynamic reports based on Jasper
 * [Jasper Reports Library](https://community.jaspersoft.com/project/jasperreports-library)
 * [Apache PDFBox](https://pdfbox.apache.org/) - PDFBox - manipulate PDF docs.
+* [iText](https://itextpdf.com) - Java PDF library - have book PDF

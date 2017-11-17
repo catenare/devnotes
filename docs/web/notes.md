@@ -1,8 +1,10 @@
 # Tools
 ## Emmet
 ### Notes
+* [Goodby Zen Coding](https://www.smashingmagazine.com/2013/03/goodbye-zen-coding-hello-emmet/) - Very good intro to Emmet.
 * Visual Studio Code - [Emmet](https://code.visualstudio.com/docs/editor/emmet)
     * lorem ipsum screws up what is following it
+    * lorem ipsum has to be last
 ### Snippets
 * **section#projects>h1>{Projects}^div.card*3>img[src="http://via.placeholder.com/250x200" alt="card"]>div>h2>{card title}^p>lorem10**
 ```html
