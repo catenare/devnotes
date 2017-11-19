@@ -2052,13 +2052,111 @@
 </ul>
 <h2 id="gem">Gem</h2>
 <ul>
-<li>Unable to run a command from a gem when installed with <em>gem install</em><ul>
+<li>
+<p>Unable to run a command from a gem when installed with <em>gem install</em></p>
+<ul>
 <li>Example: <em>gem install cocoapods</em>. Expect to use <em>pod</em> as a commandline client.</li>
 <li>Solution: <strong>rvm use ruby-{current}</strong></li>
 <li>Problem related to rvm not setting up a default ruby.</li>
 </ul>
 </li>
+<li>
+<p><em>Warning! PATH is not properly set up</em></p>
+<ul>
+<li><a href="http://scriptingosx.com/2017/04/about-bash_profile-and-bashrc-on-macos/">About bash_profile and bashrc on Mac OS X</a> - Terminal runs .bash_profile on new window.</li>
+<li>Edit <em>.profile</em><ul>
+<li>Add line to beginning of file. <code>[[ -s "$HOME/.bash_profile" ]] &amp;&amp; source "$HOME/.bash_profile" # Load the default .bash_profile</code></li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="bash"># MacPorts Installer addition on 2016-08-29_at_10:22:24: adding an appropriate PATH variable for use with MacPorts.
+export PATH=&quot;/opt/local/bin:/opt/local/sbin:$PATH&quot;
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+export NVM_DIR=&quot;/Users/themartins/.nvm&quot;
+[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm
+
+export WORKON_HOME=~/Envs
+export VIRTUALENVWRAPPER_SCRIPT=$HOME/Library/Python/3.6/bin/virtualenvwrapper.sh
+source &quot;$HOME/Library/Python/3.6/bin/virtualenvwrapper_lazy.sh&quot;
+export PATH=&quot;$HOME/Library/Python/3.6/bin:$PATH&quot;
+
+# pip bash completion start
+_pip_completion()
+{
+    COMPREPLY=( $( COMP_WORDS=&quot;${COMP_WORDS[*]}&quot; \
+                   COMP_CWORD=$COMP_CWORD \
+                   PIP_AUTO_COMPLETE=1 $1 ) )
+}
+complete -o default -F _pip_completion pip
+# pip bash completion end
+
+export PATH=&quot;$PATH:$HOME/.local/bin&quot;
+
+alias mongostart=&quot;sudo mongod -f /opt/local/etc/mongodb/mongod.conf --httpinterface --rest&quot;
+
+mongostop_func () {
+    local mongopid = `less /opt/local/var/db/mongodb/mongod.lock`;
+    if [[ $mongopid =~ [[:digit:]] ]]; then
+        sudo kill -15 $mongopid;
+        echo mongod process $mongopid terminated;
+    else
+        echo mongo process $mongopid not exists;
+    fi
+}
+
+alias mongostop=&quot;mongostop_func&quot;
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+echo &quot;.profile loaded&quot;
+
+
+</code></pre>
+
+<ul>
+<li>Edit <em>.bash_profile</em></li>
+</ul>
+<pre><code class="bash">[[ -s &quot;$HOME/.profile&quot; ]] &amp;&amp; source &quot;$HOME/.profile&quot; # Load the default .profile
+# export NVM_DIR=&quot;$HOME/.nvm&quot;
+# [ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot; # This loads nvm
+
+# Export libsass library
+export SASS_LIBSASS_PATH=/Users/themartins/Projects/Tools/libsass
+
+export PATH=&quot;$HOME/Library/Python/3.6/bin:$PATH&quot;
+eval $(/usr/libexec/path_helper -s)
+
+# export PATH=&quot;/Users/themartins/Documents/Projects/tutorial:$PATH&quot;
+export PATH=$PATH:&quot;~/.bin&quot;
+
+# export JAVA_HOME=&quot;/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home&quot;
+export JAVA_HOME=&quot;/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home&quot;
+export ANDROID_HOME=&quot;/Users/themartins/Library/Android/sdk&quot;
+export PATH=$ANDROID_HOME:$PATH
+
+###-tns-completion-start-###
+if [ -f /Users/themartins/.tnsrc ]; then 
+    source /Users/themartins/.tnsrc 
+fi
+###-tns-completion-end-###
+
+export PATH=$PATH:/Users/themartins/bin
+
+source '/Users/themartins/lib/azure-cli/az.completion'
+
+# echo &quot;end .bash_profile&quot;
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR=&quot;/Users/themartins/.sdkman&quot;
+[[ -s &quot;/Users/themartins/.sdkman/bin/sdkman-init.sh&quot; ]] &amp;&amp; source &quot;/Users/themartins/.sdkman/bin/sdkman-init.sh&quot;
+
+export PATH=&quot;$PATH:$HOME/.rvm/bin&quot;
+[[ -s &quot;$HOME/.rvm/scripts/rvm&quot; ]] &amp;&amp; source &quot;$HOME/.rvm/scripts/rvm&quot; # Load RVM into a shell session *as a function*
+</code></pre>
                 
                   
                 
