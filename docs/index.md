@@ -13,9 +13,19 @@ This is my notes, snippets and lists. Most of it is related to items I had to fi
 # Journal
 * 19 Nov. 2017
     * Added a placeholder partial for placeholder images using svg. Makes for a simple placeholder without being dependent on the network.
-    * Foundation xy grid is flexbox. Over 70% support in South Africa.
+        * Does not work inside repeat sections.
+    * Foundation xy grid is flexbox. Over 70% support in South Africa according to caniuse.
     * Settings.scss
         * $global-flex: true;
     * app.scss
         * @include foundation-xy-grid-classes;
-
+    * Learning about flex with Foundation classes - Good youtube introduction.
+    * Creating card layout using uswto.com blog page as template.
+    * Reactivated my codepen account.
+    * Setup styleguide for site.
+        * Initial layout
+            * List of styles that we're using.
+            * Goal is to be at least consistent.
+            * Try to get an MVP going as quickly as possible.
+    * Aiming to get the blog section going with work information at the bottom.
+        * Resume in the footer with email list and contact me form.
