@@ -9,3 +9,13 @@ This is my notes, snippets and lists. Most of it is related to items I had to fi
 ## Recommendations
 * I think this is the best paper notebook for developers. Confidant available from [Baron Fig](https://www.baronfig.com/) 
 ![Baron Fig](https://cdn.shopify.com/s/files/1/0543/1257/products/confidant_charcoal_flagship_01.jpg?v=1489606782)
+
+# Journal
+* 19 Nov. 2017
+    * Added a placeholder partial for placeholder images using svg. Makes for a simple placeholder without being dependent on the network.
+    * Foundation xy grid is flexbox. Over 70% support in South Africa.
+    * Settings.scss
+        * $global-flex: true;
+    * app.scss
+        * @include foundation-xy-grid-classes;
+

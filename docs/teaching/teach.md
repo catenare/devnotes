@@ -57,3 +57,6 @@
 * [Visualize Your Code](http://pythontutor.com/) - Online tutor for learning to code.
     * Created by: [Philip J. Guo](http://www.pgbovine.net/index.html)
 * [List of Public APIs](https://github.com/abhishekbanthia/Public-APIs)
+
+## Free hosting for html sites
+* [NeoCities](https://neocities.org/)

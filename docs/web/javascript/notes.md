@@ -1,17 +1,22 @@
 # Notes related to front-end development.
 
-## JavaScript Notes
-
-### Resources
+## Resources
 * [Standard JS](https://standardjs.com/) - JavaScript Standard Style
     * Rules for writing JavaScript.
 * [Awesome Angular](https://github.com/brillout/awesome-angular-components)
 * [You Don't Need jQuery](https://blog.garstasio.com/you-dont-need-jquery/)
 * [JavaScript Plugin for Web Forms](https://1stwebdesigner.com/javascript-plugins-web-forms/)
+* [JavaScript Encyclopedia](http://www.crockford.com/javascript/encyclopedia/)
 
 ### Tools
 * [Lerna](https://lernajs.io/) - Manage JavaScript projects with multiple packages
 * [Colmena](https://github.com/colmena/colmena) - Colmena - CMS system.
+
+### Performace tools
+* Calibre
+* Speedcurve
+* Bundlesize
+* [httparchive.org](http://beta.httparchive.org/) - beta.httparchive.org - data/insights
 
 ### Ionic
 * Include font-awesome fonts in project.
@@ -364,5 +369,3 @@ if (process.env.NODE_ENV === 'production') {
 
 ### Notes for eslint
 * [Disable eslint rules](https://brunoscopelliti.com/how-to-disable-eslint-rule-via-javascript-comment/)
-
-

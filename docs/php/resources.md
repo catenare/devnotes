@@ -10,3 +10,4 @@ To enable php71-apache2handler, run:
 
 ## Resources
 * [Google Cloud Datastore Library for PHP](https://github.com/tomwalder/php-gds)
+* [Coding Style Guide for PHP](http://www.php-fig.org/psr/psr-2/)

@@ -14,6 +14,8 @@
 user=false
 ```
 * [Pip Configuration](https://pip.pypa.io/en/stable/user_guide/#configuration) | [StackOverflow Issue](http://stackoverflow.com/questions/30604952/pip-default-behavior-conflicts-with-virtualenv)
+## Install
+* [Installing packages](https://packaging.python.org/tutorials/installing-packages/)
 
 ### Install pip as user
 * get the get-pip.py script
@@ -55,3 +57,5 @@ user = true
         * `export LC_ALL=en_US.UTF-8`
         * `export LANG=en_US.UTF-8`
 
+## Virtual Environments
+* [VirtualEnvWrapper](https://virtualenvwrapper.readthedocs.io/en/latest/index.html)

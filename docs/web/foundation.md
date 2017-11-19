@@ -1,5 +1,8 @@
 # Foundation for Sites Notes
 
+## Panini
+* [Zurb University Documentation](https://zurb.com/university/lessons/the-main-ingredients-of-panini-layouts-pages-and-partials)
+
 ## Other Packages
 * fontawesome
 * eslint

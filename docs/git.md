@@ -14,6 +14,7 @@
     * Create temporary checkout for working on a branch without having to stash data
 
 ### Git Resources
+* Styleguid for git messages - [Udacity Git Styleguide](https://udacity.github.io/git-styleguide/)
 #### .gitignore
 * Resources
   * [.gitignore templates](https://github.com/github/gitignore)

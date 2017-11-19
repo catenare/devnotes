@@ -87,3 +87,9 @@
 ## Editors
 ### Visual Studio Code
 * Adding multiple projects to workspace - [Multiple Root Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces)
+
+## Image Sprites
+* [PiskelApp](https://www.piskelapp.com/)
+
+## Screem recording
+* [OBS Studio](https://obsproject.com/) - open source screen recording
