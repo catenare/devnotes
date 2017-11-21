@@ -1040,6 +1040,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#development" title="Development" class="md-nav__link">
+    Development
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exporting-stateless-component" title="exporting stateless component" class="md-nav__link">
+    exporting stateless component
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -2036,6 +2056,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#development" title="Development" class="md-nav__link">
+    Development
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exporting-stateless-component" title="exporting stateless component" class="md-nav__link">
+    exporting stateless component
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -2089,6 +2129,105 @@
 <ul>
 <li><a href="https://github.com/Lemoncode/react-typescript-samples">React Typescript Samples</a></li>
 </ul>
+<h2 id="development">Development</h2>
+<ul>
+<li><a href="https://reactjs.org/docs/cross-origin-errors.html">Cross Origin Errors</a></li>
+</ul>
+<pre><code>Source maps
+Some JavaScript bundlers may wrap the application code with eval statements in development. (For example Webpack will do this if devtool is set to any value containing the word “eval”.) This may cause errors to be treated as cross-origin.
+If you use Webpack, we recommend using the cheap-module-source-map setting in development to avoid this problem.
+</code></pre>
+
+<h3 id="exporting-stateless-component">exporting stateless component</h3>
+<pre><code class="jsx">import React from &quot;react&quot;;
+import ReactDOM  from &quot;react-dom&quot;;
+
+const data = [
+  {
+      &quot;name&quot;: &quot;Baked Salmon&quot;,
+      &quot;ingredients&quot;: [
+          { &quot;name&quot;: &quot;Salmon&quot;, &quot;amount&quot;: 1, &quot;measurement&quot;: &quot;l lb&quot; },
+          { &quot;name&quot;: &quot;Pine Nuts&quot;, &quot;amount&quot;: 1, &quot;measurement&quot;: &quot;cup&quot; },
+          { &quot;name&quot;: &quot;Butter Lettuce&quot;, &quot;amount&quot;: 2, &quot;measurement&quot;: &quot;cups&quot; },
+          { &quot;name&quot;: &quot;Yellow Squash&quot;, &quot;amount&quot;: 1, &quot;measurement&quot;: &quot;med&quot; },
+          { &quot;name&quot;: &quot;Olive Oil&quot;, &quot;amount&quot;: 0.5, &quot;measurement&quot;: &quot;cup&quot; },
+          { &quot;name&quot;: &quot;Garlic&quot;, &quot;amount&quot;: 3, &quot;measurement&quot;: &quot;cloves&quot; }
+      ],
+      &quot;steps&quot;: [
+          &quot;Preheat the oven to 350 degrees.&quot;,
+          &quot;Spread the olive oil around a glass baking dish.&quot;,
+          &quot;Add the salmon, garlic, and pine nuts to the dish.&quot;,
+          &quot;Bake for 15 minutes.&quot;,
+          &quot;Add the yellow squash and put back in the oven for 30 mins.&quot;,
+          &quot;Remove from oven and let cool for 15 minutes. Add the lettuce and serve.&quot;
+      ]
+  },
+  {
+      &quot;name&quot;: &quot;Fish Tacos&quot;,
+      &quot;ingredients&quot;: [
+          { &quot;name&quot;: &quot;Whitefish&quot;, &quot;amount&quot;: 1, &quot;measurement&quot;: &quot;l lb&quot; },
+          { &quot;name&quot;: &quot;Cheese&quot;, &quot;amount&quot;: 1, &quot;measurement&quot;: &quot;cup&quot; },
+          { &quot;name&quot;: &quot;Iceberg Lettuce&quot;, &quot;amount&quot;: 2, &quot;measurement&quot;: &quot;cups&quot; },
+          { &quot;name&quot;: &quot;Tomatoes&quot;, &quot;amount&quot;: 2, &quot;measurement&quot;: &quot;large&quot;},
+          { &quot;name&quot;: &quot;Tortillas&quot;, &quot;amount&quot;: 3, &quot;measurement&quot;: &quot;med&quot; }
+      ],
+      &quot;steps&quot;: [
+          &quot;Cook the fish on the grill until hot.&quot;,
+          &quot;Place the fish on the 3 tortillas.&quot;,
+          &quot;Top them with lettuce, tomatoes, and cheese&quot;
+      ]
+  }
+]
+
+const Menu = ({title, recipes}) =&gt; (
+  &lt;article&gt;
+    &lt;header&gt;
+      &lt;h1&gt;{title}&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;div className=&quot;recipes&quot;&gt;
+      {recipes.map((recipe, i) =&gt; &lt;Recipe key={i} name={recipe.name} ingredients={recipe.ingredients} steps={recipe.steps} /&gt;)}
+    &lt;/div&gt;
+  &lt;/article&gt;
+)
+
+const Recipe = ({name, ingredients, steps }) =&gt;
+&lt;section id={name.toLowerCase().replace(/ /g, &quot;-&quot;)}&gt;
+  &lt;h1&gt;{name}&lt;/h1&gt;
+  &lt;ul className=&quot;ingredients&quot;&gt;
+    {ingredients.map((ingredient, i) =&gt; &lt;li key={i}&gt;{ingredient.name}&lt;/li&gt;)}
+  &lt;/ul&gt;
+  &lt;section className=&quot;instructions&quot;&gt;
+    &lt;h2&gt;Cooking Instructions&lt;/h2&gt;
+    {steps.map((step, i) =&gt; &lt;p key={i}&gt;{step}&lt;/p&gt;)}
+  &lt;/section&gt;
+&lt;/section&gt;
+
+const list = () =&gt; &lt;Menu recipes={data} title=&quot;Delicious Recipes&quot; /&gt;
+
+export {list};
+</code></pre>
+
+<ul>
+<li>In Routing</li>
+</ul>
+<pre><code class="tsx">import * as React from &quot;react&quot;;
+import {BrowserRouter, HashRouter, Redirect, Route, Switch } from &quot;react-router-dom&quot;; // eslint-disable-line
+import {Hello} from &quot;./components/Home/Hello&quot;;
+import {list} from &quot;./components/Ingredients/ingredients&quot;;
+
+const AppRoute = () =&gt; ( // eslint-disable-line
+  &lt;HashRouter&gt;
+    &lt;main&gt;
+      &lt;Switch&gt;
+        &lt;Route path=&quot;/&quot; exact component={list} /&gt;
+        &lt;Redirect to=&quot;/&quot; /&gt;
+      &lt;/Switch&gt;
+    &lt;/main&gt;
+  &lt;/HashRouter&gt;
+);
+
+export {AppRoute};
+</code></pre>
                 
                   
                 
