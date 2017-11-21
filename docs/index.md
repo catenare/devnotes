@@ -32,3 +32,5 @@ This is my notes, snippets and lists. Most of it is related to items I had to fi
     * Aiming to get the blog section going with work information at the bottom.
         * Resume in the footer with email list and contact me form.
     
+* 20 Nov 2017
+    * Trying to play with OBS - Open Source screen capturing software. Might be good for creating screen recordings. Will be text based rather than talking.

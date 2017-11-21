@@ -41,6 +41,9 @@
 ### LMS Tools Commercial
 * [Eliademy](https://eliademy.com/en)
 
+## Create interactive lessons
+* [Oppia](https://github.com/oppia/oppia) - build interactive lessons.
+
 ## Learn Programming with Python
 * [Paul Vincent Craven](http://simpson.edu/author/pcraven/)
     * [Teaching Python 3.6 with Games](http://2017-craven-webinar.readthedocs.io/en/latest/)
