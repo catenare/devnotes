@@ -32,6 +32,13 @@ Some JavaScript bundlers may wrap the application code with eval statements in d
 If you use Webpack, we recommend using the cheap-module-source-map setting in development to avoid this problem.
 ```
 
+* Import react - ['Cannot read property of createElement of undefined'](https://stackoverflow.com/questions/37360202/uncaught-in-promise-typeerror-cannot-read-property-createelement-of-undefin)
+```
+import { React, Component } from 'react';
+needs to be
+import React, { Component } from 'react';
+```
+
 ### exporting stateless component
 ```jsx
 import React from "react";

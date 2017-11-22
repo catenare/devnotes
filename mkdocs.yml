@@ -19,6 +19,9 @@ pages:
 - Projects:
   - Overview: 'projects/PaseoNetwork.md'
   - 'The Martin Family Site': 'projects/themartinssite.md'
+  - 'Daycare Center': 'projects/Paseo Center.md'
+  - 'Paseo Network': 'projects/PaseoNetwork.md'
+  - 'Johan Martin': 'projects/johanmartin.md'
 - Development:
   - Wordpress:
     - 'Notes': 'php/wordpress/notes.md'
@@ -85,11 +88,10 @@ pages:
   - Ruby: 'ruby/ruby.md'
   - Java:
     - 'Notes': 'java/java.md'
+    - 'Spring': 'java/spring.md'
     - 'JHipster': 'java/jhipster.md'
   - Nodejs:
     - 'Notes': 'nodejs/notes.md'
-  - Frameworks:
-    - Spring: 'spring.md'
   - Version Control:
     - 'Git': 'git.md'
   - Mobile:
@@ -102,6 +104,7 @@ pages:
   - Reporting: 'reporting.md'
   - Documentation: 'docs.md'
   - Operations:
+    - 'Local': 'ops/local.md'
     - 'Vagrant': 'ops/vagrant.md'
     - 'Docker': 'ops/docker.md'
     - 'Amazon': 'ops/amazon.md'
