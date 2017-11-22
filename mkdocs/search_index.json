@@ -81,6 +81,76 @@
             "title": "The Martins Family Site"
         },
         {
+            "location": "/projects/Paseo Center/",
+            "text": "Paseo Center\n\n\n\n\nPaseo Baptist Church Daycare and Preschool Center.\n\n\n\n\nFeatures\n\n\n\n\nPaseo Parents - access for parents to secure information\n\n\nChildren gallery\n\n\n\n\n\n\nShop - swag and picture packages.\n\n\nRegistration - mini site related to registration\n\n\nNewsletter\n\n\nCenter events\n\n\nWrite-up of events with gallery",
+            "title": "Daycare Center"
+        },
+        {
+            "location": "/projects/Paseo Center/#paseo-center",
+            "text": "Paseo Baptist Church Daycare and Preschool Center.",
+            "title": "Paseo Center"
+        },
+        {
+            "location": "/projects/Paseo Center/#features",
+            "text": "Paseo Parents - access for parents to secure information  Children gallery    Shop - swag and picture packages.  Registration - mini site related to registration  Newsletter  Center events  Write-up of events with gallery",
+            "title": "Features"
+        },
+        {
+            "location": "/projects/PaseoNetwork/",
+            "text": "Headless CMS on Wordpress Multisite.\n\n\n\n\nPutting together a headless CMS network.\n\n\n\n\nThinking\n\n\n\n\nUsing Wordpress as the CMS component\n\n\nAdding other resources as necessary.\n\n\nEasier to deal with than Drupal.\n\n\nCommitment to API via current developments.\n\n\n\n\nSites\n\n\n\n\nPaseo Baptist Church\n\n\nPaseo Center - Daycare and Preschool\n\n\nThe Martin Family\n\n\nPersonal Site\n\n\nCurrently hosted at Github\n\n\n\n\n\n\n\n\nWordpress Development\n\n\nWordpress API Form plugin - front-end and admin\n\n\n\n\nfolder layout\n\n\nsite\n - public assets for plugin\n\n\nsrc\n - PHP Classes for the plugin\n\n\nsite\n - alias to outside *\nsite\n folder\n\n\nMain.php\n - main entry class for plugin\n\n\nAdmin\n - Admin classes for plugin\n\n\nRest\n - Rest endpoints for plugin\n\n\n\n\n\n\npaseo-wp-form-api.php\n - entry script for plugin\n\n\nbuild\n - folder for building javascript/css (front-end) of admin plugin\n\n\nIncludes \nnode_modules\n\n\nUsing \nwebpack\n to build the assets.\n\n\n\n\n\n\nsrc\n - CSS/JS assets for plugin\n\n\nBuild script will push assets to \nsite/assets\n\n\n\n\n\n\n\n\n\n\n\n\nCreating admin screen for setting options and to view entries in contact us form.\n\n\n\n\nUsing REST API\n\n\nWill use REACT as the engine\n\n\nUpdates/changes managed by REST\n\n\n\n\nTo Do\n\n\n\n\n[ ] Add javaScript to admin site\n\n\n[ ] REST end-point for admin settings\n\n\n[ ] Modify theme plugin to put all front-end build info into \nbuild\n folder.",
+            "title": "Paseo Network"
+        },
+        {
+            "location": "/projects/PaseoNetwork/#headless-cms-on-wordpress-multisite",
+            "text": "Putting together a headless CMS network.",
+            "title": "Headless CMS on Wordpress Multisite."
+        },
+        {
+            "location": "/projects/PaseoNetwork/#thinking",
+            "text": "Using Wordpress as the CMS component  Adding other resources as necessary.  Easier to deal with than Drupal.  Commitment to API via current developments.",
+            "title": "Thinking"
+        },
+        {
+            "location": "/projects/PaseoNetwork/#sites",
+            "text": "Paseo Baptist Church  Paseo Center - Daycare and Preschool  The Martin Family  Personal Site  Currently hosted at Github",
+            "title": "Sites"
+        },
+        {
+            "location": "/projects/PaseoNetwork/#wordpress-development",
+            "text": "",
+            "title": "Wordpress Development"
+        },
+        {
+            "location": "/projects/PaseoNetwork/#wordpress-api-form-plugin-front-end-and-admin",
+            "text": "folder layout  site  - public assets for plugin  src  - PHP Classes for the plugin  site  - alias to outside * site  folder  Main.php  - main entry class for plugin  Admin  - Admin classes for plugin  Rest  - Rest endpoints for plugin    paseo-wp-form-api.php  - entry script for plugin  build  - folder for building javascript/css (front-end) of admin plugin  Includes  node_modules  Using  webpack  to build the assets.    src  - CSS/JS assets for plugin  Build script will push assets to  site/assets",
+            "title": "Wordpress API Form plugin - front-end and admin"
+        },
+        {
+            "location": "/projects/PaseoNetwork/#creating-admin-screen-for-setting-options-and-to-view-entries-in-contact-us-form",
+            "text": "Using REST API  Will use REACT as the engine  Updates/changes managed by REST",
+            "title": "Creating admin screen for setting options and to view entries in contact us form."
+        },
+        {
+            "location": "/projects/PaseoNetwork/#to-do",
+            "text": "[ ] Add javaScript to admin site  [ ] REST end-point for admin settings  [ ] Modify theme plugin to put all front-end build info into  build  folder.",
+            "title": "To Do"
+        },
+        {
+            "location": "/projects/johanmartin/",
+            "text": "Johan Martin\n\n\nTools\n\n\n\n\nCloudinary Link - https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/wlzhlnajajvccng2iees",
+            "title": "Johan Martin"
+        },
+        {
+            "location": "/projects/johanmartin/#johan-martin",
+            "text": "",
+            "title": "Johan Martin"
+        },
+        {
+            "location": "/projects/johanmartin/#tools",
+            "text": "Cloudinary Link - https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/wlzhlnajajvccng2iees",
+            "title": "Tools"
+        },
+        {
             "location": "/php/wordpress/notes/",
             "text": "Wordpress Notes\n\n\nErrors\n\n\n\n\nWordPress database error  for query SHOW FULL COLUMNS FROM\n\n\nFound it... Security patch in 4.1.2 added a new function, 'wpdb->process_field_lengths()', that causes an insert or update query not to be run if the data is longer than the permissible size based on the database schema.\n\n\nError fix\n\n\n\n\n\n\n\n\nAPI Notes\n\n\n\n\nConfigure headers for API Rest Calls\n\n\nAccess Control Headers for Wordpress Rest API\n\n\nAdded below code to plugin startup file. Let's one change headers and permissions.\n\n\n\n\n\n\n\n\n/**\n * Use * for origin\n */\n add_action( 'rest_api_init', function() {\n\n remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );\n add_filter( 'rest_pre_serve_request', function( $value ) {\n    header( 'Access-Control-Allow-Origin: *' );\n    header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );\n    header( 'Access-Control-Allow-Credentials: true' );\n    header( 'Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, PAS-Fingerprint, PAS-Check, PAS-Nonce, PAS-Captcha');\n    header('Access-Control-Allow-Headers: Authorization, Content-Type, PAS-Nonce, PAS-Fingerprint, PAS-Check');\n    return $value;\n });\n }, 15 );\n\n\n\n\nWordpress Resources\n\n\n\n\nWP Hasty\n\n\nUsing jquery-ui with wordpress. \n\n\nHow to use jquery-ui in Wordpress",
             "title": "Notes"
@@ -1392,7 +1462,7 @@
         },
         {
             "location": "/web/javascript/reactjs/reactjs/",
-            "text": "Notes about learning reactjs\n\n\nRouting is very different from what's available in books and tutorials\n\n\n\n\nDocumentation for Routing\n\n\nCSS Tricks: React Router 4\n\n\nGood code examples\n\n\n\n\n\n\n\n\nNotes from rangle.io web chat\n\n\n\n\nTools: react, redux, express (optional)\n\n\nTools\n\n\nwebpack w/ babel\n\n\nPostCSS/CSSNext\n\n\nTesting - karma, mocha, chai\n\n\nLinting tools - js and css/sass (eslint/stylelint)\n\n\nEnzyme - component testing (?)\n\n\nRobot e2e test framework - python framework. natural language. connect to ci\n\n\n\n\n\n\nHelmetJS - security from cross-scripting\n\n\nDev tools\n\n\nnpm start - run in production mode\n\n\nnpm dev - dev mode - dev tools connected.\n\n\n\n\n\n\nComponents\n\n\natomic design\n\n\n\n\n\n\n\n\nGeneral Notes\n\n\n\n\nReact Typescript Samples\n\n\n\n\nDevelopment\n\n\n\n\nCross Origin Errors\n\n\n\n\nSource maps\nSome JavaScript bundlers may wrap the application code with eval statements in development. (For example Webpack will do this if devtool is set to any value containing the word \u201ceval\u201d.) This may cause errors to be treated as cross-origin.\nIf you use Webpack, we recommend using the cheap-module-source-map setting in development to avoid this problem.\n\n\n\n\nexporting stateless component\n\n\nimport React from \"react\";\nimport ReactDOM  from \"react-dom\";\n\nconst data = [\n  {\n      \"name\": \"Baked Salmon\",\n      \"ingredients\": [\n          { \"name\": \"Salmon\", \"amount\": 1, \"measurement\": \"l lb\" },\n          { \"name\": \"Pine Nuts\", \"amount\": 1, \"measurement\": \"cup\" },\n          { \"name\": \"Butter Lettuce\", \"amount\": 2, \"measurement\": \"cups\" },\n          { \"name\": \"Yellow Squash\", \"amount\": 1, \"measurement\": \"med\" },\n          { \"name\": \"Olive Oil\", \"amount\": 0.5, \"measurement\": \"cup\" },\n          { \"name\": \"Garlic\", \"amount\": 3, \"measurement\": \"cloves\" }\n      ],\n      \"steps\": [\n          \"Preheat the oven to 350 degrees.\",\n          \"Spread the olive oil around a glass baking dish.\",\n          \"Add the salmon, garlic, and pine nuts to the dish.\",\n          \"Bake for 15 minutes.\",\n          \"Add the yellow squash and put back in the oven for 30 mins.\",\n          \"Remove from oven and let cool for 15 minutes. Add the lettuce and serve.\"\n      ]\n  },\n  {\n      \"name\": \"Fish Tacos\",\n      \"ingredients\": [\n          { \"name\": \"Whitefish\", \"amount\": 1, \"measurement\": \"l lb\" },\n          { \"name\": \"Cheese\", \"amount\": 1, \"measurement\": \"cup\" },\n          { \"name\": \"Iceberg Lettuce\", \"amount\": 2, \"measurement\": \"cups\" },\n          { \"name\": \"Tomatoes\", \"amount\": 2, \"measurement\": \"large\"},\n          { \"name\": \"Tortillas\", \"amount\": 3, \"measurement\": \"med\" }\n      ],\n      \"steps\": [\n          \"Cook the fish on the grill until hot.\",\n          \"Place the fish on the 3 tortillas.\",\n          \"Top them with lettuce, tomatoes, and cheese\"\n      ]\n  }\n]\n\nconst Menu = ({title, recipes}) => (\n  <article>\n    <header>\n      <h1>{title}</h1>\n    </header>\n    <div className=\"recipes\">\n      {recipes.map((recipe, i) => <Recipe key={i} name={recipe.name} ingredients={recipe.ingredients} steps={recipe.steps} />)}\n    </div>\n  </article>\n)\n\nconst Recipe = ({name, ingredients, steps }) =>\n<section id={name.toLowerCase().replace(/ /g, \"-\")}>\n  <h1>{name}</h1>\n  <ul className=\"ingredients\">\n    {ingredients.map((ingredient, i) => <li key={i}>{ingredient.name}</li>)}\n  </ul>\n  <section className=\"instructions\">\n    <h2>Cooking Instructions</h2>\n    {steps.map((step, i) => <p key={i}>{step}</p>)}\n  </section>\n</section>\n\nconst list = () => <Menu recipes={data} title=\"Delicious Recipes\" />\n\nexport {list};\n\n\n\n\n\n\nIn Routing\n\n\n\n\nimport * as React from \"react\";\nimport {BrowserRouter, HashRouter, Redirect, Route, Switch } from \"react-router-dom\"; // eslint-disable-line\nimport {Hello} from \"./components/Home/Hello\";\nimport {list} from \"./components/Ingredients/ingredients\";\n\nconst AppRoute = () => ( // eslint-disable-line\n  <HashRouter>\n    <main>\n      <Switch>\n        <Route path=\"/\" exact component={list} />\n        <Redirect to=\"/\" />\n      </Switch>\n    </main>\n  </HashRouter>\n);\n\nexport {AppRoute};",
+            "text": "Notes about learning reactjs\n\n\nRouting is very different from what's available in books and tutorials\n\n\n\n\nDocumentation for Routing\n\n\nCSS Tricks: React Router 4\n\n\nGood code examples\n\n\n\n\n\n\n\n\nNotes from rangle.io web chat\n\n\n\n\nTools: react, redux, express (optional)\n\n\nTools\n\n\nwebpack w/ babel\n\n\nPostCSS/CSSNext\n\n\nTesting - karma, mocha, chai\n\n\nLinting tools - js and css/sass (eslint/stylelint)\n\n\nEnzyme - component testing (?)\n\n\nRobot e2e test framework - python framework. natural language. connect to ci\n\n\n\n\n\n\nHelmetJS - security from cross-scripting\n\n\nDev tools\n\n\nnpm start - run in production mode\n\n\nnpm dev - dev mode - dev tools connected.\n\n\n\n\n\n\nComponents\n\n\natomic design\n\n\n\n\n\n\n\n\nGeneral Notes\n\n\n\n\nReact Typescript Samples\n\n\n\n\nDevelopment\n\n\n\n\nCross Origin Errors\n\n\n\n\nSource maps\nSome JavaScript bundlers may wrap the application code with eval statements in development. (For example Webpack will do this if devtool is set to any value containing the word \u201ceval\u201d.) This may cause errors to be treated as cross-origin.\nIf you use Webpack, we recommend using the cheap-module-source-map setting in development to avoid this problem.\n\n\n\n\n\n\nImport react - \n'Cannot read property of createElement of undefined'\n\n\n\n\nimport { React, Component } from 'react';\nneeds to be\nimport React, { Component } from 'react';\n\n\n\n\nexporting stateless component\n\n\nimport React from \"react\";\nimport ReactDOM  from \"react-dom\";\n\nconst data = [\n  {\n      \"name\": \"Baked Salmon\",\n      \"ingredients\": [\n          { \"name\": \"Salmon\", \"amount\": 1, \"measurement\": \"l lb\" },\n          { \"name\": \"Pine Nuts\", \"amount\": 1, \"measurement\": \"cup\" },\n          { \"name\": \"Butter Lettuce\", \"amount\": 2, \"measurement\": \"cups\" },\n          { \"name\": \"Yellow Squash\", \"amount\": 1, \"measurement\": \"med\" },\n          { \"name\": \"Olive Oil\", \"amount\": 0.5, \"measurement\": \"cup\" },\n          { \"name\": \"Garlic\", \"amount\": 3, \"measurement\": \"cloves\" }\n      ],\n      \"steps\": [\n          \"Preheat the oven to 350 degrees.\",\n          \"Spread the olive oil around a glass baking dish.\",\n          \"Add the salmon, garlic, and pine nuts to the dish.\",\n          \"Bake for 15 minutes.\",\n          \"Add the yellow squash and put back in the oven for 30 mins.\",\n          \"Remove from oven and let cool for 15 minutes. Add the lettuce and serve.\"\n      ]\n  },\n  {\n      \"name\": \"Fish Tacos\",\n      \"ingredients\": [\n          { \"name\": \"Whitefish\", \"amount\": 1, \"measurement\": \"l lb\" },\n          { \"name\": \"Cheese\", \"amount\": 1, \"measurement\": \"cup\" },\n          { \"name\": \"Iceberg Lettuce\", \"amount\": 2, \"measurement\": \"cups\" },\n          { \"name\": \"Tomatoes\", \"amount\": 2, \"measurement\": \"large\"},\n          { \"name\": \"Tortillas\", \"amount\": 3, \"measurement\": \"med\" }\n      ],\n      \"steps\": [\n          \"Cook the fish on the grill until hot.\",\n          \"Place the fish on the 3 tortillas.\",\n          \"Top them with lettuce, tomatoes, and cheese\"\n      ]\n  }\n]\n\nconst Menu = ({title, recipes}) => (\n  <article>\n    <header>\n      <h1>{title}</h1>\n    </header>\n    <div className=\"recipes\">\n      {recipes.map((recipe, i) => <Recipe key={i} name={recipe.name} ingredients={recipe.ingredients} steps={recipe.steps} />)}\n    </div>\n  </article>\n)\n\nconst Recipe = ({name, ingredients, steps }) =>\n<section id={name.toLowerCase().replace(/ /g, \"-\")}>\n  <h1>{name}</h1>\n  <ul className=\"ingredients\">\n    {ingredients.map((ingredient, i) => <li key={i}>{ingredient.name}</li>)}\n  </ul>\n  <section className=\"instructions\">\n    <h2>Cooking Instructions</h2>\n    {steps.map((step, i) => <p key={i}>{step}</p>)}\n  </section>\n</section>\n\nconst list = () => <Menu recipes={data} title=\"Delicious Recipes\" />\n\nexport {list};\n\n\n\n\n\n\nIn Routing\n\n\n\n\nimport * as React from \"react\";\nimport {BrowserRouter, HashRouter, Redirect, Route, Switch } from \"react-router-dom\"; // eslint-disable-line\nimport {Hello} from \"./components/Home/Hello\";\nimport {list} from \"./components/Ingredients/ingredients\";\n\nconst AppRoute = () => ( // eslint-disable-line\n  <HashRouter>\n    <main>\n      <Switch>\n        <Route path=\"/\" exact component={list} />\n        <Redirect to=\"/\" />\n      </Switch>\n    </main>\n  </HashRouter>\n);\n\nexport {AppRoute};",
             "title": "Reactjs"
         },
         {
@@ -1417,7 +1487,7 @@
         },
         {
             "location": "/web/javascript/reactjs/reactjs/#development",
-            "text": "Cross Origin Errors   Source maps\nSome JavaScript bundlers may wrap the application code with eval statements in development. (For example Webpack will do this if devtool is set to any value containing the word \u201ceval\u201d.) This may cause errors to be treated as cross-origin.\nIf you use Webpack, we recommend using the cheap-module-source-map setting in development to avoid this problem.",
+            "text": "Cross Origin Errors   Source maps\nSome JavaScript bundlers may wrap the application code with eval statements in development. (For example Webpack will do this if devtool is set to any value containing the word \u201ceval\u201d.) This may cause errors to be treated as cross-origin.\nIf you use Webpack, we recommend using the cheap-module-source-map setting in development to avoid this problem.   Import react -  'Cannot read property of createElement of undefined'   import { React, Component } from 'react';\nneeds to be\nimport React, { Component } from 'react';",
             "title": "Development"
         },
         {
@@ -1701,6 +1771,21 @@
             "title": "Resources"
         },
         {
+            "location": "/java/spring/",
+            "text": "Learning to use Spring\n\n\nSteps\n\n\n\n\nStart with maven\n\n\nmvn archetype:generate -DgroupId=za.co.catenare.tutorial -DartifactId=tutorial -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false\n\n\ncd tutorial\n\n\nmvn package\n\n\njava -cp target/tutorial-1.0-SNAPSHOT.jar za.co.catenare.tutorial.App\n\n\nRuns the App",
+            "title": "Spring"
+        },
+        {
+            "location": "/java/spring/#learning-to-use-spring",
+            "text": "",
+            "title": "Learning to use Spring"
+        },
+        {
+            "location": "/java/spring/#steps",
+            "text": "Start with maven  mvn archetype:generate -DgroupId=za.co.catenare.tutorial -DartifactId=tutorial -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false  cd tutorial  mvn package  java -cp target/tutorial-1.0-SNAPSHOT.jar za.co.catenare.tutorial.App  Runs the App",
+            "title": "Steps"
+        },
+        {
             "location": "/java/jhipster/",
             "text": "JHipster\n\n\nResources\n\n\n\n\nJHipster\n - Spring Boot + Angular\n\n\nJHipster Book\n\n\nArticles and Tutorials\n\n\nTop 10 JavaOne 2017 Sessions for Java Hipsters\n\n\nMicroservices with JHipster\n\n\n\n\n\n\nPeople\n\n\nMatt Raible\n\n\n\n\n\n\n\n\nDev Notes\n\n\n\n\nTell Gradle to use a specific jdk version\n = Point to Java8 - \n\n\nIn \ngradle.properties\n - on Mac OS X with SDKMAN installed\n\norg.gradle.java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home",
             "title": "JHipster"
@@ -1729,21 +1814,6 @@
             "location": "/nodejs/notes/#javascript-backend-notes",
             "text": "Restify  - Restify server for Node. Potential for using as API test server(?)",
             "title": "JavaScript Backend Notes"
-        },
-        {
-            "location": "/spring/",
-            "text": "Learning to use Spring\n\n\nSteps\n\n\n\n\nStart with maven\n\n\nmvn archetype:generate -DgroupId=za.co.catenare.tutorial -DartifactId=tutorial -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false\n\n\ncd tutorial\n\n\nmvn package\n\n\njava -cp target/tutorial-1.0-SNAPSHOT.jar za.co.catenare.tutorial.App\n\n\nRuns the App",
-            "title": "Spring"
-        },
-        {
-            "location": "/spring/#learning-to-use-spring",
-            "text": "",
-            "title": "Learning to use Spring"
-        },
-        {
-            "location": "/spring/#steps",
-            "text": "Start with maven  mvn archetype:generate -DgroupId=za.co.catenare.tutorial -DartifactId=tutorial -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false  cd tutorial  mvn package  java -cp target/tutorial-1.0-SNAPSHOT.jar za.co.catenare.tutorial.App  Runs the App",
-            "title": "Steps"
         },
         {
             "location": "/git/",
@@ -2079,6 +2149,21 @@
             "location": "/docs/#importing-docs-into-github",
             "text": "ghp-import  Already being used by MkDocs.  Would like to use with Sphinx if I convert my documentation to Sphinx.",
             "title": "Importing docs into Github"
+        },
+        {
+            "location": "/ops/local/",
+            "text": "Local Setup\n\n\nTerminal\n\n\n\n\n.bash_profile\n\n\n\n\n[[ -s \"$HOME/.profile\" ]] && source \"$HOME/.profile\" # Load the default .profile\n\n\n# Export libsass library\nexport SASS_LIBSASS_PATH=/Users/themartins/Projects/Tools/libsass\n\nexport PATH=$PATH:\"~/.bin\"\n\nexport PATH=$PATH:/Users/themartins/bin\n\n#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!\nexport SDKMAN_DIR=\"/Users/themartins/.sdkman\"\n[[ -s \"/Users/themartins/.sdkman/bin/sdkman-init.sh\" ]] && source \"/Users/themartins/.sdkman/bin/sdkman-init.sh\"\n\nexport PATH=\"$PATH:$HOME/.rvm/bin\"\n[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && source \"$HOME/.rvm/scripts/rvm\" # Load RVM into a shell session *as a function*\n\n\n\n\n\n\n.profile\n\n\n\n\n# MacPorts Installer addition on 2016-08-29_at_10:22:24: adding an appropriate PATH variable for use with MacPorts.\nexport PATH=\"/opt/local/bin:/opt/local/sbin:$PATH\"\n# Finished adapting your PATH environment variable for use with MacPorts.\n\nexport NVM_DIR=\"/Users/themartins/.nvm\"\n[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"  # This loads nvm\n\n# virtualenvwrappers\nexport WORKON_HOME=~/Envs\nexport VIRTUALENVWRAPPER_SCRIPT=$HOME/Library/Python/3.6/bin/virtualenvwrapper.sh\nsource \"$HOME/Library/Python/3.6/bin/virtualenvwrapper_lazy.sh\"\nexport PATH=\"$HOME/Library/Python/3.6/bin:$PATH\"\n\n# pip bash completion start\n_pip_completion()\n{\n    COMPREPLY=( $( COMP_WORDS=\"${COMP_WORDS[*]}\" \\\n                   COMP_CWORD=$COMP_CWORD \\\n                   PIP_AUTO_COMPLETE=1 $1 ) )\n}\ncomplete -o default -F _pip_completion pip\n# pip bash completion end\n\nexport PATH=\"$PATH:$HOME/.local/bin\" #ngrok\n\nalias mongostart=\"sudo mongod -f /opt/local/etc/mongodb/mongod.conf --httpinterface --rest\"\n\nmongostop_func () {\n    local mongopid = `less /opt/local/var/db/mongodb/mongod.lock`;\n    if [[ $mongopid =~ [[:digit:]] ]]; then\n        sudo kill -15 $mongopid;\n        echo mongod process $mongopid terminated;\n    else\n        echo mongo process $mongopid not exists;\n    fi\n}\n\nalias mongostop=\"mongostop_func\"\n\nexport LC_ALL=en_US.UTF-8\nexport LANG=en_US.UTF-8\n\necho \".profile loaded\"",
+            "title": "Local"
+        },
+        {
+            "location": "/ops/local/#local-setup",
+            "text": "",
+            "title": "Local Setup"
+        },
+        {
+            "location": "/ops/local/#terminal",
+            "text": ".bash_profile   [[ -s \"$HOME/.profile\" ]] && source \"$HOME/.profile\" # Load the default .profile\n\n\n# Export libsass library\nexport SASS_LIBSASS_PATH=/Users/themartins/Projects/Tools/libsass\n\nexport PATH=$PATH:\"~/.bin\"\n\nexport PATH=$PATH:/Users/themartins/bin\n\n#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!\nexport SDKMAN_DIR=\"/Users/themartins/.sdkman\"\n[[ -s \"/Users/themartins/.sdkman/bin/sdkman-init.sh\" ]] && source \"/Users/themartins/.sdkman/bin/sdkman-init.sh\"\n\nexport PATH=\"$PATH:$HOME/.rvm/bin\"\n[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && source \"$HOME/.rvm/scripts/rvm\" # Load RVM into a shell session *as a function*   .profile   # MacPorts Installer addition on 2016-08-29_at_10:22:24: adding an appropriate PATH variable for use with MacPorts.\nexport PATH=\"/opt/local/bin:/opt/local/sbin:$PATH\"\n# Finished adapting your PATH environment variable for use with MacPorts.\n\nexport NVM_DIR=\"/Users/themartins/.nvm\"\n[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"  # This loads nvm\n\n# virtualenvwrappers\nexport WORKON_HOME=~/Envs\nexport VIRTUALENVWRAPPER_SCRIPT=$HOME/Library/Python/3.6/bin/virtualenvwrapper.sh\nsource \"$HOME/Library/Python/3.6/bin/virtualenvwrapper_lazy.sh\"\nexport PATH=\"$HOME/Library/Python/3.6/bin:$PATH\"\n\n# pip bash completion start\n_pip_completion()\n{\n    COMPREPLY=( $( COMP_WORDS=\"${COMP_WORDS[*]}\" \\\n                   COMP_CWORD=$COMP_CWORD \\\n                   PIP_AUTO_COMPLETE=1 $1 ) )\n}\ncomplete -o default -F _pip_completion pip\n# pip bash completion end\n\nexport PATH=\"$PATH:$HOME/.local/bin\" #ngrok\n\nalias mongostart=\"sudo mongod -f /opt/local/etc/mongodb/mongod.conf --httpinterface --rest\"\n\nmongostop_func () {\n    local mongopid = `less /opt/local/var/db/mongodb/mongod.lock`;\n    if [[ $mongopid =~ [[:digit:]] ]]; then\n        sudo kill -15 $mongopid;\n        echo mongod process $mongopid terminated;\n    else\n        echo mongo process $mongopid not exists;\n    fi\n}\n\nalias mongostop=\"mongostop_func\"\n\nexport LC_ALL=en_US.UTF-8\nexport LANG=en_US.UTF-8\n\necho \".profile loaded\"",
+            "title": "Terminal"
         },
         {
             "location": "/ops/vagrant/",
