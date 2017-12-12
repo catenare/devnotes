@@ -702,7 +702,7 @@
         },
         {
             "location": "/web/notes/",
-            "text": "Tools\n\n\nEmmet\n\n\nNotes\n\n\n\n\nGoodby Zen Coding\n - Very good intro to Emmet.\n\n\nVisual Studio Code - \nEmmet\n\n\nlorem ipsum screws up what is following it\n\n\nlorem ipsum has to be last\n\n\n\n\n\n\n\n\nSnippets\n\n\n\n\nsection#projects>h1>{Projects}^div.card*3>img[src=\"http://via.placeholder.com/250x200\" alt=\"card\"]>div>h2>{card title}^p>lorem10\n\n\n\n\n<section id=\"projects\">\n  <h1>Projects</h1>\n  <div class=\"card\">\n    <img src=\"http://via.placeholder.com/250x200\" alt=\"card\">\n      <div>\n        <h2>card title</h2>\n        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, blanditiis!</p>\n      </div>\n  </div>\n  <div class=\"card\">\n    <img src=\"http://via.placeholder.com/250x200\" alt=\"card\">\n      <div>\n        <h2>card title</h2>\n        <p>Consequatur voluptates repudiandae deserunt fuga. Magni, architecto labore. Ducimus, quisquam.</p>\n      </div>\n  </div>\n  <div class=\"card\">\n    <img src=\"http://via.placeholder.com/250x200\" alt=\"card\">\n      <div>\n        <h2>card title</h2>\n        <p>Libero, rerum fuga tempora distinctio sit praesentium labore animi odio!</p>\n      </div>\n  </div>\n</section>\n\n\n\n\n\n\naside>img[src=\"http://via.placeholder.com/400x200\" alt=\"main artile\"]+p>{article details}^div>a[href=\"#\"]{link}\n\n\n\n\n<aside>\n    <img src=\"http://via.placeholder.com/400x200\" alt=\"main artile\">\n    <p>article details</p>\n    <div><a href=\"#\">link</a></div>\n</aside>\n\n\n\n\n\n\nfooter>div>h2>{my title}^img[src=\"http://via.placeholder.com/200x200\" alt=\"image\"]^div>h2>{experience}^ul>li\n3>{experience}^^div>h2>{skills}^ul>li\n3>{skills}^^div>h2>{contact me}\n\n\n\n\n<footer>\n  <div>\n    <h2>my title</h2>\n    <img src=\"http://via.placeholder.com/200x200\" alt=\"image\">\n  </div>\n  <div>\n    <h2>experience</h2>\n    <ul>\n      <li>experience</li>\n      <li>experience</li>\n      <li>experience</li>\n    </ul>\n    <div>\n      <h2>skills</h2>\n      <ul>\n        <li>skills</li>\n        <li>skills</li>\n        <li>skills</li>\n      </ul>\n      <div>\n        <h2>contact me</h2>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "text": "Tools\n\n\nEmmet\n\n\nNotes\n\n\n\n\nGoodby Zen Coding\n - Very good intro to Emmet.\n\n\nVisual Studio Code - \nEmmet\n\n\nlorem ipsum screws up what is following it\n\n\nlorem ipsum has to be last\n\n\n\n\n\n\nBrand Colors\n - List of brand colors\n\n\n\n\nSnippets\n\n\n\n\nsection#projects>h1>{Projects}^div.card*3>img[src=\"http://via.placeholder.com/250x200\" alt=\"card\"]>div>h2>{card title}^p>lorem10\n\n\n\n\n<section id=\"projects\">\n  <h1>Projects</h1>\n  <div class=\"card\">\n    <img src=\"http://via.placeholder.com/250x200\" alt=\"card\">\n      <div>\n        <h2>card title</h2>\n        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, blanditiis!</p>\n      </div>\n  </div>\n  <div class=\"card\">\n    <img src=\"http://via.placeholder.com/250x200\" alt=\"card\">\n      <div>\n        <h2>card title</h2>\n        <p>Consequatur voluptates repudiandae deserunt fuga. Magni, architecto labore. Ducimus, quisquam.</p>\n      </div>\n  </div>\n  <div class=\"card\">\n    <img src=\"http://via.placeholder.com/250x200\" alt=\"card\">\n      <div>\n        <h2>card title</h2>\n        <p>Libero, rerum fuga tempora distinctio sit praesentium labore animi odio!</p>\n      </div>\n  </div>\n</section>\n\n\n\n\n\n\naside>img[src=\"http://via.placeholder.com/400x200\" alt=\"main artile\"]+p>{article details}^div>a[href=\"#\"]{link}\n\n\n\n\n<aside>\n    <img src=\"http://via.placeholder.com/400x200\" alt=\"main artile\">\n    <p>article details</p>\n    <div><a href=\"#\">link</a></div>\n</aside>\n\n\n\n\n\n\nfooter>div>h2>{my title}^img[src=\"http://via.placeholder.com/200x200\" alt=\"image\"]^div>h2>{experience}^ul>li\n3>{experience}^^div>h2>{skills}^ul>li\n3>{skills}^^div>h2>{contact me}\n\n\n\n\n<footer>\n  <div>\n    <h2>my title</h2>\n    <img src=\"http://via.placeholder.com/200x200\" alt=\"image\">\n  </div>\n  <div>\n    <h2>experience</h2>\n    <ul>\n      <li>experience</li>\n      <li>experience</li>\n      <li>experience</li>\n    </ul>\n    <div>\n      <h2>skills</h2>\n      <ul>\n        <li>skills</li>\n        <li>skills</li>\n        <li>skills</li>\n      </ul>\n      <div>\n        <h2>contact me</h2>\n      </div>\n    </div>\n  </div>\n</footer>",
             "title": "Notes"
         },
         {
@@ -717,7 +717,7 @@
         },
         {
             "location": "/web/notes/#notes",
-            "text": "Goodby Zen Coding  - Very good intro to Emmet.  Visual Studio Code -  Emmet  lorem ipsum screws up what is following it  lorem ipsum has to be last",
+            "text": "Goodby Zen Coding  - Very good intro to Emmet.  Visual Studio Code -  Emmet  lorem ipsum screws up what is following it  lorem ipsum has to be last    Brand Colors  - List of brand colors",
             "title": "Notes"
         },
         {
@@ -1109,6 +1109,21 @@
             "location": "/web/javascript/webpack/html-webpack-plugin/#my-notes",
             "text": "Can use Handlebars templates for pages.  Can include partials too in the main index.hbs file.   Benefits   Can now use webpack rather than foundation for my complete work process.  Building mostly single page apps anyway so including foundation partials is a no brainer.  Can replace foundation tools with my tools while still leveraging their infrastructure.  Can focus on using webpack for everything.     Webpack Config    new HtmlWebpackPlugin({\n      title: 'Foundation proto',\n      template: 'src/index/index.hbs',\n      filename: 'index.html'\n    }),   Directory layout  index/index.hbs  index/partial.hbs    handlebars-loader  already included.  Showing the correct title  <title>{{htmlWebpackPlugin.options.title}}</title>",
             "title": "My Notes"
+        },
+        {
+            "location": "/web/typescript/",
+            "text": "Typescript Notes\n\n\ntslint\n\n\n\n\ntslint\n - how to disable rules per line or section. // tslint:disable-line",
+            "title": "TypeScript"
+        },
+        {
+            "location": "/web/typescript/#typescript-notes",
+            "text": "",
+            "title": "Typescript Notes"
+        },
+        {
+            "location": "/web/typescript/#tslint",
+            "text": "tslint  - how to disable rules per line or section. // tslint:disable-line",
+            "title": "tslint"
         },
         {
             "location": "/web/javascript/notes/",
@@ -2956,14 +2971,29 @@
             "title": "Retrieve the list of users using axios."
         },
         {
-            "location": "/misc/notes/",
+            "location": "/misc/house/",
             "text": "Non-tech related notes\n\n\n\n\nSony KDL-40EX520\n\n\nNo applicable update found\n error with Mac OS X\n\n\nUpdating Bravia firmware assistance\n\n\nClem_Dye\nJanuary 2013\nRe: Updating your BRAVIA firmware assistance.\nWhat system did you use to prepare the USB stick? The filesystem needs to be FAT32, the update needs to be placed on the drive as per instructions and it should work. However, if you prepared the USB stick on a Mac then you need to strip-off any extended attributes from the update using the xattr command. When these attributes are present the update will fail the file checksum routine used by the TV and will be ignored.\nClem",
-            "title": "Notes"
+            "title": "House related"
         },
         {
-            "location": "/misc/notes/#non-tech-related-notes",
+            "location": "/misc/house/#non-tech-related-notes",
             "text": "Sony KDL-40EX520  No applicable update found  error with Mac OS X  Updating Bravia firmware assistance  Clem_Dye\nJanuary 2013\nRe: Updating your BRAVIA firmware assistance.\nWhat system did you use to prepare the USB stick? The filesystem needs to be FAT32, the update needs to be placed on the drive as per instructions and it should work. However, if you prepared the USB stick on a Mac then you need to strip-off any extended attributes from the update using the xattr command. When these attributes are present the update will fail the file checksum routine used by the TV and will be ignored.\nClem",
             "title": "Non-tech related notes"
+        },
+        {
+            "location": "/misc/sketch/",
+            "text": "Notes related to visual storytelling and sketchnoting\n\n\nResources\n\n\n\n\nLynda Barray - Near-Sighted Monkey",
+            "title": "Visual StoryTelling/Sketchnotes"
+        },
+        {
+            "location": "/misc/sketch/#notes-related-to-visual-storytelling-and-sketchnoting",
+            "text": "",
+            "title": "Notes related to visual storytelling and sketchnoting"
+        },
+        {
+            "location": "/misc/sketch/#resources",
+            "text": "Lynda Barray - Near-Sighted Monkey",
+            "title": "Resources"
         }
     ]
 }
