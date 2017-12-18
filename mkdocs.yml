@@ -58,6 +58,7 @@ pages:
         - 'Configuration': 
           - 'Basic': 'web/javascript/webpack/webpack.md'
           - 'Html Webpack Plugin': 'web/javascript/webpack/html-webpack-plugin.md'
+  - TypeScript: 'web/typescript.md'
   - JavaScript:
     - 'General Notes': 'web/javascript/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
@@ -131,4 +132,5 @@ pages:
       - 'Tutorials':
         - 'Prototyping With Vue and Marvel': 'teaching/javascript/tutorials/prototypewithvue.md'
 - Misc:
-  - Notes: 'misc/notes.md'
+  - 'House related': 'misc/house.md'
+  - 'Visual StoryTelling/Sketchnotes': 'misc/sketch.md'

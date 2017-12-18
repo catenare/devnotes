@@ -37,6 +37,8 @@
     * `npm install {} {}` - install list of outdated files.
 
 ## Other
+* [Normalizr](https://github.com/paularmstrong/normalizr) - create schema to normalize the result of a returned schema.
+
 ### Promises
 ```js
 let getCaptcha = new Promise(

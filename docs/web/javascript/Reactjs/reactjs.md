@@ -23,6 +23,7 @@
 
 ## General Notes
 * [React Typescript Samples](https://github.com/Lemoncode/react-typescript-samples)
+* Render raw html in reactjs - `<p className="article-row-content-description" dangerouslySetInnerHTML={{__html: props.post.excerpt.rendered}} />`
 
 ## Development
 * [Cross Origin Errors](https://reactjs.org/docs/cross-origin-errors.html)
@@ -38,6 +39,7 @@ import { React, Component } from 'react';
 needs to be
 import React, { Component } from 'react';
 ```
+
 
 ### exporting stateless component
 ```jsx
@@ -128,4 +130,27 @@ const AppRoute = () => ( // eslint-disable-line
 );
 
 export {AppRoute};
+```
+
+## Using typescript
+* tsConfig that works with `(color) => (color.id !== id) ? color : {...color, rating},`. Was causing issues when transpiling
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6", "dom"],
+    "jsx": "react",
+    "allowJs": true,
+    "pretty": true,
+    "diagnostics": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
 ```

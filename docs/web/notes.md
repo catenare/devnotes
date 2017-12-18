@@ -5,6 +5,7 @@
 * Visual Studio Code - [Emmet](https://code.visualstudio.com/docs/editor/emmet)
     * lorem ipsum screws up what is following it
     * lorem ipsum has to be last
+* [Brand Colors](https://www.brandcolors.net) - List of brand colors
 ### Snippets
 * **section#projects>h1>{Projects}^div.card*3>img[src="http://via.placeholder.com/250x200" alt="card"]>div>h2>{card title}^p>lorem10**
 ```html
