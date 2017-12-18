@@ -1108,6 +1108,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-typescript" title="Using typescript" class="md-nav__link">
+    Using typescript
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2124,6 +2131,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-typescript" title="Using typescript" class="md-nav__link">
+    Using typescript
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2176,6 +2190,7 @@
 <h2 id="general-notes">General Notes</h2>
 <ul>
 <li><a href="https://github.com/Lemoncode/react-typescript-samples">React Typescript Samples</a></li>
+<li>Render raw html in reactjs - <code>&lt;p className="article-row-content-description" dangerouslySetInnerHTML={{__html: props.post.excerpt.rendered}} /&gt;</code></li>
 </ul>
 <h2 id="development">Development</h2>
 <ul>
@@ -2283,6 +2298,30 @@ const AppRoute = () =&gt; ( // eslint-disable-line
 );
 
 export {AppRoute};
+</code></pre>
+
+<h2 id="using-typescript">Using typescript</h2>
+<ul>
+<li>tsConfig that works with <code>(color) =&gt; (color.id !== id) ? color : {...color, rating},</code>. Was causing issues when transpiling</li>
+</ul>
+<pre><code class="json">{
+  &quot;compilerOptions&quot;: {
+    &quot;target&quot;: &quot;es5&quot;,
+    &quot;module&quot;: &quot;commonjs&quot;,
+    &quot;lib&quot;: [&quot;es6&quot;, &quot;dom&quot;],
+    &quot;jsx&quot;: &quot;react&quot;,
+    &quot;allowJs&quot;: true,
+    &quot;pretty&quot;: true,
+    &quot;diagnostics&quot;: true,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;allowSyntheticDefaultImports&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;emitDecoratorMetadata&quot;: true
+  },
+  &quot;exclude&quot;: [
+    &quot;node_modules&quot;
+  ]
+}
 </code></pre>
                 
                   
