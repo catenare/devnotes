@@ -29,3 +29,34 @@
 * [WP Hasty](https://www.wp-hasty.com/)
 * Using jquery-ui with wordpress. 
     * [How to use jquery-ui in Wordpress](http://jafty.com/blog/tag/how-to-use-jquery-ui-in-wordpress/)
+
+
+## Setting up S3 Plugin
+* [S3 Uploads Plugin](https://github.com/humanmade/S3-Uploads) - made by [Human Made](https://hmn.md/).
+* Using Composer with S3.
+```json
+"require": {
+    "humanmade/s3-uploads":"dev-master"
+}
+"repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/humanmade/S3-Uploads.git"
+    }
+]
+```
+* Setup S3 Bucket
+    * bucket name
+* Edit wp-config.php
+```php
+define( 'S3_UPLOADS_BUCKET', 'my-bucket' );
+define( 'S3_UPLOADS_KEY', '' );
+define( 'S3_UPLOADS_SECRET', '' );
+define( 'S3_UPLOADS_REGION', '' );
+```
+
+* need wp-cli installed
+* Be sure to be in public folder
+* verify - `wp s3-uploads verify`
+* enable - `wp s3-uploads enable`
+
