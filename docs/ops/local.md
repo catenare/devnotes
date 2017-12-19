@@ -1,5 +1,9 @@
 # Local Setup
 
+## Macos X
+* Reset DNS Cache
+* `sudo killall -HUP mDNSResponder`
+
 ## Terminal 
 * .bash_profile
 ```bash
@@ -66,3 +70,4 @@ export LANG=en_US.UTF-8
 
 echo ".profile loaded"
 ```
+
