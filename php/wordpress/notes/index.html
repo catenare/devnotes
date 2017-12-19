@@ -380,6 +380,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setting-up-s3-plugin" title="Setting up S3 Plugin" class="md-nav__link">
+    Setting up S3 Plugin
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2084,6 +2091,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setting-up-s3-plugin" title="Setting up S3 Plugin" class="md-nav__link">
+    Setting up S3 Plugin
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2142,6 +2156,41 @@
 <li><a href="http://jafty.com/blog/tag/how-to-use-jquery-ui-in-wordpress/">How to use jquery-ui in Wordpress</a></li>
 </ul>
 </li>
+</ul>
+<h2 id="setting-up-s3-plugin">Setting up S3 Plugin</h2>
+<ul>
+<li><a href="https://github.com/humanmade/S3-Uploads">S3 Uploads Plugin</a> - made by <a href="https://hmn.md/">Human Made</a>.</li>
+<li>Using Composer with S3.</li>
+</ul>
+<pre><code class="json">&quot;require&quot;: {
+    &quot;humanmade/s3-uploads&quot;:&quot;dev-master&quot;
+}
+&quot;repositories&quot;: [
+    {
+      &quot;type&quot;: &quot;vcs&quot;,
+      &quot;url&quot;: &quot;https://github.com/humanmade/S3-Uploads.git&quot;
+    }
+]
+</code></pre>
+
+<ul>
+<li>Setup S3 Bucket<ul>
+<li>bucket name</li>
+</ul>
+</li>
+<li>Edit wp-config.php</li>
+</ul>
+<pre><code class="php">define( 'S3_UPLOADS_BUCKET', 'my-bucket' );
+define( 'S3_UPLOADS_KEY', '' );
+define( 'S3_UPLOADS_SECRET', '' );
+define( 'S3_UPLOADS_REGION', '' );
+</code></pre>
+
+<ul>
+<li>need wp-cli installed</li>
+<li>Be sure to be in public folder</li>
+<li>verify - <code>wp s3-uploads verify</code></li>
+<li>enable - <code>wp s3-uploads enable</code></li>
 </ul>
                 
                   
