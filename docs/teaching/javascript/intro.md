@@ -29,7 +29,7 @@
     * [Python Tutor](http://pythontutor.com/) - Visualize Code as it runs (JavaScript, Python, other)
 
 * Homework projects
-    * [Nifty Assigments](http://nifty.stanford.edu/)
+    * [Nifty Assignments](http://nifty.stanford.edu/)
     * [Breakout Game](https://codeincomplete.com/posts/javascript-breakout/)
     * [Intro Computing](http://introcomputing.org/) - Excercises.
     
@@ -47,14 +47,13 @@
     * [Daily Programmer](https://www.reddit.com/r/dailyprogrammer/)
 
 
-Minimum Requirements. 10 questions to gauge eligibility.
+* Minimum Requirements. 10 questions to gauge eligibility.
 * HTML & CSS
     * Create an HTML form from scratch
     * Write CSS to modify the form
-        * Ex:
-            Create a form to enter a todo item. Including the submit button.
-            Make the submit button blue. Green when you the pointer is over it.
-            Point the form submission to ***
+        * Create a form to enter a todo item. Including the submit button.
+        * Make the submit button blue. Green when you the pointer is over it.
+        * Point the form submission to ***
     * Programming experience
         * Variable
         * Loop
@@ -74,17 +73,16 @@ Minimum Requirements. 10 questions to gauge eligibility.
 
 ## Curriculum
 * 10 Weeks
-
 * Goal:
     * JavaScript fundamentals
     * Manipulate the DOM
     * Understand the basis of popular libraries. How does jQuery work? Why do I need a framework? Can I build my own?
 
 ## Topics - Fundamentals of JavaScript Development
-    * Able to understand why you might use a framework.
-    * Abstraction
-    * Algorithms
-    * Data Structures
+* Able to understand why you might use a framework.
+* Abstraction
+* Algorithms
+* Data Structures
 * JavaScript Overview
     * Editor
     * Github
@@ -160,13 +158,13 @@ Minimum Requirements. 10 questions to gauge eligibility.
 ## Resources 
 * [Web Engineering](http://web-engineering.info/) - free resources
 
-10 week class
-Learn how to use JavaScript to make your web pages interactive. Learn all about the DOM. The basics of event programming. How JavaScript works with the DOM. At the end, you'll be able to:
-- Build your own slide show.
-- Create a game in the browser.
-- Validate and submit form data.
-- Access data from servers and submit data to servers.
-- Learn basic project management including version control.
+* 10 week class
+* Learn how to use JavaScript to make your web pages interactive. Learn all about the DOM. The basics of event programming. How JavaScript works with the DOM. At the end, you'll be able to:
+    - Build your own slide show.
+    - Create a game in the browser.
+    - Validate and submit form data.
+    - Access data from servers and submit data to servers.
+    - Learn basic project management including version control.
 
 ## Projects
 * Slide show
@@ -174,4 +172,3 @@ Learn how to use JavaScript to make your web pages interactive. Learn all about 
 * Video Player
 * Form validation
 * API
-* 
