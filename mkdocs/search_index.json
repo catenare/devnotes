@@ -1526,6 +1526,26 @@
             "title": "Using typescript"
         },
         {
+            "location": "/web/javascript/reactjs/redux/",
+            "text": "Redux\n\n\nResources\n\n\n\n\nDocumentation\n\n\nGetting Started With Redux\n\n\nClass Notes\n\n\n\n\n\n\nBuild React Applications with Idiomatic Redux\n\n\nClass Notes\n\n\n\n\n\n\n\n\nCode Examples.\n\n\n\n\nRedux Implementation - implement redux from scratch (how it all works together). Only requires React.\n\n\n\n\nconst createStore = (reducer) => {\n  let state: number;\n  let listeners = [];\n\n  const getState = () => state;\n\n  const dispatch = (action) => {\n    state = reducer(state, action);\n    listeners.forEach((listener) => listener());\n  };\n\n  const subscribe = (listener) => {\n    listeners.push(listener);\n    return () => {\n      listeners = listeners.filter((l) => l !== listener);\n    };\n  };\n\n  dispatch({});\n\n  return {getState, dispatch, subscribe};\n};\n\nconst counter = (state: number = 0, action) => {\n  switch (action.type) {\n    case \"INCREMENT\":\n      state = state + 1;\n      return state;\n    case \"DECREMENT\":\n      return state - 1;\n    default:\n      return state;\n  }\n};\n\nconst store = createStore(counter);\nconst unsub = store.subscribe( () => console.log(store.getState()));\n\nconst el = document.getElementById(\"blog\");\n\nconst Counter = (props) => {\n  const {value, onIncrement, onDecrement} = props;\n  return (\n    <div>\n      <h1>Value: {value}</h1>\n      <button className=\"button large\" onClick={onIncrement}>+</button> &nbsp;\n      <button className=\"button large\" onClick={onDecrement}>-</button>\n      </div>\n  );\n};\n\nconst render = () => ReactDOM.render (\n  <Counter value={store.getState()}\n          onIncrement = {() => store.dispatch({type: \"INCREMENT\"})}\n          onDecrement = {() => store.dispatch({type: \"DECREMENT\"})}/>,\n  // <AppRoute />,\n  el,\n);\n\nrender();\n\nconst renderUnsub = store.subscribe(render);",
+            "title": "Redux"
+        },
+        {
+            "location": "/web/javascript/reactjs/redux/#redux",
+            "text": "",
+            "title": "Redux"
+        },
+        {
+            "location": "/web/javascript/reactjs/redux/#resources",
+            "text": "Documentation  Getting Started With Redux  Class Notes    Build React Applications with Idiomatic Redux  Class Notes",
+            "title": "Resources"
+        },
+        {
+            "location": "/web/javascript/reactjs/redux/#code-examples",
+            "text": "Redux Implementation - implement redux from scratch (how it all works together). Only requires React.   const createStore = (reducer) => {\n  let state: number;\n  let listeners = [];\n\n  const getState = () => state;\n\n  const dispatch = (action) => {\n    state = reducer(state, action);\n    listeners.forEach((listener) => listener());\n  };\n\n  const subscribe = (listener) => {\n    listeners.push(listener);\n    return () => {\n      listeners = listeners.filter((l) => l !== listener);\n    };\n  };\n\n  dispatch({});\n\n  return {getState, dispatch, subscribe};\n};\n\nconst counter = (state: number = 0, action) => {\n  switch (action.type) {\n    case \"INCREMENT\":\n      state = state + 1;\n      return state;\n    case \"DECREMENT\":\n      return state - 1;\n    default:\n      return state;\n  }\n};\n\nconst store = createStore(counter);\nconst unsub = store.subscribe( () => console.log(store.getState()));\n\nconst el = document.getElementById(\"blog\");\n\nconst Counter = (props) => {\n  const {value, onIncrement, onDecrement} = props;\n  return (\n    <div>\n      <h1>Value: {value}</h1>\n      <button className=\"button large\" onClick={onIncrement}>+</button> &nbsp;\n      <button className=\"button large\" onClick={onDecrement}>-</button>\n      </div>\n  );\n};\n\nconst render = () => ReactDOM.render (\n  <Counter value={store.getState()}\n          onIncrement = {() => store.dispatch({type: \"INCREMENT\"})}\n          onDecrement = {() => store.dispatch({type: \"DECREMENT\"})}/>,\n  // <AppRoute />,\n  el,\n);\n\nrender();\n\nconst renderUnsub = store.subscribe(render);",
+            "title": "Code Examples."
+        },
+        {
             "location": "/web/javascript/webpack/Building a web pack plugin or loader/",
             "text": "Building a web pack plugin or loader\n\n\nCreate a plugin for HtmlWebpack plugin.\n\n\n\n\nWant to see if I can build a panini plugin that will work with HtmlWebpackHtml plugin.\n\n\n\n\nOptions\n\n\n\n\nTry and add a plugin to HtmlWebpack extract plugin.\n\n\nNotes:\n\n\nCan add resolveLoader to find local plugins\n\n\n\n\n\n\n\n\n  resolveLoader: {\n    modules: [\n      'node_modules',\n      path.resolve(__dirname, 'loaders')\n    ]\n  },",
             "title": "Build plugin or loader"
@@ -2552,7 +2572,7 @@
         },
         {
             "location": "/learning/tutorials/",
-            "text": "Tutorials\n\n\nPrototyping with HTML, CSS and JavaScript\n\n\n\n\nCreate an App Prototype\n\n\n\n\nAngular\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)\n\n\n\n\n\n\n\n\nWordpress\n\n\n\n\nREST API - Creating and deleting data\n\n\nREST API - Basic Authentication\n\n\n\n\nPlugin Development\n\n\n\n\nAjax Techniques for Object Oriented Programming\n\n\n\n\nPostCSS\n\n\n\n\nPostCSS - Create your own plugin",
+            "text": "Tutorials\n\n\nPrototyping with HTML, CSS and JavaScript\n\n\n\n\nCreate an App Prototype\n\n\n\n\nAngular\n\n\n\n\nAngular 2 Fundamentals\n - Online class with a really good introduction to Angular. Also check out the JavaScript Class. It has a really good introduction to \nWebpack\n\n\nGithub Repo - Retain App\n\n\nWebpack config is out of date (for the latest webpack)\n\n\n\n\n\n\n\n\nWordpress\n\n\n\n\nREST API - Creating and deleting data\n\n\nREST API - Basic Authentication\n\n\n\n\nPlugin Development\n\n\n\n\nAjax Techniques for Object Oriented Programming\n\n\n\n\nPostCSS\n\n\n\n\nPostCSS - Create your own plugin\n\n\n\n\nOther\n\n\n\n\nSaylor Academy\n\n\n[EdX]\n\n\n[Coursera]\n\n\n[Udemy]",
             "title": "Tutorials"
         },
         {
@@ -2584,6 +2604,11 @@
             "location": "/learning/tutorials/#postcss",
             "text": "PostCSS - Create your own plugin",
             "title": "PostCSS"
+        },
+        {
+            "location": "/learning/tutorials/#other",
+            "text": "Saylor Academy  [EdX]  [Coursera]  [Udemy]",
+            "title": "Other"
         },
         {
             "location": "/research/",
@@ -2892,7 +2917,7 @@
         },
         {
             "location": "/teaching/javascript/intro/",
-            "text": "Introduction to learning JavaScript\n\n\nResources\n\n\n\n\nPrograms\n\n\nfreeCodeCamp\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\n\n\n\n\n\n\nList of books\n\n\n\n\nJS Books\n\n\nEloquent JavaScript\n\n\nExploring ES2016 and ES2017\n\n\nBuilding Front-End Web Apps with Plain JavaScript\n\n\nJavaScript for Cats\n\n\nLearn JavaScript\n\n\nJavaScript Allonge\n - JavaScript Allonge\n\n\nJavaScript Design Patterns\n\n\nUnderstanding ECMAScript 6\n\n\nHuman JavaScript\n\n\nSpeaking JavaScript\n\n\nProgramming JavaScript\n\n\nHTML 5 Shoot 'em Up\n\n\nBackbone Applications\n\n\nExploring ES6\n\n\n\n\n\n\n\n\nSites\n\n\n\n\nMDN Web Docs - JavaScript\n\n\nJavaScript Challenges\n\n\n\n\n\n\n\n\nCurriculum\n\n\n\n\n10 Weeks",
+            "text": "Introduction to learning JavaScript\n\n\nResources\n\n\n\n\nPrograms\n\n\nfreeCodeCamp\n\n\nThe Odin Project\n\n\nSite\n\n\n\n\n\n\n\n\n\n\n\n\nList of books\n\n\n\n\nJS Books\n\n\nEloquent JavaScript\n\n\nExploring ES2016 and ES2017\n\n\nBuilding Front-End Web Apps with Plain JavaScript\n\n\nJavaScript for Cats\n\n\nLearn JavaScript\n\n\nJavaScript Allonge\n - JavaScript Allonge\n\n\nJavaScript Design Patterns\n\n\nLearn Javascript Design Patterns\n\n\nUnderstanding ECMAScript 6\n\n\nHuman JavaScript\n\n\nSpeaking JavaScript\n\n\nProgramming JavaScript\n\n\nHTML 5 Shoot 'em Up\n\n\nBackbone Applications\n\n\nExploring ES6\n\n\nProgramming JavaScript Applications\n\n\n\n\n\n\n\n\nInteractive environments\n\n\n\n\nParson's Problems\n\n\nPython Tutor\n - Visualize Code as it runs (JavaScript, Python, other)\n\n\n\n\n\n\n\n\nHomework projects\n\n\n\n\nNifty Assignments\n\n\nBreakout Game\n\n\nIntro Computing\n - Excercises.\n\n\n\n\n\n\n\n\nSites\n\n\n\n\nMDN Web Docs - JavaScript\n\n\n\n\nJavaScript Challenges\n\n\n\n\n\n\nLearn computer science with JavaScript\n\n\n\n\nMozilla Developer Tutorials\n\n\nHTML Games\n\n\nKhan Computer Programming\n\n\nIdea List\n\n\nRosetta Code\n\n\nKhan Academy Programming\n\n\nDaily Programmer\n\n\n\n\n\n\n\n\nMinimum Requirements. 10 questions to gauge eligibility.\n\n\n\n\n\n\nHTML & CSS\n\n\n\n\nCreate an HTML form from scratch\n\n\nWrite CSS to modify the form\n\n\nCreate a form to enter a todo item. Including the submit button.\n\n\nMake the submit button blue. Green when you the pointer is over it.\n\n\nPoint the form submission to ***\n\n\n\n\n\n\nProgramming experience\n\n\nVariable\n\n\nLoop\n\n\nvar vs let\n\n\nShould use constant or let?\n\n\n\n\n\n\nUse an editor\n\n\nDeveloper tools in your browser.\n\n\n\n\n\n\n\n\nTools for this class\n\n\n\n\nCode editor - Visual Studio Code - Atom editor\n\n\nBrowser - Mozilla Firefox. (Google Chrome will work)\n\n\nInternet connectivity - homework, class resources, quizzes.\n\n\n\n\n\n\n\n\nClass structure\n\n\n\n\nMost of class as workshop lab.\n\n\nLecture/Lab/Lecture/ - Homework.\n\n\n\n\n\n\n\n\nCurriculum\n\n\n\n\n10 Weeks\n\n\nGoal:\n\n\nJavaScript fundamentals\n\n\nManipulate the DOM\n\n\nUnderstand the basis of popular libraries. How does jQuery work? Why do I need a framework? Can I build my own?\n\n\n\n\n\n\n\n\nTopics - Fundamentals of JavaScript Development\n\n\n\n\nAble to understand why you might use a framework.\n\n\nAbstraction\n\n\nAlgorithms\n\n\nData Structures\n\n\nJavaScript Overview\n\n\nEditor\n\n\nGithub\n\n\nJSBin\n\n\n\n\n\n\nVariables/Arrays\n\n\nLogic, loops, iteration\n\n\nFunctions\n\n\nClasses/Objects/Arrays\n\n\n\n\nModules\n\n\n\n\n\n\nDOM\n\n\n\n\nEvents and Listeners\n\n\nAsync - non-blocking - callbacks\n\n\nPromises\n\n\n\n\n\n\n\n\nJSON\n\n\n\n\n\n\nPull Data\n\n\n\n\nAJAX - access data from servers (API Calls)\n\n\nAPI Services\n\n\nGoogle APIs\n\n\nAmazon APIs\n\n\n\n\n\n\n\n\n\n\nPush Data\n\n\nForms\n\n\nHTML5\n\n\nColor\n\n\nDate\n\n\nTime\n\n\n\n\n\n\nValidation\n\n\nSubmitting\n\n\n\n\n\n\n\n\n\n\nLibraries\n\n\nBuild your own library\n\n\nUnderstand the mechanisms behind jQuery. (Why do I need a library)\n\n\n\n\n\n\nDesign patterns\n\n\nJQuery\n\n\n\n\n\n\n\n\nAdvanced topics\n\n\n\n\nTesting\n\n\nTypeScript/Dart\n\n\nBuild tools\n\n\nNode\n\n\nVirtual DOM\n\n\nFrameworks\n\n\nProgressive Web Apps\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\nVariables, Flow, Functions, array\n\n\nHangman\n\n\n\n\n\n\n\n\n\n\n\n\nClass\n\n\n\n\nLecture\n\n\nIn class labs\n\n\n\n\n\n\n\n\nReadings\n\n\n\n\nVideos\n\n\nLecture\n\n\n\n\nPractical\n\n\n\n\nIn class labs\n\n\nHomework - hosted on github\n\n\nQuizzes\n\n\nFinal Project\n\n\n\n\n\n\n\n\nResource Site\n\n\n\n\nOnline learning resources\n\n\nOnline classes (free and paid)\n\n\nSupplementary materials (Mozilla foundation resources, I can use, JavaScript the good parts)\n\n\n\n\n\n\nVideos\n\n\nLinks to YouTube videos\n\n\n\n\n\n\nOnline quizzes\n\n\nReadings\n\n\nClass notes and presentations\n\n\nDiscussion group\n\n\nResources\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\nWeb Engineering\n - free resources\n\n\n\n\n\n\n10 week class\n\n\n\n\nLearn how to use JavaScript to make your web pages interactive. Learn all about the DOM. The basics of event programming. How JavaScript works with the DOM. At the end, you'll be able to:\n\n\nBuild your own slide show.\n\n\nCreate a game in the browser.\n\n\nValidate and submit form data.\n\n\nAccess data from servers and submit data to servers.\n\n\nLearn basic project management including version control.\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\nSlide show\n\n\nGames\n\n\nVideo Player\n\n\nForm validation\n\n\nAPI",
             "title": "Intro"
         },
         {
@@ -2902,13 +2927,28 @@
         },
         {
             "location": "/teaching/javascript/intro/#resources",
-            "text": "Programs  freeCodeCamp  The Odin Project  Site       List of books   JS Books  Eloquent JavaScript  Exploring ES2016 and ES2017  Building Front-End Web Apps with Plain JavaScript  JavaScript for Cats  Learn JavaScript  JavaScript Allonge  - JavaScript Allonge  JavaScript Design Patterns  Understanding ECMAScript 6  Human JavaScript  Speaking JavaScript  Programming JavaScript  HTML 5 Shoot 'em Up  Backbone Applications  Exploring ES6     Sites   MDN Web Docs - JavaScript  JavaScript Challenges",
+            "text": "Programs  freeCodeCamp  The Odin Project  Site       List of books   JS Books  Eloquent JavaScript  Exploring ES2016 and ES2017  Building Front-End Web Apps with Plain JavaScript  JavaScript for Cats  Learn JavaScript  JavaScript Allonge  - JavaScript Allonge  JavaScript Design Patterns  Learn Javascript Design Patterns  Understanding ECMAScript 6  Human JavaScript  Speaking JavaScript  Programming JavaScript  HTML 5 Shoot 'em Up  Backbone Applications  Exploring ES6  Programming JavaScript Applications     Interactive environments   Parson's Problems  Python Tutor  - Visualize Code as it runs (JavaScript, Python, other)     Homework projects   Nifty Assignments  Breakout Game  Intro Computing  - Excercises.     Sites   MDN Web Docs - JavaScript   JavaScript Challenges    Learn computer science with JavaScript   Mozilla Developer Tutorials  HTML Games  Khan Computer Programming  Idea List  Rosetta Code  Khan Academy Programming  Daily Programmer     Minimum Requirements. 10 questions to gauge eligibility.    HTML & CSS   Create an HTML form from scratch  Write CSS to modify the form  Create a form to enter a todo item. Including the submit button.  Make the submit button blue. Green when you the pointer is over it.  Point the form submission to ***    Programming experience  Variable  Loop  var vs let  Should use constant or let?    Use an editor  Developer tools in your browser.     Tools for this class   Code editor - Visual Studio Code - Atom editor  Browser - Mozilla Firefox. (Google Chrome will work)  Internet connectivity - homework, class resources, quizzes.     Class structure   Most of class as workshop lab.  Lecture/Lab/Lecture/ - Homework.",
             "title": "Resources"
         },
         {
             "location": "/teaching/javascript/intro/#curriculum",
-            "text": "10 Weeks",
+            "text": "10 Weeks  Goal:  JavaScript fundamentals  Manipulate the DOM  Understand the basis of popular libraries. How does jQuery work? Why do I need a framework? Can I build my own?",
             "title": "Curriculum"
+        },
+        {
+            "location": "/teaching/javascript/intro/#topics-fundamentals-of-javascript-development",
+            "text": "Able to understand why you might use a framework.  Abstraction  Algorithms  Data Structures  JavaScript Overview  Editor  Github  JSBin    Variables/Arrays  Logic, loops, iteration  Functions  Classes/Objects/Arrays   Modules    DOM   Events and Listeners  Async - non-blocking - callbacks  Promises     JSON    Pull Data   AJAX - access data from servers (API Calls)  API Services  Google APIs  Amazon APIs      Push Data  Forms  HTML5  Color  Date  Time    Validation  Submitting      Libraries  Build your own library  Understand the mechanisms behind jQuery. (Why do I need a library)    Design patterns  JQuery     Advanced topics   Testing  TypeScript/Dart  Build tools  Node  Virtual DOM  Frameworks  Progressive Web Apps     Projects   Variables, Flow, Functions, array  Hangman       Class   Lecture  In class labs     Readings   Videos  Lecture   Practical   In class labs  Homework - hosted on github  Quizzes  Final Project     Resource Site   Online learning resources  Online classes (free and paid)  Supplementary materials (Mozilla foundation resources, I can use, JavaScript the good parts)    Videos  Links to YouTube videos    Online quizzes  Readings  Class notes and presentations  Discussion group  Resources",
+            "title": "Topics - Fundamentals of JavaScript Development"
+        },
+        {
+            "location": "/teaching/javascript/intro/#resources_1",
+            "text": "Web Engineering  - free resources    10 week class   Learn how to use JavaScript to make your web pages interactive. Learn all about the DOM. The basics of event programming. How JavaScript works with the DOM. At the end, you'll be able to:  Build your own slide show.  Create a game in the browser.  Validate and submit form data.  Access data from servers and submit data to servers.  Learn basic project management including version control.",
+            "title": "Resources"
+        },
+        {
+            "location": "/teaching/javascript/intro/#projects",
+            "text": "Slide show  Games  Video Player  Form validation  API",
+            "title": "Projects"
         },
         {
             "location": "/teaching/javascript/classes/class1/",
