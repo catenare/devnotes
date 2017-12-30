@@ -16,4 +16,7 @@
 * Install *Robot Framework*
 	* `mkvirtualenv -a . johan-martin`
 	* `pip install robotframework`
-* 
+
+## Testing framework
+* Using Karma, Mocha, Chai
+    * `npm -i --save-dev karma mocha chai`

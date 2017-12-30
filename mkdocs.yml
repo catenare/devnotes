@@ -47,6 +47,7 @@ pages:
   - Web:
     - 'Notes': 'web/notes.md'
     - 'Basic Setup': 'web/page.md'
+    - 'StyleGuide': 'web/styleguide.md'
     - 'Front End':
       - 'Front': 'web/front.md'
       - 'CSS': 'web/css.md'

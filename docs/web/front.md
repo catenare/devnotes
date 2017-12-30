@@ -139,6 +139,7 @@
 * [Colors Palette Generator](http://www.cssdrive.com/imagepalette/index.php)
 * [Canva Color Palette](https://www.canva.com/color-palette/)
 * [Pictaculous](http://www.pictaculous.com/)
+* [Color Explorer](http://www.colorexplorer.com/imageimport.aspx) - can upload an image
 
 ## Icons - Free
 * [Open Iconic](https://useiconic.com/open/) 
