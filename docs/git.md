@@ -12,6 +12,13 @@
     * Need tags for composer
 * **git worktree** [Git Worktree](https://git-scm.com/docs/git-worktree)
     * Create temporary checkout for working on a branch without having to stash data
+* Delete local and remote branches
+```bash
+git push -d <remote_name> <branch_name>
+git branch -d <branch_name>
+```
+* Update local list and prune branches
+    * `git fetch -p` -p is for prunining
 
 ### Git Resources
 * Styleguid for git messages - [Udacity Git Styleguide](https://udacity.github.io/git-styleguide/)

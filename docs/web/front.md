@@ -20,6 +20,9 @@
 ### Fonts
 * [Web Font Loading Recipes](https://github.com/zachleat/web-font-loading-recipes)
 
+### Video
+* [Videvo](https://www.videvo.net/)
+
 ## Tools
 ### HTML tools
 * [Emmet](http://emmet.io) 
