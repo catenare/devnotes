@@ -23,6 +23,8 @@ pages:
   - 'Paseo Network': 'projects/PaseoNetwork.md'
   - 'Johan Martin': 'projects/johanmartin.md'
 - Development:
+  - Cloud:
+    - 'AWS': 'cloud/aws.md'
   - Wordpress:
     - 'Notes': 'php/wordpress/notes.md'
     - 'Admin': 'php/wordpress/admin.md'

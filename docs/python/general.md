@@ -59,3 +59,19 @@ user = true
 
 ## Virtual Environments
 * [VirtualEnvWrapper](https://virtualenvwrapper.readthedocs.io/en/latest/index.html)
+
+## Setting up uswgi on Ubuntu with Flex
+* Resource: [How to serve Flask Application](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-16-04)
+* Packages needed.
+    * `sudo apt install build-essentials python3-dev` - needed to build uswgi
+* Use *virtualenv* and create virtualenv.
+* Install *flask* and *uswgi*.
+* Configure firewall - `sudo ufw allow 5000`
+* Setup *wsgi.py*
+```python
+from myproject import app
+
+if __name__ == "__main__":
+    app.run()
+```
+* Test it: `uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app`

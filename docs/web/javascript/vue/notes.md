@@ -89,3 +89,6 @@ Vue.component('hello', Hello)
     }
 ```
 * Favorite is now pointing to the current story. Only one favorite.
+
+## Create module for npm
+* [Vue Component Publish to npm](https://vuejsdevelopers.com/2017/07/31/vue-component-publish-npm/)
