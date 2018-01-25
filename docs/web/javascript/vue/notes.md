@@ -92,3 +92,20 @@ Vue.component('hello', Hello)
 
 ## Create module for npm
 * [Vue Component Publish to npm](https://vuejsdevelopers.com/2017/07/31/vue-component-publish-npm/)
+
+## VueRouter
+* Getting Router hooks to work in vue-class-component.
+    * [VueClassComponent Readme](https://github.com/vuejs/vue-class-component) - Adding Custom Huooks
+* Fix issue with relative css files not being loaded. Cause page not to reload.
+    * Added base reference.
+    * [Base Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
+    * Can also add it in router module.
+        * [Route Options](https://router.vuejs.org/en/api/options.html#routes)
+* Fix Issue with TypeScript and router.push - Argument type `{name: string} is not assignable to parameter RawLocation.
+    * [Missing TS Definitions](https://github.com/vuejs/vue-router/issues/1312)
+    * Not yet in package - [Fix](https://github.com/druppy/vue-router/blob/25267faee57571510f3e7b04d0939c4ff69ca180/types/router.d.ts)
+
+## Vuex
+* Using mapGetter in vue-class-component
+    * [Vue Class Component](https://github.com/vuejs/vue-class-component/issues/109)
+

@@ -55,6 +55,7 @@ pages:
       - 'CSS': 'web/css.md'
       - 'Foundation': 'web/foundation.md'
       - 'Asset Management': 'web/assets.md'
+      - 'Modules': 'web/modules.md'
     - 'Build Tools':
       - 'Webpack':
         - 'Notes': 'web/javascript/webpack/notes.md'

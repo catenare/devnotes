@@ -84,3 +84,8 @@
 * Injecting Server Urls - [Injecting Server Urls](http://developmentnow.com/2016/07/13/webpack-injecting-server-urls/)
     * use webpack.DefinePlugin
     * Be sure to quote the urls - *'"url"'*
+
+
+* Using @ to refer to src folder.
+    * [Use @ in path](https://stackoverflow.com/questions/42749973/es6-import-using-at-sign-in-path-in-a-vue-js-project-using-webpack)
+    resolve: {alias: {'@': resolve('src')} }
