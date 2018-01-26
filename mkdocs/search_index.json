@@ -82,7 +82,7 @@
         },
         {
             "location": "/projects/Paseo Center/",
-            "text": "Paseo Center\n\n\n\n\nPaseo Baptist Church Daycare and Preschool Center.\n\n\n\n\nFeatures\n\n\n\n\nPaseo Parents - access for parents to secure information\n\n\nChildren gallery\n\n\n\n\n\n\nShop - swag and picture packages.\n\n\nRegistration - mini site related to registration\n\n\nNewsletter\n\n\nCenter events\n\n\nWrite-up of events with gallery",
+            "text": "Paseo Center\n\n\n\n\nPaseo Baptist Church Daycare and Preschool Center.\n\n\n\n\nFeatures\n\n\n\n\nPaseo Parents - access for parents to secure information\n\n\nChildren gallery\n\n\n\n\n\n\nShop - swag and picture packages.\n\n\nRegistration - mini site related to registration\n\n\nNewsletter\n\n\nCenter events\n\n\nWrite-up of events with gallery\n\n\n\n\n\n\n\n\nKinderCare dev notes.\n\n\nReporting using Birt\n\n\n\n\nWhen using a string as a default parameter, make sure to put quotes around it.\n\n\nIf changing the column names of a view, recreate the dataset and reset bindings for the data set.\n\n\nIf the view gets \"stuck\", use public.{view_name}. Got it to update at least.",
             "title": "Daycare Center"
         },
         {
@@ -94,6 +94,16 @@
             "location": "/projects/Paseo Center/#features",
             "text": "Paseo Parents - access for parents to secure information  Children gallery    Shop - swag and picture packages.  Registration - mini site related to registration  Newsletter  Center events  Write-up of events with gallery",
             "title": "Features"
+        },
+        {
+            "location": "/projects/Paseo Center/#kindercare-dev-notes",
+            "text": "",
+            "title": "KinderCare dev notes."
+        },
+        {
+            "location": "/projects/Paseo Center/#reporting-using-birt",
+            "text": "When using a string as a default parameter, make sure to put quotes around it.  If changing the column names of a view, recreate the dataset and reset bindings for the data set.  If the view gets \"stuck\", use public.{view_name}. Got it to update at least.",
+            "title": "Reporting using Birt"
         },
         {
             "location": "/projects/PaseoNetwork/",
