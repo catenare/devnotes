@@ -154,3 +154,6 @@ footer {
         </section>
 </footer>
 ```
+## Notes
+* Trying to organize my CSS/Styles. Get an overview of what I'm doing. Too many different options.
+    * StyleSherpa - Gives you an overview of all your styles. Forces you to at least have some type of plan.

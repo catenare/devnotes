@@ -16,6 +16,7 @@ extra_css:
 - css/extra.css
 pages:
 - Home: 'index.md'
+- Process: 'process.md'
 - Projects:
   - Overview: 'projects/PaseoNetwork.md'
   - 'The Martin Family Site': 'projects/themartinssite.md'
@@ -47,6 +48,8 @@ pages:
       - Postgresql: 'database/postgresql.md'
 
   - Web:
+    - 'Cloud':
+      - 'Google': "web/cloud/google.md"
     - 'Notes': 'web/notes.md'
     - 'Basic Setup': 'web/page.md'
     - 'StyleGuide': 'web/styleguide.md'

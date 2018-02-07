@@ -94,3 +94,13 @@ Debug       = 1
 Debug = 1
 DebugFile = /tmp/odbcdebug.log
 ```
+
+## Postgresql Server on Ubuntu
+* pg_hba.conf - allow remote connection and encrypted password
+    * host  all  all  0.0.0.0/0  md5
+* psql
+    * alter user {user} encrypted password '{password}';
+* `listen_addresses = '*'`
+
+* Connecting to ssh `ssh -i key.pem -L 3333:127.0.0.1:5433 ubuntu@api.paseo.org.za`
+* Connecting to server `psql -h localhost -p 3333 -U paseo -W`

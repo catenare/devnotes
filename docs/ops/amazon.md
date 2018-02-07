@@ -22,6 +22,9 @@
     * [composer](https://getcomposer.org/)
         * `mv composer.phar /usr/local/bin/composer` after install
     * 
+### Upgrading Ubuntu Service
+* [How To Upgrade to Ubuntu 16.04 LTS](https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-ubuntu-16-04-lts)
+    * sudo do-release-upgrade -d   ;; Will upgrade to the latest LTS version in development
 
 ## Server Admin
 * Restart service
