@@ -42,7 +42,9 @@ pages:
     - 'Dev from scratch': 'php/wordpress/plugin-dev-from-scratch.md'
     - 'Theme Dev': 'php/wordpress/themes.md'
   - Database: 
-      - Migrations: 'database/dbmigrations.md'
+      - Migrations: 
+        - General: 'database/dbmigrations.md'
+        - FlyWay: 'database/flyway.md'
       - Mongo: 'database/mongo.md'
       - Mysql: 'database/mysql.md'
       - Postgresql: 'database/postgresql.md'
@@ -94,6 +96,7 @@ pages:
     - 'General': 'python/general.md'
     - 'Packages': 'python/packages.md'
     - 'Research': 'python/research.md'
+    - 'Flask': 'python/flask.md'
   - Ruby: 'ruby/ruby.md'
   - Java:
     - 'Notes': 'java/java.md'
