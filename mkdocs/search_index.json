@@ -648,7 +648,7 @@
         {
             "location": "/database/dbmigrations/",
             "text": "Database migrations with Flyway\n\n\nVersion control/management of updates\n\n\nUsing Flyway for database version control\n\n\n\n\nRecommendations:\n\n\nUse timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment\n\n\nLessons Learned Using Flyway DB with Distributed Version Control\n\n\nGet date on mac os x command line \ndate +%s\n\n\n\n\n\n\nUse git to track migrations - flyway notices if a migration file changes and causes issues\n\n\n\n\nSetting up flyway\n\n\n\n\nSqlite jdbc driver - \nxerial/sqlite-jdbc\n - for prototyping\n\n\nPostgresql JDBC Driver - \nPostgresql\n\n\nFlyway ant library - \nFlyway Ant\n\n\nDirectory Structure\n\n\ndb\n\n\nconf/\n\n\nflyway.conf\n\n\nlibs/\n\n\nflyway/ # Flyway ant\n\n\npostgresql-9.4.1212.jar\n\n\nant-contrib-1.0b3.jar\n\n\nmigrations\n\n\nbuild.xml\n\n\n\n\n\n\nUsing the serial date for tracking migrations - \ndate +%s\n\n\n\n\nUsing ant to run migrations\n\n\n\n\nUsing SDKMAN to manage ant - \nsdkman\n | \nAnt\n\n\nAdded Ant contrib jar\n\n\nLibs used\n\n\nant-contrib-1.0b3.jar  -- ant contrib jar - (Ant contrib task)[http://central.maven.org/maven2/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar]\n\n\npostgresql-9.4.1212.jar -- \nPostgresql\n\n\nflyway - has the flyway core and ant libraries -- \nFlyway Ant\n\n\nbuild.xml in db library\n\n\n\n\nDeleting a migration.\n\n\nCan't delete a migration, only repair it.\n\n\n\n\nComment out the commands in the migration mistake you are eliminating.\n\n\nRun \nant repair\n to fix the checksums for the migrations\n\n\nValidate the current tatus \nant validate\n\n\nFlyway should be back to the status it is suppose to be in.",
-            "title": "Migrations"
+            "title": "General"
         },
         {
             "location": "/database/dbmigrations/#database-migrations-with-flyway",
@@ -684,6 +684,31 @@
             "location": "/database/dbmigrations/#cant-delete-a-migration-only-repair-it",
             "text": "Comment out the commands in the migration mistake you are eliminating.  Run  ant repair  to fix the checksums for the migrations  Validate the current tatus  ant validate  Flyway should be back to the status it is suppose to be in.",
             "title": "Can't delete a migration, only repair it."
+        },
+        {
+            "location": "/database/flyway/",
+            "text": "Using Flyway for Migrations\n\n\n\n\nFlyway\n\n\n\n\nNotes\n\n\n\n\nUse timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment\n\n\nLessons Learned Using Flyway DB with Distributed Version Control\n\n\nGet date on mac os x command line \ndate +%s\n\n\nUse git to track migrations - flyway notices if a migration file changes and causes issues\n\n\nMoving away from Ant - seems support is not as strong anymore.\n\n\n\n\nUsing with Gradle\n\n\n\n\nIf using SDK - Need to use Oracle java. java 9.0.4-oracle for using with Gradle.\n\n\nCan use maven dependencies\n\n\n\n\nbuildscript {\n    dependencies {\n        classpath 'org.postgresql:postgresql:42.2.1'\n    }\n}\n\nplugins {\n    id \"org.flywaydb.flyway\" version \"5.0.7\"\n}\n\n\n\n\n\n\nCreated gradle.properties file with flyway configuration.\n\n\n\n\nflyway.url = jdbc:postgresql://localhost:5432/paseo_dev\nflyway.user = name\nflyway.password = password\nflyway.locations = filesystem:'migrations'\n\n\n\n\n\n\nCustom task to add date-timestamp to file before running migration. In build.gradle.\n\n\n\n\n// https://stackoverflow.com/questions/43813724/gradle-script-to-append-timestamp-to-files\ntask renameFile {\n    println(\" :migrate : renameForMigration\")\n    def files = fileTree(dir: \"${rootDir}/migrations\")\n    files.include '**/*.sql'\n    files.exclude '**/V*.sql'\n    // , include: '**/*.sql', exclude: '^V\\\\d+.*\\\\.sql')\n    doLast {\n        files.each{ file -> \n            def newFileName = \"V${getDate()}__${file.getName()}\"\n            ant.move(file: file, toFile:\"${file.parent}/${newFileName}\")\n            println(newFileName)\n            }\n    }\n}\n\ntask migrateDatabase(type: org.flywaydb.gradle.task.FlywayMigrateTask) {\n    dependsOn 'renameFile'\n}\n\n\n\n\nTasks\n\n\n\n\nDelete public.schema_version and ran \ngradle flywayBaseline\n to start migrations from scratch.",
+            "title": "FlyWay"
+        },
+        {
+            "location": "/database/flyway/#using-flyway-for-migrations",
+            "text": "Flyway",
+            "title": "Using Flyway for Migrations"
+        },
+        {
+            "location": "/database/flyway/#notes",
+            "text": "Use timestamp to tag migration. Makes it easier to manage especially if you're going to be in a multi-developer environment  Lessons Learned Using Flyway DB with Distributed Version Control  Get date on mac os x command line  date +%s  Use git to track migrations - flyway notices if a migration file changes and causes issues  Moving away from Ant - seems support is not as strong anymore.",
+            "title": "Notes"
+        },
+        {
+            "location": "/database/flyway/#using-with-gradle",
+            "text": "If using SDK - Need to use Oracle java. java 9.0.4-oracle for using with Gradle.  Can use maven dependencies   buildscript {\n    dependencies {\n        classpath 'org.postgresql:postgresql:42.2.1'\n    }\n}\n\nplugins {\n    id \"org.flywaydb.flyway\" version \"5.0.7\"\n}   Created gradle.properties file with flyway configuration.   flyway.url = jdbc:postgresql://localhost:5432/paseo_dev\nflyway.user = name\nflyway.password = password\nflyway.locations = filesystem:'migrations'   Custom task to add date-timestamp to file before running migration. In build.gradle.   // https://stackoverflow.com/questions/43813724/gradle-script-to-append-timestamp-to-files\ntask renameFile {\n    println(\" :migrate : renameForMigration\")\n    def files = fileTree(dir: \"${rootDir}/migrations\")\n    files.include '**/*.sql'\n    files.exclude '**/V*.sql'\n    // , include: '**/*.sql', exclude: '^V\\\\d+.*\\\\.sql')\n    doLast {\n        files.each{ file -> \n            def newFileName = \"V${getDate()}__${file.getName()}\"\n            ant.move(file: file, toFile:\"${file.parent}/${newFileName}\")\n            println(newFileName)\n            }\n    }\n}\n\ntask migrateDatabase(type: org.flywaydb.gradle.task.FlywayMigrateTask) {\n    dependsOn 'renameFile'\n}",
+            "title": "Using with Gradle"
+        },
+        {
+            "location": "/database/flyway/#tasks",
+            "text": "Delete public.schema_version and ran  gradle flywayBaseline  to start migrations from scratch.",
+            "title": "Tasks"
         },
         {
             "location": "/database/mongo/",
@@ -1919,6 +1944,26 @@
             "location": "/python/research/#packages",
             "text": "Awesome Sphinx",
             "title": "Packages"
+        },
+        {
+            "location": "/python/flask/",
+            "text": "Flask Notes\n\n\nSources\n\n\n\n\nFlask\n\n\nHow to Structure Large Flask Applications\n\n\n\n\nCreating a Flask App\n\n\n\n\nCreate directory and cd into directory\n\n\nCreate virtual environment\n\n\nmkvirtualenv -a . {virtualenvname}\n\n\nInstall flask\n\n\npip install flask SQLAlchemy WTForms psycopg2 click",
+            "title": "Flask"
+        },
+        {
+            "location": "/python/flask/#flask-notes",
+            "text": "",
+            "title": "Flask Notes"
+        },
+        {
+            "location": "/python/flask/#sources",
+            "text": "Flask  How to Structure Large Flask Applications",
+            "title": "Sources"
+        },
+        {
+            "location": "/python/flask/#creating-a-flask-app",
+            "text": "Create directory and cd into directory  Create virtual environment  mkvirtualenv -a . {virtualenvname}  Install flask  pip install flask SQLAlchemy WTForms psycopg2 click",
+            "title": "Creating a Flask App"
         },
         {
             "location": "/ruby/ruby/",
