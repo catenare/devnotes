@@ -97,6 +97,7 @@ pages:
     - 'Packages': 'python/packages.md'
     - 'Research': 'python/research.md'
     - 'Flask': 'python/flask.md'
+    - 'SQLAlchemy': 'python/sqlalchemy.md'  
   - Ruby: 'ruby/ruby.md'
   - Java:
     - 'Notes': 'java/java.md'

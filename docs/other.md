@@ -18,3 +18,6 @@
 * [DigiKam](https://www.digikam.org/) - Professional Photo Management with the Power of Open Source
 * [Raw Therapee](http://rawtherapee.com/) - Open source image processing
 * [DarkTable](http://www.darktable.org/) - Open source imaging
+
+## Other tools
+* [Trunk Based Development](https://trunkbaseddevelopment.com/)
