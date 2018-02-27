@@ -1,5 +1,5 @@
 # Developer Notebook for [Johan Martin](mailto:martin.johan@johan-martin.com)
-## Notes are online at [Johan Martin's Development Notes](http://www.johan-martin.com/devnotes/)
+## Notes are online at [Johan Martin's Development Notes](http://www.catenare.com/devnotes/)
 * Easier to write things down then trying to remember what you forgot.
 * Working on web development projects is changing rapidly and constantly.
 * Resources are available everywhere but some are outdated and only some help with solving your problem.
