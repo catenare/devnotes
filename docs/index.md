@@ -34,3 +34,6 @@ This is my notes, snippets and lists. Most of it is related to items I had to fi
     
 * 20 Nov 2017
     * Trying to play with OBS - Open Source screen capturing software. Might be good for creating screen recordings. Will be text based rather than talking.
+
+* 05 March 2018
+  * Cleaning up my notes a little. Have many duplicates and some out of date. Plus, want to make sure current notes are included.
