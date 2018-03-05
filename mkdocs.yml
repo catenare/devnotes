@@ -45,20 +45,19 @@ pages:
       - Mongo: 'database/mongo.md'
       - Mysql: 'database/mysql.md'
       - Postgresql: 'database/postgresql.md'
-  - Web:
-    - 'Notes': 'web/notes.md'
-    - 'StyleGuide': 'web/styleguide.md'
-    - 'Colors': 'process.md'
-    - 'Front End':
+  - 'Front End':
+    - 'Basics':
       - 'Front': 'web/front.md'
       - 'CSS': 'web/css.md'
       - 'Foundation': 'web/foundation.md'
       - 'Asset Management': 'web/assets.md'
-  - TypeScript: 'web/typescript.md'
-  - JavaScript:
+      - 'Notes': 'web/notes.md'
+      - 'StyleGuide': 'web/styleguide.md'
+      - 'Colors': 'process.md'
     - 'General Notes': 'web/javascript/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
     - 'RxJs': 'web/javascript/rxjs.md'
+    - TypeScript: 'web/typescript.md'
     - 'Testing': 
       - 'Intro': 'web/javascript/testing/general.md'
       - 'Tape': 'web/javascript/testing/tape.md'
