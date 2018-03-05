@@ -109,3 +109,7 @@ Vue.component('hello', Hello)
 * Using mapGetter in vue-class-component
     * [Vue Class Component](https://github.com/vuejs/vue-class-component/issues/109)
 
+
+# Options for admin/personal admin sites
+* https://w3layouts.com/preview/?l=/modern-admin-panel-flat-bootstrap-responsive-web-template/
+* 

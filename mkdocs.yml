@@ -25,7 +25,9 @@ pages:
   - 'Johan Martin': 'projects/johanmartin.md'
 - Development:
   - Cloud:
-    - 'AWS': 'cloud/aws.md'
+    - 'AWS': 
+      - 'Amazon': 'cloud/aws.md'
+      - 'Cognito': 'cloud/aws/cognito.md'
   - Wordpress:
     - 'Notes': 'php/wordpress/notes.md'
     - 'Admin': 'php/wordpress/admin.md'
