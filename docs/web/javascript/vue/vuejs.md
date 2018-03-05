@@ -13,8 +13,6 @@
     * [How to use axios as your http client](http://codeheaven.io/how-to-use-axios-as-your-http-client/) - Section on setting headers in Axios.
     * [Axios with Vue](https://alligator.io/vuejs/rest-api-axios/) - Use in component
 
-## Setup with Webpack
-* [Configuration Information](configuration.md)
 
 ## Notes
 * [Multiple View Instances on Same Page](https://codingexplained.com/coding/front-end/vue-js/using-multiple-vue-instances-page)

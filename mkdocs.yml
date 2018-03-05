@@ -19,10 +19,10 @@ pages:
 - Development:
   - Cloud:
     - 'AWS': 
-      - 'Amazon': 'cloud/aws.md'
+      - 'Amazon': 'cloud/aws/aws.md'
       - 'Cognito': 'cloud/aws/cognito.md'
-    - 'Cloud':
-      - 'Google': "web/cloud/google.md"
+    - 'Google':
+      - 'Google': "cloud/google/google.md"
   - Wordpress:
     - 'Notes': 'php/wordpress/notes.md'
     - 'Admin': 'php/wordpress/admin.md'
@@ -47,7 +47,6 @@ pages:
       - Postgresql: 'database/postgresql.md'
   - Web:
     - 'Notes': 'web/notes.md'
-    - 'Basic Setup': 'web/page.md'
     - 'StyleGuide': 'web/styleguide.md'
     - 'Colors': 'process.md'
     - 'Front End':
@@ -55,7 +54,6 @@ pages:
       - 'CSS': 'web/css.md'
       - 'Foundation': 'web/foundation.md'
       - 'Asset Management': 'web/assets.md'
-      - 'Modules': 'web/modules.md'
   - TypeScript: 'web/typescript.md'
   - JavaScript:
     - 'General Notes': 'web/javascript/notes.md'
@@ -68,8 +66,7 @@ pages:
       - 'Angular': 'web/javascript/Angular/angular.md'
     - 'Vuejs':
       - 'Notes': 'web/javascript/vue/notes.md' 
-      - 'Vuejs': 'web/javascript/vue/vuejs.md'
-      - 'Vuejs Setup': 'web/javascript/vue/configuration.md'
+      - 'Vue': 'web/javascript/vue/vuejs.md'
       - 'Foundation Setup': 'web/javascript/vue/foundation.md'
     - Reactjs: 'web/javascript/reactjs/reactjs.md'
     - Redux: 'web/javascript/reactjs/redux.md'
@@ -117,11 +114,11 @@ pages:
   - 'Tutorials': 'learning/tutorials.md'
 - Teaching: 
   - 'General': 'research.md'
-  - 'Learning Systems': 'teaching/teach.md'
+  - 'Tools': 'teaching/tools.md'
+  - 'Custom Modules': 'teaching/modules.md'
   - 'OpenEdx':
     - 'Notes': 'teaching/openedx/openedx.md'
   - 'Class Tutorials':
-    - 'Learning Sources': 'teaching/teach.md'
     - 'HTML and CSS':
       - 'Semantic HTML': 'teaching/html/semantic.md'
     - 'JavaScript': 

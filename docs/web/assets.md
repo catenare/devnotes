@@ -1,6 +1,6 @@
 # Asset management for web
 ## Cloudinary - free account available
-    * [Cloudinary](https://cloudinary.com/console)
+* [Cloudinary](https://cloudinary.com/console)
     
 ## ClipArt
 * [Open ClipArt](https://openclipart.org/)
