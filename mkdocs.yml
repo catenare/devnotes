@@ -16,18 +16,13 @@ extra_css:
 - css/extra.css
 pages:
 - Home: 'index.md'
-- Process: 'process.md'
-- Projects:
-  - Overview: 'projects/PaseoNetwork.md'
-  - 'The Martin Family Site': 'projects/themartinssite.md'
-  - 'Daycare Center': 'projects/Paseo Center.md'
-  - 'Paseo Network': 'projects/PaseoNetwork.md'
-  - 'Johan Martin': 'projects/johanmartin.md'
 - Development:
   - Cloud:
     - 'AWS': 
       - 'Amazon': 'cloud/aws.md'
       - 'Cognito': 'cloud/aws/cognito.md'
+    - 'Cloud':
+      - 'Google': "web/cloud/google.md"
   - Wordpress:
     - 'Notes': 'php/wordpress/notes.md'
     - 'Admin': 'php/wordpress/admin.md'
@@ -50,25 +45,17 @@ pages:
       - Mongo: 'database/mongo.md'
       - Mysql: 'database/mysql.md'
       - Postgresql: 'database/postgresql.md'
-
   - Web:
-    - 'Cloud':
-      - 'Google': "web/cloud/google.md"
     - 'Notes': 'web/notes.md'
     - 'Basic Setup': 'web/page.md'
     - 'StyleGuide': 'web/styleguide.md'
+    - 'Colors': 'process.md'
     - 'Front End':
       - 'Front': 'web/front.md'
       - 'CSS': 'web/css.md'
       - 'Foundation': 'web/foundation.md'
       - 'Asset Management': 'web/assets.md'
       - 'Modules': 'web/modules.md'
-    - 'Build Tools':
-      - 'Webpack':
-        - 'Notes': 'web/javascript/webpack/notes.md'
-        - 'Configuration': 
-          - 'Basic': 'web/javascript/webpack/webpack.md'
-          - 'Html Webpack Plugin': 'web/javascript/webpack/html-webpack-plugin.md'
   - TypeScript: 'web/typescript.md'
   - JavaScript:
     - 'General Notes': 'web/javascript/notes.md'
@@ -78,7 +65,7 @@ pages:
       - 'Intro': 'web/javascript/testing/general.md'
       - 'Tape': 'web/javascript/testing/tape.md'
     - Angular:
-      - 'Learning Angular': 'web/javascript/angular.md'
+      - 'Angular': 'web/javascript/Angular/angular.md'
     - 'Vuejs':
       - 'Notes': 'web/javascript/vue/notes.md' 
       - 'Vuejs': 'web/javascript/vue/vuejs.md'
@@ -87,10 +74,8 @@ pages:
     - Reactjs: 'web/javascript/reactjs/reactjs.md'
     - Redux: 'web/javascript/reactjs/redux.md'
     - Webpack:
-      - 'Build plugin or loader': 'web/javascript/webpack/Building a web pack plugin or loader.md'
-      - 'Webpack Plugin': 'web/javascript/webpack/html-webpack-plugin.md'
-      - 'Notes': 'web/javascript/webpack/notes.md'
       - 'Webpack': 'web/javascript/webpack/webpack.md'
+      - 'Notes': 'web/javascript/webpack/notes.md'
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'

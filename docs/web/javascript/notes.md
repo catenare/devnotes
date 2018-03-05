@@ -3,7 +3,7 @@
 ## Resources
 * [Standard JS](https://standardjs.com/) - JavaScript Standard Style
     * Rules for writing JavaScript.
-* [Awesome Angular](https://github.com/brillout/awesome-angular-components)
+
 * [You Don't Need jQuery](https://blog.garstasio.com/you-dont-need-jquery/)
 * [JavaScript Plugin for Web Forms](https://1stwebdesigner.com/javascript-plugins-web-forms/)
 * [JavaScript Encyclopedia](http://www.crockford.com/javascript/encyclopedia/)
@@ -39,7 +39,7 @@
 ## Other
 * [Normalizr](https://github.com/paularmstrong/normalizr) - create schema to normalize the result of a returned schema.
 
-### Promises
+### Captcha
 ```js
 let getCaptcha = new Promise(
     function(resolve) {
@@ -147,89 +147,7 @@ module.exports = {
   }
 }
 ```
-* package.json
-```json
-{
-  "name": "package_theme",
-  "version": "0.0.1",
-  "description": "Build assets for a plugin",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
-  "scripts": {
-    "start": "npm-run-all --parallel dev:watch lint:watch",
-    "dev:watch": "webpack -w -d",
-    "dev:server": "cross-env NODE_ENV=development webpack-dev-server --color --progress --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "lint": "esw webpack.config.* src --color",
-    "lint:watch": "npm run lint -- --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:catenare/wordpress-base-theme.git"
-  },
-  "keywords": [
-    "Wordpress",
-    "theme"
-  ],
-  "author": "Johan Martin <martin.johan@johan-martin.com> (http://www.johan-martin.com/)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/catenare/paseo-api-theme/issues"
-  },
-  "homepage": "https://github.com/catenare/paseo-api-theme#readme",
-  "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "font-awesome": "^4.7.0",
-    "webpack-livereload-plugin": "^1.0.0"
-  },
-  "devDependencies": {
-    "@types/backbone": "^1.3.38",
-    "@types/jquery": "^3.2.15",
-    "autoprefixer": "^7.1.5",
-    "awesome-typescript-loader": "^3.2.3",
-    "babel-core": "^6.26.0",
-    "babel-env": "^2.4.1",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-decorators": "^6.24.1",
-    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.17",
-    "cross-env": "^5.1.0",
-    "css-loader": "^0.28.7",
-    "eslint": "^4.9.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "eslint-watch": "^3.1.3",
-    "extract-text-webpack-plugin": "^3.0.1",
-    "file-loader": "^1.1.5",
-    "foundation-sites": "^6.4.4-rc1",
-    "handlebars": "^4.0.11",
-    "handlebars-loader": "^1.6.0",
-    "jasmine": "^2.8.0",
-    "karma": "^1.7.1",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-loader": "^2.0.8",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.0",
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.3",
-    "url-loader": "^0.6.2",
-    "webpack": "^3.8.1"
-  }
-}
-```
+
 * .eslintrc.json
 ```json
 {
@@ -256,115 +174,6 @@ node_modules
     "transform-react-inline-elements"
   ]
 }
-```
-* webpack.config.js
-```js
-const path = require('path')
-const webpack = require('webpack')
-const CleanWebPackPlugin = require('clean-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-
-module.exports = {
-  entry: './src/main.ts',
-  output: {
-    path: path.resolve(__dirname, './site/assets'),
-    filename: 'paseo-wp-form-api.js'
-  },
-  plugins: [
-    new CleanWebPackPlugin(['./site/assets']),
-    new ExtractTextPlugin({
-      filename: 'paseo-wp-form-api.css',
-      allChunks: true
-    }),
-    new webpack.ProvidePlugin({
-      jQuery: 'jquery',
-      $: 'jquery',
-      Backbone: 'backbone'
-    })
-  ],
-  externals: {
-    jquery: 'jQuery',
-    backbone: 'Backbone',
-    PASEOFORM: 'PASEOFORM',
-    underscore: 'underscore',
-    _: 'underscore'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            'postcss-loader',
-            'sass-loader'
-          ]
-        })
-      },
-      {
-        test: /\.hbs$/,
-        exclude: /node_modules/,
-        loader: 'handlebars-loader'
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.ts$/,
-        exclude: /node_modules/,
-        loader: 'awesome-typescript-loader'
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'file-loader',
-        options: {
-          limit: 10000
-        }
-      },
-      {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
-        options: {
-          limit: 10000
-        }
-      }
-    ]
-  },
-  devtool: '#source-map'
-}
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
-  module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
-      }
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
-    })
-  ])
-}
-```
-* Configure `vue.js`
-```js
-  resolve: {
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js'
-    }
-  },
 ```
 ### Other
 * [npm-run-all](https://github.com/mysticatea/npm-run-all/blob/master/docs/npm-run-all.md) - cli options

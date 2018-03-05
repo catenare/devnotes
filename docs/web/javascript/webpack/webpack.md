@@ -4,114 +4,198 @@
 ```javascript
 const path = require('path')
 const webpack = require('webpack')
-const HtmlWpPlugin = require('html-webpack-plugin')
-const CleanWpPlugin = require('clean-webpack-plugin')
-const ExtractWpPlugin = require('extract-text-webpack-plugin')
-const autoprefixer = require('autoprefixer')
-const atl = require('awesome-typescript-loader')
+const BabiliPlugin = require('babili-webpack-plugin')
+const CleanWebPackPlugin = require('clean-webpack-plugin')
+const combineLoaders = require('webpack-combine-loaders')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const StylelintPlugin = require('stylelint-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const vendorPackages = require('./package.json')
+const { CheckerPlugin } = require('awesome-typescript-loader')
 
-module.exports = {
-  entry: {
-    app: './src/assets/js/main.js',
-    vendor: './src/assets/js/vendor.js'
+const outputDir = path.join(__dirname, 'dist')
+
+const pluginConfig = [
+  new HtmlWebpackPlugin(
+    {
+      title: 'Kinder Admin',
+      template: './src/index.ejs'
+    }
+  ),
+  new webpack.DefinePlugin({
+    __STATE__: JSON.stringify(process.env.NODE_ENV)
+  }),
+  new CheckerPlugin()
+]
+
+const moduleConfigBase = [
+  {
+    test: /\.html$/,
+    loader: 'html-loader'
   },
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js',
-    sourceMapFilename: '[name].bundle.map',
-    pathinfo: true
+  {
+    test: /\.js$/,
+    exclude: /(node_modules)/,
+    loader: 'babel-loader'
   },
-  resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
-  },
-  devtool: 'cheap-module-source-map',
-  plugins: [
-    new HtmlWpPlugin({
-      title: 'Learning ES6',
-      template: 'src/index.html',
-      filename: 'index.html'
-    }),
-    new CleanWpPlugin(['dist']),
-    new ExtractWpPlugin({
-      filename: 'styles.css',
-      allChunks: true
-    }),
-    new webpack.HotModuleReplacementPlugin(),
-    new atl.CheckerPlugin()
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              ['env',
-                {
-                  targets: {
-                    'browsers': ['last 2 versions', 'ie>=7']
-                  }
-                }
-              ]
-            ]
-          }
-        }
-      },
-      // {
-      //   test: /\.css$/,
-      //   include: path.resolve(__dirname, './node_modules/leaflet/dist/leaflet.css'),
-      //   use: 'raw-loader'
-      // },
-      {
-        test: /\.css$/,
-        exclude: /(node_modules|bower_components)/,
-        loaders: ExtractWpPlugin.extract([
-          'style-loader/url!file-loader',
-          'css-loader'
-        ])
-      },
-      {
-        test: /\.ts$/,
-        exclude: /(node_modules|bower_components)/,
-        use: 'awesome-typescript-loader'
-      },
-      {
-        test: /\.scss$/,
-        exclude: /(node_modules|bower_components)/,
-        use: ExtractWpPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            {
-              loader: 'postcss-loader',
-              options:
-              {
-                plugins: function () {
-                  return [autoprefixer]
-                }
-              }
-            },
-            'sass-loader'
-          ]
-        }
-        )
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        exclude: /(node_modules|bower_components)/,
-        use: [
-          'file-loader?name=images/[name].[ext]'
-        ]
-      }
+  {
+    test: /\.tsx?$/,
+    exclude: /(node_modules)/,
+    use: [
+      { loader: 'babel-loader' },
+      { loader: 'awesome-typescript-loader' }
     ]
   },
-  devServer: {
-    hot: true,
-    watchOptions: {
-      ignored: /node_modules/
+  {
+    test: /\.(png|jpe?g|gif|woff|woff2|eot|ttf|svg)$/,
+    loader: 'url-loader?limit=100000'
+  },
+  {
+    test: /\.vue$/,
+    loader: 'vue-loader',
+    options: {
+      loaders: {
+        scss: ['vue-style-loader', {
+          loader: 'css-loader',
+          options: {
+            minimize: false,
+            sourceMap: false,
+            url: true
+          }
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            includePaths: ['src/assets/styles'],
+            data: '@import "src/assets/styles/site";',
+            sourceMap: false
+          }
+        }
+        ],
+        ts: 'awesome-typescript-loader'
+      }
     }
   }
+]
+
+const moduleConfigDev = [
+  {
+    test: /\.scss$/,
+    exclude: /(node_modules)/,
+    use: [
+      { loader: 'style-loader' },
+      { loader: 'css-loader' },
+      { loader: 'postcss-loader' },
+      { loader: 'sass-loader' }
+    ]
+  },
+  {
+    test: /\.css$/,
+    exclude: /(node_modules)/,
+    use: [
+      { loader: 'style-loader' },
+      { loader: 'css-loader' },
+      { loader: 'postcss-loader' }
+    ]
+  }
+]
+
+const moduleConfigProd = [
+  {
+    test: /\.scss$/,
+    use: ExtractTextPlugin.extract({
+      fallback: 'style-loader',
+      use: combineLoaders([
+        {
+          loader: 'css-loader'
+        },
+        {
+          loader: 'postcss-loader'
+        },
+        {
+          loader: 'sass-loader'
+        }
+      ])
+    })
+  },
+  {
+    test: /\.css$/,
+    use: ExtractTextPlugin.extract({
+      fallback: 'style-loader',
+      use: combineLoaders([
+        {
+          loader: 'css-loader'
+        },
+        {
+          loader: 'postcss-loader'
+        }
+      ])
+    })
+  }
+]
+
+const serverConfig = {
+  contentBase: outputDir,
+  compress: true,
+  open: false,
+  port: 9000,
+  historyApiFallback: {
+    verbose: true,
+    disableDotRule: true
+  }
 }
+
+const webpackConfig = {
+  entry: {
+    app: './src/app/main.ts',
+    vendor: Object.keys(vendorPackages.dependencies).filter(name => (name !== 'font-awesome' && name !== 'foundation-sites' && name !== '@fortawesome/fontawesome-free-webfonts'))
+  },
+  output: {
+    path: outputDir,
+    filename: '[name].js'
+  },
+  resolve: {
+    extensions: ['.html', '.ts', '.tsx', '.js', '.json', '.vue'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': path.resolve('src')
+    }
+  },
+  plugins: pluginConfig,
+  devServer: serverConfig
+}
+
+if (process.env.NODE_ENV === 'production') {
+  webpackConfig.plugins = (webpackConfig.plugins || []).concat([
+    new BabiliPlugin({}),
+    new CleanWebPackPlugin([outputDir]),
+    new ExtractTextPlugin({
+      filename: '[name].css',
+      allChunks: true
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      async: true,
+      minChunks: Infinity
+    }),
+    new StylelintPlugin(
+      {syntax: 'scss', emitErrors: false, lintDirtyModulesOnly: true}
+    ),
+    new UglifyJsPlugin({
+      test: /\.js($|\?)/i
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
+    })
+  ])
+  webpackConfig.module = { rules: moduleConfigBase.concat(moduleConfigProd) }
+  webpackConfig.devtool = '#source-map'
+} else {
+  /* Development */
+  webpackConfig.module = { rules: moduleConfigBase.concat(moduleConfigDev) }
+  webpackConfig.devtool = 'cheap-module-source-map'
+}
+
+module.exports = webpackConfig
 ```

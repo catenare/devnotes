@@ -43,6 +43,7 @@
 * Issue: *Can't find variable: SockJS" in Safari on Mac and iOS*
     * Resolve: [`eval-source-map` results in "Can't find variable: SockJS" in Safari on Mac and iOS with v2.8.x #1090](https://github.com/webpack/webpack-dev-server/issues/1090)
     * Changed *devtool* to '#source-map'
+  
 ## Wordpress Configuration
 * ` wp_enqueue_script( $this->plugin_name, \PASEO_WP_FORM_DIR_URL . 'site/assets/paseo-wp-form-api.js', array('jquery'), $this->version, false );` - enqueue with jQuery as a dependency.
 * Use externals to not include jquery in the bundle but use the Wordpress instance of jquery.
@@ -51,6 +52,7 @@
     jquery: 'jQuery'
   },
 ```
+
 * Add **webpack.ProvidePlugin** with *jQuery* as the global variable.
 ```json
     new webpack.ProvidePlugin({
