@@ -166,7 +166,13 @@
     </url>
         
     <url>
-     <loc>/teaching/teach/</loc>
+     <loc>/teaching/tools/</loc>
+     <lastmod>2018-03-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/teaching/modules/</loc>
      <lastmod>2018-03-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
