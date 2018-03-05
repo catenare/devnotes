@@ -19,7 +19,7 @@
     
     
       
-        <title>AWS - Development Notes for Johan Martin</title>
+        <title>Amazon - Development Notes for Johan Martin</title>
       
     
     
@@ -80,15 +80,15 @@
             
               
                 <span class="md-header-nav__parent">
-                  Development
-                </span>
-              
-                <span class="md-header-nav__parent">
                   Cloud
                 </span>
               
+                <span class="md-header-nav__parent">
+                  AWS
+                </span>
+              
             
-            AWS
+            Amazon
           
         </span>
       </div>
@@ -346,6 +346,27 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1-1" type="checkbox" id="nav-4-1-1" checked>
+    
+    <label class="md-nav__link" for="nav-4-1-1">
+      AWS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-1-1">
+        AWS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
@@ -354,11 +375,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        AWS
+        Amazon
       </label>
     
-    <a href="./" title="AWS" class="md-nav__link md-nav__link--active">
-      AWS
+    <a href="./" title="Amazon" class="md-nav__link md-nav__link--active">
+      Amazon
     </a>
     
       
@@ -391,12 +412,36 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#hosting-single-page-app-with-cloudfront" title="Hosting single page app with Cloudfront" class="md-nav__link">
+    Hosting single page app with Cloudfront
+  </a>
+  
+</li>
+      
       
       
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="cognito/" title="Cognito" class="md-nav__link">
+      Cognito
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -2262,6 +2307,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#hosting-single-page-app-with-cloudfront" title="Hosting single page app with Cloudfront" class="md-nav__link">
+    Hosting single page app with Cloudfront
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2288,6 +2340,34 @@
 <li><a href="https://github.com/aws/aws-sdk-js/issues/1512">Github Issue Resolution</a></li>
 <li>Resolve: ...culprit is line 4 in rng.ks. In aws-sdk</li>
 <li>Fixed!! - test: /.js$/, exclude: /(node_modules)/</li>
+</ul>
+</li>
+<li>Issues with mobile auth using email</li>
+<li><a href="https://github.com/aws/aws-amplify/issues/104">Github Issue 104</a></li>
+<li>Use awsmobile cli<ul>
+<li><code>awsmobile user-signin enable -p</code></li>
+</ul>
+</li>
+<li>
+<p>Did not get the aws amplify and mobile hub project to work. Had to create my own, custom setup.</p>
+</li>
+<li>
+<p>Seems to only way to deal with awsamplify not working is to create your own custom setup.</p>
+</li>
+</ul>
+<h2 id="hosting-single-page-app-with-cloudfront">Hosting single page app with Cloudfront</h2>
+<ul>
+<li><a href="https://keita.blog/2015/11/24/hosting-a-single-page-app-on-s3-with-proper-urls/">Hosting Single Page app with proper URLS</a></li>
+<li>In CloudFront, Create custom error response<ul>
+<li>In CloudFront Distribution<ul>
+<li>Select <em>Error Pages</em></li>
+<li><em>Create Custom Error Response</em></li>
+<li>HTTP Error Code: 404 Not Found</li>
+<li>Customize Error Response - yes</li>
+<li>Response Page Path <em>/index.html</em></li>
+<li>HTTP Response Code <em>200 ok</em></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2324,13 +2404,13 @@
           </a>
         
         
-          <a href="../../php/wordpress/notes/" title="Notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="cognito/" title="Cognito" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Notes
+                Cognito
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

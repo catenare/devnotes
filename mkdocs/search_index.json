@@ -177,8 +177,8 @@
         },
         {
             "location": "/cloud/aws/",
-            "text": "Amazon AWS\n\n\nLearning Lambda\n\n\nAWS Mobile\n\n\n\n\nError Message: \"error: Uncaught TypeError: Cannot read property 'crypto' of undefined in browser\"\n\n\nGithub Issue\n\n\nGithub Issue Resolution\n\n\nResolve: ...culprit is line 4 in rng.ks. In aws-sdk\n\n\nFixed!! - test: /.js$/, exclude: /(node_modules)/",
-            "title": "AWS"
+            "text": "Amazon AWS\n\n\nLearning Lambda\n\n\nAWS Mobile\n\n\n\n\nError Message: \"error: Uncaught TypeError: Cannot read property 'crypto' of undefined in browser\"\n\n\nGithub Issue\n\n\nGithub Issue Resolution\n\n\nResolve: ...culprit is line 4 in rng.ks. In aws-sdk\n\n\nFixed!! - test: /.js$/, exclude: /(node_modules)/\n\n\n\n\n\n\nIssues with mobile auth using email\n\n\nGithub Issue 104\n\n\nUse awsmobile cli\n\n\nawsmobile user-signin enable -p\n\n\n\n\n\n\n\n\nDid not get the aws amplify and mobile hub project to work. Had to create my own, custom setup.\n\n\n\n\n\n\nSeems to only way to deal with awsamplify not working is to create your own custom setup.\n\n\n\n\n\n\nHosting single page app with Cloudfront\n\n\n\n\nHosting Single Page app with proper URLS\n\n\nIn CloudFront, Create custom error response\n\n\nIn CloudFront Distribution\n\n\nSelect \nError Pages\n\n\nCreate Custom Error Response\n\n\nHTTP Error Code: 404 Not Found\n\n\nCustomize Error Response - yes\n\n\nResponse Page Path \n/index.html\n\n\nHTTP Response Code \n200 ok",
+            "title": "Amazon"
         },
         {
             "location": "/cloud/aws/#amazon-aws",
@@ -192,8 +192,43 @@
         },
         {
             "location": "/cloud/aws/#aws-mobile",
-            "text": "Error Message: \"error: Uncaught TypeError: Cannot read property 'crypto' of undefined in browser\"  Github Issue  Github Issue Resolution  Resolve: ...culprit is line 4 in rng.ks. In aws-sdk  Fixed!! - test: /.js$/, exclude: /(node_modules)/",
+            "text": "Error Message: \"error: Uncaught TypeError: Cannot read property 'crypto' of undefined in browser\"  Github Issue  Github Issue Resolution  Resolve: ...culprit is line 4 in rng.ks. In aws-sdk  Fixed!! - test: /.js$/, exclude: /(node_modules)/    Issues with mobile auth using email  Github Issue 104  Use awsmobile cli  awsmobile user-signin enable -p     Did not get the aws amplify and mobile hub project to work. Had to create my own, custom setup.    Seems to only way to deal with awsamplify not working is to create your own custom setup.",
             "title": "AWS Mobile"
+        },
+        {
+            "location": "/cloud/aws/#hosting-single-page-app-with-cloudfront",
+            "text": "Hosting Single Page app with proper URLS  In CloudFront, Create custom error response  In CloudFront Distribution  Select  Error Pages  Create Custom Error Response  HTTP Error Code: 404 Not Found  Customize Error Response - yes  Response Page Path  /index.html  HTTP Response Code  200 ok",
+            "title": "Hosting single page app with Cloudfront"
+        },
+        {
+            "location": "/cloud/aws/cognito/",
+            "text": "AWS Cognito\n\n\nNotes\n\n\n\n\nTrying to use aws-amplify with Typescript\n\n\nIssues with typescript definitions\n\n\nAdding @types/node for aws-sdk. See if that will help \naws-sdk-js#Usage with TypeScript\n\n\ntsconfig\n\n\nResult\n\n\nnpm install --save-dev @types/node\n\n\nnpm install aws-amplify\n\n\n\n\nResources\n\n\n\n\nAuth Guide\n\n\nCustom UI for Cognito with aws-amplify\n\n\ntsconfig.json\n\n\n\n\n{\n  \"compilerOptions\": {\n    \"target\": \"ESNext\",\n    \"module\": \"ESNext\",\n    \"jsx\": \"preserve\",\n    \"noImplicitAny\": false,\n    \"noImplicitThis\": true,\n    \"allowJs\": true,\n    \"pretty\": true,\n    \"diagnostics\": true,\n    \"moduleResolution\": \"node\",\n    \"allowSyntheticDefaultImports\": true,\n    \"experimentalDecorators\": true,\n    \"emitDecoratorMetadata\": true\n  },\n  \"exclude\": [\n    \"node_modules\"\n  ],\n  \"awesomeTypescriptLoaderOptions\": {\n    \"useWebpackText\": true,\n    \"useTranspileModule\": true,\n    \"useBable\": true,\n    \"useCache\": true,\n    \"doTypeCheck\": true,\n    \"forkChecker\": true\n  }\n}\n\n\n\n\nSteps\n\n\nConfigure the client",
+            "title": "Cognito"
+        },
+        {
+            "location": "/cloud/aws/cognito/#aws-cognito",
+            "text": "",
+            "title": "AWS Cognito"
+        },
+        {
+            "location": "/cloud/aws/cognito/#notes",
+            "text": "Trying to use aws-amplify with Typescript  Issues with typescript definitions  Adding @types/node for aws-sdk. See if that will help  aws-sdk-js#Usage with TypeScript  tsconfig  Result  npm install --save-dev @types/node  npm install aws-amplify",
+            "title": "Notes"
+        },
+        {
+            "location": "/cloud/aws/cognito/#resources",
+            "text": "Auth Guide  Custom UI for Cognito with aws-amplify  tsconfig.json   {\n  \"compilerOptions\": {\n    \"target\": \"ESNext\",\n    \"module\": \"ESNext\",\n    \"jsx\": \"preserve\",\n    \"noImplicitAny\": false,\n    \"noImplicitThis\": true,\n    \"allowJs\": true,\n    \"pretty\": true,\n    \"diagnostics\": true,\n    \"moduleResolution\": \"node\",\n    \"allowSyntheticDefaultImports\": true,\n    \"experimentalDecorators\": true,\n    \"emitDecoratorMetadata\": true\n  },\n  \"exclude\": [\n    \"node_modules\"\n  ],\n  \"awesomeTypescriptLoaderOptions\": {\n    \"useWebpackText\": true,\n    \"useTranspileModule\": true,\n    \"useBable\": true,\n    \"useCache\": true,\n    \"doTypeCheck\": true,\n    \"forkChecker\": true\n  }\n}",
+            "title": "Resources"
+        },
+        {
+            "location": "/cloud/aws/cognito/#steps",
+            "text": "",
+            "title": "Steps"
+        },
+        {
+            "location": "/cloud/aws/cognito/#configure-the-client",
+            "text": "",
+            "title": "Configure the client"
         },
         {
             "location": "/php/wordpress/notes/",
@@ -1507,7 +1542,7 @@
         },
         {
             "location": "/web/javascript/vue/notes/",
-            "text": "General notes while developing with Vue\n\n\nUpdated Resources\n\n\n\n\nVue filters no longer included.\n\n\nvue2-filters\n - Restore vue1 filters\n\n\n\n\n\n\nUse methods on \nv-for\n rather than filter. Call the item as a method\n\n\nEx:\n\n\n<li v-for=\" story in famous(stories) \" >\n\n\n\n\n\n\n\n\n    methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },\n\n\n\n\n\n\nAjax requests for Vue\n\n\naxios\n - Replacement for vue resources http\n\n\n\n\nTypeScript Notes\n\n\n\n\nVue Typescript\n\n\nvue-class-component\n\n\nnpm install vue-class-component\n - Component annotations for Vue.\n\n\n\n\n// tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}\n\n\n\n\nVue Components\n\n\n\n\nUnknown Custom Element Error\n\n\nInclude component globally\n\n\n\n\nimport Hello from '../vue/components/Hello'\nVue.component('hello', Hello)\n\n\n\n\n* Now available globally\n\n\n\n\n\nInclude component locally\n\n\nGetting elements in vue with vanilla javascript\n\n\nthis.$el.querySelector('p')\n\n\n\n\n\n\n\n\nChild/Parent Communication\n\n\n\n\nHow to get the parent to update it's value from the child.\n\n\nVuejs 2 changed how it is done. .sync has changed.\n\n\nComponents\n\n\nParent - wordpress\n\n\nChild - story\n\n\nprops: [story, favorite]\n\n\n\n\n\n\n\n\n\n\nOn Child\n\n\nbutton - \n<button v-show=\"!isFavorite\" @click=\"setFavorite\" class=\"success button tiny\">Favorite</button>\n - on click, call setFavorite method.\n\n\nmethod - emit event to favorite, send the current story as the object.\n\n\n\n\n\n\n\n\n    private setFavorite() {\n        this.$emit(\"favorite\", this.story);\n    }\n\n\n\n\n\n\nOn Parent\n\n\nin Template - \nv-on:favorite=\"updateFavorite(story)\n - event is favorite, method is updateFavorite and pass in the story.\n\n\n\n\n\n\n\n\n    <story v-for=\"story in stories\"\n            :key=\"story.id\"\n            :story=\"story\"\n            :favorite=\"favorite\"\n    v-on:favorite=\"updateFavorite(story)\"></story>\n\n\n\n\n\n\nmethod to update the favorite the current story.\n\n\n\n\n    public updateFavorite(story) {\n        this.favorite = story;\n    }\n\n\n\n\n\n\nFavorite is now pointing to the current story. Only one favorite.\n\n\n\n\nCreate module for npm\n\n\n\n\nVue Component Publish to npm\n\n\n\n\nVueRouter\n\n\n\n\nGetting Router hooks to work in vue-class-component.\n\n\nVueClassComponent Readme\n - Adding Custom Huooks\n\n\n\n\n\n\nFix issue with relative css files not being loaded. Cause page not to reload.\n\n\nAdded base reference.\n\n\nBase Element\n\n\nCan also add it in router module.\n\n\nRoute Options\n\n\n\n\n\n\n\n\n\n\nFix Issue with TypeScript and router.push - Argument type `{name: string} is not assignable to parameter RawLocation.\n\n\nMissing TS Definitions\n\n\nNot yet in package - \nFix\n\n\n\n\n\n\n\n\nVuex\n\n\n\n\nUsing mapGetter in vue-class-component\n\n\nVue Class Component",
+            "text": "General notes while developing with Vue\n\n\nUpdated Resources\n\n\n\n\nVue filters no longer included.\n\n\nvue2-filters\n - Restore vue1 filters\n\n\n\n\n\n\nUse methods on \nv-for\n rather than filter. Call the item as a method\n\n\nEx:\n\n\n<li v-for=\" story in famous(stories) \" >\n\n\n\n\n\n\n\n\n    methods: {\n        famous: (stories) => {\n            return stories.filter(  (item) => {\n\n                console.log(item)\n\n                return item.upvotes > 20\n            })\n        },\n        now: function () {\n           return Date.now()\n        }\n    },\n\n\n\n\n\n\nAjax requests for Vue\n\n\naxios\n - Replacement for vue resources http\n\n\n\n\nTypeScript Notes\n\n\n\n\nVue Typescript\n\n\nvue-class-component\n\n\nnpm install vue-class-component\n - Component annotations for Vue.\n\n\n\n\n// tsconfig.json\n{\n  \"compilerOptions\": {\n    // ... other options omitted\n    \"allowSyntheticDefaultImports\": true,\n    \"lib\": [\n      \"dom\",\n      \"es5\",\n      \"es2015.promise\"\n    ],\n    \"module\": \"es2015\",\n    \"moduleResolution\": \"node\"\n  }\n}\n\n\n\n\nVue Components\n\n\n\n\nUnknown Custom Element Error\n\n\nInclude component globally\n\n\n\n\nimport Hello from '../vue/components/Hello'\nVue.component('hello', Hello)\n\n\n\n\n* Now available globally\n\n\n\n\n\nInclude component locally\n\n\nGetting elements in vue with vanilla javascript\n\n\nthis.$el.querySelector('p')\n\n\n\n\n\n\n\n\nChild/Parent Communication\n\n\n\n\nHow to get the parent to update it's value from the child.\n\n\nVuejs 2 changed how it is done. .sync has changed.\n\n\nComponents\n\n\nParent - wordpress\n\n\nChild - story\n\n\nprops: [story, favorite]\n\n\n\n\n\n\n\n\n\n\nOn Child\n\n\nbutton - \n<button v-show=\"!isFavorite\" @click=\"setFavorite\" class=\"success button tiny\">Favorite</button>\n - on click, call setFavorite method.\n\n\nmethod - emit event to favorite, send the current story as the object.\n\n\n\n\n\n\n\n\n    private setFavorite() {\n        this.$emit(\"favorite\", this.story);\n    }\n\n\n\n\n\n\nOn Parent\n\n\nin Template - \nv-on:favorite=\"updateFavorite(story)\n - event is favorite, method is updateFavorite and pass in the story.\n\n\n\n\n\n\n\n\n    <story v-for=\"story in stories\"\n            :key=\"story.id\"\n            :story=\"story\"\n            :favorite=\"favorite\"\n    v-on:favorite=\"updateFavorite(story)\"></story>\n\n\n\n\n\n\nmethod to update the favorite the current story.\n\n\n\n\n    public updateFavorite(story) {\n        this.favorite = story;\n    }\n\n\n\n\n\n\nFavorite is now pointing to the current story. Only one favorite.\n\n\n\n\nCreate module for npm\n\n\n\n\nVue Component Publish to npm\n\n\n\n\nVueRouter\n\n\n\n\nGetting Router hooks to work in vue-class-component.\n\n\nVueClassComponent Readme\n - Adding Custom Huooks\n\n\n\n\n\n\nFix issue with relative css files not being loaded. Cause page not to reload.\n\n\nAdded base reference.\n\n\nBase Element\n\n\nCan also add it in router module.\n\n\nRoute Options\n\n\n\n\n\n\n\n\n\n\nFix Issue with TypeScript and router.push - Argument type `{name: string} is not assignable to parameter RawLocation.\n\n\nMissing TS Definitions\n\n\nNot yet in package - \nFix\n\n\n\n\n\n\n\n\nVuex\n\n\n\n\nUsing mapGetter in vue-class-component\n\n\nVue Class Component\n\n\n\n\n\n\n\n\nOptions for admin/personal admin sites\n\n\n\n\nhttps://w3layouts.com/preview/?l=/modern-admin-panel-flat-bootstrap-responsive-web-template/",
             "title": "Notes"
         },
         {
@@ -1549,6 +1584,11 @@
             "location": "/web/javascript/vue/notes/#vuex",
             "text": "Using mapGetter in vue-class-component  Vue Class Component",
             "title": "Vuex"
+        },
+        {
+            "location": "/web/javascript/vue/notes/#options-for-adminpersonal-admin-sites",
+            "text": "https://w3layouts.com/preview/?l=/modern-admin-panel-flat-bootstrap-responsive-web-template/",
+            "title": "Options for admin/personal admin sites"
         },
         {
             "location": "/web/javascript/vue/vuejs/",
