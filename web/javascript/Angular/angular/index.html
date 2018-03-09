@@ -2103,7 +2103,7 @@
 <ul>
 <li>ng new [name} --skip-install --style scss</li>
 <li>cd into [name]</li>
-<li>npm install foundation-sites @fortawesome/fontawesome @fortawesome/fontawesome-free-solid @fortawesome/fontawesome-free-webfonts</li>
+<li>npm install foundation-sites @fortawesome/fontawesome @fortawesome/fontawesome-free-solid @fortawesome/fontawesome-free-webfonts awesome-typescript-loader</li>
 <li><code>npm install</code> - install all the packages</li>
 </ul>
 <h3 id="setup-foundation-and-fontawesome">Setup Foundation and FontAwesome</h3>
@@ -2117,7 +2117,33 @@
 <li>Edit <em>foundation.scss</em></li>
 <li><code>@import '~@fortawesome/fontawesome-free-webfonts/scss/fontawesome';</code></li>
 <li><code>@import '~foundation-sites/scss/foundation';</code></li>
+<li>Comment out:<ul>
+<li>// @import 'motion-ui';</li>
+<li>End of file</li>
+<li>// @include motion-ui-transitions;</li>
+<li>// @include motion-ui-animations;</li>
 </ul>
+</li>
+<li><code>ng eject</code> - customize webpack</li>
+<li>Want to use <strong>style-loader</strong> to load style files directly into components. Gives me access to the foundation styles in all the components.
+  <code>js
+  {
+            "loader": "sass-loader",
+            "options": {
+              "sourceMap": true,
+              "precision": 8,
+              "includePaths": ["src/assets/styles"],
+              data: '@import "src/assets/styles/styles";'
+            }</code></li>
+<li><del>Want to use <strong>*awesome-typescript-loader</strong></del> - Angular uses their own compiler. Don't want to mess with it.</li>
+<li>Commands after eject</li>
+</ul>
+<pre><code>   - &quot;npm run build&quot; to build.
+   - &quot;npm test&quot; to run unit tests.
+   - &quot;npm start&quot; to serve the app using webpack-dev-server.
+   - &quot;npm run e2e&quot; to run protractor.
+</code></pre>
+
 <h3 id="include-in-styles">Include in styles</h3>
 <ul>
 <li>in styles.scss - <code>@import './assets/styles/site.scss';</code></li>
