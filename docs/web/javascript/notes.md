@@ -180,3 +180,13 @@ node_modules
 
 ### Notes for eslint
 * [Disable eslint rules](https://brunoscopelliti.com/how-to-disable-eslint-rule-via-javascript-comment/)
+
+### Getting hex codes for FontAwesome to work.
+* **font-family** should be *"FontAwesome"*
+```scss
+  &::before {
+    font-family: "FontAwesome";
+    content: "\f00d";
+  }
+```
+* List of hex codes for font-awesome: [FontAwesomeSnippet](http://astronautweb.co/snippet/font-awesome/)

@@ -12,6 +12,7 @@
 ## Resources
 * [Auth Guide](https://aws.github.io/aws-amplify/media/authentication_guide.html)
 * [Custom UI for Cognito with aws-amplify](https://shellmonger.com/2018/01/17/building-a-custom-ui-for-amazon-cognito-with-aws-amplify/)
+* [AWS Documentation](https://aws.github.io/aws-amplify/)
 * `tsconfig.json`
 ```
 {

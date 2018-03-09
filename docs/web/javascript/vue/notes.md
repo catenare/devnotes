@@ -110,6 +110,10 @@ Vue.component('hello', Hello)
     * [Vue Class Component](https://github.com/vuejs/vue-class-component/issues/109)
 
 
-# Options for admin/personal admin sites
+## Options for admin/personal admin sites
 * https://w3layouts.com/preview/?l=/modern-admin-panel-flat-bootstrap-responsive-web-template/
 * 
+
+
+## Components
+* Calendar - [Date Picker](https://github.com/charliekassel/vuejs-datepicker) - 

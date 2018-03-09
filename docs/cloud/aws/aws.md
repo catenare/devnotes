@@ -24,3 +24,6 @@
           * Customize Error Response - yes
           * Response Page Path */index.html*
           * HTTP Response Code *200 ok*
+* Also need to configure for 403 errors.
+  * 403 300 /index.html 200
+  * 404 5 /index.html 200
