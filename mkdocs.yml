@@ -16,6 +16,9 @@ extra_css:
 - css/extra.css
 pages:
 - Home: 'index.md'
+- Notes: 
+  - 'Vue and Amp': 'Notes/vueamp.md'
+  - 'KinderCare': 'Notes/kindercare.md'
 - Development:
   - Cloud:
     - 'AWS': 
