@@ -31,6 +31,41 @@
             "title": "Journal"
         },
         {
+            "location": "/Notes/vueamp/",
+            "text": "Notes\n\n\n15 March 2018\n\n\nUsing Vue and AWS amplfiy\n\n\n\n\nGetting to know amp\n\n\nPart of mobile hub\n\n\nSimilar to Google Firebase offering\n\n\nGoogle Firebase is easier to use with their JavaScript SDK but is also more limited.\n\n\n\n\n\n\nFeatures with amplify library\n\n\nAuth\n\n\nS3 storage\n\n\nDynamoDB (Create DB on mobile hub but amplify needs aws javascript sdk to use)\n\n\nAnalytices (pinpoint)\n\n\nMessaging (pinpoint) - Will use your SES domain if configured.\n\n\n\n\n\n\nOther features\n\n\nHub - lightweight messaging service\n\n\nLogger - logging service\n\n\nStorage - local storage api\n\n\n\n\n\n\nGet familiar with their API documentation\n\n\nVery little documentation\n\n\nWill need to read the API and look at the code to figure out how to use it.\n\n\n\n\n\n\nCreating a basic app with Vue and amplify\n\n\nLibraries\n\n\nvuejs - vue-cli\n\n\nvuex - vue-cli\n\n\nvue-router - vue-cli\n\n\nvee-validate\n\n\namplify\n\n\naws-sdk\n\n\nmask\n\n\nlibrary for formatting phone numbers.\n\n\n\n\n\n\nCreate new project on mobile hub.\n\n\nGet the project id from mobile hub\n\n\n\n\n\n\nNeed node and npm/yarn installed\n\n\nnpm install -g awsmobile vue-cli\n\n\nCreate vue project\n\n\nvue-cli\n\n\n\n\n\n\nInitialize awsmobile project\n\n\nIn vue directory - \nawsmobile init {project id}\n\n\n\n\n\n\nDirectory structure\n\n\nsrc\n\n\ncomponents\n\n\nAuth\n\n\nLogin\n\n\nSignup\n\n\nVerify\n\n\nForgotPassword\n\n\nAuth.vue\n\n\nAuth.html\n\n\nAuth.scss\n\n\nAuth.ts\n\n\n\n\n\n\nApp\n\n\nlib\n\n\nlibraries you are accessing\n\n\n\n\n\n\nRouter\n\n\nWelcome\n\n\nAuth\n\n\nProfile\n\n\n\n\n\n\nStore\n\n\nUser\n\n\n\n\n\n\n\n\n\n\nFunctions\n\n\nSignup user\n\n\nGet additional attributes to save to cognito\n\n\nHash email to save as username\n\n\nManage errors\n\n\nSave user information to Store\n\n\nForm with showing password params in real-time\n\n\nUsing regex\n\n\n\n\n\n\nGet verification code\n\n\nGet username from Store\n\n\nResend if necessary\n\n\nGo to login if successful\n\n\nLogin\n\n\nGet user data from userinfo\n\n\nStore data in Store\n\n\nSee if user is registered\n\n\nGo to user registration page\n\n\nPresent forgot password\n\n\nIf user logs in and is registered\n\n\nGo to profile page.\n\n\nProfile\n\n\nProfile view\n\n\nLogout\n\n\nEdit profile",
+            "title": "Vue and Amp"
+        },
+        {
+            "location": "/Notes/vueamp/#notes",
+            "text": "",
+            "title": "Notes"
+        },
+        {
+            "location": "/Notes/vueamp/#15-march-2018",
+            "text": "",
+            "title": "15 March 2018"
+        },
+        {
+            "location": "/Notes/vueamp/#using-vue-and-aws-amplfiy",
+            "text": "Getting to know amp  Part of mobile hub  Similar to Google Firebase offering  Google Firebase is easier to use with their JavaScript SDK but is also more limited.    Features with amplify library  Auth  S3 storage  DynamoDB (Create DB on mobile hub but amplify needs aws javascript sdk to use)  Analytices (pinpoint)  Messaging (pinpoint) - Will use your SES domain if configured.    Other features  Hub - lightweight messaging service  Logger - logging service  Storage - local storage api    Get familiar with their API documentation  Very little documentation  Will need to read the API and look at the code to figure out how to use it.    Creating a basic app with Vue and amplify  Libraries  vuejs - vue-cli  vuex - vue-cli  vue-router - vue-cli  vee-validate  amplify  aws-sdk  mask  library for formatting phone numbers.    Create new project on mobile hub.  Get the project id from mobile hub    Need node and npm/yarn installed  npm install -g awsmobile vue-cli  Create vue project  vue-cli    Initialize awsmobile project  In vue directory -  awsmobile init {project id}    Directory structure  src  components  Auth  Login  Signup  Verify  ForgotPassword  Auth.vue  Auth.html  Auth.scss  Auth.ts    App  lib  libraries you are accessing    Router  Welcome  Auth  Profile    Store  User      Functions  Signup user  Get additional attributes to save to cognito  Hash email to save as username  Manage errors  Save user information to Store  Form with showing password params in real-time  Using regex    Get verification code  Get username from Store  Resend if necessary  Go to login if successful  Login  Get user data from userinfo  Store data in Store  See if user is registered  Go to user registration page  Present forgot password  If user logs in and is registered  Go to profile page.  Profile  Profile view  Logout  Edit profile",
+            "title": "Using Vue and AWS amplfiy"
+        },
+        {
+            "location": "/Notes/kindercare/",
+            "text": "KinderCare Notes\n\n\n\n\nAWS Tools\n\n\nAmazon Rekognition - image processing\n\n\nUse Java for tools\n\n\nBirt\n\n\nStatements\n\n\nWeekly attendance register\n\n\nPrintable reports\n\n\n\n\n\n\n\n\nAdmin UI\n\n\n\n\nHome\n\n\nWelcome\n\n\nUpdates\n\n\nReminders\n\n\nChildren\n\n\nSearch for children\n\n\nList all children\n\n\nSort by class\n\n\nSort by first\n\n\nSort by last\n\n\n\n\n\n\nAccounting\n\n\nChildren by account outstanding\n\n\n\n\n\n\nAccounting\n\n\nSearch for child\n\n\nPayments (receipts)\n\n\nAdjustments\n\n\nLine Items (add new items to child account)\n\n\n\n\n\n\nRegistration\n\n\nAdd new student",
+            "title": "KinderCare"
+        },
+        {
+            "location": "/Notes/kindercare/#kindercare-notes",
+            "text": "AWS Tools  Amazon Rekognition - image processing  Use Java for tools  Birt  Statements  Weekly attendance register  Printable reports",
+            "title": "KinderCare Notes"
+        },
+        {
+            "location": "/Notes/kindercare/#admin-ui",
+            "text": "Home  Welcome  Updates  Reminders  Children  Search for children  List all children  Sort by class  Sort by first  Sort by last    Accounting  Children by account outstanding    Accounting  Search for child  Payments (receipts)  Adjustments  Line Items (add new items to child account)    Registration  Add new student",
+            "title": "Admin UI"
+        },
+        {
             "location": "/cloud/aws/aws/",
             "text": "Amazon AWS\n\n\nLearning Lambda\n\n\nAWS Mobile\n\n\n\n\nError Message: \"error: Uncaught TypeError: Cannot read property 'crypto' of undefined in browser\"\n\n\nGithub Issue\n\n\nGithub Issue Resolution\n\n\nResolve: ...culprit is line 4 in rng.ks. In aws-sdk\n\n\nFixed!! - test: /.js$/, exclude: /(node_modules)/\n\n\n\n\n\n\nIssues with mobile auth using email\n\n\nGithub Issue 104\n\n\nUse awsmobile cli\n\n\nawsmobile user-signin enable -p\n\n\n\n\n\n\n\n\nDid not get the aws amplify and mobile hub project to work. Had to create my own, custom setup.\n\n\n\n\n\n\nSeems to only way to deal with awsamplify not working is to create your own custom setup.\n\n\n\n\n\n\nHosting single page app with Cloudfront\n\n\n\n\nHosting Single Page app with proper URLS\n\n\nIn CloudFront, Create custom error response\n\n\nIn CloudFront Distribution\n\n\nSelect \nError Pages\n\n\nCreate Custom Error Response\n\n\nHTTP Error Code: 404 Not Found\n\n\nCustomize Error Response - yes\n\n\nResponse Page Path \n/index.html\n\n\nHTTP Response Code \n200 ok\n\n\n\n\n\n\n\n\n\n\nAlso need to configure for 403 errors.\n\n\n403 300 /index.html 200\n\n\n404 5 /index.html 200",
             "title": "Amazon"
