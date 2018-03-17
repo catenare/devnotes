@@ -52,7 +52,7 @@
         },
         {
             "location": "/Notes/kindercare/",
-            "text": "KinderCare Notes\n\n\n\n\nAWS Tools\n\n\nAmazon Rekognition - image processing\n\n\nUse Java for tools\n\n\nBirt\n\n\nStatements\n\n\nWeekly attendance register\n\n\nPrintable reports\n\n\n\n\n\n\n\n\nAdmin UI\n\n\n\n\nHome\n\n\nWelcome\n\n\nUpdates\n\n\nReminders\n\n\nChildren\n\n\nSearch for children\n\n\nList all children\n\n\nSort by class\n\n\nSort by first\n\n\nSort by last\n\n\n\n\n\n\nAccounting\n\n\nChildren by account outstanding\n\n\n\n\n\n\nAccounting\n\n\nSearch for child\n\n\nPayments (receipts)\n\n\nAdjustments\n\n\nLine Items (add new items to child account)\n\n\n\n\n\n\nRegistration\n\n\nAdd new student",
+            "text": "KinderCare Notes\n\n\n\n\nAWS Tools\n\n\nAmazon Rekognition - image processing\n\n\nUse Java for tools\n\n\nBirt\n\n\nStatements\n\n\nWeekly attendance register\n\n\nPrintable reports\n\n\n\n\n\n\n\n\nAdmin UI\n\n\n\n\nHome\n\n\nWelcome\n\n\nUpdates\n\n\nReminders\n\n\nChildren\n\n\nSearch for children\n\n\nList all children\n\n\nSort by class\n\n\nSort by first\n\n\nSort by last\n\n\n\n\n\n\nAccounting\n\n\nChildren by account outstanding\n\n\n\n\n\n\nAccounting\n\n\nSearch for child\n\n\nPayments (receipts)\n\n\nAdjustments\n\n\nLine Items (add new items to child account)\n\n\n\n\n\n\nRegistration\n\n\nAdd new student\n\n\n\n\n\n\n\n\nKinderCare Notes\n\n\n\n\nCreate an admin interface for students.\n\n\nRegistration\n\n\nCheck if student exists using the id attribute\n\n\nAdd new child\n\n\nChild information\n\n\nParent/guardian information\n\n\nParent employment information\n\n\nAuthorized persons\n\n\nPayment information\n\n\n\n\n\n\nPayment\n\n\nFind student/account\n\n\nReceipt Id\n\n\nAmount\n\n\nType\n\n\nNotes\n\n\n\n\n\n\nLine Items\n\n\nAdd individual line items\n\n\nNotes\n\n\n\n\n\n\nBatch items\n\n\nLine item\n\n\nSelect individual students\n\n\nUpdate the students\n\n\n\n\n\n\nMonth-end processing\n\n\nCut-off date\n\n\nProcess students\n\n\n\n\n\n\nModels\n\n\nAccount\n\n\nStudents\n\n\nParents\n\n\nAuthorized Persons\n\n\n\n\n\n\nAccounting\n\n\nAccount\n\n\nReceipts\n\n\nLine Items\n\n\nAdjustments\n\n\n\n\n\n\nClass\n\n\nStudents",
             "title": "KinderCare"
         },
         {
@@ -64,6 +64,21 @@
             "location": "/Notes/kindercare/#admin-ui",
             "text": "Home  Welcome  Updates  Reminders  Children  Search for children  List all children  Sort by class  Sort by first  Sort by last    Accounting  Children by account outstanding    Accounting  Search for child  Payments (receipts)  Adjustments  Line Items (add new items to child account)    Registration  Add new student",
             "title": "Admin UI"
+        },
+        {
+            "location": "/Notes/kindercare/#kindercare-notes_1",
+            "text": "Create an admin interface for students.  Registration  Check if student exists using the id attribute  Add new child  Child information  Parent/guardian information  Parent employment information  Authorized persons  Payment information    Payment  Find student/account  Receipt Id  Amount  Type  Notes    Line Items  Add individual line items  Notes    Batch items  Line item  Select individual students  Update the students    Month-end processing  Cut-off date  Process students    Models  Account  Students  Parents  Authorized Persons    Accounting  Account  Receipts  Line Items  Adjustments    Class  Students",
+            "title": "KinderCare Notes"
+        },
+        {
+            "location": "/Notes/backend/",
+            "text": "Building a backend for rest front-ends.\n\n\n\n\nPython tools\n\n\npyckson\n - serialize python objects to JSON.",
+            "title": "Backend"
+        },
+        {
+            "location": "/Notes/backend/#building-a-backend-for-rest-front-ends",
+            "text": "Python tools  pyckson  - serialize python objects to JSON.",
+            "title": "Building a backend for rest front-ends."
         },
         {
             "location": "/cloud/aws/aws/",
