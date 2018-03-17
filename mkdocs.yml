@@ -19,6 +19,7 @@ pages:
 - Notes: 
   - 'Vue and Amp': 'Notes/vueamp.md'
   - 'KinderCare': 'Notes/kindercare.md'
+  - 'Backend': 'Notes/backend.md'
 - Development:
   - Cloud:
     - 'AWS': 
