@@ -2117,7 +2117,7 @@ logappend = true
 <pre><code class="bash">alias mongostart=&quot;sudo mongod -f /opt/local/etc/mongodb/mongod.conf --httpinterface&quot;
 
 mongostop_func () {
-    local mongopid = `less /opt/local/var/db/mongodb/mongod.lock`;
+    local mongopid=`less /opt/local/var/db/mongodb/mongod.lock`;
     if [[ $mongopid =~ [[:digit:]] ]]; then
         sudo kill -15 $mongopid;
         echo mongod process $mongopid terminated;
@@ -2130,10 +2130,12 @@ alias mongostop=&quot;mongostop_func&quot;
 </code></pre>
 
 <ul>
-<li>Start the server<ul>
+<li>Start the server</li>
 <li><code>mongostart</code> - will need sudo password</li>
-</ul>
-</li>
+<li>Be sure that there are no spaces between mongopid=<code>less</code>;</li>
+<li>Gui Clients</li>
+<li><a href="https://nosqlbooster.com/">NoSql Booster</a></li>
+<li><a href="https://robomongo.org/">Robo 3T</a></li>
 </ul>
                 
                   

@@ -2173,27 +2173,26 @@
 <p><del>/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start</del></p>
 <h2 id="postgresql96-has-the-following-notes">postgresql96 has the following notes:</h2>
 <ul>
-<li>To use the postgresql server, install the postgresql96-server port<ul>
+<li>Switch postgresql96 to postgresql10</li>
+<li>
+<p>To use the postgresql server, install the postgresql96-server port</p>
+<ul>
 <li>postgresql96-server has the following notes:<ul>
 <li>To create a database instance, after install do<ul>
 <li>sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb</li>
 <li>sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb</li>
 <li>sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'</li>
-<li>sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb</li>
-<li>sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb</li>
-<li>sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-<p><del>sudo chmod -R 755 /opt/local/var/db/</del>
-<del>sudo defaults write /Library/LaunchDaemons/org.macports.postgresql96-server.plist Disabled -bool false</del>
-<del>sudo launchctl load /Library/LaunchDaemons/org.macports.postgresql96-server.plist</del></p>
-<ul>
-<li>sudo port load postgresql96-server</li>
+<li>
+<p>Select the correct postgresql server</p>
+</li>
+<li><code>sudo port select --set postgresql postgresql10</code></li>
+<li>sudo port load postgresql10-server</li>
 <li>sudo su - postgres</li>
 <li>/opt/local/lib/postgresql96/bin/psql -U postgres -d template1</li>
 </ul>
