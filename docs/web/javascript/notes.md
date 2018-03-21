@@ -30,6 +30,8 @@
 ## Fixing Issues
 * "SyntaxError: Unexpected keyword 'const'. Const declarations are not supported in strict mode."
     * Resolution: [Safari/Babel/Webpack Const declarations are not supported in strict mode #922](https://github.com/hapijs/joi/issues/922) - Don't exclue node_modules when building with webpack.
+* "ReferenceError: regeneratorRuntime is not defined"
+  * Resolution: [Async Functions Producing Error](https://github.com/babel/babel/issues/5085) - Include transform-runtime to plugins seems to work.
 
 ## NPM Notes
 * Update npm modules

@@ -3,21 +3,17 @@
 ~~/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start~~
 
 ## postgresql96 has the following notes:
+- Switch postgresql96 to postgresql10
 - To use the postgresql server, install the postgresql96-server port
 	- postgresql96-server has the following notes:
 		- To create a database instance, after install do
 			- sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb
 			- sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb
 			- sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
-			- sudo mkdir -p /opt/local/var/db/postgresql96/defaultdb
-			- sudo chown postgres:postgres /opt/local/var/db/postgresql96/defaultdb
-			- sudo su postgres -c '/opt/local/lib/postgresql96/bin/initdb -D /opt/local/var/db/postgresql96/defaultdb'
 
-~~sudo chmod -R 755 /opt/local/var/db/~~
-~~sudo defaults write /Library/LaunchDaemons/org.macports.postgresql96-server.plist Disabled -bool false~~
-~~sudo launchctl load /Library/LaunchDaemons/org.macports.postgresql96-server.plist~~
-
-- sudo port load postgresql96-server
+- Select the correct postgresql server
+  - `sudo port select --set postgresql postgresql10`
+- sudo port load postgresql10-server
 - sudo su - postgres
 - /opt/local/lib/postgresql96/bin/psql -U postgres -d template1
 
