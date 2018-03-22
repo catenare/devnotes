@@ -49,6 +49,7 @@
 * [Angular Documentation](https://angular.io/)
 * [Angular & Webpack](https://angular.io/guide/webpack)
 * [Awesome Angular](https://github.com/brillout/awesome-angular-components)
+* [Clarity Design System](https://vmware.github.io/clarity/)
 ## Notes
 * Gotchas:
     * [ExtractTextWebpackPlugin](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/569) & [[Validation] ajv version mismatch with webpack #524](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/524)

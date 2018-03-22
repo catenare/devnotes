@@ -8,6 +8,7 @@
 * [Foundation](http://foundation.zurb.com/)
     * Setup a new project ```foundation new```
 * [uikit](https://getuikit.com/v2/index.html)
+* [Clarity Design System](https://vmware.github.io/clarity/)
 
 ### Templates
 * [CoreUI](http://coreui.io/) - Admin template
