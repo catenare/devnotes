@@ -70,4 +70,5 @@
   </div>
 </footer>
 ```
-
+## Other resources
+* [PouchDB](https://pouchdb.com)

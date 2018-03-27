@@ -113,6 +113,8 @@ pages:
   - 'Command Line': 'cmd/cmd.md'
 - Work: 'work/employment.md'
 - Learning:
+  - "RXJS": "learning/rxjs.md"
+  - 'Angular 4+': "learning/learnAngular.md"
   - 'Wordpress Rest API': 'php/wordpress/api/learn.md'
   - 'Tutorials': 'learning/tutorials.md'
 - Teaching: 

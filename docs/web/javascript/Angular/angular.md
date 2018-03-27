@@ -4,6 +4,7 @@
 ### Using Anular Cli
 * ng new [name} --skip-install --style scss
 * cd into [name]
+* **BEGIN IGNORE BELOW**
 * npm install foundation-sites @fortawesome/fontawesome @fortawesome/fontawesome-free-solid @fortawesome/fontawesome-free-webfonts awesome-typescript-loader
 * `npm install` - install all the packages
 ### Setup Foundation and FontAwesome
@@ -41,15 +42,17 @@
    - "npm start" to serve the app using webpack-dev-server.
    - "npm run e2e" to run protractor.
 ```
-
-### Include in styles 
-* in styles.scss - `@import './assets/styles/site.scss';`
+* Include in styles 
+  * in styles.scss - `@import './assets/styles/site.scss';`
+* **END IGNORE**
 
 ## Resources
 * [Angular Documentation](https://angular.io/)
 * [Angular & Webpack](https://angular.io/guide/webpack)
 * [Awesome Angular](https://github.com/brillout/awesome-angular-components)
 * [Clarity Design System](https://vmware.github.io/clarity/)
+* [Angular Education](https://github.com/timjacobi/angular-education)
+
 ## Notes
 * Gotchas:
     * [ExtractTextWebpackPlugin](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/569) & [[Validation] ajv version mismatch with webpack #524](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/524)
@@ -69,4 +72,4 @@
     * *No Implicit Any* - Change setting `"noImplicitAny"` in `tsconfig.json` to false and restart webpack dev server.
     * `TS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.` - *RequestOptions* require an object. *{headers: this.headers}*
     * `Uncaught Error: Can't resolve all parameters for NoteService:` - Issue with not having `@Injectable()` on noteservice.
-* [Angular Education](https://github.com/timjacobi/angular-education)
+
