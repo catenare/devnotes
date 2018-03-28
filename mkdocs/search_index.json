@@ -86,6 +86,21 @@
             "title": "API Notes"
         },
         {
+            "location": "/Notes/lookfindme/",
+            "text": "Building lookfindme\n\n\nSections\n\n\n\n\nFront-end development\n\n\nvuejs\n\n\ntypescript\n\n\nbuefy\n\n\nvuetify\n\n\nAWS Cloud using mobilehub\n\n\naws-amplify\n\n\nawsmobile\n\n\nAPI\n\n\nCreating json schema for validation\n\n\n\n\n{\n  primary: \"#f44336\",\n  secondary: \"#e57373\",\n  accent: \"#9c27b0\",\n  error: \"#f44336\",\n  warning: \"#ffeb3b\",\n  info: \"#2196f3\",\n  success: \"#4caf50\"\n}",
+            "title": "LookFindMe"
+        },
+        {
+            "location": "/Notes/lookfindme/#building-lookfindme",
+            "text": "",
+            "title": "Building lookfindme"
+        },
+        {
+            "location": "/Notes/lookfindme/#sections",
+            "text": "Front-end development  vuejs  typescript  buefy  vuetify  AWS Cloud using mobilehub  aws-amplify  awsmobile  API  Creating json schema for validation   {\n  primary: \"#f44336\",\n  secondary: \"#e57373\",\n  accent: \"#9c27b0\",\n  error: \"#f44336\",\n  warning: \"#ffeb3b\",\n  info: \"#2196f3\",\n  success: \"#4caf50\"\n}",
+            "title": "Sections"
+        },
+        {
             "location": "/cloud/aws/aws/",
             "text": "Amazon AWS\n\n\nLearning Lambda\n\n\nAWS Mobile\n\n\n\n\nError Message: \"error: Uncaught TypeError: Cannot read property 'crypto' of undefined in browser\"\n\n\nGithub Issue\n\n\nGithub Issue Resolution\n\n\nResolve: ...culprit is line 4 in rng.ks. In aws-sdk\n\n\nFixed!! - test: /.js$/, exclude: /(node_modules)/\n\n\n\n\n\n\nIssues with mobile auth using email\n\n\nGithub Issue 104\n\n\nUse awsmobile cli\n\n\nawsmobile user-signin enable -p\n\n\n\n\n\n\n\n\nDid not get the aws amplify and mobile hub project to work. Had to create my own, custom setup.\n\n\n\n\n\n\nSeems to only way to deal with awsamplify not working is to create your own custom setup.\n\n\n\n\n\n\nHosting single page app with Cloudfront\n\n\n\n\nHosting Single Page app with proper URLS\n\n\nIn CloudFront, Create custom error response\n\n\nIn CloudFront Distribution\n\n\nSelect \nError Pages\n\n\nCreate Custom Error Response\n\n\nHTTP Error Code: 404 Not Found\n\n\nCustomize Error Response - yes\n\n\nResponse Page Path \n/index.html\n\n\nHTTP Response Code \n200 ok\n\n\n\n\n\n\n\n\n\n\nAlso need to configure for 403 errors.\n\n\n403 300 /index.html 200\n\n\n404 5 /index.html 200",
             "title": "Amazon"
@@ -139,6 +154,36 @@
             "location": "/cloud/aws/cognito/#configure-the-client",
             "text": "",
             "title": "Configure the client"
+        },
+        {
+            "location": "/cloud/aws/amplify/",
+            "text": "Amazon Mobile Hub\n\n\nWhy\n\n\n\n\nGet\n\n\nAuthentication and user management\n\n\nHosting including https access\n\n\nNoSQL database\n\n\nS3 storage (userfiles)\n\n\nAmazon Analytics and messaging.\n\n\n\n\nSetup\n\n\n\n\nCreate User in IAM with access Keys\n\n\nAccess \nAWS Mobile Hub\n\n\nCreate a project\n\n\nClick \nWeb\n\n\nClick \nStart\n\n\nAdd project title\n\n\nEdit your region\n\n\n\n\nSetup your local environment\n\n\n\n\nnpm install -g awsmobile-cli\n\n\nawsmobile configure aws\n - set your access keys\n\n\nChange into your project folder\n\n\nInitialize your project\n\n\nawsmobile init e32a\n\n\n\n\nAdd additional Services\n\n\n\n\nUser Sign-in\n\n\nEmail and Password\n\n\nOptional\n - user required to sign in\n\n\nNoSQL Database\n\n\n\n\nUser Data Storage\n\n\n\n\n\n\nUpdate your local environment\n\n\n\n\nawsmobile pull\n in your project directory",
+            "title": "Amplify"
+        },
+        {
+            "location": "/cloud/aws/amplify/#amazon-mobile-hub",
+            "text": "",
+            "title": "Amazon Mobile Hub"
+        },
+        {
+            "location": "/cloud/aws/amplify/#why",
+            "text": "Get  Authentication and user management  Hosting including https access  NoSQL database  S3 storage (userfiles)  Amazon Analytics and messaging.",
+            "title": "Why"
+        },
+        {
+            "location": "/cloud/aws/amplify/#setup",
+            "text": "Create User in IAM with access Keys  Access  AWS Mobile Hub  Create a project  Click  Web  Click  Start  Add project title  Edit your region",
+            "title": "Setup"
+        },
+        {
+            "location": "/cloud/aws/amplify/#setup-your-local-environment",
+            "text": "npm install -g awsmobile-cli  awsmobile configure aws  - set your access keys  Change into your project folder  Initialize your project  awsmobile init e32a",
+            "title": "Setup your local environment"
+        },
+        {
+            "location": "/cloud/aws/amplify/#add-additional-services",
+            "text": "User Sign-in  Email and Password  Optional  - user required to sign in  NoSQL Database   User Data Storage    Update your local environment   awsmobile pull  in your project directory",
+            "title": "Add additional Services"
         },
         {
             "location": "/cloud/google/google/",
