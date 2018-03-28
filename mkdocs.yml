@@ -20,11 +20,13 @@ pages:
   - 'Vue and Amp': 'Notes/vueamp.md'
   - 'KinderCare': 'Notes/kindercare.md'
   - 'Backend': 'Notes/backend.md'
+  - 'LookFindMe': 'Notes/lookfindme.md'
 - Development:
   - Cloud:
     - 'AWS': 
       - 'Amazon': 'cloud/aws/aws.md'
       - 'Cognito': 'cloud/aws/cognito.md'
+      - 'Amplify': 'cloud/aws/amplify.md'
     - 'Google':
       - 'Google': "cloud/google/google.md"
   - Wordpress:
