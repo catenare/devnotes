@@ -186,6 +186,16 @@
             "title": "Add additional Services"
         },
         {
+            "location": "/cloud/aws/search/",
+            "text": "Using ElasticSearch on AWS\n\n\n\n\nIndexing with python\n - has the python tools for accessing elastic search.",
+            "title": "Search"
+        },
+        {
+            "location": "/cloud/aws/search/#using-elasticsearch-on-aws",
+            "text": "Indexing with python  - has the python tools for accessing elastic search.",
+            "title": "Using ElasticSearch on AWS"
+        },
+        {
             "location": "/cloud/google/google/",
             "text": "Using Google Cloud Services and Functions (Firebase)\n\n\nIssues\n\n\n\n\nUsing TypeScript\n\n\nNode version online is v6.11.5\n\n\nBe sure to install firebase-tools in this version\n\n\nSamples is incorrect\n\n\ntsconfig.json is incorrect\n\n\nadd \"dom\" to \"lib\". Should be: \"lib\": [\"es6\", \"dom\"]\n\n\nGithub Issues",
             "title": "Google"
