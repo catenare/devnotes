@@ -1,9 +1,16 @@
 # Using Python
 
+## Resources
+* [Fullstack Python](https://www.fullstackpython.com/)
+* Podcasts
+    * [Talk Python To Me](https://talkpython.fm/)
+    * [Python Bytes](https://pythonbytes.fm/)
+
 ## Notices
 * Using python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.
 
 ## Pip
+* Upgrade pip - `pip install --upgrade pip`
 * Error message: *"Can not perform a '--user' install. User site-packages are not visible in this virtualenv"*
 * Problems **~/Library/Application Support/pip/pip.conf** contains **user=true**
 * Resolution: Override the config in your virtualenv pip config file

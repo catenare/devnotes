@@ -13,3 +13,9 @@
 	* Deciding factor was the ability to push docs to *gh-pages* on Github.
 	* Essentially free hosting for my document notebook.
 * Notes for setting up notebook in notebook.
+
+## Updates
+* Updated notes about WordPress CLI
+* 25 April 2018 - Added API section. PHP frameworks related creating APIs.
+		* Added notes about **pipenv**
+		

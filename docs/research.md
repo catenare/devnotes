@@ -1,5 +1,8 @@
 # Projects of interest
 
+## Software Engineering
+* Kevlin Henney - #KevlinHenney
+
 ## Web
 ### Tools to watch
 * [Vapor](http://vapor.codes/) - Swift3 framework for web application development.

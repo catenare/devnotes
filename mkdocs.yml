@@ -22,6 +22,8 @@ pages:
   - 'Backend': 'Notes/backend.md'
   - 'LookFindMe': 'Notes/lookfindme.md'
 - Development:
+  - API:
+    - "APIs": 'api/general.md'
   - Cloud:
     - 'AWS': 
       - 'Amazon': 'cloud/aws/aws.md'
@@ -85,6 +87,7 @@ pages:
   - Python: 
     - 'General': 'python/general.md'
     - 'Packages': 'python/packages.md'
+    - 'Pipenv': 'python/pipenv.md'
     - 'Research': 'python/research.md'
     - 'Flask': 'python/flask.md'
     - 'SQLAlchemy': 'python/sqlalchemy.md'  

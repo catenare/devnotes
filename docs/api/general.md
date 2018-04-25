@@ -1,14 +1,28 @@
-# Developer Helper Tools
+# All About APIs - Servers and tools.
 
-## Build Tools
-* [Bazel](https://bazel.build/) - build tool. Next iteration of building web projects.
+## Frameworks
+### PHP
+* [apigility](https://apigility.org/) - provided by Zend Framework. Swagger support.
+* [API Platform](https://api-platform.com/) - REST and GraphQL support.
+### Python
+* [Falcon](https://falconframework.org/) - Just API framework for Python
 
-## Server Mock Tools
-* [MailCatcher](https://mailcatcher.me/) - Localhost email intercept
-* [Ngrok](https://ngrok.com/) - Secure tunnel to localhost
-* [Random User Generator](https://randomuser.me/) - API to generate random users.
-## Source code generators
-* [JHipster](http://www.jhipster.tech/) - Generate and deploy Spring Boot + Angular Apps.
+* [Django Rest Framework](http://www.django-rest-framework.org/)
+
+## API Tools
+### Docs
+* [API Central Docs](https://devdocs.io/)
+### API Documentation Tools
+* [RAML](http://raml.org/)
+* [Swagger](http://swagger.io/)
+### API Mock Tools
+* [MockServer](https://www.mock-server.com) - Has Docker config
+* [WireMock](https://github.com/tomakehurst/wiremock) - Java
+* [Osprey Mock Service](https://github.com/mulesoft-labs/osprey-mock-service) - RAML mock service. 1.0 compatible.
+* [Osprey Service](https://github.com/mulesoft/osprey)
+* [Prism](http://stoplight.io/platform/prism/) - run locally
+* [Swagger-codegen](https://github.com/swagger-api/swagger-codegen) - Has Docker Config
+* [Imposter](https://github.com/outofcoffee/imposter) - Has Docker config
 
 ### Mock Service
 * [Mockbin](http://mockbin.com/) - test, mock and track http requests & responses
@@ -67,19 +81,3 @@
     }
     module.exports = generateCustomers
 ```
-
-## Testing Framework
-* [Galen Framework](http://galenframework.com/) - Look and feel testing for responsive sites.
-## Code Analyzers
-* [PMD](https://pmd.github.io/) - Source code analyser. Includes JS, Java, checks for duplicates in PHP
-* [SourceTrail](https://www.sourcetrail.com/) - Sourcecode explorer for Java and C++
-
-## Editors
-### Visual Studio Code
-* Adding multiple projects to workspace - [Multiple Root Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces)
-
-## Image Sprites
-* [PiskelApp](https://www.piskelapp.com/)
-
-## Screen recording
-* [OBS Studio](https://obsproject.com/) - open source screen recording
