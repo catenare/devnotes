@@ -102,7 +102,7 @@
         },
         {
             "location": "/api/general/",
-            "text": "All About APIs - Servers and tools.\n\n\nFrameworks\n\n\nPHP\n\n\n\n\napigility\n - provided by Zend Framework. Swagger support.\n\n\nAPI Platform\n - REST and GraphQL support.\n\n\n\n\nPython\n\n\n\n\nFalcon\n - Just API framework for Python\n\n\nDjango Rest Framework\n\n\n\n\nNode.js API Frameworks\n\n\n\n\nLoopback\n\n\nStrapi\n\n\nRestify\n\n\nKoa\n\n\n\n\nAPI Tools\n\n\nDocs\n\n\n\n\nAPI Central Docs\n\n\n\n\nAPI Documentation Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nMock Service\n\n\n\n\nMockbin\n - test, mock and track http requests & responses\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers",
+            "text": "All About APIs - Servers and tools.\n\n\nFrameworks\n\n\nPHP\n\n\n\n\napigility\n - provided by Zend Framework. Swagger support.\n\n\nAPI Platform\n - REST and GraphQL support.\n\n\n\n\nPython\n\n\n\n\nFalcon\n - Just API framework for Python\n\n\nDjango Rest Framework\n\n\nAPI Star\n\n\nFlask Site\n\n\nFrozen Flask\n - \nSite\n\n\nUsed for \nWineries Of the Sierra Foothills\n and personal site \nJohan Martin\n\n\nGenerate static site from flask site.\n\n\n\n\n\n\nAwesome Flask\n\n\n\n\n\n\n\n\nNode.js API Frameworks\n\n\n\n\nLoopback\n\n\nStrapi\n\n\nRestify\n\n\nKoa\n\n\n\n\nAPI Tools\n\n\nDocs\n\n\n\n\nAPI Central Docs\n\n\n\n\nAPI Documentation Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nMock Service\n\n\n\n\nMockbin\n - test, mock and track http requests & responses\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers",
             "title": "APIs"
         },
         {
@@ -122,7 +122,7 @@
         },
         {
             "location": "/api/general/#python",
-            "text": "Falcon  - Just API framework for Python  Django Rest Framework",
+            "text": "Falcon  - Just API framework for Python  Django Rest Framework  API Star  Flask Site  Frozen Flask  -  Site  Used for  Wineries Of the Sierra Foothills  and personal site  Johan Martin  Generate static site from flask site.    Awesome Flask",
             "title": "Python"
         },
         {
@@ -1847,18 +1847,13 @@
         },
         {
             "location": "/python/packages/",
-            "text": "Python Packages\n\n\nFrameworks\n\n\n\n\nAPI Star\n\n\nFlask Site\n\n\nFrozen Flask\n - \nSite\n\n\nUsed for \nWineries Of the Sierra Foothills\n and personal site \nJohan Martin\n\n\nGenerate static site from flask site.\n\n\n\n\n\n\nAwesome Flask\n\n\n\n\n\n\n\n\nDatabase\n\n\n\n\nSQLAlchemy\n\n\nSQLAlchemy Utils\n\n\nCustom datatypes and utility functions for SQLAlchemy. Inludes UUIDType.\n\n\n\n\n\n\npsycopg\n - PostgreSQL Python Adapter\n\n\n\n\nConfiguration\n\n\n\n\neverett\n - \ndocs\n\n\nWorks with .env and ini files.\n\n\n\n\n\n\n\n\nOther\n\n\n\n\nopenpyxl\n\n\nLibrary to read and write Excel files including latest Excel files.\n\n\n\n\n\n\nclick\n - Command line library for Python.\n\n\nMicrosoft Word Merge Docs \n\n\ndocx-mailmerge\n\n\nPopulating MS Word Templates with Python\n\n\n\n\n\n\npython-docx\n\n\nAutomate The Boring Stuff\n\n\n\n\n\n\n\n\n\n\n\n\nTesting\n\n\n\n\nNose\n - Testing for python\n\n\n\n\nDocumentation\n\n\n\n\nMkdocs\n\n\nGenerate documentation for project and allows you to deploy to \ngithub gh-pages",
+            "text": "Python Packages\n\n\nDatabase\n\n\n\n\nSQLAlchemy\n\n\nSQLAlchemy Utils\n\n\nCustom datatypes and utility functions for SQLAlchemy. Inludes UUIDType.\n\n\n\n\n\n\npsycopg\n - PostgreSQL Python Adapter\n\n\n\n\nConfiguration\n\n\n\n\neverett\n - \ndocs\n\n\nWorks with .env and ini files.\n\n\n\n\n\n\n\n\nOther\n\n\n\n\nopenpyxl\n\n\nLibrary to read and write Excel files including latest Excel files.\n\n\n\n\n\n\nclick\n - Command line library for Python.\n\n\nMicrosoft Word Merge Docs \n\n\ndocx-mailmerge\n\n\nPopulating MS Word Templates with Python\n\n\n\n\n\n\npython-docx\n\n\nAutomate The Boring Stuff\n\n\n\n\n\n\n\n\n\n\n\n\nTesting\n\n\n\n\nNose\n - Testing for python\n\n\n\n\nDocumentation\n\n\n\n\nMkdocs\n\n\nGenerate documentation for project and allows you to deploy to \ngithub gh-pages",
             "title": "Packages"
         },
         {
             "location": "/python/packages/#python-packages",
             "text": "",
             "title": "Python Packages"
-        },
-        {
-            "location": "/python/packages/#frameworks",
-            "text": "API Star  Flask Site  Frozen Flask  -  Site  Used for  Wineries Of the Sierra Foothills  and personal site  Johan Martin  Generate static site from flask site.    Awesome Flask",
-            "title": "Frameworks"
         },
         {
             "location": "/python/packages/#database",
@@ -1887,7 +1882,7 @@
         },
         {
             "location": "/python/pipenv/",
-            "text": "Learning About PipENV\n\n\nResources\n\n\n\n\nPipenv Docs\n\n\nTutorials\n\n\nHitchhikers Guide - Pipenv\n\n\nPackaging with Pipenv\n\n\nManaging Dependencies\n - Python.org - packaging\n\n\n\n\n\n\n\n\nNotes\n\n\n\n\npip install --user pipenv\n - installs in user mode.\n\n\npipenv shell\n - activate the virtual environment",
+            "text": "Learning About PipENV\n\n\nResources\n\n\n\n\nPipenv Docs\n\n\nTutorials\n\n\nHitchhikers Guide - Pipenv\n\n\nPackaging with Pipenv\n\n\nManaging Dependencies\n - Python.org - packaging\n\n\n\n\n\n\n\n\nNotes\n\n\n\n\npip install --user pipenv\n - installs in user mode.\n\n\npipenv shell\n - activate the virtual environment\n\n\nConvert my \nvirtualenvwrapper\n project to \npipenv\n project.\n\n\nCD into directory of project.\n\n\npipenv install\n - will install packages from \nrequirements.txt\n file.\n\n\npipenv shell\n - launch the virtual environment\n\n\nEdit \npidfile\n to update dependencies to '*'.\n\n\npipenv update\n - update to latest packages.",
             "title": "Pipenv"
         },
         {
@@ -1902,7 +1897,7 @@
         },
         {
             "location": "/python/pipenv/#notes",
-            "text": "pip install --user pipenv  - installs in user mode.  pipenv shell  - activate the virtual environment",
+            "text": "pip install --user pipenv  - installs in user mode.  pipenv shell  - activate the virtual environment  Convert my  virtualenvwrapper  project to  pipenv  project.  CD into directory of project.  pipenv install  - will install packages from  requirements.txt  file.  pipenv shell  - launch the virtual environment  Edit  pidfile  to update dependencies to '*'.  pipenv update  - update to latest packages.",
             "title": "Notes"
         },
         {
