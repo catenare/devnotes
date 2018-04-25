@@ -9,3 +9,9 @@
 ## Notes
 * `pip install --user pipenv` - installs in user mode.
 * `pipenv shell` - activate the virtual environment
+* Convert my **virtualenvwrapper** project to **pipenv** project.
+    * CD into directory of project.
+    * `pipenv install` - will install packages from **requirements.txt** file.
+    * `pipenv shell` - launch the virtual environment
+    * Edit **pidfile** to update dependencies to '*'.
+    * `pipenv update` - update to latest packages.

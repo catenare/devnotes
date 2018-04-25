@@ -4,9 +4,17 @@
 ### PHP
 * [apigility](https://apigility.org/) - provided by Zend Framework. Swagger support.
 * [API Platform](https://api-platform.com/) - REST and GraphQL support.
+
 ### Python
 * [Falcon](https://falconframework.org/) - Just API framework for Python
 * [Django Rest Framework](http://www.django-rest-framework.org/)
+* [API Star](https://github.com/encode/apistar)
+* [Flask Site](http://flask.pocoo.org)
+    * [Frozen Flask](* [Awesome Flask](https://github.com/humiaozuzu/awesome-flask)) - [Site](https://pythonhosted.org/Frozen-Flask/)
+        * Used for [Wineries Of the Sierra Foothills](http://www.wineriesofthesierrafoothills.com) and personal site [Johan Martin](http://www.johan-martin.com)
+        * Generate static site from flask site.
+    * [Awesome Flask](https://github.com/humiaozuzu/awesome-flask)
+
 ### Node.js API Frameworks
 * [Loopback](https://loopback.io/)
 * [Strapi](https://strapi.io/)
