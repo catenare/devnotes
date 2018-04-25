@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Developer Notebook for Johan Martin\n\n\nThis is my notes, snippets and lists. Most of it is related to items I had to find solutions for on the internet. Some of it might be obsolete already but at least I know where to look when I run into the problem again.\n\n\n\nMy Info\n\n\n\n\nEmail\n\n\n\n\nMy Links\n\n\n\n\nWebsite\n\n\nGit Projects\n\n\n\n\nRecommendations\n\n\n\n\nI think this is the best paper notebook for developers. Confidant available from \nBaron Fig\n \n\n\n\n\n\nJournal\n\n\n\n\n\n\n19 Nov. 2017\n\n\n\n\nFocus on front-end\n\n\nAdded a placeholder partial for placeholder images using svg. Makes for a simple placeholder without being dependent on the network.\n\n\nDoes not work inside repeat sections.\n\n\n\n\n\n\nFoundation xy grid is flexbox. Over 70% support in South Africa according to caniuse.\n\n\nSettings.scss\n\n\n$global-flex: true;\n\n\n\n\n\n\napp.scss\n\n\n@include foundation-xy-grid-classes;\n\n\n\n\n\n\nLearning about flex with Foundation classes - Good youtube introduction.\n\n\nCreating card layout using uswto.com blog page as template.\n\n\nustwo blog page\n - open sourced their web site. Using reactjs and wordpress.\n\n\n\n\n\n\nReactivated my codepen account.\n\n\nSetup styleguide for site.\n\n\nInitial layout\n\n\nList of styles that we're using.\n\n\nGoal is to be at least consistent.\n\n\nTry to get an MVP going as quickly as possible.\n\n\n\n\n\n\n\n\n\n\nAiming to get the blog section going with work information at the bottom.\n\n\nResume in the footer with email list and contact me form.\n\n\n\n\n\n\n\n\n\n\n\n\n20 Nov 2017\n\n\n\n\nTrying to play with OBS - Open Source screen capturing software. Might be good for creating screen recordings. Will be text based rather than talking.\n\n\n\n\n\n\n\n\n05 March 2018\n\n\n\n\nCleaning up my notes a little. Have many duplicates and some out of date. Plus, want to make sure current notes are included.",
+            "text": "Developer Notebook for Johan Martin\n\n\nThis is my notes, snippets and lists. Most of it is related to items I had to find solutions for on the internet. Some of it might be obsolete already but at least I know where to look when I run into the problem again.\n\n\n\nMy Info\n\n\n\n\nEmail\n\n\n\n\nMy Links\n\n\n\n\nWebsite\n\n\nGit Projects\n\n\n\n\nRecommendations\n\n\n\n\nI think this is the best paper notebook for developers. Confidant available from \nBaron Fig\n \n\n\n\n\n\nJournal\n\n\n\n\n\n\n19 Nov. 2017\n\n\n\n\nFocus on front-end\n\n\nAdded a placeholder partial for placeholder images using svg. Makes for a simple placeholder without being dependent on the network.\n\n\nDoes not work inside repeat sections.\n\n\n\n\n\n\nFoundation xy grid is flexbox. Over 70% support in South Africa according to caniuse.\n\n\nSettings.scss\n\n\n$global-flex: true;\n\n\n\n\n\n\napp.scss\n\n\n@include foundation-xy-grid-classes;\n\n\n\n\n\n\nLearning about flex with Foundation classes - Good youtube introduction.\n\n\nCreating card layout using uswto.com blog page as template.\n\n\nustwo blog page\n - open sourced their web site. Using reactjs and wordpress.\n\n\n\n\n\n\nReactivated my codepen account.\n\n\nSetup styleguide for site.\n\n\nInitial layout\n\n\nList of styles that we're using.\n\n\nGoal is to be at least consistent.\n\n\nTry to get an MVP going as quickly as possible.\n\n\n\n\n\n\n\n\n\n\nAiming to get the blog section going with work information at the bottom.\n\n\nResume in the footer with email list and contact me form.\n\n\n\n\n\n\n\n\n\n\n\n\n20 Nov 2017\n\n\n\n\nTrying to play with OBS - Open Source screen capturing software. Might be good for creating screen recordings. Will be text based rather than talking.\n\n\n\n\n\n\n\n\n05 March 2018\n\n\n\n\nCleaning up my notes a little. Have many duplicates and some out of date. Plus, want to make sure current notes are included.\n\n\n24 April 2018\n\n\nAdded API notes for PHP and Python. Created section for \npipenv\n.",
             "title": "Home"
         },
         {
@@ -27,7 +27,7 @@
         },
         {
             "location": "/#journal",
-            "text": "19 Nov. 2017   Focus on front-end  Added a placeholder partial for placeholder images using svg. Makes for a simple placeholder without being dependent on the network.  Does not work inside repeat sections.    Foundation xy grid is flexbox. Over 70% support in South Africa according to caniuse.  Settings.scss  $global-flex: true;    app.scss  @include foundation-xy-grid-classes;    Learning about flex with Foundation classes - Good youtube introduction.  Creating card layout using uswto.com blog page as template.  ustwo blog page  - open sourced their web site. Using reactjs and wordpress.    Reactivated my codepen account.  Setup styleguide for site.  Initial layout  List of styles that we're using.  Goal is to be at least consistent.  Try to get an MVP going as quickly as possible.      Aiming to get the blog section going with work information at the bottom.  Resume in the footer with email list and contact me form.       20 Nov 2017   Trying to play with OBS - Open Source screen capturing software. Might be good for creating screen recordings. Will be text based rather than talking.     05 March 2018   Cleaning up my notes a little. Have many duplicates and some out of date. Plus, want to make sure current notes are included.",
+            "text": "19 Nov. 2017   Focus on front-end  Added a placeholder partial for placeholder images using svg. Makes for a simple placeholder without being dependent on the network.  Does not work inside repeat sections.    Foundation xy grid is flexbox. Over 70% support in South Africa according to caniuse.  Settings.scss  $global-flex: true;    app.scss  @include foundation-xy-grid-classes;    Learning about flex with Foundation classes - Good youtube introduction.  Creating card layout using uswto.com blog page as template.  ustwo blog page  - open sourced their web site. Using reactjs and wordpress.    Reactivated my codepen account.  Setup styleguide for site.  Initial layout  List of styles that we're using.  Goal is to be at least consistent.  Try to get an MVP going as quickly as possible.      Aiming to get the blog section going with work information at the bottom.  Resume in the footer with email list and contact me form.       20 Nov 2017   Trying to play with OBS - Open Source screen capturing software. Might be good for creating screen recordings. Will be text based rather than talking.     05 March 2018   Cleaning up my notes a little. Have many duplicates and some out of date. Plus, want to make sure current notes are included.  24 April 2018  Added API notes for PHP and Python. Created section for  pipenv .",
             "title": "Journal"
         },
         {
@@ -99,6 +99,71 @@
             "location": "/Notes/lookfindme/#sections",
             "text": "Front-end development  vuejs  typescript  buefy  vuetify  AWS Cloud using mobilehub  aws-amplify  awsmobile  API  Creating json schema for validation   {\n  primary: \"#f44336\",\n  secondary: \"#e57373\",\n  accent: \"#9c27b0\",\n  error: \"#f44336\",\n  warning: \"#ffeb3b\",\n  info: \"#2196f3\",\n  success: \"#4caf50\"\n}",
             "title": "Sections"
+        },
+        {
+            "location": "/api/general/",
+            "text": "All About APIs - Servers and tools.\n\n\nFrameworks\n\n\nPHP\n\n\n\n\napigility\n - provided by Zend Framework. Swagger support.\n\n\nAPI Platform\n - REST and GraphQL support.\n\n\n\n\nPython\n\n\n\n\n\n\nFalcon\n - Just API framework for Python\n\n\n\n\n\n\nDjango Rest Framework\n\n\n\n\n\n\nAPI Tools\n\n\nDocs\n\n\n\n\nAPI Central Docs\n\n\n\n\nAPI Documentation Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nMock Service\n\n\n\n\nMockbin\n - test, mock and track http requests & responses\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers",
+            "title": "APIs"
+        },
+        {
+            "location": "/api/general/#all-about-apis-servers-and-tools",
+            "text": "",
+            "title": "All About APIs - Servers and tools."
+        },
+        {
+            "location": "/api/general/#frameworks",
+            "text": "",
+            "title": "Frameworks"
+        },
+        {
+            "location": "/api/general/#php",
+            "text": "apigility  - provided by Zend Framework. Swagger support.  API Platform  - REST and GraphQL support.",
+            "title": "PHP"
+        },
+        {
+            "location": "/api/general/#python",
+            "text": "Falcon  - Just API framework for Python    Django Rest Framework",
+            "title": "Python"
+        },
+        {
+            "location": "/api/general/#api-tools",
+            "text": "",
+            "title": "API Tools"
+        },
+        {
+            "location": "/api/general/#docs",
+            "text": "API Central Docs",
+            "title": "Docs"
+        },
+        {
+            "location": "/api/general/#api-documentation-tools",
+            "text": "RAML  Swagger",
+            "title": "API Documentation Tools"
+        },
+        {
+            "location": "/api/general/#api-mock-tools",
+            "text": "MockServer  - Has Docker config  WireMock  - Java  Osprey Mock Service  - RAML mock service. 1.0 compatible.  Osprey Service  Prism  - run locally  Swagger-codegen  - Has Docker Config  Imposter  - Has Docker config",
+            "title": "API Mock Tools"
+        },
+        {
+            "location": "/api/general/#mock-service",
+            "text": "Mockbin  - test, mock and track http requests & responses",
+            "title": "Mock Service"
+        },
+        {
+            "location": "/api/general/#how-to-mock-api-server",
+            "text": "Mock Rest API with JSON Server  - Create your own mock API server with faker.js  Testing External APIs with Mock Servers  - Use python for testing  Go Raml",
+            "title": "How To - Mock API Server"
+        },
+        {
+            "location": "/api/general/#other",
+            "text": "Standalone RAML API Mocking Tools Surface  - Article - Mock tools  RAML and Osprey - a Better Way to Build Mock APIs  Sandbox  - online service for API mocking",
+            "title": "Other"
+        },
+        {
+            "location": "/api/general/#creating-a-mock-api-server-nodejs",
+            "text": "Using  json-server  Setup  Create directory -  test_server  touch server.js  - server startup file  npm init  - create config file. Set  server.js  as the start script.  Create  server.js  file.  npm install faker json-server --save-dev         //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers",
+            "title": "Creating a mock api server - node.js"
         },
         {
             "location": "/cloud/aws/aws/",
@@ -1712,7 +1777,7 @@
         },
         {
             "location": "/python/general/",
-            "text": "Using Python\n\n\nNotices\n\n\n\n\nUsing python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.\n\n\n\n\nPip\n\n\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall\n\n\n\n\nInstalling packages\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nsudo port install python36 +readline\n - fixes issues with python and terminal Mac OS X\n\n\n\n\n\n\n\n\nCreate package Resources\n\n\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide\n\n\n\n\nOther issues\n\n\n\n\nReload module from REPL\n\n\nimport imp\n\n\nimport.reload(module)\n - module is the name of the module to reload\n\n\n\n\n\n\nImport packages from current directory\n\n\nfrom . import package\n - will look in current directory for the package\n\n\n\n\n\n\nShuffle list - random sequence for list\n\n\nimport random\n\n\nlist = [a,b,c,d]\n\n\nrandom.shuffle(list)\n\n\nfor item in list:\n\n\n\n\n\n\nIssue with ASCII environment\n\n\nPython 3 Surrogate handling\n\n\nAdd to \n~/.profile\n\n\nexport LC_ALL=en_US.UTF-8\n\n\nexport LANG=en_US.UTF-8\n\n\n\n\n\n\n\n\n\n\n\n\nVirtual Environments\n\n\n\n\nVirtualEnvWrapper\n\n\n\n\nSetting up uswgi on Ubuntu with Flex\n\n\n\n\nResource: \nHow to serve Flask Application\n\n\nPackages needed.\n\n\nsudo apt install build-essentials python3-dev\n - needed to build uswgi\n\n\n\n\n\n\nUse \nvirtualenv\n and create virtualenv.\n\n\nInstall \nflask\n and \nuswgi\n.\n\n\nConfigure firewall - \nsudo ufw allow 5000\n\n\nSetup \nwsgi.py\n\n\n\n\nfrom myproject import app\n\nif __name__ == \"__main__\":\n    app.run()\n\n\n\n\n\n\nTest it: \nuwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app",
+            "text": "Using Python\n\n\nResources\n\n\n\n\nFullstack Python\n\n\nPodcasts\n\n\nTalk Python To Me\n\n\nPython Bytes\n\n\n\n\n\n\n\n\nNotices\n\n\n\n\nUsing python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.\n\n\n\n\nPip\n\n\n\n\nUpgrade pip - \npip install --upgrade pip\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall\n\n\n\n\nInstalling packages\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nsudo port install python36 +readline\n - fixes issues with python and terminal Mac OS X\n\n\n\n\n\n\n\n\nCreate package Resources\n\n\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide\n\n\n\n\nOther issues\n\n\n\n\nReload module from REPL\n\n\nimport imp\n\n\nimport.reload(module)\n - module is the name of the module to reload\n\n\n\n\n\n\nImport packages from current directory\n\n\nfrom . import package\n - will look in current directory for the package\n\n\n\n\n\n\nShuffle list - random sequence for list\n\n\nimport random\n\n\nlist = [a,b,c,d]\n\n\nrandom.shuffle(list)\n\n\nfor item in list:\n\n\n\n\n\n\nIssue with ASCII environment\n\n\nPython 3 Surrogate handling\n\n\nAdd to \n~/.profile\n\n\nexport LC_ALL=en_US.UTF-8\n\n\nexport LANG=en_US.UTF-8\n\n\n\n\n\n\n\n\n\n\n\n\nVirtual Environments\n\n\n\n\nVirtualEnvWrapper\n\n\n\n\nSetting up uswgi on Ubuntu with Flex\n\n\n\n\nResource: \nHow to serve Flask Application\n\n\nPackages needed.\n\n\nsudo apt install build-essentials python3-dev\n - needed to build uswgi\n\n\n\n\n\n\nUse \nvirtualenv\n and create virtualenv.\n\n\nInstall \nflask\n and \nuswgi\n.\n\n\nConfigure firewall - \nsudo ufw allow 5000\n\n\nSetup \nwsgi.py\n\n\n\n\nfrom myproject import app\n\nif __name__ == \"__main__\":\n    app.run()\n\n\n\n\n\n\nTest it: \nuwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app",
             "title": "General"
         },
         {
@@ -1721,13 +1786,18 @@
             "title": "Using Python"
         },
         {
+            "location": "/python/general/#resources",
+            "text": "Fullstack Python  Podcasts  Talk Python To Me  Python Bytes",
+            "title": "Resources"
+        },
+        {
             "location": "/python/general/#notices",
             "text": "Using python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.",
             "title": "Notices"
         },
         {
             "location": "/python/general/#pip",
-            "text": "Error message:  \"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"  Problems  ~/Library/Application Support/pip/pip.conf  contains  user=true  Resolution: Override the config in your virtualenv pip config file  Create  $VIRTUAL_ENV/pip.conf  Place config information to override user=true     [install]\nuser=false   Pip Configuration  |  StackOverflow Issue",
+            "text": "Upgrade pip -  pip install --upgrade pip  Error message:  \"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"  Problems  ~/Library/Application Support/pip/pip.conf  contains  user=true  Resolution: Override the config in your virtualenv pip config file  Create  $VIRTUAL_ENV/pip.conf  Place config information to override user=true     [install]\nuser=false   Pip Configuration  |  StackOverflow Issue",
             "title": "Pip"
         },
         {
@@ -1809,6 +1879,26 @@
             "location": "/python/packages/#documentation",
             "text": "Mkdocs  Generate documentation for project and allows you to deploy to  github gh-pages",
             "title": "Documentation"
+        },
+        {
+            "location": "/python/pipenv/",
+            "text": "Learning About PipENV\n\n\nResources\n\n\n\n\nPipenv Docs\n\n\nTutorials\n\n\nHitchhikers Guide - Pipenv\n\n\nPackaging with Pipenv\n\n\nManaging Dependencies\n - Python.org - packaging\n\n\n\n\n\n\n\n\nNotes\n\n\n\n\npip install --user pipenv\n - installs in user mode.\n\n\npipenv shell\n - activate the virtual environment",
+            "title": "Pipenv"
+        },
+        {
+            "location": "/python/pipenv/#learning-about-pipenv",
+            "text": "",
+            "title": "Learning About PipENV"
+        },
+        {
+            "location": "/python/pipenv/#resources",
+            "text": "Pipenv Docs  Tutorials  Hitchhikers Guide - Pipenv  Packaging with Pipenv  Managing Dependencies  - Python.org - packaging",
+            "title": "Resources"
+        },
+        {
+            "location": "/python/pipenv/#notes",
+            "text": "pip install --user pipenv  - installs in user mode.  pipenv shell  - activate the virtual environment",
+            "title": "Notes"
         },
         {
             "location": "/python/research/",
@@ -2462,13 +2552,18 @@
         },
         {
             "location": "/tools/",
-            "text": "Developer Helper Tools\n\n\nServer Mock Tools\n\n\n\n\nMailCatcher\n - Localhost email intercept\n\n\nNgrok\n - Secure tunnel to localhost\n\n\nRandom User Generator\n - API to generate random users.\n\n\n\n\nSource code generators\n\n\n\n\nJHipster\n - Generate and deploy Spring Boot + Angular Apps.\n\n\n\n\nAPI Tools\n\n\nDocs\n\n\n\n\nAPI Central Docs\n\n\n\n\nAPI Documentation Tools\n\n\n\n\nRAML\n\n\nSwagger\n\n\n\n\nAPI Mock Tools\n\n\n\n\nMockServer\n - Has Docker config\n\n\nWireMock\n - Java\n\n\nOsprey Mock Service\n - RAML mock service. 1.0 compatible.\n\n\nOsprey Service\n\n\nPrism\n - run locally\n\n\nSwagger-codegen\n - Has Docker Config\n\n\nImposter\n - Has Docker config\n\n\n\n\nMock Service\n\n\n\n\nMockbin\n - test, mock and track http requests & responses\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers\n\n\n\n\nTesting Framework\n\n\n\n\nGalen Framework\n - Look and feel testing for responsive sites.\n\n\n\n\nCode Analyzers\n\n\n\n\nPMD\n - Source code analyser. Includes JS, Java, checks for duplicates in PHP\n\n\nSourceTrail\n - Sourcecode explorer for Java and C++\n\n\n\n\nEditors\n\n\nVisual Studio Code\n\n\n\n\nAdding multiple projects to workspace - \nMultiple Root Workspaces\n\n\n\n\nImage Sprites\n\n\n\n\nPiskelApp\n\n\n\n\nScreem recording\n\n\n\n\nOBS Studio\n - open source screen recording",
+            "text": "Developer Helper Tools\n\n\nBuild Tools\n\n\n\n\nBazel\n - build tool. Next iteration of building web projects.\n\n\n\n\nServer Mock Tools\n\n\n\n\nMailCatcher\n - Localhost email intercept\n\n\nNgrok\n - Secure tunnel to localhost\n\n\nRandom User Generator\n - API to generate random users.\n\n\n\n\nSource code generators\n\n\n\n\nJHipster\n - Generate and deploy Spring Boot + Angular Apps.\n\n\n\n\nMock Service\n\n\n\n\nMockbin\n - test, mock and track http requests & responses\n\n\n\n\nHow To - Mock API Server\n\n\n\n\nMock Rest API with JSON Server\n - Create your own mock API server with faker.js\n\n\nTesting External APIs with Mock Servers\n - Use python for testing\n\n\nGo Raml\n\n\n\n\nOther\n\n\n\n\nStandalone RAML API Mocking Tools Surface\n - Article - Mock tools\n\n\nRAML and Osprey - a Better Way to Build Mock APIs\n\n\nSandbox\n - online service for API mocking\n\n\n\n\nCreating a mock api server - node.js\n\n\n\n\nUsing \njson-server\n\n\nSetup\n\n\nCreate directory - \ntest_server\n\n\ntouch server.js\n - server startup file\n\n\nnpm init\n - create config file. Set \nserver.js\n as the start script.\n\n\nCreate \nserver.js\n file.\n\n\nnpm install faker json-server --save-dev\n\n\n\n\n\n\n\n\n    //server.js\n    const jsonServer = require('json-server')\n    const customers = require('./customers')\n    const server = jsonServer.create()\n    const router = jsonServer.router(customers())\n    const middlewares = jsonServer.defaults()\n\n    server.use(middlewares)\n    server.use(router)\n    server.listen(3000, () => {\n      console.log('JSON Server is running')\n    })\n\n    //customer.js\n    var faker = require('faker')\n    function generateCustomers () {\n        var customers = []\n        for (var id = 0; id < 50; id++) {\n\n        var firstName = faker.name.firstName();\n        var lastName = faker.name.lastName();\n        var phoneNumber = faker.phone.phoneNumberFormat();\n\n        customers.push({\n            \"id\": id,\n            \"first_name\": firstName,\n            \"last_name\": lastName,\n            \"phone\": phoneNumber\n        })\n    }\n    return { \"customers\": customers}\n    }\n    module.exports = generateCustomers\n\n\n\n\nTesting Framework\n\n\n\n\nGalen Framework\n - Look and feel testing for responsive sites.\n\n\n\n\nCode Analyzers\n\n\n\n\nPMD\n - Source code analyser. Includes JS, Java, checks for duplicates in PHP\n\n\nSourceTrail\n - Sourcecode explorer for Java and C++\n\n\n\n\nEditors\n\n\nVisual Studio Code\n\n\n\n\nAdding multiple projects to workspace - \nMultiple Root Workspaces\n\n\n\n\nImage Sprites\n\n\n\n\nPiskelApp\n\n\n\n\nScreen recording\n\n\n\n\nOBS Studio\n - open source screen recording",
             "title": "Mock and API Tools"
         },
         {
             "location": "/tools/#developer-helper-tools",
             "text": "",
             "title": "Developer Helper Tools"
+        },
+        {
+            "location": "/tools/#build-tools",
+            "text": "Bazel  - build tool. Next iteration of building web projects.",
+            "title": "Build Tools"
         },
         {
             "location": "/tools/#server-mock-tools",
@@ -2479,26 +2574,6 @@
             "location": "/tools/#source-code-generators",
             "text": "JHipster  - Generate and deploy Spring Boot + Angular Apps.",
             "title": "Source code generators"
-        },
-        {
-            "location": "/tools/#api-tools",
-            "text": "",
-            "title": "API Tools"
-        },
-        {
-            "location": "/tools/#docs",
-            "text": "API Central Docs",
-            "title": "Docs"
-        },
-        {
-            "location": "/tools/#api-documentation-tools",
-            "text": "RAML  Swagger",
-            "title": "API Documentation Tools"
-        },
-        {
-            "location": "/tools/#api-mock-tools",
-            "text": "MockServer  - Has Docker config  WireMock  - Java  Osprey Mock Service  - RAML mock service. 1.0 compatible.  Osprey Service  Prism  - run locally  Swagger-codegen  - Has Docker Config  Imposter  - Has Docker config",
-            "title": "API Mock Tools"
         },
         {
             "location": "/tools/#mock-service",
@@ -2546,9 +2621,9 @@
             "title": "Image Sprites"
         },
         {
-            "location": "/tools/#screem-recording",
+            "location": "/tools/#screen-recording",
             "text": "OBS Studio  - open source screen recording",
-            "title": "Screem recording"
+            "title": "Screen recording"
         },
         {
             "location": "/cmd/cmd/",
@@ -2717,13 +2792,18 @@
         },
         {
             "location": "/research/",
-            "text": "Projects of interest\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\nLists\n\n\nAwesome Angular\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\nW3 Layouts\n\n\nFreshdesign Templates\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Awesome List\n - List of lists\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome PHP\n\n\nAwesome Angular\n\n\nAwesome Angular Components\n\n\nAwesome IOS\n - \nmain site\n\n\nAwesome Kotlin\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\nraywenderlich.com\n - IOS/development resources\n\n\n\n\nList of lists\n\n\n\n\nSindresourhus\n\n\nUseful and silly lists\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\n\n\nUnison\n - File sync utility\n\n\n\n\n\n\nReport Servers\n\n\n\n\nReportServer\n - integrates Birt reports. Open Source\n\n\n\n\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.\n\n\n\n\nOther Projects\n\n\n\n\nfreeCodeCamp\n\n\nMail For Good\n - Open Source email campaign management tool.\n\n\nConference For Good\n\n\n\n\n\n\nwhat 3 words\n - location alternative to addresses\n\n\nApostrophe CMS\n - Node.js based CMS\n\n\n\n\nEvent Management Software\n\n\n\n\nAttendize\n - self-hosted ticket sales online (think EventBrite)\n\n\nOpen Source Event Manager\n - Ruby on Rails event manager for tech conference\n\n\nOpen Conference Ware\n - Ruby on Rails conference manager.\n\n\nEvent Espresso\n - Wordpress Plugin\n\n\n\n\nRPC Framework\n\n\n\n\ngRPC\n\n\nApache Thrift\n\n\n\n\nService Providers\n\n\n\n\nChurch Insight\n - church admin software.\n\n\nPilot\n - bookkeeping software.\n\n\n\n\nAsset Management\n\n\n\n\nCloudinary\n - Digital Asset Management in the cloud. Has a free tier.\n\n\nHas a wordpress plugin\n\n\n\n\n\n\nFilestack\n - Has a free tier.\n\n\n\n\nEdge Services\n\n\n\n\nFastly\n - CDN/Edge servers.\n\n\n\n\nOther Services\n\n\n\n\nSentry\n - has a free tier.\n\n\nError tracking service. Able to rack from JavaScript, PHP, Java, Python.\n\n\n\n\n\n\nFormSpree\n - Form to email. First 1000 are free.\n\n\n\n\nAnimation\n\n\n\n\nGSAP\n\n\n\n\nPresentation Frameworks [Web based]\n\n\n\n\nImpress\n\n\nRemark\n\n\nDeck\n\n\nWebSlides\n\n\n\n\nLists for marketing site\n\n\n\n\nPlaces To Post Your Startup\n\n\n\n\nBlockchain\n\n\n\n\nNon-financial Blockchain\n\n\n\n\nFree Services for Devs\n\n\n\n\nFree for Devs",
+            "text": "Projects of interest\n\n\nSoftware Engineering\n\n\n\n\nKevlin Henney - #KevlinHenney\n\n\n\n\nWeb\n\n\nTools to watch\n\n\n\n\nVapor\n - Swift3 framework for web application development.\n\n\nElectrode\n - made by Walmart. ReactJS framework essentially.\n\n\nVue.js\n - another front-end framework.\n\n\n\n\nJavaScript\n\n\n\n\nelm\n\n\nTutorial\n\n\nAwesome list of Elm Tutorials\n\n\n\n\n\n\nGrapeJs\n - Web builder framework. JavaScript. Sites without coding. Integrate into own site.\n\n\nMonaco Editor\n - Microsoft javascript based code editor.\n\n\n\n\nAngular\n\n\n\n\nTools\n\n\nAngular Augury\n - debug and profile angular 2 apps\n\n\nChrome extension\n\n\n\n\n\n\nLists\n\n\nAwesome Angular\n\n\n\n\n\n\n\n\nWeb Templates\n\n\n\n\nFlakes Admin Template\n - Admin front-end template.\n\n\nFramework7\n - mobile web template\n\n\nW3 Layouts\n\n\nFreshdesign Templates\n\n\n\n\nPython\n\n\n\n\nPython books online \nInvent with python\n\n\n\n\nResource Lists\n\n\n\n\nAwesome Awesome List\n - List of lists\n\n\nAwesome Weekly\n - \nGithub\n\n\nAwesome Serverless List\n\n\nAwesome Python\n\n\nAwesome Boilerplates & Templates\n\n\nAwesome Elm Tutorials\n\n\nAwesome Flask\n\n\nAwesome PHP\n\n\nAwesome Angular\n\n\nAwesome Angular Components\n\n\nAwesome IOS\n - \nmain site\n\n\nAwesome Kotlin\n\n\nFront-end Dev Bookmarks\n\n\nFront End Directory\n\n\n\n\n\n\nraywenderlich.com\n - IOS/development resources\n\n\n\n\nList of lists\n\n\n\n\nSindresourhus\n\n\nUseful and silly lists\n\n\n\n\nAlgorithm Resources\n\n\n\n\nGrokking Algorithms Source\n\n\nElementary Algorithms and Data Structures\n\n\nThe Coders Hub\n - Algorithms in multiple languages\n\n\n\n\nOther\n\n\n\n\nBoomerang\n - Data conversion and synchronization\n\n\n\n\nUnison\n - File sync utility\n\n\n\n\n\n\nReport Servers\n\n\n\n\nReportServer\n - integrates Birt reports. Open Source\n\n\n\n\n\n\n\n\nServerless\n\n\n\n\nServerless\n - serverless framework\n\n\n\n\nMobile Prototyping Tools\n\n\n\n\nMarvel\n - Prototyping tool\n\n\nCSS3 Animations\n - use for interactivity\n\n\nHammer\n - JavaScript library for touch.\n\n\nAxure\n - Has a free educational version.\n\n\n\n\nOther Projects\n\n\n\n\nfreeCodeCamp\n\n\nMail For Good\n - Open Source email campaign management tool.\n\n\nConference For Good\n\n\n\n\n\n\nwhat 3 words\n - location alternative to addresses\n\n\nApostrophe CMS\n - Node.js based CMS\n\n\n\n\nEvent Management Software\n\n\n\n\nAttendize\n - self-hosted ticket sales online (think EventBrite)\n\n\nOpen Source Event Manager\n - Ruby on Rails event manager for tech conference\n\n\nOpen Conference Ware\n - Ruby on Rails conference manager.\n\n\nEvent Espresso\n - Wordpress Plugin\n\n\n\n\nRPC Framework\n\n\n\n\ngRPC\n\n\nApache Thrift\n\n\n\n\nService Providers\n\n\n\n\nChurch Insight\n - church admin software.\n\n\nPilot\n - bookkeeping software.\n\n\n\n\nAsset Management\n\n\n\n\nCloudinary\n - Digital Asset Management in the cloud. Has a free tier.\n\n\nHas a wordpress plugin\n\n\n\n\n\n\nFilestack\n - Has a free tier.\n\n\n\n\nEdge Services\n\n\n\n\nFastly\n - CDN/Edge servers.\n\n\n\n\nOther Services\n\n\n\n\nSentry\n - has a free tier.\n\n\nError tracking service. Able to rack from JavaScript, PHP, Java, Python.\n\n\n\n\n\n\nFormSpree\n - Form to email. First 1000 are free.\n\n\n\n\nAnimation\n\n\n\n\nGSAP\n\n\n\n\nPresentation Frameworks [Web based]\n\n\n\n\nImpress\n\n\nRemark\n\n\nDeck\n\n\nWebSlides\n\n\n\n\nLists for marketing site\n\n\n\n\nPlaces To Post Your Startup\n\n\n\n\nBlockchain\n\n\n\n\nNon-financial Blockchain\n\n\n\n\nFree Services for Devs\n\n\n\n\nFree for Devs",
             "title": "General"
         },
         {
             "location": "/research/#projects-of-interest",
             "text": "",
             "title": "Projects of interest"
+        },
+        {
+            "location": "/research/#software-engineering",
+            "text": "Kevlin Henney - #KevlinHenney",
+            "title": "Software Engineering"
         },
         {
             "location": "/research/#web",
