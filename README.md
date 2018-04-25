@@ -16,6 +16,6 @@
 
 ## Updates
 * Updated notes about WordPress CLI
-* 25 April 2018 - Added API section. PHP frameworks related creating APIs.
+* 25 April 2018 - Added API section. PHP, Python, Node.js frameworks related creating APIs.
 		* Added notes about **pipenv**
-		
+

@@ -6,8 +6,12 @@
 * [API Platform](https://api-platform.com/) - REST and GraphQL support.
 ### Python
 * [Falcon](https://falconframework.org/) - Just API framework for Python
-
 * [Django Rest Framework](http://www.django-rest-framework.org/)
+### Node.js API Frameworks
+* [Loopback](https://loopback.io/)
+* [Strapi](https://strapi.io/)
+* [Restify](http://restify.com/)
+* [Koa](http://koajs.com/)
 
 ## API Tools
 ### Docs
