@@ -39,3 +39,5 @@ This is my notes, snippets and lists. Most of it is related to items I had to fi
   * Cleaning up my notes a little. Have many duplicates and some out of date. Plus, want to make sure current notes are included.
 * 24 April 2018
   * Added API notes for PHP, Python and Node.js. Created section for **pipenv**.
+* 25 April 2018
+  * Jupyter Notebook notes added.
