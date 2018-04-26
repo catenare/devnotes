@@ -3,6 +3,13 @@
 * Install
     * `pipenv install jupyter`
 
+## Resources
+* [JupyterLab](http://jupyterlab.readthedocs.io/en/stable/) - Extends Jupyter.
+* [Jupyter Kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
+* [IPython Cookbook](http://ipython-books.github.io)
+* [Widgets](https://ipywidgets.readthedocs.io/en/latest/index.html)
+* [Jupyter Widgets](https://github.com/jupyter-widgets)
+
 ## Notes
 * Configuration - **~/Library/Jupyter**
 
@@ -32,3 +39,8 @@
         * `python -m elm_kernel.install`
 * Setting up *JuperLab* - [JupyterLab](http://jupyterlab.readthedocs.io/en/stable/index.html)
     * Install in jupyter folder - `pipenv jupyterlab`
+
+## [BeakerX](http://beakerx.com) - includes a number of kernel extensions including SQL
+* Other Resources
+    * [Binder](https://mybinder.org/v2/gh/twosigma/beakerx/0.15.2?filepath=StartHere.ipynb) - Notebooks with documentation for BeakerX
+* Very limited documentation.
