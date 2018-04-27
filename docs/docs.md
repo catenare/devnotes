@@ -52,6 +52,7 @@ pages:
 * Using ```mkdocs gh-deploy``` to upload docs.
 * Additional setup notes
     * [Squidfunk - material theme](http://squidfunk.github.io/mkdocs-material/getting-started/)
+    * `pipenv install mkdocs-material --dev`
 
 ## Installing Markdown Extensions
 * [PyMdown Extensions Documentation](http://facelessuser.github.io/pymdown-extensions/)
