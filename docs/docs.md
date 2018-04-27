@@ -12,11 +12,12 @@
 * Documentation pages stay in gh-pages branch.
 
 ## Setup
-1. Make virtual environment for python - `mkvirtualenv -a . docsdirectory`
-1. Install requirements - `pip install mkdocs pymdown-extensions pygments mkdocs-material`
-1. Create mkdocs project - `mkdocs new <project>`
-1. Enter into the project
-1. Edit the *mkdocs.yml* file
+* Use pipenv
+1. Create project directory and *CD* into it
+1. Install mkdocs as dev dependency - `pipenv install mkdocs --dev`
+1. Create mkdocs direcotry - `mkdocs new sitedocs`
+* *sitedocs\docs* is where the markdown goes.
+* *sitedocs\mkdocs.yml* - your table of contents.
 
 ## Using
 * `mkdocs serve` - local development server *http:\\localhost:8000*
@@ -54,7 +55,7 @@ pages:
 
 ## Installing Markdown Extensions
 * [PyMdown Extensions Documentation](http://facelessuser.github.io/pymdown-extensions/)
-* Installation: `pip install pymdown-extensions`
+* Installation: `pipenv install pymdown-extensions --dev`
 * Using:
     - *pymdownx.tilde*
     - *markdown.extensions.def_list*
