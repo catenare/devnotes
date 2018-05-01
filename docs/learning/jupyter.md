@@ -23,7 +23,7 @@
     * Init a *package.json* file
     * Install JavaScript kernel - install everything local in folder - [GitHub](https://github.com/n-riesco/ijavascript)
         * `pipenv install pyzmq`
-        * `npm install -g ijavascript`
+        * `npm install -g ijavascript` - Need to install as global for it to work correctly
         * `npx ijsinstall`
         * `npx ijsnotebook` - Run the notebook with JavaScript enabled
     * Install TypeScript kernel - [GitHub](https://github.com/nearbydelta/itypescript)

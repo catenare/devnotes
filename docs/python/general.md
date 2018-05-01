@@ -1,4 +1,4 @@
-# Using Python
+# Using Python Notes
 
 ## Resources
 * [Fullstack Python](https://www.fullstackpython.com/)
@@ -82,3 +82,10 @@ if __name__ == "__main__":
     app.run()
 ```
 * Test it: `uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app`
+
+## Special Method Names
+* [Computed Attributes](http://www.diveintopython3.net/special-method-names.html) - magic names for objects
+* [MagicMethods](https://rszalski.github.io/magicmethods/)
+
+## Notes
+* Jupyter Notebooks

@@ -141,4 +141,5 @@ pages:
         - 'Prototyping With Vue and Marvel': 'teaching/javascript/tutorials/prototypewithvue.md'
 - Misc:
   - 'House related': 'misc/house.md'
+  - 'Setup Multiple DSTV Exploras': 'misc/dstv.md'
   - 'Visual StoryTelling/Sketchnotes': 'misc/sketch.md'
