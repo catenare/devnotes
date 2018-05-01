@@ -41,6 +41,7 @@
     * Install in jupyter folder - `pipenv jupyterlab`
 
 ## [BeakerX](http://beakerx.com) - includes a number of kernel extensions including SQL
+* `pip install beakerx` then `beakerx install`
 * Other Resources
     * [Binder](https://mybinder.org/v2/gh/twosigma/beakerx/0.15.2?filepath=StartHere.ipynb) - Notebooks with documentation for BeakerX
 * Very limited documentation.
