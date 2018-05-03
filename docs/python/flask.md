@@ -9,5 +9,5 @@
 * Create virtual environment
   * `mkvirtualenv -a . {virtualenvname}`
 * Install flask
-  * `pip install flask SQLAlchemy WTForms psycopg2 click`
+  * `pip install flask SQLAlchemy psycopg2 click`
 

@@ -90,7 +90,8 @@ pages:
     - 'Pipenv': 'python/pipenv.md'
     - 'Research': 'python/research.md'
     - 'Flask': 'python/flask.md'
-    - 'SQLAlchemy': 'python/sqlalchemy.md'  
+    - 'SQLAlchemy': 'python/sqlalchemy.md'
+    - 'Testing': 'python/testing.md'
   - Ruby: 'ruby/ruby.md'
   - Java:
     - 'Notes': 'java/java.md'

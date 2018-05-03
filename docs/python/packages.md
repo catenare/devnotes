@@ -21,7 +21,9 @@
         * [Automate The Boring Stuff](https://automatetheboringstuff.com/chapter13/)
 
 ## Testing
-* [Nose](http://nose.readthedocs.io/en/latest/) - Testing for python
+* ~~[Nose](http://nose.readthedocs.io/en/latest/) - Testing for python~~
+* [PyTest][https://docs.pytest.org/en/latest/]
+* [Tavern][https://taverntesting.github.io/] - API testing
 
 ## Documentation
 * [Mkdocs](http://www.mkdocs.org)
