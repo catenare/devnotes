@@ -31,6 +31,11 @@
     * ~~Terminal all screwed up after using python repl~~
         * ~~`sudo port install python36 +readline` - fixes issues with python and terminal Mac OS X~~
 
+* uwsgi
+  * wsgi = wsgi.py file
+  * `uwsgi --socket 0.0.0.0:5000 --protocol=http -H /Users/themartins/Envs/lookfindmeAPI-jd3kET2g -w wsgi`
+  * `uwsgi --socket 0.0.0.0:5000 --protocol=http --wsgi-file wsgi.py --callable myApp -H /Users/themartins/Envs/lookfindmeAPI-jd3kET2g`
+
 ## ~~Pip~~ **Now using pipenv** [Pipenv](pipenv.md)
 * Upgrade pip - `pip install --upgrade pip`
 * Error message: *"Can not perform a '--user' install. User site-packages are not visible in this virtualenv"*
