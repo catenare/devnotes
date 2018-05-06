@@ -1467,7 +1467,7 @@
         },
         {
             "location": "/web/javascript/Angular/angular/",
-            "text": "Angular Framework\n\n\nStart a new project\n\n\nUsing Anular Cli\n\n\n\n\nng new [name} --skip-install --style scss\n\n\ncd into [name]\n\n\nBEGIN IGNORE BELOW\n\n\nnpm install foundation-sites @fortawesome/fontawesome @fortawesome/fontawesome-free-solid @fortawesome/fontawesome-free-webfonts awesome-typescript-loader\n\n\nnpm install\n - install all the packages\n\n\n\n\nSetup Foundation and FontAwesome\n\n\n\n\nCopy/create styles folder\n\n\nCopy/create foundation settings file\n\n\nCopy/create foundation import file\n\n\nEdit settings file\n\n\n@import '~foundation-sites/scss/util/util';\n\n\n$fa-font-path: '~@fortawesome/fontawesome-free-webfonts/webfonts';\n\n\nEdit \nfoundation.scss\n\n\n@import '~@fortawesome/fontawesome-free-webfonts/scss/fontawesome';\n\n\n@import '~foundation-sites/scss/foundation';\n\n\nComment out:\n\n\n// @import 'motion-ui';\n\n\nEnd of file\n\n\n// @include motion-ui-transitions;\n\n\n// @include motion-ui-animations;\n\n\n\n\n\n\nng eject\n - customize webpack\n\n\nWant to use \nstyle-loader\n to load style files directly into components. Gives me access to the foundation styles in all the components.\n  \njs\n  {\n            \"loader\": \"sass-loader\",\n            \"options\": {\n              \"sourceMap\": true,\n              \"precision\": 8,\n              \"includePaths\": [\"src/assets/styles\"],\n              data: '@import \"src/assets/styles/styles\";'\n            }\n\n\nWant to use \n*awesome-typescript-loader\n - Angular uses their own compiler. Don't want to mess with it.\n\n\nCommands after eject\n\n\n\n\n   - \"npm run build\" to build.\n   - \"npm test\" to run unit tests.\n   - \"npm start\" to serve the app using webpack-dev-server.\n   - \"npm run e2e\" to run protractor.\n\n\n\n\n\n\nInclude in styles \n\n\nin styles.scss - \n@import './assets/styles/site.scss';\n\n\nEND IGNORE\n\n\n\n\nResources\n\n\n\n\nAngular Documentation\n\n\nAngular & Webpack\n\n\nAwesome Angular\n\n\nClarity Design System\n\n\nAngular Education\n\n\n\n\nNotes\n\n\n\n\nGotchas:\n\n\nExtractTextWebpackPlugin\n & \n[Validation] ajv version mismatch with webpack #524\n\n\nfallbackloader\n should be \nfallback\n\n\nloader\n is now \nuse\n\n\nex: (old) \nExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})\n should be (new) \nExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})\n\n\n\n\n\n\n\n\nCannot find name 'require' templateUrl - StackOverflow\n\n\n\n\nnpm install --save-dev @types/node\n\n\n\n\nIn \ntsconfig.json\n \n\n\njson\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]\n\n\n\n\n\n\nRestart \nwebpack-dev-server\n - \nnpm run server:dev\n\n\n\n\nNo Implicit Any\n - Change setting \n\"noImplicitAny\"\n in \ntsconfig.json\n to false and restart webpack dev server.\n\n\nTS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.\n - \nRequestOptions\n require an object. \n{headers: this.headers}\n\n\nUncaught Error: Can't resolve all parameters for NoteService:\n - Issue with not having \n@Injectable()\n on noteservice.",
+            "text": "Angular Framework\n\n\nStart a new project\n\n\nUsing Anular Cli\n\n\n\n\nng new [name} --skip-install --style scss\n\n\ncd into [name]\n\n\nBEGIN IGNORE BELOW\n\n\nnpm install foundation-sites @fortawesome/fontawesome @fortawesome/fontawesome-free-solid @fortawesome/fontawesome-free-webfonts awesome-typescript-loader\n\n\nnpm install\n - install all the packages\n\n\n\n\nSetup Foundation and FontAwesome\n\n\n\n\nCopy/create styles folder\n\n\nCopy/create foundation settings file\n\n\nCopy/create foundation import file\n\n\nEdit settings file\n\n\n@import '~foundation-sites/scss/util/util';\n\n\n$fa-font-path: '~@fortawesome/fontawesome-free-webfonts/webfonts';\n\n\nEdit \nfoundation.scss\n\n\n@import '~@fortawesome/fontawesome-free-webfonts/scss/fontawesome';\n\n\n@import '~foundation-sites/scss/foundation';\n\n\nComment out:\n\n\n// @import 'motion-ui';\n\n\nEnd of file\n\n\n// @include motion-ui-transitions;\n\n\n// @include motion-ui-animations;\n\n\n\n\n\n\nng eject\n - customize webpack\n\n\nWant to use \nstyle-loader\n to load style files directly into components. Gives me access to the foundation styles in all the components.\n  \njs\n  {\n            \"loader\": \"sass-loader\",\n            \"options\": {\n              \"sourceMap\": true,\n              \"precision\": 8,\n              \"includePaths\": [\"src/assets/styles\"],\n              data: '@import \"src/assets/styles/styles\";'\n            }\n\n\nWant to use \n*awesome-typescript-loader\n - Angular uses their own compiler. Don't want to mess with it.\n\n\nCommands after eject\n\n\n\n\n   - \"npm run build\" to build.\n   - \"npm test\" to run unit tests.\n   - \"npm start\" to serve the app using webpack-dev-server.\n   - \"npm run e2e\" to run protractor.\n\n\n\n\n\n\nInclude in styles \n\n\nin styles.scss - \n@import './assets/styles/site.scss';\n\n\nEND IGNORE\n\n\n\n\nResources\n\n\n\n\nAngular Documentation\n\n\nAngular & Webpack\n\n\nAwesome Angular\n\n\nClarity Design System\n\n\nAngular Education\n\n\nTools\n\n\nngrev\n - navigate structure of the app. Desktop app\n\n\n[Augury] - Debug and profile angular project. Browser extension (Chrome only)\n\n\nAngular Essentials Plugin\n - Visual Studio Code plugin for Angular development.\n\n\n\n\n\n\n\n\nNotes\n\n\n\n\nGotchas:\n\n\nExtractTextWebpackPlugin\n & \n[Validation] ajv version mismatch with webpack #524\n\n\nfallbackloader\n should be \nfallback\n\n\nloader\n is now \nuse\n\n\nex: (old) \nExtractTextPlugin.extract({fallbackloader: 'style-loader', loader: 'css-loader?sourceMap'})\n should be (new) \nExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader?sourceMap'})\n\n\n\n\n\n\n\n\nCannot find name 'require' templateUrl - StackOverflow\n\n\n\n\nnpm install --save-dev @types/node\n\n\n\n\nIn \ntsconfig.json\n \n\n\njson\n    \"types\": [\"node\"],\n    \"typeroots\": [\"./node_modules/@types\"]\n\n\n\n\n\n\nRestart \nwebpack-dev-server\n - \nnpm run server:dev\n\n\n\n\nNo Implicit Any\n - Change setting \n\"noImplicitAny\"\n in \ntsconfig.json\n to false and restart webpack dev server.\n\n\nTS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.\n - \nRequestOptions\n require an object. \n{headers: this.headers}\n\n\nUncaught Error: Can't resolve all parameters for NoteService:\n - Issue with not having \n@Injectable()\n on noteservice.",
             "title": "Angular"
         },
         {
@@ -1492,7 +1492,7 @@
         },
         {
             "location": "/web/javascript/Angular/angular/#resources",
-            "text": "Angular Documentation  Angular & Webpack  Awesome Angular  Clarity Design System  Angular Education",
+            "text": "Angular Documentation  Angular & Webpack  Awesome Angular  Clarity Design System  Angular Education  Tools  ngrev  - navigate structure of the app. Desktop app  [Augury] - Debug and profile angular project. Browser extension (Chrome only)  Angular Essentials Plugin  - Visual Studio Code plugin for Angular development.",
             "title": "Resources"
         },
         {
@@ -1782,13 +1782,13 @@
         },
         {
             "location": "/python/general/",
-            "text": "Using Python\n\n\nResources\n\n\n\n\nFullstack Python\n\n\nPodcasts\n\n\nTalk Python To Me\n\n\nPython Bytes\n\n\n\n\n\n\n\n\nNotices\n\n\n\n\nUsing python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.\n\n\n\n\nPip\n\n\n\n\nUpgrade pip - \npip install --upgrade pip\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall\n\n\n\n\nInstalling packages\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nsudo port install python36 +readline\n - fixes issues with python and terminal Mac OS X\n\n\n\n\n\n\n\n\nCreate package Resources\n\n\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide\n\n\n\n\nOther issues\n\n\n\n\nReload module from REPL\n\n\nimport imp\n\n\nimport.reload(module)\n - module is the name of the module to reload\n\n\n\n\n\n\nImport packages from current directory\n\n\nfrom . import package\n - will look in current directory for the package\n\n\n\n\n\n\nShuffle list - random sequence for list\n\n\nimport random\n\n\nlist = [a,b,c,d]\n\n\nrandom.shuffle(list)\n\n\nfor item in list:\n\n\n\n\n\n\nIssue with ASCII environment\n\n\nPython 3 Surrogate handling\n\n\nAdd to \n~/.profile\n\n\nexport LC_ALL=en_US.UTF-8\n\n\nexport LANG=en_US.UTF-8\n\n\n\n\n\n\n\n\n\n\n\n\nVirtual Environments\n\n\n\n\nVirtualEnvWrapper\n\n\n\n\nSetting up uswgi on Ubuntu with Flex\n\n\n\n\nResource: \nHow to serve Flask Application\n\n\nPackages needed.\n\n\nsudo apt install build-essentials python3-dev\n - needed to build uswgi\n\n\n\n\n\n\nUse \nvirtualenv\n and create virtualenv.\n\n\nInstall \nflask\n and \nuswgi\n.\n\n\nConfigure firewall - \nsudo ufw allow 5000\n\n\nSetup \nwsgi.py\n\n\n\n\nfrom myproject import app\n\nif __name__ == \"__main__\":\n    app.run()\n\n\n\n\n\n\nTest it: \nuwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app",
+            "text": "Using Python Notes\n\n\nResources\n\n\n\n\nFullstack Python\n\n\nPodcasts\n\n\nTalk Python To Me\n\n\nPython Bytes\n\n\n\n\n\n\n\n\nNotes\n\n\n\n\nUsing python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.\n\n\nReload module from REPL\n\n\nimport imp\n\n\nimport.reload(module)\n - module is the name of the module to reload\n\n\n\n\n\n\nImport packages from current directory\n\n\nfrom . import package\n - will look in current directory for the package\n\n\n\n\n\n\nShuffle list - random sequence for list\n\n\nimport random\n\n\nlist = [a,b,c,d]\n\n\nrandom.shuffle(list)\n\n\nfor item in list:\n\n\n\n\n\n\nIssue with ASCII environment\n\n\nPython 3 Surrogate handling\n\n\nAdd to \n~/.profile\n\n\nexport LC_ALL=en_US.UTF-8\n\n\nexport LANG=en_US.UTF-8\n\n\n\n\n\n\n\n\n\n\nJupyter Notebooks\n\n\nSpecial Method Names\n\n\nComputed Attributes\n - magic names for objects\n\n\nMagicMethods\n\n\n\n\n\n\n\n\nIssue with readline\n\n\n\n\nTerminal all screwed up after using python repl\n\n\nsudo port install python36 +readline\n - fixes issues with python and terminal Mac OS X\n\n\n\n\n\n\n\n\n\n\n\n\nuwsgi\n\n\n\n\nwsgi = wsgi.py file\n\n\nuwsgi --socket 0.0.0.0:5000 --protocol=http -H /Users/themartins/Envs/lookfindmeAPI-jd3kET2g -w wsgi\n\n\nuwsgi --socket 0.0.0.0:5000 --protocol=http --wsgi-file wsgi.py --callable myApp -H /Users/themartins/Envs/lookfindmeAPI-jd3kET2g\n\n\n\n\nPip\n \nNow using pipenv\n \nPipenv\n\n\n\n\nUpgrade pip - \npip install --upgrade pip\n\n\nError message: \n\"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"\n\n\nProblems \n~/Library/Application Support/pip/pip.conf\n contains \nuser=true\n\n\nResolution: Override the config in your virtualenv pip config file\n\n\nCreate \n$VIRTUAL_ENV/pip.conf\n\n\nPlace config information to override user=true\n\n\n\n\n\n\n\n\n[install]\nuser=false\n\n\n\n\n\n\nPip Configuration\n | \nStackOverflow Issue\n\n\n\n\nInstall\n\n\n\n\nInstalling packages\n\n\n\n\nInstall pip as user\n\n\n\n\nget the get-pip.py script\n\n\nGet the script \nwget https://bootstrap.pypa.io/get-pip.py\n\n\nRun the script with user option \npytoh get-pip.py --user\n\n\n\n\n\n\nNow install all pip packages into user space. \npip install --user <package>\n\n\n\n\nSetup pip config file - want to set default settings for command line. Like always install in user space.\n\n\n\n\nCreate file \n$HOME/Library/Application Support/pip/pip.conf\n\n\nEdit file \n\n\n\n\n[Install]\nuser = true\n\n\n\n\nPackaging python\n\n\n\n\nPython Packaging User Guid\n\n\nPackaging and Distributing Projects\n - Guide\n\n\nsetup.py cheatsheet\n\n\nsetup.py guide\n\n\n\n\nVirtual Environments\n - Using \npipenv\n now\n\n\n\n\nVirtualEnvWrapper\n\n\n\n\nSetting up uswgi on Ubuntu with Flask\n\n\n\n\nResource: \nHow to serve Flask Application\n\n\nPackages needed.\n\n\nsudo apt install build-essentials python3-dev\n - needed to build uswgi\n\n\n\n\n\n\nUse \nvirtualenv\n and create virtualenv.\n\n\nInstall \nflask\n and \nuswgi\n.\n\n\nConfigure firewall - \nsudo ufw allow 5000\n\n\nSetup \nwsgi.py\n\n\n\n\nfrom myproject import app\n\nif __name__ == \"__main__\":\n    app.run()\n\n\n\n\n\n\nTest it: \nuwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app",
             "title": "General"
         },
         {
-            "location": "/python/general/#using-python",
+            "location": "/python/general/#using-python-notes",
             "text": "",
-            "title": "Using Python"
+            "title": "Using Python Notes"
         },
         {
             "location": "/python/general/#resources",
@@ -1796,14 +1796,14 @@
             "title": "Resources"
         },
         {
-            "location": "/python/general/#notices",
-            "text": "Using python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.",
-            "title": "Notices"
+            "location": "/python/general/#notes",
+            "text": "Using python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.  Reload module from REPL  import imp  import.reload(module)  - module is the name of the module to reload    Import packages from current directory  from . import package  - will look in current directory for the package    Shuffle list - random sequence for list  import random  list = [a,b,c,d]  random.shuffle(list)  for item in list:    Issue with ASCII environment  Python 3 Surrogate handling  Add to  ~/.profile  export LC_ALL=en_US.UTF-8  export LANG=en_US.UTF-8      Jupyter Notebooks  Special Method Names  Computed Attributes  - magic names for objects  MagicMethods     Issue with readline   Terminal all screwed up after using python repl  sudo port install python36 +readline  - fixes issues with python and terminal Mac OS X       uwsgi   wsgi = wsgi.py file  uwsgi --socket 0.0.0.0:5000 --protocol=http -H /Users/themartins/Envs/lookfindmeAPI-jd3kET2g -w wsgi  uwsgi --socket 0.0.0.0:5000 --protocol=http --wsgi-file wsgi.py --callable myApp -H /Users/themartins/Envs/lookfindmeAPI-jd3kET2g",
+            "title": "Notes"
         },
         {
-            "location": "/python/general/#pip",
+            "location": "/python/general/#pip-now-using-pipenv-pipenv",
             "text": "Upgrade pip -  pip install --upgrade pip  Error message:  \"Can not perform a '--user' install. User site-packages are not visible in this virtualenv\"  Problems  ~/Library/Application Support/pip/pip.conf  contains  user=true  Resolution: Override the config in your virtualenv pip config file  Create  $VIRTUAL_ENV/pip.conf  Place config information to override user=true     [install]\nuser=false   Pip Configuration  |  StackOverflow Issue",
-            "title": "Pip"
+            "title": "Pip Now using pipenv Pipenv"
         },
         {
             "location": "/python/general/#install",
@@ -1821,33 +1821,23 @@
             "title": "Setup pip config file - want to set default settings for command line. Like always install in user space."
         },
         {
-            "location": "/python/general/#issue-with-readline",
-            "text": "Terminal all screwed up after using python repl  sudo port install python36 +readline  - fixes issues with python and terminal Mac OS X",
-            "title": "Issue with readline"
+            "location": "/python/general/#packaging-python",
+            "text": "Python Packaging User Guid  Packaging and Distributing Projects  - Guide  setup.py cheatsheet  setup.py guide",
+            "title": "Packaging python"
         },
         {
-            "location": "/python/general/#create-package-resources",
-            "text": "Packaging and Distributing Projects  - Guide  setup.py cheatsheet  setup.py guide",
-            "title": "Create package Resources"
-        },
-        {
-            "location": "/python/general/#other-issues",
-            "text": "Reload module from REPL  import imp  import.reload(module)  - module is the name of the module to reload    Import packages from current directory  from . import package  - will look in current directory for the package    Shuffle list - random sequence for list  import random  list = [a,b,c,d]  random.shuffle(list)  for item in list:    Issue with ASCII environment  Python 3 Surrogate handling  Add to  ~/.profile  export LC_ALL=en_US.UTF-8  export LANG=en_US.UTF-8",
-            "title": "Other issues"
-        },
-        {
-            "location": "/python/general/#virtual-environments",
+            "location": "/python/general/#virtual-environments-using-pipenv-now",
             "text": "VirtualEnvWrapper",
-            "title": "Virtual Environments"
+            "title": "Virtual Environments - Using pipenv now"
         },
         {
-            "location": "/python/general/#setting-up-uswgi-on-ubuntu-with-flex",
+            "location": "/python/general/#setting-up-uswgi-on-ubuntu-with-flask",
             "text": "Resource:  How to serve Flask Application  Packages needed.  sudo apt install build-essentials python3-dev  - needed to build uswgi    Use  virtualenv  and create virtualenv.  Install  flask  and  uswgi .  Configure firewall -  sudo ufw allow 5000  Setup  wsgi.py   from myproject import app\n\nif __name__ == \"__main__\":\n    app.run()   Test it:  uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app",
-            "title": "Setting up uswgi on Ubuntu with Flex"
+            "title": "Setting up uswgi on Ubuntu with Flask"
         },
         {
             "location": "/python/packages/",
-            "text": "Python Packages\n\n\nDatabase\n\n\n\n\nSQLAlchemy\n\n\nSQLAlchemy Utils\n\n\nCustom datatypes and utility functions for SQLAlchemy. Inludes UUIDType.\n\n\n\n\n\n\npsycopg\n - PostgreSQL Python Adapter\n\n\n\n\nConfiguration\n\n\n\n\neverett\n - \ndocs\n\n\nWorks with .env and ini files.\n\n\n\n\n\n\n\n\nOther\n\n\n\n\nopenpyxl\n\n\nLibrary to read and write Excel files including latest Excel files.\n\n\n\n\n\n\nclick\n - Command line library for Python.\n\n\nMicrosoft Word Merge Docs \n\n\ndocx-mailmerge\n\n\nPopulating MS Word Templates with Python\n\n\n\n\n\n\npython-docx\n\n\nAutomate The Boring Stuff\n\n\n\n\n\n\n\n\n\n\n\n\nTesting\n\n\n\n\nNose\n - Testing for python\n\n\n\n\nDocumentation\n\n\n\n\nMkdocs\n\n\nGenerate documentation for project and allows you to deploy to \ngithub gh-pages",
+            "text": "Python Packages\n\n\nDatabase\n\n\n\n\nSQLAlchemy\n\n\nSQLAlchemy Utils\n\n\nCustom datatypes and utility functions for SQLAlchemy. Inludes UUIDType.\n\n\n\n\n\n\npsycopg\n - PostgreSQL Python Adapter\n\n\n\n\nConfiguration\n\n\n\n\neverett\n - \ndocs\n\n\nWorks with .env and ini files.\n\n\n\n\n\n\n\n\nOther\n\n\n\n\nopenpyxl\n\n\nLibrary to read and write Excel files including latest Excel files.\n\n\n\n\n\n\nclick\n - Command line library for Python.\n\n\nMicrosoft Word Merge Docs \n\n\ndocx-mailmerge\n\n\nPopulating MS Word Templates with Python\n\n\n\n\n\n\npython-docx\n\n\nAutomate The Boring Stuff\n\n\n\n\n\n\n\n\n\n\n\n\nTesting\n\n\n\n\nNose\n - Testing for python\n\n\n[PyTest][https://docs.pytest.org/en/latest/]\n\n\n[Tavern][https://taverntesting.github.io/] - API testing\n\n\n\n\nDocumentation\n\n\n\n\nMkdocs\n\n\nGenerate documentation for project and allows you to deploy to \ngithub gh-pages",
             "title": "Packages"
         },
         {
@@ -1872,7 +1862,7 @@
         },
         {
             "location": "/python/packages/#testing",
-            "text": "Nose  - Testing for python",
+            "text": "Nose  - Testing for python  [PyTest][https://docs.pytest.org/en/latest/]  [Tavern][https://taverntesting.github.io/] - API testing",
             "title": "Testing"
         },
         {
@@ -1917,7 +1907,7 @@
         },
         {
             "location": "/python/flask/",
-            "text": "Flask Notes\n\n\nSources\n\n\n\n\nFlask\n\n\nHow to Structure Large Flask Applications\n\n\n\n\nCreating a Flask App\n\n\n\n\nCreate directory and cd into directory\n\n\nCreate virtual environment\n\n\nmkvirtualenv -a . {virtualenvname}\n\n\nInstall flask\n\n\npip install flask SQLAlchemy WTForms psycopg2 click",
+            "text": "Flask Notes\n\n\nSources\n\n\n\n\nFlask\n\n\nHow to Structure Large Flask Applications\n\n\nHow to serve flask applications with uwsgi and nginx\n\n\n\n\nCreating a Flask App\n Now using Pipenv\n\n\n\n\nCreate directory and cd into directory\n\n\npipenv shell\n\n\nInstall flask\n\n\npipevn install flask SQLAlchemy psycopg2 click uwsgi",
             "title": "Flask"
         },
         {
@@ -1927,23 +1917,58 @@
         },
         {
             "location": "/python/flask/#sources",
-            "text": "Flask  How to Structure Large Flask Applications",
+            "text": "Flask  How to Structure Large Flask Applications  How to serve flask applications with uwsgi and nginx",
             "title": "Sources"
         },
         {
-            "location": "/python/flask/#creating-a-flask-app",
-            "text": "Create directory and cd into directory  Create virtual environment  mkvirtualenv -a . {virtualenvname}  Install flask  pip install flask SQLAlchemy WTForms psycopg2 click",
-            "title": "Creating a Flask App"
+            "location": "/python/flask/#creating-a-flask-app-now-using-pipenv",
+            "text": "Create directory and cd into directory  pipenv shell  Install flask  pipevn install flask SQLAlchemy psycopg2 click uwsgi",
+            "title": "Creating a Flask App Now using Pipenv"
         },
         {
             "location": "/python/sqlalchemy/",
-            "text": "SQLAlchemy Notes\n\n\n\n\nReflect a PostgreSQL view in Python\u2019s SQLAlchemy\n\n\nHow to reflect views for the ORM\n\n\n\n\nclass ChildView(db.declarative_base):\n    __table__ = db.get_table(CHILD_VIEW)\n    __mapper_args__ = {\n        'primary_key': [__table__.c.acct_uuid]\n    }\n\n\n\n\n\n\nRef: \nHow do I map a table that has no primary key",
+            "text": "SQLAlchemy Notes\n\n\nTreat a view as a table in SQLAlchemy and allow use with ORM for queries.\n\n\n\n\nReflect a PostgreSQL view in Python\u2019s SQLAlchemy\n\n\nRef: \nHow do I map a table that has no primary key\n\n\nHow to reflect views for the ORM\n\n\n\n\nengine = create_engine(config('DB_URI'))\nmeta = MetaData()\nmeta.reflect(bind=engine, schema='public', views=True)\nbase = automap_base(metadata=meta)\nbase.prepare()\n\ndef get_table(table_name):\n    try:\n        result = base.classes[table_name]\n    except KeyError as err:\n        result = meta.tables[table_name]\n    return result\n\nCHILD_VIEW = 'public.child_view'\n\n\nclass ChildView(base):\n    __table__ = get_table(CHILD_VIEW)\n    __mapper_args__ = {\n        'primary_key': [__table__.c.acct_uuid]\n    }\n\nbase.prepare()\n\n\n\n\nAutomap\n\n\n\n\nUse to automatically get table details from the database. This is if the table is being managed separately from \nsqlalchemy\n.",
             "title": "SQLAlchemy"
         },
         {
             "location": "/python/sqlalchemy/#sqlalchemy-notes",
-            "text": "Reflect a PostgreSQL view in Python\u2019s SQLAlchemy  How to reflect views for the ORM   class ChildView(db.declarative_base):\n    __table__ = db.get_table(CHILD_VIEW)\n    __mapper_args__ = {\n        'primary_key': [__table__.c.acct_uuid]\n    }   Ref:  How do I map a table that has no primary key",
+            "text": "",
             "title": "SQLAlchemy Notes"
+        },
+        {
+            "location": "/python/sqlalchemy/#treat-a-view-as-a-table-in-sqlalchemy-and-allow-use-with-orm-for-queries",
+            "text": "Reflect a PostgreSQL view in Python\u2019s SQLAlchemy  Ref:  How do I map a table that has no primary key  How to reflect views for the ORM   engine = create_engine(config('DB_URI'))\nmeta = MetaData()\nmeta.reflect(bind=engine, schema='public', views=True)\nbase = automap_base(metadata=meta)\nbase.prepare()\n\ndef get_table(table_name):\n    try:\n        result = base.classes[table_name]\n    except KeyError as err:\n        result = meta.tables[table_name]\n    return result\n\nCHILD_VIEW = 'public.child_view'\n\n\nclass ChildView(base):\n    __table__ = get_table(CHILD_VIEW)\n    __mapper_args__ = {\n        'primary_key': [__table__.c.acct_uuid]\n    }\n\nbase.prepare()",
+            "title": "Treat a view as a table in SQLAlchemy and allow use with ORM for queries."
+        },
+        {
+            "location": "/python/sqlalchemy/#automap",
+            "text": "Use to automatically get table details from the database. This is if the table is being managed separately from  sqlalchemy .",
+            "title": "Automap"
+        },
+        {
+            "location": "/python/testing/",
+            "text": "Testing with Python\n\n\nResources\n\n\n\n\nPyTest\n\n\nTavern\n - API testing\n\n\n\n\nTavern\n\n\n\n\nUses a YAML file for test setup.\n\n\nTalks directly to the API\n\n\nCan use pytest to run the test.\n\n\n\n\nNotes\n\n\n\n\npipenv install --dev tavern[pytest]\n\n\nCreate YAML test file in \ntests\n directory.\n\n\ntest_server.tavern.yaml\n - all test should be \ntest_{name}.tavern.yaml\n\n\n\n\n\n\nRun \npytest\n in top directory\n\n\nNotes\n\n\nCan create \ncommon.yaml\n file with shared parameters\n\n\nBe sure to include it in every individual test",
+            "title": "Testing"
+        },
+        {
+            "location": "/python/testing/#testing-with-python",
+            "text": "",
+            "title": "Testing with Python"
+        },
+        {
+            "location": "/python/testing/#resources",
+            "text": "PyTest  Tavern  - API testing",
+            "title": "Resources"
+        },
+        {
+            "location": "/python/testing/#tavern",
+            "text": "Uses a YAML file for test setup.  Talks directly to the API  Can use pytest to run the test.",
+            "title": "Tavern"
+        },
+        {
+            "location": "/python/testing/#notes",
+            "text": "pipenv install --dev tavern[pytest]  Create YAML test file in  tests  directory.  test_server.tavern.yaml  - all test should be  test_{name}.tavern.yaml    Run  pytest  in top directory  Notes  Can create  common.yaml  file with shared parameters  Be sure to include it in every individual test",
+            "title": "Notes"
         },
         {
             "location": "/ruby/ruby/",
@@ -2442,23 +2467,48 @@
         },
         {
             "location": "/ops/docker/",
-            "text": "Notes for docker\n\n\n\n\nNot using everyday so need instructions on how I use it\n*\nRemoving Docker containers and images\n\n\n\n\nStarting and using\n\n\n\n\ndocker-machine start default\n\n\nSet the environment\n\n\nConfigure Shell (Docker Toolbox on Mac)\n\n\neval \"$(docker-machine env default)\"\n\n\n\n\n\n\n\n\n\n\ndocker-machine config\n - verify can connect and pull info from the machine\n\n\n\n\nUse a base alpine image for docker\n\n\n\n\nOfficial Alpine Docker Image\n\n\nDocker Store\n\n\ndocker pull alpine\n\n\napk --no-cache add {package}\n\n\nDockerfile Example - avoids using \n--update\n and \nrm -rf /var/cache/apk/*\n\n\n\n\n  FROM alpine:latest\n  RUN apk add --no-cache nginx\n  EXPOSE 80\n  CMD [\"nginx\", \"-g\", \"daemon off;\"]",
+            "text": "Notes for docker\n\n\n\n\nNot using everyday so need instructions on how I use it\n\n\nRemoving Docker containers and images\n\n\nReset containers when using docker-compose. \ndocker-compose up --force-recreate\n\n\nReset everything - \ndocker-compose down --remove-orphans -v --rmi all\n\n\nElasticSearch\n\n\nElasticSearch Docker Images - \nhttps://www.docker.elastic.co\n\n\nUse oss images - \nPulling images\n\n\nKibana Docker\n - Configure Kibana for docker.\n\n\nDocker Kibana\n\n\n\n\n\n\n\n\n\n\n\n\nStarting and using\n\n\n\n\nNow using Docker for Mac\n\n\ndocker-machine start default\n\n\nSet the environment\n\n\nConfigure Shell (Docker Toolbox on Mac)\n\n\neval \"$(docker-machine env default)\"\n\n\n\n\n\n\n\n\n\n\ndocker-machine config\n - verify can connect and pull info from the machine\n\n\n\n\nUse a base alpine image for docker\n\n\n\n\nOfficial Alpine Docker Image\n\n\nDocker Networking\n\n\nDocker Store\n\n\ndocker pull alpine\n\n\napk --no-cache add {package}\n\n\nDockerfile Example - avoids using \n--update\n and \nrm -rf /var/cache/apk/*\n\n\n\n\n  FROM alpine:latest\n  RUN apk add --no-cache nginx\n  EXPOSE 80\n  CMD [\"nginx\", \"-g\", \"daemon off;\"]\n\n\n\n\nNginx docker config\n\n\n\n\nsudo docker cp docker-nginx:/etc/nginx/conf.d/default.conf default.conf\n - \nCopy config file from docker container\n\n\n\n\nSetup nginx-unit with docker\n\n\n\n\nyousan/nginx-unit\n - instructions on getting access to the socket.\n\n\nNginx Unit Integration\n\n\n\n\ndocker-compose.yml\n\n\n\n\nversion: '3'\nservices:\n  web:\n    image: \"nginx:1.13-alpine\"\n    container_name: lookfindme-web\n    ports:\n      - \"7000:80\"\n    volumes:\n      - ./containers/nginx/html:/usr/share/nginx/html:ro\n      - ./containers/nginx/conf/nginx.conf:/etc/nginx/nginx.conf\n      - ./containers/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf\n  nginx-unit:\n    image: \"nginx/unit:1.1-full\"\n    container_name: lookfindme-nginx-unit\n    ports:\n      - 8081:8081\n      - 8200:8200\n      - 8300:8300\n    volumes:\n      - ./containers/nginx/json:/root/json\n      - ./containers/nginx/www/root:/www/root\n  database:\n    image: \"mdillon/postgis:10-alpine\"\n    container_name: lookfindme-database\n    ports:\n      - \"15432:5432\"\n    volumes:\n      - ./containers/dbData:/var/lib/postgresql/data\n  search:\n    image: \"docker.elastic.co/elasticsearch/elasticsearch-oss:6.2.3\"\n    container_name: lookfindme-search\n    ports:\n      - \"9200:9200\"\n      - \"9300:9300\"\n  queue:\n    image: \"rabbitmq:3-management-alpine\"\n    container_name: lookfindme-queue\n    ports:\n      - \"15672:15672\"\n    volumes:\n      - ./containers/queue:/var/lib/rabbitmq\n\n\n\n\n\n\ncontainer folder. - \ncontainers/nginx/conf/\n\n\ndefault.conf\n\n\n\n\n\n\n\n\nserver {\n    listen       80;\n    server_name  localhost;\n\n    #charset koi8-r;\n    #access_log  /var/log/nginx/host.access.log  main;\n\n    location /static {\n        root /usr/share/nginx;\n    }\n\n   location / {\n        proxy_pass http://unit_backend;\n        proxy_set_header Host $host;\n    }\n\n    location /home {\n        # uswgi_pass lookfindme;\n        # include uwsgi_params;\n        root   /usr/share/nginx/html;\n        index  index.html index.htm;\n    }\n\n    #error_page  404              /404.html;\n\n    # redirect server error pages to the static page /50x.html\n    #\n    error_page   500 502 503 504  /50x.html;\n    location = /50x.html {\n        root   /usr/share/nginx/html;\n    }\n\n    # proxy the PHP scripts to Apache listening on 127.0.0.1:80\n    #\n    #location ~ \\.php$ {\n    #    proxy_pass   http://127.0.0.1;\n    #}\n\n    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000\n    #\n    #location ~ \\.php$ {\n    #    root           html;\n    #    fastcgi_pass   127.0.0.1:9000;\n    #    fastcgi_index  index.php;\n    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;\n    #    include        fastcgi_params;\n    #}\n\n    # deny access to .htaccess files, if Apache's document root\n    # concurs with nginx's one\n    #\n    #location ~ /\\.ht {\n    #    deny  all;\n    #}\n}\n\n\n\n\n\n\nnginx.conf\n\n\n\n\nuser  nginx;\nworker_processes  1;\n\nerror_log  /var/log/nginx/error.log warn;\npid        /var/run/nginx.pid;\n\n\nevents {\n    worker_connections  1024;\n}\n\n\n\nhttp {\n    include       /etc/nginx/mime.types;\n    default_type  application/octet-stream;\n\n    log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '\n                      '$status $body_bytes_sent \"$http_referer\" '\n                      '\"$http_user_agent\" \"$http_x_forwarded_for\"';\n\n    access_log  /var/log/nginx/access.log  main;\n\n    sendfile        on;\n    #tcp_nopush     on;\n\n    keepalive_timeout  65;\n\n    #gzip  on;\n\n    upstream unit_backend {\n        server nginx-unit:8300;\n    }\n\n    include /etc/nginx/conf.d/*.conf;\n}\n\n\n\n\n\n\nnginx-unit json file\n\n\n\n\n{\n    \"listeners\": {\n            \"*:8300\": {\n                    \"application\": \"blogs\"\n            }\n    },\n\n    \"applications\": {\n            \"blogs\": {\n                    \"type\": \"php\",\n                    \"processes\": 20,\n                    \"root\": \"/www/root\",\n                    \"index\": \"index.php\"\n            }\n    }\n}\n\n\n\n\n\n\ndocker-compose exec nginx-unit curl -X PUT -d @/root/json/local.json --unix-socket /var/run/control.unit.sock http://localhost/ && docket-compose exec nginx-unit /bin/bash\n\n\n\n\nSetup nginx-unit with docker\n\n\n\n\nUsing \nDocker for Mac\n\n\nDocker Nginx Unit\n\n\n\n\n\n\nUsing \ndocker-compose.yml\n\n\n\n\n  nginx-unit:\n    image: \"nginx/unit:1.1-full\"\n    container_name: nginx-unit\n    ports:\n      - 8081:8081\n      - 8200:8200\n      - 8300:8300\n    volumes:\n      - ../containers/nginx/json:/root/json\n      - ../containers/nginx/www/root:/www/root\n\n\n\n\n\n\nCreate \nindex.php\n in ./containers/nginx/html\n\n\njson.local\n in ./containers/nginx/json\n\n\n\n\n{\n    \"listeners\": {\n            \"*:8300\": {\n                    \"application\": \"blogs\"\n            }\n    },\n\n    \"applications\": {\n            \"blogs\": {\n                    \"type\": \"php\",\n                    \"processes\": 20,\n                    \"root\": \"/www/root\",\n                    \"index\": \"index.php\"\n            }\n    }\n}\n\n\n\n\nCreating the setup\n\n\n\n\nCreate configuration in \ndocker-compose.yml\n file\n\n\nCopy \njson.local\n to \ncontainers/nginx/json\n\n\nCopy \nindex.php\n to \ncontainers/nginx/www/root\n\n\ndocker-compose up -d\n - start the containers\n\n\ndocker-compose exec nginx-unit curl -X PUT -d @/root/json/local.json --unix-socket /var/run/control.unit.sock http://localhost/\n - set the configuration for nginx unit\n\n\nAccess the file at \nhttp://localhost:8300\n\n\n\n\nErrors\n\n\n\n\nERROR: network lookfindmeapi_default id ae6c919c63c2f8a9ed5a5aea2ba716f4b19efe4fd7599fc0262a991d6e34b494 has active endpoints\n\n\ndocker-compose ps\n\n\ndocker stop {container}\n\n\ndocker container prune",
             "title": "Docker"
         },
         {
             "location": "/ops/docker/#notes-for-docker",
-            "text": "Not using everyday so need instructions on how I use it\n* Removing Docker containers and images",
+            "text": "Not using everyday so need instructions on how I use it  Removing Docker containers and images  Reset containers when using docker-compose.  docker-compose up --force-recreate  Reset everything -  docker-compose down --remove-orphans -v --rmi all  ElasticSearch  ElasticSearch Docker Images -  https://www.docker.elastic.co  Use oss images -  Pulling images  Kibana Docker  - Configure Kibana for docker.  Docker Kibana",
             "title": "Notes for docker"
         },
         {
             "location": "/ops/docker/#starting-and-using",
-            "text": "docker-machine start default  Set the environment  Configure Shell (Docker Toolbox on Mac)  eval \"$(docker-machine env default)\"      docker-machine config  - verify can connect and pull info from the machine",
+            "text": "Now using Docker for Mac  docker-machine start default  Set the environment  Configure Shell (Docker Toolbox on Mac)  eval \"$(docker-machine env default)\"      docker-machine config  - verify can connect and pull info from the machine",
             "title": "Starting and using"
         },
         {
             "location": "/ops/docker/#use-a-base-alpine-image-for-docker",
-            "text": "Official Alpine Docker Image  Docker Store  docker pull alpine  apk --no-cache add {package}  Dockerfile Example - avoids using  --update  and  rm -rf /var/cache/apk/*     FROM alpine:latest\n  RUN apk add --no-cache nginx\n  EXPOSE 80\n  CMD [\"nginx\", \"-g\", \"daemon off;\"]",
+            "text": "Official Alpine Docker Image  Docker Networking  Docker Store  docker pull alpine  apk --no-cache add {package}  Dockerfile Example - avoids using  --update  and  rm -rf /var/cache/apk/*     FROM alpine:latest\n  RUN apk add --no-cache nginx\n  EXPOSE 80\n  CMD [\"nginx\", \"-g\", \"daemon off;\"]",
             "title": "Use a base alpine image for docker"
+        },
+        {
+            "location": "/ops/docker/#nginx-docker-config",
+            "text": "sudo docker cp docker-nginx:/etc/nginx/conf.d/default.conf default.conf  -  Copy config file from docker container",
+            "title": "Nginx docker config"
+        },
+        {
+            "location": "/ops/docker/#setup-nginx-unit-with-docker",
+            "text": "yousan/nginx-unit  - instructions on getting access to the socket.  Nginx Unit Integration   docker-compose.yml   version: '3'\nservices:\n  web:\n    image: \"nginx:1.13-alpine\"\n    container_name: lookfindme-web\n    ports:\n      - \"7000:80\"\n    volumes:\n      - ./containers/nginx/html:/usr/share/nginx/html:ro\n      - ./containers/nginx/conf/nginx.conf:/etc/nginx/nginx.conf\n      - ./containers/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf\n  nginx-unit:\n    image: \"nginx/unit:1.1-full\"\n    container_name: lookfindme-nginx-unit\n    ports:\n      - 8081:8081\n      - 8200:8200\n      - 8300:8300\n    volumes:\n      - ./containers/nginx/json:/root/json\n      - ./containers/nginx/www/root:/www/root\n  database:\n    image: \"mdillon/postgis:10-alpine\"\n    container_name: lookfindme-database\n    ports:\n      - \"15432:5432\"\n    volumes:\n      - ./containers/dbData:/var/lib/postgresql/data\n  search:\n    image: \"docker.elastic.co/elasticsearch/elasticsearch-oss:6.2.3\"\n    container_name: lookfindme-search\n    ports:\n      - \"9200:9200\"\n      - \"9300:9300\"\n  queue:\n    image: \"rabbitmq:3-management-alpine\"\n    container_name: lookfindme-queue\n    ports:\n      - \"15672:15672\"\n    volumes:\n      - ./containers/queue:/var/lib/rabbitmq   container folder. -  containers/nginx/conf/  default.conf     server {\n    listen       80;\n    server_name  localhost;\n\n    #charset koi8-r;\n    #access_log  /var/log/nginx/host.access.log  main;\n\n    location /static {\n        root /usr/share/nginx;\n    }\n\n   location / {\n        proxy_pass http://unit_backend;\n        proxy_set_header Host $host;\n    }\n\n    location /home {\n        # uswgi_pass lookfindme;\n        # include uwsgi_params;\n        root   /usr/share/nginx/html;\n        index  index.html index.htm;\n    }\n\n    #error_page  404              /404.html;\n\n    # redirect server error pages to the static page /50x.html\n    #\n    error_page   500 502 503 504  /50x.html;\n    location = /50x.html {\n        root   /usr/share/nginx/html;\n    }\n\n    # proxy the PHP scripts to Apache listening on 127.0.0.1:80\n    #\n    #location ~ \\.php$ {\n    #    proxy_pass   http://127.0.0.1;\n    #}\n\n    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000\n    #\n    #location ~ \\.php$ {\n    #    root           html;\n    #    fastcgi_pass   127.0.0.1:9000;\n    #    fastcgi_index  index.php;\n    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;\n    #    include        fastcgi_params;\n    #}\n\n    # deny access to .htaccess files, if Apache's document root\n    # concurs with nginx's one\n    #\n    #location ~ /\\.ht {\n    #    deny  all;\n    #}\n}   nginx.conf   user  nginx;\nworker_processes  1;\n\nerror_log  /var/log/nginx/error.log warn;\npid        /var/run/nginx.pid;\n\n\nevents {\n    worker_connections  1024;\n}\n\n\n\nhttp {\n    include       /etc/nginx/mime.types;\n    default_type  application/octet-stream;\n\n    log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '\n                      '$status $body_bytes_sent \"$http_referer\" '\n                      '\"$http_user_agent\" \"$http_x_forwarded_for\"';\n\n    access_log  /var/log/nginx/access.log  main;\n\n    sendfile        on;\n    #tcp_nopush     on;\n\n    keepalive_timeout  65;\n\n    #gzip  on;\n\n    upstream unit_backend {\n        server nginx-unit:8300;\n    }\n\n    include /etc/nginx/conf.d/*.conf;\n}   nginx-unit json file   {\n    \"listeners\": {\n            \"*:8300\": {\n                    \"application\": \"blogs\"\n            }\n    },\n\n    \"applications\": {\n            \"blogs\": {\n                    \"type\": \"php\",\n                    \"processes\": 20,\n                    \"root\": \"/www/root\",\n                    \"index\": \"index.php\"\n            }\n    }\n}   docker-compose exec nginx-unit curl -X PUT -d @/root/json/local.json --unix-socket /var/run/control.unit.sock http://localhost/ && docket-compose exec nginx-unit /bin/bash",
+            "title": "Setup nginx-unit with docker"
+        },
+        {
+            "location": "/ops/docker/#setup-nginx-unit-with-docker_1",
+            "text": "Using  Docker for Mac  Docker Nginx Unit    Using  docker-compose.yml     nginx-unit:\n    image: \"nginx/unit:1.1-full\"\n    container_name: nginx-unit\n    ports:\n      - 8081:8081\n      - 8200:8200\n      - 8300:8300\n    volumes:\n      - ../containers/nginx/json:/root/json\n      - ../containers/nginx/www/root:/www/root   Create  index.php  in ./containers/nginx/html  json.local  in ./containers/nginx/json   {\n    \"listeners\": {\n            \"*:8300\": {\n                    \"application\": \"blogs\"\n            }\n    },\n\n    \"applications\": {\n            \"blogs\": {\n                    \"type\": \"php\",\n                    \"processes\": 20,\n                    \"root\": \"/www/root\",\n                    \"index\": \"index.php\"\n            }\n    }\n}",
+            "title": "Setup nginx-unit with docker"
+        },
+        {
+            "location": "/ops/docker/#creating-the-setup",
+            "text": "Create configuration in  docker-compose.yml  file  Copy  json.local  to  containers/nginx/json  Copy  index.php  to  containers/nginx/www/root  docker-compose up -d  - start the containers  docker-compose exec nginx-unit curl -X PUT -d @/root/json/local.json --unix-socket /var/run/control.unit.sock http://localhost/  - set the configuration for nginx unit  Access the file at  http://localhost:8300",
+            "title": "Creating the setup"
+        },
+        {
+            "location": "/ops/docker/#errors",
+            "text": "ERROR: network lookfindmeapi_default id ae6c919c63c2f8a9ed5a5aea2ba716f4b19efe4fd7599fc0262a991d6e34b494 has active endpoints  docker-compose ps  docker stop {container}  docker container prune",
+            "title": "Errors"
         },
         {
             "location": "/ops/amazon/",
@@ -2677,7 +2727,7 @@
         },
         {
             "location": "/learning/jupyter/",
-            "text": "Jupyter Notebook\n\n\n\n\nJupyter\n\n\nInstall\n\n\npipenv install jupyter\n\n\n\n\n\n\n\n\nResources\n\n\n\n\nJupyterLab\n - Extends Jupyter.\n\n\nJupyter Kernels\n\n\nIPython Cookbook\n\n\nWidgets\n\n\nJupyter Widgets\n\n\n\n\nNotes\n\n\n\n\nConfiguration - \n~/Library/Jupyter\n\n\n\n\nInstalling the notebook - using pipenv\n\n\n\n\nCreate notebook folder and cd into directory \nmkdir notebook\n \n\n\nInstall jupyter - \npipenv install jupyter\n\n\nInstall Kernels\n\n\nNeed \nnode.js\n ,\nnpm\n and *\nzeromq\n installed\n\n\nUsing \nmacports\n - \nsudo port install zmq\n - zeromq\n\n\nUsing \nnvm\n for node.js\n\n\n\n\n\n\nInit a \npackage.json\n file\n\n\nInstall JavaScript kernel - install everything local in folder - \nGitHub\n\n\npipenv install pyzmq\n\n\nnpm install -g ijavascript\n\n\nnpx ijsinstall\n\n\nnpx ijsnotebook\n - Run the notebook with JavaScript enabled\n\n\n\n\n\n\nInstall TypeScript kernel - \nGitHub\n\n\nnpm install itypescript\n\n\njupyter notebook\n - Typescript is now enabled.\n\n\n\n\n\n\nInstall Ruby - \nGitHub\n\n\nUsing \nRVM\n to manage Ruby\n\n\nInstall iRuby - \ngem install iruby\n\n\nInstall ffi-rzmq - \ngem install ffi-rzmq\n\n\niruby register --force\n\n\n\n\n\n\nInstall Elm - \nElm\n\n\npipenv install elm_kernel\n\n\npython -m elm_kernel.install\n\n\n\n\n\n\n\n\n\n\nSetting up \nJuperLab\n - \nJupyterLab\n\n\nInstall in jupyter folder - \npipenv jupyterlab\n\n\n\n\n\n\n\n\nBeakerX\n - includes a number of kernel extensions including SQL\n\n\n\n\nOther Resources\n\n\nBinder\n - Notebooks with documentation for BeakerX\n\n\n\n\n\n\nVery limited documentation.",
+            "text": "Jupyter Notebook\n\n\n\n\nJupyter\n\n\nInstall\n\n\npipenv install jupyter\n\n\n\n\n\n\n\n\nResources\n\n\n\n\nJupyterLab\n - Extends Jupyter.\n\n\nJupyter Kernels\n\n\nIPython Cookbook\n\n\nWidgets\n\n\nJupyter Widgets\n\n\n\n\nNotes\n\n\n\n\nConfiguration - \n~/Library/Jupyter\n\n\n\n\nInstalling the notebook - using pipenv\n\n\n\n\nCreate notebook folder and cd into directory \nmkdir notebook\n \n\n\nInstall jupyter - \npipenv install jupyter\n\n\nInstall Kernels\n\n\nNeed \nnode.js\n ,\nnpm\n and *\nzeromq\n installed\n\n\nUsing \nmacports\n - \nsudo port install zmq\n - zeromq\n\n\nUsing \nnvm\n for node.js\n\n\n\n\n\n\nInit a \npackage.json\n file\n\n\nInstall JavaScript kernel - install everything local in folder - \nGitHub\n\n\npipenv install pyzmq\n\n\nnpm install -g ijavascript\n - Need to install as global for it to work correctly\n\n\nnpx ijsinstall\n\n\nnpx ijsnotebook\n - Run the notebook with JavaScript enabled\n\n\n\n\n\n\nInstall TypeScript kernel - \nGitHub\n\n\nnpm install itypescript\n\n\njupyter notebook\n - Typescript is now enabled.\n\n\n\n\n\n\nInstall Ruby - \nGitHub\n\n\nUsing \nRVM\n to manage Ruby\n\n\nInstall iRuby - \ngem install iruby\n\n\nInstall ffi-rzmq - \ngem install ffi-rzmq\n\n\niruby register --force\n\n\n\n\n\n\nInstall Elm - \nElm\n\n\npipenv install elm_kernel\n\n\npython -m elm_kernel.install\n\n\n\n\n\n\n\n\n\n\nSetting up \nJuperLab\n - \nJupyterLab\n\n\nInstall in jupyter folder - \npipenv jupyterlab\n\n\n\n\n\n\n\n\nBeakerX\n - includes a number of kernel extensions including SQL\n\n\n\n\npip install beakerx\n then \nbeakerx install\n\n\nOther Resources\n\n\nBinder\n - Notebooks with documentation for BeakerX\n\n\n\n\n\n\nVery limited documentation.",
             "title": "Using Jupyter"
         },
         {
@@ -2697,12 +2747,12 @@
         },
         {
             "location": "/learning/jupyter/#installing-the-notebook-using-pipenv",
-            "text": "Create notebook folder and cd into directory  mkdir notebook    Install jupyter -  pipenv install jupyter  Install Kernels  Need  node.js  , npm  and * zeromq  installed  Using  macports  -  sudo port install zmq  - zeromq  Using  nvm  for node.js    Init a  package.json  file  Install JavaScript kernel - install everything local in folder -  GitHub  pipenv install pyzmq  npm install -g ijavascript  npx ijsinstall  npx ijsnotebook  - Run the notebook with JavaScript enabled    Install TypeScript kernel -  GitHub  npm install itypescript  jupyter notebook  - Typescript is now enabled.    Install Ruby -  GitHub  Using  RVM  to manage Ruby  Install iRuby -  gem install iruby  Install ffi-rzmq -  gem install ffi-rzmq  iruby register --force    Install Elm -  Elm  pipenv install elm_kernel  python -m elm_kernel.install      Setting up  JuperLab  -  JupyterLab  Install in jupyter folder -  pipenv jupyterlab",
+            "text": "Create notebook folder and cd into directory  mkdir notebook    Install jupyter -  pipenv install jupyter  Install Kernels  Need  node.js  , npm  and * zeromq  installed  Using  macports  -  sudo port install zmq  - zeromq  Using  nvm  for node.js    Init a  package.json  file  Install JavaScript kernel - install everything local in folder -  GitHub  pipenv install pyzmq  npm install -g ijavascript  - Need to install as global for it to work correctly  npx ijsinstall  npx ijsnotebook  - Run the notebook with JavaScript enabled    Install TypeScript kernel -  GitHub  npm install itypescript  jupyter notebook  - Typescript is now enabled.    Install Ruby -  GitHub  Using  RVM  to manage Ruby  Install iRuby -  gem install iruby  Install ffi-rzmq -  gem install ffi-rzmq  iruby register --force    Install Elm -  Elm  pipenv install elm_kernel  python -m elm_kernel.install      Setting up  JuperLab  -  JupyterLab  Install in jupyter folder -  pipenv jupyterlab",
             "title": "Installing the notebook - using pipenv"
         },
         {
             "location": "/learning/jupyter/#beakerx-includes-a-number-of-kernel-extensions-including-sql",
-            "text": "Other Resources  Binder  - Notebooks with documentation for BeakerX    Very limited documentation.",
+            "text": "pip install beakerx  then  beakerx install  Other Resources  Binder  - Notebooks with documentation for BeakerX    Very limited documentation.",
             "title": "BeakerX - includes a number of kernel extensions including SQL"
         },
         {
@@ -3209,6 +3259,41 @@
             "location": "/misc/house/#non-tech-related-notes",
             "text": "Sony KDL-40EX520  No applicable update found  error with Mac OS X  Updating Bravia firmware assistance  Clem_Dye\nJanuary 2013\nRe: Updating your BRAVIA firmware assistance.\nWhat system did you use to prepare the USB stick? The filesystem needs to be FAT32, the update needs to be placed on the drive as per instructions and it should work. However, if you prepared the USB stick on a Mac then you need to strip-off any extended attributes from the update using the xattr command. When these attributes are present the update will fail the file checksum routine used by the TV and will be ignored.\nClem",
             "title": "Non-tech related notes"
+        },
+        {
+            "location": "/misc/dstv/",
+            "text": "Add DSTV Explora 2 to current config\n\n\nReplacing a DSTV Single View SD with a new Explora 2 decoder\n\n\n\n\nResources\n\n\nDSTV Self Service\n\n\n\n\nExplora Manual\n\n\n\n\n\n\nCurrent Configuration\n\n\n\n\nItems\n\n\nDSTV Explora\n\n\nDSTV Single View SD\n\n\nDSTV Switch 5-1\n\n\nDual LNB\n\n\nHeartbeat cable between Explora and Single View SD\n\n\nXtraView enabled on the account\n\n\n\n\n\n\nConfig\n\n\nExplora in living room\n\n\nSingle View SD in bedroom\n\n\nDSTV Multi-switch in living room\n\n\nCables from satellite dish terminate on switch in living room\n\n\nExplora connected to multi-switch Explora output\n\n\nSingle View SD connected to a regular output\n\n\n2 rg6 coaxial cables from living room to bedroom\n\n\nOne cable connects DSTV Switch\n\n\nOther cable connects to rf-in for heartbeat.\n\n\n\n\n\n\n\n\n\n\nExplora is configured as primary device in Xtraview\n\n\n\n\n\n\nGoing to need\n\n\nDSTV Smart LNB - Model LMX501 - \nDon't lose the small piece of paper with the userbands on it\n\n\nF-type Coaxial RG6 couplers\n\n\nIf your current installation is more than 5 years old, expect to need a new LNB holder. Pain to find.\n\n\nLadder and someone to spot you if the satellite dish is on your roof.\n\n\n\n\nNotes\n\n\n\n\nDSTV Switch 5-1 can only support 1 Explora (according to documentation). \n\n\nNeed a DSTV Smart LNB to connect multiple Exploras \n\n\n\n\nInstructions\n\n\nInstall new Smart LNB\n\n\n\n\nMark all your cables. I use colored tape.\n\n\nMark cables coming from satellite dish\n\n\nMark cables going to bedroom.\n\n\nMark the cable for the satellite connection\n\n\nMark the cable being used for the XtraView heartbeat\n\n\n\n\n\n\n\n\n\n\nDisconnect DSTV Switch from your current configuration\n\n\nInstall DSTV Smart LNB on your satellite dish\n\n\nReplace Dual LNB with DSTV Smart LNB - take note of the installation angle of the LNB.\n\n\nConnect the cables from the Dual LNB to the unicable outputs of the Smart LNB.\n\n\nLeave the terminators on the unused unicable outputs. Universal port does not need a terminator.\n\n\n\n\n\n\nReconnect your Explora\n\n\nConnect cable from satellite dish (Smart LNB) directly to the Explora. No need for DSTV switch anymore.\n\n\n\n\n\n\nTest. Explora should work just like before. No configuration necessary.\n\n\n\n\nInstall new Explora\n\n\n\n\nUse coupler to connect 2nd cable from LNB to satellite cable for bedroom.\n\n\nConnect new Explora in bedroom.\n\n\nConnect all cables.\n\n\nSatellite cable from living room to unicable connection on Explora\n\n\nHeartbeat cable to RF-In port.\n\n\nConnect ethernet cable to ethernet port\n\n\nConnect power.\n\n\n\n\n\n\n\n\n\n\nConfigure satelite bands - \nNeed the small piece of paper that came with the DSTV Smart LNB\n\n\nSelect language\n\n\nOn Satellite Settings\n\n\nChange band and index\n\n\nUse the left arrow to erase the current frequency\n\n\nUse the keypad to enter the digits\n\n\nUser Band Tuner 1 Frequency - User band 3 from user bands list on paper.\n\n\nUser Band Tuner 2 Frequency - User band 4\n\n\nUser Band Tuner 3 Frequency - User band 5\n\n\nUser Band Tuner Index - 3\n\n\nUser Band Tuner 2 Index - 4\n\n\nUser Band Tuner 3 Index - 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMove down to \nScan\n and click \nOK\n on remote.\n\n\n\n\n\n\n\n\nConfigure XtraView on account\n\n\n\n\nLogin to your DSTV account.\n\n\nAdd device to your account.\n\n\nClick on XtraView.\n\n\nRemove current config.\n\n\nWait for it to update.\n\n\nCreate nex XtraView configuration.\n\n\nLiving room explora is probably set as the primary.\n\n\nSelect the new explora as the secondary.\n\n\n\n\n\n\nConfirm configuration.\n\n\nEverything should now work.",
+            "title": "Setup Multiple DSTV Exploras"
+        },
+        {
+            "location": "/misc/dstv/#add-dstv-explora-2-to-current-config",
+            "text": "Replacing a DSTV Single View SD with a new Explora 2 decoder   Resources  DSTV Self Service   Explora Manual    Current Configuration   Items  DSTV Explora  DSTV Single View SD  DSTV Switch 5-1  Dual LNB  Heartbeat cable between Explora and Single View SD  XtraView enabled on the account    Config  Explora in living room  Single View SD in bedroom  DSTV Multi-switch in living room  Cables from satellite dish terminate on switch in living room  Explora connected to multi-switch Explora output  Single View SD connected to a regular output  2 rg6 coaxial cables from living room to bedroom  One cable connects DSTV Switch  Other cable connects to rf-in for heartbeat.      Explora is configured as primary device in Xtraview    Going to need  DSTV Smart LNB - Model LMX501 -  Don't lose the small piece of paper with the userbands on it  F-type Coaxial RG6 couplers  If your current installation is more than 5 years old, expect to need a new LNB holder. Pain to find.  Ladder and someone to spot you if the satellite dish is on your roof.",
+            "title": "Add DSTV Explora 2 to current config"
+        },
+        {
+            "location": "/misc/dstv/#notes",
+            "text": "DSTV Switch 5-1 can only support 1 Explora (according to documentation).   Need a DSTV Smart LNB to connect multiple Exploras",
+            "title": "Notes"
+        },
+        {
+            "location": "/misc/dstv/#instructions",
+            "text": "",
+            "title": "Instructions"
+        },
+        {
+            "location": "/misc/dstv/#install-new-smart-lnb",
+            "text": "Mark all your cables. I use colored tape.  Mark cables coming from satellite dish  Mark cables going to bedroom.  Mark the cable for the satellite connection  Mark the cable being used for the XtraView heartbeat      Disconnect DSTV Switch from your current configuration  Install DSTV Smart LNB on your satellite dish  Replace Dual LNB with DSTV Smart LNB - take note of the installation angle of the LNB.  Connect the cables from the Dual LNB to the unicable outputs of the Smart LNB.  Leave the terminators on the unused unicable outputs. Universal port does not need a terminator.    Reconnect your Explora  Connect cable from satellite dish (Smart LNB) directly to the Explora. No need for DSTV switch anymore.    Test. Explora should work just like before. No configuration necessary.",
+            "title": "Install new Smart LNB"
+        },
+        {
+            "location": "/misc/dstv/#install-new-explora",
+            "text": "Use coupler to connect 2nd cable from LNB to satellite cable for bedroom.  Connect new Explora in bedroom.  Connect all cables.  Satellite cable from living room to unicable connection on Explora  Heartbeat cable to RF-In port.  Connect ethernet cable to ethernet port  Connect power.      Configure satelite bands -  Need the small piece of paper that came with the DSTV Smart LNB  Select language  On Satellite Settings  Change band and index  Use the left arrow to erase the current frequency  Use the keypad to enter the digits  User Band Tuner 1 Frequency - User band 3 from user bands list on paper.  User Band Tuner 2 Frequency - User band 4  User Band Tuner 3 Frequency - User band 5  User Band Tuner Index - 3  User Band Tuner 2 Index - 4  User Band Tuner 3 Index - 5          Move down to  Scan  and click  OK  on remote.",
+            "title": "Install new Explora"
+        },
+        {
+            "location": "/misc/dstv/#configure-xtraview-on-account",
+            "text": "Login to your DSTV account.  Add device to your account.  Click on XtraView.  Remove current config.  Wait for it to update.  Create nex XtraView configuration.  Living room explora is probably set as the primary.  Select the new explora as the secondary.    Confirm configuration.  Everything should now work.",
+            "title": "Configure XtraView on account"
         },
         {
             "location": "/misc/sketch/",

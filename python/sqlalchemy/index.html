@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
     
     
       
@@ -1356,10 +1356,58 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SQLAlchemy
+      </label>
+    
     <a href="./" title="SQLAlchemy" class="md-nav__link md-nav__link--active">
       SQLAlchemy
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#treat-a-view-as-a-table-in-sqlalchemy-and-allow-use-with-orm-for-queries" title="Treat a view as a table in SQLAlchemy and allow use with ORM for queries." class="md-nav__link">
+    Treat a view as a table in SQLAlchemy and allow use with ORM for queries.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automap" title="Automap" class="md-nav__link">
+    Automap
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../testing/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
   </li>
 
         
@@ -2154,6 +2202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../misc/dstv/" title="Setup Multiple DSTV Exploras" class="md-nav__link">
+      Setup Multiple DSTV Exploras
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../misc/sketch/" title="Visual StoryTelling/Sketchnotes" class="md-nav__link">
       Visual StoryTelling/Sketchnotes
     </a>
@@ -2182,6 +2242,29 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#treat-a-view-as-a-table-in-sqlalchemy-and-allow-use-with-orm-for-queries" title="Treat a view as a table in SQLAlchemy and allow use with ORM for queries." class="md-nav__link">
+    Treat a view as a table in SQLAlchemy and allow use with ORM for queries.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automap" title="Automap" class="md-nav__link">
+    Automap
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2196,19 +2279,40 @@
                 
                 
                 <h1 id="sqlalchemy-notes">SQLAlchemy Notes</h1>
+<h2 id="treat-a-view-as-a-table-in-sqlalchemy-and-allow-use-with-orm-for-queries">Treat a view as a table in SQLAlchemy and allow use with ORM for queries.</h2>
 <ul>
 <li><a href="https://hultner.github.io/quickbits/2017-10-23-postgresql-reflection-views-python-sqlalchemy.html">Reflect a PostgreSQL view in Python’s SQLAlchemy</a></li>
+<li>Ref: <a href="http://docs.sqlalchemy.org/en/latest/faq/ormconfiguration.html#how-do-i-map-a-table-that-has-no-primary-key">How do I map a table that has no primary key</a></li>
 <li>How to reflect views for the ORM</li>
 </ul>
-<pre><code>class ChildView(db.declarative_base):
-    __table__ = db.get_table(CHILD_VIEW)
+<pre><code>engine = create_engine(config('DB_URI'))
+meta = MetaData()
+meta.reflect(bind=engine, schema='public', views=True)
+base = automap_base(metadata=meta)
+base.prepare()
+
+def get_table(table_name):
+    try:
+        result = base.classes[table_name]
+    except KeyError as err:
+        result = meta.tables[table_name]
+    return result
+
+CHILD_VIEW = 'public.child_view'
+
+
+class ChildView(base):
+    __table__ = get_table(CHILD_VIEW)
     __mapper_args__ = {
         'primary_key': [__table__.c.acct_uuid]
     }
+
+base.prepare()
 </code></pre>
 
+<h2 id="automap"><a href="http://docs.sqlalchemy.org/en/latest/orm/extensions/automap.html">Automap</a></h2>
 <ul>
-<li>Ref: <a href="http://docs.sqlalchemy.org/en/latest/faq/ormconfiguration.html#how-do-i-map-a-table-that-has-no-primary-key">How do I map a table that has no primary key</a></li>
+<li>Use to automatically get table details from the database. This is if the table is being managed separately from <em>sqlalchemy</em>.</li>
 </ul>
                 
                   
@@ -2245,13 +2349,13 @@
           </a>
         
         
-          <a href="../../ruby/ruby/" title="Ruby" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../testing/" title="Testing" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Ruby
+                Testing
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
