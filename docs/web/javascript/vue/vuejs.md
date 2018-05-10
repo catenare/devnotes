@@ -54,3 +54,15 @@ export default {
     ),
 };
 ```
+
+## Creating new project with vue-cli
+* Setup the proxy
+* In *vue.config.js*
+```json
+  devServer: {
+    proxy: 'http://localhost:5000'
+  }
+```
+* Setup typescript
+    * `npm install -D @vue/cli-plugin-typescript`
+    * `vue invoke typescript`

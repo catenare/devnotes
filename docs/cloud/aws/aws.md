@@ -27,3 +27,8 @@
 * Also need to configure for 403 errors.
   * 403 300 /index.html 200
   * 404 5 /index.html 200
+
+## Mobile Hub
+* Set local configuration - `awsmobile configure -p lookfindme` - use lookfind me to configure awsmobile
+* `awsmobile init` - setup local configuration
+    * Use selected *configuration* from *aws mobile hub* configuration.

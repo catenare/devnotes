@@ -5,6 +5,7 @@
     * Download [Apache Ivy](http://ant.apache.org/ivy/)
         1. Put files into ant/lib directory.
         1. Lib directory at `~/.ant/lib` - Using sdkman to manage Ant.
+
 ## Resources
 * [Awesome Java](https://github.com/akullpp/awesome-java)
 * [JHipster](jhipster) - Spring Boot + Angular
@@ -16,3 +17,4 @@
 * [DropWizard](http://www.dropwizard.io/1.2.0/docs/) - Generate REST Apps.
 * [Handlebars Java](https://jknack.github.io/handlebars.java/) - Mustache/Handlebars template engine in Java.
 * [Apache PDFBox](https://pdfbox.apache.org/) - java library for PDF
+* [Java Sample Approach](http://javasampleapproach.com/)

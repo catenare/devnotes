@@ -27,8 +27,9 @@ pages:
   - Cloud:
     - 'AWS': 
       - 'Amazon': 'cloud/aws/aws.md'
-      - 'Cognito': 'cloud/aws/cognito.md'
       - 'Amplify': 'cloud/aws/amplify.md'
+      - 'Cognito': 'cloud/aws/cognito.md'
+      - 'DynamoDB': 'cloud/aws/dynamodb.md'
       - 'Search': 'cloud/aws/search.md'
     - 'Google':
       - 'Google': "cloud/google/google.md"
