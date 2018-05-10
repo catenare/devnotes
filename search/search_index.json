@@ -172,7 +172,7 @@
         },
         {
             "location": "/cloud/aws/aws/",
-            "text": "Amazon AWS\n\n\nLearning Lambda\n\n\nAWS Mobile\n\n\n\n\nError Message: \"error: Uncaught TypeError: Cannot read property 'crypto' of undefined in browser\"\n\n\nGithub Issue\n\n\nGithub Issue Resolution\n\n\nResolve: ...culprit is line 4 in rng.ks. In aws-sdk\n\n\nFixed!! - test: /.js$/, exclude: /(node_modules)/\n\n\n\n\n\n\nIssues with mobile auth using email\n\n\nGithub Issue 104\n\n\nUse awsmobile cli\n\n\nawsmobile user-signin enable -p\n\n\n\n\n\n\n\n\nDid not get the aws amplify and mobile hub project to work. Had to create my own, custom setup.\n\n\n\n\n\n\nSeems to only way to deal with awsamplify not working is to create your own custom setup.\n\n\n\n\n\n\nHosting single page app with Cloudfront\n\n\n\n\nHosting Single Page app with proper URLS\n\n\nIn CloudFront, Create custom error response\n\n\nIn CloudFront Distribution\n\n\nSelect \nError Pages\n\n\nCreate Custom Error Response\n\n\nHTTP Error Code: 404 Not Found\n\n\nCustomize Error Response - yes\n\n\nResponse Page Path \n/index.html\n\n\nHTTP Response Code \n200 ok\n\n\n\n\n\n\n\n\n\n\nAlso need to configure for 403 errors.\n\n\n403 300 /index.html 200\n\n\n404 5 /index.html 200",
+            "text": "Amazon AWS\n\n\nLearning Lambda\n\n\nAWS Mobile\n\n\n\n\nError Message: \"error: Uncaught TypeError: Cannot read property 'crypto' of undefined in browser\"\n\n\nGithub Issue\n\n\nGithub Issue Resolution\n\n\nResolve: ...culprit is line 4 in rng.ks. In aws-sdk\n\n\nFixed!! - test: /.js$/, exclude: /(node_modules)/\n\n\n\n\n\n\nIssues with mobile auth using email\n\n\nGithub Issue 104\n\n\nUse awsmobile cli\n\n\nawsmobile user-signin enable -p\n\n\n\n\n\n\n\n\nDid not get the aws amplify and mobile hub project to work. Had to create my own, custom setup.\n\n\n\n\n\n\nSeems to only way to deal with awsamplify not working is to create your own custom setup.\n\n\n\n\n\n\nHosting single page app with Cloudfront\n\n\n\n\nHosting Single Page app with proper URLS\n\n\nIn CloudFront, Create custom error response\n\n\nIn CloudFront Distribution\n\n\nSelect \nError Pages\n\n\nCreate Custom Error Response\n\n\nHTTP Error Code: 404 Not Found\n\n\nCustomize Error Response - yes\n\n\nResponse Page Path \n/index.html\n\n\nHTTP Response Code \n200 ok\n\n\n\n\n\n\n\n\n\n\nAlso need to configure for 403 errors.\n\n\n403 300 /index.html 200\n\n\n404 5 /index.html 200\n\n\n\n\nMobile Hub\n\n\n\n\nSet local configuration - \nawsmobile configure -p lookfindme\n - use lookfind me to configure awsmobile\n\n\nawsmobile init\n - setup local configuration\n\n\nUse selected \nconfiguration\n from \naws mobile hub\n configuration.",
             "title": "Amazon"
         },
         {
@@ -194,6 +194,41 @@
             "location": "/cloud/aws/aws/#hosting-single-page-app-with-cloudfront",
             "text": "Hosting Single Page app with proper URLS  In CloudFront, Create custom error response  In CloudFront Distribution  Select  Error Pages  Create Custom Error Response  HTTP Error Code: 404 Not Found  Customize Error Response - yes  Response Page Path  /index.html  HTTP Response Code  200 ok      Also need to configure for 403 errors.  403 300 /index.html 200  404 5 /index.html 200",
             "title": "Hosting single page app with Cloudfront"
+        },
+        {
+            "location": "/cloud/aws/aws/#mobile-hub",
+            "text": "Set local configuration -  awsmobile configure -p lookfindme  - use lookfind me to configure awsmobile  awsmobile init  - setup local configuration  Use selected  configuration  from  aws mobile hub  configuration.",
+            "title": "Mobile Hub"
+        },
+        {
+            "location": "/cloud/aws/amplify/",
+            "text": "Amazon Mobile Hub\n\n\nWhy\n\n\n\n\nGet\n\n\nAuthentication and user management\n\n\nHosting including https access\n\n\nNoSQL database\n\n\nS3 storage (userfiles)\n\n\nAmazon Analytics and messaging.\n\n\n\n\nSetup\n\n\n\n\nCreate User in IAM with access Keys\n\n\nAccess \nAWS Mobile Hub\n\n\nCreate a project\n\n\nClick \nWeb\n\n\nClick \nStart\n\n\nAdd project title\n\n\nEdit your region\n\n\n\n\nSetup your local environment\n\n\n\n\nnpm install -g awsmobile-cli\n\n\nawsmobile configure aws\n - set your access keys\n\n\nChange into your project folder\n\n\nInitialize your project\n\n\nawsmobile init e32a\n\n\n\n\nAdd additional Services\n\n\n\n\nUser Sign-in\n\n\nEmail and Password\n\n\nOptional\n - user required to sign in\n\n\nNoSQL Database\n\n\n\n\nUser Data Storage\n\n\n\n\n\n\nUpdate your local environment\n\n\n\n\nawsmobile pull\n in your project directory",
+            "title": "Amplify"
+        },
+        {
+            "location": "/cloud/aws/amplify/#amazon-mobile-hub",
+            "text": "",
+            "title": "Amazon Mobile Hub"
+        },
+        {
+            "location": "/cloud/aws/amplify/#why",
+            "text": "Get  Authentication and user management  Hosting including https access  NoSQL database  S3 storage (userfiles)  Amazon Analytics and messaging.",
+            "title": "Why"
+        },
+        {
+            "location": "/cloud/aws/amplify/#setup",
+            "text": "Create User in IAM with access Keys  Access  AWS Mobile Hub  Create a project  Click  Web  Click  Start  Add project title  Edit your region",
+            "title": "Setup"
+        },
+        {
+            "location": "/cloud/aws/amplify/#setup-your-local-environment",
+            "text": "npm install -g awsmobile-cli  awsmobile configure aws  - set your access keys  Change into your project folder  Initialize your project  awsmobile init e32a",
+            "title": "Setup your local environment"
+        },
+        {
+            "location": "/cloud/aws/amplify/#add-additional-services",
+            "text": "User Sign-in  Email and Password  Optional  - user required to sign in  NoSQL Database   User Data Storage    Update your local environment   awsmobile pull  in your project directory",
+            "title": "Add additional Services"
         },
         {
             "location": "/cloud/aws/cognito/",
@@ -226,34 +261,19 @@
             "title": "Configure the client"
         },
         {
-            "location": "/cloud/aws/amplify/",
-            "text": "Amazon Mobile Hub\n\n\nWhy\n\n\n\n\nGet\n\n\nAuthentication and user management\n\n\nHosting including https access\n\n\nNoSQL database\n\n\nS3 storage (userfiles)\n\n\nAmazon Analytics and messaging.\n\n\n\n\nSetup\n\n\n\n\nCreate User in IAM with access Keys\n\n\nAccess \nAWS Mobile Hub\n\n\nCreate a project\n\n\nClick \nWeb\n\n\nClick \nStart\n\n\nAdd project title\n\n\nEdit your region\n\n\n\n\nSetup your local environment\n\n\n\n\nnpm install -g awsmobile-cli\n\n\nawsmobile configure aws\n - set your access keys\n\n\nChange into your project folder\n\n\nInitialize your project\n\n\nawsmobile init e32a\n\n\n\n\nAdd additional Services\n\n\n\n\nUser Sign-in\n\n\nEmail and Password\n\n\nOptional\n - user required to sign in\n\n\nNoSQL Database\n\n\n\n\nUser Data Storage\n\n\n\n\n\n\nUpdate your local environment\n\n\n\n\nawsmobile pull\n in your project directory",
-            "title": "Amplify"
+            "location": "/cloud/aws/dynamodb/",
+            "text": "DynamoDB\n\n\nResources\n\n\n\n\nLocal version - \nDynamoDB Local\n\n\naws dynamodb list-tables --endpoint-url http://localhost:8000",
+            "title": "DynamoDB"
         },
         {
-            "location": "/cloud/aws/amplify/#amazon-mobile-hub",
+            "location": "/cloud/aws/dynamodb/#dynamodb",
             "text": "",
-            "title": "Amazon Mobile Hub"
+            "title": "DynamoDB"
         },
         {
-            "location": "/cloud/aws/amplify/#why",
-            "text": "Get  Authentication and user management  Hosting including https access  NoSQL database  S3 storage (userfiles)  Amazon Analytics and messaging.",
-            "title": "Why"
-        },
-        {
-            "location": "/cloud/aws/amplify/#setup",
-            "text": "Create User in IAM with access Keys  Access  AWS Mobile Hub  Create a project  Click  Web  Click  Start  Add project title  Edit your region",
-            "title": "Setup"
-        },
-        {
-            "location": "/cloud/aws/amplify/#setup-your-local-environment",
-            "text": "npm install -g awsmobile-cli  awsmobile configure aws  - set your access keys  Change into your project folder  Initialize your project  awsmobile init e32a",
-            "title": "Setup your local environment"
-        },
-        {
-            "location": "/cloud/aws/amplify/#add-additional-services",
-            "text": "User Sign-in  Email and Password  Optional  - user required to sign in  NoSQL Database   User Data Storage    Update your local environment   awsmobile pull  in your project directory",
-            "title": "Add additional Services"
+            "location": "/cloud/aws/dynamodb/#resources",
+            "text": "Local version -  DynamoDB Local  aws dynamodb list-tables --endpoint-url http://localhost:8000",
+            "title": "Resources"
         },
         {
             "location": "/cloud/aws/search/",
@@ -1557,7 +1577,7 @@
         },
         {
             "location": "/web/javascript/vue/vuejs/",
-            "text": "Vuejs Notes\n\n\nResources\n\n\n\n\nVue\n - main site\n\n\nVue-loader\n - Using Vue with Webpack\n\n\nVue Foundation\n - template for using Foundation with Vue and Webpack\n\n\nVue Font Awesome\n\n\nVue Admin\n\n\nVuex\n\n\nVuex Rest API\n\n\n\n\nReplacement resources\n\n\n\n\naxios\n - Replacement for vue resources http\n\n\nHow to use axios as your http client\n - Section on setting headers in Axios.\n\n\nAxios with Vue\n - Use in component\n\n\n\n\n\n\n\n\nNotes\n\n\n\n\nMultiple View Instances on Same Page\n\n\n\n\nWordpress\n\n\n\n\nWordpress API\n - notes for Wordpress API\n\n\n\n\nTutorials\n\n\n\n\nVue Abstract Components\n\n\nVue Lazy Load Images\n\n\n\n\nComponents\n\n\n\n\nVue The Mask\n\n\nVue Cookie Law\n\n\nVue Class Component\n\n\nVee Validate\n\n\nClear all errors and make fields pristine:\n\n\nthis.field = \"\"\n\n\nthis.$validator.reset()\n\n\n\n\n\n\n\n\n\n\n\n\nImporting vue components - \nscript.ts\n - \ntemplate.html\n\n\n<div class=\"grid-container\">\n    <h1>{{msg}}</h1>\n    <marvel-proto></marvel-proto>\n</div>\n\n\n\n\n\n\nscript.ts\n\n\n\n\nimport MarvelProto from './../MarvelProto/MarvelProto.vue'\nexport default {\n    components: {\n        MarvelProto,\n    },\n    data: () => (\n        {\n            msg: \"User List\",\n        }\n    ),\n};",
+            "text": "Vuejs Notes\n\n\nResources\n\n\n\n\nVue\n - main site\n\n\nVue-loader\n - Using Vue with Webpack\n\n\nVue Foundation\n - template for using Foundation with Vue and Webpack\n\n\nVue Font Awesome\n\n\nVue Admin\n\n\nVuex\n\n\nVuex Rest API\n\n\n\n\nReplacement resources\n\n\n\n\naxios\n - Replacement for vue resources http\n\n\nHow to use axios as your http client\n - Section on setting headers in Axios.\n\n\nAxios with Vue\n - Use in component\n\n\n\n\n\n\n\n\nNotes\n\n\n\n\nMultiple View Instances on Same Page\n\n\n\n\nWordpress\n\n\n\n\nWordpress API\n - notes for Wordpress API\n\n\n\n\nTutorials\n\n\n\n\nVue Abstract Components\n\n\nVue Lazy Load Images\n\n\n\n\nComponents\n\n\n\n\nVue The Mask\n\n\nVue Cookie Law\n\n\nVue Class Component\n\n\nVee Validate\n\n\nClear all errors and make fields pristine:\n\n\nthis.field = \"\"\n\n\nthis.$validator.reset()\n\n\n\n\n\n\n\n\n\n\n\n\nImporting vue components - \nscript.ts\n - \ntemplate.html\n\n\n<div class=\"grid-container\">\n    <h1>{{msg}}</h1>\n    <marvel-proto></marvel-proto>\n</div>\n\n\n\n\n\n\nscript.ts\n\n\n\n\nimport MarvelProto from './../MarvelProto/MarvelProto.vue'\nexport default {\n    components: {\n        MarvelProto,\n    },\n    data: () => (\n        {\n            msg: \"User List\",\n        }\n    ),\n};\n\n\n\n\nCreating new project with vue-cli\n\n\n\n\nSetup the proxy\n\n\nIn \nvue.config.js\n\n\n\n\n  devServer: {\n    proxy: 'http://localhost:5000'\n  }\n\n\n\n\n\n\nSetup typescript\n\n\nnpm install -D @vue/cli-plugin-typescript\n\n\nvue invoke typescript",
             "title": "Vue"
         },
         {
@@ -1599,6 +1619,11 @@
             "location": "/web/javascript/vue/vuejs/#importing-vue-components-scriptts-templatehtml",
             "text": "<div class=\"grid-container\">\n    <h1>{{msg}}</h1>\n    <marvel-proto></marvel-proto>\n</div>   script.ts   import MarvelProto from './../MarvelProto/MarvelProto.vue'\nexport default {\n    components: {\n        MarvelProto,\n    },\n    data: () => (\n        {\n            msg: \"User List\",\n        }\n    ),\n};",
             "title": "Importing vue components - script.ts - template.html"
+        },
+        {
+            "location": "/web/javascript/vue/vuejs/#creating-new-project-with-vue-cli",
+            "text": "Setup the proxy  In  vue.config.js     devServer: {\n    proxy: 'http://localhost:5000'\n  }   Setup typescript  npm install -D @vue/cli-plugin-typescript  vue invoke typescript",
+            "title": "Creating new project with vue-cli"
         },
         {
             "location": "/web/javascript/vue/foundation/",
@@ -1992,7 +2017,7 @@
         },
         {
             "location": "/java/java/",
-            "text": "Java Notes\n\n\n\n\nDetermine location of Java on Mac OS X\n\n\necho $(/usr/libexec/java_home)\n\n\n\n\n\n\nUsing Ivy with Ant\n\n\nDownload \nApache Ivy\n\n\nPut files into ant/lib directory.\n\n\nLib directory at \n~/.ant/lib\n - Using sdkman to manage Ant.\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\nAwesome Java\n\n\nJHipster\n - Spring Boot + Angular\n\n\nLombok\n - decorators for Java.\n\n\nApache POI\n - API for Microsoft Documents\n\n\nJava Design Patterns\n\n\nJbake\n - Static site generator in Java\n\n\nApache FOP\n - PDF generator\n\n\nDropWizard\n - Generate REST Apps.\n\n\nHandlebars Java\n - Mustache/Handlebars template engine in Java.\n\n\nApache PDFBox\n - java library for PDF",
+            "text": "Java Notes\n\n\n\n\nDetermine location of Java on Mac OS X\n\n\necho $(/usr/libexec/java_home)\n\n\n\n\n\n\nUsing Ivy with Ant\n\n\nDownload \nApache Ivy\n\n\nPut files into ant/lib directory.\n\n\nLib directory at \n~/.ant/lib\n - Using sdkman to manage Ant.\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\nAwesome Java\n\n\nJHipster\n - Spring Boot + Angular\n\n\nLombok\n - decorators for Java.\n\n\nApache POI\n - API for Microsoft Documents\n\n\nJava Design Patterns\n\n\nJbake\n - Static site generator in Java\n\n\nApache FOP\n - PDF generator\n\n\nDropWizard\n - Generate REST Apps.\n\n\nHandlebars Java\n - Mustache/Handlebars template engine in Java.\n\n\nApache PDFBox\n - java library for PDF\n\n\nJava Sample Approach",
             "title": "Notes"
         },
         {
@@ -2002,7 +2027,7 @@
         },
         {
             "location": "/java/java/#resources",
-            "text": "Awesome Java  JHipster  - Spring Boot + Angular  Lombok  - decorators for Java.  Apache POI  - API for Microsoft Documents  Java Design Patterns  Jbake  - Static site generator in Java  Apache FOP  - PDF generator  DropWizard  - Generate REST Apps.  Handlebars Java  - Mustache/Handlebars template engine in Java.  Apache PDFBox  - java library for PDF",
+            "text": "Awesome Java  JHipster  - Spring Boot + Angular  Lombok  - decorators for Java.  Apache POI  - API for Microsoft Documents  Java Design Patterns  Jbake  - Static site generator in Java  Apache FOP  - PDF generator  DropWizard  - Generate REST Apps.  Handlebars Java  - Mustache/Handlebars template engine in Java.  Apache PDFBox  - java library for PDF  Java Sample Approach",
             "title": "Resources"
         },
         {
