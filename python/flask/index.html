@@ -1388,6 +1388,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#flask-with-rest-api" title="Flask with REST API" class="md-nav__link">
+    Flask with REST API
+  </a>
+  
+</li>
+      
       
       
       
@@ -2271,6 +2278,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#flask-with-rest-api" title="Flask with REST API" class="md-nav__link">
+    Flask with REST API
+  </a>
+  
+</li>
+      
       
       
       
@@ -2304,6 +2318,18 @@
 <li>Install flask</li>
 <li><code>pipevn install flask SQLAlchemy psycopg2 click uwsgi</code></li>
 </ul>
+<h2 id="flask-with-rest-api">Flask with REST API</h2>
+<ul>
+<li>Using Marshmallow<ul>
+<li><a href="https://marshmallow.readthedocs.io/en/latest/quickstart.html#declaring-schemas">Declaring Schemas</a></li>
+<li>Implicit field creation - let marshmallow figure out the field.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="python">class DemoSchema(Schema):
+  class Meta:
+    fields=(&quot;name&quot;, &quot;email&quot;, &quot;created_at&quot;, &quot;uppername&quot;)
+</code></pre>
                 
                   
                 
