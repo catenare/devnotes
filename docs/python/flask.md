@@ -10,3 +10,13 @@
   * `pipenv shell`
 * Install flask
   * `pipevn install flask SQLAlchemy psycopg2 click uwsgi`
+
+## Flask with REST API
+* Using Marshmallow
+    * [Declaring Schemas](https://marshmallow.readthedocs.io/en/latest/quickstart.html#declaring-schemas)
+    * Implicit field creation - let marshmallow figure out the field.
+```python
+class DemoSchema(Schema):
+  class Meta:
+    fields=("name", "email", "created_at", "uppername")
+```

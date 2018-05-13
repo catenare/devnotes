@@ -93,3 +93,6 @@
     }
     module.exports = generateCustomers
 ```
+
+## REST Test Endpoints
+* [JsonPlaceHolder](https://jsonplaceholder.typicode.com/)

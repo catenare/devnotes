@@ -77,3 +77,21 @@
     * `TS2559: Type 'Headers' has no properties in common with type 'RequestOptionsArgs'.` - *RequestOptions* require an object. *{headers: this.headers}*
     * `Uncaught Error: Can't resolve all parameters for NoteService:` - Issue with not having `@Injectable()` on noteservice.
 
+### Proxy api calls in angular - access API calls from local server.
+* [Proxy Config](https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/proxy.md)
+* *proxy.conf.json*
+```json
+{
+  "/children": {
+    "target": "http://localhost:5000",
+    "secure": false
+  }
+}
+```
+
+### Material Design Table
+* [Angular Material Table with CDK Table](https://stackblitz.com/edit/angular-material2-table?file=app%2Fapp.component.ts)
+
+### Angular rxjs
+* [Angular Observable Ussage](https://angular.io/guide/practical-observable-usage) - Observable
+* 
