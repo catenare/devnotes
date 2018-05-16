@@ -40,7 +40,7 @@
     
     
       
-        <title>Flask - Development Notes for Johan Martin</title>
+        <title>Response Codes - Development Notes for Johan Martin</title>
       
     
     
@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#flask-notes" tabindex="1" class="md-skip">
+      <a href="#rest-implementation" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -121,7 +121,7 @@
                 Development Notes for Johan Martin
               </span>
               <span class="md-header-nav__topic">
-                Flask
+                Response Codes
               </span>
             
           
@@ -341,10 +341,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
     <label class="md-nav__link" for="nav-3-1">
       API
@@ -362,7 +364,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../api/general/" title="APIs" class="md-nav__link">
+    <a href="../general/" title="APIs" class="md-nav__link">
       APIs
     </a>
   </li>
@@ -372,11 +374,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../api/rest/" title="Response Codes" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Response Codes
+      </label>
+    
+    <a href="./" title="Response Codes" class="md-nav__link md-nav__link--active">
       Response Codes
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1289,12 +1329,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7">
     
     <label class="md-nav__link" for="nav-3-7">
       Python
@@ -1312,7 +1350,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../general/" title="General" class="md-nav__link">
+    <a href="../../python/general/" title="General" class="md-nav__link">
       General
     </a>
   </li>
@@ -1324,7 +1362,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../packages/" title="Packages" class="md-nav__link">
+    <a href="../../python/packages/" title="Packages" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -1336,7 +1374,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../pipenv/" title="Pipenv" class="md-nav__link">
+    <a href="../../python/pipenv/" title="Pipenv" class="md-nav__link">
       Pipenv
     </a>
   </li>
@@ -1348,7 +1386,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../research/" title="Research" class="md-nav__link">
+    <a href="../../python/research/" title="Research" class="md-nav__link">
       Research
     </a>
   </li>
@@ -1358,63 +1396,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Flask
-      </label>
-    
-    <a href="./" title="Flask" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../python/flask/" title="Flask" class="md-nav__link">
       Flask
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sources" title="Sources" class="md-nav__link">
-    Sources
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-flask-app-now-using-pipenv" title="Creating a Flask App Now using Pipenv" class="md-nav__link">
-    Creating a Flask App Now using Pipenv
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flask-with-rest-api" title="Flask with REST API" class="md-nav__link">
-    Flask with REST API
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1424,7 +1410,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../sqlalchemy/" title="SQLAlchemy" class="md-nav__link">
+    <a href="../../python/sqlalchemy/" title="SQLAlchemy" class="md-nav__link">
       SQLAlchemy
     </a>
   </li>
@@ -1436,7 +1422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../testing/" title="Testing" class="md-nav__link">
+    <a href="../../python/testing/" title="Testing" class="md-nav__link">
       Testing
     </a>
   </li>
@@ -2277,22 +2263,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sources" title="Sources" class="md-nav__link">
-    Sources
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-flask-app-now-using-pipenv" title="Creating a Flask App Now using Pipenv" class="md-nav__link">
-    Creating a Flask App Now using Pipenv
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flask-with-rest-api" title="Flask with REST API" class="md-nav__link">
-    Flask with REST API
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
   </a>
   
 </li>
@@ -2313,59 +2285,29 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/catenare/devnotes/edit/master/md/python/flask.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/catenare/devnotes/edit/master/md/api/rest.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="flask-notes">Flask Notes</h1>
-<h2 id="sources">Sources</h2>
+                <h1 id="rest-implementation">REST Implementation</h1>
+<h2 id="resources">Resources</h2>
 <ul>
-<li><a href="http://flask.pocoo.org">Flask</a></li>
-<li><a href="https://www.digitalocean.com/community/tutorials/how-to-structure-large-flask-applications">How to Structure Large Flask Applications</a></li>
-<li><a href="https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-14-04">How to serve flask applications with uwsgi and nginx</a></li>
-</ul>
-<h2 id="creating-a-flask-app-now-using-pipenv"><del>Creating a Flask App</del> Now using Pipenv</h2>
-<ul>
-<li>Create directory and cd into directory</li>
-<li><code>pipenv shell</code></li>
-<li>Install flask</li>
-<li><code>pipevn install flask SQLAlchemy psycopg2 click uwsgi</code></li>
-</ul>
-<h2 id="flask-with-rest-api">Flask with REST API</h2>
-<ul>
-<li>Using Marshmallow<ul>
-<li><a href="https://marshmallow.readthedocs.io/en/latest/quickstart.html#declaring-schemas">Declaring Schemas</a></li>
-<li>Implicit field creation - let marshmallow figure out the field.</li>
+<li>Response Codes: <a href="https://blog.restcase.com/rest-api-error-codes-101/">Response Codes</a></li>
+<li>HTTP Status Codes: <a href="http://www.restapitutorial.com/httpstatuscodes.html">HTTP Status Codes</a></li>
+<li>Details:<ul>
+<li>200 OK</li>
+<li>201 Created</li>
+<li>202 Accepted</li>
+<li>304 Not Modified</li>
+<li>400 Bad Request</li>
+<li>401 Not Authorized</li>
+<li>403 Forbidden</li>
+<li>404 Not Found</li>
+<li>500 Internal Server Error</li>
+<li>501 Not Implemented</li>
+<li>503 Service Not Available</li>
 </ul>
 </li>
 </ul>
-<pre><code class="python">class DemoSchema(Schema):
-  class Meta:
-    fields=(&quot;name&quot;, &quot;email&quot;, &quot;created_at&quot;, &quot;uppername&quot;)
-</code></pre>
-
-<ul>
-<li>Using Marshmallow with jsonschema to validate data from api<ul>
-<li>Using marshmallow-jsonschema - <a href="https://github.com/fuhrysteve/marshmallow-jsonschema">marshmallow-jsonschema</a><ul>
-<li>Use to dump jsonschema from marshmallow</li>
-</ul>
-</li>
-<li>Using jsonschema - <a href="https://github.com/Julian/jsonschema">JsonSchema</a><ul>
-<li>Uses jsocshema validate, ValidationError</li>
-<li>Use the jsonschema from marshmallow-jsonschema to validate content from api</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code class="python">    åsch = ReceiptSchema()
-    js_schema = json_schema.dump(sch).data
-    receipt = request.get_json()
-    try:
-        validate(receipt, js_schema)
-        receipt_data = sch.load(receipt).data
-    except ValidationError as err:
-        resp['err'] = err.message
-</code></pre>
                 
                   
                 
@@ -2386,7 +2328,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../research/" title="Research" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../general/" title="APIs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2395,19 +2337,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Research
+                APIs
               </span>
             </div>
           </a>
         
         
-          <a href="../sqlalchemy/" title="SQLAlchemy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../cloud/aws/aws/" title="Amazon" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                SQLAlchemy
+                Amazon
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
