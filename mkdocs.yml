@@ -24,6 +24,7 @@ pages:
 - Development:
   - API:
     - "APIs": 'api/general.md'
+    - "Response Codes": 'api/rest.md'
   - Cloud:
     - 'AWS': 
       - 'Amazon': 'cloud/aws/aws.md'

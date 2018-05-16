@@ -20,3 +20,20 @@ class DemoSchema(Schema):
   class Meta:
     fields=("name", "email", "created_at", "uppername")
 ```
+
+* Using Marshmallow with jsonschema to validate data from api
+    * Using marshmallow-jsonschema - [marshmallow-jsonschema](https://github.com/fuhrysteve/marshmallow-jsonschema)
+        * Use to dump jsonschema from marshmallow
+    * Using jsonschema - [JsonSchema](https://github.com/Julian/jsonschema)
+        * Uses jsocshema validate, ValidationError
+        * Use the jsonschema from marshmallow-jsonschema to validate content from api
+```python
+    åsch = ReceiptSchema()
+    js_schema = json_schema.dump(sch).data
+    receipt = request.get_json()
+    try:
+        validate(receipt, js_schema)
+        receipt_data = sch.load(receipt).data
+    except ValidationError as err:
+        resp['err'] = err.message
+```   

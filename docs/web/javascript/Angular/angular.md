@@ -89,8 +89,9 @@
 }
 ```
 
-### Material Design Table
+### Material Design
 * [Angular Material Table with CDK Table](https://stackblitz.com/edit/angular-material2-table?file=app%2Fapp.component.ts)
+* [Layout and CSS](https://material.io/design/foundation-overview/)
 
 ### Angular rxjs
 * [Angular Observable Ussage](https://angular.io/guide/practical-observable-usage) - Observable

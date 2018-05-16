@@ -192,3 +192,7 @@ node_modules
   }
 ```
 * List of hex codes for font-awesome: [FontAwesomeSnippet](http://astronautweb.co/snippet/font-awesome/)
+
+
+## Material Design
+* [Material Design Web](https://github.com/material-components/material-components-web)
