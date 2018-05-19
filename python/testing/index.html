@@ -2335,11 +2335,6 @@
 <li><a href="https://taverntesting.github.io/">Tavern</a> - API testing</li>
 </ul>
 <h2 id="tavern">Tavern</h2>
-<ul>
-<li>Uses a YAML file for test setup.</li>
-<li>Talks directly to the API</li>
-<li>Can use pytest to run the test.</li>
-</ul>
 <h3 id="notes">Notes</h3>
 <ol>
 <li><code>pipenv install --dev tavern[pytest]</code></li>
@@ -2347,10 +2342,20 @@
 <li><em>test_server.tavern.yaml</em> - all test should be <em>test_{name}.tavern.yaml</em></li>
 </ul>
 </li>
-<li>Run <code>pytest</code> in top directory</li>
-<li>Notes<ul>
-<li>Can create <em>common.yaml</em> file with shared parameters</li>
-<li>Be sure to include it in every individual test</li>
+<li><em>Pytest</em><ul>
+<li>Run <code>pytest</code> in top directory - will find <em>tests/</em> directory</li>
+<li>Run selected tests - <code>pytest -k fake</code> to run all tests with <strong>fake</strong> in the name.</li>
+<li>Minimize debug info - <code>pytest --tb=short</code></li>
+</ul>
+</li>
+<li>*Tavern<ul>
+<li>Uses a YAML file for test setup.</li>
+<li>Talks directly to the API</li>
+<li>Can use pytest to run the test.</li>
+<li>Can create <em>common.yaml</em> file with shared parameters<ul>
+<li>Be sure to include it in every individual test - every test is individual</li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>

@@ -222,7 +222,7 @@
         },
         {
             "location": "/cloud/aws/amplify/",
-            "text": "Amazon Mobile Hub\n\n\nWhy\n\n\n\n\nGet\n\n\nAuthentication and user management\n\n\nHosting including https access\n\n\nNoSQL database\n\n\nS3 storage (userfiles)\n\n\nAmazon Analytics and messaging.\n\n\n\n\nSetup\n\n\n\n\nCreate User in IAM with access Keys\n\n\nAccess \nAWS Mobile Hub\n\n\nCreate a project\n\n\nClick \nWeb\n\n\nClick \nStart\n\n\nAdd project title\n\n\nEdit your region\n\n\n\n\nSetup your local environment\n\n\n\n\nnpm install -g awsmobile-cli\n\n\nawsmobile configure aws\n - set your access keys\n\n\nChange into your project folder\n\n\nInitialize your project\n\n\nawsmobile init e32a\n\n\n\n\nAdd additional Services\n\n\n\n\nUser Sign-in\n\n\nEmail and Password\n\n\nOptional\n - user required to sign in\n\n\nNoSQL Database\n\n\n\n\nUser Data Storage\n\n\n\n\n\n\nUpdate your local environment\n\n\n\n\nawsmobile pull\n in your project directory",
+            "text": "Amazon Mobile Hub\n\n\nWhy\n\n\n\n\nGet\n\n\nAuthentication and user management\n\n\nHosting including https access\n\n\nNoSQL database\n\n\nS3 storage (userfiles)\n\n\nAmazon Analytics and messaging.\n\n\n\n\nSetup\n\n\n\n\nCreate User in IAM with access Keys\n\n\nAccess \nAWS Mobile Hub\n\n\nCreate a project\n\n\nClick \nWeb\n\n\nClick \nStart\n\n\nAdd project title\n\n\nEdit your region\n\n\n\n\nSetup your local environment\n\n\n\n\nnpm install -g awsmobile-cli\n\n\n~\nawsmobile configure aws\n - set your access keys~\n\n\nawsmobile configure -p lookfindme\n - use profile lookfindme\n\n\nChange into your project folder\n\n\nInitialize your project\n\n\nawsmobile init e32a\n\n\n\n\nAdd additional Services\n\n\n\n\nUser Sign-in\n\n\nEmail and Password\n\n\nOptional\n - user required to sign in\n\n\nNoSQL Database\n\n\n\n\nUser Data Storage\n\n\n\n\n\n\nUpdate your local environment\n\n\n\n\nawsmobile pull\n in your project directory",
             "title": "Amplify"
         },
         {
@@ -242,7 +242,7 @@
         },
         {
             "location": "/cloud/aws/amplify/#setup-your-local-environment",
-            "text": "npm install -g awsmobile-cli  awsmobile configure aws  - set your access keys  Change into your project folder  Initialize your project  awsmobile init e32a",
+            "text": "npm install -g awsmobile-cli  ~ awsmobile configure aws  - set your access keys~  awsmobile configure -p lookfindme  - use profile lookfindme  Change into your project folder  Initialize your project  awsmobile init e32a",
             "title": "Setup your local environment"
         },
         {
@@ -2017,7 +2017,7 @@
         },
         {
             "location": "/python/testing/",
-            "text": "Testing with Python\n\n\nResources\n\n\n\n\nPyTest\n\n\nTavern\n - API testing\n\n\n\n\nTavern\n\n\n\n\nUses a YAML file for test setup.\n\n\nTalks directly to the API\n\n\nCan use pytest to run the test.\n\n\n\n\nNotes\n\n\n\n\npipenv install --dev tavern[pytest]\n\n\nCreate YAML test file in \ntests\n directory.\n\n\ntest_server.tavern.yaml\n - all test should be \ntest_{name}.tavern.yaml\n\n\n\n\n\n\nRun \npytest\n in top directory\n\n\nNotes\n\n\nCan create \ncommon.yaml\n file with shared parameters\n\n\nBe sure to include it in every individual test",
+            "text": "Testing with Python\n\n\nResources\n\n\n\n\nPyTest\n\n\nTavern\n - API testing\n\n\n\n\nTavern\n\n\nNotes\n\n\n\n\npipenv install --dev tavern[pytest]\n\n\nCreate YAML test file in \ntests\n directory.\n\n\ntest_server.tavern.yaml\n - all test should be \ntest_{name}.tavern.yaml\n\n\n\n\n\n\nPytest\n\n\nRun \npytest\n in top directory - will find \ntests/\n directory\n\n\nRun selected tests - \npytest -k fake\n to run all tests with \nfake\n in the name.\n\n\nMinimize debug info - \npytest --tb=short\n\n\n\n\n\n\n*Tavern\n\n\nUses a YAML file for test setup.\n\n\nTalks directly to the API\n\n\nCan use pytest to run the test.\n\n\nCan create \ncommon.yaml\n file with shared parameters\n\n\nBe sure to include it in every individual test - every test is individual",
             "title": "Testing"
         },
         {
@@ -2032,12 +2032,12 @@
         },
         {
             "location": "/python/testing/#tavern",
-            "text": "Uses a YAML file for test setup.  Talks directly to the API  Can use pytest to run the test.",
+            "text": "",
             "title": "Tavern"
         },
         {
             "location": "/python/testing/#notes",
-            "text": "pipenv install --dev tavern[pytest]  Create YAML test file in  tests  directory.  test_server.tavern.yaml  - all test should be  test_{name}.tavern.yaml    Run  pytest  in top directory  Notes  Can create  common.yaml  file with shared parameters  Be sure to include it in every individual test",
+            "text": "pipenv install --dev tavern[pytest]  Create YAML test file in  tests  directory.  test_server.tavern.yaml  - all test should be  test_{name}.tavern.yaml    Pytest  Run  pytest  in top directory - will find  tests/  directory  Run selected tests -  pytest -k fake  to run all tests with  fake  in the name.  Minimize debug info -  pytest --tb=short    *Tavern  Uses a YAML file for test setup.  Talks directly to the API  Can use pytest to run the test.  Can create  common.yaml  file with shared parameters  Be sure to include it in every individual test - every test is individual",
             "title": "Notes"
         },
         {
