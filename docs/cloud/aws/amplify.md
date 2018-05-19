@@ -8,7 +8,6 @@
   * S3 storage (userfiles)
   * Amazon Analytics and messaging.
 
-
 ## Setup
 1. Create User in IAM with access Keys
 1. Access **AWS Mobile Hub**
@@ -20,7 +19,8 @@
 
 ### Setup your local environment
 1. `npm install -g awsmobile-cli`
-  1. `awsmobile configure aws` - set your access keys
+  1. ~`awsmobile configure aws` - set your access keys~
+  1. `awsmobile configure -p lookfindme` - use profile lookfindme
 1. Change into your project folder
 1. Initialize your project
   1. `awsmobile init e32a`
