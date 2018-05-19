@@ -96,3 +96,4 @@
 
 ## REST Test Endpoints
 * [JsonPlaceHolder](https://jsonplaceholder.typicode.com/)
+* [Random User Generator](https://randomuser.me/)
