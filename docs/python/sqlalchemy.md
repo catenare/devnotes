@@ -24,7 +24,7 @@ CHILD_VIEW = 'public.child_view'
 class ChildView(base):
     __table__ = get_table(CHILD_VIEW)
     __mapper_args__ = {
-        'primary_key': [__table__.c.acct_uuid]
+        'primary_key': [__table__.c.account_uuid]
     }
 
 base.prepare()

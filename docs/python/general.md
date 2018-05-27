@@ -30,6 +30,8 @@
 * Issue with readline
     * ~~Terminal all screwed up after using python repl~~
         * ~~`sudo port install python36 +readline` - fixes issues with python and terminal Mac OS X~~
+* Merge dictionaries
+  * `z = {**x, **y}` - [Merge Python Dictionaries](https://stackoverflow.com/questions/38987/how-to-merge-two-dictionaries-in-a-single-expression)
 
 * uwsgi
   * wsgi = wsgi.py file

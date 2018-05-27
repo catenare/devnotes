@@ -25,7 +25,7 @@ class DemoSchema(Schema):
     * Using marshmallow-jsonschema - [marshmallow-jsonschema](https://github.com/fuhrysteve/marshmallow-jsonschema)
         * Use to dump jsonschema from marshmallow
     * Using jsonschema - [JsonSchema](https://github.com/Julian/jsonschema)
-        * Uses jsocshema validate, ValidationError
+        * Uses jsonshema validate, ValidationError
         * Use the jsonschema from marshmallow-jsonschema to validate content from api
 ```python
     åsch = ReceiptSchema()

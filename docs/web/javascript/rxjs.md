@@ -24,3 +24,8 @@
 * [Official Site](http://reactivex.io/rxjs/)
 * [Github RX Book](http://xgrommx.github.io/rx-book/index.html)
 * [Rx Extensions](https://github.com/Reactive-Extensions)
+
+## Learn RxJS
+* [Which Operator Do I Use](https://xgrommx.github.io/rx-book/content/which_operator_do_i_use/index.html)
+* [RxJs Observables in Angular](https://github.com/wardbell/rxjs-in-ng)
+* [Learn RxJs](https://github.com/btroncone/learn-rxjs)

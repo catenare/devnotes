@@ -22,8 +22,8 @@
 
 ## Testing
 * ~~[Nose](http://nose.readthedocs.io/en/latest/) - Testing for python~~
-* [PyTest][https://docs.pytest.org/en/latest/]
-* [Tavern][https://taverntesting.github.io/] - API testing
+* [PyTest](https://docs.pytest.org/en/latest/)
+* [Tavern](https://taverntesting.github.io/) - API testing
 
 ## Documentation
 * [Mkdocs](http://www.mkdocs.org)
