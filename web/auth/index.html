@@ -40,7 +40,7 @@
     
     
       
-        <title>Angular 4+ - Development Notes for Johan Martin</title>
+        <title>Authentication - Development Notes for Johan Martin</title>
       
     
     
@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#learning-basic-angular" tabindex="1" class="md-skip">
+      <a href="#web-authentication" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -121,7 +121,7 @@
                 Development Notes for Johan Martin
               </span>
               <span class="md-header-nav__topic">
-                Angular 4+
+                Authentication
               </span>
             
           
@@ -320,10 +320,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Development
@@ -339,11 +341,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../web/auth/" title="Authentication" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Authentication
+      </label>
+    
+    <a href="./" title="Authentication" class="md-nav__link md-nav__link--active">
       Authentication
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jwt" title="JWT" class="md-nav__link">
+    JWT
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -895,7 +935,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/front/" title="Front" class="md-nav__link">
+    <a href="../front/" title="Front" class="md-nav__link">
       Front
     </a>
   </li>
@@ -907,7 +947,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/css/" title="CSS" class="md-nav__link">
+    <a href="../css/" title="CSS" class="md-nav__link">
       CSS
     </a>
   </li>
@@ -919,7 +959,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/foundation/" title="Foundation" class="md-nav__link">
+    <a href="../foundation/" title="Foundation" class="md-nav__link">
       Foundation
     </a>
   </li>
@@ -931,7 +971,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/assets/" title="Asset Management" class="md-nav__link">
+    <a href="../assets/" title="Asset Management" class="md-nav__link">
       Asset Management
     </a>
   </li>
@@ -943,7 +983,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/notes/" title="Notes" class="md-nav__link">
+    <a href="../notes/" title="Notes" class="md-nav__link">
       Notes
     </a>
   </li>
@@ -955,7 +995,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/styleguide/" title="StyleGuide" class="md-nav__link">
+    <a href="../styleguide/" title="StyleGuide" class="md-nav__link">
       StyleGuide
     </a>
   </li>
@@ -984,7 +1024,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/notes/" title="General Notes" class="md-nav__link">
+    <a href="../javascript/notes/" title="General Notes" class="md-nav__link">
       General Notes
     </a>
   </li>
@@ -996,7 +1036,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/startup/" title="JS Starter Config" class="md-nav__link">
+    <a href="../javascript/startup/" title="JS Starter Config" class="md-nav__link">
       JS Starter Config
     </a>
   </li>
@@ -1008,7 +1048,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/rxjs/" title="RxJs" class="md-nav__link">
+    <a href="../javascript/rxjs/" title="RxJs" class="md-nav__link">
       RxJs
     </a>
   </li>
@@ -1020,7 +1060,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/typescript/" title="TypeScript" class="md-nav__link">
+    <a href="../typescript/" title="TypeScript" class="md-nav__link">
       TypeScript
     </a>
   </li>
@@ -1051,7 +1091,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/testing/general/" title="Intro" class="md-nav__link">
+    <a href="../javascript/testing/general/" title="Intro" class="md-nav__link">
       Intro
     </a>
   </li>
@@ -1063,7 +1103,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/testing/tape/" title="Tape" class="md-nav__link">
+    <a href="../javascript/testing/tape/" title="Tape" class="md-nav__link">
       Tape
     </a>
   </li>
@@ -1099,7 +1139,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/Angular/angular/" title="Angular" class="md-nav__link">
+    <a href="../javascript/Angular/angular/" title="Angular" class="md-nav__link">
       Angular
     </a>
   </li>
@@ -1135,7 +1175,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/vue/notes/" title="Notes" class="md-nav__link">
+    <a href="../javascript/vue/notes/" title="Notes" class="md-nav__link">
       Notes
     </a>
   </li>
@@ -1147,7 +1187,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/vue/vuejs/" title="Vue" class="md-nav__link">
+    <a href="../javascript/vue/vuejs/" title="Vue" class="md-nav__link">
       Vue
     </a>
   </li>
@@ -1159,7 +1199,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/vue/foundation/" title="Foundation Setup" class="md-nav__link">
+    <a href="../javascript/vue/foundation/" title="Foundation Setup" class="md-nav__link">
       Foundation Setup
     </a>
   </li>
@@ -1176,7 +1216,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/reactjs/reactjs/" title="Reactjs" class="md-nav__link">
+    <a href="../javascript/reactjs/reactjs/" title="Reactjs" class="md-nav__link">
       Reactjs
     </a>
   </li>
@@ -1188,7 +1228,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/reactjs/redux/" title="Redux" class="md-nav__link">
+    <a href="../javascript/reactjs/redux/" title="Redux" class="md-nav__link">
       Redux
     </a>
   </li>
@@ -1219,7 +1259,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/webpack/webpack/" title="Webpack" class="md-nav__link">
+    <a href="../javascript/webpack/webpack/" title="Webpack" class="md-nav__link">
       Webpack
     </a>
   </li>
@@ -1231,7 +1271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/javascript/webpack/notes/" title="Notes" class="md-nav__link">
+    <a href="../javascript/webpack/notes/" title="Notes" class="md-nav__link">
       Notes
     </a>
   </li>
@@ -1808,12 +1848,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       Learning
@@ -1831,7 +1869,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../jupyter/" title="Using Jupyter" class="md-nav__link">
+    <a href="../../learning/jupyter/" title="Using Jupyter" class="md-nav__link">
       Using Jupyter
     </a>
   </li>
@@ -1843,7 +1881,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../rxjs/" title="RXJS" class="md-nav__link">
+    <a href="../../learning/rxjs/" title="RXJS" class="md-nav__link">
       RXJS
     </a>
   </li>
@@ -1853,49 +1891,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Angular 4+
-      </label>
-    
-    <a href="./" title="Angular 4+" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../learning/learnAngular/" title="Angular 4+" class="md-nav__link">
       Angular 4+
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setup" title="Setup" class="md-nav__link">
-    Setup
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1917,7 +1917,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/" title="Tutorials" class="md-nav__link">
+    <a href="../../learning/tutorials/" title="Tutorials" class="md-nav__link">
       Tutorials
     </a>
   </li>
@@ -2273,8 +2273,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup" title="Setup" class="md-nav__link">
-    Setup
+  <a href="#jwt" title="JWT" class="md-nav__link">
+    JWT
   </a>
   
 </li>
@@ -2295,34 +2295,13 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/catenare/devnotes/edit/master/md/learning/learnAngular.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/catenare/devnotes/edit/master/md/web/auth.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="learning-basic-angular">Learning basic Angular</h1>
-<h2 id="setup">Setup</h2>
+                <h1 id="web-authentication">Web Authentication</h1>
+<h2 id="jwt">JWT</h2>
 <ul>
-<li>Install angular-cli</li>
-<li><code>npm install -g @angular/cli</code></li>
-<li>Create the project</li>
-<li><code>ng new PROJECT_NAME --skip-install --routing --style scss</code></li>
-<li>Setup styles</li>
-<li>Create styles folder in <code>src/app/assets</code></li>
-<li>Copy _settings.scss file from Foundation Template.</li>
-<li>Copy _foundation.scss file from Foundation Template.</li>
-<li>install <code>npm install @fortawesome/fontawesome @fortawesome/fontawesome-free-solid @fortawesome/fontawesome-free-webfonts</code></li>
-<li>Update settings in _foundation.scss<ul>
-<li>Make sure to include ~ in import for foundation.</li>
-<li>import <code>@import '~@fortawesome/fontawesome-free-webfonts/scss/fontawesome';</code></li>
-</ul>
-</li>
-<li>Update settings.scss file<ul>
-<li>Change util import to <code>@import '~foundation-sites/scss/util/util';</code> (line 63)</li>
-<li>Add line to point to font-awesome variable <code>$fa-font-path: '~@fortawesome/fontawesome-free-webfonts/webfonts';</code></li>
-</ul>
-</li>
-<li>Add <code>_custom.scss</code> to import your custom scss.</li>
-<li>Add <code>_foundation.scss</code> to your <code>styles.scss</code> file in your assets folder.</li>
-<li>Import the <code>styles.scss</code> file into your application.</li>
+<li><a href="https://jwt.io/introduction/">Jason Web Tokens</a></li>
 </ul>
                 
                   
@@ -2344,7 +2323,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../rxjs/" title="RXJS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Notes/lookfindme/" title="LookFindMe" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2353,19 +2332,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                RXJS
+                LookFindMe
               </span>
             </div>
           </a>
         
         
-          <a href="../../php/wordpress/api/learn/" title="Wordpress Rest API" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../api/general/" title="APIs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Wordpress Rest API
+                APIs
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
