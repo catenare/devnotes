@@ -22,6 +22,7 @@ pages:
   - 'Backend': 'Notes/backend.md'
   - 'LookFindMe': 'Notes/lookfindme.md'
 - Development:
+  - Authentication: 'web/auth.md'
   - API:
     - "APIs": 'api/general.md'
     - "Response Codes": 'api/rest.md'
