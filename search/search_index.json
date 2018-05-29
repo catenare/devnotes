@@ -436,6 +436,21 @@
             "title": "Adding API Theme"
         },
         {
+            "location": "/php/wordpress/docker/",
+            "text": "Configure PHP with Docker\n\n\nSetup\n\n\n\n\nDocker README",
+            "title": "Docker"
+        },
+        {
+            "location": "/php/wordpress/docker/#configure-php-with-docker",
+            "text": "",
+            "title": "Configure PHP with Docker"
+        },
+        {
+            "location": "/php/wordpress/docker/#setup",
+            "text": "Docker README",
+            "title": "Setup"
+        },
+        {
             "location": "/php/wordpress/api/api/",
             "text": "Wordpress API\n\n\nResources\n\n\n\n\nREST API Handbook\n\n\n\n\nAuth Plugins\n\n\n\n\nJWT-Authentication\n\n\nApplication Passwords\n\n\nOAuth 1.0a Server\n\n\nBasic Auth\n\n\n\n\nUsing JWT-Auth\n\n\n\n\nAdded to \ncomposer.json\n\n\nUnder require: \n\"wpackagist-plugin/jwt-authentication-for-wp-rest-api\": \"~1\"\n\n\n\n\n\n\nAdded JWT constant to \nwp-config.php\n - \ndefine('JWT_AUTH_SECRET_KEY','');\n\n\nAccess - local server - \nhttp://paseo.demo/wp-json/jwt-auth/v1/token\n Pass in username and password via form post.\n\n\n\n\nNotes\n\n\n\n\npass \n?_embed\n as part of the url to get some content embedded. \nhttp://paseo.demo/wp-json/wp/v2/posts?_embed\n;",
             "title": "API"
