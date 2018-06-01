@@ -57,6 +57,8 @@
     * [ngrev](https://github.com/mgechev/ngrev) - navigate structure of the app. Desktop app
     * [Augury] - Debug and profile angular project. Browser extension (Chrome only)
     * [Angular Essentials Plugin]() - Visual Studio Code plugin for Angular development.
+* Tutorials
+    * [Angular with Tailwindcss](https://www.jerriepelser.com/blog/using-tailwindcss-with-angular/)
 ## Notes
 * Gotchas:
     * [ExtractTextWebpackPlugin](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/569) & [[Validation] ajv version mismatch with webpack #524](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/524)
