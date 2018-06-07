@@ -32,3 +32,6 @@ base.prepare()
 
 ## [Automap](http://docs.sqlalchemy.org/en/latest/orm/extensions/automap.html)
 * Use to automatically get table details from the database. This is if the table is being managed separately from *sqlalchemy*.
+
+## Notes
+* Delete with session. [ORM Delete](http://docs.sqlalchemy.org/en/latest/orm/query.html#sqlalchemy.orm.query.Query.delete)

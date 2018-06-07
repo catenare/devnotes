@@ -27,3 +27,4 @@
   * Can use pytest to run the test.
   * Can create **common.yaml** file with shared parameters
     * Be sure to include it in every individual test - every test is individual
+* [Robot Framework](http://robotframework.org)
