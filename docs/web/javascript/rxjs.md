@@ -29,3 +29,6 @@
 * [Which Operator Do I Use](https://xgrommx.github.io/rx-book/content/which_operator_do_i_use/index.html)
 * [RxJs Observables in Angular](https://github.com/wardbell/rxjs-in-ng)
 * [Learn RxJs](https://github.com/btroncone/learn-rxjs)
+
+## rxjs advice
+* catchError in pipe -> create a friendlier message. then throw error messages.
