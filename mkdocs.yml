@@ -16,13 +16,13 @@ extra_css:
 - css/extra.css
 pages:
 - Home: 'index.md'
+- 'Developer Journal': 'developer_journal.md'
 - Notes: 
   - 'Vue and Amp': 'Notes/vueamp.md'
   - 'KinderCare': 'Notes/kindercare.md'
   - 'Backend': 'Notes/backend.md'
   - 'LookFindMe': 'Notes/lookfindme.md'
 - Development:
-  - Examples: 'web_projects_examples.md'
   - Authentication: 'web/auth.md'
   - API:
     - "APIs": 'api/general.md'

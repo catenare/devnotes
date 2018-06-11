@@ -10,7 +10,7 @@
   * awsmobile
 * API
   * Creating json schema for validation
-```styl
+```style
 {
   primary: "#f44336",
   secondary: "#e57373",
