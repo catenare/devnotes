@@ -1,4 +1,4 @@
-#I nstalling Postgresql with macports
+#Installing Postgresql with macports
 
 ~~/opt/local/lib/postgresql96/bin/pg_ctl -D /opt/local/var/db/postgresql96/defaultdb -l logfile start~~
 
@@ -39,57 +39,6 @@
 ## Migrations
 * See [Migrations](dbmigrations.md)
 
-## ~~Setup ODBC Driver for Postgresql on Mac OS X (Excel Compatible)~~ ```Never got this to work```
-* Install notes [Compiling psqlODBC on unix](https://odbc.postgresql.org/docs/unix-compilation.html)
-* Install iODBC Manager from [iODBC.org](http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)
-    * Install Mac Version
-* Download source from [Postgresql ODBC Project](https://www.postgresql.org/ftp/odbc/versions/src/)
-* Untar psqlodbc source
-* Build odbc driver
-	* ```./configure --with-iodbc=/usr/local/iODBC --enable-pthreads```
-	* ```make```
-* Install driver to /usr/local/lib
-	* ```sudo make Install```
-    * files: psqlodbcw.so & psqlodbcw.la
-* ~~Create odbc.ini file in /etc/~~
-* Create *odbc.ini* and *odbcinst.ini* files in */Library/ODBC*
-* Copied */usr/local/lib/psqlodbcw.so* and */usr/local/lib/psqlodbcw.la* to */Library/ODBC/ODBCDataSources*
-	* Allowed to load driver from excel.
-
-odbcinst.ini
-
-```
-[PostgreSQL]
-Description=ODBC For Postgresql
-Driver=/Library/ODBC/ODBCDataSources/psqlodbcw.so
-
-[ODBC]
-Trace=1
-Debug=1
-```
-
-odbc.ini
-
-```
-[ODBC Data Sources]
-pgdata = PostgreSQL native driver
-
-[pgdata]
-Driver      = /usr/local/lib/psqlodbcw.so
-Host        = localhost
-Server      = localhost
-ServerName  = localhost
-Database    = paseo
-UserName    = paseo
-Password    = paseo
-Port        = 5432
-Debug       = 1
-
-[ODBC]
-;Trace=1
-Debug = 1
-DebugFile = /tmp/odbcdebug.log
-```
 
 ## Postgresql Server on Ubuntu
 * pg_hba.conf - allow remote connection and encrypted password
@@ -100,3 +49,147 @@ DebugFile = /tmp/odbcdebug.log
 
 * Connecting to ssh `ssh -i key.pem -L 3333:127.0.0.1:5433 ubuntu@api.paseo.org.za`
 * Connecting to server `psql -h localhost -p 3333 -U paseo -W`
+
+### Configuring Postgresql with UUID and Postgis support.
+* lookfindme setup
+* Tools
+  * Using [Flyway](https://flywaydb.org) and [Gradle](https://gradle.org/) for migrations.
+  * Location - *lookfindmeAPI/tools/database*
+* Create User and Database
+    * Create User
+        * `createuser lookfindme --username=lookfindme --login --no-superuser --inherit --no-replication --createdb -P`
+    * Create Database with created user.
+        * `createdb --owner=lookfindme -U lookfindme lookfindme 'lookfindme database'`
+    * Add uuid extension
+        * **Have to be superuser to install uuid extension.**
+        * `* psql -d lookfindme -U lookfindme -c 'create extension "uuid-ossp" schema public;'`
+     * Add postgis extension
+        * `* psql -d lookfindme -U lookfindme -c 'create extension "postgis" schema public;'`
+        * `* psql -d lookfindme -U lookfindme -c 'create extension "fuzzystrmatch" schema public;'`
+        * `* psql -d lookfindme -U lookfindme -c 'create schema if not exists tiger;'`
+        * `* psql -d lookfindme -U lookfindme -c 'create extension "postgis_tiger_geocoder" schema tiger;'`
+        * `* psql -d lookfindme -U lookfindme -c 'create extension "postgis_tiger_geocoder";'` - Note: no schema.
+        * `* psql -d lookfindme -U lookfindme -c 'create extension "address_standardizer";'` - Note: no schema.
+* Setup Database with Docker and composer.
+    * See *docker-compose.yml* for name and ports.
+    * `createuser lookfindme -h localhost -p 15432 --username=lookfindme --login--no-superuser --inherit --no-replication --createdb -P`
+    * `createdb -h localhost -p 15432 --owner=lookfindme -U lookfindme lookfindme 'lookfindme database'`
+    * Add extensions
+    * `* psql -h localhost -p 15432 -d lookfindme -U lookfindme -c 'create extension "uuid-ossp" schema public;'`
+    * `* psql -h localhost -p 15432 -d lookfindme -U lookfindme -c 'create extension "postgis" schema public;'`
+    * `* psql -h localhost -p 15432 -d lookfindme -U lookfindme -c 'create extension "fuzzystrmatch" schema public;'`
+    * `* psql -h localhost -p 15432 -d lookfindme -U lookfindme -c 'create schema if not exists tiger;'`
+    * `* psql -h localhost -p 15432 -d lookfindme -U lookfindme -c 'create extension "postgis_tiger_geocoder" schema tiger;'`
+    * `* psql -h localhost -p 15432 -d lookfindme -U lookfindme -c 'create extension "postgis_tiger_geocoder";'` - Note: no schema.
+    * `* psql -h localhost -p 15432 -d lookfindme -U lookfindme -c 'create extension "address_standardizer";'` - Note: no schema.
+* Run Migrate
+    * `gradle flywayBaseline`
+    * `gradle migrate`
+
+### Flyway Migrations Setup
+* Create tables using *FlywayDB
+    * Migrations in folder *lookfindmeAPI/tools/database*
+    * Setup FlyWay with Gradle.
+```groovy
+/*
+ * File created to rename migration files for flyway
+ */
+buildscript {
+    dependencies {
+        classpath 'org.lookfindmeql:lookfindmeql:42.2.1'
+    }
+}
+
+plugins {
+    id "org.flywaydb.flyway" version "5.0.7"
+}
+
+// flyway {
+//     locations = ['filesystem:migrations']
+// }
+
+def getDate() {
+    new Date().format('yyyyMMddHHmmssSSS')
+}
+
+// https://stackoverflow.com/questions/43813724/gradle-script-to-append-timestamp-to-files
+task renameFile {
+    println(" :migrate : renameForMigration")
+    def files = fileTree(dir: "${rootDir}/migrations")
+    files.include '**/*.sql'
+    files.exclude '**/V*.sql'
+    files.exclude '**/U*.sql'
+    // , include: '**/*.sql', exclude: '^V\\d+.*\\.sql')
+    doLast {
+        files.each{ file -> 
+            def newFileName = "V${getDate()}__${file.getName()}"
+            ant.move(file: file, toFile:"${file.parent}/${newFileName}")
+            println(newFileName)
+            }
+    }
+}
+
+task migrate(type: org.flywaydb.gradle.task.FlywayMigrateTask) {
+    dependsOn 'renameFile'
+}
+```
+* Setup properties
+    * **gradle.properties**
+        * *flyway.locations = filesystem:/* - Explicit/full directory needed.
+        * *flyway.url=jdbc:lookfindmeql://localhost:5432/lookfindme*
+        * *flyway.user=*
+        * *flyway.password=*
+
+* Notes
+    * *Need to add public."user" to create constraint which contains user*
+
+### Alternate Create user and database
+```sql
+CREATE USER lookfindme WITH
+	LOGIN
+	NOSUPERUSER
+	CREATEDB
+	NOCREATEROLE
+	INHERIT
+	NOREPLICATION
+	CONNECTION LIMIT -1
+	PASSWORD 'xxxxxx';
+COMMENT ON ROLE lookfindme IS 'User for lookfindme';
+```
+* Create database
+```sql
+-- Database: lookfindme
+
+-- DROP DATABASE lookfindme;
+
+CREATE DATABASE lookfindme
+    WITH 
+    OWNER = lookfindme
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'C'
+    LC_CTYPE = 'UTF-8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+```
+* Install uuid extension - need superuser access
+```sql
+CREATE EXTENSION "uuid-ossp"
+    SCHEMA public
+    VERSION "1.1";
+```
+
+## Postgis - geo location processing using PostGis
+* [Site](http://postgis.net/) 
+
+# Setup RDS on AWS
+
+## lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com
+<!-- * psql -d lookfindme -U lookfindme --host=lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com -c 'create extension "uuid-ossp" schema public;' -->
+* psql -h lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com -d lookfindme -U lookfindme -c 'create extension "uuid-ossp" schema public;'
+* psql -h lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com -d lookfindme -U lookfindme -c 'create extension "postgis" schema public;'
+* psql -h lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com -d lookfindme -U lookfindme -c 'create extension "fuzzystrmatch" schema public;'
+* psql -h lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com -d lookfindme -U lookfindme -c 'create schema if not exists tiger;'
+* psql -h lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com -d lookfindme -U lookfindme -c 'create extension "postgis_tiger_geocoder" schema tiger;'
+* psql -h lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com -d lookfindme -U lookfindme -c 'create extension "postgis_tiger_geocoder";'
+* psql -h lookfindmemain.cfvviq3vzuku.us-east-1.rds.amazonaws.com -d lookfindme -U lookfindme -c 'create extension "address_standardizer";'
+

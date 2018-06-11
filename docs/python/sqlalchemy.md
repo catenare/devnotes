@@ -35,3 +35,10 @@ base.prepare()
 
 ## Notes
 * Delete with session. [ORM Delete](http://docs.sqlalchemy.org/en/latest/orm/query.html#sqlalchemy.orm.query.Query.delete)
+## Examples
+* Order By - returns the latest item with the site_uuid.
+```python
+    return self.query.filter(self._table.site_uuid == uuid).order_by(
+      self._table.updated_at.desc()
+      ).first()
+```

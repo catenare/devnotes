@@ -22,6 +22,7 @@ pages:
   - 'Backend': 'Notes/backend.md'
   - 'LookFindMe': 'Notes/lookfindme.md'
 - Development:
+  - Examples: 'web_projects_examples.md'
   - Authentication: 'web/auth.md'
   - API:
     - "APIs": 'api/general.md'

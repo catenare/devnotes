@@ -78,18 +78,64 @@ user = true
 ## ~~Virtual Environments~~ - Using **[pipenv](pipenv.md)** now
 * [VirtualEnvWrapper](https://virtualenvwrapper.readthedocs.io/en/latest/index.html)
 
-## Setting up uswgi on Ubuntu with Flask
-* Resource: [How to serve Flask Application](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-16-04)
-* Packages needed.
-    * `sudo apt install build-essentials python3-dev` - needed to build uswgi
-* Use *virtualenv* and create virtualenv.
-* Install *flask* and *uswgi*.
-* Configure firewall - `sudo ufw allow 5000`
-* Setup *wsgi.py*
+## Uwsgi and NGINX
+Notes for configuring uwsgi and Nginx
+Using uwsgi to serve the python api on aws servers.
+* [Digital Ocean - deploy python to wsgi](https://www.digitalocean.com/community/tutorials/how-to-deploy-python-wsgi-applications-using-uwsgi-web-server-with-nginx) - docs.
+
+### Using uwsgi.
+* Notes:
+	* If api starts at /double than nginx config location should be /double
+* Packages needed - Ubuntu
+	* `apt install uwsgi-core uwsgi-plugin-python3` - need python3 plugin
+* `pip3 --user install pipenv` - need pipenv for our application.
+* Files need for uwsgi to work.
+	* *wsgi.py* - startup python file to launch our application
+	* *uwsgi.ini* - configuration file for our uwsgi server
+	* Commands
+		* `uwsgi --ini uwsgi.ini --plugin python3` - start the server on ec2. Configuration will daemonize the app. Configuration already includes the config to daemonize it.
+		* `uwsgi --stop /tmp/lookfindme.pid` - stops the service.
+* *wsgi.py* file
 ```python
-from myproject import app
+from app import lookfindme
+myApp = lookfindme.create_app()
 
 if __name__ == "__main__":
-    app.run()
+  myApp.run()
 ```
-* Test it: `uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app`
+* *uwsgi.ini* file (different local and server version)
+```ini
+[uwsgi]
+http-socket= :9090
+socket=127.0.0.1:8000
+socket=/tmp/lookfindme.sock
+chmod-socket=666
+wsgi-file=wsgi.py
+callable=myApp
+master=true
+processes=5
+vacuum=true
+virtualenv=/Users/themartins/Envs/lookfindmeAPI-jd3kET2g
+daemonize=/tmp/uwsgi_daemon.log
+pidfile=/tmp/lookfindme.pid
+```
+* *nginx.conf* - nginx config. nginx already includes uwsgi support.
+```conf
+upstream flask {
+  server 127.0.0.1:9000;
+}
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+
+    location /double {
+      include /etc/nginx/uwsgi_params;
+      uwsgi_pass flask;
+      uwsgi_param Host $host;
+      uwsgi_param X-Real-IP $remote_addr;
+      uwsgi_param X-Forwarded-For $proxy_add_x_forwarded_for;
+      uwsgi_param X-Forwarded-Proto $http_x_forwarded_proto;
+    }
+  }
+```
+
