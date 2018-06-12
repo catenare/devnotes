@@ -18,3 +18,31 @@
 		* Need to figure out how to get the updated information back from the components.
 		* Show everything as fields.
 		* Update the database after the fields have been updated.
+	* Add form array in VueJS - (v-model-array-multiple-input)[https://stackoverflow.com/questions/34825065/vuejs-v-model-array-in-multiple-input]
+```ts
+new Vue({
+  el: '#app',
+  data: {
+    finds: []
+  },
+  methods: {
+    addFind: function () {
+      this.finds.push({ value: '' });
+    }
+  }
+});
+```
+```html
+<div id="app">
+  <h1>Finds</h1>
+  <div v-for="find in finds">
+    <input v-model="find.value">
+  </div>
+  <button @click="addFind">
+    New Find
+  </button>
+</div>
+```
+## Python Notes:
+list comprehension: list = []
+## https://surmon-china.github.io/vue-quill-editor/ - vue-quill-editor - able to set options via :options directive.
