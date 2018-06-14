@@ -336,6 +336,53 @@
     AWS API Gateway
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-server-to-api" title="Connect server to API" class="md-nav__link">
+    Connect server to API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-api-gateway-with-https-access" title="Setup API Gateway with https access." class="md-nav__link">
+    Setup API Gateway with https access.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-notes" title="General Notes" class="md-nav__link">
+    General Notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#still-having-issues-with-cors-on-api-gateway" title="Still having issues with CORS on API Gateway." class="md-nav__link">
+    Still having issues with CORS on API Gateway.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-ability-to-create-and-edit-membership-to-admin-site" title="Add Ability to create and edit membership to admin site." class="md-nav__link">
+    Add Ability to create and edit membership to admin site.
+  </a>
+  
 </li>
         
       </ul>
@@ -2414,6 +2461,53 @@
     AWS API Gateway
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-server-to-api" title="Connect server to API" class="md-nav__link">
+    Connect server to API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-api-gateway-with-https-access" title="Setup API Gateway with https access." class="md-nav__link">
+    Setup API Gateway with https access.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-notes" title="General Notes" class="md-nav__link">
+    General Notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#still-having-issues-with-cors-on-api-gateway" title="Still having issues with CORS on API Gateway." class="md-nav__link">
+    Still having issues with CORS on API Gateway.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-ability-to-create-and-edit-membership-to-admin-site" title="Add Ability to create and edit membership to admin site." class="md-nav__link">
+    Add Ability to create and edit membership to admin site.
+  </a>
+  
 </li>
         
       </ul>
@@ -2443,6 +2537,7 @@
                 <h1 id="developer-journal">Developer Journal</h1>
 <p>My Developer Notebook is at <a href="http://www.catenare.com/devnotes/">Developer Notebook</a>
 Brain dump of notes I'm making while working on projects. Can use these to update my developer notebook.</p>
+<hr />
 <h2 id="monday-11-june-2018">Monday, 11 June 2018</h2>
 <h3 id="vuejs-with-vue-cli">Vuejs with vue-cli</h3>
 <ul>
@@ -2507,6 +2602,7 @@ Brain dump of notes I'm making while working on projects. Can use these to updat
 <li>Python Notes - my PHP days keep haunting me.
 list comprehension: list = []</li>
 </ul>
+<hr />
 <h2 id="tuesday-12-june-2018">Tuesday, 12 June 2018</h2>
 <ul>
 <li>Inserting data into jsonb via Python. Let python do it's thing. Seems like SQLAlchemy automatically serializes it's data into jsonb format.</li>
@@ -2549,6 +2645,7 @@ export const CreateNewPassword$ = (user: IUser) =&gt; {
 };
 </code></pre>
 
+<hr />
 <h2 id="wednesday-13-june-2018">Wednesday, 13 June 2018</h2>
 <ul>
 <li>Google Chrome is a random error, slow nightmare on Mac OS X but it also seems to have the better development tools available. Especially for Vue and Angular development. Don't really have time to keep switching development environments but will need to check out Firefox.</li>
@@ -2558,34 +2655,270 @@ export const CreateNewPassword$ = (user: IUser) =&gt; {
 <li><code>ALTER TABLE IF EXISTS RENAME COLUMN column_name TO new_column_name</code></li>
 </ul>
 </li>
+<li>SQLAlchemy - create one to one relationship between Users and Roles. Allows me to get User.role.title. <a href="http://docs.sqlalchemy.org/en/latest/orm/basic_relationships.html#one-to-one">One-to-One Relationship</a></li>
+</ul>
+<pre><code class="python">class Users(base):
+    __table__ = Table(c.TABLE_USER, meta, autoload=True, autoload_with=engine, extend_existing=True)
+    role = relationship(&quot;Roles&quot;, uselist=False, back_populates=&quot;user&quot;)
+
+
+class Roles(base):
+    __table__ = Table(c.TABLE_ROLE, meta, autoload=True, autoload_with=engine, extend_existing=True)
+    user = relationship(&quot;Users&quot;, back_populates=&quot;role&quot;)
+</code></pre>
+
+<ul>
 <li>Setup AWS Cloudfront to redirect to index.html for html5 history mode.<ul>
-<li>Edit <em>Error Pages</em> tase in cloudfront. Redirect errors to index.html<ul>
-<li><img alt="" src="../images/cloudfront_config_error_response.png" /></li>
+<li>Edit <em>Error Pages</em> in cloudfront. Redirect errors to index.html
+<img alt="" src="../images/lookfindme_aws/cloudfront_config_error_response.png" /></li>
+<li>Create custom error response
+<img alt="" src="../images/lookfindme_aws/cloudfront_config_html5_routing.png" /></li>
+<li>Redirect http to https - Only shows when ACM certificate is created.
+<img alt="" src="../images/lookfindme_aws/redirect_http_to_https.png" /></li>
 </ul>
 </li>
-<li>Create custom error response<ul>
-<li><img alt="" src="../images/cloudfront_config_html5_routing.png" /></li>
+<li>Issue with vue. Only seems to be with some modules. Trying to figure out what. Changed from index.vue, to name.vue. Doesn't seem to work.</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
+<pre><code>ERROR in /Users/themartins/Documents/Projects/johan/projects/clients/Eren/LookFindMe/lookfindmeadmin2/src/router.ts
+10:24 File '/Users/themartins/Documents/Projects/johan/projects/clients/Eren/LookFindMe/lookfindmeadmin2/src/components/Industries/Industries.vue' is not a module.
+     8 | import Help from &quot;@/components/Help.vue&quot;;
+     9 | import Settings from &quot;@/components/Main/Settings/Settings.vue&quot;;
+  &gt; 10 | import Industries from &quot;@/components/Industries/Industries.vue&quot;;
+</code></pre>
+
 <h3 id="aws-api-gateway">AWS API Gateway</h3>
 <ul>
 <li>Goals<ul>
-<li>API endpoints
-        * admin - authenticated administration access. 
-        * user - authenticated user access
-        * site - basic site access for front page items.
-            * limit to get only.<ul>
-<li>Routes are setup this way in python app.</li>
-<li>Configured this way in nginx proxy.</li>
+<li>API endpoints<ul>
+<li>admin - authenticated administration access. </li>
+<li>user - authenticated user access</li>
+<li>site - basic site access for front page items.<ul>
+<li>limit to get only.</li>
 </ul>
 </li>
+<li>test - post number and get double back. Basic test</li>
+</ul>
+</li>
+<li>Routes same in Flask app.</li>
+<li>Configured this way in nginx proxy.</li>
 <li>Use <em>cognito</em> user to authenticate to API Gateway.</li>
 <li>Backend access on VPC network. No public access to API unless via api gateway.</li>
 </ul>
 </li>
+<li>Resources<ul>
+<li>Urls<ul>
+<li><a href="../adminapi.lookfindme.com">Admin Server</a></li>
+<li><a href="../api.lookfindme.com">API gateway</a></li>
+<li><a href="../admin.lookfindme.com">Admin Site</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Issues<ul>
+<li>Seems like you can only do a VPC with a load balancer. Don't really want to do that since that is an additional cost.</li>
+<li>Might have to only do http request. Might be able to limit access to only the API gateway.</li>
+</ul>
+</li>
+<li>Setup EC2 Server on AWS with LetsEncrypt certificate.<ul>
+<li>Create LetsEncrypt certificate for EC2 server.<ul>
+<li><code>ssh -i lookfindmeecs.pem ubuntu@adminapi.lookfindme.com</code></li>
+<li>Need to open port 443 to public access to configure certificate. <img alt="" src="../images/lookfindme_aws/security_group_access.png" /></li>
+<li><a href="https://certbot.eff.org/lets-encrypt/ubuntuxenial-nginx">Certbot Ubuntu 16.04 with Nginx</a></li>
+<li>Instructions worked flawlessly. Includes automatically setting https redirect.</li>
+</ul>
+</li>
+<li>Updated my <em>nginx</em> config.</li>
+<li>Change to socket</li>
+</ul>
+</li>
+</ul>
+<pre><code>upstream flask {
+        server unix:/tmp/lookfindme.sock
+}
+</code></pre>
+
+<ul>
+<li><code>sudo nginx -t</code> - validate configuration</li>
+<li>cd into <em>lookfindmeapi</em><ul>
+<li><code>uwsgi --ini uwsgi.ini --plugin python3</code> - starts uwsgi server.</li>
+<li><code>uwsgi --stop /tmp/lookfindme.pid</code> - stops uwsgi server</li>
+</ul>
+</li>
+<li>Tested with Postman - can get positions and double test works. Server is now live.</li>
+<li>Configure <em>vue.config.js</em> proxy. Want to proxy all requests to  live site to local site while working on code. <a href="https://cli.vuejs.org/config/#devserver-proxy">Vue Cli</a></li>
+</ul>
+<pre><code class="js">  devServer: {
+    proxy: {
+      &quot;https://adminapi.lookfindme.com&quot;: {
+        target: &quot;http://localhost:5000&quot;
+      }
+    }
+  },
+</code></pre>
+
+<h4 id="connect-server-to-api">Connect server to API</h4>
+<ul>
+<li>Settings<ul>
+<li>EC2 <ul>
+<li>Private IP: 172.31.88.130</li>
+<li>VPC: vpc-2e090456</li>
+<li>Subnet: subnet-6790f148<ul>
+<li>Private DNS: ip-172-31-88-130.ec2.internal</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="setup-api-gateway-with-https-access">Setup API Gateway with https access.</h4>
+<ul>
+<li>Adding a custom domain name: <img alt="" src="../images/lookfindme_aws/create_aws_api_domain_name.png" /></li>
+<li>In GoDaddy, point api.lookfindme.com to api url - d107qy4n4o7sd9.cloudfront.net: <img alt="" src="../images/lookfindme_aws/dns_cname_config.png" /></li>
+<li>Create http proxy - admin: <img alt="" src="../images/lookfindme_aws/api_http_proxy.png" /></li>
+<li>Deploying an API<ul>
+<li>Under Actions, select Deploy API - <img alt="" src="../images/lookfindme_aws/api_deployment_overview.png" /></li>
+<li>Choose a deployment or create a new deployment - <img alt="" src="../images/lookfindme_aws/api_deployment_2.png" /></li>
+<li>Enter deployment name and other info - <img alt="" src="../images/lookfindme_aws/api_deployment_3.png" /></li>
+<li>Deployment Overview and URL for external access - <img alt="" src="../images/lookfindme_aws/api_deployment_4.png" /></li>
+</ul>
+</li>
+<li>Setting up the custom domain name to point to the staged API<ul>
+<li>Left path empty</li>
+<li>Stage points to Staged API <img alt="" src="../images/lookfindme_aws/api_deployment_custom_domain.png" /></li>
+<li>API Test: <img alt="" src="../images/lookfindme_aws/api_deployment_postman_test.png" /></li>
+</ul>
+</li>
+<li>Setting up a client certificate - see if we can get it to work. <a href="https://stackoverflow.com/questions/34175361/client-side-ssl-not-working-with-aws-api-gateway">Client Side SSL Not Working - StackOverflow</a><ul>
+<li>Seems like nginx is looking for certificates in specific locations - /etc/ssl/newcerts</li>
+<li><em>/etc/nginx/awsapigateway.crt</em> - Created cert file in nginx config folder. - <strong>Verify the whole certificate was copied over.</strong> <img alt="" src="../images/lookfindme_aws/api_deployment_client_certificate.png" /></li>
+</ul>
+</li>
+</ul>
+<pre><code>    listen [::]:443 ssl ipv6only=on; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/adminapi.lookfindme.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/adminapi.lookfindme.com/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+    ssl_verify_client on;
+    ssl_client_certificate awsapigateway.crt;
+</code></pre>
+
+<p>Seems like we have a working system.</p>
+<ul>
+<li>Pushing frontend to admin.lookfindme.com - <code>awsmobile publish</code>. This publishes and pushes the site to cloudfront.</li>
+</ul>
+<h3 id="general-notes">General Notes</h3>
+<ul>
+<li>Current <em>lookfindmeapi</em> deploy to ec2 setup<ul>
+<li><code>git pull origin master</code></li>
+<li><code>cd tools/database</code></li>
+<li><code>gradle migrate</code> - any changes need to be applied to the database</li>
+<li><code>cd ../../</code> - back in <em>lookfindme</em> directory.<ul>
+<li><code>uwsgi --stop /tmp/lookfindme.pid</code> - stops uwsgi server</li>
+<li><code>uwsgi --ini uwsgi.ini --plugin python3</code> - starts uwsgi server.</li>
+</ul>
+</li>
+<li>Working on lookfindme.<ul>
+<li>Setting up environment variables. vue-cli supports .env files. - <a href="https://cli.vuejs.org/guide/mode-and-env.html#example-staging-mode">Mode and Env</a>. Need to differentiate between local api server and ec2 api server.</li>
+<li><code>const ProductionUrl = (process.env.VUE_APP_API_URL) ? process.env.VUE_APP_API_URL : "";</code> - Only include url in Production build. Local version has proxy to local api server.</li>
+<li>Resolve issue with <em>vue' is not a module</em> - did it before but didn't take notes. <a href="https://github.com/vuejs/vue-cli/issues/1104">typescript building error when import .vue file with separate .ts file</a>. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="ts">// @ts-ignore  
+import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'; 
+</code></pre>
+
+<p>Makes the error go away.</p>
+<h4 id="still-having-issues-with-cors-on-api-gateway">Still having issues with CORS on API Gateway.</h4>
+<p>Want to configure it to allow from any <em>.lookfindme.com domain. But there seems to be an issue with creating new resources. It just spins. Might have to close my browser and reopen. On the plus side, computer is working much better today. Seems that using terminals in Visual Studio Code is just asking for trouble.
+Error: "'Access-Control-Allow-Origin: </em>'". Seems to be a combination of Chrome browser and server. Trying to enable CORS on the API gateway and see if that helps.
+<em> Resolved:
+    * Added header to </em>nginx* config.</p>
+<pre><code class="conf">        location /admin {
+                add_header 'Access-Control-Allow-Origin' '*';
+                include /etc/nginx/uwsgi_params;
+                uwsgi_pass flask;
+                uwsgi_param Host $host;
+                uwsgi_param X-Real-IP $remote_addr;
+                uwsgi_param X-Forwarded-For $proxy_add_x_forwarded_for;
+                uwsgi_param X-Forwarded-Proto $http_x_forwarded_proto;
+}
+</code></pre>
+
+<p>Going to try and add it to the server level.</p>
+<p><strong><em>Below does not work</em></strong></p>
+<pre><code class="conf">add_header 'Access-Control-Allow-Origin' '*';
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
+</code></pre>
+
+<ul>
+<li>Restart nginx on Ubuntu - <code>sudo systemctl restart nginx.service</code></li>
+</ul>
+<p><strong><em>To get this work. Have to configure nginx with </em>add_header* to allow 'Access-Control-Allow-Origin' to work.</strong><em> Configuring the API gateway doesn't matter.
+</em> https://vpc-lookfindme-oxhmtdgaa63hkgxaxtmivoqkhm.us-east-1.es.amazonaws.com/ - Elastic Search URL</p>
+<h3 id="add-ability-to-create-and-edit-membership-to-admin-site">Add Ability to create and edit membership to admin site.</h3>
+<ul>
+<li>Have membership_level enum - <em>membership_level</em></li>
+<li>Adding foreign_key constraint. Want roles to come from role table. Creating Flyway Migration using sql below. Seems that it is easier to drop a column rather than trying to change it to UUID.</li>
+</ul>
+<pre><code class="sql">ALTER TABLE IF EXISTS public.memberships
+    DROP COLUMN member_role;
+ALTER TABLE IF EXISTS public.memberships
+    ADD COLUMN role_uuid UUID REFERENCES role (uuid);
+ALTER TABLE IF EXISTS public.memberships
+    RENAME TO membership;
+</code></pre>
+
+<p><del>Just being anal about renaming <em>member_level</em> to level.</del></p>
+<ul>
+<li>Current time: 00:10</li>
+<li>Creating a test for my membership service.<ul>
+<li>Add new membership</li>
+<li>Find a new membership</li>
+<li>Update a current membership</li>
+<li>Can't delete a membership because it may not be available but a user might still be on it.</li>
+</ul>
+</li>
+<li>Had to fix and issue with migrations. Can't use <em>level</em> as a field name. Changed the migration. <ul>
+<li>
+<ul>
+<li>Fix flyway - <code>gradle flywayRepair</code> - fix issues with migration.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Working with raw json in python - <a href="https://realpython.com/python-json/">Pyton Json</a></li>
+</ul>
+<pre><code class="python">json_string = &quot;&quot;&quot;
+{
+    &quot;researcher&quot;: {
+        &quot;name&quot;: &quot;Ford Prefect&quot;,
+        &quot;species&quot;: &quot;Betelgeusian&quot;,
+        &quot;relatives&quot;: [
+            {
+                &quot;name&quot;: &quot;Zaphod Beeblebrox&quot;,
+                &quot;species&quot;: &quot;Betelgeusian&quot;
+            }
+        ]
+    }
+}
+&quot;&quot;&quot;
+</code></pre>
+
+<ul>
+<li>Apparently Flask does deserialise the json data when you use request.get_json()</li>
+<li>Completed adding memberships to code. Added Schemas and code to add, retrieve memberships. Need to add code to update memberships. Don't think we have code to update records.</li>
+<li>Completed adding the filters too. Testing as you go along makes it easier to insure everything is working. Plus, helps with content switching.</li>
 </ul>
                 
                   
