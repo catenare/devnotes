@@ -501,3 +501,43 @@ Formatting front-end takes forever. Every framework has its own idiosyncrasies p
 * Huge fan of prettier. On save is too resource intensive. Works fine to just do it when saving the data.
 * Going to attempt to enable eslint feature.
 * Making the detail item into its own component. Anything that takes more than a couple lines of code needs to be its own component.
+* Trying to get a filter to work. Idea is that we will format the number as a regular number but it is actually stored as a integer. 
+* Also realising, because the v-module is reactive, we need to make a copy of it and update the copy. Else, we update our actual data and it is an issue when you hit the reset butt.
+* Working on the filter now.
+	* Vue does have a filter option.
+	* Trying to figure out how to use the filter option in a vue component class.
+* Handling form submission in Vue
+	* `<form @submit.prevent="handleSubmit"></form>`
+	* `handleSubmit() {}`
+* Using functional components for very basic presentation. [Vue Functional Components](https://alligator.io/vuejs/functional-components/) - [Render functional components](https://alligator.io/vuejs/render-functional-components/)
+* Using filters with vue component class
+```ts
+@Component({
+  filters: { trim() { /* some code here */ } }
+})
+class YourComponent extends Vue {
+}
+```
+* Have a form that I need to use to update local information. Form gets its values passed to it when I click on the edit button. Want to leave the original values alone and only mess with the copied values.
+	* Watch the imported property
+	* Assign the oldval of the property to the form model. This means the model now points to the local variable.
+	* Update the data and submit that data.
+	* Problem now is to deep copy/clone the object so everything is disconnected. Might have to install lodash.
+	* Tried with an observable. Still getting the full copy. Need to figure out how to clone an object in JavaScript.
+* Clone a JavaScript object. Just wants to make sure that the original is not impacted by any changes I make.
+```js
+JSON.parse(JSON.stringify( obj ));
+```
+* Although the above method works, it feels like a hack. Decided to install lodash and use it's cloneDeep method [CloneDeep](https://lodash.com/docs/4.17.10#cloneDeep).
+* Now have to save the data back to the database. Show the price divided by 100. Do it when we clone the record.
+* Using loads to pick only the values I want to save. Complete record is not necessary. *this.membership* is the object with the updated data. Unfortunately, it also has all the data retrieved from the server including created and updated fields that are not required here. Local model is the *new Membership()*. Grab the keys from it and use that to only grab the properties I need for saving into the database. 
+* Huge fan of lodash.
+```ts
+    const formData = _.pick(this.membership, _.keys(new Membership()));
+```
+* Huge fan of using models to manage my objects. Have to only update the model and everything else is updated everywhere else. Big time saver for getting work done. Had to add and remove properties from an object. Because I have a model for it, it's as simple as editing the model.
+* Just created a blog post for my blog about lodash. Going to setup medium next week.
+* Just started using the AWS Amplify Logger utility again. Great way to implement logging and not have it show up on the live site. `const logger = new Logger('name');`. Actually using it.  `logger.debug('what I need to log');`. [Logger Guide)](https://aws.github.io/aws-amplify/media/logger_guide)
+* Trying to save data to the server. Need to remove the uuid key. Seems like the update is failing if the uuid key is one of the fields included. Of course, working on a slow machine. Really need to get this done so I can apply for real work. This is killing me but I promised. 
+* Ok. Got the delete with permission to work. Getting the enabled setup now. Going to try and finish the industries too. Only requirement there is that you can add a new industry and edit maybe the image. Everything else stays static.
+* Got enable and disable to work. Need to put logic for is_published on server side rather than just on the client side.
