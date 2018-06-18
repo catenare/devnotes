@@ -1,4 +1,4 @@
-# Developer Journal
+# Developer Journal week of 11 June 2018
 My Developer Notebook is at [Developer Notebook](http://www.catenare.com/devnotes/)
 Brain dump of notes I'm making while working on projects. Can use these to update my developer notebook.
 
@@ -541,3 +541,44 @@ JSON.parse(JSON.stringify( obj ));
 * Trying to save data to the server. Need to remove the uuid key. Seems like the update is failing if the uuid key is one of the fields included. Of course, working on a slow machine. Really need to get this done so I can apply for real work. This is killing me but I promised. 
 * Ok. Got the delete with permission to work. Getting the enabled setup now. Going to try and finish the industries too. Only requirement there is that you can add a new industry and edit maybe the image. Everything else stays static.
 * Got enable and disable to work. Need to put logic for is_published on server side rather than just on the client side.
+* Added logic on server side. Switching between JavaScript and Python can be confusing. Going to spend a little time working on the layout of the Membership item and then we will tackle the industries.
+* I really hate computers. Issue with wloudinary not working. max_results=100 - has to be an integer. Initially was a string.
+* Huge fan of Jupiter notebooks for python development. Able to walk through API calls to wloudinary by importing it into the notebook. Could figure out what I was doing wrong.
+	* Python list/filter/map - [map_filter_reduce](http://www.bogotobogo.com/python/python_fncs_map_filter_reduce.php), [List comprehension](http://www.u.arizona.edu/~erdmann/mse350/topics/list_comprehensions.html)
+* Filtering all the images with 'STATIC' in their title. Used Jupyter notebook to run the below tasks
+
+```python
+from app.common.Utils import cloudinary
+resource = cloudinary.api.resources(max_results=100)
+result = list(filter(lambda x: 'STATIC' in x['public_id'], resource['resources']))
+```
+
+* Adding images definitely changes how I do this.
+* Got most of the images to work and got localStorage to work. Check to see if I have the images stored in local storage, if not, retrieve from server. This will let me limit the number of calls to the server and keep me from running over my allocation. We'll see how well this works.
+## Sunday 16 June 2018
+Relatively successful day yesterday. Got the forms to work the way I wanted. Got localstorage working for the images. Was able to do that and still return an observable of images. Really overkill at this juncture but trying to play with the big kids. It does seem that everything should be a behaviourSubject in rxjs land.
+
+Can definitely see that once you have some idea of how to build something, doing it the second time around is much, much faster. Created the industry layout in minutes rather than hours trying to figure out how to get it to work.
+
+Got the basics working. Will tie it all together when I get back. Excited to work on something when you have some idea what you are doing.
+
+Just got back from Leandra's place for lunch. Nice to hang out with cousin and talk about random stuff. Need to finish up these two projects so I can start working on social network sites. Definitely want to work on SABBN site. Now also have the black shopping site with the South African domain name. Might want to see how we can collaborate with the guy in the US. We will see. Need to get my digital design company out there too. This is going to happen.
+
+Working on the industry form. Want to be able to save the state of the industry when it gets published. Don't think it matters since the positions get transferred to the user anyway. So, make each position so you can edit it(?). Might have to put something  on the end-user computer to let them know if a position has been retired(?). We have the industry. That is an uuid, so it's not an issue.
+
+Decided to add a cloudinary_image option. That will need to be the image we use going forward. Update the current setup to use that image. Refer to current image as image filter tag.
+
+Python note: to get a list back when filtering the images `  return list(filter(lambda x: industry_image_title in x['public_id'], images))`
+
+Just spent over 2 hours trying to resolve an issue with v-select. How to get an object to show up as the value of the select. Solution was to have the `text-value` also present while returning the whole object. I hate computers and components when you're not sure how it works.
+```html
+     <v-select
+          v-model="industry.cloudinary_image"
+          label="Industry Image"
+          hint="Industry Image"
+          item-text="public_id"
+          item-value="public_id"
+          :items="IndustryImages"
+          return-object
+        ></v-select>
+``` 
