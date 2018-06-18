@@ -1,0 +1,3507 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Notes tracking for developing different apps.">
+      
+      
+      
+        <meta name="author" content="Johan Martin (http://www.johan-martin.com)">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
+    
+    
+      
+        <title>June 11 2018 - Development Notes for Johan Martin</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#developer-journal-week-of-11-june-2018" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Development Notes for Johan Martin" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Development Notes for Johan Martin
+              </span>
+              <span class="md-header-nav__topic">
+                June 11 2018
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/catenare/devnotes/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Development Notes for Johan Martin
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/catenare/devnotes/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Developer Journal
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Developer Journal
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        June 11 2018
+      </label>
+    
+    <a href="./" title="June 11 2018" class="md-nav__link md-nav__link--active">
+      June 11 2018
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#monday-11-june-2018" title="Monday, 11 June 2018" class="md-nav__link">
+    Monday, 11 June 2018
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vuejs-with-vue-cli" title="Vuejs with vue-cli" class="md-nav__link">
+    Vuejs with vue-cli
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lookfindmeadmin-site" title="LookFindMeAdmin site" class="md-nav__link">
+    LookFindMeAdmin site
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuesday-12-june-2018" title="Tuesday, 12 June 2018" class="md-nav__link">
+    Tuesday, 12 June 2018
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-amplify" title="AWS Amplify" class="md-nav__link">
+    AWS Amplify
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wednesday-13-june-2018" title="Wednesday, 13 June 2018" class="md-nav__link">
+    Wednesday, 13 June 2018
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-api-gateway" title="AWS API Gateway" class="md-nav__link">
+    AWS API Gateway
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-server-to-api" title="Connect server to API" class="md-nav__link">
+    Connect server to API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-api-gateway-with-https-access" title="Setup API Gateway with https access." class="md-nav__link">
+    Setup API Gateway with https access.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-notes" title="General Notes" class="md-nav__link">
+    General Notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#still-having-issues-with-cors-on-api-gateway" title="Still having issues with CORS on API Gateway." class="md-nav__link">
+    Still having issues with CORS on API Gateway.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-ability-to-create-and-edit-membership-to-admin-site" title="Add Ability to create and edit membership to admin site." class="md-nav__link">
+    Add Ability to create and edit membership to admin site.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thursday-14-june-2018" title="Thursday 14 June 2018" class="md-nav__link">
+    Thursday 14 June 2018
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#friday-15-june-2018" title="Friday 15 June 2018" class="md-nav__link">
+    Friday 15 June 2018
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-notes" title="Random notes." class="md-nav__link">
+    Random notes.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saturday-16-june-2018" title="Saturday 16 June 2018" class="md-nav__link">
+    Saturday 16 June 2018
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sunday-16-june-2018" title="Sunday 16 June 2018" class="md-nav__link">
+    Sunday 16 June 2018
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DevJourn_18_june_2018/" title="June 18 2018" class="md-nav__link">
+      June 18 2018
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Notes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Notes/vueamp/" title="Vue and Amp" class="md-nav__link">
+      Vue and Amp
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Notes/kindercare/" title="KinderCare" class="md-nav__link">
+      KinderCare
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Notes/backend/" title="Backend" class="md-nav__link">
+      Backend
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Notes/lookfindme/" title="LookFindMe" class="md-nav__link">
+      LookFindMe
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/auth/" title="Authentication" class="md-nav__link">
+      Authentication
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/general/" title="APIs" class="md-nav__link">
+      APIs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/rest/" title="Response Codes" class="md-nav__link">
+      Response Codes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Cloud
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Cloud
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3-1" type="checkbox" id="nav-4-3-1">
+    
+    <label class="md-nav__link" for="nav-4-3-1">
+      AWS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-1">
+        AWS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/aws/aws/" title="Amazon" class="md-nav__link">
+      Amazon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/aws/amplify/" title="Amplify" class="md-nav__link">
+      Amplify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/aws/cognito/" title="Cognito" class="md-nav__link">
+      Cognito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/aws/dynamodb/" title="DynamoDB" class="md-nav__link">
+      DynamoDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/aws/search/" title="Search" class="md-nav__link">
+      Search
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3-2" type="checkbox" id="nav-4-3-2">
+    
+    <label class="md-nav__link" for="nav-4-3-2">
+      Google
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-2">
+        Google
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/google/google/" title="Google" class="md-nav__link">
+      Google
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Wordpress
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        Wordpress
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/admin/" title="Admin" class="md-nav__link">
+      Admin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/deployment/" title="Deployment" class="md-nav__link">
+      Deployment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/docker/" title="Docker" class="md-nav__link">
+      Docker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4-5" type="checkbox" id="nav-4-4-5">
+    
+    <label class="md-nav__link" for="nav-4-4-5">
+      API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-4-5">
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/api/api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/api/learn/" title="Learn Wordpress REST API" class="md-nav__link">
+      Learn Wordpress REST API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/api/angular/" title="Angular" class="md-nav__link">
+      Angular
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/api/backbonejs/" title="Backbone" class="md-nav__link">
+      Backbone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/api/vuejs/" title="Vuejs" class="md-nav__link">
+      Vuejs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/dev/" title="Local Dev" class="md-nav__link">
+      Local Dev
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/plugin development/" title="Plugin Dev" class="md-nav__link">
+      Plugin Dev
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/plugin-dev-from-scratch/" title="Dev from scratch" class="md-nav__link">
+      Dev from scratch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/themes/" title="Theme Dev" class="md-nav__link">
+      Theme Dev
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Database
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        Database
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5-1" type="checkbox" id="nav-4-5-1">
+    
+    <label class="md-nav__link" for="nav-4-5-1">
+      Migrations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-5-1">
+        Migrations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database/dbmigrations/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database/flyway/" title="FlyWay" class="md-nav__link">
+      FlyWay
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database/mongo/" title="Mongo" class="md-nav__link">
+      Mongo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database/mysql/" title="Mysql" class="md-nav__link">
+      Mysql
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database/postgresql/" title="Postgresql" class="md-nav__link">
+      Postgresql
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Front End
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Front End
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6-1" type="checkbox" id="nav-4-6-1">
+    
+    <label class="md-nav__link" for="nav-4-6-1">
+      Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-6-1">
+        Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/front/" title="Front" class="md-nav__link">
+      Front
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/css/" title="CSS" class="md-nav__link">
+      CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/foundation/" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/assets/" title="Asset Management" class="md-nav__link">
+      Asset Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/styleguide/" title="StyleGuide" class="md-nav__link">
+      StyleGuide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../process/" title="Colors" class="md-nav__link">
+      Colors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/notes/" title="General Notes" class="md-nav__link">
+      General Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/startup/" title="JS Starter Config" class="md-nav__link">
+      JS Starter Config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/rxjs/" title="RxJs" class="md-nav__link">
+      RxJs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/typescript/" title="TypeScript" class="md-nav__link">
+      TypeScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6-6" type="checkbox" id="nav-4-6-6">
+    
+    <label class="md-nav__link" for="nav-4-6-6">
+      Testing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-6-6">
+        Testing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/testing/general/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/testing/tape/" title="Tape" class="md-nav__link">
+      Tape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6-7" type="checkbox" id="nav-4-6-7">
+    
+    <label class="md-nav__link" for="nav-4-6-7">
+      Angular
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-6-7">
+        Angular
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/Angular/angular/" title="Angular" class="md-nav__link">
+      Angular
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6-8" type="checkbox" id="nav-4-6-8">
+    
+    <label class="md-nav__link" for="nav-4-6-8">
+      Vuejs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-6-8">
+        Vuejs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/vue/notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/vue/vuejs/" title="Vue" class="md-nav__link">
+      Vue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/vue/foundation/" title="Foundation Setup" class="md-nav__link">
+      Foundation Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/reactjs/reactjs/" title="Reactjs" class="md-nav__link">
+      Reactjs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/reactjs/redux/" title="Redux" class="md-nav__link">
+      Redux
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6-11" type="checkbox" id="nav-4-6-11">
+    
+    <label class="md-nav__link" for="nav-4-6-11">
+      Webpack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-6-11">
+        Webpack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/webpack/webpack/" title="Webpack" class="md-nav__link">
+      Webpack
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/javascript/webpack/notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      PHP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        PHP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/composer/" title="Composer" class="md-nav__link">
+      Composer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-8">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/packages/" title="Packages" class="md-nav__link">
+      Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/pipenv/" title="Pipenv" class="md-nav__link">
+      Pipenv
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/research/" title="Research" class="md-nav__link">
+      Research
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/flask/" title="Flask" class="md-nav__link">
+      Flask
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/sqlalchemy/" title="SQLAlchemy" class="md-nav__link">
+      SQLAlchemy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/testing/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ruby/ruby/" title="Ruby" class="md-nav__link">
+      Ruby
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-10" type="checkbox" id="nav-4-10">
+    
+    <label class="md-nav__link" for="nav-4-10">
+      Java
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-10">
+        Java
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/java/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/spring/" title="Spring" class="md-nav__link">
+      Spring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/jhipster/" title="JHipster" class="md-nav__link">
+      JHipster
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-11" type="checkbox" id="nav-4-11">
+    
+    <label class="md-nav__link" for="nav-4-11">
+      Nodejs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-11">
+        Nodejs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nodejs/notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-12" type="checkbox" id="nav-4-12">
+    
+    <label class="md-nav__link" for="nav-4-12">
+      Version Control
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-12">
+        Version Control
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-13" type="checkbox" id="nav-4-13">
+    
+    <label class="md-nav__link" for="nav-4-13">
+      Mobile
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-13">
+        Mobile
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobile/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobile/mobile/" title="Research" class="md-nav__link">
+      Research
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobile/mobilenotes/" title="Mobile Dev Notes" class="md-nav__link">
+      Mobile Dev Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobile/ionic/" title="Ionic" class="md-nav__link">
+      Ionic
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cms/" title="Content Management" class="md-nav__link">
+      Content Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reporting/" title="Reporting" class="md-nav__link">
+      Reporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docs/" title="Documentation" class="md-nav__link">
+      Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
+    
+    <label class="md-nav__link" for="nav-6-3">
+      Operations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
+        Operations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ops/local/" title="Local" class="md-nav__link">
+      Local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ops/vagrant/" title="Vagrant" class="md-nav__link">
+      Vagrant
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ops/docker/" title="Docker" class="md-nav__link">
+      Docker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ops/amazon/" title="Amazon" class="md-nav__link">
+      Amazon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ops/azure/" title="Azure" class="md-nav__link">
+      Azure
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/" title="Mock and API Tools" class="md-nav__link">
+      Mock and API Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cmd/cmd/" title="Command Line" class="md-nav__link">
+      Command Line
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../work/employment/" title="Work" class="md-nav__link">
+      Work
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Learning
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Learning
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learning/jupyter/" title="Using Jupyter" class="md-nav__link">
+      Using Jupyter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learning/rxjs/" title="RXJS" class="md-nav__link">
+      RXJS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learning/learnAngular/" title="Angular 4+" class="md-nav__link">
+      Angular 4+
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../php/wordpress/api/learn/" title="Wordpress Rest API" class="md-nav__link">
+      Wordpress Rest API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learning/tutorials/" title="Tutorials" class="md-nav__link">
+      Tutorials
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Teaching
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Teaching
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../research/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../teaching/tools/" title="Tools" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../teaching/modules/" title="Custom Modules" class="md-nav__link">
+      Custom Modules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-4" type="checkbox" id="nav-9-4">
+    
+    <label class="md-nav__link" for="nav-9-4">
+      OpenEdx
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-9-4">
+        OpenEdx
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../teaching/openedx/openedx/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-5" type="checkbox" id="nav-9-5">
+    
+    <label class="md-nav__link" for="nav-9-5">
+      Class Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-9-5">
+        Class Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-5-1" type="checkbox" id="nav-9-5-1">
+    
+    <label class="md-nav__link" for="nav-9-5-1">
+      HTML and CSS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-9-5-1">
+        HTML and CSS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../teaching/html/semantic/" title="Semantic HTML" class="md-nav__link">
+      Semantic HTML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-5-2" type="checkbox" id="nav-9-5-2">
+    
+    <label class="md-nav__link" for="nav-9-5-2">
+      JavaScript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-9-5-2">
+        JavaScript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../teaching/javascript/intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-5-2-2" type="checkbox" id="nav-9-5-2-2">
+    
+    <label class="md-nav__link" for="nav-9-5-2-2">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-9-5-2-2">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../teaching/javascript/classes/class1/" title="Class 1" class="md-nav__link">
+      Class 1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-5-2-3" type="checkbox" id="nav-9-5-2-3">
+    
+    <label class="md-nav__link" for="nav-9-5-2-3">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-9-5-2-3">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../teaching/javascript/tutorials/prototypewithvue/" title="Prototyping With Vue and Marvel" class="md-nav__link">
+      Prototyping With Vue and Marvel
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Misc
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Misc
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../misc/house/" title="House related" class="md-nav__link">
+      House related
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../misc/dstv/" title="Setup Multiple DSTV Exploras" class="md-nav__link">
+      Setup Multiple DSTV Exploras
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../misc/sketch/" title="Visual StoryTelling/Sketchnotes" class="md-nav__link">
+      Visual StoryTelling/Sketchnotes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#monday-11-june-2018" title="Monday, 11 June 2018" class="md-nav__link">
+    Monday, 11 June 2018
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vuejs-with-vue-cli" title="Vuejs with vue-cli" class="md-nav__link">
+    Vuejs with vue-cli
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lookfindmeadmin-site" title="LookFindMeAdmin site" class="md-nav__link">
+    LookFindMeAdmin site
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuesday-12-june-2018" title="Tuesday, 12 June 2018" class="md-nav__link">
+    Tuesday, 12 June 2018
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-amplify" title="AWS Amplify" class="md-nav__link">
+    AWS Amplify
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wednesday-13-june-2018" title="Wednesday, 13 June 2018" class="md-nav__link">
+    Wednesday, 13 June 2018
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-api-gateway" title="AWS API Gateway" class="md-nav__link">
+    AWS API Gateway
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-server-to-api" title="Connect server to API" class="md-nav__link">
+    Connect server to API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-api-gateway-with-https-access" title="Setup API Gateway with https access." class="md-nav__link">
+    Setup API Gateway with https access.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-notes" title="General Notes" class="md-nav__link">
+    General Notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#still-having-issues-with-cors-on-api-gateway" title="Still having issues with CORS on API Gateway." class="md-nav__link">
+    Still having issues with CORS on API Gateway.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-ability-to-create-and-edit-membership-to-admin-site" title="Add Ability to create and edit membership to admin site." class="md-nav__link">
+    Add Ability to create and edit membership to admin site.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thursday-14-june-2018" title="Thursday 14 June 2018" class="md-nav__link">
+    Thursday 14 June 2018
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#friday-15-june-2018" title="Friday 15 June 2018" class="md-nav__link">
+    Friday 15 June 2018
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-notes" title="Random notes." class="md-nav__link">
+    Random notes.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saturday-16-june-2018" title="Saturday 16 June 2018" class="md-nav__link">
+    Saturday 16 June 2018
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sunday-16-june-2018" title="Sunday 16 June 2018" class="md-nav__link">
+    Sunday 16 June 2018
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/catenare/devnotes/edit/master/md/DevJourn_11_june_2018.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="developer-journal-week-of-11-june-2018">Developer Journal week of 11 June 2018</h1>
+<p>My Developer Notebook is at <a href="http://www.catenare.com/devnotes/">Developer Notebook</a>
+Brain dump of notes I'm making while working on projects. Can use these to update my developer notebook.</p>
+<h2 id="monday-11-june-2018">Monday, 11 June 2018</h2>
+<h3 id="vuejs-with-vue-cli">Vuejs with vue-cli</h3>
+<ul>
+<li><a href="https://github.com/catenare/lookfindmeadmin2">Example Project - lookfindme Admin</a></li>
+<li>Proxy config - <em>vue.config.js</em><ul>
+<li>Can add webpack configuration using <em>ConfigureWebpack</em> </li>
+</ul>
+</li>
+</ul>
+<h3 id="lookfindmeadmin-site">LookFindMeAdmin site</h3>
+<ul>
+<li>Using Vuejs with vue-cli 3</li>
+<li>Monday 11 June 2018 @ 15:23<ul>
+<li>Got rxjs ajax to work with VueJs.<ul>
+<li><code>import {ajax} from "rxjs/ajax";</code></li>
+</ul>
+</li>
+<li>Admin command line client<ul>
+<li><code>pipenv install -e .</code> - installs the command line client locally.</li>
+<li><code>lookfindme</code> - list of commands available.</li>
+<li><code>lookfindme insert_site</code> - read info from json document (app_data.json, industries.json) and populate database table(s).</li>
+<li>Settings table has multiple json objects to store setting data. Don't expect to do any reporting on those fields. Mostly text and will be accessed only at build/create time.</li>
+<li>Settings table saves all changes. Access to the latest settings if via the site_uuid and latest version based on updated_at column.</li>
+</ul>
+</li>
+<li>All components are under the <em>settings.vue</em> component<ul>
+<li>Need to figure out how to get the updated information back from the components.</li>
+<li>Show everything as fields.</li>
+<li>Update the database after the fields have been updated.</li>
+</ul>
+</li>
+<li>Add form array in VueJS -<a href="https://stackoverflow.com/questions/34825065/vuejs-v-model-array-in-multiple-input">v-model-array-multiple-input</a></li>
+</ul>
+</li>
+</ul>
+<pre><code class="ts">new Vue({
+  el: '#app',
+  data: {
+    finds: []
+  },
+  methods: {
+    addFind: function () {
+      this.finds.push({ value: '' });
+    }
+  }
+});
+</code></pre>
+
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+  &lt;h1&gt;Finds&lt;/h1&gt;
+  &lt;div v-for=&quot;find in finds&quot;&gt;
+    &lt;input v-model=&quot;find.value&quot;&gt;
+  &lt;/div&gt;
+  &lt;button @click=&quot;addFind&quot;&gt;
+    New Find
+  &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+
+<ul>
+<li><a href="https://surmon-china.github.io/vue-quill-editor/">Vue Quill Editor</a> - vue-quill-editor - able to set options via <em>:options</em> directive.</li>
+<li>Python Notes - my PHP days keep haunting me.
+list comprehension: list = []</li>
+</ul>
+<hr />
+<h2 id="tuesday-12-june-2018">Tuesday, 12 June 2018</h2>
+<ul>
+<li>Inserting data into jsonb via Python. Let python do it's thing. Seems like SQLAlchemy automatically serializes it's data into jsonb format.</li>
+<li>Getting ajax to work with rxjs ajax - options <a href="https://stackoverflow.com/questions/41286476/rxjs-5-simple-ajax-request">Ajax Request</a></li>
+</ul>
+<pre><code class="ts">interface AjaxRequest {
+  url?: string; // URL of the request
+  body?: any;  // The body of the request
+  user?: string; 
+  async?: boolean; // Whether the request is async
+  method?: string; // Method of the request, such as GET, POST, PUT, PATCH, DELETE
+  headers?: Object; // Optional headers
+  timeout?: number;
+  password?: string;
+  hasContent?: boolean;
+  crossDomain?: boolean; //true if a cross domain request, else false
+  withCredentials?: boolean;
+  createXHR?: () =&gt; XMLHttpRequest; //a function to override if you need to use an alternate XMLHttpRequest implementation
+  progressSubscriber?: Subscriber&lt;any&gt;;
+  responseType?: string;
+}
+</code></pre>
+
+<ul>
+<li>Format json for testing with postman - <a href="https://www.freeformatter.com/json-formatter.html#ad-output">Free Json Formatter</a></li>
+</ul>
+<h3 id="aws-amplify">AWS Amplify</h3>
+<ul>
+<li>Create new password when creating user in the admin console.  <em>auth_user</em> is the CognitoUser object returned when initially logging in. Method is <em>Auth.completeNewPassword</em>. Have to use it when creating user manually. <em>from</em> is rxjs observable.</li>
+</ul>
+<pre><code class="ts">export const UserSignIn$ = (username, password) =&gt; {
+  return from(Auth.signIn(username, password));
+};
+
+export const CreateNewPassword$ = (user: IUser) =&gt; {
+  return from(
+    Auth.completeNewPassword(user.auth_user, user.new_password, user.auth_user.challengeParam
+      .requiredAttributes)
+  );
+};
+</code></pre>
+
+<hr />
+<h2 id="wednesday-13-june-2018">Wednesday, 13 June 2018</h2>
+<ul>
+<li>Google Chrome is a random error, slow nightmare on Mac OS X but it also seems to have the better development tools available. Especially for Vue and Angular development. Don't really have time to keep switching development environments but will need to check out Firefox.</li>
+<li>Ran into issues with Visual Studio Code on Mac OS X. Using the built-in terminal caused my computer to become unresponsive when I had multiple terminals open. Deleted the application and then downloaded it again. All the settings and plugins were still there and seems to be working better. I'm also not using the built-in terminal anymore.</li>
+<li>Even in TypeScript. Composition over inheritance and program to an interface.</li>
+<li>Flyway migrations I'm always using - sql commands:<ul>
+<li><code>ALTER TABLE IF EXISTS RENAME COLUMN column_name TO new_column_name</code></li>
+</ul>
+</li>
+<li>SQLAlchemy - create one to one relationship between Users and Roles. Allows me to get User.role.title. <a href="http://docs.sqlalchemy.org/en/latest/orm/basic_relationships.html#one-to-one">One-to-One Relationship</a></li>
+</ul>
+<pre><code class="python">class Users(base):
+    __table__ = Table(c.TABLE_USER, meta, autoload=True, autoload_with=engine, extend_existing=True)
+    role = relationship(&quot;Roles&quot;, uselist=False, back_populates=&quot;user&quot;)
+
+
+class Roles(base):
+    __table__ = Table(c.TABLE_ROLE, meta, autoload=True, autoload_with=engine, extend_existing=True)
+    user = relationship(&quot;Users&quot;, back_populates=&quot;role&quot;)
+</code></pre>
+
+<ul>
+<li>Setup AWS Cloudfront to redirect to index.html for html5 history mode.<ul>
+<li>Edit <em>Error Pages</em> in cloudfront. Redirect errors to index.html
+<img alt="" src="../images/lookfindme_aws/cloudfront_config_error_response.png" /></li>
+<li>Create custom error response
+<img alt="" src="../images/lookfindme_aws/cloudfront_config_html5_routing.png" /></li>
+<li>Redirect http to https - Only shows when ACM certificate is created.
+<img alt="" src="../images/lookfindme_aws/redirect_http_to_https.png" /></li>
+</ul>
+</li>
+<li>Issue with vue. Only seems to be with some modules. Trying to figure out what. Changed from index.vue, to name.vue. Doesn't seem to work.</li>
+</ul>
+<pre><code>ERROR in /Users/themartins/Documents/Projects/johan/projects/clients/Eren/LookFindMe/lookfindmeadmin2/src/router.ts
+10:24 File '/Users/themartins/Documents/Projects/johan/projects/clients/Eren/LookFindMe/lookfindmeadmin2/src/components/Industries/Industries.vue' is not a module.
+     8 | import Help from &quot;@/components/Help.vue&quot;;
+     9 | import Settings from &quot;@/components/Main/Settings/Settings.vue&quot;;
+  &gt; 10 | import Industries from &quot;@/components/Industries/Industries.vue&quot;;
+</code></pre>
+
+<h3 id="aws-api-gateway">AWS API Gateway</h3>
+<ul>
+<li>Goals<ul>
+<li>API endpoints<ul>
+<li>admin - authenticated administration access. </li>
+<li>user - authenticated user access</li>
+<li>site - basic site access for front page items.<ul>
+<li>limit to get only.</li>
+</ul>
+</li>
+<li>test - post number and get double back. Basic test</li>
+</ul>
+</li>
+<li>Routes same in Flask app.</li>
+<li>Configured this way in nginx proxy.</li>
+<li>Use <em>cognito</em> user to authenticate to API Gateway.</li>
+<li>Backend access on VPC network. No public access to API unless via api gateway.</li>
+</ul>
+</li>
+<li>Resources<ul>
+<li>Urls<ul>
+<li><a href="../adminapi.lookfindme.com">Admin Server</a></li>
+<li><a href="../api.lookfindme.com">API gateway</a></li>
+<li><a href="../admin.lookfindme.com">Admin Site</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Issues<ul>
+<li>Seems like you can only do a VPC with a load balancer. Don't really want to do that since that is an additional cost.</li>
+<li>Might have to only do http request. Might be able to limit access to only the API gateway.</li>
+</ul>
+</li>
+<li>Setup EC2 Server on AWS with LetsEncrypt certificate.<ul>
+<li>Create LetsEncrypt certificate for EC2 server.<ul>
+<li><code>ssh -i lookfindmeecs.pem ubuntu@adminapi.lookfindme.com</code></li>
+<li>Need to open port 443 to public access to configure certificate. <img alt="" src="../images/lookfindme_aws/security_group_access.png" /></li>
+<li><a href="https://certbot.eff.org/lets-encrypt/ubuntuxenial-nginx">Certbot Ubuntu 16.04 with Nginx</a></li>
+<li>Instructions worked flawlessly. Includes automatically setting https redirect.</li>
+</ul>
+</li>
+<li>Updated my <em>nginx</em> config.</li>
+<li>Change to socket</li>
+</ul>
+</li>
+</ul>
+<pre><code>upstream flask {
+        server unix:/tmp/lookfindme.sock
+}
+</code></pre>
+
+<ul>
+<li><code>sudo nginx -t</code> - validate configuration</li>
+<li>cd into <em>lookfindmeapi</em><ul>
+<li><code>uwsgi --ini uwsgi.ini --plugin python3</code> - starts uwsgi server.</li>
+<li><code>uwsgi --stop /tmp/lookfindme.pid</code> - stops uwsgi server</li>
+</ul>
+</li>
+<li>Tested with Postman - can get positions and double test works. Server is now live.</li>
+<li>Configure <em>vue.config.js</em> proxy. Want to proxy all requests to  live site to local site while working on code. <a href="https://cli.vuejs.org/config/#devserver-proxy">Vue Cli</a></li>
+</ul>
+<pre><code class="js">  devServer: {
+    proxy: {
+      &quot;https://adminapi.lookfindme.com&quot;: {
+        target: &quot;http://localhost:5000&quot;
+      }
+    }
+  },
+</code></pre>
+
+<h4 id="connect-server-to-api">Connect server to API</h4>
+<ul>
+<li>Settings<ul>
+<li>EC2 <ul>
+<li>Private IP: 172.31.88.130</li>
+<li>VPC: vpc-2e090456</li>
+<li>Subnet: subnet-6790f148<ul>
+<li>Private DNS: ip-172-31-88-130.ec2.internal</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="setup-api-gateway-with-https-access">Setup API Gateway with https access.</h4>
+<ul>
+<li>Adding a custom domain name: <img alt="" src="../images/lookfindme_aws/create_aws_api_domain_name.png" /></li>
+<li>In GoDaddy, point api.lookfindme.com to api url - d107qy4n4o7sd9.cloudfront.net: <img alt="" src="../images/lookfindme_aws/dns_cname_config.png" /></li>
+<li>Create http proxy - admin: <img alt="" src="../images/lookfindme_aws/api_http_proxy.png" /></li>
+<li>Deploying an API<ul>
+<li>Under Actions, select Deploy API - <img alt="" src="../images/lookfindme_aws/api_deployment_overview.png" /></li>
+<li>Choose a deployment or create a new deployment - <img alt="" src="../images/lookfindme_aws/api_deployment_2.png" /></li>
+<li>Enter deployment name and other info - <img alt="" src="../images/lookfindme_aws/api_deployment_3.png" /></li>
+<li>Deployment Overview and URL for external access - <img alt="" src="../images/lookfindme_aws/api_deployment_4.png" /></li>
+</ul>
+</li>
+<li>Setting up the custom domain name to point to the staged API<ul>
+<li>Left path empty</li>
+<li>Stage points to Staged API <img alt="" src="../images/lookfindme_aws/api_deployment_custom_domain.png" /></li>
+<li>API Test: <img alt="" src="../images/lookfindme_aws/api_deployment_postman_test.png" /></li>
+</ul>
+</li>
+<li>Setting up a client certificate - see if we can get it to work. <a href="https://stackoverflow.com/questions/34175361/client-side-ssl-not-working-with-aws-api-gateway">Client Side SSL Not Working - StackOverflow</a><ul>
+<li>Seems like nginx is looking for certificates in specific locations - /etc/ssl/newcerts</li>
+<li><em>/etc/nginx/awsapigateway.crt</em> - Created cert file in nginx config folder. - <strong>Verify the whole certificate was copied over.</strong> <img alt="" src="../images/lookfindme_aws/api_deployment_client_certificate.png" /></li>
+</ul>
+</li>
+</ul>
+<pre><code>    listen [::]:443 ssl ipv6only=on; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/adminapi.lookfindme.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/adminapi.lookfindme.com/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+    ssl_verify_client on;
+    ssl_client_certificate awsapigateway.crt;
+</code></pre>
+
+<p>Seems like we have a working system.</p>
+<ul>
+<li>Pushing frontend to admin.lookfindme.com - <code>awsmobile publish</code>. This publishes and pushes the site to cloudfront.</li>
+</ul>
+<h3 id="general-notes">General Notes</h3>
+<ul>
+<li>Current <em>lookfindmeapi</em> deploy to ec2 setup<ul>
+<li><code>git pull origin master</code></li>
+<li><code>cd tools/database</code></li>
+<li><code>gradle migrate</code> - any changes need to be applied to the database</li>
+<li><code>cd ../../</code> - back in <em>lookfindme</em> directory.<ul>
+<li><code>uwsgi --stop /tmp/lookfindme.pid</code> - stops uwsgi server</li>
+<li><code>uwsgi --ini uwsgi.ini --plugin python3</code> - starts uwsgi server.</li>
+</ul>
+</li>
+<li>Working on lookfindme.<ul>
+<li>Setting up environment variables. vue-cli supports .env files. - <a href="https://cli.vuejs.org/guide/mode-and-env.html#example-staging-mode">Mode and Env</a>. Need to differentiate between local api server and ec2 api server.</li>
+<li><code>const ProductionUrl = (process.env.VUE_APP_API_URL) ? process.env.VUE_APP_API_URL : "";</code> - Only include url in Production build. Local version has proxy to local api server.</li>
+<li>Resolve issue with <em>vue' is not a module</em> - did it before but didn't take notes. <a href="https://github.com/vuejs/vue-cli/issues/1104">typescript building error when import .vue file with separate .ts file</a>. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="ts">// @ts-ignore  
+import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'; 
+</code></pre>
+
+<p>Makes the error go away.</p>
+<h4 id="still-having-issues-with-cors-on-api-gateway">Still having issues with CORS on API Gateway.</h4>
+<p>Want to configure it to allow from any <em>.lookfindme.com domain. But there seems to be an issue with creating new resources. It just spins. Might have to close my browser and reopen. On the plus side, computer is working much better today. Seems that using terminals in Visual Studio Code is just asking for trouble.
+Error: "'Access-Control-Allow-Origin: </em>'". Seems to be a combination of Chrome browser and server. Trying to enable CORS on the API gateway and see if that helps.
+<em> Resolved:
+    * Added header to </em>nginx* config.</p>
+<pre><code class="conf">        location /admin {
+                add_header 'Access-Control-Allow-Origin' '*';
+                include /etc/nginx/uwsgi_params;
+                uwsgi_pass flask;
+                uwsgi_param Host $host;
+                uwsgi_param X-Real-IP $remote_addr;
+                uwsgi_param X-Forwarded-For $proxy_add_x_forwarded_for;
+                uwsgi_param X-Forwarded-Proto $http_x_forwarded_proto;
+}
+</code></pre>
+
+<p>Going to try and add it to the server level.</p>
+<p><strong><em>Below does not work</em></strong></p>
+<pre><code class="conf">add_header 'Access-Control-Allow-Origin' '*';
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
+</code></pre>
+
+<ul>
+<li>Restart nginx on Ubuntu - <code>sudo systemctl restart nginx.service</code></li>
+</ul>
+<p><strong><em>To get this work. Have to configure nginx with </em>add_header* to allow 'Access-Control-Allow-Origin' to work.</strong><em> Configuring the API gateway doesn't matter.
+</em> https://vpc-lookfindme-oxhmtdgaa63hkgxaxtmivoqkhm.us-east-1.es.amazonaws.com/ - Elastic Search URL</p>
+<h3 id="add-ability-to-create-and-edit-membership-to-admin-site">Add Ability to create and edit membership to admin site.</h3>
+<ul>
+<li>Have membership_level enum - <em>membership_level</em></li>
+<li>Adding foreign_key constraint. Want roles to come from role table. Creating Flyway Migration using sql below. Seems that it is easier to drop a column rather than trying to change it to UUID.</li>
+</ul>
+<pre><code class="sql">ALTER TABLE IF EXISTS public.memberships
+    DROP COLUMN member_role;
+ALTER TABLE IF EXISTS public.memberships
+    ADD COLUMN role_uuid UUID REFERENCES role (uuid);
+ALTER TABLE IF EXISTS public.memberships
+    RENAME TO membership;
+</code></pre>
+
+<p><del>Just being anal about renaming <em>member_level</em> to level.</del></p>
+<ul>
+<li>Current time: 00:10</li>
+<li>Creating a test for my membership service.<ul>
+<li>Add new membership</li>
+<li>Find a new membership</li>
+<li>Update a current membership</li>
+<li>Can't delete a membership because it may not be available but a user might still be on it.</li>
+</ul>
+</li>
+<li>Had to fix and issue with migrations. Can't use <em>level</em> as a field name. Changed the migration. <ul>
+<li>
+<ul>
+<li>Fix flyway - <code>gradle flywayRepair</code> - fix issues with migration.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Working with raw json in python - <a href="https://realpython.com/python-json/">Pyton Json</a></li>
+</ul>
+<pre><code class="python">json_string = &quot;&quot;&quot;
+{
+    &quot;researcher&quot;: {
+        &quot;name&quot;: &quot;Ford Prefect&quot;,
+        &quot;species&quot;: &quot;Betelgeusian&quot;,
+        &quot;relatives&quot;: [
+            {
+                &quot;name&quot;: &quot;Zaphod Beeblebrox&quot;,
+                &quot;species&quot;: &quot;Betelgeusian&quot;
+            }
+        ]
+    }
+}
+&quot;&quot;&quot;
+</code></pre>
+
+<ul>
+<li>Apparently Flask does deserialise the json data when you use request.get_json()</li>
+<li>Completed adding memberships to code. Added Schemas and code to add, retrieve memberships. Need to add code to update memberships. Don't think we have code to update records.</li>
+<li>Completed adding the filters too. Testing as you go along makes it easier to insure everything is working. Plus, helps with content switching.</li>
+</ul>
+<hr />
+<h2 id="thursday-14-june-2018">Thursday 14 June 2018</h2>
+<p>Spent all morning updating the work machine. It downloaded the latest updates. Removed Chrome from my startup items. Don't know how it got there. Also removed some cruft left over from a Samsung install. Concerned that my iPad is about to die. Really like using YouTube for playing music from the iMac. Also, seems that the issue with Visual Studio Code was trying to use terminal in it.</p>
+<ul>
+<li>Today's Goal <ul>
+<li>lookfindme<ul>
+<li>Publish admin site and connect to demo site.<ul>
+<li>[x] Able to update membership and it shows on demo site.</li>
+<li>Add about and it shows on demo site.</li>
+<li>Terms and Privacy updated on demo site.</li>
+<li>Change industry titles and it shows on demo site.</li>
+<li>Change front and industry image.</li>
+</ul>
+</li>
+<li>Why is_enabled, is_test and is_published?<ul>
+<li>is_enabled = shows up on the public site</li>
+<li>is_test = does not show up on the public site. Used when running tests. Want to be able to run tests on live site.</li>
+<li>is_published = once it has been made available to the general public, it cannot be deleted anymore. <em>is_published</em> and <em>is_enabled</em> has to be both activated for it to show on the public site.</li>
+</ul>
+</li>
+<li>Tasks<ol>
+<li>[x] Add is_test column to all tables. Can then checked if record was generated by tests.</li>
+<li>Memberships<ul>
+<li>[x] Update memberships - send post request to membership/id</li>
+<li>[x] is_published flag. Once published, cannot be deleted.</li>
+</ul>
+</li>
+<li>Industries<ul>
+<li>[x] Add new industry</li>
+<li>[x] Update title and image of current industry</li>
+<li>[x] Can disable but not delete.<ul>
+<li>[x] Add is enabled flagged</li>
+<li>[x] Add is_published flagged.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Connect cognito to AWS API Gateway<ul>
+<li>Able to use AWS library when posting to API vs using local library when working locally.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[x] Update marshmallow on local machine.</li>
+<li><del>Spend an hour working on trying to connect spring to a database and making an API call with it.</del> <strong><em>Not going to happen today</em></strong></li>
+</ul>
+</li>
+<li>Commands in Term2 shell that I should memorise since I use them all the time.<img alt="" src="../images/desktop/screen_desktop.png" /><ul>
+<li><strong>Command D</strong> - split horizontally</li>
+<li><strong>Shift Command D</strong> - split vertically</li>
+</ul>
+</li>
+<li>Upgrading stuff. We will see how this goes.<ul>
+<li>sdk - upgrade java related tools.</li>
+<li>nvm - upgrade node to 10.4.1 and reinstall packages</li>
+<li>lookfindme - upgraded packages. Still can't upgrade rxjs and @types/node because of issues with vue. Have to stick to rxjs@6.2.0 and @types/node@10.2.1</li>
+<li>Updated IntelliJ from drop-down tool.</li>
+<li>Trying to upgrade my marshmallow package. First removing marshmallow-sqlalchemy. Didn't use it. Seems that pipenv requires me to remove marshmallow first and then reinstall it. Also removing some other packages. <code>pipenv uninstall jsonschema psycopg2 gunicorn blinker marshmallow</code></li>
+<li>Had to create an update service in my services class because it didn't have one before. </li>
+<li>Keep getting errors about psycopg2 requiring the binary driver. Uninstalled the psycopg2 module and just left the psycopg2-binary module. Now not being found by the database server string. Reinstalled psycopg2 and that seems to work. Will have to figure out why the psycopg2-binary isn't working but not going to deal with it right now.</li>
+<li>Seems to have some issues around marshmallow update.<ul>
+<li>Updated marshmallow does not require the .data attribute when I serialise to json. Had to remove that.</li>
+</ul>
+</li>
+<li>Updating data<ul>
+<li>Current config returns the total number of records processed rather than the updated record. Want to returning feature of the call.<ul>
+<li>Note to self. See if you can find the tests for a module to find out how to use the module.</li>
+<li>Will have to investigate further later. Taking too much time just trying to get it to work. <a href="https://github.com/zzzeek/sqlalchemy/commit/c90f0a49f332867f6b337c79ddf192299788667f">Commit with test data related to <em>update_args</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Going to try and get rid of psycopg2 error that is bugging me. Uninstalling the psycopg2 package. Going to install <code>pipenv install --no-binary :all: psycopg2</code> We will see how well it works. <a href="https://gist.github.com/turing4ever/883ec1b0f92274714b867ffacee85285">Fix Psycopg2 Warning</a></li>
+</ul>
+<pre><code>export PIP_NO_BINARY=psycopg2
+pipenv install psycopg2
+</code></pre>
+
+<ul>
+<li><strong><em>Error message is gone now.</em></strong></li>
+<li>Create industries setup and tests.<ul>
+<li>Add new industry</li>
+<li>Update an industry</li>
+<li>Get one industry</li>
+<li>Get list of industries</li>
+<li>Test created and now testing the test.</li>
+<li><strong>Tests pass. Now moving on to the front-end.</strong> </li>
+</ul>
+</li>
+<li>AWS Amplify and API Gateway.<ul>
+<li>Get API Gateway settings</li>
+</ul>
+</li>
+<li>
+<p>REST vs PUT - PUT is suppose to be idempotent so probably better for updates. <a href="https://restfulapi.net/rest-put-vs-post/">Restful API Tutorial</a></p>
+</li>
+<li>
+<p>Testing the API Gateway with an Auth Token.</p>
+<ul>
+<li>Setting up authorisation for API Gateway<ul>
+<li>User Pool is already setup via Mobile Hub.<ol>
+<li>Open API Gateway Console.<ol>
+<li>Select Authorizers </li>
+<li>Create new Authorizer<ol>
+<li>Select Cognitor as the provider</li>
+<li>Select the UserPool from the list when you click in the field box.</li>
+<li>Token Source is <em>Authorization</em> <img alt="" src="../images/lookfindme_aws/create_auth.png" /></li>
+</ol>
+</li>
+<li>Save.</li>
+</ol>
+</li>
+<li>Test your provider<ol>
+<li>I'm already using aws amplify for site authentication</li>
+<li>Grabbed the <em>JWT</em> token from the JavaScript Console</li>
+<li>Copy and paste only the token (no quotes) into the test  box. <img alt="" src="../images/lookfindme_aws/test_credential.png" /></li>
+<li>Click test and see if your authorisation works.</li>
+</ol>
+</li>
+<li>Deploy to your API<ol>
+<li>First add authorization to your resource. <img alt="" src="../images/lookfindme_aws/resource_auth.png" /><img alt="" src="../images/lookfindme_aws/resource_auth_detail.png" /></li>
+<li>Deploy your API</li>
+</ol>
+</li>
+<li>Can test with Postman by providing JWT token.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Using <em>ngrok</em> to try and use it to access API Gateway<ul>
+<li>Issue with invalid header. Solution: <a href="https://stackoverflow.com/questions/45425721/invalid-host-header-when-ngrok-tries-to-connect-to-react-dev-server?utm_medium=organic&amp;utm_source=google_rich_qa&amp;utm_campaign=google_rich_qa">Invalid Host Header when ngrok tries to connect to React dev server</a>
+    <code>ngrok http 8080 -host-header="localhost:8080"</code>
+    <code>ngrok http --host-header=rewrite 8080</code></li>
+<li>Getting ngrok going <code>ngrok http 8080 -host-header="localhost:8080"</code></li>
+</ul>
+</li>
+<li>Back to working on front-end<ul>
+<li>Get industries from backend<ul>
+<li>Create model of industry</li>
+<li>Backend service to get industries
+        * Refactor to create one get request.</li>
+</ul>
+</li>
+<li>Getting Roles and enums too. For downloads. Have tests working on server. Now working on front-end side. Still not done.</li>
+<li>Adding new add forms.</li>
+</ul>
+</li>
+</ul>
+<h2 id="friday-15-june-2018">Friday 15 June 2018</h2>
+<p>Seems like a lot of time working on getting the backend services to work. Machine was updated and updated local software. Going to resist the desire to update the software again today. I actually need to try and get some stuff done. Did kinda figure out how setup an AWS API Gateway with authentication and how to test it. Definitely need to write up these notes as blog posts.</p>
+<p>Need to take Hennely's talk to heart about estimating. I'm way off when it comes to estimating the time it will take. Have to post sites today.</p>
+<p>Also want to create an RSS feed for my blog. RSS feed is already available on the Wordpress site. Just need to figure out how to forward RSS requests at https://www.johan-martin.com/rss to https://api.paseo.org.za/johan/rss. If using Apache, I would jus t proxy it. Don't know if we can do that with Google Firebase. Might have to create a custom function. <a href="https://firebase.google.com/docs/hosting/url-redirects-rewrites">URL Redirects</a> - Might have to use that in the short-term. Will look later.</p>
+<ul>
+<li>Updated Goals <ul>
+<li>lookfindme<ul>
+<li>Publish admin site and connect to demo site.<ul>
+<li>[-] Able to update membership and it shows on demo site.</li>
+<li>[ ] Add about and it shows on demo site.</li>
+<li>[ ] Terms and Privacy updated on demo site.</li>
+<li>[ ] Change industry titles and it shows on demo site.</li>
+<li>[ ] Change front and industry image.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rolling out admin site today.<ul>
+<li>Setting up AWS access<ul>
+<li>[ ] API Gateway<ul>
+<li>[ ] Create new cloudfront endpoint in Godaddy</li>
+<li>[ ] Import certificate into API Gateway</li>
+<li>[ ] Create certificate to add to backend server</li>
+<li>[ ] Setup authorization with Cognito</li>
+</ul>
+</li>
+<li>[ ] Cognito<ul>
+<li>[ ] Use email as the authentication option</li>
+<li>[ ] Create app to allow user pool authentication</li>
+<li>[ ] Email notification for setting up a new user</li>
+</ul>
+</li>
+<li>[ ] DynamoDB<ul>
+<li>[ ] Create Settings object with all settings that we push into DynamoDB</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Created a basic blog post with everything I need to do to get the API up and running. Part 1 of a series.</p>
+<p>Working on the membership form. Get a list of memberships. Popup window to view and edit it.</p>
+<ul>
+<li>
+<p>Vuetify notes</p>
+<ul>
+<li>v-container - page level</li>
+<li>v-layout - section or component level</li>
+<li>v-flex - specific item. sets flex on this level.<ul>
+<li>inside component should just us v-flex</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[] Create membership list item component. Going to show it as a v-card. Need to look at content for membership in google site.
+        * Have to include <code>// @ts-ignore</code> in front of all import statements to keep vue from freaking out.
+        * Created the ListItem. Now need to get it to show the Item correctly. Will do that when I come back from my run.
+        * Removed separate List component. Just creating a separate ListItem to format individual list items.
+        * Creating a new membershipModel that includes a meta object. Object contains uuid and the action taken. Idea is that when an action happens in the listItem, I can update the membershipModel and get those results. We will see if that works. Don't think it's going to work because I'm no longer doing a separate list component. Now, List is actually the main component and all actions should just bubble up to the Membership component. Actions will be. Edit, Enable, and delete if not published.
+        * Adding additional parameters to the membership. jobseekers - how many you can interact with and industries is how many you can search across.
+        * Basic card created. Also realize that one cannot edit a membership that has already been published. Would cause too much confusion. So, once it is created and published, it can no longer be edited.
+        * Trying to get form out of dialog that is holding a form. </p>
+</li>
+</ul>
+<h2 id="random-notes">Random notes.</h2>
+<p>Hate it when I lost a thought that I just had and wanted to write down. Really annoying!!!!</p>
+<ul>
+<li>Going to run at 13:57.</li>
+<li>Got back at 15:19</li>
+<li>Creating a <em>prettier</em> - <code>.prettierrc</code> configuration file. Hope I can get it to work with Vue files.</li>
+<li>Pre-commit hooks for node/npm<ul>
+<li><a href="https://github.com/typicode/husky">Husky</a> - can configure package.json file with precommit hooks.</li>
+<li><a href="https://pre-commit.com">Pre-commit hooks</a> - manage and maintain precommit hooks.</li>
+</ul>
+</li>
+<li>Installed <code>npm install eslint-plugin-prettier eslint-config-prettier --save-dev</code></li>
+<li>Configuration:<ul>
+<li><code>editor.formatOnSave</code></li>
+</ul>
+</li>
+<li><a href="https://github.com/prettier/prettier-vscode">Prettier VSCode Plugin</a></li>
+<li>Typescript array - string[] or Array<string></li>
+<li>Associate template.html files as vue-html files for syntax highlighting to work again.</li>
+<li>Computer is running really slow. Have to restart to see if it gets any better.</li>
+<li>Don't know why it's going so slow.</li>
+<li>After quitting out of Visual Studio Code, everything seems better. Only change I've made was to the prettier config. Haven't changed anything else. Also, did change html config to jsbeauty or something similar. Might be related to that. But does seem that visual studio code gets bogged down sometimes.</li>
+<li>My version node seems to keep crashing with Vue. Downgraded to  10.1.0 that I had before. Will see if it still crashes as much. <code>echo "10.1.0" &gt; .nvmrc</code> in my current project folder. <code>nvm alias default v10.1.0</code> to get back to previous version. Going to attempt to upgrade my copy of nvm to latest tagged version. Getting really frustrated with constantly having to go back to the documentation. Ok. Had to restart IA writer. Seems to be working better now. Don't know why this machine randomly starts slowing down.</li>
+<li><code>&lt;component :component="passedin" /&gt;</code> - Figure out which value is which.</li>
+<li>Well, seems that it is still crashing even though I've downgraded my NPM. Restarting and upgrading. See if that makes any difference. Think my setup might just be bad news.</li>
+<li>Restarting everything and see what works.</li>
+<li>Reinstall rxjs@6.2.0 and @types/node@10.1.2.<ul>
+<li>Just uninstalling rxjs wasn't enough. Still getting errors. Won't be able to build the project with those errors.</li>
+</ul>
+</li>
+<li>Getting stuck on formatting the site. Really need to up my CSS skills. It takes me way too much time to format anything.</li>
+<li>Still trying to at least style the form to look like someting interesting.</li>
+<li>Finally working on the form. Got the basics done. Now trying to figure out how to take an array and make it into an editable area while allowing for additional items to be added.</li>
+<li>Reduced the number of items being pulled into my form. Seems to have eliminated some of the issues with my node crashing.</li>
+</ul>
+<h2 id="saturday-16-june-2018">Saturday 16 June 2018</h2>
+<ul>
+<li>lookfindme
+        * Publish admin site and connect to demo site.
+            - [-] Able to update membership and it shows on demo site.
+            - [ ] Add about and it shows on demo site.
+            - [ ] Terms and Privacy updated on demo site.
+            - [ ] Change industry titles and it shows on demo site.
+            - [ ] Change front and industry image.</li>
+<li>
+<p>Rolling out admin site today.</p>
+<ul>
+<li>Setting up AWS access<ul>
+<li>[ ] API Gateway<ul>
+<li>[ ] Create new cloudfront endpoint in Godaddy</li>
+<li>[ ] Import certificate into API Gateway</li>
+<li>[ ] Create certificate to add to backend server</li>
+<li>[ ] Setup authorization with Cognito</li>
+</ul>
+</li>
+<li>[ ] Cognito<ul>
+<li>[ ] Use email as the authentication option</li>
+<li>[ ] Create app to allow user pool authentication</li>
+<li>[ ] Email notification for setting up a new user</li>
+</ul>
+</li>
+<li>[ ] DynamoDB<ul>
+<li>[ ] Create Settings object with all settings that we push into DynamoDB
+Formatting front-end takes forever. Every framework has its own idiosyncrasies plus now everything is flex box. Form is taking forever too.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Membership form status</p>
+<ul>
+<li>[ ] - Form in own component</li>
+<li>[ ] - In dialog box</li>
+<li>[ ] - model tied to form</li>
+<li>[ ] - Able to change data</li>
+<li>[ ] - Array to add new benefit items.</li>
+</ul>
+</li>
+<li>Huge fan of prettier. On save is too resource intensive. Works fine to just do it when saving the data.</li>
+<li>Going to attempt to enable eslint feature.</li>
+<li>Making the detail item into its own component. Anything that takes more than a couple lines of code needs to be its own component.</li>
+<li>Trying to get a filter to work. Idea is that we will format the number as a regular number but it is actually stored as a integer. </li>
+<li>Also realising, because the v-module is reactive, we need to make a copy of it and update the copy. Else, we update our actual data and it is an issue when you hit the reset butt.</li>
+<li>Working on the filter now.<ul>
+<li>Vue does have a filter option.</li>
+<li>Trying to figure out how to use the filter option in a vue component class.</li>
+</ul>
+</li>
+<li>Handling form submission in Vue<ul>
+<li><code>&lt;form @submit.prevent="handleSubmit"&gt;&lt;/form&gt;</code></li>
+<li><code>handleSubmit() {}</code></li>
+</ul>
+</li>
+<li>Using functional components for very basic presentation. <a href="https://alligator.io/vuejs/functional-components/">Vue Functional Components</a> - <a href="https://alligator.io/vuejs/render-functional-components/">Render functional components</a></li>
+<li>Using filters with vue component class</li>
+</ul>
+<pre><code class="ts">@Component({
+  filters: { trim() { /* some code here */ } }
+})
+class YourComponent extends Vue {
+}
+</code></pre>
+
+<ul>
+<li>Have a form that I need to use to update local information. Form gets its values passed to it when I click on the edit button. Want to leave the original values alone and only mess with the copied values.<ul>
+<li>Watch the imported property</li>
+<li>Assign the oldval of the property to the form model. This means the model now points to the local variable.</li>
+<li>Update the data and submit that data.</li>
+<li>Problem now is to deep copy/clone the object so everything is disconnected. Might have to install lodash.</li>
+<li>Tried with an observable. Still getting the full copy. Need to figure out how to clone an object in JavaScript.</li>
+</ul>
+</li>
+<li>Clone a JavaScript object. Just wants to make sure that the original is not impacted by any changes I make.</li>
+</ul>
+<pre><code class="js">JSON.parse(JSON.stringify( obj ));
+</code></pre>
+
+<ul>
+<li>Although the above method works, it feels like a hack. Decided to install lodash and use it's cloneDeep method <a href="https://lodash.com/docs/4.17.10#cloneDeep">CloneDeep</a>.</li>
+<li>Now have to save the data back to the database. Show the price divided by 100. Do it when we clone the record.</li>
+<li>Using loads to pick only the values I want to save. Complete record is not necessary. <em>this.membership</em> is the object with the updated data. Unfortunately, it also has all the data retrieved from the server including created and updated fields that are not required here. Local model is the <em>new Membership()</em>. Grab the keys from it and use that to only grab the properties I need for saving into the database. </li>
+<li>Huge fan of lodash.</li>
+</ul>
+<pre><code class="ts">    const formData = _.pick(this.membership, _.keys(new Membership()));
+</code></pre>
+
+<ul>
+<li>Huge fan of using models to manage my objects. Have to only update the model and everything else is updated everywhere else. Big time saver for getting work done. Had to add and remove properties from an object. Because I have a model for it, it's as simple as editing the model.</li>
+<li>Just created a blog post for my blog about lodash. Going to setup medium next week.</li>
+<li>Just started using the AWS Amplify Logger utility again. Great way to implement logging and not have it show up on the live site. <code>const logger = new Logger('name');</code>. Actually using it.  <code>logger.debug('what I need to log');</code>. <a href="https://aws.github.io/aws-amplify/media/logger_guide">Logger Guide)</a></li>
+<li>Trying to save data to the server. Need to remove the uuid key. Seems like the update is failing if the uuid key is one of the fields included. Of course, working on a slow machine. Really need to get this done so I can apply for real work. This is killing me but I promised. </li>
+<li>Ok. Got the delete with permission to work. Getting the enabled setup now. Going to try and finish the industries too. Only requirement there is that you can add a new industry and edit maybe the image. Everything else stays static.</li>
+<li>Got enable and disable to work. Need to put logic for is_published on server side rather than just on the client side.</li>
+<li>Added logic on server side. Switching between JavaScript and Python can be confusing. Going to spend a little time working on the layout of the Membership item and then we will tackle the industries.</li>
+<li>I really hate computers. Issue with wloudinary not working. max_results=100 - has to be an integer. Initially was a string.</li>
+<li>Huge fan of Jupiter notebooks for python development. Able to walk through API calls to wloudinary by importing it into the notebook. Could figure out what I was doing wrong.<ul>
+<li>Python list/filter/map - <a href="http://www.bogotobogo.com/python/python_fncs_map_filter_reduce.php">map_filter_reduce</a>, <a href="http://www.u.arizona.edu/~erdmann/mse350/topics/list_comprehensions.html">List comprehension</a></li>
+</ul>
+</li>
+<li>Filtering all the images with 'STATIC' in their title. Used Jupyter notebook to run the below tasks</li>
+</ul>
+<pre><code class="python">from app.common.Utils import cloudinary
+resource = cloudinary.api.resources(max_results=100)
+result = list(filter(lambda x: 'STATIC' in x['public_id'], resource['resources']))
+</code></pre>
+
+<ul>
+<li>Adding images definitely changes how I do this.</li>
+<li>Got most of the images to work and got localStorage to work. Check to see if I have the images stored in local storage, if not, retrieve from server. This will let me limit the number of calls to the server and keep me from running over my allocation. We'll see how well this works.</li>
+</ul>
+<h2 id="sunday-16-june-2018">Sunday 16 June 2018</h2>
+<p>Relatively successful day yesterday. Got the forms to work the way I wanted. Got localstorage working for the images. Was able to do that and still return an observable of images. Really overkill at this juncture but trying to play with the big kids. It does seem that everything should be a behaviourSubject in rxjs land.</p>
+<p>Can definitely see that once you have some idea of how to build something, doing it the second time around is much, much faster. Created the industry layout in minutes rather than hours trying to figure out how to get it to work.</p>
+<p>Got the basics working. Will tie it all together when I get back. Excited to work on something when you have some idea what you are doing.</p>
+<p>Just got back from Leandra's place for lunch. Nice to hang out with cousin and talk about random stuff. Need to finish up these two projects so I can start working on social network sites. Definitely want to work on SABBN site. Now also have the black shopping site with the South African domain name. Might want to see how we can collaborate with the guy in the US. We will see. Need to get my digital design company out there too. This is going to happen.</p>
+<p>Working on the industry form. Want to be able to save the state of the industry when it gets published. Don't think it matters since the positions get transferred to the user anyway. So, make each position so you can edit it(?). Might have to put something  on the end-user computer to let them know if a position has been retired(?). We have the industry. That is an uuid, so it's not an issue.</p>
+<p>Decided to add a cloudinary_image option. That will need to be the image we use going forward. Update the current setup to use that image. Refer to current image as image filter tag.</p>
+<p>Python note: to get a list back when filtering the images <code>return list(filter(lambda x: industry_image_title in x['public_id'], images))</code></p>
+<p>Just spent over 2 hours trying to resolve an issue with v-select. How to get an object to show up as the value of the select. Solution was to have the <code>text-value</code> also present while returning the whole object. I hate computers and components when you're not sure how it works.</p>
+<pre><code class="html">     &lt;v-select
+          v-model=&quot;industry.cloudinary_image&quot;
+          label=&quot;Industry Image&quot;
+          hint=&quot;Industry Image&quot;
+          item-text=&quot;public_id&quot;
+          item-value=&quot;public_id&quot;
+          :items=&quot;IndustryImages&quot;
+          return-object
+        &gt;&lt;/v-select&gt;
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../DevJourn_18_june_2018/" title="June 18 2018" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                June 18 2018
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Johan Martin &copy; 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -4,42 +4,50 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
-     <loc>/developer_journal/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <loc>/DevJourn_11_june_2018/</loc>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/DevJourn_18_june_2018/</loc>
+     <lastmod>2018-06-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
         
     <url>
      <loc>/Notes/vueamp/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Notes/kindercare/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Notes/backend/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Notes/lookfindme/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -49,7 +57,7 @@
         
     <url>
      <loc>/web/auth/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -97,7 +105,7 @@
         
     <url>
      <loc>/ruby/ruby/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -130,7 +138,7 @@
     
     <url>
      <loc>/cms/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -139,13 +147,13 @@
         
     <url>
      <loc>/reporting/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/docs/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -157,13 +165,13 @@
         
     <url>
      <loc>/tools/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/cmd/cmd/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -172,7 +180,7 @@
     
     <url>
      <loc>/work/employment/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -181,31 +189,31 @@
         
     <url>
      <loc>/learning/jupyter/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/learning/rxjs/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/learning/learnAngular/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/php/wordpress/api/learn/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/learning/tutorials/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -215,19 +223,19 @@
         
     <url>
      <loc>/research/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/teaching/tools/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/teaching/modules/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -249,19 +257,19 @@
         
     <url>
      <loc>/misc/house/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/misc/dstv/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/misc/sketch/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
