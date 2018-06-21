@@ -329,6 +329,53 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tuesday-19-june-2018" title="Tuesday 19 June 2018" class="md-nav__link">
+    Tuesday 19 June 2018
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ngrok-config-documentation" title="ngrok config - Documentation" class="md-nav__link">
+    ngrok config - Documentation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wednesday-19-june-2017" title="Wednesday 19 June 2017" class="md-nav__link">
+    Wednesday 19 June 2017
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-lookfindme-site" title="Main lookfindme site." class="md-nav__link">
+    Main lookfindme site.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thursday-21-june-2018" title="Thursday 21 June 2018" class="md-nav__link">
+    Thursday 21 June 2018
+  </a>
+  
+</li>
+      
       
       
       
@@ -487,6 +534,42 @@
   <li class="md-nav__item">
     <a href="../api/rest/" title="Response Codes" class="md-nav__link">
       Response Codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/AmazonGatewayAPI/" title="AWS API Gateway" class="md-nav__link">
+      AWS API Gateway
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/CORS Configuration for API Gateway/" title="AWS Authorization and CORS" class="md-nav__link">
+      AWS Authorization and CORS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/CORS with FLASK without Flask-CORS/" title="CORS and FLASK" class="md-nav__link">
+      CORS and FLASK
     </a>
   </li>
 
@@ -2365,6 +2448,53 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tuesday-19-june-2018" title="Tuesday 19 June 2018" class="md-nav__link">
+    Tuesday 19 June 2018
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ngrok-config-documentation" title="ngrok config - Documentation" class="md-nav__link">
+    ngrok config - Documentation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wednesday-19-june-2017" title="Wednesday 19 June 2017" class="md-nav__link">
+    Wednesday 19 June 2017
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-lookfindme-site" title="Main lookfindme site." class="md-nav__link">
+    Main lookfindme site.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thursday-21-june-2018" title="Thursday 21 June 2018" class="md-nav__link">
+    Thursday 21 June 2018
+  </a>
+  
+</li>
+      
       
       
       
@@ -2387,10 +2517,474 @@
                 <h1 id="developer-journal-week-of-18-june-2018">Developer Journal Week of 18 June 2018</h1>
 <p>Goal this week is to at least finish the admin part of <em>lookfindme</em>. So close but for the details.</p>
 <h2 id="monday-18-june-2018">Monday, 18 June 2018</h2>
-<p>Still working on lookfindme admin site. Having issues with the industries list. Not updating if there is only one item in the json array. Don't know why that it is. It will save okay but it seems to have an issue updating. Will check the interwebs else might just convert it to an array or a string with pipe characters and store it as a string. The data is actually being sent. The issue is the it is not being saved.</p>
+<p>Still working on lookfindme admin site. Having issues with the industries list. Not updating if there is only one item in the json array. Don't know why that it is. It will save okay but it seems to have an issue updating. Will check the interwebs else might just convert it to an array or a string with pipe characters and store it as a string. The data is actually being sent. The issue is the it is not being saved.
+* Using integers for all my money. Listened to a webcast about using integers for currency rather than floats. Requires a little more on the front-end side but then, I'm trying to avoid anything on the front-end that will have to be redone on the backend anyway. </p>
 <h3 id="lookfindme">lookfindme</h3>
 <ul>
-<li>Look into why the industries list of positions doesn't want to update if there is only 1 item in the list.</li>
+<li>Look into why the industries list of positions doesn't want to update if there is only 1 item in the list.<ul>
+<li>Resolved by adding <em>synchronize_session='evaluate'</em> - <code>result = self.query.filter(self._table.uuid == uuid).update(update_values, synchronize_session='evaluate')</code> <a href="http://docs.sqlalchemy.org/en/latest/orm/query.html?highlight=query">Query Details</a></li>
+</ul>
+</li>
+<li>Now have to work on the enable/disable issues.<ul>
+<li>Fix the issue with the database not respecting UUIDs passed in from the API. Only seems to be an issue when I'm not passing it in as a primary key. No problem if it is a primary key. <a href="http://docs.sqlalchemy.org/en/latest/core/metadata.html#sqlalchemy.schema.Table">SQLAlchemy Schema Table</a> - <a href="http://docs.sqlalchemy.org/en/latest/dialects/postgresql.html?highlight=uuid#sqlalchemy.dialects.postgresql.UUID">Postgresql.UUID</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>database/engine.py</strong></p>
+<pre><code class="python">class SiteSettings(base):
+    __table__ = Table(
+        c.TABLE_SITE,
+        meta,
+        Column('site_uuid', postgresql.UUID(as_uuid=True)),
+        autoload=True,
+        autoload_with=engine,
+        extend_existing=True
+    )
+</code></pre>
+
+<p><strong>routes/admin.py</strong></p>
+<pre><code class="python">@bp.route('/site/&lt;uuid:site_id&gt;', methods=['GET'])
+def site_get(site_id):
+    try:
+        result = SiteServiceModel.get_json_data(site_id)
+    except SQLAlchemyError as err:
+        response = SiteServiceModel.get_response_error(err)
+    else:
+        response = SiteServiceModel.get_response_result(result)
+    return response
+</code></pre>
+
+<ul>
+<li>It is <strong>elif</strong> in python. </li>
+<li>Remove dictionary key - <code>record_data.pop('uuid', None)</code> Does not raise an error but returns <em>None</em> as default.</li>
+<li>Had to update my tests. Apparently, unless you spell out the complete test, it is not being run. But the tests are at least  running now.</li>
+<li>Finally got the industry list to work correctly. Now can update and enable them. On the industry, we allow editing an industry if it is not enabled. Once enabled, it can't be edited. Don't really check for that in the backend. Should put in a check for that. But I'm done with the industry list for now. Going to work on the settings part. Trying to make the settings part into tabs. Seems like a better idea than the drop down. Also need to change what we are storing in the settings object. Don't think we need images anymore. Another question is, do we break things up into their own columns? Since we are saving the complete record every time, don't think we need to.</li>
+<li>Tabs look okay. Not going to win any awards for the layout or design. Need to see which css framework will work okay with vuetify. Adding a new item to the top of a JavaScript array - <code>unshift</code>. Assume it plays hell on the memory but it looks better.</li>
+<li>Updated create scripts for database. Now need to work on authentication and security to make sure that works okay.</li>
+<li>Going to work on authguard and aws amplify again. What do I need to notify when things change?</li>
+<li>Going to attempt to get the current session and get the necessary token to auth with our api gateway service. Still not really clear which service is best for this.</li>
+<li><code>(await Auth.currentSession()).idToken.jwtToken</code> - Getting the cognito jwtToken for authorisation with the API gateway.</li>
+<li>Instructions for updating api server<ul>
+<li>Pull in changes <code>git pull origin master</code></li>
+<li>stop uwsgi - <code>uwsgi --stop /tmp/lookfindme.pid</code></li>
+<li>Update database - <em>tools/database</em> <code>gradle migrate</code></li>
+<li>start uwsgi - <code>uwsgi --ini uwsgi.ini --plugin python3</code></li>
+<li>restart nginx - <code>sudo /etc/init.d/nginx restart</code></li>
+</ul>
+</li>
+<li>Major rxjs magic to include a call to the auth server before calling our api gateway server.</li>
+</ul>
+<pre><code class="typescript">  return GetCurrentSession$().pipe(
+    switchMap( (data) =&gt; ajax(
+      {
+        method: reqMethod,
+        url: reqUrl,
+        body: reqBody,
+        headers: Object.assign({}, {'Content-Type': 'application/json', 'Authorization': data.idToken.jwtToken}, reqHeaders)
+      }
+    ).pipe(
+      tap ( data =&gt; logger.debug('ajax response', data)),
+      map (data =&gt; data.response.result))
+    )
+</code></pre>
+
+<p>Going to build it and see if it works.</p>
+<h2 id="tuesday-19-june-2018">Tuesday 19 June 2018</h2>
+<p>I'm the hell knowns as CORS. Trying to access the backend application but have to configure CORS to allow access. Getting a list of known/required headers is a nightmare. Plus, API Gateway CORS support should only be enabled after you get CORS working with your application. It's a freaking nightmare.
+I did this once when I built the Wordpress plugin. Will see if I have any notes related to that.
+<a href="http://www.catenare.com/devnotes/php/wordpress/notes/#api-notes">Wordpress Header Notes</a> - Notes related to me working on a PHP wordpress project related to headers.  </p>
+<ul>
+<li>Creating a decorator in python<ul>
+<li><a href="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/PythonDecorators.html">Python Decorators</a> - <a href="https://realpython.com/primer-on-python-decorators/">Primer on Python Decorators</a></li>
+<li>Using jupyter notebook to walk through it.</li>
+<li>Actually created a separate notebook. Think I have the hang of it.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="python">def add_headers(response_function):
+    def wrapper(*args, **kwargs):
+        headers = response_function(*args, **kwargs)
+        headers['extra'] = '1'
+        print(headers)
+#         return response_function(*args, **kwargs)
+        return headers
+    return wrapper
+
+@add_headers
+def response_function():
+    result = {'hello': 'World'}
+    return result
+
+# demo_function = add_headers(response_function)
+# print(demo_function())
+print(response_function())
+</code></pre>
+
+<p>My Code</p>
+<pre><code class="python">@add_headers
+def get_response_result(result, code=200):
+    response = make_response(jsonify({'result': result}), code)
+    return response
+
+
+def get_response_error(result=&quot;An error occurred&quot;, code=400):
+    response = make_response(jsonify({'error': str(result)}), code)
+    return response
+
+def add_headers(response_function):
+    def wrapper(*args, **kwargs):
+        response = response_function(*args, **kwargs)
+        response.headers['Content-Type'] = 'application/json'
+        response.headers['Access-Control-Allow-Origin'] = '*'
+        response.headers['Access-Control-Allow-Headers'] = 'Authorization, Content-Type'
+        response.headers['Access-Control-Allow-Credentials'] = True
+        return response
+    return wrapper
+</code></pre>
+
+<ul>
+<li>In Python, function order matters. Can't call a function before it is defined.</li>
+<li>So, CORS functionality actually takes the response from the request and returns the origin based on that request. Mmmm.</li>
+<li>Look into logging when I get back.</li>
+<li>
+<p>How to resolve this CORS issue?</p>
+<ul>
+<li>Client is sending headers to the server which the server needs to respond to.</li>
+<li>It's and OPTION call which means we need to reply to that call.</li>
+<li>Don't know if the ajax observable is sending things I don't know about.</li>
+<li>Need to setup logging for Python so I can log what is happening.</li>
+<li>Fixing the issue<ul>
+<li>[x] Setup logging for Python
+        * Can at least tell which functions are being called.
+        * Going with flask_cors. Still having issues. Can't seem to be able to save anything. Used to work via a proxy.</li>
+<li>[x] See what is being sent in the headers when the client connects to the server. Using <code>curl -i -X OPTIONS</code></li>
+<li>[x] See what we are sending back.<ul>
+<li>[x] Decorator is not working because I'm sending back a result rather than a function that produces a result.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em>curl</em> to find out if we are getting the right headers back.<ul>
+<li><code>curl -i -X OPTIONS</code> include header information</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Sending Post Data via curl</p>
+</li>
+</ul>
+<pre><code>curl --header &quot;Content-Type: application/json&quot; \
+  --request POST \
+  --data '{&quot;username&quot;:&quot;xyz&quot;,&quot;password&quot;:&quot;xyz&quot;}' \
+  http://localhost:3000/api/login
+</code></pre>
+
+<pre><code>    * Shows what header information is being returned.
+* Need to get a generic setup to return for any option request.
+* Fixed an issue where the loader wasn't going away during an error. Resolved now.
+* Seems to resolved on my local machine. Installed `axios` but didn't seem to be necessary.
+</code></pre>
+<ul>
+<li>JavaScript code that seems to work</li>
+</ul>
+<pre><code class="javascript">const executeAjax$ = (reqMethod, reqUrl, reqBody=null, reqHeaders={}) =&gt; {
+
+  return GetCurrentSession$().pipe(
+    switchMap( (data) =&gt; ajax(
+      {
+        method: reqMethod,
+        url: reqUrl,
+        body: reqBody,
+        crossDomain: false,
+        withCredentials: false,
+        headers: Object.assign({}, {'Content-Type': 'application/json'},{'Authorization': data.idToken.jwtToken}, reqHeaders)
+      }
+    ).pipe(
+      catchError( err =&gt; of(err)),
+      tap ( data =&gt; logger.debug('ajax response', data)),
+      map ( (data: any) =&gt; data.response.result))
+    )
+  )
+
+  };
+</code></pre>
+
+<ul>
+<li>Configuration for python side - <em>Notice the CORS</em> </li>
+</ul>
+<pre><code class="python">def create_app():
+    app = Flask(__name__)
+    CORS(app, expose_headers='Authorization')
+    import app.routes.test as test_route
+    import app.routes.admin as admin_route
+    import app.routes.site as site_route
+    import app.routes.user as user_route
+    app.register_blueprint(test_route.bp)
+    app.register_blueprint(admin_route.bp)
+    app.register_blueprint(site_route.bp)
+    app.register_blueprint(user_route.bp)
+    return app
+</code></pre>
+
+<p>Spent all day trying to get CORS to work. Was fighting with the client and the backend server. Seems that everything is related to the FLASK/python application sending the correct headers back to the web client. Ended up using flask-cors. Seems like it already does all the dirty work I need to do. When one is doing functions, one has to keep that in mind.</p>
+<ul>
+<li>
+<p>[x] Getting import roles to work</p>
+<ul>
+<li>[x] Get the all setup to work too. </li>
+</ul>
+</li>
+<li>
+<p>Issue I'm running into now. <strong> 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' </strong>. See if I can get ngrok to work. Who knows.</p>
+</li>
+<li>
+<p>On Amazon API Gateway. Enabled CORS</p>
+<ul>
+<li>Access-Control-Allow-Headers: true</li>
+<li>OPTIONS there too.</li>
+</ul>
+</li>
+<li>On the client<ul>
+<li>withCredentials: true</li>
+<li>Added Authorization Header</li>
+<li>Leaving crossDomain as false</li>
+</ul>
+</li>
+<li>Creating a new API from scratch. I'm worried that the CORS stuff is all messed up.</li>
+<li>Hardest part is getting the domain redirected to the new domain name. Nothing is ever just straightforward. Think the issue I'm having right now is that the backend server is returning "*" in the content header. These headers are a mess.</li>
+<li>So, when you delete your API and you also deleted the custom domain, it seems that the only way to create a new one with the same domain name is to remove that domain from your dns and then recreate.</li>
+<li>Ok. Deleted the cname record from GoDaddy and was able to recreate the custom domain name. Now just have to wait for it to initialise. That takes forever. In the meantime, going to set the url to ngrok to see if we can get that to work. Might need to have some type of webhook to determine which origin header to use.</li>
+<li>Configuring flask-cors to only allow from a specific domain name. - <a href="https://flask-cors.corydolphin.com/en/latest/index.html">Flask CORS Documentation</a> - Might have to not use this anymore. Seems like I may have found a solution that works better. We will see.</li>
+</ul>
+<pre><code class="python">    CORS(app, expose_headers='Authorization', origins=['*.lookfindme.com', '*.ngrok.io'], supports_credentials=True)
+</code></pre>
+
+<ul>
+<li>Side note - added <code>PIP_NO_BINARY=psycopg2</code> to <em>.flaskenv</em> file. Hoping that will stick so pipenv doesn't install the wrong version of psycopg2 that keeps sending out an error message.</li>
+</ul>
+<h3 id="ngrok-config-documentation">ngrok config - <a href="https://ngrok.com/docs#tunnel-definitions">Documentation</a></h3>
+<ul>
+<li>Creating an <em>ngrok.yml</em> file in the api folder. Run both services via ngrok in the <em>eu</em> region.</li>
+<li>Start command - <code>ngrok start -config=./ngrok.yml --all</code></li>
+</ul>
+<pre><code class="yaml">region: eu  
+tunnels:
+  api:
+    proto: http
+    addr: 5000
+    bind_tls: true
+  admin:
+    proto: http
+    addr: 8080
+    host_header: &quot;localhost:8080&quot;
+    bind_tls: true
+</code></pre>
+
+<ul>
+<li>Think we finally resolve the CORS issue. Ended up with using a flask after configuration to get everything going the way we want. Need to put the code here. Restarted visual studio code because it was running really slow. Added the code below to my create_app() function for creating flask app</li>
+</ul>
+<pre><code class="python">    @app.after_request
+    def after_request(response):
+        response.headers.add('Access-Control-Allow-Origin', &quot;https://2a9cc487.eu.ngrok.io&quot;)
+
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization,X-Requested-With')
+        response.headers.add('Access-Control-Allow-Credentials', 'true')
+        response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+        return response
+</code></pre>
+
+<ul>
+<li>list of headers to configure</li>
+</ul>
+<pre><code class="php">$origin=isset($_SERVER['HTTP_ORIGIN'])?$_SERVER['HTTP_ORIGIN']:$_SERVER['HTTP_HOST'];
+header('Access-Control-Allow-Origin: '.$origin);        
+header('Access-Control-Allow-Methods: POST, OPTIONS, GET, PUT');
+header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Allow-Headers: Authorization, X-Requested-With');
+header('P3P: CP=&quot;NON DSP LAW CUR ADM DEV TAI PSA PSD HIS OUR DEL IND UNI PUR COM NAV INT DEM CNT STA POL HEA PRE LOC IVD SAM IVA OTC&quot;');
+header('Access-Control-Max-Age: 1');
+</code></pre>
+
+<ul>
+<li>We finally have a solution that includes dynamically adding a CORS Access-Control-Allow-Origin header.</li>
+</ul>
+<pre><code class="python">&quot;&quot;&quot;Main Flask App&quot;&quot;&quot;
+from flask import Flask, request
+from app.config.settings import config
+
+ALLOWED_URLS = config('ALLOWED_URLS').split(&quot;|&quot;)
+
+def create_app():
+    app = Flask(__name__)
+
+    import app.routes.test as test_route
+    import app.routes.admin as admin_route
+    import app.routes.site as site_route
+    import app.routes.user as user_route
+    app.register_blueprint(test_route.bp)
+    app.register_blueprint(admin_route.bp)
+    app.register_blueprint(site_route.bp)
+    app.register_blueprint(user_route.bp)
+
+    @app.after_request
+    def after_request(response):
+        origin = request.headers['Origin']
+
+        result = list(
+            filter(
+                lambda x: x in origin, 
+                ALLOWED_URLS
+            )
+        )
+
+        if len(result) &gt; 0:
+            response.headers.add('Access-Control-Allow-Origin', origin)
+
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization,X-Requested-With')
+        response.headers.add('Access-Control-Allow-Credentials', 'true')
+        response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+        return response
+
+    return app
+</code></pre>
+
+<p>Solution source - <a href="http://corpus.hubwiz.com/2/angularjs/23741362.html">CORS, AngularJS and Flask</a></p>
+<ul>
+<li>
+<p>Depends on the <em>request</em> being a global object. Using a filter to see if the domain name is in the origin url. Gives some security and allow for domain level access. Means I will use ngrok to access remote site. Now to test the authentication part. Seems like a better solution than the CORS solution.</p>
+</li>
+<li>
+<p>Still not able to get the authorization to work on the API Gateway. Might have to resort to just checking it on the actual server side. To do tomorrow.</p>
+</li>
+</ul>
+<h2 id="wednesday-19-june-2017">Wednesday 19 June 2017</h2>
+<p>Another day of trying to get authorization to work. It works with Postman so it has nothing to do with the other issues. Need to figure out why it works with Postman but not with the actual application.</p>
+<ul>
+<li>Using Postman to troubleshoot application authorisation.</li>
+<li><code>ngrok start -config=./ngrok.yml --all</code> </li>
+<li><code>alias ngrok-start="ngrok start -config=./ngrok.yml --all"</code><ul>
+<li><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-2.html#ss2.1">Bash Programming</a> - Make into one liners.</li>
+<li>Really want aliases. <a href="https://davidwalsh.name/alias-bash">Aliases in Bash</a></li>
+<li>Productivity with Bash <a href="http://www.caliban.org/bash/index.shtml">Bash Productivity</a></li>
+</ul>
+</li>
+</ul>
+<pre><code class="bash"># alias-name='command to do thing'
+
+alias docker-refresh='docker-compose down &amp;&amp; docker-compose up'
+alias serve-dir='python -m SimpleHTTPServer'
+</code></pre>
+
+<ul>
+<li>Testing configuration with ngrok and Postman.<ul>
+<li>Created test api that points back to local running api server via ngrok.</li>
+<li>Client server accessible via ngrok too.</li>
+<li>[x] Eliminate any issues with the API server</li>
+<li>[x] Issue with getting Origin header. Error is KeyError: 'HTTP_ORIGIN'<ul>
+<li>[x] Try and send back the Origin header. Setup the header in the Request section. Then setup the response in the integration section. Might have to save and then try again if using the console. Does not seem to make any difference though.<ul>
+<li>[x] Setting it in the Method Request. <strong>Does not work</strong></li>
+<li>[x] Setting up and integration mapping - To get anything sent to the backend, Setup in both the method and the request integration section</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[x] API Gateway with authorization key works. Tested with Postman. Issue is now related to the code we are sending to the API Gateway.</li>
+</ul>
+</li>
+<li>Troubleshooting the client<ul>
+<li>[x] Removing the extra headers. Only leaving the Authorization header. <ul>
+<li>[x] Removing the Content-Type header seems to want to submit the data as a form. </li>
+<li>[x] Putting the content-type header back. Removed my fancy function to create the header object with Object.assign({}). Header is <code>headers: {'Content-Type': 'application/json','Authorization': data.idToken.jwtToken}</code></li>
+<li>[x] Really slow because I'm dealing with a slow proxy connection from my local machine.</li>
+</ul>
+</li>
+<li>[x] Added CORS to API gateway. Added explicit origin server. Also added <em>X-Requested-With</em> to <em>Access-Control-Allow-Headers</em></li>
+<li>[x] <strong><em>It works</em></strong></li>
+</ul>
+</li>
+<li>
+<p>It is all about the headers. CORS is a pain. Unfortunately, would have loved to use flask-cors but it would require me to learn that code before I could even use it. Documentation is great but it seems very specific. </p>
+</li>
+<li>
+<p>Headers we had to add</p>
+<ul>
+<li><em><em>Access-Control-Allow-Headers</em> - </em>X-Requested-With*</li>
+<li>Has to be very explicit with the Origin header.</li>
+<li>Need to return a specific header.</li>
+<li>Use OPTIONS in amazon to essentially notify the client with all the data it needs.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#cite_note-CORS-8">List of Header Fields</a></p>
+</li>
+<li>Authorization key works just fine when sent from Postman. Also fixed the issue with the HTTP_ORIGIN key issue. Now essentially catch an error and replace it with host. Assuming that is being controlled by Amazon not sending back all the headers. Could try and see if I can get the Origin header sent.</li>
+<li><a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/integration-passthrough-behaviors.html">AWS API Gateway Integration Pass-through-behavior</a></li>
+</ul>
+<h3 id="main-lookfindme-site">Main lookfindme site.</h3>
+<ul>
+<li>Trying to pull front data from database. Any changes made in admin section will appear in front section.</li>
+<li>Need to update everything first. It's been a few weeks since I've worked with that site.</li>
+<li>Think everything is being pulled from an outside config file anyway.</li>
+<li>Updating my environment. Reinstall psycopg2 with the notes about export </li>
+</ul>
+<pre><code class="bash">export PIP_NO_BINARY=psycopg2
+pipenv install psycopg2
+</code></pre>
+
+<p>Just found out that in medics, this creates the ability to copy the code that is inside. Nice!</p>
+<ul>
+<li>Updating all the code in lookfindme. Probably going to have to spend some time just cleaning everything up. Will then create an object with all the details from the settings. That's the main page. Also get the list of memberships and the list of industries. Sounds like I should save all of that stuff in a dynamodb field with the ability to just save new ones as the become available. Would then pull the data from the dynamodb field. Can setup dynamodb locally and see if I can get it to work. Who knows?</li>
+<li>My attempt at writing a decorator. Added new response headers to a response. Found an easier way to do it with <em>@app.after_request</em> and <em>flask.request</em> which is a global. Solved the CORS issue.</li>
+</ul>
+<pre><code class="python">def add_headers(response_function):
+
+    @wraps(response_function)
+    def wrapper(*args, **kwargs):
+        response = response_function(*args, **kwargs)
+        response.headers['Content-Type'] = 'application/json'
+        response.headers['Access-Control-Allow-Origin'] = 'https://2a9cc487.eu.ngrok.io'
+        response.headers['Access-Control-Allow-Headers'] = 'Authorization, Content-Type'
+        response.headers['Access-Control-Allow-Credentials'] = 'true'
+        response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization,X-Requested-With'
+
+        def new_response_function(*args, **kwargs):
+            return response
+
+        return response
+    return wrapper
+</code></pre>
+
+<ul>
+<li>Got the basic endpoint for the public api created. Tests also created and they work. Now it is time to set it up on the actual client side. Going to use axios since it is already installed.</li>
+<li>Everything is getting really slow. Just trying to update the front page. It is taking forever.</li>
+<li>Redoing my css extract. Installing <code>npm install --save-dev mini-css-extract-plugin</code> Will need to reconfigure to get it to work with the current setup. Current setup is just jacked.</li>
+<li>Hopefully got everything working. We are about to find out.<ul>
+<li>Installed vue-loader and vue-style-loader. Hope it works.</li>
+<li>Got the basic site to work. Have FAQ and About working on the site. Even the main image can be changed.</li>
+</ul>
+</li>
+<li>Trying to fix the build issues. Got the site to upload. Now working. But images are not working. Will have to fix that.</li>
+<li>Updated the front page to talk to the main server. Need to add a button to clear image list.</li>
+<li>Running admin site and public site at the same time.</li>
+</ul>
+<h2 id="thursday-21-june-2018">Thursday 21 June 2018</h2>
+<p>Got the basic admin site connected to the public site. Just need to redo the formatting/design of the site. Also need to make the  transitions better. Going to focus today on the KinderCare site.</p>
+<ul>
+<li>[ ] Setup security to backend server (certificate). Will have to configure certificate to only work on specific endpoints.</li>
+<li>[ ] Setup Cognito for username/password acces<ul>
+<li>[ ] Will use the same Cognito for parent/guardian access in the future.</li>
+<li>[ ] Registration should include email/first/last/phone</li>
+<li>[ ] Site will be added based on which site you are registering from.</li>
+<li>[ ] Need a child's id number to validate you are eligible to register for the site.</li>
+</ul>
+</li>
+<li>[ ] Create username/password screens.<ul>
+<li>[ ] New password</li>
+<li>[ ] Reset password</li>
+<li>[ ] Verification code</li>
+</ul>
+</li>
 </ul>
                 
                   

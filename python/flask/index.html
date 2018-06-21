@@ -440,6 +440,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/AmazonGatewayAPI/" title="AWS API Gateway" class="md-nav__link">
+      AWS API Gateway
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/CORS Configuration for API Gateway/" title="AWS Authorization and CORS" class="md-nav__link">
+      AWS Authorization and CORS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/CORS with FLASK without Flask-CORS/" title="CORS and FLASK" class="md-nav__link">
+      CORS and FLASK
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1473,9 +1509,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#flask-with-rest-api" title="Flask with REST API" class="md-nav__link">
-    Flask with REST API
+  <a href="#flask" title="Flask" class="md-nav__link">
+    Flask
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rest-serializing-and-deserialing-json-data" title="REST - Serializing and deserialing JSON data" class="md-nav__link">
+    REST - Serializing and deserialing JSON data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cors-configuration-without-using-flask-cors" title="CORS Configuration - Without using Flask-CORS" class="md-nav__link">
+    CORS Configuration - Without using Flask-CORS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2363,9 +2419,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#flask-with-rest-api" title="Flask with REST API" class="md-nav__link">
-    Flask with REST API
+  <a href="#flask" title="Flask" class="md-nav__link">
+    Flask
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rest-serializing-and-deserialing-json-data" title="REST - Serializing and deserialing JSON data" class="md-nav__link">
+    REST - Serializing and deserialing JSON data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cors-configuration-without-using-flask-cors" title="CORS Configuration - Without using Flask-CORS" class="md-nav__link">
+    CORS Configuration - Without using Flask-CORS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2402,7 +2478,8 @@
 <li>Install flask</li>
 <li><code>pipevn install flask SQLAlchemy psycopg2 click uwsgi</code></li>
 </ul>
-<h2 id="flask-with-rest-api">Flask with REST API</h2>
+<h2 id="flask">Flask</h2>
+<h3 id="rest-serializing-and-deserialing-json-data">REST - Serializing and deserialing JSON data</h3>
 <ul>
 <li>Using Marshmallow<ul>
 <li><a href="https://marshmallow.readthedocs.io/en/latest/quickstart.html#declaring-schemas">Declaring Schemas</a></li>
@@ -2416,7 +2493,7 @@
 </code></pre>
 
 <ul>
-<li>Using Marshmallow with jsonschema to validate data from api<ul>
+<li>Using Marshmallow with jsonschema to validate data from api - <strong>No longer recommended. Latest Marsmallow includes actual validation</strong><ul>
 <li>Using marshmallow-jsonschema - <a href="https://github.com/fuhrysteve/marshmallow-jsonschema">marshmallow-jsonschema</a><ul>
 <li>Use to dump jsonschema from marshmallow</li>
 </ul>
@@ -2438,6 +2515,8 @@
     except ValidationError as err:
         resp['err'] = err.message
 </code></pre>
+
+<h3 id="cors-configuration-without-using-flask-cors"><a href="../../api/CORS%20with%20FLASK%20without%20Flask-CORS/">CORS Configuration</a> - Without using Flask-CORS</h3>
                 
                   
                 
