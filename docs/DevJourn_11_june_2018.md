@@ -96,6 +96,7 @@ export const CreateNewPassword$ = (user: IUser) => {
 * Flyway migrations I'm always using - sql commands:
 	* `ALTER TABLE IF EXISTS RENAME COLUMN column_name TO new_column_name`
 * SQLAlchemy - create one to one relationship between Users and Roles. Allows me to get User.role.title. [One-to-One Relationship](http://docs.sqlalchemy.org/en/latest/orm/basic_relationships.html#one-to-one)
+
 ```python
 class Users(base):
     __table__ = Table(c.TABLE_USER, meta, autoload=True, autoload_with=engine, extend_existing=True)

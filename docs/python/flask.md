@@ -11,7 +11,8 @@
 * Install flask
   * `pipevn install flask SQLAlchemy psycopg2 click uwsgi`
 
-## Flask with REST API
+## Flask
+### REST - Serializing and deserialing JSON data
 * Using Marshmallow
     * [Declaring Schemas](https://marshmallow.readthedocs.io/en/latest/quickstart.html#declaring-schemas)
     * Implicit field creation - let marshmallow figure out the field.
@@ -20,8 +21,7 @@ class DemoSchema(Schema):
   class Meta:
     fields=("name", "email", "created_at", "uppername")
 ```
-
-* Using Marshmallow with jsonschema to validate data from api
+* Using Marshmallow with jsonschema to validate data from api - **No longer recommended. Latest Marsmallow includes actual validation**
     * Using marshmallow-jsonschema - [marshmallow-jsonschema](https://github.com/fuhrysteve/marshmallow-jsonschema)
         * Use to dump jsonschema from marshmallow
     * Using jsonschema - [JsonSchema](https://github.com/Julian/jsonschema)
@@ -36,4 +36,6 @@ class DemoSchema(Schema):
         receipt_data = sch.load(receipt).data
     except ValidationError as err:
         resp['err'] = err.message
-```   
+```
+
+### [CORS Configuration](/api/CORS%20with%20FLASK%20without%20Flask-CORS/) - Without using Flask-CORS

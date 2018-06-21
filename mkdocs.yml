@@ -29,6 +29,9 @@ pages:
   - API:
     - "APIs": 'api/general.md'
     - "Response Codes": 'api/rest.md'
+    - "AWS API Gateway": "api/AmazonGatewayAPI.md"
+    - "AWS Authorization and CORS": "api/CORS Configuration for API Gateway.md"
+    - "CORS and FLASK": "api/CORS with FLASK without Flask-CORS.md"
   - Cloud:
     - 'AWS': 
       - 'Amazon': 'cloud/aws/aws.md'
