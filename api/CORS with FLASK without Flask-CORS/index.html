@@ -2348,19 +2348,25 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/catenare/devnotes/edit/master/md/api/CORS with FLASK without Flask-CORS.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/catenare/devnotes/edit/master/docs/api/CORS with FLASK without Flask-CORS.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="fixing-access-control-allow-origin-issue-with-flask">Fixing <em>Access-Control-Allow-Origin</em> issue with Flask</h1>
 <ul>
-<li>What is CORS? <br />
-<a href="https://spring.io/understanding/CORS">Understanding CORS</a> - Pivotal Spring Article.</li>
+<li>
+<p><a href="https://www.catenare.com/devnotes/api/CORS%20with%20FLASK%20without%20Flask-CORS/">Developer Notebook Link</a></p>
+</li>
+<li>
+<p>What is CORS? <br />
+<a href="https://spring.io/understanding/CORS">Understanding CORS</a> - Pivotal Spring Article.</p>
+</li>
 </ul>
-<p>Accessing the Flask based API with <em>Postman</em> works, using <em>Curl</em> works, but fails when connecting with the web application. (It worked just fine locally with a webpack proxy.) Checking the console shows an error related to <em>Access-Control-Allow-Origin</em>. Welcome to CORS or how to convince my browser that the API server is safe.</p>
-<p>One option with Flask is to use <a href="https://flask-cors.readthedocs.io/en/latest/">Flask-CORS</a>. It works until Authorization with Amazon API Gateway is implented. Now your browser complains that <em>Access-Control-Allow-Origin</em> cannot be set to "*". Since this API will be accessed by multiple web applications with different domain names, having one location configured does not work. Setting up your own headers in Flask is relatively easy by leveraging <strong>@app.after_request</strong> and the global <em>request</em> object. </p>
-<p><strong>@app.after_request</strong> runs after every request, even if you're using Blueprints. Because <strong>request</strong> is a global object,  the request headers are also available. This includes the <em>Origin</em> header which points to the web application server. </p>
-<p>Create a function with the <strong>@app.after_request</strong>. In the function, the list of allowed domains verify that the web application server allowed to access the API. If allowed, the server is set as the Origin. The response headers now has a specific Origin returned.</p>
-<p>Unfortunately, using Amazon's API Gateway to authorize client access removes the <em>Origin</em> header. Include a check for the <em>Host</em> header if the <em>Origin</em> header is not available. Code is below. <a href="http://corpus.hubwiz.com/2/angularjs/23741362.html">Original Source</a></p>
+<p>Accessing the Flask based API with <em>Postman</em> works, using <em>Curl</em> works, but it fails when connecting with your web application. (It worked just fine locally using the webpack proxy.) Checking the console shows an <em>Access-Control-Allow-Origin</em> error. Welcome to CORS or how to convince the browser to trust your API server.</p>
+<p>One option with Flask is to use <a href="https://flask-cors.readthedocs.io/en/latest/">Flask-CORS</a>. It works fine until you decide to setup authorisation with your Amazon API Gateway. Now the browser complains that <em>Access-Control-Allow-Origin</em> cannot be set to "*". Since this API will be accessed by multiple web applications with different domain names, having one location configured does not work. Fastest solution for me was to configure the response headers directly with Flask. Just use the <strong>@app.after_request</strong> decorator and the global <em>request</em> object.</p>
+<p><strong>@app.after_request</strong> runs after every request, even if you're using Blueprints. Because <strong>request</strong> is a global object,  the request headers are available in the decorator function. This includes the <em>Origin</em> header which points to the web application server. </p>
+<p>Create a function with the <strong>@app.after_request</strong> decorator. In the function, include a list of allowed domains to verify the web servers allowed to access the API. If allowed, that server is set as the Origin in the <em>Access-Control-Allow-Origin</em> header. The response headers now has a specific Origin returned.</p>
+<p>Unfortunately, using Amazon's API Gateway to authorize client access removes the <em>Origin</em> header. To fix, include a check for the <em>Host</em> header if the <em>Origin</em> header is not available. Code is below. </p>
+<p><a href="http://corpus.hubwiz.com/2/angularjs/23741362.html">Original Code Source</a></p>
 <pre><code class="python">from flask import Flask, request
 from app.config.settings import config
 
