@@ -3,9 +3,9 @@
 * What is CORS?   
 [Understanding CORS](https://spring.io/understanding/CORS) - Pivotal Spring Article.
 
-Accessing the Flask based API with *Postman* works, using *Curl* works, but fails when connecting with the web application. (It worked just fine locally with a webpack proxy.) Checking the console shows an error related to *Access-Control-Allow-Origin*. Welcome to CORS or how to convince my browser that the API server is safe.
+Accessing the Flask based API with *Postman* works, using *Curl* works, but it fails when connecting with the web application. (It worked just fine locally with a webpack proxy.) Checking the console shows an *Access-Control-Allow-Origin* error. Welcome to CORS or how to convince the browser to trust the API server.
 
-One option with Flask is to use [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/). It works until Authorization with Amazon API Gateway is implented. Now your browser complains that *Access-Control-Allow-Origin* cannot be set to "\*". Since this API will be accessed by multiple web applications with different domain names, having one location configured does not work. Setting up your own headers in Flask is relatively easy by leveraging **@app.after_request** and the global *request* object. 
+One option with Flask is to use [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/). It works until Authorization with Amazon API Gateway is implimented. Now your browser complains that *Access-Control-Allow-Origin* cannot be set to "\*". Since this API will be accessed by multiple web applications with different domain names, having one location configured does not work. Setting up your own headers in Flask is relatively easy by leveraging **@app.after_request** and the global *request* object. 
 
 **@app.after_request** runs after every request, even if you're using Blueprints. Because **request** is a global object,  the request headers are also available. This includes the *Origin* header which points to the web application server. 
 

@@ -419,3 +419,9 @@ Got the basic admin site connected to the public site. Just need to redo the for
     - [ ] New password
     - [ ] Reset password
     - [ ] Verification code
+Did not really get anything done today. Did write an article for my blog that needs to be edited and updated. Should probably check the rest of the articles and check for errors.
+
+Need to update my blog to work correctly on a mobile phone or device. Fix the form to fill the whole space on a mobile device. It seems to be okay on the desktop browser. Have to get it to work on iPad browser.
+Was unable to configure NGINX correctly with a path of /wordpress. Luckily the API works connecting directly to the server. Now need to clean up the bottom form.
+
+Ok. Cleaned up the bottom part of my site. Uploading this version. Going to add extract text to it. Seems to be working really well. Uses style-loader during development. ExtractCss when actually building for deployment.
