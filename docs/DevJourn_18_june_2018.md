@@ -425,3 +425,44 @@ Need to update my blog to work correctly on a mobile phone or device. Fix the fo
 Was unable to configure NGINX correctly with a path of /wordpress. Luckily the API works connecting directly to the server. Now need to clean up the bottom form.
 
 Ok. Cleaned up the bottom part of my site. Uploading this version. Going to add extract text to it. Seems to be working really well. Uses style-loader during development. ExtractCss when actually building for deployment.
+## Friday 22 June 2018
+Getting side tracked looking into C# for this project I'm doing on Real Estate. Might as well gain from the experience. No reason to keep doing the same wheel. Today, need to refactor some of my writing. Also, need to work on my agency site. Need to figure out the services offered, examples of work, etc. Focus on web development, microsite and wordpress development. Emphasise the use of cloud based services for rapid development, security and scalability benefits. Don't talk about cost.
+
+* Installing .NET SDK on machine. Trump is President and we are running Microsoft .NET on a Mac machine. 
+* Copying documentation over to my Mac. Might want to get out of the house a little later and take a good look at the database. Put together a schema for what needs to be done.
+
+- [ ] Articles. Need to edit to make sure they don't sound stupid. 
+    - [x] Edited one.
+    - [x] Fixed the image with the wrong image showing up on the article page. Had a period rather than a colon for the image. Punctuation matters!!!!
+    - [x] Redid the Flask/CORS article. Thinking about pushing it to Medium. May want to push it to LinkedIn too.
+- [x] Remove the ones that are no longer relevant.
+- [x] Fixed a couple of issues with my personal site. Hero image was not coming from a secure url. Button on my form was not showing up. Captcha seemed to have some issues.
+- [x] Developer notebook now points to my domain.
+- [x] Setup google analytics under martin.johan@catenare.com. Have too many accounts.
+- [x] Added to Google Webmaster account using martin.johan@catenare.com. Using the meta tag verification link. Waiting for the build to complete so I can wait for the build to upload onto a server.
+- [ ] Did learn about the additional services Google Analytics provide.
+    - [ ] API for surveys. Should be interesting integrating that into a project.
+    - [ ] Google Data reporting service. Like that you can connect to an external database. Don't know how safe I feel about a publicly accessible database. Wonder if you can do something with Excel.
+- [ ] Waiting for site to upload.
+
+* Need to do some work on the KinderCare website. Workon on the API Gateway configuration.
+* Username/password setup
+    * Fix in the current lookfindme site. Can copy that to KinderCare site.
+    * Just need to take careful notes.
+* Mkdocs feature - edit your documentation directly in Github. Great if you're not in front of your computer but need to update some documentation. Also, can copy and paste code if necessary into the github version.
+
+### Notes related to Nzsiwano agency site
+* Services
+    * Micro Sites
+        * Single purpose sites
+        * Cloud backend
+        * Events
+        * Ecommerce product
+    * Headless Wordpress
+        * Integrate your current WordPress site with a custom front-end
+        * Connect to WordPress.com site
+        * Multiple sites with one WordPress backend
+    * Analytics
+        * Setup and configure Google Analytics
+        * Custom reporting and dashboards.
+        * Custom tagging
