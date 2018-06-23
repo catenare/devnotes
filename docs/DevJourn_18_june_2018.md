@@ -547,3 +547,8 @@ Now have a submodule that will be in charge of Authentication. Will still have t
 * So, basic canActivate service is working.
 * Modules are addictive. Ended up creating settings and help modules in addition to the ones I already had. Now going to work on getting all of this stuff to actually work together.
 * `ng build --prod --aot` for production builds.
+## Saturday 23 June 2018
+* Focusing on the KinderCare admin site. Need to get the payments working so I can put it to rest. Doing the authentication today and hopefully working on the registration too.
+* Just doing direct authentication and maybe password reset. Won't be able to register to the site. That's for the future front-end.
+* Old school CSS and html only. Focus on making the site responsive with html and css. Then add the javascript.
+* Going to work on the Nziswano - Put together at least the basic page.
