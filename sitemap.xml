@@ -12,22 +12,6 @@
     
         
     <url>
-     <loc>https://devnotes.johan-martin.com/DevJourn_11_june_2018/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://devnotes.johan-martin.com/DevJourn_18_june_2018/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
      <loc>https://devnotes.johan-martin.com/web/auth/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
@@ -224,6 +208,56 @@
     
         
     <url>
+     <loc>https://devnotes.johan-martin.com/journal/DevJourn_11_june_2018/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/DevJourn_18_june_2018/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/DevJourn_archive/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/Notes/kindercare/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/Notes/backend/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/Notes/lookfindme/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>https://devnotes.johan-martin.com/misc/house/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
@@ -244,12 +278,6 @@
     <url>
      <loc>https://devnotes.johan-martin.com/work/employment/</loc>
      <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://devnotes.johan-martin.com</loc>
-     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
