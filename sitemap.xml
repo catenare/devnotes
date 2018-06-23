@@ -3,7 +3,7 @@
 
     
     <url>
-     <loc>/</loc>
+     <loc>https://devnotes.johan-martin.com/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -12,135 +12,13 @@
     
         
     <url>
-     <loc>/DevJourn_11_june_2018/</loc>
+     <loc>https://devnotes.johan-martin.com/DevJourn_11_june_2018/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/DevJourn_18_june_2018/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/web/auth/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/ruby/ruby/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/ops/local/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/ops/Linux System Administration/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/ops/vagrant/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/ops/docker/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/ops/amazon/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/ops/azure/</loc>
+     <loc>https://devnotes.johan-martin.com/DevJourn_18_june_2018/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -150,71 +28,79 @@
     
         
     <url>
-     <loc>/reporting/</loc>
+     <loc>https://devnotes.johan-martin.com/web/auth/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/docs/</loc>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/ruby/ruby/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/tools/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/cmd/cmd/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/cms/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/learning/jupyter/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/learning/rxjs/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/learning/learnAngular/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/php/wordpress/api/learn/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/learning/tutorials/</loc>
-     <lastmod>2018-06-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
+     <loc>https://devnotes.johan-martin.com</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -224,31 +110,145 @@
     
         
     <url>
-     <loc>/misc/house/</loc>
+     <loc>https://devnotes.johan-martin.com/ops/local/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/misc/dstv/</loc>
+     <loc>https://devnotes.johan-martin.com/ops/Linux System Administration/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/misc/sketch/</loc>
+     <loc>https://devnotes.johan-martin.com/ops/vagrant/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/work/employment/</loc>
+     <loc>https://devnotes.johan-martin.com/ops/docker/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
+     <loc>https://devnotes.johan-martin.com/ops/amazon/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/ops/azure/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/reporting/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/docs/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/tools/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/cmd/cmd/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/cms/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/learning/jupyter/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/learning/rxjs/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/learning/learnAngular/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/php/wordpress/api/learn/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/learning/tutorials/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/misc/house/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/misc/dstv/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/misc/sketch/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com/work/employment/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://devnotes.johan-martin.com</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
