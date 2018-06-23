@@ -316,7 +316,8 @@ Solution source - [CORS, AngularJS and Flask](http://corpus.hubwiz.com/2/angular
 * Depends on the *request* being a global object. Using a filter to see if the domain name is in the origin url. Gives some security and allow for domain level access. Means I will use ngrok to access remote site. Now to test the authentication part. Seems like a better solution than the CORS solution.
 
 * Still not able to get the authorization to work on the API Gateway. Might have to resort to just checking it on the actual server side. To do tomorrow.
-## Wednesday 19 June 2017
+
+## Wednesday 20 June 2017
 Another day of trying to get authorization to work. It works with Postman so it has nothing to do with the other issues. Need to figure out why it works with Postman but not with the actual application.
 
 * Using Postman to troubleshoot application authorisation.
@@ -450,19 +451,99 @@ Getting side tracked looking into C# for this project I'm doing on Real Estate. 
     * Fix in the current lookfindme site. Can copy that to KinderCare site.
     * Just need to take careful notes.
 * Mkdocs feature - edit your documentation directly in Github. Great if you're not in front of your computer but need to update some documentation. Also, can copy and paste code if necessary into the github version.
+* Back to working on lookfindme
+    * Visual Studio Code snippets - organise imports - command-shift-p then type organize imports
+* Reorganized my devnotes documentation a little. Added the operations section related to Linux. Especially related to swap space and free memory. Upgrading the packages on the machine.
+* Need to revisit - [Covalent Components](https://teradata.github.io/covalent/#/docs)
 
 ### Notes related to Nzsiwano agency site
 * Services
     * Micro Sites
-        * Single purpose sites
-        * Cloud backend
+        * Contests
+        * Surveys
+        * Product promotion
+            * Ecommerce
+                * snipcart - ecommerce
+        * Lead generation
         * Events
-        * Ecommerce product
-    * Headless Wordpress
+            * Event promotion
+            * Integration with backend ticketing systems
+            * Interest tracking
+        * Ecommerce
+        * Cloud based
+        * Focused
+        * Integrate to third-party APIs
+                    * Google Analytics integration
+    * Headless Wordpress Development
+        * Repurpose your content
+        * Scale your content
         * Integrate your current WordPress site with a custom front-end
         * Connect to WordPress.com site
         * Multiple sites with one WordPress backend
+        * Leverage web services.
     * Analytics
         * Setup and configure Google Analytics
         * Custom reporting and dashboards.
         * Custom tagging
+        * Excel integration
+    * Experience 
+        * Development and marketing experience
+        * Web development
+
+* Back onto the angular app. Have to context switch. 
+    * Creating an Auth module to keep all the auth related stuff.
+    * Creating a custom module - [Lazy Loading Modules](https://angular.io/guide/lazy-loading-ngmodules)
+        * Generate the module and components.
+            * `ng generate module auth --routing`
+            * `ng generate component auth/auth -m auth` - parent component. Everything will run through this.
+            * `ng generate component auth/login -m auth`
+            * `ng generate component auth/logout -m auth --spec=false` - Don't want the spec file
+            * `ng generate component auth/reset -m auth --spec=false`
+            * `ng generate component auth/forgot -m auth --spec=false`
+        * In *app.routing.module* add the child route
+```typescript
+  {
+    path: 'auth',
+    loadChildren: 'app/auth/auth.module#AuthModule'
+  },
+```
+
+Code in `app/auth/auth-routing.module.ts`
+
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './login/login.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: AuthComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class AuthRoutingModule { }
+```
+
+Now have a submodule that will be in charge of Authentication. Will still have to share libraries and services across since I'll be using amplify for authorization. Cool, got that to work. Now going to convert what we currently have into it's own feature module. Let us cleanup our main app.
+
+* For a future exercise. Create a new children layer and move all the children routing into that module. We can then have a blank page when we start up.
+* Going ahead and creating a feature module called Welcome. We are going to stick the children module inside of it. Starting up, we should not have anything visible. If you are not logged in. You will get directed to the auth page.
+* Got it to work. Key is children. Angular is smart enough to figure out you want to use the children when you're routing inside of a child component.
+* Angular is making more sense now. Seems like it really is easier to manage multiple modules.
+* Figuring out canActivate to guard against aunauthorized access.
+* Can also fetch data before showing the actual route. A guard returns either true or false.
+* Relative routes work too. Makes it easier to refactor routes in the future.
+* When doing canActivate, be sure to include the AuthGuard service in the module you're trying to guard. [StaticInjectorError(AppModule)\[AuthGuard\]](https://stackoverflow.com/questions/50422679/angular-authguard-is-not-working)
+* So, basic canActivate service is working.
+* Modules are addictive. Ended up creating settings and help modules in addition to the ones I already had. Now going to work on getting all of this stuff to actually work together.
+* `ng build --prod --aot` for production builds.

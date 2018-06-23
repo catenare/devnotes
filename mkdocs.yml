@@ -19,11 +19,6 @@ pages:
 - 'Developer Journal':
   - 'June 11 2018': 'DevJourn_11_june_2018.md'
   - 'June 18 2018': 'DevJourn_18_june_2018.md'
-- Notes: 
-  - 'Vue and Amp': 'Notes/vueamp.md'
-  - 'KinderCare': 'Notes/kindercare.md'
-  - 'Backend': 'Notes/backend.md'
-  - 'LookFindMe': 'Notes/lookfindme.md'
 - Development:
   - Authentication: 'web/auth.md'
   - API:
@@ -41,22 +36,6 @@ pages:
       - 'Search': 'cloud/aws/search.md'
     - 'Google':
       - 'Google': "cloud/google/google.md"
-  - Wordpress:
-    - 'Notes': 'php/wordpress/notes.md'
-    - 'Admin': 'php/wordpress/admin.md'
-    - 'Deployment': 'php/wordpress/deployment.md'
-    - 'Docker': 'php/wordpress/docker.md'
-    - API:
-      - API: 'php/wordpress/api/api.md'
-      - 'Learn Wordpress REST API': 'php/wordpress/api/learn.md'
-      - 'Angular': 'php/wordpress/api/angular.md'
-      - 'Backbone': 'php/wordpress/api/backbonejs.md'
-      - 'Vuejs': 'php/wordpress/api/vuejs.md'
-    - 'Setup': 'php/wordpress/setup.md'
-    - 'Local Dev': 'php/wordpress/dev.md'
-    - 'Plugin Dev': 'php/wordpress/plugin development.md'
-    - 'Dev from scratch': 'php/wordpress/plugin-dev-from-scratch.md'
-    - 'Theme Dev': 'php/wordpress/themes.md'
   - Database: 
       - Migrations: 
         - General: 'database/dbmigrations.md'
@@ -73,6 +52,7 @@ pages:
       - 'Notes': 'web/notes.md'
       - 'StyleGuide': 'web/styleguide.md'
       - 'Colors': 'process.md'
+    - Ionic: 'mobile/ionic.md'
     - 'General Notes': 'web/javascript/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
     - 'RxJs': 'web/javascript/rxjs.md'
@@ -91,15 +71,50 @@ pages:
     - Webpack:
       - 'Webpack': 'web/javascript/webpack/webpack.md'
       - 'Notes': 'web/javascript/webpack/notes.md'
+  - JavaScript:
+    - 'General Notes': 'web/javascript/notes.md'
+    - 'JS Starter Config': 'web/javascript/startup.md'
+    - 'RxJs': 'web/javascript/rxjs.md'
+    - TypeScript: 'web/typescript.md'
+    - 'Testing': 
+      - 'Intro': 'web/javascript/testing/general.md'
+      - 'Tape': 'web/javascript/testing/tape.md'
+    - Angular:
+      - 'Angular': 'web/javascript/Angular/angular.md'
+    - 'Vuejs':
+      - 'Notes': 'web/javascript/vue/notes.md' 
+      - 'Vue': 'web/javascript/vue/vuejs.md'
+      - 'Foundation Setup': 'web/javascript/vue/foundation.md'
+    - Reactjs: 'web/javascript/reactjs/reactjs.md'
+    - Redux: 'web/javascript/reactjs/redux.md'
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'
+    - Wordpress:
+      - 'Notes': 'php/wordpress/notes.md'
+      - 'Admin': 'php/wordpress/admin.md'
+      - 'Deployment': 'php/wordpress/deployment.md'
+      - 'Docker': 'php/wordpress/docker.md'
+      - API:
+        - API: 'php/wordpress/api/api.md'
+        - 'Learn Wordpress REST API': 'php/wordpress/api/learn.md'
+        - 'Angular': 'php/wordpress/api/angular.md'
+        - 'Backbone': 'php/wordpress/api/backbonejs.md'
+        - 'Vuejs': 'php/wordpress/api/vuejs.md'
+      - 'Setup': 'php/wordpress/setup.md'
+      - 'Local Dev': 'php/wordpress/dev.md'
+      - 'Plugin Dev': 'php/wordpress/plugin development.md'
+      - 'Dev from scratch': 'php/wordpress/plugin-dev-from-scratch.md'
+      - 'Theme Dev': 'php/wordpress/themes.md'
   - Python: 
     - 'General': 'python/general.md'
     - 'Packages': 'python/packages.md'
     - 'Pipenv': 'python/pipenv.md'
     - 'Research': 'python/research.md'
-    - 'Flask': 'python/flask.md'
+    - 'Flask': 
+      - General: 'python/flask.md'
+      - "AWS Authorization and CORS": "api/CORS Configuration for API Gateway.md"
+      - "CORS and FLASK": "api/CORS with FLASK without Flask-CORS.md"
     - 'SQLAlchemy': 'python/sqlalchemy.md'
     - 'Testing': 'python/testing.md'
   - Ruby: 'ruby/ruby.md'
@@ -116,41 +131,47 @@ pages:
     - Research: 'mobile/mobile.md'
     - 'Mobile Dev Notes': 'mobile/mobilenotes.md'
     - Ionic: 'mobile/ionic.md'
-- "Content Management": 'cms.md'
+- Operations:
+  - 'Local': 'ops/local.md'
+  - 'Linux': 'ops/Linux System Administration.md'
+  - 'Vagrant': 'ops/vagrant.md'
+  - 'Docker': 'ops/docker.md'
+  - 'Amazon': 'ops/amazon.md'
+  - 'Azure': 'ops/azure.md'
 - Tools:
   - Reporting: 'reporting.md'
   - Documentation: 'docs.md'
-  - Operations:
-    - 'Local': 'ops/local.md'
-    - 'Vagrant': 'ops/vagrant.md'
-    - 'Docker': 'ops/docker.md'
-    - 'Amazon': 'ops/amazon.md'
-    - 'Azure': 'ops/azure.md'
   - "Mock and API Tools": 'tools.md'
   - 'Command Line': 'cmd/cmd.md'
-- Work: 'work/employment.md'
+  - "Content Management": 'cms.md'
 - Learning:
   - "Using Jupyter": "learning/jupyter.md"
   - "RXJS": "learning/rxjs.md"
   - 'Angular 4+': "learning/learnAngular.md"
   - 'Wordpress Rest API': 'php/wordpress/api/learn.md'
   - 'Tutorials': 'learning/tutorials.md'
-- Teaching: 
-  - 'General': 'research.md'
-  - 'Tools': 'teaching/tools.md'
-  - 'Custom Modules': 'teaching/modules.md'
-  - 'OpenEdx':
-    - 'Notes': 'teaching/openedx/openedx.md'
-  - 'Class Tutorials':
-    - 'HTML and CSS':
-      - 'Semantic HTML': 'teaching/html/semantic.md'
-    - 'JavaScript': 
-      - 'Intro': 'teaching/javascript/intro.md'
-      - 'Classes':
-        - 'Class 1': 'teaching/javascript/classes/class1.md'
-      - 'Tutorials':
-        - 'Prototyping With Vue and Marvel': 'teaching/javascript/tutorials/prototypewithvue.md'
+  - Teaching: 
+    - 'General': 'research.md'
+    - 'Tools': 'teaching/tools.md'
+    - 'Custom Modules': 'teaching/modules.md'
+    - 'OpenEdx':
+      - 'Notes': 'teaching/openedx/openedx.md'
+    - 'Class Tutorials':
+      - 'HTML and CSS':
+        - 'Semantic HTML': 'teaching/html/semantic.md'
+      - 'JavaScript': 
+        - 'Intro': 'teaching/javascript/intro.md'
+        - 'Classes':
+          - 'Class 1': 'teaching/javascript/classes/class1.md'
+        - 'Tutorials':
+          - 'Prototyping With Vue and Marvel': 'teaching/javascript/tutorials/prototypewithvue.md'
 - Misc:
   - 'House related': 'misc/house.md'
   - 'Setup Multiple DSTV Exploras': 'misc/dstv.md'
   - 'Visual StoryTelling/Sketchnotes': 'misc/sketch.md'
+  - Work: 'work/employment.md'
+  - Notes: 
+    - 'Vue and Amp': 'Notes/vueamp.md'
+    - 'KinderCare': 'Notes/kindercare.md'
+    - 'Backend': 'Notes/backend.md'
+    - 'LookFindMe': 'Notes/lookfindme.md'
