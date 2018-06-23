@@ -553,3 +553,18 @@ Now have a submodule that will be in charge of Authentication. Will still have t
 * Old school CSS and html only. Focus on making the site responsive with html and css. Then add the javascript.
 * Going to work on the Nziswano - Put together at least the basic page.
 * Of course there was an issue. CNAME being overwritten in mkdocs file. Resolution seems to be to create a CNAME file with your domain name in the docs directory. We will see if this works.
+* Just checked my site with the google tool. Does not see the javascript based content. Will have to pre-render the page for Google to be able to index it.
+* Just found some more tools that Google provides for businesses.
+* Just spent an hour working on nothing that I'm supposed to.
+* Nziswano site
+    * OpenGraph tools [MetaTags](https://megatags.co)
+    * SiteMaps - why do they matter?
+    * Google Webmaster tools - security and content check.
+    * Basic site outline in html.
+        * Trying to use foundation. Still a big fan because it is an html/css framework.
+    * Looking into using [pure](https://purecss.io) - Just need a basic css framework. **Does not support flex** It is time to get on that band wagon.
+* KinderCare site
+    * Authentication
+    * Registration
+* Cleaning up my notes with inactive links.
+* Just used [MetaTags](https://megatags.co) to generate opengraph tags for my site.

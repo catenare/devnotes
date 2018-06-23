@@ -1,5 +1,12 @@
 # Foundation for Sites Notes
 
+* Using [foundation from zurb](http://foundation.zurb.com/)
+  1. Install foundation-cli - `npm install --global foundation-cli`
+  1. Create new project -  `foundation new --framework sites --template zurb`
+    * Use `foundation-zurb-template`
+  1. ~~Install building block - `foundation kits install news`~~
+  1. `foundation watch`
+
 ## Panini
 * [Zurb University Documentation](https://zurb.com/university/lessons/the-main-ingredients-of-panini-layouts-pages-and-partials)
 
