@@ -552,3 +552,4 @@ Now have a submodule that will be in charge of Authentication. Will still have t
 * Just doing direct authentication and maybe password reset. Won't be able to register to the site. That's for the future front-end.
 * Old school CSS and html only. Focus on making the site responsive with html and css. Then add the javascript.
 * Going to work on the Nziswano - Put together at least the basic page.
+* Of course there was an issue. CNAME being overwritten in mkdocs file. Resolution seems to be to create a CNAME file with your domain name in the docs directory. We will see if this works.
