@@ -3,6 +3,11 @@
 * When updating core, have to use *--to* to get it to work. `ng update @angular/core --to 6.0.6`
 
 ## Resources
+* Tools
+  * [Angular Augury](https://augury.angular.io/) - debug and profile angular 2 apps
+    * Chrome extension
+* Lists
+    * [Awesome Angular](https://github.com/AngularClass/awesome-angular)
 * [Angular Documentation](https://angular.io/)
 * [Angular CLI Documetation](https://github.com/angular/angular-cli)
 * [Awesome Angular](https://github.com/brillout/awesome-angular-components)

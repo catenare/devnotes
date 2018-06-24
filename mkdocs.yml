@@ -137,6 +137,7 @@ pages:
   - 'Amazon': 'ops/amazon.md'
   - 'Azure': 'ops/azure.md'
 - Tools:
+  - 'General': 'research.md'
   - Reporting: 'reporting.md'
   - Documentation: 'docs.md'
   - "Mock and API Tools": 'tools.md'
@@ -149,7 +150,6 @@ pages:
   - 'Wordpress Rest API': 'php/wordpress/api/learn.md'
   - 'Tutorials': 'learning/tutorials.md'
   - Teaching: 
-    - 'General': 'research.md'
     - 'Tools': 'teaching/tools.md'
     - 'Custom Modules': 'teaching/modules.md'
     - 'OpenEdx':

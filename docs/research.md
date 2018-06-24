@@ -7,7 +7,6 @@
 ### Tools to watch
 * [Vapor](http://vapor.codes/) - Swift3 framework for web application development.
 * [Electrode](http://www.electrode.io/index.html) - made by Walmart. ReactJS framework essentially.
-* [Vue.js](http://vuejs.org/v2/guide/) - another front-end framework.
 
 ### JavaScript
 * [elm](http://elm-lang.org/)
@@ -16,20 +15,6 @@
 * [GrapeJs](http://grapesjs.com/) - Web builder framework. JavaScript. Sites without coding. Integrate into own site.
 * [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Microsoft javascript based code editor.
 
-#### Angular
-* Tools
-  * [Angular Augury](https://augury.angular.io/) - debug and profile angular 2 apps
-    * Chrome extension
-* Lists
-    * [Awesome Angular](https://github.com/AngularClass/awesome-angular)
-### Web Templates
-* [Flakes Admin Template](http://getflakes.com/) - Admin front-end template.
-* [Framework7](https://framework7.io/) - mobile web template
-* [W3 Layouts](https://w3layouts.com/)
-* [Freshdesign Templates](https://www.freshdesignweb.com/best-church-website-templates/)
-
-## Python
-* Python books online [Invent with python](http://inventwithpython.com)
 
 ## Resource Lists
 * [Awesome Awesome List](https://github.com/bayandin/awesome-awesomeness) - List of lists
@@ -45,7 +30,6 @@
 * [Awesome IOS](https://github.com/vsouza/awesome-ios) - [main site](http://awesomeios.com/)
 * [Awesome Kotlin](https://github.com/KotlinBy/awesome-kotlin)
 * [Front-end Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
-    * [Front End Directory](https://frontend.directory/)
 * [raywenderlich.com](https://www.raywenderlich.com) - IOS/development resources
 ### List of lists
 * [Sindresourhus](https://github.com/sindresorhus/awesome)

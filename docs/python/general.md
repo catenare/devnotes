@@ -5,6 +5,7 @@
 * Podcasts
     * [Talk Python To Me](https://talkpython.fm/)
     * [Python Bytes](https://pythonbytes.fm/)
+* Python books online [Invent with python](http://inventwithpython.com)
 
 ## Notes
 * ~~Using python terminal in PyCharm with virtualenv messes up the python terminal everywhere else. Need to exit PyCharm Python Terminal if I want to use the virtualenv from Mac OS X terminal.~~

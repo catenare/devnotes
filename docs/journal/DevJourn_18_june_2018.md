@@ -568,3 +568,164 @@ Now have a submodule that will be in charge of Authentication. Will still have t
     * Registration
 * Cleaning up my notes with inactive links.
 * Just used [MetaTags](https://megatags.co) to generate opengraph tags for my site.
+* Seems like I have no choice to keep using Foundation for Sites. Seems to be only tool really dedicated to building static first web sites. There panini tool makes all of this so much easier.
+* Still can't really find a good alternative to generating a static site with just html and css while also enjoying some of the benefits of having a backend templating engine.
+* Setting up my nziswano site
+    * Installing panini gulp browser-sync
+        * Trying to create a static web site but haves scss and any typscript or javascript rendered by webpack. Have webpack do all the reloading.
+    * Kinda stupid. Should just install with foundation-cli **has not been updated in forever**
+    * [Google Developer Tools Puppeteer](https://developers.google.com/web/tools/puppeteer/) - screenshots of your site. Can compare versions.
+    * installed gulp panini webpack webpack-dev-server webpack-cli
+    * installed foundation-sites
+    * installed npm install --save-dev autoprefixer cross-env gh-pages
+    * Added rimraf and gulp-babel, @babel-register
+    * Did not need all the extra babel stuff. Renamed *gulp.babel.js* to *gulp.js*. All the scss and js transformation will happen with webpack. Gulp is strictly for combining the html files and copying them over to the dist directory.
+    * Just need *gulp@next* *rimraf* clean the directory and *panini* for *panini* to work. Added *node-sass*, *postcss-cssnext*, *postcss-scss*.
+    * Also added *npm-run-all* because I need to run both *gulp* and *webpack* 
+    * Also added *"babel-loader@^8.0.0-beta" @babel/core @babel/preset-env* - *babel-preset-env*
+* Got the gulp part to work. Now to configure the webpack part.
+    * Installed *css-loader* *sass-loader* *style-loader* and *postcss-loader*. Want it to generate the correct css.
+    * Added *postcss.config.js* file to root directory. Read somewhere that the current postcss does not read the *package.json* file.
+* Just spent the whole day upgrading my prototype site to use Foundation and Webpack. 
+
+```js
+"scripts": {
+    "dev": "npm-run-all -n -p gulp:watch webpack:dev",
+    "build": "npm-run-all -s gulp:build webpack:build",
+    "webpack:dev": "cross-env NODE_ENV=development webpack-dev-server --color --progress",
+    "webpack:build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "gulp:watch": "gulp -LLL --color",
+    "gulp:build": "gulp build",
+    "gh-deploy": "npm-run-all -n -s build gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+"devDependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "autoprefixer": "^8.6.3",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "gh-pages": "^1.2.0",
+    "gulp": "^4.0.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3",
+    "panini": "^1.6.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.5",
+    "postcss-preset-env": "^5.1.0",
+    "postcss-scss": "^1.0.6",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "style-sherpa": "^1.0.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+```
+
+### *gulp.js*
+
+```js
+'use strict'
+
+const gulp = require('gulp');
+const panini = require('panini');
+const sherpa = require('style-sherpa');
+const rimraf = require('rimraf');
+
+const yaml = require('js-yaml');
+const fs = require('fs');
+
+
+
+// Load settings from settings.yml
+const {
+  PATHS
+} = loadConfig()
+
+function loadConfig() {
+  let ymlFile = fs.readFileSync('config.yml', 'utf8')
+  return yaml.load(ymlFile)
+}
+
+// Build the "dist" folder by running all of the below tasks
+gulp.task('build',
+  gulp.series(clean, gulp.parallel(pages, images), styleGuide));
+
+// Build the site, run the server, and watch for file changes
+gulp.task('default',
+  gulp.series('build', watch))
+
+gulp.task('clean',
+  gulp.series(clean))
+
+gulp.task('watch',
+  gulp.series(watch))
+
+gulp.task('images',
+  gulp.series(images))
+
+// Copy images to the "dist" folder
+// In production, the images are compressed
+function images() {
+  return gulp.src('src/app/img/**/*')
+    .pipe(gulp.dest(PATHS.dist + '/img'))
+}
+
+// Generate a style guide from the Markdown content and HTML template in styleguide/
+function styleGuide(done) {
+  sherpa('src/styleguide/index.md', {
+    output: PATHS.dist + '/styleguide.html',
+    template: 'src/styleguide/template.html'
+  }, done)
+}
+
+// Delete the "dist" folder
+// This happens every time a build starts
+function clean(done) {
+  rimraf(PATHS.dist, done)
+}
+
+// Copy page templates into finished HTML files
+function pages() {
+  return gulp.src('src/panini/pages/**/*.{html,hbs,handlebars}')
+    .pipe(panini({
+      root: 'src/panini/pages/',
+      layouts: 'src/panini/layouts/',
+      partials: 'src/panini/partials/',
+      data: 'src/panini/data/',
+      helpers: 'src/panini/helpers/'
+    }))
+    .pipe(gulp.dest(PATHS.dist))
+}
+
+// Load updated HTML templates and partials into Panini
+function resetPages(done) {
+  panini.refresh()
+  done()
+}
+
+// Watch for changes to static assets, pages, Sass, and JavaScript
+function watch() {
+  gulp.watch('src/panini/pages/**/*.html').on('all', gulp.series(pages))
+  gulp.watch('src/panini/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages))
+  gulp.watch('src/styleguide/*.*').on('all', gulp.series(styleGuide, resetPages, pages))
+  gulp.watch('src/app/img/**/*').on('all', gulp.series(images, resetPages, pages))
+}
+```
+
+* Okay. Got the basic site redone using Foundation and Webpack. What I have discovered is that I know a lot more than I did when I first started with all of this stuff.
+* Inspiration sites
+    * https://land-book.com/gallery/landings
+    * https://sunsama.com/?ref=land-book.com
+    * [LightWeight Frameworks](https://tutorialzine.com/2018/05/10-lightweight-css-frameworks-you-should-know-about)
+* Looking at admin again - layout - Angular Flex Layout - [Flex Layout](https://github.com/angular/flex-layout)
+    * `npm i --save @angular/flex-layout@6.0.0-beta.15`
+    * Using flex-layout.
+* Got the basic login setup. Have form. Hope the amplify class gets imported okay.
