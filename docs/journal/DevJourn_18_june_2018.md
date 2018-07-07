@@ -729,3 +729,29 @@ function watch() {
     * `npm i --save @angular/flex-layout@6.0.0-beta.15`
     * Using flex-layout.
 * Got the basic login setup. Have form. Hope the amplify class gets imported okay.
+## Sunday 24 June 2018
+Trying to get Amplify to work on Angular. Getting error messages. Going to upgrade @types/node - `ERROR in node_modules/aws-sdk/clients/acm.d.ts(108,37):` - [Typescript error: Cannot find name 'Buffer'/'http'/'https'](https://github.com/aws/aws-sdk-js/issues/1271) - *Updated tsconfig.app.json inside src folder, it works for me, thanks!* - **tsconfig.app.json** inside of **src** folder.
+Hate JavaScript, or at least, the frameworks around it. Just spent 2 hours trying to debug something that I hoped would just work.
+Angular made a breaking change - [Uncaught Reference: global is not defined](https://github.com/angular/angular-cli/issues/8160#issuecomment-386153833). Really annoying
+
+5 Things I Learned While Learning JavaScript
+* Functional programming mindset
+* Lambda functions
+* Reactive programming rxjs
+* Event programming
+* Classes and objects are back
+
+Okay, trying to get authentication to work in Angular. Need to create a way to authenticate with a guard.
+canActivate and canLoad can also get an observable.
+Setting up sqlserver express on laptop with access migration assistant
+
+* Using sql server express 2014 and Access Migration Assistant 7.8
+    * Downloaded sql server express 2014 with management tools.
+    * New sql server stand-alone installation
+    * Need Microsoft .NET framework 3.5 svc pack 1
+        * Turn on in control panel -> window features
+        * Need the access 2016 runtime too.
+* Angular Amplify - *Uncaught (in promise): No current user*
+    * [Re-entry into async functions causes uncaught exceptions](https://github.com/aws/aws-amplify/issues/78)
+    * Had an issue with it not finding Observeables. Need to install *rxjs-compat*
+* Still having issues getting the errors to work right.

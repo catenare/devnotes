@@ -32,4 +32,6 @@
 ## Screen recording
 * [OBS Studio](https://obsproject.com/) - open source screen recording
 ## Other tools
-* [Regulex](https://jex.im/regulex) - Regex validator
+* Regex
+    * [Regulex](https://jex.im/regulex) - Regex validator
+    * [Regex101](https://regex101.com) - liked this one

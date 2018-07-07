@@ -9,9 +9,15 @@
     * Lead generation
     * Events
         * Event promotion
-        * Integration with backend ticketing systems
+        * Integration with backend ticketing and management systems.
         * Interest tracking
+        * During event microsites.
+            * Interact with your audience while they're at the site
+            * Eliminate the need for a dedicated app/cross-platform from the get go.
+            * Audience participation and feedback.
     * Ecommerce
+        * Product dedicated sites
+        * Integrate with third-party ecommerce providers
     * Cloud based
     * Focused
     * Integrate to third-party APIs
