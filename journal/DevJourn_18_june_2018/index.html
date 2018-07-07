@@ -42,7 +42,7 @@
     
     
       
-        <title>June 18 2018 - Johan Martin's Developer Notebook</title>
+        <title>18 June 2018 - Johan Martin's Developer Notebook</title>
       
     
     
@@ -123,7 +123,7 @@
                 Johan Martin's Developer Notebook
               </span>
               <span class="md-header-nav__topic">
-                June 18 2018
+                18 June 2018
               </span>
             
           
@@ -2457,8 +2457,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../DevJourn_11_june_2018/" title="June 11 2018" class="md-nav__link">
-      June 11 2018
+    <a href="../dev_journal_2_july_2018/" title="2 July 2018" class="md-nav__link">
+      2 July 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev_journal_25_june_2018/" title="25 June 2018" class="md-nav__link">
+      25 June 2018
     </a>
   </li>
 
@@ -2478,11 +2490,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        June 18 2018
+        18 June 2018
       </label>
     
-    <a href="./" title="June 18 2018" class="md-nav__link md-nav__link--active">
-      June 18 2018
+    <a href="./" title="18 June 2018" class="md-nav__link md-nav__link--active">
+      18 June 2018
     </a>
     
       
@@ -2602,6 +2614,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sunday-24-june-2018" title="Sunday 24 June 2018" class="md-nav__link">
+    Sunday 24 June 2018
+  </a>
+  
+</li>
+      
       
       
       
@@ -2610,6 +2629,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DevJourn_11_june_2018/" title="11 June 2018" class="md-nav__link">
+      11 June 2018
+    </a>
   </li>
 
         
@@ -2922,6 +2953,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sunday-24-june-2018" title="Sunday 24 June 2018" class="md-nav__link">
+    Sunday 24 June 2018
+  </a>
   
 </li>
       
@@ -3778,6 +3816,37 @@ function watch() {
 </li>
 <li>Got the basic login setup. Have form. Hope the amplify class gets imported okay.</li>
 </ul>
+<h2 id="sunday-24-june-2018">Sunday 24 June 2018</h2>
+<p>Trying to get Amplify to work on Angular. Getting error messages. Going to upgrade @types/node - <code>ERROR in node_modules/aws-sdk/clients/acm.d.ts(108,37):</code> - <a href="https://github.com/aws/aws-sdk-js/issues/1271">Typescript error: Cannot find name 'Buffer'/'http'/'https'</a> - <em>Updated tsconfig.app.json inside src folder, it works for me, thanks!</em> - <strong>tsconfig.app.json</strong> inside of <strong>src</strong> folder.
+Hate JavaScript, or at least, the frameworks around it. Just spent 2 hours trying to debug something that I hoped would just work.
+Angular made a breaking change - <a href="https://github.com/angular/angular-cli/issues/8160#issuecomment-386153833">Uncaught Reference: global is not defined</a>. Really annoying</p>
+<p>5 Things I Learned While Learning JavaScript
+<em> Functional programming mindset
+</em> Lambda functions
+<em> Reactive programming rxjs
+</em> Event programming
+* Classes and objects are back</p>
+<p>Okay, trying to get authentication to work in Angular. Need to create a way to authenticate with a guard.
+canActivate and canLoad can also get an observable.
+Setting up sqlserver express on laptop with access migration assistant</p>
+<ul>
+<li>Using sql server express 2014 and Access Migration Assistant 7.8<ul>
+<li>Downloaded sql server express 2014 with management tools.</li>
+<li>New sql server stand-alone installation</li>
+<li>Need Microsoft .NET framework 3.5 svc pack 1<ul>
+<li>Turn on in control panel -&gt; window features</li>
+<li>Need the access 2016 runtime too.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Angular Amplify - <em>Uncaught (in promise): No current user</em><ul>
+<li><a href="https://github.com/aws/aws-amplify/issues/78">Re-entry into async functions causes uncaught exceptions</a></li>
+<li>Had an issue with it not finding Observeables. Need to install <em>rxjs-compat</em></li>
+</ul>
+</li>
+<li>Still having issues getting the errors to work right.</li>
+</ul>
                 
                   
                 
@@ -3798,7 +3867,7 @@ function watch() {
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../DevJourn_11_june_2018/" title="June 11 2018" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../dev_journal_25_june_2018/" title="25 June 2018" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3807,19 +3876,19 @@ function watch() {
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                June 11 2018
+                25 June 2018
               </span>
             </div>
           </a>
         
         
-          <a href="../DevJourn_archive/" title="Archive" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../DevJourn_11_june_2018/" title="11 June 2018" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Archive
+                11 June 2018
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

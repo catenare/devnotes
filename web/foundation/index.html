@@ -742,6 +742,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#foundation-6-with-fortawesome-fonts-and-webpack-if-using-webpack-for-everything-gulp-version-works-pretty-well" title="Foundation 6 with @fortawesome fonts and webpack - If using Webpack for everything. Gulp version works pretty well." class="md-nav__link">
+    Foundation 6 with @fortawesome fonts and webpack - If using Webpack for everything. Gulp version works pretty well.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#zurb-panini-notes" title="Zurb Panini Notes" class="md-nav__link">
     Zurb Panini Notes
   </a>
@@ -2548,8 +2555,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../journal/DevJourn_11_june_2018/" title="June 11 2018" class="md-nav__link">
-      June 11 2018
+    <a href="../../journal/dev_journal_2_july_2018/" title="2 July 2018" class="md-nav__link">
+      2 July 2018
     </a>
   </li>
 
@@ -2560,8 +2567,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../journal/DevJourn_18_june_2018/" title="June 18 2018" class="md-nav__link">
-      June 18 2018
+    <a href="../../journal/dev_journal_25_june_2018/" title="25 June 2018" class="md-nav__link">
+      25 June 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../journal/DevJourn_18_june_2018/" title="18 June 2018" class="md-nav__link">
+      18 June 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../journal/DevJourn_11_june_2018/" title="11 June 2018" class="md-nav__link">
+      11 June 2018
     </a>
   </li>
 
@@ -2800,6 +2831,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#foundation-6-with-fortawesome-fonts-and-webpack-if-using-webpack-for-everything-gulp-version-works-pretty-well" title="Foundation 6 with @fortawesome fonts and webpack - If using Webpack for everything. Gulp version works pretty well." class="md-nav__link">
+    Foundation 6 with @fortawesome fonts and webpack - If using Webpack for everything. Gulp version works pretty well.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#zurb-panini-notes" title="Zurb Panini Notes" class="md-nav__link">
     Zurb Panini Notes
   </a>
@@ -2878,51 +2916,169 @@
 <p><a href="http://foundation.zurb.com/forum/posts/46991-howto-foundation-6-font-awesome-and-other-asset-fonts">HowTo: Foundation 6 Font Awesome and other asset fonts</a>
 <em> <code>npm install font-awesome</code>
 </em> Modify <em>config.yml</em></p>
-<pre><code class="yaml"># Your project's server will run on localhost:xxxx at this port
-PORT: 8008
-
-# Autoprefixer will make sure your CSS works with these browsers
-COMPATIBILITY:
-  - &quot;last 2 versions&quot;
-  - &quot;ie &gt;= 9&quot;
-  - &quot;ios &gt;= 7&quot;
-
-# UnCSS will use these settings
-UNCSS_OPTIONS:
-  html:
-    - &quot;src/**/*.html&quot;
-  ignore:
-    - !!js/regexp .foundation-mq
-    - !!js/regexp ^\.is-.*
-
-# Gulp will reference these paths when it copies files
+<pre><code class="yaml"># Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
-  dist: &quot;dist&quot;  
-  # Paths to static assets that aren't images, CSS, or JavaScript
-  assets:
-    - &quot;src/assets/**/*&quot;
-    - &quot;!src/assets/{img,js,scss,fonts}/**/*&quot;
-  # Path to fonts
- fonts:
-    - &quot;src/assets/fonts/*&quot;
-    - &quot;node_modules/font-awesome/fonts/*&quot;
-  # Paths to Sass libraries, which can then be loaded with @import
+  dist: &quot;dist&quot;
+  fonts:
+    - &quot;node_modules/@fortawesome/fontawesome-free/webfonts&quot;
   sass:
     - &quot;node_modules/foundation-sites/scss&quot;
     - &quot;node_modules/motion-ui/src&quot;
-    - &quot;node_modules/font-awesome/scss&quot;
-  # Paths to JavaScript entry points for webpack to bundle modules
-  entries:
-    - &quot;src/assets/js/app.js&quot;
 </code></pre>
 
 <ul>
-<li>Modify <em>gulpfile.babel.js</em></li>
+<li>Modify <em>gulpfile.js</em></li>
 </ul>
-<pre><code class="javascript">// Build the &quot;dist&quot; folder by running all of the below tasks. Add fonts
+<pre><code class="javascript">'use strict'
+
+const gulp = require('gulp');
+const panini = require('panini');
+const sherpa = require('style-sherpa');
+const rimraf = require('rimraf');
+const browserSync = require('browser-sync');
+const gulpwebpack = require('webpack-stream');
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config.js');
+// sass
+const sass = require('gulp-sass');
+const sassLint = require('gulp-sass-lint');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+
+// webpackConfig.watch = true;
+
+const webpackDevMiddleWare = require('webpack-dev-middleware');
+const webpackHotMiddleWare = require('webpack-hot-middleware');
+
+const webpackCompiler = webpack(webpackConfig);
+
+const yaml = require('js-yaml');
+const fs = require('fs');
+
+
+
+// Load settings from settings.yml
+const {
+  PATHS
+} = loadConfig();
+
+const server = browserSync.create();
+
+
+function loadConfig() {
+  let ymlFile = fs.readFileSync('config.yml', 'utf8');
+  return yaml.load(ymlFile);
+}
+
+// Build the index.html files for the final result
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, fonts, copy), styleGuide));
+  gulp.series(clean, gulp.parallel(buildSass, fonts, pages, images), styleGuide));
+
+// Build the site, run the server, and watch for file changes
+gulp.task('default',
+  gulp.series(clean, gulp.parallel(buildSass, fonts, mywebpack, pages, images), styleGuide, serve, watch)
+)
+
+
+// add webpack stream
+function mywebpack() {
+  return gulp.src('src/main.js')
+    .pipe(gulpwebpack(webpackConfig, webpack))
+    .pipe(gulp.dest('dist/assets/'));
+}
+
+// scss compile
+function buildSass() {
+  return gulp.src(['src/assets/styles/styles.scss'])
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      includePaths: PATHS.sass
+    }).on('error', sass.logError))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(PATHS.dist + '/assets'))
+}
+
+// copy fonts
+// Copy fonts to the &quot;dist&quot; folder
+function fonts() {
+  return gulp.src(PATHS.fonts + '/*.*')
+    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));
+}
+
+// browser-sync
+function serve(done) {
+  server.init({
+    server: {
+      baseDir: &quot;./dist&quot;
+    },
+    middleware: [
+      webpackDevMiddleWare(webpackCompiler),
+      webpackHotMiddleWare(webpackCompiler)
+    ]
+  });
+  done();
+}
+
+function reload(done) {
+  server.reload();
+  done();
+}
+
+// Copy images to the &quot;dist&quot; folder
+// In production, the images are compressed
+function images() {
+  return gulp.src('src/app/img/**/*')
+    .pipe(gulp.dest(PATHS.dist + '/img'))
+}
+
+// Generate a style guide from the Markdown content and HTML template in styleguide/
+function styleGuide(done) {
+  sherpa('src/styleguide/index.md', {
+    output: PATHS.dist + '/styleguide.html',
+    template: 'src/styleguide/template.html'
+  }, done)
+}
+
+// Delete the &quot;dist&quot; folder
+// This happens every time a build starts
+function clean(done) {
+  rimraf(PATHS.dist, done)
+}
+
+// Copy page templates into finished HTML files
+function pages() {
+  return gulp.src('src/html/pages/**/*.{html,hbs,handlebars}')
+    .pipe(panini({
+      root: 'src/html/pages/',
+      layouts: 'src/html/layouts/',
+      partials: 'src/html/partials/',
+      data: 'src/html/data/',
+      helpers: 'src/html/helpers/'
+    }))
+    .pipe(gulp.dest(PATHS.dist))
+}
+
+// Load updated HTML templates and partials into Panini
+function resetPages(done) {
+  panini.refresh()
+  done()
+}
+
+// Watch for changes to static assets, pages, Sass, and JavaScript
+function watch() {
+  // gulp.watch('src/html/pages/**/*.html').on('all', gulp.series(resetPages, pages, reload));
+  gulp.watch('src/html/{layouts,partials,pages,helpers}/**/*.html').on('all', gulp.series(resetPages, pages, reload));
+  gulp.watch('src/html/data/*.yml').on('all', gulp.series(resetPages, pages, reload));
+  gulp.watch('src/styleguide/*.*').on('all', gulp.series(styleGuide, reload));
+  gulp.watch('src/app/img/**/*').on('all', gulp.series(images, reload));
+  gulp.watch('src/**/*.js').on('all', gulp.series(mywebpack, reload));
+  gulp.watch('src/assets/styles/*.scss').on('all', gulp.series(mywebpack, reload));
+  // gulp.watch('src/assets/styles/*.scss').on('all', gulp.series(buildSass, reload));
+}
+
 </code></pre>
 
 <ul>
@@ -2955,16 +3111,111 @@ function watch() {
 <li>Create <em>_custom.scss</em> and import into <em>app.css</em></li>
 <li>Import <em>fontawesome</em> into <em>_custom.scss</em></li>
 </ul>
-<pre><code class="scss">@import &quot;font-awesome&quot;;
+<pre><code class="scss">$fa-font-path: '/assets/fonts'; //set path for fonts
+
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import &quot;node_modules/@fortawesome/fontawesome-free/scss/fa-solid&quot;;
+@import &quot;node_modules/@fortawesome/fontawesome-free/scss/fa-brands&quot;;
+@import &quot;node_modules/@fortawesome/fontawesome-free/scss/fa-regular&quot;;
 </code></pre>
 
 <ul>
-<li><code>foundation watch</code> or <code>npm start</code></li>
+<li><code>npm run dev</code></li>
 </ul>
+<h2 id="foundation-6-with-fortawesome-fonts-and-webpack-if-using-webpack-for-everything-gulp-version-works-pretty-well">Foundation 6 with @fortawesome fonts and webpack - If using Webpack for everything. Gulp version works pretty well.</h2>
+<p>Using <em>webpack</em> rather than <em>gulp</em> to manage scss and fonts. Webpack uses the url-loader to grab the fonts. Eliminates a function I'll have to write in gulp.</p>
+<ul>
+<li><code>settings.scss</code><ul>
+<li><code>@import '~foundation-sites/scss/util/util';</code> - Change import statement to point to <em>node_modules</em></li>
+<li><code>$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';</code> - Set the <em>$fa-font-path</em> so *<em>fontawesome</em> can find the web fonts.</li>
+</ul>
+</li>
+<li><code>styles.scss</code> - main import file with all foundation imports<ul>
+<li><code>@import '~foundation-sites/scss/foundation';</code> - import foundation from node_modules.</li>
+<li><code>@import '~motion-ui/src/motion-ui';</code> - Make sure we're only importing the scss for motion-ui.</li>
+<li>Import the fontawesome v5 scss and font scss.<ul>
+<li><code>@import '~@fortawesome/fontawesome-free/scss/fontawesome';</code></li>
+<li><code>@import "~@fortawesome/fontawesome-free/scss/fa-solid";</code> fas</li>
+<li><code>@import "~@fortawesome/fontawesome-free/scss/fa-brands";</code> - fab</li>
+<li><code>@import "~@fortawesome/fontawesome-free/scss/fa-regular";</code> - fa</li>
+<li><code>@import 'local';</code> - Our local scss - imports our custom components.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Import into our <code>main.js</code> file. Our entry point for our webpack application.<ul>
+<li><code>import "@/assets/styles/styles.scss";</code> - importing our main styles file.</li>
+</ul>
+</li>
+<li><em>wepack.config.js</em><ul>
+<li>Takes care of copying the fonts over.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="js">{
+    test: /\.(png|jpe?g|gif|woff|woff2|eot|ttf|svg)$/,
+    loader: 'url-loader?limit=100000'
+  }
+</code></pre>
+
+<ul>
+<li>Compiles our scss to css. Extracts the css so our static html page can use it. scss section compiles scss to css for us.</li>
+</ul>
+<pre><code class="js">const pluginConfig = [
+  new MiniCssExtractPlugin({
+    filename: '[name].css',
+    chunkFilename: '[id].css'
+  })
+]
+
+const moduleConfigBase = [{
+    test: /\.(sa|sc|c)ss$/,
+    exclude: /node_modules/,
+    use: [
+      // devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+      MiniCssExtractPlugin.loader,
+      'css-loader',
+      'postcss-loader',
+      'sass-loader'
+    ]
+  },
+  {
+    test: /\.js$/,
+    exclude: /(node_modules)/,
+    loader: 'babel-loader'
+  },
+  {
+    test: /\.tsx?$/,
+    exclude: /(node_modules)/,
+    loader: 'awesome-typescript-loader'
+  },
+  {
+    test: /\.(png|jpe?g|gif|woff|woff2|eot|ttf|svg)$/,
+    loader: 'url-loader?limit=100000'
+  }
+]
+</code></pre>
+
+<ul>
+<li>Using webpack in gulp. Watch scss and run webpack whenever it changes.</li>
+</ul>
+<pre><code class="js">const gulpwebpack = require('webpack-stream');
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config.js');
+
+// add webpack stream
+function mywebpack() {
+  return gulp.src('src/main.js')
+    .pipe(gulpwebpack(webpackConfig, webpack))
+    .pipe(gulp.dest('dist/assets/'));
+}
+gulp.watch('src/assets/styles/*.scss').on('all', gulp.series(mywebpack, reload));
+</code></pre>
+
 <h2 id="zurb-panini-notes">Zurb Panini Notes</h2>
 <ul>
 <li>Partials are your friends. <ul>
-<li>Inserting values into partions <code>{{&gt;partion value="value"}}</code></li>
+<li>Inserting values <code>{{&gt;partion value="value"}}</code></li>
 <li>Use <code>{{#each}}</code> to iterate over array data</li>
 <li>Use <code>filename.variable</code> to access data from file in data folder</li>
 </ul>
