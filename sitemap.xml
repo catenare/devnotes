@@ -126,6 +126,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://devnotes.johan-martin.com/web/javascript/material/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://devnotes.johan-martin.com/mobile/ionic/</loc>
      <lastmod>2019-02-10</lastmod>
      <changefreq>daily</changefreq>
@@ -157,6 +162,11 @@
     </url>
     <url>
      <loc>https://devnotes.johan-martin.com/web/javascript/testing/tape/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/web/javascript/testing/</loc>
      <lastmod>2019-02-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -287,6 +297,11 @@
     </url>
     <url>
      <loc>https://devnotes.johan-martin.com/php/wordpress/docker/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/php/wordpress/WPCli/</loc>
      <lastmod>2019-02-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -466,6 +481,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://devnotes.johan-martin.com/ops/Google Firebase/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://devnotes.johan-martin.com/research/</loc>
      <lastmod>2019-02-10</lastmod>
      <changefreq>daily</changefreq>
@@ -521,6 +541,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://devnotes.johan-martin.com/learning/ai/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://devnotes.johan-martin.com/teaching/tools/</loc>
      <lastmod>2019-02-10</lastmod>
      <changefreq>daily</changefreq>
@@ -537,6 +562,11 @@
     </url>
     <url>
      <loc>https://devnotes.johan-martin.com/teaching/html/semantic/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/teaching/html/css/</loc>
      <lastmod>2019-02-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -572,6 +602,36 @@
     </url>
     <url>
      <loc>https://devnotes.johan-martin.com/journal/DevJourn_11_june_2018/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 9 July 2018/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 16 July 2018/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 23 July 2018/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 30 July 2018/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 06 August 2018/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 13 August 2018/</loc>
      <lastmod>2019-02-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -616,7 +676,22 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://devnotes.johan-martin.com/misc/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/other/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://devnotes.johan-martin.com/work/employment/</loc>
+     <lastmod>2019-02-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/journal/My PHP experience includes Rent The Runway who initially had a/</loc>
      <lastmod>2019-02-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
