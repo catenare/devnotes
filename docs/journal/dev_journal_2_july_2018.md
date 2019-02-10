@@ -107,3 +107,7 @@ It is 4th of July in the US today.
 ## Friday 6 July 2018
 * Trying to finish up my agency website. Not being able to visualise a design is frustrating.
 * Got the basic outline created.
+## Saturday 7 July 2018
+* Started Diketso's site started. Using gulp and panini.
+## Sunday 7 July 2018
+* Learn how to use Gulp.
