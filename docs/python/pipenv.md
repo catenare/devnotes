@@ -15,3 +15,6 @@
     * `pipenv shell` - launch the virtual environment
     * Edit **pidfile** to update dependencies to '*'.
     * `pipenv update` - update to latest packages.
+* Generate a requirements file
+  * `pipenv lock -r`
+  * `pipenv lock -r --dev` - only the dev requirements

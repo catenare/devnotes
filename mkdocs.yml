@@ -9,13 +9,13 @@ dev_addr: '127.0.0.1:8888'
 strict: true
 # docs_dir: 'md'
 # site_dir: 'docs'
-copyright: Johan Martin &copy; 2018
+copyright: Johan Martin &copy; 2019
 markdown_extensions:
   - pymdownx.tilde
 theme: 'material'
 extra_css:
 - css/extra.css
-pages:
+nav:
 - Home: 'index.md'  
 - Development:
   - Authentication: 'web/auth.md'
@@ -23,7 +23,7 @@ pages:
     - "APIs": 'api/general.md'
     - "Response Codes": 'api/rest.md'
     - "AWS API Gateway": "api/AmazonGatewayAPI.md"
-    - "AWS Authorization and CORS": "api/CORS Configuration for API Gateway.md"
+    - "AWS Authorization and CORS": "api/CORS configuration for API Gateway.md"
     - "CORS and FLASK": "api/CORS with FLASK without Flask-CORS.md"
   - Cloud:
     - 'AWS': 
@@ -64,8 +64,8 @@ pages:
       - 'Notes': 'web/javascript/vue/notes.md' 
       - 'Vue': 'web/javascript/vue/vuejs.md'
       - 'Foundation Setup': 'web/javascript/vue/foundation.md'
-    - Reactjs: 'web/javascript/reactjs/reactjs.md'
-    - Redux: 'web/javascript/reactjs/redux.md'
+    - Reactjs: 'web/javascript/Reactjs/reactjs.md'
+    - Redux: 'web/javascript/Reactjs/redux.md'
     - Webpack:
       - 'Webpack': 'web/javascript/webpack/webpack.md'
       - 'Notes': 'web/javascript/webpack/notes.md'
@@ -83,8 +83,8 @@ pages:
       - 'Notes': 'web/javascript/vue/notes.md' 
       - 'Vue': 'web/javascript/vue/vuejs.md'
       - 'Foundation Setup': 'web/javascript/vue/foundation.md'
-    - Reactjs: 'web/javascript/reactjs/reactjs.md'
-    - Redux: 'web/javascript/reactjs/redux.md'
+    - Reactjs: 'web/javascript/Reactjs/reactjs.md'
+    - Redux: 'web/javascript/Reactjs/redux.md'
   - PHP:
     - Resources: 'php/resources.md'
     - Composer: 'php/composer.md'
@@ -111,7 +111,7 @@ pages:
     - 'Research': 'python/research.md'
     - 'Flask': 
       - General: 'python/flask.md'
-      - "AWS Authorization and CORS": "api/CORS Configuration for API Gateway.md"
+      - "AWS Authorization and CORS": "api/CORS configuration for API Gateway.md"
       - "CORS and FLASK": "api/CORS with FLASK without Flask-CORS.md"
     - 'SQLAlchemy': 'python/sqlalchemy.md'
     - 'Testing': 'python/testing.md'
@@ -146,7 +146,7 @@ pages:
 - Learning:
   - "Using Jupyter": "learning/jupyter.md"
   - "RXJS": "learning/rxjs.md"
-  - 'Angular 4+': "learning/learnAngular.md"
+  - 'Angular 4+': "learning/LearnAngular.md"
   - 'Wordpress Rest API': 'php/wordpress/api/learn.md'
   - 'Tutorials': 'learning/tutorials.md'
   - Teaching: 

@@ -136,9 +136,9 @@ ERROR in /Users/themartins/Documents/Projects/johan/projects/clients/Eren/LookFi
 	* Backend access on VPC network. No public access to API unless via api gateway.
 * Resources
 	* Urls
-		* [Admin Server](adminapi.lookfindme.com)
-		* [API gateway](api.lookfindme.com)
-		* [Admin Site](admin.lookfindme.com)
+		* [Admin Server](https:/adminapi.lookfindme.com)
+		* [API gateway](https:/api.lookfindme.com)
+		* [Admin Site](https:/admin.lookfindme.com)
 * Issues
 	* Seems like you can only do a VPC with a load balancer. Don't really want to do that since that is an additional cost.
 	* Might have to only do http request. Might be able to limit access to only the API gateway.

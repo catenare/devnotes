@@ -223,7 +223,7 @@ del o.c
 assert 'c' not in d
 ```
 
-PythonTutor - step through your code - [Python Tutor](pythontutor.com)
+PythonTutor - step through your code - [Python Tutor](https:/pythontutor.com)
 
 * Something that is supposed to be straightforward is not working. I don't know why. Finally got it to work. Related to the data for the test. Tests need to represent what I'm working on.
 * Going to try and insert data with ORM
