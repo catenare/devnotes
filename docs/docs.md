@@ -20,7 +20,7 @@
 * *sitedocs\mkdocs.yml* - your table of contents.
 
 ## Using
-* `mkdocs serve` - local development server *http:\\localhost:8000*
+* `mkdocs serve` - local development server *http://localhost:8000*
 * `mkdocs gh-deploy` - build docs and push to gh-pages repo in github after committing.
 
 ## Config file - *mkdocs.yml*
@@ -62,10 +62,9 @@ pages:
     - *markdown.extensions.def_list*
 
 ## Fixing Issues with MkDocs
-404 error for home page/front page - github gh-pages hosting.
-:   *Seems like the home page has to point to an "index.md" page for it to work.*
+* 404 error for home page/front page - github gh-pages hosting.: *Seems like the home page has to point to an "index.md" page for it to work.*
 * RuntimeError: Click will abort further execution because Python 3 was configured to use ASCII as encoding for the environment.  Consult http://click.pocoo.org/python3/for mitigation steps.
-    * Fix with: 
+* Fix with: 
     * `> export LC_ALL=en_US.UTF-8`
     * `> export LANG=en_US.UTF-8`
 
