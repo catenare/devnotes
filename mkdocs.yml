@@ -50,6 +50,7 @@ nav:
       - 'Notes': 'web/notes.md'
       - 'StyleGuide': 'web/styleguide.md'
       - 'Colors': 'process.md'
+      - 'Material': 'web/javascript/material.md'
     - Ionic: 'mobile/ionic.md'
     - 'General Notes': 'web/javascript/notes.md'
     - 'JS Starter Config': 'web/javascript/startup.md'
@@ -58,6 +59,7 @@ nav:
     - 'Testing': 
       - 'Intro': 'web/javascript/testing/general.md'
       - 'Tape': 'web/javascript/testing/tape.md'
+      - 'General': 'web/javascript/testing.md'
     - Angular:
       - 'Angular': 'web/javascript/Angular/angular.md'
     - 'Vuejs':
@@ -93,6 +95,7 @@ nav:
       - 'Admin': 'php/wordpress/admin.md'
       - 'Deployment': 'php/wordpress/deployment.md'
       - 'Docker': 'php/wordpress/docker.md'
+      - 'WP CLI': 'php/wordpress/WPCli.md'
       - API:
         - API: 'php/wordpress/api/api.md'
         - 'Learn Wordpress REST API': 'php/wordpress/api/learn.md'
@@ -136,6 +139,7 @@ nav:
   - 'Docker': 'ops/docker.md'
   - 'Amazon': 'ops/amazon.md'
   - 'Azure': 'ops/azure.md'
+  - 'Firebase': 'ops/Google Firebase.md'
 - Tools:
   - 'General': 'research.md'
   - Reporting: 'reporting.md'
@@ -149,6 +153,7 @@ nav:
   - 'Angular 4+': "learning/LearnAngular.md"
   - 'Wordpress Rest API': 'php/wordpress/api/learn.md'
   - 'Tutorials': 'learning/tutorials.md'
+  - 'AI': 'learning/ai.md'
   - Teaching: 
     - 'Tools': 'teaching/tools.md'
     - 'Custom Modules': 'teaching/modules.md'
@@ -157,6 +162,7 @@ nav:
     - 'Class Tutorials':
       - 'HTML and CSS':
         - 'Semantic HTML': 'teaching/html/semantic.md'
+        - 'CSS': 'teaching/html/css.md'
       - 'JavaScript': 
         - 'Intro': 'teaching/javascript/intro.md'
         - 'Classes':
@@ -168,6 +174,12 @@ nav:
   - '25 June 2018': 'journal/dev_journal_25_june_2018.md'
   - '18 June 2018': 'journal/DevJourn_18_june_2018.md'
   - '11 June 2018': 'journal/DevJourn_11_june_2018.md'
+  - '09 July 2018': 'journal/Developer Journal 9 July 2018.md'
+  - '16 July 2018': 'journal/Developer Journal 16 July 2018.md'
+  - '23 July 2018': 'journal/Developer Journal 23 July 2018.md'
+  - '30 July 2018': 'journal/Developer Journal 30 July 2018.md'
+  - '06 August 2018': 'journal/Developer Journal 06 August 2018.md'
+  - '13 August 2018': 'journal/Developer Journal 13 August 2018.md'
   - Archive: 'journal/DevJourn_archive.md'
 - Projects:
   - Nziswano:
@@ -179,4 +191,7 @@ nav:
   - 'House related': 'misc/house.md'
   - 'Setup Multiple DSTV Exploras': 'misc/dstv.md'
   - 'Visual StoryTelling/Sketchnotes': 'misc/sketch.md'
+  - 'Misc': 'misc.md'
+  - 'Other': 'other.md'
   - Work: 'work/employment.md'
+  - 'RTR': 'journal/My PHP experience includes Rent The Runway who initially had a.md'
