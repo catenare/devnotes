@@ -47,3 +47,23 @@
   - Need to choose a json-schema to use for generating a form
   - json api serializer - [ngx-jsonapi](https://github.com/reyesoft/ngx-jsonapi)
   - json schema form generator - [json-schema-form](https://github.com/hamzahamidi/Angular6-json-schema-form)
+
+# Sunday 26 May 2019
+
+- Going to try and tie the json-schema form into our current config. Want to use that to generate forms automatically. No need to have hard coded forms.
+
+* [angular-6-json-schema-form](https://github.com/hamzahamidi/angular6-json-schema-form)
+  - Initial form is in - src/app/admin/center/center.component.html
+  - Adding `npm install @angular/flex-layoout@7.0.0-beta.24` - Latest expects angular 8
+  - Added `npm install lodash-es`
+  - Had to restart the service
+  * Going to remove angular6-json-schema-form. Seems that it is trying to do too much.
+  * to look at ngx-jsonapi, ngx-schema-form
+  ## Got [ngx-schema-form](https://github.com/guillotinaweb/ngx-schema-form) to actually work with Angular 7.
+  - Had to import **SchemaFormModule, SchemaValidatorFactory, ZSchemaValidatorFactory, WidgetRegistry, DefaultWidgetRegistry** in module
+  - Actual component seems to work now.
+  ## Setting up center configuration
+  - Basic configuration is now working.
+    - Need to save what is input
+    - Need to retrieve what is there
+    - Form needs to be a file by itself.
