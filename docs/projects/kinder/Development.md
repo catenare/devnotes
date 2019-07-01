@@ -67,3 +67,28 @@
     - Need to save what is input
     - Need to retrieve what is there
     - Form needs to be a file by itself.
+
+# Monday 27 May 2019
+
+- Create a model for a center. It will eventually be saved just as a json object.
+
+# Saturday 01 June 2019
+
+- Create schemas from yaml
+
+* Save my schema as a yaml file
+* Convert that schema into a json file using python
+  - Should be able to see the results from the command line
+* Added schemas to git
+  - user `git remote add origin git@personal:catenare/dataSchemas.git` because I have multiple git repos active on my mashine
+* Using pyyaml to combine yaml files together
+* https://github.com/Julian/jsonschema - python jsonschema validator
+* https://horejsek.github.io/python-fastjsonschema/ - python jsonschema validator too
+  <!-- * Generate schema in python - https://github.com/wolverdude/genson/ -->
+* https://github.com/cwacek/python-jsonschema-objects - Generate objects from schema
+* We can create the object we need for the form right from our server. No need to parse it on the client side. Plus, we can cache it if necessary on the server side. Only need to refresh it if the schema changes.
+* Can now generate our schemas from yml definition files.
+
+## Building a library
+
+- Library is called form-widgets
