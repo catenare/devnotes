@@ -14,3 +14,5 @@
 ## Github
 
 - `git remote add origin git@personal:catenare/conceptfitness-static.git`
+
+* `apt-get install wget, zip, unzip`
