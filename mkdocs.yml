@@ -3,211 +3,213 @@ repo_url: https://github.com/catenare/devnotes
 site_description: Too much to keep in my head!!!
 site_url: https://devnotes.johan-martin.com
 site_author: Johan Martin (http://www.johan-martin.com)
-repo_name: 'GitHub'
+repo_name: "GitHub"
 edit_uri: edit/master/docs/
-dev_addr: '127.0.0.1:9090'
+dev_addr: "127.0.0.1:9090"
 strict: true
 # docs_dir: 'md'
 # site_dir: 'docs'
 copyright: Johan Martin &copy; 2019
 markdown_extensions:
   - pymdownx.tilde
-theme: 'material'
+theme: "material"
 extra_css:
   - css/extra.css
 nav:
-  - Home: 'index.md'
+  - Home: "index.md"
   - Development:
-      - Authentication: 'web/auth.md'
+      - Authentication: "web/auth.md"
       - API:
-          - 'APIs': 'api/general.md'
-          - 'Response Codes': 'api/rest.md'
-          - 'AWS API Gateway': 'api/AmazonGatewayAPI.md'
-          - 'AWS Authorization and CORS': 'api/CORS configuration for API Gateway.md'
-          - 'CORS and FLASK': 'api/CORS with FLASK without Flask-CORS.md'
+          - "APIs": "api/general.md"
+          - "Response Codes": "api/rest.md"
+          - "AWS API Gateway": "api/AmazonGatewayAPI.md"
+          - "AWS Authorization and CORS": "api/CORS configuration for API Gateway.md"
+          - "CORS and FLASK": "api/CORS with FLASK without Flask-CORS.md"
       - Cloud:
-          - 'AWS':
-              - 'Amazon': 'cloud/aws/aws.md'
-              - 'Amplify': 'cloud/aws/amplify.md'
-              - 'Cognito': 'cloud/aws/cognito.md'
-              - 'DynamoDB': 'cloud/aws/dynamodb.md'
-              - 'Search': 'cloud/aws/search.md'
-          - 'Google':
-              - 'Google': 'cloud/google/google.md'
+          - "AWS":
+              - "Amazon": "cloud/aws/aws.md"
+              - "Amplify": "cloud/aws/amplify.md"
+              - "Cognito": "cloud/aws/cognito.md"
+              - "DynamoDB": "cloud/aws/dynamodb.md"
+              - "Search": "cloud/aws/search.md"
+          - "Google":
+              - "Google": "cloud/google/google.md"
       - Database:
           - Migrations:
-              - General: 'database/dbmigrations.md'
-              - FlyWay: 'database/flyway.md'
-          - Mongo: 'database/mongo.md'
-          - Mysql: 'database/mysql.md'
-          - Postgresql: 'database/postgresql.md'
-      - 'Front End':
-          - 'Basics':
-              - 'Front': 'web/front.md'
-              - 'CSS': 'web/css.md'
-              - 'Foundation': 'web/foundation.md'
-              - 'Asset Management': 'web/assets.md'
-              - 'Notes': 'web/notes.md'
-              - 'StyleGuide': 'web/styleguide.md'
-              - 'Colors': 'process.md'
-              - 'Material': 'web/javascript/material.md'
-          - Ionic: 'mobile/ionic.md'
-          - 'General Notes': 'web/javascript/notes.md'
-          - 'JS Starter Config': 'web/javascript/startup.md'
-          - 'RxJs': 'web/javascript/rxjs.md'
-          - TypeScript: 'web/typescript.md'
-          - 'Testing':
-              - 'Intro': 'web/javascript/testing/general.md'
-              - 'Tape': 'web/javascript/testing/tape.md'
-              - 'General': 'web/javascript/testing.md'
+              - General: "database/dbmigrations.md"
+              - FlyWay: "database/flyway.md"
+          - Mongo: "database/mongo.md"
+          - Mysql: "database/mysql.md"
+          - Postgresql: "database/postgresql.md"
+      - "Front End":
+          - "Basics":
+              - "Front": "web/front.md"
+              - "CSS": "web/css.md"
+              - "Foundation": "web/foundation.md"
+              - "Asset Management": "web/assets.md"
+              - "Notes": "web/notes.md"
+              - "StyleGuide": "web/styleguide.md"
+              - "Colors": "process.md"
+              - "Material": "web/javascript/material.md"
+          - Ionic: "mobile/ionic.md"
+          - "General Notes": "web/javascript/notes.md"
+          - "JS Starter Config": "web/javascript/startup.md"
+          - "RxJs": "web/javascript/rxjs.md"
+          - TypeScript: "web/typescript.md"
+          - "Testing":
+              - "Intro": "web/javascript/testing/general.md"
+              - "Tape": "web/javascript/testing/tape.md"
+              - "General": "web/javascript/testing.md"
           - Angular:
-              - 'Angular': 'web/javascript/Angular/angular.md'
-          - 'Vuejs':
-              - 'Notes': 'web/javascript/vue/notes.md'
-              - 'Vue': 'web/javascript/vue/vuejs.md'
-              - 'Foundation Setup': 'web/javascript/vue/foundation.md'
-          - Reactjs: 'web/javascript/Reactjs/reactjs.md'
-          - Redux: 'web/javascript/Reactjs/redux.md'
+              - "Angular": "web/javascript/Angular/angular.md"
+          - "Vuejs":
+              - "Notes": "web/javascript/vue/notes.md"
+              - "Vue": "web/javascript/vue/vuejs.md"
+              - "Foundation Setup": "web/javascript/vue/foundation.md"
+          - Reactjs: "web/javascript/Reactjs/reactjs.md"
+          - Redux: "web/javascript/Reactjs/redux.md"
           - Webpack:
-              - 'Webpack': 'web/javascript/webpack/webpack.md'
-              - 'Notes': 'web/javascript/webpack/notes.md'
+              - "Webpack": "web/javascript/webpack/webpack.md"
+              - "Notes": "web/javascript/webpack/notes.md"
       - JavaScript:
-          - 'General Notes': 'web/javascript/notes.md'
-          - 'JS Starter Config': 'web/javascript/startup.md'
-          - 'RxJs': 'web/javascript/rxjs.md'
-          - TypeScript: 'web/typescript.md'
-          - 'Testing':
-              - 'Intro': 'web/javascript/testing/general.md'
-              - 'Tape': 'web/javascript/testing/tape.md'
+          - "General Notes": "web/javascript/notes.md"
+          - "JS Starter Config": "web/javascript/startup.md"
+          - "RxJs": "web/javascript/rxjs.md"
+          - TypeScript: "web/typescript.md"
+          - "Testing":
+              - "Intro": "web/javascript/testing/general.md"
+              - "Tape": "web/javascript/testing/tape.md"
           - Angular:
-              - 'Angular': 'web/javascript/Angular/angular.md'
-          - 'Vuejs':
-              - 'Notes': 'web/javascript/vue/notes.md'
-              - 'Vue': 'web/javascript/vue/vuejs.md'
-              - 'Foundation Setup': 'web/javascript/vue/foundation.md'
-          - Reactjs: 'web/javascript/Reactjs/reactjs.md'
-          - Redux: 'web/javascript/Reactjs/redux.md'
+              - "Angular": "web/javascript/Angular/angular.md"
+          - "Vuejs":
+              - "Notes": "web/javascript/vue/notes.md"
+              - "Vue": "web/javascript/vue/vuejs.md"
+              - "Foundation Setup": "web/javascript/vue/foundation.md"
+          - Reactjs: "web/javascript/Reactjs/reactjs.md"
+          - Redux: "web/javascript/Reactjs/redux.md"
       - PHP:
-          - Resources: 'php/resources.md'
-          - Composer: 'php/composer.md'
+          - Resources: "php/resources.md"
+          - Composer: "php/composer.md"
           - Wordpress:
-              - 'Notes': 'php/wordpress/notes.md'
-              - 'Admin': 'php/wordpress/admin.md'
-              - 'Deployment': 'php/wordpress/deployment.md'
-              - 'Docker': 'php/wordpress/docker.md'
-              - 'WP CLI': 'php/wordpress/WPCli.md'
+              - "Notes": "php/wordpress/notes.md"
+              - "Admin": "php/wordpress/admin.md"
+              - "Deployment": "php/wordpress/deployment.md"
+              - "Docker": "php/wordpress/docker.md"
+              - "WP CLI": "php/wordpress/WPCli.md"
               - API:
-                  - API: 'php/wordpress/api/api.md'
-                  - 'Learn Wordpress REST API': 'php/wordpress/api/learn.md'
-                  - 'Angular': 'php/wordpress/api/angular.md'
-                  - 'Backbone': 'php/wordpress/api/backbonejs.md'
-                  - 'Vuejs': 'php/wordpress/api/vuejs.md'
-              - 'Setup': 'php/wordpress/setup.md'
-              - 'Local Dev': 'php/wordpress/dev.md'
-              - 'Plugin Dev': 'php/wordpress/plugin development.md'
-              - 'Dev from scratch': 'php/wordpress/plugin-dev-from-scratch.md'
-              - 'Theme Dev': 'php/wordpress/themes.md'
+                  - API: "php/wordpress/api/api.md"
+                  - "Learn Wordpress REST API": "php/wordpress/api/learn.md"
+                  - "Angular": "php/wordpress/api/angular.md"
+                  - "Backbone": "php/wordpress/api/backbonejs.md"
+                  - "Vuejs": "php/wordpress/api/vuejs.md"
+              - "Setup": "php/wordpress/setup.md"
+              - "Local Dev": "php/wordpress/dev.md"
+              - "Plugin Dev": "php/wordpress/plugin development.md"
+              - "Dev from scratch": "php/wordpress/plugin-dev-from-scratch.md"
+              - "Theme Dev": "php/wordpress/themes.md"
       - Python:
-          - 'General': 'python/general.md'
-          - 'Packages': 'python/packages.md'
-          - 'Pipenv': 'python/pipenv.md'
-          - 'Research': 'python/research.md'
-          - 'Flask':
-              - General: 'python/flask.md'
-              - 'AWS Authorization and CORS': 'api/CORS configuration for API Gateway.md'
-              - 'CORS and FLASK': 'api/CORS with FLASK without Flask-CORS.md'
-          - 'SQLAlchemy': 'python/sqlalchemy.md'
-          - 'Testing': 'python/testing.md'
-      - Ruby: 'ruby/ruby.md'
+          - "General": "python/general.md"
+          - "Packages": "python/packages.md"
+          - "Pipenv": "python/pipenv.md"
+          - "Research": "python/research.md"
+          - "Flask":
+              - General: "python/flask.md"
+              - "AWS Authorization and CORS": "api/CORS configuration for API Gateway.md"
+              - "CORS and FLASK": "api/CORS with FLASK without Flask-CORS.md"
+          - "SQLAlchemy": "python/sqlalchemy.md"
+          - "Testing": "python/testing.md"
+      - Ruby: "ruby/ruby.md"
       - Java:
-          - 'Notes': 'java/java.md'
-          - 'Spring': 'java/spring.md'
-          - 'JHipster': 'java/jhipster.md'
+          - "Notes": "java/java.md"
+          - "Spring": "java/spring.md"
+          - "JHipster": "java/jhipster.md"
       - Nodejs:
-          - 'Notes': 'nodejs/notes.md'
+          - "Notes": "nodejs/notes.md"
       - Version Control:
-          - 'Git': 'git.md'
+          - "Git": "git.md"
       - Mobile:
-          - General: 'mobile/general.md'
-          - Research: 'mobile/mobile.md'
-          - 'Mobile Dev Notes': 'mobile/mobilenotes.md'
-          - Ionic: 'mobile/ionic.md'
+          - General: "mobile/general.md"
+          - Research: "mobile/mobile.md"
+          - "Mobile Dev Notes": "mobile/mobilenotes.md"
+          - Ionic: "mobile/ionic.md"
   - Operations:
-      - 'Local': 'ops/local.md'
-      - 'Linux': 'ops/Linux System Administration.md'
-      - 'Vagrant': 'ops/vagrant.md'
-      - 'Docker': 'ops/docker.md'
-      - 'Amazon': 'ops/amazon.md'
-      - 'Azure': 'ops/azure.md'
-      - 'Firebase': 'ops/Google Firebase.md'
+      - "Local": "ops/local.md"
+      - "Linux": "ops/Linux System Administration.md"
+      - "Vagrant": "ops/vagrant.md"
+      - "Docker": "ops/docker.md"
+      - "Amazon": "ops/amazon.md"
+      - "Azure": "ops/azure.md"
+      - "Firebase": "ops/Google Firebase.md"
   - Tools:
-      - 'General': 'research.md'
-      - Reporting: 'reporting.md'
-      - Documentation: 'docs.md'
-      - 'Mock and API Tools': 'tools.md'
-      - 'Command Line': 'cmd/cmd.md'
-      - 'Content Management': 'cms.md'
+      - "General": "research.md"
+      - Reporting: "reporting.md"
+      - Documentation: "docs.md"
+      - "Mock and API Tools": "tools.md"
+      - "Command Line": "cmd/cmd.md"
+      - "Content Management": "cms.md"
   - Learning:
-      - 'Using Jupyter': 'learning/jupyter.md'
-      - 'RXJS': 'learning/rxjs.md'
-      - 'Angular 4+': 'learning/LearnAngular.md'
-      - 'Wordpress Rest API': 'php/wordpress/api/learn.md'
-      - 'Tutorials': 'learning/tutorials.md'
-      - 'AI': 'learning/ai.md'
+      - "Using Jupyter": "learning/jupyter.md"
+      - "RXJS": "learning/rxjs.md"
+      - "Angular 4+": "learning/LearnAngular.md"
+      - "Wordpress Rest API": "php/wordpress/api/learn.md"
+      - "Tutorials": "learning/tutorials.md"
+      - "AI": "learning/ai.md"
       - Teaching:
-          - 'Tools': 'teaching/tools.md'
-          - 'Custom Modules': 'teaching/modules.md'
-          - 'OpenEdx':
-              - 'Notes': 'teaching/openedx/openedx.md'
-          - 'Class Tutorials':
-              - 'HTML and CSS':
-                  - 'Semantic HTML': 'teaching/html/semantic.md'
-                  - 'CSS': 'teaching/html/css.md'
-              - 'JavaScript':
-                  - 'Intro': 'teaching/javascript/intro.md'
-                  - 'Classes':
-                      - 'Class 1': 'teaching/javascript/classes/class1.md'
-                  - 'Tutorials':
-                      - 'Prototyping With Vue and Marvel': 'teaching/javascript/tutorials/prototypewithvue.md'
-  - 'Developer Journal':
-      - '2018':
-          - '2 July 2018': 'journal/dev_journal_2_july_2018.md'
-          - '25 June 2018': 'journal/dev_journal_25_june_2018.md'
-          - '18 June 2018': 'journal/DevJourn_18_june_2018.md'
-          - '11 June 2018': 'journal/DevJourn_11_june_2018.md'
-          - '09 July 2018': 'journal/Developer Journal 9 July 2018.md'
-          - '16 July 2018': 'journal/Developer Journal 16 July 2018.md'
-          - '23 July 2018': 'journal/Developer Journal 23 July 2018.md'
-          - '30 July 2018': 'journal/Developer Journal 30 July 2018.md'
-          - '06 August 2018': 'journal/Developer Journal 06 August 2018.md'
-          - '13 August 2018': 'journal/Developer Journal 13 August 2018.md'
-      - '2019':
-          - 'May':
-              - 'Week of 20 May 2019': 'journal/DevJournal26May2019.md'
-          - 'June':
-              - '01 June 2019': 'journal/DevJourn01Jun2019.md'
-              - '09 June 2019': 'journal/DevJournal09Jun2019.md'
-              - '30 June 2019': 'journal/DevJournal30June2019.md'
-          - 'August':
-              - '09 August 2019': 'journal/DevJournal09Aug2019.md'
-          - 'September':
-              - '22 Sep 2019': 'journal/DevJournal22Sep2019.md'
-          - 'October':
-              - 'Week of 13 October 2019': 'journal/DevJournal16Oct2019.md'
-      - Archive: 'journal/DevJourn_archive.md'
+          - "Tools": "teaching/tools.md"
+          - "Custom Modules": "teaching/modules.md"
+          - "OpenEdx":
+              - "Notes": "teaching/openedx/openedx.md"
+          - "Class Tutorials":
+              - "HTML and CSS":
+                  - "Semantic HTML": "teaching/html/semantic.md"
+                  - "CSS": "teaching/html/css.md"
+              - "JavaScript":
+                  - "Intro": "teaching/javascript/intro.md"
+                  - "Classes":
+                      - "Class 1": "teaching/javascript/classes/class1.md"
+                  - "Tutorials":
+                      - "Prototyping With Vue and Marvel": "teaching/javascript/tutorials/prototypewithvue.md"
+  - "Developer Journal":
+      - "2018":
+          - "2 July 2018": "journal/dev_journal_2_july_2018.md"
+          - "25 June 2018": "journal/dev_journal_25_june_2018.md"
+          - "18 June 2018": "journal/DevJourn_18_june_2018.md"
+          - "11 June 2018": "journal/DevJourn_11_june_2018.md"
+          - "09 July 2018": "journal/Developer Journal 9 July 2018.md"
+          - "16 July 2018": "journal/Developer Journal 16 July 2018.md"
+          - "23 July 2018": "journal/Developer Journal 23 July 2018.md"
+          - "30 July 2018": "journal/Developer Journal 30 July 2018.md"
+          - "06 August 2018": "journal/Developer Journal 06 August 2018.md"
+          - "13 August 2018": "journal/Developer Journal 13 August 2018.md"
+      - "2019":
+          - "May":
+              - "Week of 20 May 2019": "journal/DevJournal26May2019.md"
+          - "June":
+              - "01 June 2019": "journal/DevJourn01Jun2019.md"
+              - "09 June 2019": "journal/DevJournal09Jun2019.md"
+              - "30 June 2019": "journal/DevJournal30June2019.md"
+          - "August":
+              - "09 August 2019": "journal/DevJournal09Aug2019.md"
+          - "September":
+              - "22 Sep 2019": "journal/DevJournal22Sep2019.md"
+          - "October":
+              - "Week of 13 October 2019": "journal/DevJournal16Oct2019.md"
+          - "December":
+              - "Week of 31 Decebmer 2019": "journal/DevJournal31Dec2019.md"
+      - Archive: "journal/DevJourn_archive.md"
   - Projects:
       - Nziswano:
-          - Notes: 'projects/nziswano/notes.md'
-      - 'KinderCare':
-          - Notes: 'Notes/kindercare.md'
-          - Development: 'projects/kinder/Development.md'
-      - 'Backend': 'Notes/backend.md'
-      - 'LookFindMe': 'Notes/lookfindme.md'
+          - Notes: "projects/nziswano/notes.md"
+      - "KinderCare":
+          - Notes: "Notes/kindercare.md"
+          - Development: "projects/kinder/Development.md"
+      - "Backend": "Notes/backend.md"
+      - "LookFindMe": "Notes/lookfindme.md"
   - Misc:
-      - 'House related': 'misc/house.md'
-      - 'Setup Multiple DSTV Exploras': 'misc/dstv.md'
-      - 'Visual StoryTelling/Sketchnotes': 'misc/sketch.md'
-      - 'Misc': 'misc.md'
-      - 'Other': 'other.md'
-      - Work: 'work/employment.md'
-      - 'RTR': 'journal/My PHP experience includes Rent The Runway who initially had a.md'
+      - "House related": "misc/house.md"
+      - "Setup Multiple DSTV Exploras": "misc/dstv.md"
+      - "Visual StoryTelling/Sketchnotes": "misc/sketch.md"
+      - "Misc": "misc.md"
+      - "Other": "other.md"
+      - Work: "work/employment.md"
+      - "RTR": "journal/My PHP experience includes Rent The Runway who initially had a.md"
