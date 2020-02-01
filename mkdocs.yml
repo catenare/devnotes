@@ -42,6 +42,7 @@ nav:
           - Mysql: "database/mysql.md"
           - Postgresql: "database/postgresql.md"
       - "Front End":
+          - Storybook: "web/storybook/tutorial.md"
           - "Basics":
               - "Front": "web/front.md"
               - "CSS": "web/css.md"
@@ -147,6 +148,7 @@ nav:
       - "Mock and API Tools": "tools.md"
       - "Command Line": "cmd/cmd.md"
       - "Content Management": "cms.md"
+      - "Silence UPS": "ops/silence_your_ups.md"
   - Learning:
       - "Using Jupyter": "learning/jupyter.md"
       - "RXJS": "learning/rxjs.md"
