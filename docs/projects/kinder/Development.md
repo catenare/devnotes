@@ -5,6 +5,13 @@
 - Setup for git since I'm working with multiple git repositories.
 
 ```
+git remote add origin git@personal:catenare/kinder-site.git
+git push -u origin master
+```
+
+- update _.git/config_
+
+```
 [remote "origin"]
         url = git@personal:catenare/kinderAdmin.git
 [user]

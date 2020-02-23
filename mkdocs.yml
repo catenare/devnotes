@@ -92,11 +92,13 @@ nav:
           - Resources: "php/resources.md"
           - Composer: "php/composer.md"
           - Wordpress:
+              - "Resources": "php/wordpress/resources.md"
               - "Notes": "php/wordpress/notes.md"
               - "Admin": "php/wordpress/admin.md"
               - "Deployment": "php/wordpress/deployment.md"
               - "Docker": "php/wordpress/docker.md"
               - "WP CLI": "php/wordpress/WPCli.md"
+              - "AWS": "php/wordpress/aws.md"
               - API:
                   - API: "php/wordpress/api/api.md"
                   - "Learn Wordpress REST API": "php/wordpress/api/learn.md"
