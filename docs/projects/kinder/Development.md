@@ -19,6 +19,17 @@ git push -u origin master
         name = Johan Martin
 ```
 
+## Restore old database to work with
+
+- use PgAdmin4 web tool
+
+* Create database _paseo_
+* Create role _paseo_
+
+- Restore database _paseo.sql_ saved in OneDrive.
+
+* Restore has errors but can be ignored
+
 ## Pipfile upgrade for docs
 
 - Changed the pipfile version to latest version of python
