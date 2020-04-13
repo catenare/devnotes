@@ -1,3 +1,35 @@
+# Wordpress API
+## Resources
+* [REST API Handbook](https://developer.wordpress.org/rest-api/)
+
+### Auth Plugins
+* [JWT-Authentication](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/)
+* [Application Passwords](https://wordpress.org/plugins/application-passwords/)
+* [OAuth 1.0a Server](https://wordpress.org/plugins/rest-api-oauth1/)
+* [Basic Auth](https://github.com/WP-API/Basic-Auth)
+
+### Using JWT-Auth
+* Added to *composer.json*
+    * Under require: `"wpackagist-plugin/jwt-authentication-for-wp-rest-api": "~1"`
+* Added JWT constant to *wp-config.php* - `define('JWT_AUTH_SECRET_KEY','');`
+* Access - local server - *http://paseo.demo/wp-json/jwt-auth/v1/token* Pass in username and password via form post.
+
+## Notes
+* pass **?_embed** as part of the url to get some content embedded. `http://paseo.demo/wp-json/wp/v2/posts?_embed`;
+
+### Tools/packages used
+* [Timber](https://github.com/timber/timber) - Templating engine. Not really necessary but think can be used to customize the admin site.
+* [Vuejs](https://vuejs.org/) - Front-end framework I'm using for custom site.
+
+## Issues
+* Learning this API is much harder than it should be.
+* Biggest issue I'm running into is using the local client.
+* Figuring out how to use the remote endpoints seems so much simpler.
+* Documentation is very spotty.
+* Hard to fine relevant or up-to-date resources.
+* Don't seem to be many books around (that are up to date).
+* **Decided I'm just going to use React. Not worth the extra hassle trying to figure out the Wordpress way**
+
 # Admin notes
 ## Admin and ajax
 * [Using WP Async Requests](https://lkwdwrd.com/using-wp-ajax-async-requests/)

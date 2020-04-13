@@ -38,10 +38,25 @@ nav:
         - Mongo: web_development/database/mongo.md
         - MySQL: web_development/database/mysql.md
         - Postgres: web_development/database/postgresql.md
+    - FrontEnd:
+        - General: web_development/front_end/general.md
+        - CORS: web_development/front_end/cors.md
+        - Foundation: web_development/front_end/foundation.md
+        - StyleGuide: web_development/front_end/styleguide.md
+        - TypeScript: web_development/front_end/typescript.md
+    - Storybook:
+        - Tutorial: web_development/storybook/tutorial.md
     - WordPress:
-        - Setup: web_development/wordpress/setup.md
+        - General: web_development/wordpress/general.md
+        - API: web_development/wordpress/api.md
+        - Composer: web_development/wordpress/composer.md
+        - Deployment: web_development/wordpress/deployment.md
+        - "Plugin Development": web_development/wordpress/plugin_development.md
+        - Themes: web_development/wordpress/themes.md
   - Tools:
     - NodeJS:
         General: tools/nodejs/general.md
   - Resources:
     - PHP: resources/php.md
+    - Wordpress:
+        API: resources/wordpress/api.md

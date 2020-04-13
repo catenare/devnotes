@@ -1,6 +1,6 @@
 # Typescript Notes
 ## tslint
-* [tslint](https://github.com/palantir/tslint/blob/master/docs/usage/rule-flags/index.md) - how to disable rules per line or section. // tslint:disable-line 
+* ~~[Tslint](https://github.com/palantir/tslint/blob/master/docs/usage/rule-flags/index.md) - how to disable rules per line or section. // tslint:disable-line~~ Use eslint
 
 * Import json file into a typescript product
 * [How to Import json into TypeScript](https://hackernoon.com/import-json-into-typescript-8d465beded79)
@@ -16,4 +16,3 @@ declare module "*.json" {
 ## Issues
 * Dealing with `this`
 * [This in typescript](https://github.com/Microsoft/TypeScript/wiki/'this'-in-TypeScript)
-

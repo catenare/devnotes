@@ -1,5 +1,68 @@
+# Wordpress Notes
+## WP Cli
+* Updating cli on local machine - `~/.bin/wp cli update`
+## Errors
+* *WordPress database error  for query SHOW FULL COLUMNS FROM*
+    * *Found it... Security patch in 4.1.2 added a new function, 'wpdb->process_field_lengths()', that causes an insert or update query not to be run if the data is longer than the permissible size based on the database schema.*
+    * [Error fix](https://github.com/andyplak/events-manager-pro-sage-pay/issues/19)
+
+## API Notes
+* Configure headers for API Rest Calls
+* [Access Control Headers for Wordpress Rest API](https://joshpress.net/access-control-headers-for-the-wordpress-rest-api/)
+    * Added below code to plugin startup file. Let's one change headers and permissions.
+```php
+/**
+ * Use * for origin
+ */
+ add_action( 'rest_api_init', function() {
+
+ remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
+ add_filter( 'rest_pre_serve_request', function( $value ) {
+ 	header( 'Access-Control-Allow-Origin: *' );
+ 	header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );
+ 	header( 'Access-Control-Allow-Credentials: true' );
+ 	header( 'Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, PAS-Fingerprint, PAS-Check, PAS-Nonce, PAS-Captcha');
+ 	header('Access-Control-Allow-Headers: Authorization, Content-Type, PAS-Nonce, PAS-Fingerprint, PAS-Check');
+ 	return $value;
+ });
+ }, 15 );
+```
+## Wordpress Resources
+* [WP Hasty](https://www.wp-hasty.com/)
+* Using jquery-ui with wordpress.
+    * [How to use jquery-ui in Wordpress](http://jafty.com/blog/tag/how-to-use-jquery-ui-in-wordpress/)
+
+
+## Setting up S3 Plugin
+* [S3 Uploads Plugin](https://github.com/humanmade/S3-Uploads) - made by [Human Made](https://hmn.md/).
+* Using Composer with S3.
+```json
+"require": {
+    "humanmade/s3-uploads":"dev-master"
+}
+"repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/humanmade/S3-Uploads.git"
+    }
+]
+```
+* Setup S3 Bucket
+    * bucket name
+* Edit wp-config.php
+```php
+define( 'S3_UPLOADS_BUCKET', 'my-bucket' );
+define( 'S3_UPLOADS_KEY', '' );
+define( 'S3_UPLOADS_SECRET', '' );
+define( 'S3_UPLOADS_REGION', '' );
+```
+
+* need wp-cli installed
+* Be sure to be in public folder
+* verify - `wp s3-uploads verify`
+* enable - `wp s3-uploads enable`
+
 # Setting up Wordpress with Composer, Nginx, PHP-fpm
-## See [Local Development Setup](dev.md) for info about composer, nginx, etc.
 ## Install packages
 * Base packages
     * mysql
@@ -8,11 +71,11 @@
 
 ### Setup composer and *composer.json* config file
 * Install *composer* in `/usr/local/bin/`
-* Install 
+* Install
 * Create **composer.json** file - `composer init`
 * Configure with additional settings for wordpress
     * Add [wpackagist](https://wpackagist.org) repository to repositories
-    * In *extra*, 
+    * In *extra*,
         * add *wordpress-install-dir* as *public*
         * add "installer-paths" for plugins and themes - see below
     * Add custom repositories from version control for custom developed plugins and themes
@@ -231,10 +294,10 @@ server {
 		index index.php;
 		try_files $uri $uri/ /index.php?$args;
 	}
-	
+
 	 # Add trailing slash to */wp-admin requests.
    	 rewrite /wp-admin$ $scheme://$host$request_uri/ permanent;
-    	
+
     	# this prevents hidden files (beginning with a period) from being served
 	location ~ /\.  { access_log off; log_not_found off; deny all; }
 	# Pass uploaded files to wp-includes/ms-files.php.
@@ -250,7 +313,7 @@ server {
         	rewrite ^/[_0-9a-zA-Z-]+.*(/wp-admin/.*\.php)$ $1 last;
         	rewrite ^/[_0-9a-zA-Z-]+(/.*\.php)$ $1 last;
     	}
-	
+
 	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
 	#
 	location ~ \.php$ {
@@ -285,12 +348,12 @@ ssl_certificate_key /etc/letsencrypt/live/api.martinsonline.org/privkey.pem; # m
 * `sudo systemctl restart php70-fpm`
 * `sudo systemctl restart mysql-restart`
 
-## Multi-site configuration 
+## Multi-site configuration
 * Resources [Multisite Network Admin](https://codex.wordpress.org/Multisite_Network_Administration)
 1. Enable multisite
     * *wp-config.php* - add `define('WP_ALLOW_MULTISITE', true);` under section with /* multisite */
     * Refresh site - will create the necessary tables
-    * Add the additional settings under /* multisite */    
+    * Add the additional settings under /* multisite */
 ```php
     define('MULTISITE', true);
     define('SUBDOMAIN_INSTALL', false);
@@ -303,3 +366,7 @@ ssl_certificate_key /etc/letsencrypt/live/api.martinsonline.org/privkey.pem; # m
 
 * [nginx config gist](https://gist.github.com/evansolomon/2274120)
     * Notes for rewrite rules in nginx
+
+# Configure PHP with Docker
+## Setup
+* [Docker README](https://github.com/docker-library/docs/blob/master/php/README.md)

@@ -77,8 +77,4 @@ test("render taskbox screen", () => {
 ```
 
 ### Testing using chromatic
-
-- `npx chromatic --app-code=z93eri6nyt8` - code for running chromatic test
-
-* `CHROMATIC_APP_CODE=z93eri6nyt8`
 * Start chromatic without starting storybook - `--do-not-start`
