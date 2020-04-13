@@ -1,4 +1,19 @@
-# Storybook Tutorial
+# Storybook
+
+## About
+
+- [Storybook](https://storybook.js.org/)
+- [Examples](https://storybook.js.org/docs/examples/)
+- [Mirage](https://miragejs.com/)
+- [Microsoft Playwright](https://github.com/microsoft/playwright)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+
+### Create a component
+
+```jsx
+import { React } from "react";
+```
 
 ## Doing the Storybook Tutorial [Tutorial](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/)
 

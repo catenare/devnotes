@@ -73,6 +73,7 @@ nav:
     - General: resources/general.md
     - JavaScript: resources/javascript.md
     - Java: resources/java.md
+    - JSON-Schema: resources/jsonschema.md
     - Mobile: resources/mobile/general.md
     - PHP:
         - General: resources/php/general.md
