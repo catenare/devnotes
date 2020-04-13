@@ -37,7 +37,7 @@
 * [Opigno](https://www.opigno.org/en#home) - Drupal based
 * [Ilias](https://www.ilias.de/docu/goto_docu_root_1.html) - PHP based
 * [SakaiProject](https://www.sakaiproject.org/) - Java Based
-* [Chamilo](https://chamilo.org/) - 
+* [Chamilo](https://chamilo.org/) -
 ### LMS Tools Commercial
 * [Eliademy](https://eliademy.com/en)
 
@@ -63,3 +63,14 @@
 
 ## Free hosting for html sites
 * [NeoCities](https://neocities.org/)
+
+# Custom modules
+
+* Building a timeline
+    * [W3Schools](https://www.w3schools.com/howto/howto_css_timeline.asp)
+    * [CSS TimeLines](http://freefrontend.com/css-timelines/)
+        * [jQuery Scroll plugin](https://github.com/jlmakes/scrollreveal)
+
+## Github Education
+* [GitHub Classroom](https://education.github.com/)
+* [GitHub JavaScript Classroom](https://classroom.github.com/classrooms/20524172-javascript-introductory-class)

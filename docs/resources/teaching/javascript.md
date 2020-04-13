@@ -1,5 +1,13 @@
 # Introduction to learning JavaScript
 
+## Introduction to JavaScript
+* Goals
+    * Tools
+        * [Mozilla Thimble](https://thimble.mozilla.org/en-US/) - Geared towards learning
+            * [CodePen](https://codepen.io/) - too much to get in the way.
+        * [GitHub](https://github.com/)
+        * [Visual Studio Code](https://code.visualstudio.com/)
+
 ## Resources
 * Programs
     * [freeCodeCamp](https://github.com/freeCodeCamp)
@@ -32,7 +40,7 @@
     * [Nifty Assignments](http://nifty.stanford.edu/)
     * [Breakout Game](https://codeincomplete.com/posts/javascript-breakout/)
     * [Intro Computing](http://introcomputing.org/) - Excercises.
-    
+
 * Sites
     * [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
     * [JavaScript Challenges](http://tcorral.github.io/javascript-challenges-book/)
@@ -155,7 +163,7 @@
     * Discussion group
     * Resources
 
-## Resources 
+## Resources
 * [Web Engineering](http://web-engineering.info/) - free resources
 
 * 10 week class

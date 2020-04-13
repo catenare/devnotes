@@ -24,7 +24,6 @@
     * Add to *~/.profile*
         * `export LC_ALL=en_US.UTF-8`
         * `export LANG=en_US.UTF-8`
-* [Jupyter Notebooks](../learning/jupyter.md)
 * Special Method Names
     * [Computed Attributes](http://www.diveintopython3.net/special-method-names.html) - magic names for objects
     * [MagicMethods](https://rszalski.github.io/magicmethods/)
@@ -39,7 +38,7 @@
   * `uwsgi --socket 0.0.0.0:5000 --protocol=http -H /Users/themartins/Envs/lookfindmeAPI-jd3kET2g -w wsgi`
   * `uwsgi --socket 0.0.0.0:5000 --protocol=http --wsgi-file wsgi.py --callable myApp -H /Users/themartins/Envs/lookfindmeAPI-jd3kET2g`
 
-## ~~Pip~~ **Now using pipenv** [Pipenv](pipenv.md)
+## ~~Pip~~ **Now using pipenv**
 * Upgrade pip - `pip install --upgrade pip`
 * Error message: *"Can not perform a '--user' install. User site-packages are not visible in this virtualenv"*
 * Problems **~/Library/Application Support/pip/pip.conf** contains **user=true**
@@ -62,7 +61,7 @@ user=false
 
 ### Setup pip config file - want to set default settings for command line. Like always install in user space.
 * Create file ```$HOME/Library/Application Support/pip/pip.conf```
-* Edit file 
+* Edit file
 ```Ini
 [Install]
 user = true
@@ -75,8 +74,6 @@ user = true
 * [setup.py guide](https://github.com/kennethreitz/setup.py)
 
 
-
-## ~~Virtual Environments~~ - Using **[pipenv](pipenv.md)** now
 * [VirtualEnvWrapper](https://virtualenvwrapper.readthedocs.io/en/latest/index.html)
 
 ## Uwsgi and NGINX
@@ -139,4 +136,3 @@ server {
     }
   }
 ```
-

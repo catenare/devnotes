@@ -32,6 +32,7 @@ nav:
         - Firebase:
             - "General": cloud/google/firebase/general.md
   - "Web Development":
+    - Docker: web_development/docker.md
     - Database:
         - Migrations:
             - General: web_development/database/migrations/general.md
@@ -43,7 +44,14 @@ nav:
         - CORS: web_development/front_end/cors.md
         - Foundation: web_development/front_end/foundation.md
         - StyleGuide: web_development/front_end/styleguide.md
-        - TypeScript: web_development/front_end/typescript.md
+        - Javascript:
+            - TypeScript: web_development/front_end/javascript/typescript.md
+            - Angular: web_development/front_end/javascript/angular.md
+            - React: web_development/front_end/javascript/react.md
+            - Rxjs: web_development/front_end/javascript/rxjs.md
+            - Vue: web_development/front_end/javascript/vue.md
+            - Testing: web_development/front_end/javascript/testing.md
+            - webpack: web_development/front_end/javascript/webpack.md
     - Storybook:
         - Tutorial: web_development/storybook/tutorial.md
     - WordPress:
@@ -54,9 +62,35 @@ nav:
         - "Plugin Development": web_development/wordpress/plugin_development.md
         - Themes: web_development/wordpress/themes.md
   - Tools:
+    - General: tools/general.md
+    - Git: tools/git.md
     - NodeJS:
-        General: tools/nodejs/general.md
+        - General: tools/nodejs/general.md
+    - Notes: tools/notes.md
+    - Reporting: tools/reporting.md
+    - Vagrant: tools/vagrant.md
   - Resources:
-    - PHP: resources/php.md
-    - Wordpress:
-        API: resources/wordpress/api.md
+    - General: resources/general.md
+    - JavaScript: resources/javascript.md
+    - Java: resources/java.md
+    - Mobile: resources/mobile/general.md
+    - PHP:
+        - General: resources/php/general.md
+        - Wordpress:
+            - API: resources/php/wordpress/api.md
+    - Python:
+        - General: resources/python/general.md
+        - Flask: resources/python/flask.md
+        - Jupyter: resources/python/jupyter.md
+        - Packages: resources/python/packages.md
+        - SqlAlchemy: resources/python/sqlalchemy.md
+        - Testing: resources/python/testing.md
+    - Ruby: resources/ruby.md
+    - "General Tutorials": resources/tutorials/general.md
+    - "Web Development": resources/web_dev.md
+    - Teaching:
+        - HTML: resources/teaching/html.md
+        - JavaScript: resources/teaching/javascript.md
+        - OpenEdx: resources/teaching/openedx.md
+        - Prototyping: resources/teaching/prototyping.md
+        - Tools: resources/teaching/tools.md

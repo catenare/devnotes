@@ -24,7 +24,7 @@
         * Install FontAwesome - `npm install --save font-awesome`
         * Create script to copy fonts into `www/assets/fonts`
 
-        * Set path to fonts in SCSS - `$fa-font-path: /assets/fonts;` in `scr/app/app.scss`; 
+        * Set path to fonts in SCSS - `$fa-font-path: /assets/fonts;` in `scr/app/app.scss`;
         * https://forum.ionicframework.com/t/adding-font-awesome-to-rc0/65925/3 - comments for using with sass to convert to ion-icon.
 
 ## Fixing Issues
@@ -134,7 +134,7 @@ getFinger.then( (result) => this.getInitHeaders(result) );
     "module": "commonjs",
      "lib": [
        "es2016", "dom"
-     ],                             
+     ],
      "allowSyntheticDefaultImports": true,
      "experimentalDecorators": true,
      "emitDecoratorMetadata": true
@@ -196,3 +196,71 @@ node_modules
 
 ## Material Design
 * [Material Design Web](https://github.com/material-components/material-components-web)
+
+### Notes for material.angular.io
+* Using with autocomplete
+    * displayWith issue: don't have access to the host component.
+        * [Issue 3308](https://github.com/angular/material2/issues/3308)
+        * [Issue 3359](https://github.com/angular/material2/issues/3359)
+    * Fix/workaround below.
+```ts
+  get displayName() {
+    return (val) => val ? this.accounts.filter( (account) => account.account_uuid === val)[0].full_name : undefined;
+  }
+```
+
+# JavaScript Project Startup
+
+## Basic setup
+* *.editorconfig*
+```ini
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+```
+
+* Setup git repository
+* `touch .gitignore`
+* `git init`
+* *.gitignore*
+```ini
+node_modules
+dist
+.vscode/
+.idea/
+```
+
+## NPM Setup
+1. `npm init -f` - create *package.json*
+
+1. Setup *eslint*
+    * `./node_modules/.bin/eslint --init`
+    * *Use a popular style guide*
+    * *Standard*
+    * *JSON*
+
+1. Setup *tslint*
+    * `./node_modules/.bin/tslint --init`
+
+1. Setup *tsconfig.json*
+    * `./node_modules/.bin/tsc --init`
+
+## Npm Scripts
+```json
+  "scripts": {
+    "start": "npm-run-all -n -p dev:server",
+    "dev": "npm-run-all -n -p dev:server lint:watch",
+    "dev:server": "cross-env webpack-dev-server --history-api-fallback --color --progress --hot --inline",
+    "build": "npm-run-all -s build:webpack",
+    "build:webpack": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "lint": "esw webpack.config.* src --color",
+    "lint:watch": "npm run lint -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+```

@@ -1,3 +1,44 @@
+# Testing
+
+## Resources
+* Reactjs
+	* [Enzyme](https://github.com/airbnb/enzyme)
+* Other
+	* [Karma](https://karma-runner.github.io/1.0/index.html) - runner
+	* [Mocha](https://mochajs.org/) - framework
+	* [Chai](http://chaijs.com/) - assertion library
+* Acceptance testing
+	* [Robot Framework](http://robotframework.org/)
+		* Using `mkvirtualenv` - `mkvirtualenv -a . johan-martin`
+		* `pip install robotframework`
+## Getting started
+* installation `npm i --save-dev enzyme enzyme-adapter-react-16 chai mocha karma`
+* Install *Robot Framework*
+	* `mkvirtualenv -a . johan-martin`
+	* `pip install robotframework`
+
+## Testing framework
+* Using Karma, Mocha, Chai
+    * `npm -i --save-dev karma mocha chai`
+
+## TAP
+* [Test Anything Protocol](https://testanything.org/)
+    * [tap-spec](https://github.com/scottcorgan/tap-spec) - output similar to Mocha
+    * [Faucet](https://github.com/substack/faucet) - TAP Reporter
+## Tape
+* [Why I use Tape...](https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4)
+
+## Jasmine and Karma
+* [Jasmine](https://jasmine.github.io/)
+    * Can't test es6
+* [Karma](https://karma-runner.github.io/2.0/index.html)
+    * [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome)
+* Docs
+    * [Jasmine, es6](https://www.classandobjects.com/test_using_jasmine_react_es6_webpack/)
+    * [Jasmine, Karma, Webpack, Commandline](https://what-problem-does-it-solve.com/webpack/testing.html)
+    * [Jasmine, Es6](http://www.syntaxsuccess.com/viewarticle/writing-jasmine-unit-tests-in-es6)
+    * [Karma, webpack, Jasmine](https://kentor.me/posts/testing-react-and-flux-applications-with-karma-and-webpack/)
+
 # Testing with Tape
 ## Requirements
 * Using typescript for development
@@ -87,7 +128,7 @@
 * Error: **"Module not found: Error: Can't resolve 'fs' in"**
     * [Browser Testing and Code Coverage with Karma, Tape, and Webpack](http://rmurphey.com/blog/2015/07/20/karma-webpack-tape-code-coverage)
     * Resolved by adding below to webpack.config.js:
-```js  
+```js
 node: {
     fs: 'empty'
   },
