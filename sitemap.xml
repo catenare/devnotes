@@ -211,6 +211,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://devnotes.johan-martin.com/resources/jsonschema/</loc>
+     <lastmod>2020-04-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://devnotes.johan-martin.com/resources/mobile/general/</loc>
      <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
