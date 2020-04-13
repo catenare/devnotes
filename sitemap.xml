@@ -2,697 +2,297 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://devnotes.johan-martin.com/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/auth/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/api/general/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/api/rest/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/api/AmazonGatewayAPI/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/api/CORS configuration for API Gateway/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/api/CORS with FLASK without Flask-CORS/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/cloud/aws/aws/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/cloud/aws/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://devnotes.johan-martin.com/cloud/aws/amplify/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <lastmod>2020-04-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/cloud/aws/api_gateway/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://devnotes.johan-martin.com/cloud/aws/cognito/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://devnotes.johan-martin.com/cloud/aws/dynamodb/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <lastmod>2020-04-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devnotes.johan-martin.com/cloud/aws/lightsail/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://devnotes.johan-martin.com/cloud/aws/search/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/cloud/google/google/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/cloud/azure/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/database/dbmigrations/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/cloud/google/firebase/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/database/flyway/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/docker/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/database/mongo/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/database/migrations/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/database/mysql/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/database/mongo/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/database/postgresql/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/database/mysql/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/front/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/database/postgresql/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/css/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/foundation/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/cors/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/assets/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/foundation/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/styleguide/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/styleguide/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/javascript/typescript/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/process/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/javascript/angular/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/material/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/javascript/react/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/mobile/ionic/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/javascript/rxjs/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/javascript/vue/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/startup/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/javascript/testing/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/rxjs/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/front_end/javascript/webpack/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/typescript/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/storybook/tutorial/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/testing/general/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/wordpress/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/testing/tape/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/wordpress/api/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/testing/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/wordpress/composer/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/Angular/angular/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/wordpress/deployment/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/vue/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/wordpress/plugin_development/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/vue/vuejs/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/web_development/wordpress/themes/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/vue/foundation/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/tools/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/Reactjs/reactjs/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/tools/git/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/Reactjs/redux/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/tools/nodejs/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/webpack/webpack/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/tools/notes/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/webpack/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/tools/reporting/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/tools/vagrant/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/startup/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/rxjs/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/javascript/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/typescript/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/java/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/testing/general/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/mobile/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/testing/tape/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/php/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/Angular/angular/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/php/wordpress/api/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/vue/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/python/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/vue/vuejs/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/python/flask/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/vue/foundation/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/python/jupyter/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/Reactjs/reactjs/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/python/packages/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/web/javascript/Reactjs/redux/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/python/sqlalchemy/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/resources/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/python/testing/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/composer/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/ruby/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/tutorials/general/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/admin/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/web_dev/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/deployment/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/teaching/html/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/docker/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/teaching/javascript/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/WPCli/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/teaching/openedx/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/api/api/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/teaching/prototyping/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/api/learn/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/api/angular/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/api/backbonejs/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/api/vuejs/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/setup/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/dev/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/plugin development/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/plugin-dev-from-scratch/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/themes/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/python/general/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/python/packages/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/python/pipenv/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/python/research/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/python/flask/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/api/CORS configuration for API Gateway/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/api/CORS with FLASK without Flask-CORS/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/python/sqlalchemy/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/python/testing/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/ruby/ruby/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/java/java/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/java/spring/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/java/jhipster/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/nodejs/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/git/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/mobile/general/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/mobile/mobile/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/mobile/mobilenotes/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/mobile/ionic/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/ops/local/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/ops/Linux System Administration/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/ops/vagrant/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/ops/docker/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/ops/amazon/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/ops/azure/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/ops/Google Firebase/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/research/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/reporting/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/docs/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/tools/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/cmd/cmd/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/cms/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/learning/jupyter/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/learning/rxjs/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/learning/LearnAngular/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/php/wordpress/api/learn/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/learning/tutorials/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/learning/ai/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/teaching/tools/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/teaching/modules/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/teaching/openedx/openedx/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/teaching/html/semantic/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/teaching/html/css/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/teaching/javascript/intro/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/teaching/javascript/classes/class1/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/teaching/javascript/tutorials/prototypewithvue/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/dev_journal_2_july_2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/dev_journal_25_june_2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/DevJourn_18_june_2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/DevJourn_11_june_2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 9 July 2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 16 July 2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 23 July 2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 30 July 2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 06 August 2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/Developer Journal 13 August 2018/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/DevJourn_archive/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/projects/nziswano/notes/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/Notes/kindercare/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/Notes/backend/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/Notes/lookfindme/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/misc/house/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/misc/dstv/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/misc/sketch/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/misc/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/other/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/work/employment/</loc>
-     <lastmod>2019-02-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://devnotes.johan-martin.com/journal/My PHP experience includes Rent The Runway who initially had a/</loc>
-     <lastmod>2019-02-10</lastmod>
+     <loc>https://devnotes.johan-martin.com/resources/teaching/tools/</loc>
+     <lastmod>2020-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
