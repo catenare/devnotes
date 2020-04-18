@@ -18,6 +18,8 @@ tornado = "*"
 Markdown = "*"
 MarkupSafe = "*"
 PyYAML = "*"
+mkdocs-material-extensions = "*"
+mkdocs-git-revision-date-localized-plugin = "*"
 
 [dev-packages]
 

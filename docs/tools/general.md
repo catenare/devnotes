@@ -1,7 +1,23 @@
-# Developer Helper Tools
+# Developer Tools
+
+## General Tools
+* [MassCode](https://masscode.io)
+  Snippets manager.
+    * Commands to know
+        * Snipppet
+          * Adding a snippet: ++cmd+n++
+          * Copying a snippet: ++shift+cmd+c++
+          * Formatting as snippet: ++shift+cmd+f++
+          * Fragment
+            * ++cmd+t++
+        * Show Assistant
+          * ++option+s++
+* [FlyCut](https://github.com/TermiT/Flycut)
+    * HotKey: ++shift+command+v++
+* Potential tool to track outgoing connections: [Lulu](https://objective-see.com/products/lulu.html)
 
 ## Editors
-* [StackBlitz](https://stackblitz.com/docs) - Online editor connected to GitHub.  
+* [StackBlitz](https://stackblitz.com/docs) - Online editor connected to GitHub.
 
 ## Build Tools
 * [Bazel](https://bazel.build/) - build tool. Next iteration of building web projects.

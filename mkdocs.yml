@@ -10,9 +10,48 @@ strict: true
 # docs_dir: 'md'
 # site_dir: 'docs'
 copyright: Johan Martin &copy; 2019
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - tabs
 markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.keys:
+      separator: "\uff0b"
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tabbed
   - pymdownx.tilde
-theme: "material"
+  - pymdownx.extra
+  - pymdownx.keys
+  - smarty
+  - tables
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: datetime
 extra_css:
   - css/extra.css
 nav:
