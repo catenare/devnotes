@@ -91,6 +91,7 @@ nav:
             - Vue: web_development/front_end/javascript/vue.md
             - Testing: web_development/front_end/javascript/testing.md
             - webpack: web_development/front_end/javascript/webpack.md
+            - xstate: web_development/front_end/javascript/xstate.md
     - Storybook:
         - Tutorial: web_development/storybook/tutorial.md
     - WordPress:
@@ -101,6 +102,7 @@ nav:
         - "Plugin Development": web_development/wordpress/plugin_development.md
         - Themes: web_development/wordpress/themes.md
   - Tools:
+    - MkDocs: tools/mkdocs.md
     - General: tools/general.md
     - Git: tools/git.md
     - NodeJS:
