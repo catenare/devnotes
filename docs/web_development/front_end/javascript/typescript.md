@@ -1,4 +1,9 @@
 # Typescript Notes
+## Resources
+* [Typescript Language](https://www.typescriptlang.org)
+* [TypeScript Notation](https://2ality.com/2018/04/type-notation-typescript.html)
+* [TypeScript React Cheetsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
+* [React Typescript Guide](https://github.com/piotrwitek/react-redux-typescript-guide)
 ## tslint
 * ~~[Tslint](https://github.com/palantir/tslint/blob/master/docs/usage/rule-flags/index.md) - how to disable rules per line or section. // tslint:disable-line~~ Use eslint
 

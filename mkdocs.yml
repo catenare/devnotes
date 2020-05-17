@@ -11,128 +11,129 @@ strict: true
 # site_dir: 'docs'
 copyright: Johan Martin &copy; 2019
 theme:
-  name: material
-  font:
-    text: Roboto
-    code: Roboto Mono
-  features:
-    - tabs
+    name: material
+    font:
+        text: Roboto
+        code: Roboto Mono
+    features:
+        - tabs
 markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: false
-      linenums: true
-  - toc:
-      permalink: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.keys:
-      separator: "\uff0b"
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-      clickable_checkbox: true
-  - pymdownx.tabbed
-  - pymdownx.tilde
-  - pymdownx.extra
-  - pymdownx.keys
-  - smarty
-  - tables
+    - admonition
+    - codehilite:
+          guess_lang: false
+          linenums: true
+    - toc:
+          permalink: true
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.keys:
+          separator: "\uff0b"
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+          custom_checkbox: true
+          clickable_checkbox: true
+    - pymdownx.tabbed
+    - pymdownx.tilde
+    - pymdownx.extra
+    - pymdownx.keys
+    - smarty
+    - tables
 plugins:
-  - search
-  - git-revision-date-localized:
-      type: datetime
+    - search
+    - git-revision-date-localized:
+          type: datetime
 extra_css:
-  - css/extra.css
+    - css/extra.css
 nav:
-  - Home: "index.md"
-  - Cloud:
-    - AWS:
-        - General: cloud/aws/general.md
-        - Amplify: cloud/aws/amplify.md
-        - "API Gateway": cloud/aws/api_gateway.md
-        - "Cognito": cloud/aws/cognito.md
-        - "DynamoDB": cloud/aws/dynamodb.md
-        - "Lightsail": cloud/aws/lightsail.md
-        - "Search": cloud/aws/search.md
-    - Azure:
-        - General: cloud/azure/general.md
-    - Google:
-        - Firebase:
-            - "General": cloud/google/firebase/general.md
-  - "Web Development":
-    - Docker: web_development/docker.md
-    - Database:
-        - Migrations:
-            - General: web_development/database/migrations/general.md
-        - Mongo: web_development/database/mongo.md
-        - MySQL: web_development/database/mysql.md
-        - Postgres: web_development/database/postgresql.md
-    - FrontEnd:
-        - General: web_development/front_end/general.md
-        - CORS: web_development/front_end/cors.md
-        - Foundation: web_development/front_end/foundation.md
-        - StyleGuide: web_development/front_end/styleguide.md
-        - Javascript:
-            - TypeScript: web_development/front_end/javascript/typescript.md
-            - Angular: web_development/front_end/javascript/angular.md
-            - React: web_development/front_end/javascript/react.md
-            - Rxjs: web_development/front_end/javascript/rxjs.md
-            - Vue: web_development/front_end/javascript/vue.md
-            - Testing: web_development/front_end/javascript/testing.md
-            - webpack: web_development/front_end/javascript/webpack.md
-            - xstate: web_development/front_end/javascript/xstate.md
-    - Storybook:
-        - Tutorial: web_development/storybook/tutorial.md
-    - WordPress:
-        - General: web_development/wordpress/general.md
-        - API: web_development/wordpress/api.md
-        - Composer: web_development/wordpress/composer.md
-        - Deployment: web_development/wordpress/deployment.md
-        - "Plugin Development": web_development/wordpress/plugin_development.md
-        - Themes: web_development/wordpress/themes.md
-  - Tools:
-    - MkDocs: tools/mkdocs.md
-    - General: tools/general.md
-    - Git: tools/git.md
-    - NodeJS:
-        - General: tools/nodejs/general.md
-    - Notes: tools/notes.md
-    - Reporting: tools/reporting.md
-    - Vagrant: tools/vagrant.md
-  - Resources:
-    - General: resources/general.md
-    - JavaScript: resources/javascript.md
-    - Java: resources/java.md
-    - JSON-Schema: resources/jsonschema.md
-    - Mobile: resources/mobile/general.md
-    - PHP:
-        - General: resources/php/general.md
-        - Wordpress:
-            - API: resources/php/wordpress/api.md
-    - Python:
-        - General: resources/python/general.md
-        - Flask: resources/python/flask.md
-        - Jupyter: resources/python/jupyter.md
-        - Packages: resources/python/packages.md
-        - SqlAlchemy: resources/python/sqlalchemy.md
-        - Testing: resources/python/testing.md
-    - Ruby: resources/ruby.md
-    - "General Tutorials": resources/tutorials/general.md
-    - "Web Development": resources/web_dev.md
-    - Teaching:
-        - HTML: resources/teaching/html.md
-        - JavaScript: resources/teaching/javascript.md
-        - OpenEdx: resources/teaching/openedx.md
-        - Prototyping: resources/teaching/prototyping.md
-        - Tools: resources/teaching/tools.md
+    - Home: "index.md"
+    - Cloud:
+          - AWS:
+                - General: cloud/aws/general.md
+                - Amplify: cloud/aws/amplify.md
+                - "API Gateway": cloud/aws/api_gateway.md
+                - "Cognito": cloud/aws/cognito.md
+                - "DynamoDB": cloud/aws/dynamodb.md
+                - "Lightsail": cloud/aws/lightsail.md
+                - "Search": cloud/aws/search.md
+          - Azure:
+                - General: cloud/azure/general.md
+          - Google:
+                - Firebase:
+                      - "General": cloud/google/firebase/general.md
+    - "Web Development":
+          - Docker: web_development/docker.md
+          - Database:
+                - Migrations:
+                      - General: web_development/database/migrations/general.md
+                - Mongo: web_development/database/mongo.md
+                - MySQL: web_development/database/mysql.md
+                - Postgres: web_development/database/postgresql.md
+          - FrontEnd:
+                - General: web_development/front_end/general.md
+                - CORS: web_development/front_end/cors.md
+                - Foundation: web_development/front_end/foundation.md
+                - StyleGuide: web_development/front_end/styleguide.md
+                - Javascript:
+                      - TypeScript: web_development/front_end/javascript/typescript.md
+                      - Angular: web_development/front_end/javascript/angular.md
+                      - React: web_development/front_end/javascript/react.md
+                      - Rxjs: web_development/front_end/javascript/rxjs.md
+                      - Vue: web_development/front_end/javascript/vue.md
+                      - Testing: web_development/front_end/javascript/testing.md
+                      - webpack: web_development/front_end/javascript/webpack.md
+                      - xstate: web_development/front_end/javascript/xstate.md
+          - Storybook:
+                - Tutorial: web_development/storybook/tutorial.md
+          - WordPress:
+                - General: web_development/wordpress/general.md
+                - API: web_development/wordpress/api.md
+                - Composer: web_development/wordpress/composer.md
+                - Deployment: web_development/wordpress/deployment.md
+                - "Plugin Development": web_development/wordpress/plugin_development.md
+                - Themes: web_development/wordpress/themes.md
+    - Tools:
+          - MkDocs: tools/mkdocs.md
+          - General: tools/general.md
+          - Git: tools/git.md
+          - NodeJS:
+                - General: tools/nodejs/general.md
+          - Notes: tools/notes.md
+          - Reporting: tools/reporting.md
+          - Vagrant: tools/vagrant.md
+          - Vim/NeoVim: tools/vim.md
+    - Resources:
+          - General: resources/general.md
+          - JavaScript: resources/javascript.md
+          - Java: resources/java.md
+          - JSON-Schema: resources/jsonschema.md
+          - Mobile: resources/mobile/general.md
+          - PHP:
+                - General: resources/php/general.md
+                - Wordpress:
+                      - API: resources/php/wordpress/api.md
+          - Python:
+                - General: resources/python/general.md
+                - Flask: resources/python/flask.md
+                - Jupyter: resources/python/jupyter.md
+                - Packages: resources/python/packages.md
+                - SqlAlchemy: resources/python/sqlalchemy.md
+                - Testing: resources/python/testing.md
+          - Ruby: resources/ruby.md
+          - "General Tutorials": resources/tutorials/general.md
+          - "Web Development": resources/web_dev.md
+          - Teaching:
+                - HTML: resources/teaching/html.md
+                - JavaScript: resources/teaching/javascript.md
+                - OpenEdx: resources/teaching/openedx.md
+                - Prototyping: resources/teaching/prototyping.md
+                - Tools: resources/teaching/tools.md
