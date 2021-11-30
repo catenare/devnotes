@@ -1,0 +1,241 @@
+---
+title: Visual Studio Code Config
+updated: 2021-03-14 21:41:50Z
+created: 2021-03-14 18:13:27Z
+---
+
+# VS Code Extensions
+## Personal machine
+- [ ] Draw.io Integration
+- [ ] Draw.io Integration: Mermaid plugin
+- [ ] UMLet
+- [ ] Control Snippets
+- [ ] indent-rainbow
+- [ ] Autocomplete Symbols
+- [ ] Braun Extension Pack
+	- [ ] Prettier
+	- [ ] Live Share
+	- [ ] Material Icon Theme
+	- [ ] GitLens
+	- [ ] Bracket Pair Colorizer 2
+	- [ ] EditorConfig for VSCode
+	- [ ] ESLint
+	- [ ] Dracula Official Theme (not necessary)
+- [ ] .gitignore generator
+- [ ] gitignore
+- [ ] Auto Add Brackets in String interpolation
+- [ ] Auto Complete Tag - extension
+	- [ ] Auto Close Tag
+	- [ ] Auto Rename Tag
+- [ ] ES7 React/Redux/GraphQL/React-Native snippets
+- [ ] Code Spell Checker
+- [ ] DotENV
+- [ ] Live Share Extension Pack
+	- [ ] Live Share
+	- [ ] Live Share Audio
+- [ ] JavaScript
+	- [ ] Quokka.js
+	- [ ] i18n Ally
+	- [ ] JavaScript (ES6) code snippets
+	- [ ] NPM Intellisense
+	- [ ] Split HTML Attributes (Vue, React, Angular)
+	- [ ] Vue
+		- [ ] Vetur
+		- [ ] Vue VScode snippets
+		- [ ] Vue 3 Snippets
+	- [ ] Angular Essentials
+		- [ ] Angular Snippets version 11
+		- [ ] Angular Language Service
+		- [ ] Editor Config for VSCode
+		- [ ] ESLint
+		- [ ] Debugger for Chrome
+		- [ ] Winter is Coming Theme
+		- [ ] Peacock
+		- [ ] Prettier
+		- [ ] NPM
+		- [ ] Material Icon Theme
+		- [ ] NX Console
+		- [ ] Debugger for Mirosoft Edge (not needed)
+- [ ] Path Intellisense
+- [ ] Color Highlight
+- [ ] Highlight Matching Tag
+- [ ] HTML
+	- [ ] CSS Peek
+	- [ ] Live Sass Compiler glenn2223.live-sass
+	- [ ] Sass Lint glen-84.sass-lint
+	- [ ] Sass syler.sass-indented
+	- [ ] Placeholder Images
+	- [ ] Lorem ipsum
+	- [ ] IntelliSense for CSS class names in HTML
+	- [ ] svg
+- [ ] AWS
+	- [ ] AWS Amplify
+	- [ ] AWS Toolkit
+- [ ] Azure
+	- [ ] Azure Pipelines
+	- [ ] Azure Account
+	- [ ] Azure Functions
+	- [ ] Azure CLI Tools
+	- [ ] Azure App Service
+	- [ ] Azure Database
+	- [ ] Azure Storage
+	- [ ] Azure Static Web Apps
+	- [ ] Azure Tools - extension pack. Includes above
+		- [ ] Azure Pipelines
+		- [ ] Azure resource manager
+		- [ ] Azure Virtual Machine
+		- [ ] ARM Template Viewer
+- [ ] Dotnet
+	- [ ] C#
+	- [ ] Ionide-fsharp
+	- [ ] .NET Install Tool for Extension Authors
+	- [ ] .NET & Azure Extension Pack
+		- [ ] ESLint
+		- [ ] DotEnv
+		- [ ] Docker
+		- [ ] C#
+		- [ ] Azure Account
+		- [ ] Azure Functions
+		- [ ] Azure CLI Tools
+		- [ ] Azure App Service
+		- [ ] Azure Database
+		- [ ] Azure Storage
+		- [ ] .gitignore generator
+		- [ ] Azure Static Web Apps
+- [ ] Docker
+- [ ] Duplicate Action
+- [ ] Edit CSV
+- [ ] Python
+	- [ ] Python
+	- [ ] Jupyter
+	- [ ] Pylance
+	- [ ] MagicPython
+	- [ ] Python Test Explorer for Visual Studio Code
+	- [ ] python snippets
+	- [ ] Python Type Hint
+- [ ] Remote Development - extension pack
+	- [ ] Remote Containers
+	- [ ] Remote SSH
+	- [ ] Remote - SSH: Editing Configuration Files
+- [ ] Rest Client
+- [ ] Todo Tree
+- [ ] Visual Studio Intellicode
+- [ ] YAML
+- [ ] vscode faker
+- [ ] Text Power Tools
+- [ ] C/C++
+	- [ ] C/C++
+	- [ ] Doxygen Documentation Generator
+
+## Work Machine
+- [ ] Draw.io Integration
+- [ ] Draw.io Integration: Mermaid plugin
+- [ ] UMLet
+- [ ] Control Snippets
+- [ ] indent-rainbow
+- [ ] Autocomplete Symbols
+- [ ] Braun Extension Pack
+	- [ ] Prettier
+	- [ ] Live Share
+	- [ ] Material Icon Theme
+	- [ ] GitLens
+	- [ ] Bracket Pair Colorizer 2
+	- [ ] EditorConfig for VSCode
+	- [ ] ESLint
+	- [ ] Dracula Official Theme (not necessary)
+- [ ] .gitignore generator
+- [ ] gitignore
+- [ ] Auto Add Brackets in String interpolation
+- [ ] Auto Complete Tag - extension
+	- [ ] Auto Close Tag
+	- [ ] Auto Rename Tag
+- [ ] ES7 React/Redux/GraphQL/React-Native snippets
+- [ ] Code Spell Checker
+- [ ] DotENV
+- [ ] Live Share Extension Pack
+	- [ ] Live Share
+	- [ ] Live Share Audio
+- [ ] JavaScript
+	- [ ] Quokka.js
+	- [ ] i18n Ally
+	- [ ] JavaScript (ES6) code snippets
+	- [ ] NPM Intellisense
+	- [ ] Split HTML Attributes (Vue, React, Angular)
+- [ ] Path Intellisense
+- [ ] Color Highlight
+- [ ] Highlight Matching Tag
+- [ ] HTML
+	- [ ] CSS Peek
+	- [ ] Live Sass Compiler glenn2223.live-sass
+	- [ ] Sass Lint glen-84.sass-lint
+	- [ ] Sass syler.sass-indented
+	- [ ] Placeholder Images
+	- [ ] Lorem ipsum
+	- [ ] IntelliSense for CSS class names in HTML
+	- [ ] svg
+- [ ] AWS
+	- [ ] AWS Amplify
+	- [ ] AWS Toolkit
+- [ ] Docker
+- [ ] Duplicate Action
+- [ ] Edit CSV
+- [ ] Remote Development - extension pack
+	- [ ] Remote Containers
+	- [ ] Remote SSH
+	- [ ] Remote - SSH: Editing Configuration Files
+- [ ] Rest Client
+- [ ] Todo Tree
+- [ ] Visual Studio Intellicode
+- [ ] YAML
+- [ ] vscode faker
+- [ ] Text Power Tools
+- [ ] Ruby
+	- [ ] Faker Snippets
+	- [ ] endwise
+	- [ ] Rails i18n
+	- [ ] Rails DB Schema
+	- [ ] Rails Routes
+	- [ ] Ruby
+	- [ ] Ruby Symbols
+	- [ ] Ruby and Rails snippets
+	- [ ] Ruby Solargraph
+	- [ ] ruby-rubocop
+	- [ ] Simple Ruby ERB
+	- [ ] Slim
+	- [ ] VSCode Ruby
+	- [ ] rails-touchbar (macbook pro with touchbar)
+	- [ ] Ruby Syntax Replacer
+	- [ ] Rails Fast Nav
+	- [ ] Ruby Test Explorer
+	- [ ] Rails Syntax Highlighting
+	- [ ] Ruby on Rails MisterJDevPack
+		- [ ] Rails
+		- [ ] Ruby
+		- [ ] Ruby on Rails
+		- [ ] Ruby Solargraph
+		- [ ] Slim
+		- [ ] VSCode Ruby
+		- [ ] vscode-gemfile
+		- [ ] endwise
+### Themes
+- [ ] Night Owl
+- [ ] Material Product Icons
+- [ ] Winter is Coming
+- [ ] Make Apps Theme
+### Fonts - Using Homebrew
+- [ ] Fira Code
+- [ ] Cascadia Code
+- [ ] Other Fonts
+	- [ ] Menlo
+	- [ ] mononoki
+	- [ ] Monaco
+	- [ ] Inconsolata
+
+### Maybe
+- [ ] Code Tour
+- [ ] Better Comments
+- [ ] Incrementor
+- [ ] Insert Numbers
+- [ ] Neo Vim
+- [ ] Kite AutoComplete AI Code: Python, Java, Go, PHP, C/C#/C++, Javascript, HTML/CSS, Typescript, React, Ruby, Scala, Kotlin, Bash, Vue, React - currently not compatible with M1 macbook
+- [ ] Tabnine Autocomplete AI: JavaScript, Python, TypeScript, PHP, Go, Java, Ruby, C/C++, HTML/CSS, C#, Rust, SQL, Bash, Kotlin, React
