@@ -1,6 +1,8 @@
 # Semantic HTML
 ## "... HTML elements for what they are rather than how they may appear in the browser by default."
 
+## Resources
+* [Web Development for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners)
 ## Reference
 * [Mozilla Developer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
 
