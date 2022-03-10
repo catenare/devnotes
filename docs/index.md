@@ -1,5 +1,5 @@
 # Developer Notebook for Johan Martin
-![Notebook](https://openclipart.org/download/100339/notebook-black.svg")
+* ![Notebook](https://openclipart.org/download/100339/notebook-black.svg")
 Snippets and solutions to issues I have encountered.
 
 ## My Info
