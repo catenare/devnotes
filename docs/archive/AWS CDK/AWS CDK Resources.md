@@ -15,16 +15,16 @@
 		* `aws sts get-caller-identity --profile default` - Will show your account credentials
 ```
 {
-    "UserId": "AIDAZKIVWPAYBY3IA5Y7X",
-    "Account": "640532510768",
-    "Arn": "arn:aws:iam::640532510768:user/nziswanodeveloper"
+    "UserId": "AIDABCDEFPAYBY3IXXXXX",
+    "Account": "7804444519999",
+    "Arn": "arn:aws:iam::640532519999:user/nziswanodeveloper"
 }
 ```
 	* Get your default region
 		* `aws configure get region --profile default`
 		* Response: `eu-central-1`
 	* Bootstrap your CDK stack
-		`cdk bootstrap aws://640532510768/eu-central-1`
+		`cdk bootstrap aws://78044451999/eu-central-1`
 ## Create the app
 * Create a new repository in GitHub
 	* Name: aws_wordpress_cdk
@@ -54,6 +54,56 @@
 * Add/update your *README.md* file
 * Commit and push to GitHub.
 ## Building our App
-### Build our registry config
+### AWS Registry configuration
+* API Documentation: https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecr-readme.html
 * `git checkout -b aws_ecr_config`
 * Update our *README.md* file
+#### Our first stack
+* `lib/aws_wordpress_cdk-stack.ts`
+```typescript
+import * as cdk from 'aws-cdk-lib';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import * as ecr from 'aws-cdk-lib/aws-ecr';
+import { Construct } from 'constructs';
+
+export class AwsWordpressCdkStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
+    super(scope, id, props);
+
+    const ecr_repo = new ecr.Repository(this, 'WordpressDockerRegistry', {
+      repositoryName: 'wordpress-cms-ecr',
+    });
+  }
+}
+```
+##### Our Test
+* File: `test/aws_wordpress_cdk.test.ts`
+```typescript
+import * as cdk from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import * as AwsWordpressCdk from '../lib/aws_wordpress_cdk-stack';
+
+test('WordPress Registry Created', () => {
+    const app = new cdk.App();
+    const stack = new AwsWordpressCdk.AwsWordpressCdkStack(app, 'MyTestStack');
+    const template = Template.fromStack(stack);
+
+    template.hasResourceProperties('AWS::ECR::Repository', {
+        RepositoryName: 'wordpress-cms-ecr'
+    });
+});
+
+```
+* To run tests: `npm run build && cdk synth && npm run test`
+#### GitHub Actions for continues integration/deployment
+* Github Actions
+	* https://github.com/marketplace/actions/aws-cdk-github-actions
+
+* Environment variables - Actions secrets
+	* DEV_AWS_ACCESS_KEY_ID
+	* DEV_AWS_SECRET_ACCESS_KEY
+	* DEV_AWS_REGION
+Available to private repositories
+* Setup the local environment
+* Build and test
+* Run the deployment
